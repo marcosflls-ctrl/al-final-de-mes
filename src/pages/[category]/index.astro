@@ -47,23 +47,23 @@ const jsonLd = {
         <LuzDia id="hoy" titulo={`Hoy, ${fechaLarga(hoy)}`} horas={preciosHoy} />
         {preciosManana
           ? <LuzDia id="manana" titulo={`Mañana, ${fechaLarga(manana)}`} horas={preciosManana} />
-          : <p class="box aviso-manana">El precio de mañana se publica cada tarde, hacia las 20:15. Vuelve a partir de esa hora.</p>}
+          : <p class="nota aviso-manana">El precio de mañana se publica cada tarde, hacia las 20:15. Vuelve a partir de esa hora.</p>}
         <p class="muted small nota">Precio de la tarifa regulada (PVPC 2.0TD) en euros por kilovatio hora, sin impuestos. Incluye la energía y los peajes; no incluye la potencia contratada, el alquiler del contador, el impuesto eléctrico ni el IVA. Si tienes una tarifa de mercado libre con precio fijo, estos precios no te afectan. Fuente: <a href="https://www.ree.es/es/datos/mercados" rel="noopener" target="_blank">Red Eléctrica</a>.</p>
       </>
-    ) : <p class="box">Estamos actualizando los precios de hoy. Vuelve en unos minutos.</p>
+    ) : <p class="nota">Estamos actualizando los precios de hoy. Vuelve en unos minutos.</p>
   )}
 
   {guias.length > 0 && (
     <section class="bloque">
-      <h2>Guías de {meta.label.toLowerCase()}</h2>
-      <div class="grid">{guias.map((p) => <PostCard post={p} />)}</div>
+      <h2 class="titulo-bloque">Guías</h2>
+      <div class="lista-noticias">{guias.map((p) => <PostCard post={p} />)}</div>
     </section>
   )}
 
   <section class="bloque">
-    {(esLuz || guias.length > 0) && <h2>Últimas noticias</h2>}
+    {(esLuz || guias.length > 0) && <h2 class="titulo-bloque">Últimas noticias</h2>}
     {noticias.length ? (
-      <div class="grid">
+      <div class="lista-noticias">
         {noticias.map((p, i) => (
           <>
             <PostCard post={p} />
@@ -75,10 +75,9 @@ const jsonLd = {
   </section>
 </Base>
 <style>
-  h1 { font-size: clamp(2rem, 5.5vw, 2.9rem); margin: 8px 0; }
-  .intro { max-width: 700px; margin-bottom: 24px; }
-  .bloque { margin-top: 36px; }
-  .bloque h2 { font-size: 1.6rem; }
-  .aviso-manana { margin: 0 0 20px; }
-  .nota { max-width: 760px; }
+  h1 { font-size: clamp(2rem, 5vw, 2.75rem); margin: 4px 0 10px; max-width: 24ch; }
+  .intro { max-width: 68ch; margin: 0 0 32px; }
+  .bloque { margin-top: 44px; }
+  .aviso-manana { margin: 0 0 32px; }
+  .small.muted { max-width: 72ch; }
 </style>

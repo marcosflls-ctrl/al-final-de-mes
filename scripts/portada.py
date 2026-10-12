@@ -15,10 +15,8 @@ from PIL import Image, ImageDraw, ImageFont
 
 ROOT = Path(__file__).resolve().parent.parent
 FUENTES = Path(__file__).resolve().parent / "fuentes"
-VERDE, VERDE_2, AMBAR, CREMA = (13, 92, 69), (18, 122, 92), (242, 169, 59), (250, 248, 244)
-ETIQUETAS = {"inicio": "AL FINAL DE MES", "luz": "LUZ", "pensiones": "PENSIONES", "paro": "PARO Y AYUDAS", "hacienda": "HACIENDA"}
-# Un color de acento por sección, para que las portadas no parezcan todas iguales
-ACENTO = {"luz": (242, 169, 59), "pensiones": (125, 196, 160), "paro": (143, 182, 222), "hacienda": (232, 140, 120)}
+VERDE, VERDE_OSC, CLARO, BLANCO = (11, 93, 75), (8, 68, 54), (183, 214, 203), (255, 255, 255)
+ETIQUETAS = {"inicio": "Al Final de Mes", "luz": "Luz", "pensiones": "Pensiones", "paro": "Paro y ayudas", "hacienda": "Hacienda"}
 
 
 def fuente(nombre: str, tam: int) -> ImageFont.FreeTypeFont:
@@ -40,56 +38,50 @@ def partir(draw: ImageDraw.ImageDraw, texto: str, f: ImageFont.FreeTypeFont, anc
     return lineas
 
 
-def marca(draw: ImageDraw.ImageDraw, x: int, y: int, s: float) -> None:
-    """El icono de la web (hoja de calendario con el último día marcado), en blanco sobre verde."""
-    draw.rounded_rectangle([x, y, x + 32 * s, y + 32 * s], radius=8 * s, fill=VERDE_2)
-    draw.rounded_rectangle([x + 7 * s, y + 9 * s, x + 25 * s, y + 25 * s], radius=2.5 * s, outline="white", width=round(2 * s))
-    draw.line([x + 7 * s, y + 13.5 * s, x + 25 * s, y + 13.5 * s], fill="white", width=round(2 * s))
+def marca(draw: ImageDraw.ImageDraw, x: float, y: float, s: float) -> None:
+    """El icono de la web (hoja de calendario con el último día marcado), en blanco."""
+    w = max(1, round(2 * s))
+    draw.rounded_rectangle([x + 7 * s, y + 9 * s, x + 25 * s, y + 25 * s], radius=1.5 * s, outline=BLANCO, width=w)
+    draw.line([x + 7 * s, y + 13.5 * s, x + 25 * s, y + 13.5 * s], fill=BLANCO, width=w)
     for cx in (11.5, 20.5):
-        draw.line([x + cx * s, y + 6.5 * s, x + cx * s, y + 10.5 * s], fill="white", width=round(2 * s))
-    r = 2.6 * s
-    draw.ellipse([x + 20.5 * s - r, y + 20 * s - r, x + 20.5 * s + r, y + 20 * s + r], fill=AMBAR)
+        draw.line([x + cx * s, y + 6.5 * s, x + cx * s, y + 10.5 * s], fill=BLANCO, width=w)
+    draw.rectangle([x + 18 * s, y + 17.5 * s, x + 22.5 * s, y + 22 * s], fill=BLANCO)
 
 
 def crear(titulo: str, categoria: str, salida: Path, ancho: int = 1600, alto: int = 900, subtitulo: str = "") -> Path:
-    escala = ancho / 1600
+    """Portada sobria: fondo verde de la marca, sección arriba, titular en serif y la marca abajo."""
+    e = ancho / 1600
     img = Image.new("RGB", (ancho, alto), VERDE)
     d = ImageDraw.Draw(img)
-    acento = ACENTO.get(categoria, AMBAR)
-    # banda lateral de color y círculo decorativo, discretos
-    d.ellipse([ancho - 520 * escala, -260 * escala, ancho + 260 * escala, 520 * escala], fill=VERDE_2)
-    d.rectangle([0, 0, 18 * escala, alto], fill=acento)
-    m = round(96 * escala)
-    # etiqueta de la sección
-    fe = fuente("inter-600", round(30 * escala))
-    etiqueta = ETIQUETAS.get(categoria, categoria.upper())
-    tw = d.textlength(etiqueta, font=fe)
-    d.rounded_rectangle([m, m, m + tw + 40 * escala, m + 56 * escala], radius=10 * escala, fill=acento)
-    d.text((m + 20 * escala, m + 28 * escala), etiqueta, font=fe, fill=VERDE, anchor="lm")
-    # titular: el tamaño baja si es largo, para que siempre quepa en 4 líneas
-    zona_y0, zona_y1 = m + 100 * escala, alto - 170 * escala
-    for tam in (104, 94, 84, 76, 68, 60):
-        ft = fuente("serif-700", round(tam * escala))
-        lineas = partir(d, titulo, ft, ancho - 2 * m - 60 * escala)
-        alto_linea = round(tam * 1.18 * escala)
-        if len(lineas) <= 4 and len(lineas) * alto_linea <= zona_y1 - zona_y0:
+    m = round(100 * e)
+    # sección, con una raya fina encima
+    d.line([m, m, m + 64 * e, m], fill=BLANCO, width=max(2, round(4 * e)))
+    fe = fuente("sans-500", round(34 * e))
+    d.text((m, m + 26 * e), ETIQUETAS.get(categoria, categoria.capitalize()), font=fe, fill=CLARO)
+    # titular: baja de tamaño si es largo para que quepa en 4 líneas
+    y0, y1 = m + 110 * e, alto - 190 * e
+    for tam in (100, 90, 82, 74, 66, 58):
+        ft = fuente("serif-600", round(tam * e))
+        lineas = partir(d, titulo, ft, ancho - 2 * m)
+        alto_linea = round(tam * 1.2 * e)
+        if len(lineas) <= 4 and len(lineas) * alto_linea <= y1 - y0:
             break
-    y = zona_y0 + ((zona_y1 - zona_y0) - len(lineas) * alto_linea) / 2
+    y = y0
     for linea in lineas[:4]:
-        d.text((m, y), linea, font=ft, fill="white")
+        d.text((m, y), linea, font=ft, fill=BLANCO)
         y += alto_linea
     if subtitulo:
-        fs = fuente("inter-400", round(34 * escala))
-        d.text((m, y + 10 * escala), subtitulo, font=fs, fill=(214, 233, 224))
-    # pie: marca y dominio
-    marca(d, m, round(alto - m - 52 * escala), 1.65 * escala)
-    fm = fuente("inter-600", round(32 * escala))
-    d.text((m + 72 * escala, alto - m - 26 * escala), "alfinaldemes.com", font=fm, fill=CREMA, anchor="lm")
+        d.text((m, y + 18 * e), subtitulo, font=fuente("sans-400", round(36 * e)), fill=CLARO)
+    # pie: línea, marca y dominio
+    yp = alto - m - 40 * e
+    d.line([m, yp - 30 * e, ancho - m, yp - 30 * e], fill=(52, 125, 106), width=max(1, round(2 * e)))
+    marca(d, m - 6 * e, yp - 4 * e, 1.5 * e)
+    d.text((m + 52 * e, yp + 20 * e), "alfinaldemes.com", font=fuente("sans-500", round(32 * e)), fill=BLANCO, anchor="lm")
     salida.parent.mkdir(parents=True, exist_ok=True)
     if salida.suffix == ".png":
         img.save(salida, "PNG", optimize=True)
     else:
-        img.save(salida, "WEBP", quality=84, method=6)
+        img.save(salida, "WEBP", quality=86, method=6)
     return salida
 
 
@@ -97,13 +89,8 @@ def icono(tam: int, salida: Path) -> None:
     img = Image.new("RGBA", (tam, tam), (0, 0, 0, 0))
     d = ImageDraw.Draw(img)
     s = tam / 32
-    d.rounded_rectangle([0, 0, tam - 1, tam - 1], radius=8 * s, fill=VERDE)
-    d.rounded_rectangle([7 * s, 9 * s, 25 * s, 25 * s], radius=2.5 * s, outline="white", width=max(1, round(2 * s)))
-    d.line([7 * s, 13.5 * s, 25 * s, 13.5 * s], fill="white", width=max(1, round(2 * s)))
-    for cx in (11.5, 20.5):
-        d.line([cx * s, 6.5 * s, cx * s, 10.5 * s], fill="white", width=max(1, round(2 * s)))
-    r = 2.6 * s
-    d.ellipse([20.5 * s - r, 20 * s - r, 20.5 * s + r, 20 * s + r], fill=AMBAR)
+    d.rounded_rectangle([0, 0, tam - 1, tam - 1], radius=5 * s, fill=VERDE)
+    marca(d, 0, 0, s)
     img.save(salida, "PNG", optimize=True)
 
 
@@ -113,7 +100,7 @@ def fijas() -> None:
     from miniaturas import make_variants
 
     textos = {
-        "luz": ("Precio de la luz hoy y mañana por horas", "Las horas más baratas, cada día"),
+        "luz": ("Precio de la luz hoy y mañana por horas", "Las horas más baratas de cada día"),
         "pensiones": ("Pensiones: subidas, pagas y fechas de cobro", "Con los datos de la Seguridad Social"),
         "paro": ("Paro, subsidios y ayudas: requisitos y cuantías", "Con los datos del SEPE"),
         "hacienda": ("Renta, IRPF y avisos de Hacienda", "Con los datos de la Agencia Tributaria"),
@@ -121,8 +108,8 @@ def fijas() -> None:
     for cat, (t, sub) in textos.items():
         p = crear(t, cat, ROOT / "public" / "img" / "portadas" / f"{cat}.webp", subtitulo=sub)
         make_variants(p)
-    crear("Lo que afecta a tu bolsillo, explicado claro", "inicio", ROOT / "public" / "og-default.png", 1200, 630,
-          subtitulo="Pensiones, paro, Hacienda y luz")
+    crear("Pensiones, paro, Hacienda y luz, explicados con el dato oficial", "inicio", ROOT / "public" / "og-default.png", 1200, 630,
+          subtitulo="")
     for tam, nombre in ((48, "favicon-48.png"), (180, "apple-touch-icon.png"), (192, "icon-192.png"), (512, "icon-512.png")):
         icono(tam, ROOT / "public" / nombre)
     print("Imágenes fijas creadas")

@@ -1,0 +1,38 @@
+---
+// Módulo compacto del precio de la luz de hoy (portada y barra lateral)
+import { datosLuz, hoyManana } from '../lib/luz';
+const luz = datosLuz();
+const [hoy, manana] = hoyManana();
+const horas = luz?.dias[hoy];
+const hayManana = Boolean(luz?.dias[manana]);
+const eur = (p: number) => p.toLocaleString('es-ES', { minimumFractionDigits: 3, maximumFractionDigits: 3 });
+const fin = (h: string) => `${String((parseInt(h, 10) + 1) % 24).padStart(2, '0')}:00`;
+const min = horas ? horas.reduce((a, b) => (b.p < a.p ? b : a)) : null;
+const max = horas ? horas.reduce((a, b) => (b.p > a.p ? b : a)) : null;
+const media = horas ? horas.reduce((s, x) => s + x.p, 0) / horas.length : 0;
+---
+<aside class="luz-resumen" aria-labelledby="luz-resumen-t">
+  <h2 id="luz-resumen-t" class="titulo-bloque">Precio de la luz hoy</h2>
+  {horas && min && max ? (
+    <>
+      <dl>
+        <div><dt>Media del día</dt><dd>{eur(media)} €/kWh</dd></div>
+        <div><dt>Hora más barata</dt><dd class="bien">{min.h}–{fin(min.h)} <span>{eur(min.p)} €</span></dd></div>
+        <div><dt>Hora más cara</dt><dd class="mal">{max.h}–{fin(max.h)} <span>{eur(max.p)} €</span></dd></div>
+      </dl>
+      <p class="small"><a href="/luz/">Todas las horas{hayManana ? ' y el precio de mañana' : ''}</a></p>
+    </>
+  ) : <p class="small"><a href="/luz/">Consulta el precio de la luz por horas</a></p>}
+  <p class="muted fuente">Tarifa regulada (PVPC), sin impuestos. Fuente: Red Eléctrica.</p>
+</aside>
+<style>
+  dl { margin: 0; }
+  dl div { display: flex; justify-content: space-between; gap: 12px; padding: 9px 0; border-bottom: 1px solid var(--rule); }
+  dt { color: var(--muted); font-size: .9375rem; }
+  dd { margin: 0; font-weight: 600; font-variant-numeric: tabular-nums; text-align: right; }
+  dd span { font-weight: 400; color: var(--muted); margin-left: 6px; }
+  .bien { color: var(--good); }
+  .mal { color: var(--bad); }
+  .small { margin: 12px 0 4px; }
+  .fuente { font-size: .8125rem; margin: 0; }
+</style>

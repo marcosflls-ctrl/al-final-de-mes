@@ -20,72 +20,71 @@ const bw = (W - left * 2) / horas.length;
 const escala = (p: number) => ((H - top - bottom) * p) / (max.p * 1.08);
 ---
 <section class="luz-dia" aria-labelledby={`${id}-t`}>
-  <h2 id={`${id}-t`}>{titulo}</h2>
-  <div class="resumen">
-    <div class="dato"><span class="lbl">Precio medio</span><strong>{eur(media)}</strong><span class="ud">€/kWh</span></div>
-    <div class="dato barata"><span class="lbl">Hora más barata</span><strong>{min.h} – {fin(min.h)}</strong><span class="ud">{eur(min.p)} €/kWh</span></div>
-    <div class="dato cara"><span class="lbl">Hora más cara</span><strong>{max.h} – {fin(max.h)}</strong><span class="ud">{eur(max.p)} €/kWh</span></div>
-  </div>
-  <p class="consejo">Las tres horas más baratas: <strong>{baratas.map((x) => `${x.h} – ${fin(x.h)}`).join(', ')}</strong>. Es el mejor momento para poner la lavadora, el lavavajillas o cargar el coche.</p>
+  <h2 id={`${id}-t`} class="titulo-bloque">{titulo}</h2>
+  <dl class="resumen">
+    <div><dt>Precio medio</dt><dd>{eur(media)} €/kWh</dd></div>
+    <div><dt>Hora más barata</dt><dd class="bien">{min.h}–{fin(min.h)}<span>{eur(min.p)} €/kWh</span></dd></div>
+    <div><dt>Hora más cara</dt><dd class="mal">{max.h}–{fin(max.h)}<span>{eur(max.p)} €/kWh</span></dd></div>
+  </dl>
+  <p class="consejo">Las tres horas más baratas son {baratas.map((x) => `${x.h}–${fin(x.h)}`).join(', ').replace(/, ([^,]*)$/, ' y $1')}: el mejor momento para la lavadora, el lavavajillas o cargar el coche.</p>
 
   <figure class="grafico">
     <svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label={`Precio de la luz por horas: mínimo ${eur(min.p)} €/kWh a las ${min.h}, máximo ${eur(max.p)} €/kWh a las ${max.h}`}>
       <line x1={left} x2={W - left} y1={H - bottom} y2={H - bottom} class="eje" />
       <line x1={left} x2={W - left} y1={H - bottom - escala(media)} y2={H - bottom - escala(media)} class="media" />
       {horas.map((x, i) => (
-        <rect class={tramo(x.p)} x={left + i * bw + 1.5} width={bw - 3} y={H - bottom - escala(x.p)} height={escala(x.p)} rx="2"><title>{x.h}: {eur(x.p)} €/kWh</title></rect>
+        <rect class={tramo(x.p)} x={left + i * bw + 1.5} width={bw - 3} y={H - bottom - escala(x.p)} height={escala(x.p)}><title>{x.h}: {eur(x.p)} €/kWh</title></rect>
       ))}
       {horas.map((x, i) => i % 3 === 0 && (
-        <text x={left + i * bw + bw / 2} y={H - 8} text-anchor="middle">{x.h.slice(0, 2)}h</text>
+        <text x={left + i * bw + bw / 2} y={H - 8} text-anchor="middle">{x.h.slice(0, 5)}</text>
       ))}
     </svg>
-    <figcaption><span class="ley barata"></span>Más baratas <span class="ley media"></span>Intermedias <span class="ley cara"></span>Más caras · la línea discontinua es el precio medio</figcaption>
+    <figcaption><span class="ley barata"></span>Horas más baratas del día <span class="ley media"></span>Intermedias <span class="ley cara"></span>Más caras. La línea discontinua marca el precio medio.</figcaption>
   </figure>
 
   <details class="tabla">
-    <summary>Ver el precio de cada hora</summary>
+    <summary>Precio de cada hora</summary>
     <table>
-      <thead><tr><th>Hora</th><th>Precio (€/kWh)</th><th></th></tr></thead>
+      <thead><tr><th>Hora</th><th>€/kWh</th><th>Tramo</th></tr></thead>
       <tbody>
         {horas.map((x) => (
-          <tr><td>{x.h} – {fin(x.h)}</td><td>{eur(x.p)}</td><td><span class:list={['punto', tramo(x.p)]}></span>{tramo(x.p) === 'barata' ? 'Barata' : tramo(x.p) === 'cara' ? 'Cara' : 'Media'}</td></tr>
+          <tr><td>{x.h}–{fin(x.h)}</td><td>{eur(x.p)}</td><td><span class:list={['punto', tramo(x.p)]}></span>{tramo(x.p) === 'barata' ? 'Barata' : tramo(x.p) === 'cara' ? 'Cara' : 'Intermedia'}</td></tr>
         ))}
       </tbody>
     </table>
   </details>
 </section>
 <style>
-  .luz-dia { margin: 8px 0 36px; }
-  h2 { font-size: 1.6rem; margin: 0 0 14px; }
-  .resumen { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
-  .dato { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 14px 16px; display: flex; flex-direction: column; }
-  .dato.barata { border-color: #9fd2b9; background: var(--green-soft); }
-  .dato.cara { border-color: #ebb3a7; background: var(--red-soft); }
-  .lbl { font-size: .8rem; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; }
-  .dato strong { font-family: var(--serif); font-size: 1.7rem; line-height: 1.2; margin: 4px 0 2px; }
-  .ud { font-size: .88rem; color: var(--muted); }
-  .consejo { margin: 14px 0 6px; }
-  .grafico { margin: 10px 0 0; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 12px; }
+  .luz-dia { margin: 8px 0 44px; }
+  .resumen { display: grid; grid-template-columns: repeat(3, 1fr); margin: 0; border-bottom: 1px solid var(--rule); }
+  .resumen div { padding: 4px 20px 14px 0; }
+  .resumen div + div { padding-left: 20px; border-left: 1px solid var(--rule); }
+  dt { font-size: .875rem; color: var(--muted); }
+  dd { margin: 2px 0 0; font-family: var(--serif); font-weight: 600; font-size: 1.6rem; line-height: 1.2; font-variant-numeric: tabular-nums; }
+  dd span { display: block; font-family: var(--sans); font-weight: 400; font-size: .875rem; color: var(--muted); }
+  .bien { color: var(--good); }
+  .mal { color: var(--bad); }
+  .consejo { margin: 16px 0 10px; max-width: 70ch; }
+  .grafico { margin: 8px 0 0; }
   .grafico svg { width: 100%; height: auto; display: block; }
-  .grafico text { font-size: 12px; fill: var(--muted); font-family: Inter, sans-serif; }
-  .eje { stroke: var(--line); stroke-width: 1; }
-  .media { stroke: var(--text); stroke-width: 1; stroke-dasharray: 4 4; opacity: .55; }
-  rect.barata, .punto.barata, .ley.barata { fill: #1f8f5f; background: #1f8f5f; }
-  rect.media, .punto.media, .ley.media { fill: #e0a23a; background: #e0a23a; }
-  rect.cara, .punto.cara, .ley.cara { fill: #c4513e; background: #c4513e; }
-  figcaption { font-size: .82rem; color: var(--muted); margin-top: 6px; }
-  .ley { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin: 0 4px 0 10px; vertical-align: -1px; }
+  .grafico text { font-size: 12px; fill: var(--muted); font-family: var(--sans); }
+  .eje { stroke: var(--ink); stroke-width: 1; }
+  .media { stroke: var(--ink); stroke-width: 1; stroke-dasharray: 3 4; opacity: .5; }
+  rect.barata, .punto.barata, .ley.barata { fill: var(--good); background: var(--good); }
+  rect.media, .punto.media, .ley.media { fill: #d9b46a; background: #d9b46a; }
+  rect.cara, .punto.cara, .ley.cara { fill: var(--bad); background: var(--bad); }
+  figcaption { font-size: .8125rem; color: var(--muted); margin-top: 6px; }
+  .ley { display: inline-block; width: 10px; height: 10px; margin: 0 5px 0 12px; vertical-align: -1px; }
   .ley:first-child { margin-left: 0; }
-  .tabla { margin-top: 12px; }
-  .tabla summary { cursor: pointer; font-weight: 600; color: var(--green-2); padding: 6px 0; }
-  table { border-collapse: collapse; width: 100%; max-width: 520px; background: var(--surface); margin-top: 8px; }
-  th, td { border: 1px solid var(--line); padding: 6px 10px; text-align: left; font-size: .95rem; }
-  th { background: var(--surface-2); }
-  .punto { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin-right: 6px; }
+  .tabla { margin-top: 14px; }
+  .tabla summary { cursor: pointer; font-weight: 500; color: var(--brand); padding: 6px 0; }
+  table { border-collapse: collapse; width: 100%; max-width: 480px; margin-top: 8px; font-variant-numeric: tabular-nums; }
+  th, td { border-bottom: 1px solid var(--rule); padding: 7px 12px 7px 0; text-align: left; font-size: .9375rem; }
+  th { font-weight: 600; border-bottom-color: var(--ink); }
+  .punto { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 7px; }
   @media (max-width: 640px) {
-    .resumen { grid-template-columns: 1fr; gap: 8px; }
-    .dato { flex-direction: row; flex-wrap: wrap; align-items: baseline; gap: 2px 10px; padding: 10px 14px; }
-    .dato .lbl { width: 100%; }
-    .dato strong { font-size: 1.35rem; margin: 0; }
+    .resumen { grid-template-columns: 1fr; }
+    .resumen div, .resumen div + div { padding: 10px 0; border-left: 0; border-top: 1px solid var(--rule); display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+    dd { font-size: 1.2rem; text-align: right; }
   }
 </style>

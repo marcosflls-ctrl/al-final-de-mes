@@ -18,12 +18,11 @@ const jsonLd = {
     <p class="muted small">Contacto: <a href={`mailto:${SITE.email}`}>{SITE.email}</a></p>
   </header>
   {posts.length > 0 && (<>
-    <h2>Sus últimos artículos</h2>
-    <div class="grid">{posts.map((p) => <PostCard post={p} />)}</div>
+    <h2 class="titulo-bloque">Últimos artículos</h2>
+    <div class="lista-noticias">{posts.map((p) => <PostCard post={p} />)}</div>
   </>)}
 </Base>
 <style>
   .autor { max-width: 720px; margin-bottom: 32px; }
   h1 { font-size: clamp(2rem, 5vw, 2.6rem); margin: 8px 0; }
-  h2 { font-size: 1.5rem; }
 </style>
