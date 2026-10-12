@@ -134,6 +134,9 @@ def boe_items(cfg: dict, kws: list[str]) -> list[dict]:
 
 
 # ---------- 1. feeds ----------
+RESUMEN: list[str] = []
+
+
 def collect_candidates(cfg: dict, state: dict, posts: list[dict]) -> list[dict]:
     import feedparser
 
@@ -153,18 +156,22 @@ def collect_candidates(cfg: dict, state: dict, posts: list[dict]) -> list[dict]:
     try:
         boe = boe_items(cfg, kws)
         print(f"  · BOE: {len(boe)} disposiciones de interés")
+        RESUMEN.append(f"BOE {len(boe)}")
         for it in boe:
             add(it)
     except Exception as e:  # noqa: BLE001
         print(f"  ! BOE: {e}")
+        RESUMEN.append(f"BOE error {type(e).__name__}")
 
     for feed in cfg["feeds"]:
         try:
             entries = feedparser.parse(feed["url"], agent=UA).entries
         except Exception as e:  # noqa: BLE001
             print(f"  ! {feed['name']}: {e}")
+            RESUMEN.append(f"{feed['name']} error")
             continue
         print(f"  · {feed['name']}: {len(entries)} entradas")
+        RESUMEN.append(f"{feed['name']} {len(entries)}")
         for e in entries[:40]:
             link, title = e.get("link", ""), e.get("title", "")
             pub = e.get("published_parsed") or e.get("updated_parsed")
@@ -398,6 +405,10 @@ def main() -> int:
     else:
         candidates = collect_candidates(cfg, state, posts)
     print(f"{len(candidates)} candidatas nuevas")
+    if os.environ.get("GITHUB_ACTIONS"):
+        # resumen visible en la página de la ejecución (anotaciones de GitHub)
+        print(f"::notice title=Fuentes::{' · '.join(RESUMEN) or 'noticia indicada a mano'}")
+        print(f"::notice title=Candidatas ({len(candidates)})::" + " | ".join(f"[{c['source']}] {c['title'][:80]}" for c in candidates[:12]))
     if args.dry_run:
         for c in candidates:
             print(f"  - [{c['source']}] {c['title']}\n    {c['url']}")
