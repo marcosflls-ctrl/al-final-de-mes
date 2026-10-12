@@ -97,6 +97,9 @@ def matches(text: str, kws: list[str]) -> bool:
     return any(re.search(rf"(?<!\w){re.escape(k)}(?!\w)", t) for k in kws)
 
 
+RESUMEN: list[str] = []  # qué ha respondido cada fuente (se muestra en GitHub)
+
+
 # ---------- 1. BOE ----------
 def boe_items(cfg: dict, kws: list[str]) -> list[dict]:
     """Disposiciones del BOE de hoy de los departamentos elegidos que hablan de los temas de la web."""
@@ -105,7 +108,8 @@ def boe_items(cfg: dict, kws: list[str]) -> list[dict]:
     fecha = datetime.now(MADRID).strftime("%Y%m%d")
     r = requests.get(BOE_API.format(fecha=fecha), headers={"Accept": "application/json", "User-Agent": UA}, timeout=30)
     if r.status_code == 404:
-        return []  # domingos y festivos no hay BOE
+        RESUMEN.append("BOE de hoy aún no publicado")
+        return []  # todavía no ha salido (se publica de madrugada) o es domingo
     r.raise_for_status()
     deps = [d.lower() for d in cfg.get("boe", {}).get("departamentos", [])]
     out: list[dict] = []
@@ -134,9 +138,6 @@ def boe_items(cfg: dict, kws: list[str]) -> list[dict]:
 
 
 # ---------- 1. feeds ----------
-RESUMEN: list[str] = []
-
-
 def collect_candidates(cfg: dict, state: dict, posts: list[dict]) -> list[dict]:
     import feedparser
 
