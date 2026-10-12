@@ -17,8 +17,8 @@ const media = horas ? horas.reduce((s, x) => s + x.p, 0) / horas.length : 0;
     <>
       <dl>
         <div><dt>Media del día</dt><dd>{eur(media)} €/kWh</dd></div>
-        <div><dt>Hora más barata</dt><dd class="bien">{min.h}–{fin(min.h)} <span>{eur(min.p)} €</span></dd></div>
-        <div><dt>Hora más cara</dt><dd class="mal">{max.h}–{fin(max.h)} <span>{eur(max.p)} €</span></dd></div>
+        <div><dt>Más barata</dt><dd><b class="bien">{min.h}–{fin(min.h)}</b><span>{eur(min.p)} €/kWh</span></dd></div>
+        <div><dt>Más cara</dt><dd><b class="mal">{max.h}–{fin(max.h)}</b><span>{eur(max.p)} €/kWh</span></dd></div>
       </dl>
       <p class="small"><a href="/luz/">Todas las horas{hayManana ? ' y el precio de mañana' : ''}</a></p>
     </>
@@ -27,10 +27,11 @@ const media = horas ? horas.reduce((s, x) => s + x.p, 0) / horas.length : 0;
 </aside>
 <style>
   dl { margin: 0; }
-  dl div { display: flex; justify-content: space-between; gap: 12px; padding: 9px 0; border-bottom: 1px solid var(--rule); }
-  dt { color: var(--muted); font-size: .9375rem; }
-  dd { margin: 0; font-weight: 600; font-variant-numeric: tabular-nums; text-align: right; }
-  dd span { font-weight: 400; color: var(--muted); margin-left: 6px; }
+  dl div { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; padding: 10px 0; border-bottom: 1px solid var(--rule); }
+  dt { color: var(--muted); font-size: .9375rem; white-space: nowrap; }
+  dd { margin: 0; font-weight: 600; font-variant-numeric: tabular-nums; text-align: right; white-space: nowrap; }
+  dd b { font-weight: 600; }
+  dd span { display: block; font-weight: 400; font-size: .8125rem; color: var(--muted); }
   .bien { color: var(--good); }
   .mal { color: var(--bad); }
   .small { margin: 12px 0 4px; }
