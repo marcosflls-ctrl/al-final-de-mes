@@ -1,0 +1,230 @@
+---
+import { SITE, CATEGORIES } from '../config';
+import '@fontsource/inter/latin-400.css';
+import '@fontsource/inter/latin-600.css';
+import '@fontsource/inter/latin-700.css';
+import '@fontsource/source-serif-4/latin-600.css';
+import '@fontsource/source-serif-4/latin-700.css';
+import Logo from '../components/Logo.astro';
+interface Props {
+  title: string;
+  description: string;
+  image?: string;
+  type?: 'website' | 'article';
+  jsonLd?: Record<string, unknown> | Record<string, unknown>[];
+  noindex?: boolean;
+  published?: Date;
+  modified?: Date;
+  section?: string;
+}
+const { title, description, image, type = 'website', jsonLd, noindex = false, published, modified, section } = Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site).href;
+// La marca solo se añade si cabe: Google corta los títulos a unos 60 caracteres
+const fullTitle = title === SITE.name ? `${SITE.name}: pensiones, paro, Hacienda y luz` : title.length > 44 ? title : `${title} | ${SITE.name}`;
+const ogImage = new URL(image ?? '/og-default.png', Astro.site).href;
+const ogSize = image ? (image.startsWith('/img/') ? [1600, 900] : null) : [1200, 630];
+const year = new Date().getFullYear();
+const path = Astro.url.pathname;
+const social = SITE.social;
+---
+<!doctype html>
+<html lang={SITE.lang}>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{fullTitle}</title>
+  <meta name="description" content={description} />
+  <link rel="canonical" href={canonical} />
+  <meta name="robots" content={noindex ? 'noindex' : 'max-image-preview:large'} />
+  <meta property="og:type" content={type} />
+  <meta property="og:site_name" content={SITE.name} />
+  <meta property="og:locale" content={SITE.locale} />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:url" content={canonical} />
+  <meta property="og:image" content={ogImage} />
+  {ogSize && <meta property="og:image:width" content={String(ogSize[0])} />}
+  {ogSize && <meta property="og:image:height" content={String(ogSize[1])} />}
+  {published && <meta property="article:published_time" content={published.toISOString()} />}
+  {modified && <meta property="article:modified_time" content={modified.toISOString()} />}
+  {section && <meta property="article:section" content={section} />}
+  <meta name="twitter:card" content="summary_large_image" />
+  {social.x && <meta name="twitter:site" content={`@${social.x}`} />}
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="/favicon-48.png" type="image/png" sizes="48x48" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <meta name="theme-color" content="#0d5c45" />
+  <link rel="alternate" type="application/rss+xml" title={SITE.name} href="/rss.xml" />
+  {jsonLd && <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />}
+  {SITE.cfAnalyticsToken && (
+    <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon={`{"token": "${SITE.cfAnalyticsToken}"}`}></script>
+  )}
+  {SITE.adsenseClient && (
+    <script async src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${SITE.adsenseClient}`} crossorigin="anonymous"></script>
+  )}
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a href="/" class="logo" aria-label={`${SITE.name}, inicio`}><Logo /></a>
+      <a class="search-btn" href="/buscar/" aria-label="Buscar">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M15.5 15.5 21 21" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+      </a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="menu" aria-label="Secciones">
+        {Object.entries(CATEGORIES).map(([key, c]) => (
+          <a href={`/${key}/`} aria-current={path.startsWith(`/${key}/`) ? 'page' : undefined}>{c.label}</a>
+        ))}
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <slot />
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div>
+        <Logo />
+        <p class="muted">{SITE.tagline}.</p>
+        <p class="muted small aviso">La información de esta web es general y no sustituye al asesoramiento profesional. Cada artículo enlaza su fuente oficial: compruébala antes de tomar decisiones.</p>
+      </div>
+      <nav aria-label="Información" class="footer-links">
+        <a href="/quienes-somos/">Quiénes somos</a>
+        <a href="/politica-editorial/">Política editorial</a>
+        <a href="/correcciones/">Correcciones</a>
+        <a href="/contacto/">Contacto</a>
+        <a href="/aviso-legal/">Aviso legal</a>
+        <a href="/privacidad/">Privacidad</a>
+        <a href="/cookies/">Cookies</a>
+        {SITE.adsenseClient && <a href="#" id="gestionar-cookies">Gestionar cookies</a>}
+        {social.whatsapp && <a href={social.whatsapp} rel="me noopener" target="_blank">WhatsApp</a>}
+        {social.telegram && <a href={`https://t.me/${social.telegram}`} rel="me noopener" target="_blank">Telegram</a>}
+        {social.facebook && <a href={`https://www.facebook.com/${social.facebook}`} rel="me noopener" target="_blank">Facebook</a>}
+        {social.x && <a href={`https://x.com/${social.x}`} rel="me noopener" target="_blank">X</a>}
+        <a href="/rss.xml">RSS</a>
+      </nav>
+    </div>
+    <p class="wrap muted small copy">© {year} {SITE.name}</p>
+  </footer>
+  <script is:inline>
+    // Reabre el aviso de consentimiento de Google (Privacidad y mensajes de AdSense)
+    (function () {
+      var a = document.getElementById('gestionar-cookies');
+      if (!a) return;
+      a.addEventListener('click', function (e) {
+        e.preventDefault();
+        window.googlefc = window.googlefc || {};
+        window.googlefc.callbackQueue = window.googlefc.callbackQueue || [];
+        window.googlefc.callbackQueue.push(function () { window.googlefc.showRevocationMessage(); });
+      });
+    })();
+    (function () {
+      var btn = document.querySelector('.menu-btn'), nav = document.getElementById('menu');
+      if (btn && nav) btn.addEventListener('click', function () {
+        var open = btn.getAttribute('aria-expanded') !== 'true';
+        btn.setAttribute('aria-expanded', String(open));
+        btn.setAttribute('aria-label', open ? 'Cerrar menú' : 'Abrir menú');
+        nav.classList.toggle('open', open);
+      });
+    })();
+    (function () {
+      var now = Date.now();
+      document.querySelectorAll('time[data-rel]').forEach(function (t) {
+        var m = Math.round((now - new Date(t.getAttribute('datetime')).getTime()) / 6e4);
+        if (m < 0 || m >= 1440) return;
+        t.title = t.textContent;
+        t.textContent = m < 1 ? 'hace un momento' : m < 60 ? 'hace ' + m + ' min' : 'hace ' + Math.round(m / 60) + (Math.round(m / 60) === 1 ? ' hora' : ' horas');
+      });
+    })();
+  </script>
+</body>
+</html>
+
+<style is:global>
+  :root {
+    --bg: #faf8f4;
+    --surface: #ffffff;
+    --surface-2: #f1ede5;
+    --text: #18222e;
+    --muted: #5a6470;
+    --line: #e3ddd1;
+    --green: #0d5c45;
+    --green-2: #127a5c;
+    --green-soft: #e3f1ea;
+    --amber: #c9771a;
+    --amber-soft: #fbefdc;
+    --red: #b8402f;
+    --red-soft: #f8e4df;
+    --radius: 12px;
+    --serif: 'Source Serif 4', Georgia, serif;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.65 Inter, system-ui, sans-serif; }
+  a { color: var(--green-2); }
+  img { max-width: 100%; height: auto; }
+  h1, h2, h3 { font-family: var(--serif); font-weight: 700; line-height: 1.2; letter-spacing: -.005em; }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 0 16px; }
+  .muted { color: var(--muted); }
+  .small { font-size: .85rem; }
+
+  .site-header { position: sticky; top: 0; z-index: 10; background: rgba(250,248,244,.94); backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }
+  .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 64px; position: relative; }
+  .logo { text-decoration: none; color: var(--text); display: flex; }
+  .site-header nav { display: flex; gap: 2px; }
+  .site-header nav a { color: var(--muted); text-decoration: none; font-weight: 600; font-size: .95rem; padding: 8px 12px; border-radius: 8px; white-space: nowrap; }
+  .site-header nav a:hover, .site-header nav a[aria-current] { color: var(--green); background: var(--green-soft); }
+  .search-btn { order: 3; display: grid; place-items: center; width: 40px; height: 40px; border-radius: 10px; color: var(--muted); }
+  .search-btn:hover { color: var(--green); background: var(--green-soft); }
+  .menu-btn { display: none; width: 44px; height: 44px; padding: 12px 10px; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); cursor: pointer; flex-direction: column; justify-content: space-between; }
+  .menu-btn span { display: block; height: 2px; border-radius: 2px; background: var(--text); transition: transform .2s, opacity .2s; }
+  .menu-btn[aria-expanded="true"] span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+  .menu-btn[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
+  .menu-btn[aria-expanded="true"] span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+  @media (max-width: 900px) {
+    .menu-btn { display: flex; }
+    .search-btn { order: 0; margin-left: auto; border: 1px solid var(--line); background: var(--surface); width: 44px; height: 44px; }
+    .header-inner { gap: 10px; }
+    .site-header nav { display: none; position: absolute; top: 100%; left: 0; right: 0; padding: 12px 16px 16px; background: var(--bg); border-bottom: 1px solid var(--line); grid-template-columns: 1fr 1fr; gap: 8px; box-shadow: 0 12px 24px #18222e14; }
+    .site-header nav.open { display: grid; }
+    .site-header nav a:last-child:nth-child(odd) { grid-column: 1 / -1; }
+    .site-header nav a { font-size: 1rem; padding: 12px 14px; background: var(--surface); border: 1px solid var(--line); text-align: center; }
+  }
+
+  main { min-height: 70vh; padding-top: 24px; padding-bottom: 48px; }
+
+  .site-footer { border-top: 1px solid var(--line); background: var(--surface-2); padding: 32px 0 16px; margin-top: 48px; }
+  .footer-inner { display: grid; gap: 24px; grid-template-columns: 2fr 1fr; }
+  .footer-inner p { max-width: 560px; }
+  .aviso { border-left: 3px solid var(--amber); padding-left: 10px; }
+  .footer-links { display: flex; flex-direction: column; gap: 6px; }
+  .footer-links a { color: var(--muted); text-decoration: none; }
+  .footer-links a:hover { color: var(--green); }
+  .copy { margin: 24px auto 0; padding-top: 16px; border-top: 1px solid var(--line); }
+  @media (max-width: 720px) {
+    .footer-inner { grid-template-columns: 1fr; gap: 12px; }
+    .footer-links { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 16px; }
+  }
+  @media (max-width: 640px) { .grid { gap: 12px; } main { padding-top: 16px; } }
+
+  .tag { display: inline-block; font-size: .72rem; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; padding: 3px 9px; border-radius: 6px; background: var(--green-soft); color: var(--green); text-decoration: none; }
+  .tag.pendiente { background: var(--amber-soft); color: #8a4f0c; }
+  .tag.guia { background: var(--surface-2); color: var(--text); }
+  .grid { display: grid; gap: 20px; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); }
+  .prose { max-width: 720px; }
+  .prose h2 { font-size: 1.6rem; margin-top: 1.8em; }
+  .prose h3 { font-size: 1.25rem; margin-top: 1.5em; }
+  .prose blockquote { border-left: 3px solid var(--green-2); margin: 1.5em 0; padding: .2em 1em; color: var(--muted); }
+  .prose table { border-collapse: collapse; width: 100%; display: block; overflow-x: auto; background: var(--surface); }
+  .prose th, .prose td { border: 1px solid var(--line); padding: 8px 10px; text-align: left; }
+  .prose th { background: var(--surface-2); }
+  @media (max-width: 640px) { .prose table { font-size: .88rem; } .prose th, .prose td { padding: 6px 7px; } }
+  .prose code { background: var(--surface-2); padding: 2px 6px; border-radius: 6px; }
+  .breadcrumbs { font-size: .85rem; color: var(--muted); }
+  .breadcrumbs a { color: var(--muted); }
+  .box { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 16px 18px; }
+</style>

@@ -1,0 +1,84 @@
+---
+import Base from '../../layouts/Base.astro';
+import PostCard from '../../components/PostCard.astro';
+import AdSlot from '../../components/AdSlot.astro';
+import LuzDia from '../../components/LuzDia.astro';
+import { CATEGORIES, SITE, type CategoryKey } from '../../config';
+import { getPublishedPosts } from '../../lib/posts';
+import { datosLuz, hoyManana, fechaLarga } from '../../lib/luz';
+
+export function getStaticPaths() {
+  return Object.keys(CATEGORIES).map((category) => ({ params: { category } }));
+}
+const category = Astro.params.category as CategoryKey;
+const meta = CATEGORIES[category];
+const posts = (await getPublishedPosts()).filter((p) => p.data.category === category);
+const guias = posts.filter((p) => p.data.guia).sort((a, b) => a.data.orden - b.data.orden);
+const noticias = posts.filter((p) => !p.data.guia);
+
+// Sección de la luz: precio de hoy y de mañana arriba del todo
+const esLuz = category === 'luz';
+const luz = esLuz ? datosLuz() : null;
+const [hoy, manana] = hoyManana();
+const preciosHoy = luz?.dias[hoy];
+const preciosManana = luz?.dias[manana];
+const titulo = esLuz ? 'Precio de la luz hoy y mañana por horas' : meta.titulo;
+const descripcion = esLuz && preciosHoy
+  ? `Precio de la luz hoy, ${fechaLarga(hoy)}, hora a hora (PVPC). Las horas más baratas y más caras${preciosManana ? ' y el precio de mañana' : ''}, con datos de Red Eléctrica.`
+  : meta.desc;
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Inicio', item: SITE.url + '/' },
+    { '@type': 'ListItem', position: 2, name: meta.label, item: `${SITE.url}/${category}/` },
+  ],
+};
+---
+<Base title={titulo} description={descripcion.slice(0, 165)} jsonLd={jsonLd} image={`/img/portadas/${category}.webp`}>
+  <nav class="breadcrumbs"><a href="/">Inicio</a> › {meta.label}</nav>
+  <h1>{titulo}</h1>
+  <p class="muted intro">{meta.desc}</p>
+
+  {esLuz && (
+    preciosHoy ? (
+      <>
+        <LuzDia id="hoy" titulo={`Hoy, ${fechaLarga(hoy)}`} horas={preciosHoy} />
+        {preciosManana
+          ? <LuzDia id="manana" titulo={`Mañana, ${fechaLarga(manana)}`} horas={preciosManana} />
+          : <p class="box aviso-manana">El precio de mañana se publica cada tarde, hacia las 20:15. Vuelve a partir de esa hora.</p>}
+        <p class="muted small nota">Precio de la tarifa regulada (PVPC 2.0TD) en euros por kilovatio hora, sin impuestos. Incluye la energía y los peajes; no incluye la potencia contratada, el alquiler del contador, el impuesto eléctrico ni el IVA. Si tienes una tarifa de mercado libre con precio fijo, estos precios no te afectan. Fuente: <a href="https://www.ree.es/es/datos/mercados" rel="noopener" target="_blank">Red Eléctrica</a>.</p>
+      </>
+    ) : <p class="box">Estamos actualizando los precios de hoy. Vuelve en unos minutos.</p>
+  )}
+
+  {guias.length > 0 && (
+    <section class="bloque">
+      <h2>Guías de {meta.label.toLowerCase()}</h2>
+      <div class="grid">{guias.map((p) => <PostCard post={p} />)}</div>
+    </section>
+  )}
+
+  <section class="bloque">
+    {(esLuz || guias.length > 0) && <h2>Últimas noticias</h2>}
+    {noticias.length ? (
+      <div class="grid">
+        {noticias.map((p, i) => (
+          <>
+            <PostCard post={p} />
+            {i === 5 && <AdSlot />}
+          </>
+        ))}
+      </div>
+    ) : <p class="muted">Pronto publicaremos las primeras noticias de esta sección.</p>}
+  </section>
+</Base>
+<style>
+  h1 { font-size: clamp(2rem, 5.5vw, 2.9rem); margin: 8px 0; }
+  .intro { max-width: 700px; margin-bottom: 24px; }
+  .bloque { margin-top: 36px; }
+  .bloque h2 { font-size: 1.6rem; }
+  .aviso-manana { margin: 0 0 20px; }
+  .nota { max-width: 760px; }
+</style>

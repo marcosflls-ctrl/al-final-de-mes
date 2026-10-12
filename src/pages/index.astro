@@ -1,0 +1,116 @@
+---
+import Base from '../layouts/Base.astro';
+import PostCard from '../components/PostCard.astro';
+import AdSlot from '../components/AdSlot.astro';
+import Siguenos from '../components/Siguenos.astro';
+import { SITE, CATEGORIES } from '../config';
+import { getPublishedPosts } from '../lib/posts';
+import { datosLuz, hoyManana } from '../lib/luz';
+
+const posts = await getPublishedPosts();
+const noticias = posts.filter((p) => !p.data.guia);
+const guias = posts.filter((p) => p.data.guia).sort((a, b) => a.data.orden - b.data.orden);
+const [first, ...rest] = noticias;
+const latest = rest.slice(0, Math.min(6, Math.max(3, Math.floor(rest.length / 3) * 3)));
+const shown = new Set([...(first ? [first] : []), ...latest].map((p) => p.id));
+
+// Resumen de la luz de hoy
+const luz = datosLuz();
+const [hoy] = hoyManana();
+const horas = luz?.dias[hoy];
+const eur = (p: number) => p.toLocaleString('es-ES', { minimumFractionDigits: 3, maximumFractionDigits: 3 });
+const fin = (h: string) => `${String((parseInt(h, 10) + 1) % 24).padStart(2, '0')}:00`;
+const min = horas ? horas.reduce((a, b) => (b.p < a.p ? b : a)) : null;
+const media = horas ? horas.reduce((s, x) => s + x.p, 0) / horas.length : 0;
+
+const jsonLd = [
+  {
+    '@context': 'https://schema.org', '@type': 'WebSite', name: SITE.name, url: SITE.url, inLanguage: 'es', description: SITE.tagline,
+    potentialAction: { '@type': 'SearchAction', target: `${SITE.url}/buscar/?q={search_term_string}`, 'query-input': 'required name=search_term_string' },
+  },
+  {
+    '@context': 'https://schema.org', '@type': 'Organization', name: SITE.name, url: SITE.url, logo: `${SITE.url}/icon-512.png`, email: SITE.email,
+    sameAs: [SITE.social.telegram && `https://t.me/${SITE.social.telegram}`, SITE.social.facebook && `https://www.facebook.com/${SITE.social.facebook}`,
+      SITE.social.x && `https://x.com/${SITE.social.x}`, SITE.social.whatsapp].filter(Boolean),
+  },
+];
+---
+<Base title={SITE.name} description="Noticias claras sobre pensiones, paro, ayudas, Hacienda y el precio de la luz, siempre con la fuente oficial. Lo que afecta a tu bolsillo, sin rodeos." jsonLd={jsonLd}>
+  <h1 class="sr-only">{SITE.name}: pensiones, paro, Hacienda y precio de la luz</h1>
+  <section class="portada">
+    <div class="claim">
+      <p class="kicker">Economía de casa, sin rodeos</p>
+      <p class="titular">Lo que cambia en tu nómina, tu pensión y tus facturas, explicado con el dato oficial.</p>
+      <nav class="atajos" aria-label="Secciones">
+        {Object.entries(CATEGORIES).map(([key, c]) => <a href={`/${key}/`}>{c.label}</a>)}
+      </nav>
+    </div>
+    <a class="luz-hoy" href="/luz/">
+      <span class="lbl">Precio de la luz hoy</span>
+      {horas && min ? (
+        <>
+          <strong>{eur(media)} <small>€/kWh de media</small></strong>
+          <span>Hora más barata: <b>{min.h} – {fin(min.h)}</b></span>
+          <span class="ver">Ver todas las horas y mañana →</span>
+        </>
+      ) : <span class="ver">Ver el precio por horas →</span>}
+    </a>
+  </section>
+
+  {first && (
+    <section aria-labelledby="h-latest">
+      <h2 id="h-latest" class="section-title">Lo último</h2>
+      <div class="grid">
+        <PostCard post={first} featured />
+        {latest.map((p) => <PostCard post={p} />)}
+      </div>
+    </section>
+  )}
+
+  {guias.length > 0 && (
+    <section class="bloque" aria-labelledby="h-guias">
+      <h2 id="h-guias" class="section-title">Guías que siempre están al día</h2>
+      <div class="grid">{guias.slice(0, 6).map((p) => <PostCard post={p} />)}</div>
+    </section>
+  )}
+
+  <AdSlot />
+
+  {Object.entries(CATEGORIES).map(([key, c]) => {
+    const list = noticias.filter((p) => p.data.category === key && !shown.has(p.id)).slice(0, 3);
+    return list.length > 0 && (
+      <section class="bloque">
+        <div class="cat-head">
+          <h2 class="section-title">{c.label}</h2>
+          <a href={`/${key}/`}>Ver todo →</a>
+        </div>
+        <div class="grid">{list.map((p) => <PostCard post={p} />)}</div>
+      </section>
+    );
+  })}
+
+  {posts.length === 0 && <p class="muted">Muy pronto, las primeras noticias.</p>}
+  <Siguenos />
+</Base>
+<style>
+  .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+  .portada { display: grid; grid-template-columns: 1.6fr 1fr; gap: 20px; margin: 4px 0 40px; }
+  .claim { background: var(--green); color: #fff; border-radius: 16px; padding: 28px 30px; }
+  .kicker { margin: 0; font-size: .82rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: #f2c47a; }
+  .titular { font-family: var(--serif); font-weight: 700; font-size: clamp(1.6rem, 3.6vw, 2.3rem); line-height: 1.2; margin: 8px 0 20px; }
+  .atajos { display: flex; flex-wrap: wrap; gap: 8px; }
+  .atajos a { color: #fff; text-decoration: none; font-weight: 600; font-size: .95rem; padding: 8px 14px; border-radius: 9px; background: #ffffff1f; border: 1px solid #ffffff33; }
+  .atajos a:hover { background: #ffffff33; }
+  .luz-hoy { display: flex; flex-direction: column; gap: 6px; justify-content: center; text-decoration: none; color: var(--text); background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 22px 24px; }
+  .luz-hoy:hover { border-color: var(--green-2); }
+  .luz-hoy .lbl { font-size: .8rem; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
+  .luz-hoy strong { font-family: var(--serif); font-size: 2rem; line-height: 1.15; }
+  .luz-hoy small { font-family: Inter, sans-serif; font-size: .9rem; font-weight: 400; color: var(--muted); }
+  .luz-hoy b { color: var(--green); }
+  .luz-hoy .ver { color: var(--green-2); font-weight: 600; margin-top: 4px; }
+  @media (max-width: 760px) { .portada { grid-template-columns: 1fr; gap: 12px; } .claim { padding: 22px 20px; } }
+  .section-title { font-size: 1.7rem; margin: 0 0 16px; }
+  .bloque { margin-top: 44px; }
+  .cat-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+  .cat-head a { font-weight: 600; text-decoration: none; }
+</style>

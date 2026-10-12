@@ -1,0 +1,25 @@
+---
+import { SITE } from '../config';
+const s = SITE.social;
+---
+{(s.whatsapp || s.telegram || s.facebook) && (
+  <aside class="siguenos" data-pagefind-ignore>
+    <p class="t">Que no te pille el final de mes</p>
+    <p class="d">Te avisamos gratis de cada subida, cada fecha de cobro y cada plazo de Hacienda.</p>
+    <div class="cta">
+      {s.whatsapp && <a class="wa" href={s.whatsapp} target="_blank" rel="noopener">Canal de WhatsApp</a>}
+      {s.telegram && <a class="tg" href={`https://t.me/${s.telegram}`} target="_blank" rel="noopener">Canal de Telegram</a>}
+      {s.facebook && <a class="otro" href={`https://www.facebook.com/${s.facebook}`} target="_blank" rel="noopener">Facebook</a>}
+    </div>
+  </aside>
+)}
+<style>
+  .siguenos { margin: 32px 0; padding: 20px; border-radius: var(--radius); background: var(--green-soft); border: 1px solid #c7e3d5; }
+  .t { font-family: var(--serif); font-weight: 700; font-size: 1.35rem; margin: 0 0 4px; }
+  .d { margin: 0 0 14px; color: var(--muted); }
+  .cta { display: flex; flex-wrap: wrap; gap: 10px; }
+  .cta a { font-weight: 700; text-decoration: none; padding: 10px 16px; border-radius: 10px; }
+  .wa { background: #1f8f4e; color: #fff; }
+  .tg { background: #2481b8; color: #fff; }
+  .otro { background: var(--surface); color: var(--text); border: 1px solid var(--line); }
+</style>

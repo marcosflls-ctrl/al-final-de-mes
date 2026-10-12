@@ -1,0 +1,48 @@
+name: Precio de la luz
+
+# Descarga el precio de la luz de Red Eléctrica y, si ha cambiado, lo publica directamente
+# (es un dato oficial, sin redacción: no necesita revisión).
+# Horas en UTC: se ejecuta tras la medianoche y a partir de las 20:30 de España, en horario de verano y de invierno.
+on:
+  schedule:
+    - cron: "7 22,23 * * *"        # 00:07 / 01:07 de España: cambia el "hoy"
+    - cron: "37 18,19,20 * * *"    # 20:37, 21:37, 22:37 (o una hora antes en invierno): precios de mañana
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: luz
+  cancel-in-progress: false
+
+jobs:
+  luz:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -q requests
+      - run: python scripts/luz.py
+      - name: Publicar si hay cambios
+        run: |
+          git config user.name "luz-bot"
+          git config user.email "luz-bot@users.noreply.github.com"
+          git add src/data/luz.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Luz: precios actualizados"
+            for i in 1 2 3; do git pull --rebase origin main && git push && break; sleep 5; done
+          fi
+      - name: Avisar del fallo por Telegram
+        if: failure()
+        env:
+          TG_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TG_CHAT: ${{ secrets.TELEGRAM_AVISOS_CHAT_ID }}
+          URL_EJECUCION: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          [ -z "$TG_TOKEN" ] || [ -z "$TG_CHAT" ] && exit 0
+          curl -s -o /dev/null -X POST "https://api.telegram.org/bot${TG_TOKEN}/sendMessage" \
+            --data-urlencode "chat_id=${TG_CHAT}" \
+            --data-urlencode "text=❌ Ha fallado el precio de la luz de Al Final de Mes: ${URL_EJECUCION}"

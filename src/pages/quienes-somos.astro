@@ -1,0 +1,19 @@
+---
+import Page from '../layouts/Page.astro';
+import { SITE } from '../config';
+---
+<Page title="Quiénes somos" description={`Qué es ${SITE.name}, quién lo hace y cómo trabajamos.`}>
+  <p><strong>{SITE.name}</strong> explica las noticias que afectan a la economía de casa en España: pensiones, paro y ayudas, Hacienda y el precio de la luz. Sin titulares engañosos y siempre con el dato oficial.</p>
+  <h2>Quién lo hace</h2>
+  <p>La web la dirige y firma <a href={`/autor/${SITE.author.slug}/`}>{SITE.author.name}</a>. {SITE.author.bio}</p>
+  <h2>Cómo trabajamos</h2>
+  <ul>
+    <li><strong>Fuentes oficiales primero.</strong> Cada artículo se basa en el BOE, la Seguridad Social, el SEPE, la Agencia Tributaria, el INE o Red Eléctrica, y enlaza la fuente.</li>
+    <li><strong>La respuesta, arriba.</strong> Si el titular plantea una pregunta, la respondemos en las dos primeras líneas.</li>
+    <li><strong>Tecnología con revisión humana.</strong> Usamos herramientas automáticas e inteligencia artificial para detectar novedades y preparar borradores, pero cada artículo lo revisa una persona antes de publicarse. El precio de la luz se publica automáticamente porque es un dato oficial sin redacción.</li>
+    <li><strong>Corregimos a la vista.</strong> Si nos equivocamos, lo arreglamos y lo indicamos en el artículo y en la página de <a href="/correcciones/">correcciones</a>.</li>
+  </ul>
+  <p>Más detalles en nuestra <a href="/politica-editorial/">política editorial</a>.</p>
+  <h2>Independencia</h2>
+  <p>No tenemos relación con ningún partido, administración, banco ni comercializadora. La web se financia con publicidad, que nunca decide lo que publicamos.</p>
+</Page>
