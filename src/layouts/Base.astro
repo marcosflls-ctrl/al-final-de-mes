@@ -191,6 +191,7 @@ const hoy = new Date().toLocaleDateString('es-ES', { weekday: 'long', day: 'nume
   @media (max-width: 760px) {
     .fecha { display: none; }
     .search-btn { margin-left: auto; }
+    main.wrap { padding-top: 20px; }
     .menu-btn { display: block; }
     .secciones { display: none; }
     .secciones.open { display: block; }
@@ -200,7 +201,7 @@ const hoy = new Date().toLocaleDateString('es-ES', { weekday: 'long', day: 'nume
     .secciones a[aria-current] { color: var(--brand); border-bottom-color: var(--rule); }
   }
 
-  main { min-height: 70vh; padding-top: 28px; padding-bottom: 56px; }
+  main.wrap { min-height: 70vh; padding-top: 28px; padding-bottom: 56px; }
 
   /* Pie */
   .site-footer { border-top: 1px solid var(--ink); background: var(--surface); padding: 36px 0 18px; margin-top: 48px; }
