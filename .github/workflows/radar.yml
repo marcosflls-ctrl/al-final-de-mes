@@ -27,15 +27,15 @@ concurrency:
 jobs:
   radar:
     runs-on: ubuntu-latest
-    # Conexión con Claude: o bien el secreto ANTHROPIC_API_KEY, o bien la federación de identidades
-    # (variables del repositorio ANTHROPIC_FEDERATION_RULE_ID, ANTHROPIC_ORGANIZATION_ID,
-    # ANTHROPIC_SERVICE_ACCOUNT_ID y ANTHROPIC_WORKSPACE_ID).
+    # Conexión con Claude por federación de identidades (sin claves), en el espacio de trabajo
+    # «Al Final de Mes» de la consola de Claude. No son secretos: sin el token que firma GitHub
+    # para ESTE repositorio y la rama main no sirven de nada.
     env:
-      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-      ANTHROPIC_FEDERATION_RULE_ID: ${{ vars.ANTHROPIC_FEDERATION_RULE_ID }}
-      ANTHROPIC_ORGANIZATION_ID: ${{ vars.ANTHROPIC_ORGANIZATION_ID }}
-      ANTHROPIC_SERVICE_ACCOUNT_ID: ${{ vars.ANTHROPIC_SERVICE_ACCOUNT_ID }}
-      ANTHROPIC_WORKSPACE_ID: ${{ vars.ANTHROPIC_WORKSPACE_ID }}
+      ANTHROPIC_FEDERATION_RULE_ID: fdrl_01UN4Z9TT7kpM9XRVYuV3wL3
+      ANTHROPIC_ORGANIZATION_ID: fddb11bd-122a-4959-8c54-567a0a116498
+      ANTHROPIC_SERVICE_ACCOUNT_ID: svac_01WW1gQZxBey3g3FTShr7xi2
+      ANTHROPIC_WORKSPACE_ID: wrkspc_01EqtEMGkqgJAqYH91DQi5mX
+      ANTHROPIC_IDENTITY_TOKEN_FILE: /tmp/gha-jwt
     steps:
       - uses: actions/checkout@v4
 
@@ -46,15 +46,13 @@ jobs:
       - run: pip install -r scripts/requirements.txt
 
       - name: Pedir identidad a GitHub
-        if: vars.ANTHROPIC_FEDERATION_RULE_ID != '' && env.ANTHROPIC_API_KEY == ''
         uses: actions/github-script@v8
         with:
           script: |
             const fs = require('fs');
             const token = await core.getIDToken('https://api.anthropic.com');
             core.setSecret(token);
-            fs.writeFileSync('/tmp/gha-jwt', token);
-            core.exportVariable('ANTHROPIC_IDENTITY_TOKEN_FILE', '/tmp/gha-jwt');
+            fs.writeFileSync(process.env.ANTHROPIC_IDENTITY_TOKEN_FILE, token);
 
       - name: Buscar noticias y redactar
         id: radar

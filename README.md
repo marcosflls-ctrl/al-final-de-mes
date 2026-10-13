@@ -52,11 +52,16 @@ correcciones:                       # opcional: se muestran en el artículo y en
 Texto en Markdown con subtítulos ## ...
 ```
 
+## Conexión con Claude
+
+Sin claves: federación de identidades. En la consola de Claude están el espacio de trabajo **Al Final de Mes**
+(con su propio límite de gasto), la cuenta de servicio `robot-al-final-de-mes` y la regla `robot-al-final-de-mes`,
+que solo acepta este repositorio y la rama `main`. Los identificadores están en `.github/workflows/radar.yml`.
+
 ## Secretos y variables de GitHub (Settings → Secrets and variables → Actions)
 
 | Nombre | Tipo | Para qué |
 |---|---|---|
-| `ANTHROPIC_API_KEY` | Secreto | Conexión del radar con Claude (o, en su lugar, las 4 variables `ANTHROPIC_*` de la federación) |
 | `TELEGRAM_BOT_TOKEN` | Secreto | El mismo bot de Zona Leonida |
 | `TELEGRAM_AVISOS_CHAT_ID` | Secreto | Tu chat privado: avisos de borradores y fallos |
 | `TELEGRAM_CHAT` | Variable | El canal público, por ejemplo `@alfinaldemes` |
