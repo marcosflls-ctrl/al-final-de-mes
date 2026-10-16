@@ -1,0 +1,137 @@
+          RETENCIONES E INGRESOS A CUENTA DEL IRPF EN EL EJERCICIO 2026 (desde 1 de Enero a 9 de septiembre)
+
+                                                                                                                           Tipo        MOD.
+                                                                                                                        aplicable    RESUMEN     CLAVE/
+  Clase de renta                                              Procedencia                                              2026 (hasta    ANUAL-    SUBCLAVE
+                                                                                                                        9 septbre)     2025
+                   (*) Relaciones laborales y estatutarias en general                                                                  190         A
+                   (*) Pensiones y haberes pasivos del sistema público (S. Social y Clases Pasivas)                                    190        B.01
+                                                                                                                        Variable
+                   Pensionistas con dos o más pagadores: procedimiento especial del art. 89.A RIRPF                       según        190        B.02
+                   (*) Prestaciones de Mutualidades generales obligatorias de funcionarios, colegios de Huérfanos      procdmto.
+                                                                                                                                       190        B.03
+                   y similares                                                                                           general
+                   (*) Pensiones de sistemas privados de previsión social                                              (algoritmo)     190        B.04
+                   (*) Prestaciones y subsidios por desempleo                                                                          190     C.01 a C.09
+                   (*) Consejeros y administradores (de entidades cuyo importe neto cifra negocios del último
+
+                   periodo impositivo finalizado con anterioridad al pago de rendimientos haya sido >100.000           35 por 100      190     E.01 E.04
+                   euros) (art.101.2 LIRPF y 80.1.3ºRIRPF)
+                   (*) Consejeros y administradores (de entidades cuyo importe neto cifra negocios del último
+
+                   periodo impositivo finalizado con anterioridad al pago de rendimientos haya sido <100.000           19 por 100      190     E.02 E.03
+Trabajo            euros) (art.101.2 LIRPF y 80.1.3ºRIRPF)
+                   (*) Premios literarios, artísticos o científicos no exentos de IRPF, cuando tengan la
+                                                                                                                       15 por 100      190        F.01
+                   consideración de rendimientos del trabajo
+                   (*) Cursos, conferencias, coloquios, seminarios y similares (art. 80.1.4º RIRPF y 101.3 LIRPF).     15 por 100      190        F.02
+                   (*) Elaboración de obras literarias, artísticas o científicas siempre que se ceda el derecho a su
+
+                   explotación (art. 80.1.4º RIRPF y 101.3 LIRPF):                                                     15 por 100                 F.03
+                          Con carácter general …………………………………………………………………………….
+                                                                                                                                       190
+                          Cuando el volumen de tales rendimientos del ejercicio anterior sea inferior a 15.000 € y
+                             represente más del 75% de la suma de los R.I. de AA.EE. y del trabajo obtenidos por       7 por 100                  F.04
+                             el contribuyente en dicho ejercicio ……………………………………………………………
+                   (*) Atrasos (art. 101.1 LIRPF)                                                                      15 por 100      190
+                   Régimen fiscal especial trabajadores desplazados a territorio español (art. 93.2.f LIRPF):
+                   Hasta 600.000 euros……………………………………………………………………………………....                                             24 por 100      296       20.07
+                   Desde 600.000,01 euros en adelante (retribuciones satisfechas por un mismo pagador) ……....          47 por 100
+
+                   (*) Con carácter general (art. 101.5.a) LIRPF).                                                     15 por 100      190        G.01
+
+
+
+Actividades        (*) Determinadas actividades profesionales (art. 101.5.a) LIRPF y 95.1 RIRPF):
+
+profesionales           recaudadores municipales,
+                                                                                                                       7 por 100       190        G.02
+                        mediadores de seguros, que utilicen servicios de auxiliares externos,
+                        Delegados comerciales de la SELAE,
+                                                                                                                                Tipo        MOD.
+                                                                                                                             aplicable    RESUMEN      CLAVE/
+  Clase de renta                                                Procedencia                                                 2026 (hasta    ANUAL-     SUBCLAVE
+                                                                                                                             9 septbre)     2025
+                            Desde 26 de enero de 2023, los contribuyentes:
+                              o que desarrollen actividades incluidas en los epígrafes 851, 852, 853, 861, 862,
+                                   864 y 869 de la Sec. 2ª del IAE.
+                              o que desarrollen actividades incluidas en las agrupaciones 01, 02, 03 y 05 de la
+                                   Sec. 3ª del IAE,
+Actividades                   o O cuando la contraprestación de dicha actividad derive una prestación de
+profesionales                      servicios que, si se realizase por cuenta ajena, quedaría incluida en la relación
+                                   laboral especial de las personas artistas que desarrollan su actividad en las artes      7 por 100       190         G.04
+                                   escénicas, audiovisuales y musicales, así como de las personas que realizan
+                                   actividades técnicas o auxiliares necesarias para el desarrollo de dicha actividad
+                                   Siempre que, en cualquiera de los supuestos previstos anteriormente, el
+                                   volumen de Rendimientos Íntegros de tales actividades en el ejercicio anterior:
+                                     sea inferior a 15.000 euros, y además
+                                     Represente más del 75% de la suma de los Rendimientos Íntegros de AA.EE.
+                                         y del trabajo obtenidos por el contribuyente en dicho ejercicio
+                     (*) Profesionales de nuevo inicio (en el año de inicio y en los dos siguientes) (art. 101.5.a) LIRPF
+                                                                                                                            7 por 100                   G.03
+                     y 95.1 RIRPF).
+                                                                                                                                            190
+                     Rendimientos derivados de la cesión del derecho a la explotación de la imagen, cuando éstos
+                                                                                                                            24 por 100                  G.08
+                     tengan para su perceptor la calificación de rendimientos derivados de su actividad profesional.
+                     Actividades agrícolas y ganaderas en general (art. 95.4 RIRPF)                                         2 por 100                   H.01
+                                                                                                                                            190
+                     Actividades de engorde de porcino y avicultura (art. 95.4 RIRPF)                                       1 por 100                   H.02
+Otras actividades    Actividades forestales (art. 95.5 RIRPF)                                                               2 por 100                   H.03
+                                                                                                                                            190
+económicas           Determinadas actividades empresariales en Estimación Objetiva (art. 95.6 RIRPF)                        1 por 100                   H.04
+                     Rendimientos del art. 75.2.b): cesión derecho de imagen (art. 101.1 RIRPF)                             24 por 100                   I.01
+                                                                                                                                            190
+                     Rendimientos del art. 75.2.b): resto de conceptos (art. 101.2 RIRPF)                                   19 por 100                   I.03
+Imputación Rentas
+por cesión           (art. 92.8 LIRPF, y art. 107 RIRPF)                                                                    19 por 100      190           J
+derechos imagen
+                     Premios de juegos, concursos, rifas… sujetos a retención, distintos de los sujetos a GELA
+                                                                                                                            19 por 100                K.01, K.03
+                     (101.7 LIRPF)
+Ganancias            Premios de juegos, concursos, rifas… NO sujetos a retención, distintos de los sujetos a GELA
+                                                                                                                            0 por 100       190       K.04, K.05
+patrimoniales        (101.7 LIRPF)
+                     Aprovechamientos forestales en montes públicos 101.6 LIRPF y 99.2 RIRPF)                               19 por 100                  K.02
+                     Transmisión de Derechos de suscripción (art. 101.6 LIRPF): a partir de 1.1.2017                        19 por 100                 M, N, O
+Otras Ganancias
+                     Transmisión de acciones y participaciones en Instituciones de Inversión Colectiva (Fondos de                           187
+patrimoniales                                                                                                               19 por 100                   C,E
+                     Inversión) (art. 101.6 LIRPF)
+                     (*) Derivados de la participación en fondos propios de entidades (art. 25.1, 101.4 LIRPF y 90
+                                                                                                                            19 por 100      193           A
+                     RIRPF))
+                     (*)Cesión a terceros de capitales propios (cuentas corrientes, depósitos financieros, etc…; art.                     193/194/
+                                                                                                                            19 por 100               Según modelo
+Capital Mobiliario   25.2 LIRPF)                                                                                                            /196
+                     (*)Operaciones de capitalización, seguros de vida o invalidez e imposición de capitales                19 por 100      188        No clave
+                     Propiedad industrial, prestación de asistencia técnica (art. 101.9 LIRPF)                              19 por 100      193           C
+                                                                                                                                           Tipo          MOD.
+                                                                                                                                        aplicable      RESUMEN           CLAVE/
+    Clase de renta                                                     Procedencia                                                     2026 (hasta      ANUAL-          SUBCLAVE
+                                                                                                                                        9 septbre)       2025
+                          Arrendamiento y subarrendamiento de bienes muebles, negocios o minas (art. 101.9 LIRPF)                      19 por 100
+                          (*)Propiedad intelectual cuando el contribuyente perceptor no sea el autor (art. 101.4 LIRPF)                15 por 100
+Capital Mobiliario        Anticipos a cuenta derivados de la cesión de la explotación de derechos de autor que se vayan                 7 por 100
+                          a devengar a lo largo de varios años (art. 101.9 LIRPF)
+                          Rendimientos derivados de la cesión del derecho de explotación de derechos de imagen (art.                                      193               C
+                          101.10 LIRPF) siempre que no sean en el desarrollo de una actividad económica                                24 por 100
+Independientemente        Propiedad intelectual (art. 101.9 LIRPF):                                                                                                   F.05, G.05, o
+de su calificación                                                                                                                    15 por 100                          I.02
+                               Con carácter general ………………………………………………………………………………
+como fuente de
+                               Cuando resulte de aplicación el tipo del 7% previsto en el art. 101.3 o 101.5 LIRPF……..                7 por 100          190         F.06 o G.06
+renta (trabajo, activ.
+Profesional o activ.           Anticipos a cuenta de la cesión de derechos de autor que se vayan a devengar a lo largo
+                                  de varios años ……………………………………………………………………………………                                                       7 por 100                     F.07 o G.07
+empresarial)
+                          (*)Arrendamiento o subarrendamiento de bienes inmuebles urbanos (art. 101.8 LIRPF; y 100
+Capital Inmobiliario                                                                                                                   19 por 100         180            No clave
+                          RIRPF)
+
+
+
+( ) Estos porcentajes se reducirán en un 60% cuando los rendimientos obtenidos por el perceptor tengan derecho a la deducción en la cuota prevista en el artículo 68.4 de la Ley del IRPF (deducción
+*
+por rentas obtenidas en Ceuta y Melilla, (art. 101 LIRPF)
+
