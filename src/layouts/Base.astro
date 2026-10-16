@@ -6,6 +6,7 @@ import '@fontsource/ibm-plex-sans/latin-600.css';
 import '@fontsource/ibm-plex-serif/latin-500.css';
 import '@fontsource/ibm-plex-serif/latin-600.css';
 import Logo from '../components/Logo.astro';
+import { HERRAMIENTAS } from '../data/herramientas';
 interface Props {
   title: string;
   description: string;
@@ -25,6 +26,7 @@ const ogImage = new URL(image ?? '/og-default.png', Astro.site).href;
 const ogSize = image ? (image.startsWith('/img/') ? [1600, 900] : null) : [1200, 630];
 const year = new Date().getFullYear();
 const path = Astro.url.pathname;
+const esHerramienta = HERRAMIENTAS.some((h) => path === h.href || path === h.href.slice(0, -1));
 const social = SITE.social;
 // Fecha de la cabecera, como en la portada de un periódico (la web se reconstruye cada día con la luz)
 const hoy = new Date().toLocaleDateString('es-ES', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric', timeZone: 'Europe/Madrid' });
@@ -94,12 +96,25 @@ const hoy = new Date().toLocaleDateString('es-ES', { weekday: 'long', day: 'nume
             </div>
           );
         })}
+        <div class:list={['desplegable', 'calc-menu', { activa: esHerramienta || path.startsWith('/calculadoras/') }]}>
+          <button type="button" class="desplegable-btn" aria-expanded="false" aria-controls="sub-calculadoras">Calculadoras<svg viewBox="0 0 12 12" width="12" height="12" aria-hidden="true"><path d="M2.5 4.5 6 8l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></button>
+          <ul id="sub-calculadoras" class="submenu" hidden>
+            {HERRAMIENTAS.map((h) => <li><a href={h.href} aria-current={path.startsWith(h.href) ? 'page' : undefined}>{h.titulo}</a></li>)}
+            <li class="sub-todas"><a href="/calculadoras/" aria-current={path.startsWith('/calculadoras/') ? 'page' : undefined}>Todas las calculadoras</a></li>
+          </ul>
+        </div>
       </div>
     </nav>
   </header>
 
   <main id="contenido" class="wrap">
     <slot />
+    {esHerramienta && (
+      <aside class="otras-herramientas" aria-labelledby="otras-h">
+        <h2 id="otras-h" class="titulo-bloque">Otras calculadoras</h2>
+        <ul>{HERRAMIENTAS.filter((h) => !path.startsWith(h.href)).map((h) => <li><a href={h.href}><strong>{h.titulo}</strong><span>{h.texto}</span></a></li>)}</ul>
+      </aside>
+    )}
   </main>
 
   <footer class="site-footer">
@@ -236,6 +251,14 @@ const hoy = new Date().toLocaleDateString('es-ES', { weekday: 'long', day: 'nume
   .submenu { position: absolute; top: 100%; left: -14px; z-index: 30; min-width: 220px; margin: 0; padding: 6px 0; list-style: none; background: var(--bg); border: 1px solid var(--rule); border-top: 2px solid var(--ink); box-shadow: 0 8px 20px rgba(28, 32, 36, .08); }
   .submenu[hidden] { display: none; }
   .secciones .submenu a { display: block; padding: 9px 14px; border-bottom: 0; }
+  .sub-todas { border-top: 1px solid var(--rule); margin-top: 4px; padding-top: 4px; }
+  .sub-todas a { font-weight: 600; }
+  .otras-herramientas { margin-top: 48px; }
+  .otras-herramientas ul { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 0 28px; }
+  .otras-herramientas a { display: flex; flex-direction: column; gap: 4px; padding: 14px 0; border-bottom: 1px solid var(--rule); text-decoration: none; color: var(--ink); }
+  .otras-herramientas a:hover strong { color: var(--brand); text-decoration: underline; }
+  .otras-herramientas strong { font-family: var(--serif); font-size: 1.0625rem; }
+  .otras-herramientas span { color: var(--muted); font-size: .875rem; line-height: 1.45; }
   .secciones .submenu a[aria-current] { color: var(--brand); font-weight: 600; }
   @media (max-width: 760px) {
     .fecha { display: none; }
