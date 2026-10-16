@@ -1,21 +1,28 @@
-"""Comprueba qué fuentes de datos responden desde GitHub. Resultado en las anotaciones de la ejecución."""
+"""Busca de dónde carga sus datos el Geoportal de gasolineras. Resultado en las anotaciones de la ejecución."""
+import re
 import requests
 
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36"
-CANDIDATAS = {
-    "minetur provincias https": "https://sedeaplicaciones.minetur.gob.es/ServiciosRESTCarburantes/PreciosCarburantes/Listados/Provincias/",
-    "minetur provincias http": "http://sedeaplicaciones.minetur.gob.es/ServiciosRESTCarburantes/PreciosCarburantes/Listados/Provincias/",
-    "minetur Madrid": "https://sedeaplicaciones.minetur.gob.es/ServiciosRESTCarburantes/PreciosCarburantes/EstacionesTerrestres/FiltroProvincia/28",
-    "geoportal": "https://geoportalgasolineras.es/",
-    "datos.gob.es carburantes": "https://datos.gob.es/apidata/catalog/dataset/title/carburantes?_pageSize=5",
-    "ipinfo": "https://ipinfo.io/json",
-}
-fila = []
-for nombre, url in CANDIDATAS.items():
+BASE = "https://geoportalgasolineras.es/"
+s = requests.Session()
+s.headers["User-Agent"] = UA
+html = s.get(BASE, timeout=40).text
+scripts = re.findall(r'<script[^>]+src="([^"]+)"', html)
+print("::notice title=Scripts::" + " | ".join(scripts)[:900])
+hallado = set()
+for src in scripts:
+    url = src if src.startswith("http") else BASE + src.lstrip("/")
     try:
-        r = requests.get(url, headers={"User-Agent": UA, "Accept": "application/json,*/*"}, timeout=40)
-        fila.append(f"{nombre}: {r.status_code} {len(r.content)}B {r.text[:80]!r}")
+        js = s.get(url, timeout=40).text
+    except Exception:  # noqa: BLE001
+        continue
+    for m in re.findall(r'["\']([^"\']*(?:rest/|/rest|\.xls|\.csv|\.json|descarga|Precios|precios)[^"\']{0,80})["\']', js):
+        if len(m) < 140:
+            hallado.add(m)
+print("::notice title=Rutas::" + " | ".join(sorted(hallado))[:3500])
+for prueba in ["resources/files/preciosEESS_es.xls", "geoportal/resources/files/preciosEESS_es.xls"]:
+    try:
+        r = s.get(BASE + prueba, timeout=60)
+        print(f"::notice title=Excel::{prueba}: {r.status_code} {len(r.content)}B {r.headers.get('content-type')}")
     except Exception as e:  # noqa: BLE001
-        fila.append(f"{nombre}: {type(e).__name__} {str(e)[:80]}")
-for f in fila:
-    print("::notice title=Prueba::" + f.replace("\n", " "))
+        print(f"::notice title=Excel::{prueba}: {type(e).__name__}")
