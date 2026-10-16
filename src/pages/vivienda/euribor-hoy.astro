@@ -1,0 +1,198 @@
+---
+import Base from '../../layouts/Base.astro';
+import Siguenos from '../../components/Siguenos.astro';
+import Compartir from '../../components/Compartir.astro';
+import { SITE } from '../../config';
+import { datosEuribor, pct, nombreMes, diaMes, cuota } from '../../lib/euribor';
+
+const eb = datosEuribor();
+const titulo = 'Euríbor hoy: dato diario y media del mes';
+const url = `${SITE.url}/vivienda/euribor-hoy/`;
+const descripcion = eb
+  ? `El euríbor a 12 meses cerró el ${diaMes(eb.fecha)} en el ${pct(eb.valor)} % y la media de ${nombreMes(eb.mes, false)} va por el ${pct(eb.media_mes)} %. Evolución y cuánto cambia tu hipoteca en la revisión.`
+  : 'El euríbor a 12 meses de hoy, la media del mes y cuánto cambia tu hipoteca en la revisión.';
+
+// Gráfico de las medias mensuales (últimos 36 meses)
+const meses = eb ? Object.entries(eb.medias_mensuales) : [];
+const W = 720, H = 240, top = 20, bottom = 30, left = 36, right = 10;
+const vals = meses.map(([, v]) => v);
+const vmax = Math.ceil(Math.max(...vals, 0) * 2) / 2 + 0.25;
+const vmin = Math.max(0, Math.floor(Math.min(...vals, 0) * 2) / 2 - 0.25);
+const x = (i: number) => left + (i * (W - left - right)) / Math.max(1, meses.length - 1);
+const y = (v: number) => top + ((vmax - v) * (H - top - bottom)) / (vmax - vmin);
+const linea = meses.map(([, v], i) => `${i ? 'L' : 'M'}${x(i).toFixed(1)},${y(v).toFixed(1)}`).join(' ');
+const marcas: number[] = [];
+for (let v = Math.ceil(vmin * 2) / 2; v <= vmax; v += 0.5) marcas.push(v);
+
+const ultimos13 = meses.slice(-13).reverse();
+const variacion = (m: string) => {
+  const prev = `${parseInt(m.slice(0, 4), 10) - 1}${m.slice(4)}`;
+  const a = eb?.medias_mensuales[prev];
+  return a == null ? null : eb!.medias_mensuales[m] - a;
+};
+
+// Ejemplo para el texto: hipoteca de 150.000 € a 25 años con diferencial del 0,8 %
+const ej = eb && eb.hace_un_anio.media != null ? {
+  antes: cuota(150000, eb.hace_un_anio.media + 0.8, 300),
+  ahora: cuota(150000, eb.media_mes + 0.8, 300),
+} : null;
+const eur = (n: number, d = 2) => n.toLocaleString('es-ES', { minimumFractionDigits: d, maximumFractionDigits: d });
+
+const jsonLd = {
+  '@context': 'https://schema.org', '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Inicio', item: SITE.url + '/' },
+    { '@type': 'ListItem', position: 2, name: 'Vivienda', item: `${SITE.url}/vivienda/` },
+    { '@type': 'ListItem', position: 3, name: titulo, item: url },
+  ],
+};
+---
+<Base title={titulo} description={descripcion} jsonLd={jsonLd}>
+  <nav class="breadcrumbs"><a href="/">Inicio</a> › <a href="/vivienda/">Vivienda</a></nav>
+  <article class="pagina">
+    <h1>{titulo}</h1>
+    {!eb ? <p>Todavía no tenemos el dato. Vuelve en un rato.</p> : (
+      <>
+        <p class="lead">{descripcion}</p>
+        <dl class="cifras">
+          <div><dt>Euríbor a 12 meses, {diaMes(eb.fecha)}</dt><dd>{pct(eb.valor)} %</dd></div>
+          <div><dt>Media de {nombreMes(eb.mes, false)} ({eb.dias_mes} días)</dt><dd>{pct(eb.media_mes)} %</dd></div>
+          <div><dt>Media de {nombreMes(eb.mes_anterior.mes)}</dt><dd>{pct(eb.mes_anterior.media)} %</dd></div>
+          {eb.hace_un_anio.media != null && <div><dt>Media de {nombreMes(eb.hace_un_anio.mes)}</dt><dd>{pct(eb.hace_un_anio.media)} %</dd></div>}
+        </dl>
+        <p class="muted small">La media del mes en curso es provisional: se calcula con los días que van publicados y cambia cada día hasta que acaba el mes. La media de cada mes cerrado es el «euríbor hipotecario» que se usa para revisar las hipotecas.</p>
+
+        <section class="bloque">
+          <h2 class="titulo-bloque">Cuánto cambia tu hipoteca en la revisión</h2>
+          <form id="calc-hip" class="calc" novalidate>
+            <label><span>Capital pendiente</span><span class="unidad-wrap"><input name="capital" type="number" inputmode="decimal" min="0" step="1000" value="150000" /><i>€</i></span></label>
+            <label><span>Años que te quedan</span><input name="anios" type="number" inputmode="numeric" min="1" max="40" value="25" /></label>
+            <label><span>Diferencial de tu hipoteca</span><span class="unidad-wrap"><input name="dif" type="number" inputmode="decimal" min="0" max="5" step="0.05" value="0.8" /><i>%</i></span></label>
+            <label><span>Euríbor de tu última revisión</span><span class="unidad-wrap"><input name="antes" type="number" inputmode="decimal" step="0.001" value={eb.hace_un_anio.media ?? eb.mes_anterior.media} /><i>%</i></span></label>
+            <label><span>Euríbor de la nueva revisión</span><span class="unidad-wrap"><input name="ahora" type="number" inputmode="decimal" step="0.001" value={eb.media_mes} /><i>%</i></span></label>
+          </form>
+          <div class="res" aria-live="polite">
+            <p><span class="muted">Cuota actual</span><strong id="h-antes">—</strong></p>
+            <p><span class="muted">Nueva cuota</span><strong id="h-ahora">—</strong></p>
+            <p><span class="muted">Diferencia</span><strong id="h-dif">—</strong></p>
+          </div>
+          <p class="muted small">Por defecto comparamos con el euríbor de hace un año, que es lo habitual en las hipotecas que se revisan cada doce meses. Si la tuya se revisa cada seis meses, pon el euríbor de hace seis meses. Calculamos la cuota con el sistema francés, el más habitual en España. El banco usará el euríbor de uno o dos meses antes de la fecha de revisión; mira tu escritura.</p>
+        </section>
+
+        <section class="bloque">
+          <h2 class="titulo-bloque">Evolución del euríbor: media de cada mes</h2>
+          <figure class="grafico">
+            <svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label={`Euríbor a 12 meses, media mensual desde ${nombreMes(meses[0][0])} hasta ${nombreMes(meses[meses.length - 1][0])}`}>
+              {marcas.map((v) => (
+                <>
+                  <line x1={left} x2={W - right} y1={y(v)} y2={y(v)} class="rejilla" />
+                  <text x={left - 6} y={y(v) + 4} text-anchor="end">{pct(v, 1)}</text>
+                </>
+              ))}
+              <path d={linea} class="linea" />
+              {meses.map(([m], i) => m.endsWith('-01') && <text x={x(i)} y={H - 8} text-anchor="middle">{m.slice(0, 4)}</text>)}
+              <circle cx={x(meses.length - 1)} cy={y(vals[vals.length - 1])} r="4" class="punto" />
+            </svg>
+            <figcaption>En porcentaje. El último punto es la media provisional del mes en curso.</figcaption>
+          </figure>
+
+          <table class="tabla">
+            <thead><tr><th scope="col">Mes</th><th scope="col">Euríbor medio</th><th scope="col">Hace un año</th><th scope="col">Diferencia</th></tr></thead>
+            <tbody>
+              {ultimos13.map(([m, v]) => {
+                const d = variacion(m);
+                const prev = eb.medias_mensuales[`${parseInt(m.slice(0, 4), 10) - 1}${m.slice(4)}`];
+                return (
+                  <tr>
+                    <th scope="row">{nombreMes(m)}{m === eb.mes && <span class="muted"> (provisional)</span>}</th>
+                    <td>{pct(v)} %</td>
+                    <td>{pct(prev)} %</td>
+                    <td class={d == null ? '' : d > 0 ? 'sube' : 'baja'}>{d == null ? '—' : `${d > 0 ? '+' : ''}${pct(d)}`}</td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
+        </section>
+
+        <Compartir title={titulo} url={url} />
+
+        <section class="prose">
+          <h2>Qué es el euríbor y por qué importa</h2>
+          <p>El euríbor es el tipo de interés al que los grandes bancos europeos se prestan dinero entre sí. El de 12 meses es la referencia de la mayoría de las hipotecas variables en España: tu tipo de interés es el euríbor más el diferencial que pactaste con el banco.</p>
+          <p>Cada vez que toca la revisión, normalmente cada seis o doce meses, el banco toma el euríbor de ese momento y recalcula la cuota. Si ha subido respecto a la revisión anterior, pagarás más; si ha bajado, menos.</p>
+          {ej && (
+            <p>Un ejemplo: con 150.000 € pendientes a 25 años y un diferencial del 0,8 %, la cuota con el euríbor de {nombreMes(eb.hace_un_anio.mes)} ({pct(eb.hace_un_anio.media)} %) sería de {eur(ej.antes)} € al mes. Con la media de {nombreMes(eb.mes, false)} ({pct(eb.media_mes)} %) pasaría a {eur(ej.ahora)} €: {eur(Math.abs(ej.ahora - ej.antes))} € {ej.ahora > ej.antes ? 'más' : 'menos'} al mes.</p>
+          )}
+          <h2>Euríbor diario y euríbor hipotecario</h2>
+          <p>Cada día hábil se publica un euríbor diario. El que usan los bancos para las hipotecas es la media de todos los días de un mes, que el Banco de España publica a principios del mes siguiente como tipo de referencia oficial. Por eso la media del mes en curso que ves arriba es provisional hasta que acaba el mes.</p>
+          <p class="muted small">Fuente: Banco de España, serie diaria del euríbor a 12 meses (dato de EMMI, el organismo que lo calcula). Actualizamos el dato dos veces al día de lunes a sábado.</p>
+        </section>
+      </>
+    )}
+    <Siguenos />
+  </article>
+</Base>
+
+<script>
+  import { cuota } from '../../lib/euribor';
+  const form = document.getElementById('calc-hip') as HTMLFormElement | null;
+  const fmt = (n: number) => n.toLocaleString('es-ES', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + ' €';
+  function calcular() {
+    if (!form) return;
+    const d = new FormData(form);
+    const num = (k: string) => parseFloat(String(d.get(k) ?? '').replace(',', '.')) || 0;
+    const meses = Math.round(num('anios') * 12);
+    const a = cuota(num('capital'), num('antes') + num('dif'), meses);
+    const b = cuota(num('capital'), num('ahora') + num('dif'), meses);
+    document.getElementById('h-antes')!.textContent = fmt(a) + ' al mes';
+    document.getElementById('h-ahora')!.textContent = fmt(b) + ' al mes';
+    const dif = b - a;
+    const el = document.getElementById('h-dif')!;
+    el.textContent = `${dif > 0 ? '+' : dif < 0 ? '−' : ''}${fmt(Math.abs(dif))} al mes (${dif > 0 ? '+' : dif < 0 ? '−' : ''}${fmt(Math.abs(dif * 12))} al año)`;
+    el.className = dif > 0.005 ? 'sube' : dif < -0.005 ? 'baja' : '';
+  }
+  form?.addEventListener('input', calcular);
+  calcular();
+</script>
+
+<style>
+  .pagina { max-width: 760px; }
+  h1 { font-size: clamp(1.9rem, 4.6vw, 2.6rem); line-height: 1.15; margin: 4px 0 12px; }
+  .lead { font-size: 1.125rem; line-height: 1.55; margin: 0 0 20px; }
+  .cifras { margin: 0 0 10px; border-top: 2px solid var(--ink); }
+  .cifras div { display: flex; justify-content: space-between; gap: 16px; padding: 12px 0; border-bottom: 1px solid var(--rule); align-items: baseline; }
+  .cifras dt { color: var(--muted); }
+  .cifras dd { margin: 0; font-family: var(--serif); font-weight: 600; font-size: 1.375rem; font-variant-numeric: tabular-nums; }
+  .cifras div:first-child dd { font-size: 2rem; color: var(--brand-dark); }
+  .small { font-size: .8125rem; }
+  .bloque { margin-top: 36px; }
+  .calc { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px 20px; }
+  .calc label { display: flex; flex-direction: column; gap: 6px; font-weight: 600; font-size: .875rem; }
+  .calc input { font: 400 1rem var(--sans); padding: 9px 11px; border: 1px solid #b9c0c6; border-radius: 4px; width: 100%; color: var(--ink); background: var(--bg); font-variant-numeric: tabular-nums; }
+  .calc input:focus { outline: 2px solid var(--brand); outline-offset: 0; }
+  .unidad-wrap { position: relative; display: block; }
+  .unidad-wrap input { padding-right: 32px; }
+  .unidad-wrap i { position: absolute; right: 11px; top: 50%; transform: translateY(-50%); font-style: normal; color: var(--muted); font-weight: 400; }
+  .res { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; background: var(--surface); padding: 16px 18px; border-radius: 4px; margin: 18px 0 8px; }
+  .res p { margin: 0; display: flex; flex-direction: column; gap: 2px; font-size: .875rem; }
+  .res strong { font-size: 1.0625rem; font-variant-numeric: tabular-nums; }
+  .sube { color: var(--bad); }
+  .baja { color: var(--good); }
+  .grafico { margin: 8px 0 20px; }
+  .grafico svg { width: 100%; height: auto; display: block; }
+  .grafico text { font: 400 11px var(--sans); fill: var(--muted); }
+  .rejilla { stroke: var(--rule); stroke-width: 1; }
+  .linea { fill: none; stroke: var(--brand); stroke-width: 2.5; stroke-linejoin: round; }
+  .punto { fill: var(--brand-dark); }
+  figcaption { font-size: .8125rem; color: var(--muted); }
+  .tabla { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
+  .tabla th, .tabla td { padding: 8px 10px 8px 0; border-bottom: 1px solid var(--rule); text-align: right; font-size: .9375rem; }
+  .tabla th:first-child { text-align: left; font-weight: 500; }
+  .tabla thead th { font-size: .8125rem; font-weight: 600; border-bottom: 1px solid var(--ink); }
+  .prose { margin-top: 36px; }
+  @media (max-width: 600px) {
+    .res { grid-template-columns: 1fr; }
+    .cifras dt { font-size: .875rem; }
+  }
+</style>

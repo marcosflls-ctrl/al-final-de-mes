@@ -3,6 +3,7 @@
 // Sin JavaScript se ven los dos bloques, uno debajo del otro.
 import { datosLuz, hoyManana } from '../lib/luz';
 import { datosCarburantes, litro } from '../lib/carburantes';
+import { datosEuribor, pct, nombreMes, diaMes } from '../lib/euribor';
 const luz = datosLuz();
 const [hoy, manana] = hoyManana();
 const horas = luz?.dias[hoy];
@@ -14,12 +15,15 @@ const max = horas ? horas.reduce((a, b) => (b.p > a.p ? b : a)) : null;
 const media = horas ? horas.reduce((s, x) => s + x.p, 0) / horas.length : 0;
 const carb = datosCarburantes();
 const n = carb?.nacional;
+const eb = datosEuribor();
+const difAnio = eb?.hace_un_anio.media != null ? eb.media_mes - eb.hace_un_anio.media : null;
 ---
 <aside class="precios-hoy" aria-labelledby="precios-hoy-t">
   <h2 id="precios-hoy-t" class="titulo-bloque">Precios de hoy</h2>
   <div class="pestanas" role="tablist" aria-label="Precios de hoy" hidden>
     <button role="tab" id="tab-luz" aria-controls="panel-luz" aria-selected="true">Luz</button>
     <button role="tab" id="tab-carb" aria-controls="panel-carb" aria-selected="false" tabindex="-1">Carburantes</button>
+    <button role="tab" id="tab-eur" aria-controls="panel-eur" aria-selected="false" tabindex="-1">Euríbor</button>
   </div>
 
   <section id="panel-luz" role="tabpanel" aria-labelledby="tab-luz">
@@ -49,6 +53,21 @@ const n = carb?.nacional;
       </>
     ) : <p class="enlace"><a href="/gasolina/">Precio de la gasolina y el diésel</a></p>}
     <p class="muted fuente">Media de las gasolineras de España. Fuente: Ministerio para la Transición Ecológica.</p>
+  </section>
+
+  <section id="panel-eur" role="tabpanel" aria-labelledby="tab-eur">
+    <h3 class="sin-js">Euríbor</h3>
+    {eb ? (
+      <>
+        <dl>
+          <div><dt>Euríbor {diaMes(eb.fecha)}</dt><dd>{pct(eb.valor)} %</dd></div>
+          <div><dt>Media de {nombreMes(eb.mes, false)}</dt><dd>{pct(eb.media_mes)} %<span>{eb.dias_mes} días</span></dd></div>
+          {difAnio != null && <div><dt>Hace un año</dt><dd>{pct(eb.hace_un_anio.media)} %<span class={difAnio > 0 ? 'mal' : 'bien'}>{difAnio > 0 ? '+' : ''}{pct(difAnio)} puntos</span></dd></div>}
+        </dl>
+        <p class="enlace"><a href="/vivienda/euribor-hoy/">Evolución y cuánto sube tu hipoteca</a></p>
+      </>
+    ) : <p class="enlace"><a href="/vivienda/euribor-hoy/">Euríbor hoy</a></p>}
+    <p class="muted fuente">Euríbor a 12 meses. Fuente: Banco de España.</p>
   </section>
 </aside>
 <script>
@@ -89,8 +108,8 @@ const n = carb?.nacional;
   dd { margin: 0; font-weight: 600; font-variant-numeric: tabular-nums; text-align: right; white-space: nowrap; }
   dd b { font-weight: 600; }
   dd span { display: block; font-weight: 400; font-size: .8125rem; color: var(--muted); }
-  .bien { color: var(--good); }
-  .mal { color: var(--bad); }
+  .bien, dd span.bien { color: var(--good); }
+  .mal, dd span.mal { color: var(--bad); }
   .enlace { margin: 12px 0 4px; font-size: .875rem; }
   .fuente { font-size: .8125rem; margin: 0; }
 </style>
