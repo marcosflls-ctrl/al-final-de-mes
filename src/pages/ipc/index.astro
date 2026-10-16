@@ -1,0 +1,198 @@
+---
+import Base from '../../layouts/Base.astro';
+import Siguenos from '../../components/Siguenos.astro';
+import Compartir from '../../components/Compartir.astro';
+import { SITE } from '../../config';
+import { datosIPC, CESTA, nombreMes, pct } from '../../lib/ipc';
+
+const d = datosIPC();
+const mes = d?.mes ?? '';
+const titulo = 'IPC hoy: cuánto suben los precios y la cesta de la compra';
+const url = `${SITE.url}/ipc/`;
+const gVa = d?.general.va?.[mes];
+const gVm = d?.general.vm?.[mes];
+const alim = d?.grupos['Alimentos y bebidas no alcohólicas'];
+const descripcion = d
+  ? `El IPC de ${nombreMes(mes)} fue del ${gVa?.toLocaleString('es-ES')} % interanual. Cuánto han subido la cesta de la compra, la luz, el transporte y cada producto, con los datos del INE.`
+  : 'El IPC y cuánto suben los precios de la cesta de la compra, con los datos del INE.';
+
+const cesta = d ? CESTA.map(([ine, nombre]) => ({ nombre, va: d.subclases[ine]?.va?.[mes], vm: d.subclases[ine]?.vm?.[mes] })).filter((x) => x.va != null).sort((a, b) => b.va! - a.va!) : [];
+const grupos = d ? Object.entries(d.grupos).map(([n, s]) => ({ n, va: s.va?.[mes], vm: s.vm?.[mes] })).filter((x) => x.va != null) : [];
+const todos = d ? Object.entries(d.subclases).filter(([, s]) => s.va?.[mes] != null && (s.i ? Object.keys(s.i).length >= 13 : false)).map(([n, s]) => ({ n, va: s.va![mes] })) : [];
+const suben = [...todos].sort((a, b) => b.va - a.va).slice(0, 10);
+const bajan = [...todos].sort((a, b) => a.va - b.va).slice(0, 10);
+
+// Gráfico: tasa anual del IPC general y de los alimentos
+const meses = d ? Object.keys(d.general.va ?? {}).sort() : [];
+const W = 720, H = 220, top = 14, bottom = 28, left = 36, right = 10;
+const vals = meses.flatMap((m) => [d!.general.va![m], alim?.va?.[m] ?? 0]);
+const vmax = Math.ceil(Math.max(...vals, 1)) + 0.5, vmin = Math.min(0, Math.floor(Math.min(...vals, 0)));
+const x = (i: number) => left + (i * (W - left - right)) / Math.max(1, meses.length - 1);
+const y = (v: number) => top + ((vmax - v) * (H - top - bottom)) / (vmax - vmin);
+const linea = (f: (m: string) => number | undefined) => meses.map((m, i) => (f(m) == null ? '' : `${i ? 'L' : 'M'}${x(i).toFixed(1)},${y(f(m)!).toFixed(1)}`)).join(' ');
+const marcas: number[] = []; for (let v = vmin; v <= vmax; v += 1) marcas.push(v);
+const mesesDatos = meses;
+const indices = d?.general.i ?? {};
+
+const jsonLd = {
+  '@context': 'https://schema.org', '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Inicio', item: SITE.url + '/' },
+    { '@type': 'ListItem', position: 2, name: 'IPC', item: url },
+  ],
+};
+---
+<Base title={titulo} description={descripcion} jsonLd={jsonLd}>
+  <nav class="breadcrumbs"><a href="/">Inicio</a> › <a href="/hacienda/">Hacienda</a></nav>
+  <article class="pagina">
+    <h1>{titulo}</h1>
+    {!d ? <p>Todavía no tenemos los datos.</p> : (
+      <>
+        <p class="lead">{descripcion}</p>
+        <dl class="cifras">
+          <div><dt>IPC de {nombreMes(mes)}, en un año</dt><dd>{pct(gVa)}</dd></div>
+          <div><dt>Respecto al mes anterior</dt><dd>{pct(gVm)}</dd></div>
+          <div><dt>Alimentos y bebidas, en un año</dt><dd>{pct(alim?.va?.[mes])}</dd></div>
+        </dl>
+
+        <section class="bloque">
+          <h2 class="titulo-bloque">La cesta de la compra: cuánto ha subido cada producto</h2>
+          <p class="muted small">Variación del precio en el último año y en el último mes, de {nombreMes(mes)}. Ordenado de lo que más sube a lo que más baja.</p>
+          <table class="tabla">
+            <thead><tr><th scope="col">Producto</th><th scope="col">En un año</th><th scope="col">En un mes</th></tr></thead>
+            <tbody>
+              {cesta.map((c) => (
+                <tr><th scope="row">{c.nombre}</th><td class={c.va! > 0 ? 'sube' : c.va! < 0 ? 'baja' : ''}>{pct(c.va)}</td><td>{pct(c.vm)}</td></tr>
+              ))}
+            </tbody>
+          </table>
+        </section>
+
+        <section class="bloque">
+          <h2 class="titulo-bloque">¿Cuánto más te cuesta lo mismo?</h2>
+          <form id="calc-ipc" class="calc" novalidate>
+            <label><span>Cantidad</span><span class="u"><input name="cantidad" type="number" inputmode="decimal" min="0" step="10" value="100" /><i>€</i></span></label>
+            <label><span>En el mes de</span>
+              <select name="desde">
+                {mesesDatos.slice(0, -1).map((m, i) => <option value={m} selected={i === mesesDatos.length - 13}>{nombreMes(m)}</option>)}
+              </select>
+            </label>
+          </form>
+          <p class="res" id="ipc-res" aria-live="polite">—</p>
+          <p class="muted small">Calculado con el índice general del IPC. Sirve, por ejemplo, para saber cuánto debería subir un sueldo para no perder poder adquisitivo, o para comprobar la actualización de un contrato que se revise con el IPC.</p>
+        </section>
+
+        <section class="bloque">
+          <h2 class="titulo-bloque">Evolución del IPC</h2>
+          <figure class="grafico">
+            <svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label="Tasa anual del IPC general y de los alimentos, mes a mes">
+              {marcas.map((v) => <><line x1={left} x2={W - right} y1={y(v)} y2={y(v)} class={v === 0 ? 'cero' : 'rej'} /><text x={left - 6} y={y(v) + 4} text-anchor="end">{v}</text></>)}
+              {meses.map((m, i) => m.endsWith('-01') && <text x={x(i)} y={H - 8} text-anchor="middle">{m.slice(0, 4)}</text>)}
+              <path d={linea((m) => alim?.va?.[m])} class="l-alim" />
+              <path d={linea((m) => d.general.va![m])} class="l-gen" />
+            </svg>
+            <figcaption><span class="ley gen"></span>IPC general <span class="ley alim"></span>Alimentos y bebidas no alcohólicas. Variación en un año, en porcentaje.</figcaption>
+          </figure>
+        </section>
+
+        <section class="bloque dos-col">
+          <div>
+            <h2 class="titulo-bloque">Lo que más sube</h2>
+            <ol class="ranking">{suben.map((s) => <li><span>{s.n}</span><b class="sube">{pct(s.va)}</b></li>)}</ol>
+          </div>
+          <div>
+            <h2 class="titulo-bloque">Lo que más baja</h2>
+            <ol class="ranking">{bajan.map((s) => <li><span>{s.n}</span><b class="baja">{pct(s.va)}</b></li>)}</ol>
+          </div>
+        </section>
+
+        <section class="bloque">
+          <h2 class="titulo-bloque">Por grupos de gasto</h2>
+          <table class="tabla">
+            <thead><tr><th scope="col">Grupo</th><th scope="col">En un año</th><th scope="col">En un mes</th></tr></thead>
+            <tbody>{grupos.map((g) => <tr><th scope="row">{g.n}</th><td class={g.va! > 0 ? 'sube' : g.va! < 0 ? 'baja' : ''}>{pct(g.va)}</td><td>{pct(g.vm)}</td></tr>)}</tbody>
+          </table>
+        </section>
+
+        <Compartir title={titulo} url={url} />
+
+        <section class="prose">
+          <h2>Qué es el IPC</h2>
+          <p>El Índice de Precios de Consumo mide cuánto cambian los precios de lo que compran los hogares: alimentos, ropa, vivienda, luz, transporte, ocio… El INE lo publica cada mes. La cifra que más se cita es la variación anual, que compara los precios de un mes con los del mismo mes del año anterior.</p>
+          <p>Del IPC dependen la subida de las pensiones, la actualización de muchos contratos y las negociaciones de los sueldos. Ahora mismo también decide si se mantienen las rebajas de impuestos de los carburantes y de la luz: lo contamos en la <a href="/luz/luz-carburantes-elecciones-29n-balance-y-propuestas/">guía de luz y gasolina</a>.</p>
+          <p>Desde enero de 2026 el INE calcula el IPC con una nueva clasificación de productos y con 2025 como año base. Por eso esta página muestra los dos últimos años.</p>
+          <p class="muted small">Fuente: <a href="https://www.ine.es/jaxiT3/Tabla.htm?t=76128" rel="nofollow noopener" target="_blank">INE, Índice de Precios de Consumo</a>. Actualizamos los datos automáticamente cuando el INE publica cada mes.</p>
+        </section>
+      </>
+    )}
+    <Siguenos />
+  </article>
+</Base>
+
+<script is:inline type="application/json" id="datos-ipc" set:html={JSON.stringify(indices)}></script>
+<script>
+  const idx = JSON.parse(document.getElementById('datos-ipc')!.textContent || '{}') as Record<string, number>;
+  const form = document.getElementById('calc-ipc') as HTMLFormElement | null;
+  const meses = Object.keys(idx).sort();
+  const ultimo = meses[meses.length - 1];
+  const MES = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'];
+  const nombre = (m: string) => `${MES[parseInt(m.slice(5, 7), 10) - 1]} de ${m.slice(0, 4)}`;
+  const eur = (n: number) => n.toLocaleString('es-ES', { minimumFractionDigits: 2, maximumFractionDigits: 2, useGrouping: 'always' } as Intl.NumberFormatOptions) + ' €';
+  function calcular() {
+    if (!form) return;
+    const f = new FormData(form);
+    const c = parseFloat(String(f.get('cantidad')).replace(',', '.')) || 0;
+    const desde = String(f.get('desde'));
+    const ratio = idx[ultimo] / idx[desde];
+    const hoy = c * ratio;
+    document.getElementById('ipc-res')!.innerHTML = `Lo que costaba <strong>${eur(c)}</strong> en ${nombre(desde)} costaba <strong>${eur(hoy)}</strong> en ${nombre(ultimo)}: ${(ratio - 1 >= 0 ? '+' : '')}${((ratio - 1) * 100).toLocaleString('es-ES', { maximumFractionDigits: 1, minimumFractionDigits: 1 })} %.`;
+  }
+  form?.addEventListener('input', calcular);
+  calcular();
+</script>
+
+<style>
+  .pagina { max-width: 860px; }
+  h1 { font-size: clamp(1.9rem, 4.6vw, 2.6rem); line-height: 1.15; margin: 4px 0 12px; }
+  .lead { font-size: 1.125rem; line-height: 1.55; margin: 0 0 20px; }
+  .cifras { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0 24px; margin: 0; border-top: 2px solid var(--ink); }
+  .cifras div { padding: 14px 0; border-bottom: 1px solid var(--rule); }
+  .cifras dt { color: var(--muted); font-size: .875rem; }
+  .cifras dd { margin: 4px 0 0; font-family: var(--serif); font-weight: 600; font-size: 1.75rem; font-variant-numeric: tabular-nums; }
+  .cifras div:first-child dd { color: var(--brand-dark); }
+  .bloque { margin-top: 36px; }
+  .small { font-size: .8125rem; }
+  .tabla { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
+  .tabla th, .tabla td { padding: 8px 10px 8px 0; border-bottom: 1px solid var(--rule); text-align: right; font-size: .9375rem; white-space: nowrap; }
+  .tabla th:first-child { text-align: left; font-weight: 500; white-space: normal; }
+  .tabla thead th { font-size: .8125rem; font-weight: 600; border-bottom: 1px solid var(--ink); }
+  .sube { color: var(--bad); }
+  .baja { color: var(--good); }
+  .calc { display: grid; grid-template-columns: 1fr 1.4fr; gap: 16px; max-width: 560px; }
+  .calc label { display: flex; flex-direction: column; gap: 6px; font-weight: 600; font-size: .875rem; }
+  .calc input, .calc select { font: 400 1rem var(--sans); padding: 9px 11px; border: 1px solid #b9c0c6; border-radius: 4px; width: 100%; color: var(--ink); background: var(--bg); }
+  .calc input:focus, .calc select:focus { outline: 2px solid var(--brand); outline-offset: 0; }
+  .u { position: relative; display: block; }
+  .u input { padding-right: 30px; }
+  .u i { position: absolute; right: 11px; top: 50%; transform: translateY(-50%); font-style: normal; color: var(--muted); font-weight: 400; }
+  .res { background: var(--surface); border-radius: 4px; padding: 14px 16px; font-size: 1.0625rem; margin: 16px 0 8px; }
+  .grafico svg { width: 100%; height: auto; display: block; }
+  .grafico text { font: 400 11px var(--sans); fill: var(--muted); }
+  .rej { stroke: var(--rule); }
+  .cero { stroke: var(--muted); }
+  .l-gen { fill: none; stroke: var(--brand); stroke-width: 2.5; }
+  .l-alim { fill: none; stroke: var(--mid); stroke-width: 2.5; stroke-dasharray: 6 4; }
+  figcaption { font-size: .8125rem; color: var(--muted); }
+  .ley { display: inline-block; width: 18px; border-top: 3px solid var(--brand); vertical-align: middle; margin: 0 4px 0 8px; }
+  .ley.alim { border-top: 3px dashed var(--mid); }
+  .dos-col { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
+  .ranking { list-style: none; margin: 0; padding: 0; }
+  .ranking li { display: flex; justify-content: space-between; gap: 12px; padding: 8px 0; border-bottom: 1px solid var(--rule); font-size: .9375rem; }
+  .ranking b { font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .prose { margin-top: 36px; }
+  @media (max-width: 640px) {
+    .cifras { grid-template-columns: 1fr; }
+    .dos-col { grid-template-columns: 1fr; gap: 0; }
+    .calc { grid-template-columns: 1fr; }
+  }
+</style>
