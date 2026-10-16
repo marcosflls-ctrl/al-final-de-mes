@@ -2,7 +2,7 @@
 title: "SMI 2027: los expertos darán su cifra a finales de octubre"
 description: "Trabajo ha convocado a los expertos del salario mínimo: deben entregar su recomendación como tarde a finales de octubre. Hoy está en 1.221 € en 14 pagas."
 date: 2026-10-15T15:38:43+00:00
-category: hacienda
+category: paro
 tags: [smi, salario-minimo, 2027, yolanda-diaz, nomina]
 pendiente: true
 image: /img/articulos/smi-2027-los-expertos-daran-su-cifra-a-finales-de-octubre.webp
