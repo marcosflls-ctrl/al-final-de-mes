@@ -1,0 +1,167 @@
+---
+import Base from '../../layouts/Base.astro';
+import Siguenos from '../../components/Siguenos.astro';
+import Compartir from '../../components/Compartir.astro';
+import { SITE } from '../../config';
+import { TRAMOS_2026, cuotaDe } from '../../lib/autonomos';
+
+const titulo = 'Calculadora de la cuota de autónomos 2026';
+const descripcion = 'Calcula qué cuota de autónomo te toca pagar en 2026 según tus ingresos reales: tramo, base mínima y cuota mensual, con la tabla oficial de la Seguridad Social.';
+const url = `${SITE.url}/paro/cuota-autonomos/`;
+const eur = (n: number) => n.toLocaleString('es-ES', { minimumFractionDigits: 2, maximumFractionDigits: 2, useGrouping: 'always' } as any);
+const rango = (i: number) => {
+  const t = TRAMOS_2026[i];
+  const desde = i === 0 ? null : TRAMOS_2026[i - 1].hasta;
+  if (desde == null) return `Hasta ${eur(t.hasta)} €`;
+  if (t.hasta === Infinity) return `Más de ${eur(desde)} €`;
+  return `De ${eur(desde === 1166.69 ? 1166.7 : desde)} a ${eur(t.hasta === 1166.69 ? 1166.7 : t.hasta)} €`;
+};
+
+const preguntas = [
+  { q: '¿Cuánto paga un autónomo en 2026?', a: `Depende de sus ingresos reales. La cuota mínima va de ${eur(cuotaDe(TRAMOS_2026[0].baseMin))} € al mes, para quien gana menos de 670 € netos al mes, a ${eur(cuotaDe(TRAMOS_2026[14].baseMin))} € para quien supera los 6.000 €. Los nuevos autónomos pueden pagar una tarifa plana de unos 80 € al mes durante el primer año.` },
+  { q: '¿Han subido las cuotas de autónomos en 2026?', a: 'Las tablas de tramos son las mismas que en 2025. Lo único que sube es el Mecanismo de Equidad Intergeneracional (MEI), del 0,8 % al 0,9 %, lo que encarece la cuota unos céntimos o pocos euros al mes. Lo fijó el Real Decreto-ley 3/2026, convalidado en febrero.' },
+  { q: '¿Qué ingresos cuentan para el tramo?', a: 'Tus rendimientos netos: lo que facturas sin IVA menos los gastos deducibles de la actividad. A esa cifra se le resta un 7 % por gastos genéricos (un 3 % si eres autónomo societario) y se divide entre doce. La propia cuota de autónomos no cuenta como gasto para este cálculo.' },
+  { q: '¿Qué pasa si me equivoco de tramo?', a: 'Al año siguiente, cuando Hacienda tenga tus ingresos reales, la Seguridad Social regulariza: si cotizaste de menos te pedirá la diferencia, y si cotizaste de más te la devolverá. Puedes cambiar de tramo hasta seis veces al año para ajustarte.' },
+  { q: '¿Puedo cotizar por más de la base mínima?', a: 'Sí. Puedes elegir cualquier base entre la mínima y la máxima de tu tramo. Cotizar más cuesta más cada mes, pero mejora la futura pensión y las prestaciones por baja o por cese de actividad.' },
+];
+const jsonLd = [
+  {
+    '@context': 'https://schema.org', '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Inicio', item: SITE.url + '/' },
+      { '@type': 'ListItem', position: 2, name: 'Empleo y paro', item: `${SITE.url}/paro/` },
+      { '@type': 'ListItem', position: 3, name: titulo, item: url },
+    ],
+  },
+  { '@context': 'https://schema.org', '@type': 'WebApplication', name: titulo, url, applicationCategory: 'FinanceApplication', operatingSystem: 'Any', inLanguage: 'es-ES', offers: { '@type': 'Offer', price: '0', priceCurrency: 'EUR' } },
+  { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: preguntas.map((p) => ({ '@type': 'Question', name: p.q, acceptedAnswer: { '@type': 'Answer', text: p.a } })) },
+];
+---
+<Base title={titulo} description={descripcion} jsonLd={jsonLd}>
+  <nav class="breadcrumbs"><a href="/">Inicio</a> › <a href="/paro/">Empleo y paro</a></nav>
+  <article class="pagina">
+    <h1>{titulo}</h1>
+    <p class="lead">Desde 2023 los autónomos cotizan según lo que ganan de verdad. Escribe lo que facturas y tus gastos en el año y te decimos en qué tramo estás y cuánto pagarás cada mes en 2026.</p>
+
+    <div class="calc">
+      <form id="calc-aut" novalidate>
+        <label class="campo"><span>Ingresos del año, sin IVA</span><span class="u"><input name="ingresos" type="number" inputmode="decimal" min="0" step="500" value="30000" /><i>€</i></span></label>
+        <label class="campo"><span>Gastos de la actividad en el año</span><span class="u"><input name="gastos" type="number" inputmode="decimal" min="0" step="500" value="6000" /><i>€</i></span><small class="muted">Sin contar la propia cuota de autónomos.</small></label>
+        <fieldset class="campo">
+          <legend>Tipo de autónomo</legend>
+          <label class="radio"><input type="radio" name="tipo" value="fisica" checked /> Persona física</label>
+          <label class="radio"><input type="radio" name="tipo" value="societario" /> Societario (administrador o socio de una sociedad)</label>
+        </fieldset>
+      </form>
+      <section class="res" aria-live="polite">
+        <h2 class="etq">Tu cuota mínima en 2026</h2>
+        <p class="cifra"><span id="a-cuota">—</span> € <small>al mes</small></p>
+        <table class="desglose">
+          <tbody>
+            <tr><th scope="row">Rendimiento neto al mes</th><td id="a-rend">—</td></tr>
+            <tr><th scope="row">Tramo</th><td id="a-tramo">—</td></tr>
+            <tr><th scope="row">Base mínima</th><td id="a-base">—</td></tr>
+            <tr><th scope="row">Cuota al año</th><td id="a-anual">—</td></tr>
+            <tr><th scope="row">Cuota si eliges la base máxima del tramo</th><td id="a-max">—</td></tr>
+          </tbody>
+        </table>
+        <p class="muted small">Si te das de alta por primera vez, durante los primeros 12 meses puedes pagar la tarifa plana: unos 80 € al mes, algo más por el MEI.</p>
+      </section>
+    </div>
+
+    <Compartir title={titulo} url={url} />
+
+    <section class="prose">
+      <h2>Tabla de cuotas de autónomos 2026</h2>
+      <p>Cuota mensual con la base mínima y con la base máxima de cada tramo. El tipo de cotización es del 31,5 %, que incluye el 0,9 % del MEI.</p>
+      <div class="tabla-scroll">
+        <table class="ref">
+          <thead><tr><th scope="col">Rendimiento neto al mes</th><th scope="col">Base mínima</th><th scope="col">Cuota mínima</th><th scope="col">Cuota máxima</th></tr></thead>
+          <tbody>
+            {TRAMOS_2026.map((t, i) => (
+              <tr class={i === 3 ? 'corte' : ''}>
+                <th scope="row">{rango(i)}<span class="muted"> · {t.tabla === 'reducida' ? 'tabla reducida' : 'tabla general'}, tramo {t.n}</span></th>
+                <td>{eur(t.baseMin)} €</td>
+                <td><strong>{eur(cuotaDe(t.baseMin))} €</strong></td>
+                <td>{eur(cuotaDe(t.baseMax))} €</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <h2>Cómo se calcula</h2>
+      <ol>
+        <li>Se parte de los ingresos de la actividad, sin IVA, y se restan los gastos deducibles.</li>
+        <li>A ese rendimiento se le resta un 7 % en concepto de gastos genéricos. Los autónomos societarios restan un 3 %.</li>
+        <li>El resultado se divide entre 12 para obtener el rendimiento neto mensual, que decide el tramo.</li>
+        <li>La cuota mensual es el 31,5 % de la base de cotización que elijas dentro del tramo.</li>
+      </ol>
+      <p>Al principio de año eliges un tramo con tu previsión de ingresos. Cuando Hacienda conoce lo que ganaste de verdad, la Seguridad Social regulariza: te devuelve lo pagado de más o te reclama lo que falte. Puedes cambiar de tramo hasta seis veces al año, desde la sede electrónica de la Seguridad Social (Import@ss).</p>
+      <h2>Preguntas frecuentes</h2>
+      {preguntas.map((p) => (<><h3>{p.q}</h3><p>{p.a}</p></>))}
+      <p class="muted small">Fuente: tablas de bases y cuotas de 2026 del Real Decreto-ley 3/2026, de 3 de febrero, que prorroga las de 2025 (<a href="https://upta.es/wp-content/uploads/2026/02/RES-RDL-2-2026-y-3-2026_BOE-040226.pdf" rel="nofollow noopener" target="_blank">resumen de UPTA</a>). Resultado orientativo: no incluye bonificaciones ni reducciones especiales.</p>
+    </section>
+    <Siguenos />
+  </article>
+</Base>
+
+<script>
+  import { rendimientoMensual, tramoDe, cuotaDe } from '../../lib/autonomos';
+  const form = document.getElementById('calc-aut') as HTMLFormElement;
+  const fmt = (n: number) => n.toLocaleString('es-ES', { minimumFractionDigits: 2, maximumFractionDigits: 2, useGrouping: 'always' } as Intl.NumberFormatOptions);
+  const $ = (id: string) => document.getElementById(id)!;
+  function calcular() {
+    const d = new FormData(form);
+    const num = (k: string) => parseFloat(String(d.get(k) ?? '').replace(',', '.')) || 0;
+    const rend = rendimientoMensual({ ingresos: num('ingresos'), gastos: num('gastos'), societario: d.get('tipo') === 'societario' });
+    const t = tramoDe(rend);
+    const c = cuotaDe(t.baseMin);
+    $('a-cuota').textContent = fmt(c);
+    $('a-rend').textContent = `${fmt(rend)} €`;
+    $('a-tramo').textContent = `Tabla ${t.tabla}, tramo ${t.n}`;
+    $('a-base').textContent = `${fmt(t.baseMin)} €`;
+    $('a-anual').textContent = `${fmt(c * 12)} €`;
+    $('a-max').textContent = `${fmt(cuotaDe(t.baseMax))} € al mes`;
+  }
+  form.addEventListener('input', calcular);
+  form.addEventListener('change', calcular);
+  calcular();
+</script>
+
+<style>
+  .pagina { max-width: 900px; }
+  h1 { font-size: clamp(1.9rem, 4.6vw, 2.6rem); line-height: 1.15; margin: 4px 0 12px; }
+  .lead { font-size: 1.125rem; line-height: 1.55; margin: 0 0 24px; max-width: 720px; }
+  .calc { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; border-top: 2px solid var(--ink); padding-top: 24px; align-items: start; }
+  form { display: flex; flex-direction: column; gap: 18px; }
+  .campo { display: flex; flex-direction: column; gap: 6px; border: 0; margin: 0; padding: 0; }
+  .campo > span, legend { font-weight: 600; font-size: .9375rem; padding: 0; margin-bottom: 4px; }
+  .campo small { font-size: .8125rem; }
+  .u { position: relative; display: block; }
+  .u i { position: absolute; right: 12px; top: 50%; transform: translateY(-50%); font-style: normal; color: var(--muted); }
+  input[type='number'] { font: 600 1.25rem var(--sans); padding: 10px 34px 10px 12px; border: 1px solid #b9c0c6; border-radius: 4px; width: 100%; color: var(--ink); background: var(--bg); font-variant-numeric: tabular-nums; }
+  input:focus { outline: 2px solid var(--brand); outline-offset: 0; }
+  .radio { display: flex; gap: 8px; align-items: center; font-size: .9375rem; padding: 4px 0; }
+  .radio input { accent-color: var(--brand); width: 18px; height: 18px; margin: 0; }
+  .res { background: var(--surface); border-radius: 4px; padding: 24px; }
+  .etq { font: 600 .875rem var(--sans); text-transform: uppercase; letter-spacing: .04em; color: var(--muted); margin: 0; }
+  .cifra { font-family: var(--serif); font-size: clamp(2.4rem, 6vw, 3rem); font-weight: 600; line-height: 1.1; margin: 6px 0 16px; color: var(--brand-dark); font-variant-numeric: tabular-nums; }
+  .cifra small { font: 400 1rem var(--sans); color: var(--muted); }
+  .desglose { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
+  .desglose th, .desglose td { padding: 8px 0; border-bottom: 1px solid var(--rule); font-size: .9375rem; }
+  .desglose th { text-align: left; font-weight: 400; }
+  .desglose td { text-align: right; padding-left: 12px; }
+  .small { font-size: .8125rem; }
+  .prose { margin-top: 36px; }
+  .tabla-scroll { overflow-x: auto; }
+  .ref { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums; display: table !important; }
+  .ref th, .ref td { padding: 8px 12px 8px 0; border-bottom: 1px solid var(--rule); text-align: right; font-size: .9375rem; white-space: nowrap; }
+  .ref th:first-child { text-align: left; font-weight: 500; white-space: normal; }
+  .ref th span { font-size: .8125rem; }
+  .ref thead th { font-size: .8125rem; font-weight: 600; border-bottom: 1px solid var(--ink); white-space: normal; }
+  .ref tr.corte th, .ref tr.corte td { border-top: 1px solid var(--ink); }
+  @media (max-width: 720px) {
+    .calc { grid-template-columns: 1fr; }
+    .res { padding: 20px 16px; }
+  }
+</style>
