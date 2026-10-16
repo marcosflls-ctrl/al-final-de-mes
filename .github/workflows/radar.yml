@@ -18,6 +18,7 @@ on:
 permissions:
   contents: write
   pull-requests: write
+  issues: write               # para los avisos de fechas de cobro
   id-token: write             # permite a GitHub demostrar a Claude que es este robot (sin claves)
 
 concurrency:
@@ -44,6 +45,16 @@ jobs:
           python-version: "3.12"
 
       - run: pip install -r scripts/requirements.txt
+
+      # Aviso si salen noticias de las fechas de cobro de un mes que aún no está en el calendario
+      - name: Alerta de fechas de cobro
+        if: github.event.inputs.url == ''
+        continue-on-error: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TG_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TG_CHAT: ${{ secrets.TELEGRAM_AVISOS_CHAT_ID }}
+        run: python scripts/alerta_cobros.py
 
       - name: Pedir identidad a GitHub
         uses: actions/github-script@v8

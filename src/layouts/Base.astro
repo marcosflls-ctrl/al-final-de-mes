@@ -78,9 +78,19 @@ const hoy = new Date().toLocaleDateString('es-ES', { weekday: 'long', day: 'nume
     </div>
     <nav id="menu" class="secciones" aria-label="Secciones">
       <div class="wrap">
-        {Object.entries(CATEGORIES).map(([key, c]) => (
-          <a href={`/${key}/`} aria-current={path.startsWith(`/${key}/`) ? 'page' : undefined}>{c.label}</a>
-        ))}
+        {Object.entries(CATEGORIES).map(([key, c]) => {
+          const menu = (c as any).menu as { href: string; label: string; rutas: string[] }[] | undefined;
+          if (!menu) return <a href={`/${key}/`} aria-current={path.startsWith(`/${key}/`) ? 'page' : undefined}>{c.label}</a>;
+          const activa = menu.some((m) => m.rutas.some((r) => path.startsWith(r)));
+          return (
+            <div class:list={['desplegable', { activa }]}>
+              <button type="button" class="desplegable-btn" aria-expanded="false" aria-controls={`sub-${key}`}>{c.label}<svg viewBox="0 0 12 12" width="12" height="12" aria-hidden="true"><path d="M2.5 4.5 6 8l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></button>
+              <ul id={`sub-${key}`} class="submenu" hidden>
+                {menu.map((m) => <li><a href={m.href} aria-current={m.rutas.some((r) => path.startsWith(r)) ? 'page' : undefined}>{m.label}</a></li>)}
+              </ul>
+            </div>
+          );
+        })}
       </div>
     </nav>
   </header>
@@ -124,6 +134,32 @@ const hoy = new Date().toLocaleDateString('es-ES', { weekday: 'long', day: 'nume
         window.googlefc = window.googlefc || {};
         window.googlefc.callbackQueue = window.googlefc.callbackQueue || [];
         window.googlefc.callbackQueue.push(function () { window.googlefc.showRevocationMessage(); });
+      });
+    })();
+    (function () {
+      // Desplegables del menú: se abren al pulsar y se cierran al pulsar fuera o con Escape
+      var botones = document.querySelectorAll('.desplegable-btn');
+      function cerrar(excepto) {
+        botones.forEach(function (b) {
+          if (b === excepto) return;
+          b.setAttribute('aria-expanded', 'false');
+          document.getElementById(b.getAttribute('aria-controls')).hidden = true;
+        });
+      }
+      botones.forEach(function (b) {
+        b.addEventListener('click', function (e) {
+          e.stopPropagation();
+          var abrir = b.getAttribute('aria-expanded') !== 'true';
+          cerrar(b);
+          b.setAttribute('aria-expanded', String(abrir));
+          document.getElementById(b.getAttribute('aria-controls')).hidden = !abrir;
+        });
+      });
+      document.addEventListener('click', function (e) { if (!e.target.closest('.desplegable')) cerrar(); });
+      document.addEventListener('keydown', function (e) {
+        if (e.key !== 'Escape') return;
+        var abierto = document.querySelector('.desplegable-btn[aria-expanded="true"]');
+        cerrar(); if (abierto) abierto.focus();
       });
     })();
     (function () {
@@ -188,6 +224,15 @@ const hoy = new Date().toLocaleDateString('es-ES', { weekday: 'long', day: 'nume
   .secciones a { color: var(--ink); text-decoration: none; font-weight: 500; font-size: .9375rem; padding: 11px 0 9px; border-bottom: 3px solid transparent; }
   .secciones a:hover { color: var(--brand); }
   .secciones a[aria-current] { border-bottom-color: var(--brand); }
+  .desplegable { position: relative; display: flex; }
+  .desplegable-btn { display: flex; align-items: center; gap: 5px; font: 500 .9375rem var(--sans); color: var(--ink); background: none; border: 0; border-bottom: 3px solid transparent; padding: 11px 0 9px; cursor: pointer; }
+  .desplegable-btn:hover { color: var(--brand); }
+  .desplegable.activa .desplegable-btn { border-bottom-color: var(--brand); }
+  .desplegable-btn[aria-expanded="true"] svg { transform: rotate(180deg); }
+  .submenu { position: absolute; top: 100%; left: -14px; z-index: 30; min-width: 220px; margin: 0; padding: 6px 0; list-style: none; background: var(--bg); border: 1px solid var(--rule); border-top: 2px solid var(--ink); box-shadow: 0 8px 20px rgba(28, 32, 36, .08); }
+  .submenu[hidden] { display: none; }
+  .secciones .submenu a { display: block; padding: 9px 14px; border-bottom: 0; }
+  .secciones .submenu a[aria-current] { color: var(--brand); font-weight: 600; }
   @media (max-width: 760px) {
     .fecha { display: none; }
     .search-btn { margin-left: auto; }
@@ -199,6 +244,11 @@ const hoy = new Date().toLocaleDateString('es-ES', { weekday: 'long', day: 'nume
     .secciones a { padding: 12px 0; border-bottom: 1px solid var(--rule); }
     .secciones a:last-child { border-bottom: 0; }
     .secciones a[aria-current] { color: var(--brand); border-bottom-color: var(--rule); }
+    .desplegable { flex-direction: column; border-bottom: 1px solid var(--rule); }
+    .desplegable-btn { justify-content: space-between; width: 100%; padding: 12px 0; border-bottom: 0; }
+    .desplegable.activa .desplegable-btn { color: var(--brand); }
+    .submenu { position: static; box-shadow: none; border: 0; padding: 0 0 6px 14px; min-width: 0; }
+    .secciones .submenu a { padding: 10px 0; }
   }
 
   main.wrap { min-height: 70vh; padding-top: 28px; padding-bottom: 56px; }
