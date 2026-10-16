@@ -48,6 +48,7 @@ const jsonLd = {
         {preciosManana
           ? <LuzDia id="manana" titulo={`Mañana, ${fechaLarga(manana)}`} horas={preciosManana} />
           : <p class="nota aviso-manana">El precio de mañana se publica cada tarde, hacia las 20:15. Vuelve a partir de esa hora.</p>}
+        <p class="otro-dato">¿Buscas el combustible? <a href="/gasolina/">Precio de la gasolina y el diésel hoy, por provincia</a>.</p>
         <p class="muted small nota">Precio de la tarifa regulada (PVPC 2.0TD) en euros por kilovatio hora, sin impuestos. Incluye la energía y los peajes; no incluye la potencia contratada, el alquiler del contador, el impuesto eléctrico ni el IVA. Si tienes una tarifa de mercado libre con precio fijo, estos precios no te afectan. Fuente: <a href="https://www.ree.es/es/datos/mercados" rel="noopener" target="_blank">Red Eléctrica</a>.</p>
       </>
     ) : <p class="nota">Estamos actualizando los precios de hoy. Vuelve en unos minutos.</p>
@@ -80,4 +81,5 @@ const jsonLd = {
   .bloque { margin-top: 44px; }
   .aviso-manana { margin: 0 0 32px; }
   .small.muted { max-width: 72ch; }
+  .otro-dato { font-weight: 500; margin: 0 0 12px; }
 </style>

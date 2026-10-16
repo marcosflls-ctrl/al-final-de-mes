@@ -1,0 +1,96 @@
+---
+// Módulo lateral de la portada: precio de la luz y de los carburantes hoy, en pestañas.
+// Sin JavaScript se ven los dos bloques, uno debajo del otro.
+import { datosLuz, hoyManana } from '../lib/luz';
+import { datosCarburantes, litro } from '../lib/carburantes';
+const luz = datosLuz();
+const [hoy, manana] = hoyManana();
+const horas = luz?.dias[hoy];
+const hayManana = Boolean(luz?.dias[manana]);
+const eur = (p: number) => p.toLocaleString('es-ES', { minimumFractionDigits: 3, maximumFractionDigits: 3 });
+const fin = (h: string) => `${String((parseInt(h, 10) + 1) % 24).padStart(2, '0')}:00`;
+const min = horas ? horas.reduce((a, b) => (b.p < a.p ? b : a)) : null;
+const max = horas ? horas.reduce((a, b) => (b.p > a.p ? b : a)) : null;
+const media = horas ? horas.reduce((s, x) => s + x.p, 0) / horas.length : 0;
+const carb = datosCarburantes();
+const n = carb?.nacional;
+---
+<aside class="precios-hoy" aria-labelledby="precios-hoy-t">
+  <h2 id="precios-hoy-t" class="titulo-bloque">Precios de hoy</h2>
+  <div class="pestanas" role="tablist" aria-label="Precios de hoy" hidden>
+    <button role="tab" id="tab-luz" aria-controls="panel-luz" aria-selected="true">Luz</button>
+    <button role="tab" id="tab-carb" aria-controls="panel-carb" aria-selected="false" tabindex="-1">Carburantes</button>
+  </div>
+
+  <section id="panel-luz" role="tabpanel" aria-labelledby="tab-luz">
+    <h3 class="sin-js">Luz</h3>
+    {horas && min && max ? (
+      <>
+        <dl>
+          <div><dt>Media del día</dt><dd>{eur(media)} €/kWh</dd></div>
+          <div><dt>Más barata</dt><dd><b class="bien">{min.h}–{fin(min.h)}</b><span>{eur(min.p)} €/kWh</span></dd></div>
+          <div><dt>Más cara</dt><dd><b class="mal">{max.h}–{fin(max.h)}</b><span>{eur(max.p)} €/kWh</span></dd></div>
+        </dl>
+        <p class="enlace"><a href="/luz/">Todas las horas{hayManana ? ' y el precio de mañana' : ''}</a></p>
+      </>
+    ) : <p class="enlace"><a href="/luz/">Precio de la luz por horas</a></p>}
+    <p class="muted fuente">Tarifa regulada (PVPC), sin impuestos. Fuente: Red Eléctrica.</p>
+  </section>
+
+  <section id="panel-carb" role="tabpanel" aria-labelledby="tab-carb">
+    <h3 class="sin-js">Carburantes</h3>
+    {n?.g95 && n?.diesel ? (
+      <>
+        <dl>
+          <div><dt>Gasolina 95</dt><dd>{litro(n.g95.media)} €/l<span>desde {litro(n.g95.min)} €</span></dd></div>
+          <div><dt>Diésel</dt><dd>{litro(n.diesel.media)} €/l<span>desde {litro(n.diesel.min)} €</span></dd></div>
+        </dl>
+        <p class="enlace"><a href="/gasolina/">Precio por provincia y gasolineras más baratas</a></p>
+      </>
+    ) : <p class="enlace"><a href="/gasolina/">Precio de la gasolina y el diésel</a></p>}
+    <p class="muted fuente">Media de las gasolineras de España. Fuente: Ministerio para la Transición Ecológica.</p>
+  </section>
+</aside>
+<script>
+  document.querySelectorAll<HTMLElement>('.precios-hoy').forEach((caja) => {
+    const lista = caja.querySelector<HTMLElement>('[role=tablist]');
+    const tabs = Array.from(caja.querySelectorAll<HTMLButtonElement>('[role=tab]'));
+    const paneles = tabs.map((t) => caja.querySelector<HTMLElement>(`#${t.getAttribute('aria-controls')}`)!);
+    if (!lista) return;
+    lista.hidden = false;
+    caja.classList.add('con-js');
+    const elegir = (i: number, foco = false) => {
+      tabs.forEach((t, j) => {
+        t.setAttribute('aria-selected', String(i === j));
+        t.tabIndex = i === j ? 0 : -1;
+        paneles[j].hidden = i !== j;
+      });
+      if (foco) tabs[i].focus();
+    };
+    tabs.forEach((t, i) => {
+      t.addEventListener('click', () => elegir(i));
+      t.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') elegir((i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length, true);
+      });
+    });
+    elegir(0);
+  });
+</script>
+<style>
+  .pestanas { display: flex; gap: 20px; border-bottom: 1px solid var(--rule); margin: -6px 0 4px; }
+  .pestanas[hidden] { display: none; }
+  .pestanas button { font: 500 .9375rem var(--sans); color: var(--muted); background: none; border: 0; border-bottom: 2px solid transparent; padding: 6px 0 8px; margin-bottom: -1px; cursor: pointer; }
+  .pestanas button[aria-selected="true"] { color: var(--ink); border-bottom-color: var(--brand); }
+  .con-js .sin-js { display: none; }
+  h3.sin-js { font-size: 1rem; margin: 16px 0 0; }
+  dl { margin: 0; }
+  dl div { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; padding: 10px 0; border-bottom: 1px solid var(--rule); }
+  dt { color: var(--muted); font-size: .9375rem; white-space: nowrap; }
+  dd { margin: 0; font-weight: 600; font-variant-numeric: tabular-nums; text-align: right; white-space: nowrap; }
+  dd b { font-weight: 600; }
+  dd span { display: block; font-weight: 400; font-size: .8125rem; color: var(--muted); }
+  .bien { color: var(--good); }
+  .mal { color: var(--bad); }
+  .enlace { margin: 12px 0 4px; font-size: .875rem; }
+  .fuente { font-size: .8125rem; margin: 0; }
+</style>

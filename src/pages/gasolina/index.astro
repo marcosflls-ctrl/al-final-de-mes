@@ -1,0 +1,71 @@
+---
+import Base from '../../layouts/Base.astro';
+import Carburantes from '../../components/Carburantes.astro';
+import EvolucionCarburantes from '../../components/EvolucionCarburantes.astro';
+import PostCard from '../../components/PostCard.astro';
+import { SITE } from '../../config';
+import { datosCarburantes, litro, hace } from '../../lib/carburantes';
+import { fechaLarga } from '../../lib/luz';
+import { getPublishedPosts } from '../../lib/posts';
+
+const d = datosCarburantes();
+const n = d?.nacional;
+const provincias = d ? [...d.provincias].filter((p) => p.g95).sort((a, b) => a.g95!.media - b.g95!.media) : [];
+const titulo = 'Precio de la gasolina y el diésel hoy';
+const desc = d && n?.g95 && n?.diesel
+  ? `Precio medio de la gasolina 95 (${litro(n.g95.media)} €/l) y el diésel (${litro(n.diesel.media)} €/l) hoy en España, por provincias y las gasolineras más baratas.`
+  : 'Precio de la gasolina 95 y el diésel hoy en España, por provincias, con datos oficiales del Ministerio.';
+const noticias = (await getPublishedPosts()).filter((p) => p.data.category === 'luz' && /gasolin|diésel|diesel|carburant|combustib/i.test(p.data.title)).slice(0, 3);
+const jsonLd = {
+  '@context': 'https://schema.org', '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Inicio', item: SITE.url + '/' },
+    { '@type': 'ListItem', position: 2, name: 'Luz y carburantes', item: `${SITE.url}/luz/` },
+    { '@type': 'ListItem', position: 3, name: 'Gasolina y diésel', item: `${SITE.url}/gasolina/` },
+  ],
+};
+---
+<Base title={titulo} description={desc.slice(0, 165)} jsonLd={jsonLd}>
+  <nav class="breadcrumbs"><a href="/">Inicio</a> › <a href="/luz/">Luz y carburantes</a> › Gasolina y diésel</nav>
+  <h1>{titulo}</h1>
+  {d && n ? (
+    <>
+      <p class="intro">Precios de hoy, {fechaLarga(d.fecha)}, en las {d.gasolineras.toLocaleString('es-ES')} gasolineras de España, según los datos que cada estación comunica al Ministerio para la Transición Ecológica.</p>
+      <h2 class="titulo-bloque">En toda España</h2>
+      <Carburantes g95={n.g95} diesel={n.diesel} ambito="toda España"
+        cambioG95={n.g95 && hace(d, 7, 'g95') != null ? n.g95.media - hace(d, 7, 'g95')! : undefined}
+        cambioDiesel={n.diesel && hace(d, 7, 'diesel') != null ? n.diesel.media - hace(d, 7, 'diesel')! : undefined} />
+      <EvolucionCarburantes datos={d} />
+
+      <section class="bloque">
+        <h2 class="titulo-bloque">Precio medio por provincia</h2>
+        <p class="muted small">De la más barata a la más cara en gasolina 95. Pulsa en tu provincia para ver sus gasolineras más baratas.</p>
+        <table class="provincias">
+          <thead><tr><th>Provincia</th><th>Gasolina 95</th><th>Diésel</th></tr></thead>
+          <tbody>
+            {provincias.map((p) => (
+              <tr><td><a href={`/gasolina/${p.slug}/`}>{p.nombre}</a></td><td>{litro(p.g95?.media)} €</td><td>{litro(p.diesel?.media)} €</td></tr>
+            ))}
+          </tbody>
+        </table>
+      </section>
+      <p class="muted small nota-fuente">Fuente: <a href="https://geoportalgasolineras.es/" rel="noopener" target="_blank">Geoportal de Hidrocarburos</a> del Ministerio para la Transición Ecológica. Datos de las {new Date(d.actualizado).toLocaleTimeString('es-ES', { hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Madrid' })} (hora peninsular). Los precios incluyen impuestos. Ceuta, Melilla y Canarias tienen una fiscalidad distinta.</p>
+    </>
+  ) : <p class="nota">Estamos actualizando los precios. Vuelve en unos minutos.</p>}
+
+  {noticias.length > 0 && (
+    <section class="bloque">
+      <h2 class="titulo-bloque">Noticias sobre carburantes</h2>
+      <div class="lista-noticias">{noticias.map((p) => <PostCard post={p} />)}</div>
+    </section>
+  )}
+</Base>
+<style>
+  h1 { font-size: clamp(2rem, 5vw, 2.75rem); margin: 4px 0 10px; max-width: 24ch; }
+  .intro { max-width: 68ch; margin: 0 0 28px; }
+  .bloque { margin-top: 44px; }
+  .provincias { border-collapse: collapse; width: 100%; max-width: 560px; font-variant-numeric: tabular-nums; }
+  .provincias th, .provincias td { text-align: left; padding: 7px 16px 7px 0; border-bottom: 1px solid var(--rule); }
+  .provincias thead th { border-bottom-color: var(--ink); font-size: .875rem; }
+  .nota-fuente { margin-top: 24px; max-width: 72ch; }
+</style>

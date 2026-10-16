@@ -1,0 +1,60 @@
+---
+// Cifras de un ámbito (España o una provincia) y sus gasolineras más baratas
+import { litro, type Resumen, type Gasolinera } from '../lib/carburantes';
+interface Props { g95?: Resumen; diesel?: Resumen; baratasG95?: Gasolinera[]; baratasDiesel?: Gasolinera[]; ambito: string; cambioG95?: number; cambioDiesel?: number }
+const { g95, diesel, baratasG95 = [], baratasDiesel = [], ambito, cambioG95, cambioDiesel } = Astro.props;
+const cambio = (c?: number) => c == null || Math.abs(c) < 0.0005 ? null : `${c > 0 ? '+' : '−'}${litro(Math.abs(c))} € en una semana`;
+const filas = [
+  { nombre: 'Gasolina 95', r: g95, c: cambio(cambioG95), sube: (cambioG95 ?? 0) > 0 },
+  { nombre: 'Gasóleo A (diésel)', r: diesel, c: cambio(cambioDiesel), sube: (cambioDiesel ?? 0) > 0 },
+];
+---
+<table class="cifras">
+  <thead><tr><th>Combustible</th><th>Media</th><th>Más barata</th><th>Más cara</th></tr></thead>
+  <tbody>
+    {filas.map((f) => f.r && (
+      <tr>
+        <th scope="row">{f.nombre}</th>
+        <td><strong>{litro(f.r.media)} €/l</strong>{f.c && <span class:list={['cambio', f.sube ? 'sube' : 'baja']}>{f.c}</span>}</td>
+        <td>{litro(f.r.min)} €/l</td>
+        <td>{litro(f.r.max)} €/l</td>
+      </tr>
+    ))}
+  </tbody>
+</table>
+<p class="muted small">Media simple de los precios de {g95?.n?.toLocaleString('es-ES')} gasolineras de {ambito} que venden gasolina 95. No incluye descuentos de tarjetas ni promociones.</p>
+
+{(baratasG95.length > 0 || baratasDiesel.length > 0) && (
+  <div class="baratas">
+    {[['Gasolina 95 más barata', baratasG95], ['Diésel más barato', baratasDiesel]].map(([t, lista]: any) => lista.length > 0 && (
+      <section>
+        <h3>{t}</h3>
+        <ol>
+          {lista.map((g: Gasolinera) => (
+            <li><span class="precio">{litro(g.p)} €</span><span><b>{g.rotulo || 'Sin rótulo'}</b>, {g.direccion}, {g.localidad}</span></li>
+          ))}
+        </ol>
+      </section>
+    ))}
+  </div>
+)}
+<style>
+  .cifras { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums; margin: 4px 0 8px; }
+  .cifras th, .cifras td { text-align: left; padding: 10px 16px 10px 0; border-bottom: 1px solid var(--rule); vertical-align: top; }
+  .cifras thead th { font-weight: 600; font-size: .875rem; border-bottom: 1px solid var(--ink); }
+  .cifras tbody th { font-weight: 500; }
+  .cifras strong { font-family: var(--serif); font-size: 1.25rem; font-weight: 600; }
+  .cambio { display: block; font-size: .8125rem; }
+  .sube { color: var(--bad); }
+  .baja { color: var(--good); }
+  .baratas { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin-top: 24px; }
+  .baratas h3 { font-size: 1.125rem; margin: 0 0 8px; }
+  ol { margin: 0; padding: 0; list-style: none; }
+  li { display: flex; gap: 14px; padding: 8px 0; border-bottom: 1px solid var(--rule); font-size: .9375rem; }
+  .precio { font-weight: 600; font-variant-numeric: tabular-nums; flex: none; width: 4.2em; color: var(--good); }
+  @media (max-width: 700px) {
+    .baratas { grid-template-columns: 1fr; gap: 20px; }
+    .cifras th, .cifras td { padding-right: 10px; font-size: .9375rem; }
+    .cifras strong { font-size: 1.05rem; }
+  }
+</style>

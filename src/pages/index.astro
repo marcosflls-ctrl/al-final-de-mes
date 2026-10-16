@@ -3,7 +3,7 @@ import Base from '../layouts/Base.astro';
 import PostCard from '../components/PostCard.astro';
 import AdSlot from '../components/AdSlot.astro';
 import Siguenos from '../components/Siguenos.astro';
-import LuzResumen from '../components/LuzResumen.astro';
+import PreciosHoy from '../components/PreciosHoy.astro';
 import { SITE, CATEGORIES } from '../config';
 import { getPublishedPosts } from '../lib/posts';
 
@@ -38,7 +38,7 @@ const jsonLd = [
         </section>
       )}
     </div>
-    <LuzResumen />
+    <PreciosHoy />
   </div>
 
   {latest.length > 0 && (

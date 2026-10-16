@@ -1,0 +1,42 @@
+---
+// Evolución diaria del precio medio nacional (gasolina 95 y diésel). Solo se muestra con 7 días o más.
+import { litro, type DatosCarburantes } from '../lib/carburantes';
+interface Props { datos: DatosCarburantes }
+const { datos } = Astro.props;
+const dias = Object.entries(datos.historico).sort(([a], [b]) => a.localeCompare(b));
+const valores = dias.flatMap(([, v]) => [v.g95, v.diesel]).filter((x): x is number => x != null);
+const ok = dias.length >= 7 && valores.length > 0;
+const W = 720, H = 220, izq = 52, der = 16, arr = 14, abj = 28;
+const lo = Math.floor(Math.min(...valores) * 20) / 20, hi = Math.ceil(Math.max(...valores) * 20) / 20 || lo + 0.1;
+const X = (i: number) => izq + (i * (W - izq - der)) / Math.max(1, dias.length - 1);
+const Y = (v: number) => arr + ((hi - v) * (H - arr - abj)) / (hi - lo || 1);
+const linea = (k: 'g95' | 'diesel') => dias.map(([, v], i) => (v[k] == null ? '' : `${i ? 'L' : 'M'}${X(i).toFixed(1)} ${Y(v[k]!).toFixed(1)}`)).join(' ');
+const marcas = Array.from({ length: Math.round((hi - lo) / 0.05) + 1 }, (_, i) => lo + i * 0.05).filter((_, i, a) => a.length < 7 || i % 2 === 0);
+const fecha = (f: string) => new Date(`${f}T12:00:00Z`).toLocaleDateString('es-ES', { day: 'numeric', month: 'short', timeZone: 'Europe/Madrid' });
+const ultimo = dias[dias.length - 1]?.[1];
+---
+{ok && (
+  <figure class="evolucion">
+    <svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label={`Evolución del precio medio en España en los últimos ${dias.length} días`}>
+      {marcas.map((m) => <g><line x1={izq} x2={W - der} y1={Y(m)} y2={Y(m)} class="rejilla" /><text x={izq - 8} y={Y(m) + 4} text-anchor="end">{litro(m).slice(0, 4)}</text></g>)}
+      <path d={linea('g95')} class="g95" />
+      <path d={linea('diesel')} class="diesel" />
+      <text x={izq} y={H - 8}>{fecha(dias[0][0])}</text>
+      <text x={W - der} y={H - 8} text-anchor="end">{fecha(dias[dias.length - 1][0])}</text>
+      {ultimo?.g95 != null && <text x={W - der - 4} y={Y(ultimo.g95) - 8} text-anchor="end" class="etq">Gasolina 95</text>}
+      {ultimo?.diesel != null && <text x={W - der - 4} y={Y(ultimo.diesel) + 18} text-anchor="end" class="etq">Diésel</text>}
+    </svg>
+    <figcaption>Precio medio en España, en euros por litro.</figcaption>
+  </figure>
+)}
+<style>
+  .evolucion { margin: 16px 0 0; }
+  svg { width: 100%; height: auto; display: block; }
+  text { font: 12px var(--sans); fill: var(--muted); }
+  .etq { fill: var(--ink); font-weight: 500; }
+  .rejilla { stroke: var(--rule); stroke-width: 1; }
+  path { fill: none; stroke-width: 2; }
+  .g95 { stroke: var(--brand); }
+  .diesel { stroke: #8a6d2f; }
+  figcaption { font-size: .8125rem; color: var(--muted); margin-top: 4px; }
+</style>
