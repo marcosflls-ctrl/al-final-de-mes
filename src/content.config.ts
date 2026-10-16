@@ -9,7 +9,7 @@ const posts = defineCollection({
     date: z.coerce.date(),
     updated: z.coerce.date().optional(),
     category: z.enum(['luz', 'pensiones', 'paro', 'vivienda', 'hacienda']),
-    tags: z.array(z.string()).default([]),
+    tags: z.array(z.coerce.string()).default([]),  // una etiqueta como 2027 se lee como número: se convierte a texto
     image: z.string().optional(),
     imageAlt: z.string().optional(),
     imageCredit: z.string().optional(),

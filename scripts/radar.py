@@ -378,7 +378,7 @@ def save_post(data: dict, item: dict) -> Path:
     src_yaml = "".join(f"  - name: {yaml_str(n)}\n    url: {yaml_str(u)}\n" for n, u in fuentes)
 
     now = datetime.now(timezone.utc).replace(microsecond=0).isoformat()
-    tags = ", ".join(slugify(t, 30) for t in data.get("tags", [])[:5])
+    tags = ", ".join(yaml_str(slugify(t, 30)) for t in data.get("tags", [])[:5])  # entre comillas: "2027" es texto
     fm = (
         "---\n"
         f"title: {yaml_str(data['title'][:110])}\n"
