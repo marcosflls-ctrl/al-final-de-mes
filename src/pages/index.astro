@@ -4,6 +4,7 @@ import PostCard from '../components/PostCard.astro';
 import AdSlot from '../components/AdSlot.astro';
 import Siguenos from '../components/Siguenos.astro';
 import PreciosHoy from '../components/PreciosHoy.astro';
+import { HERRAMIENTAS } from '../data/herramientas';
 import { SITE, CATEGORIES } from '../config';
 import { getPublishedPosts } from '../lib/posts';
 
@@ -55,6 +56,14 @@ const jsonLd = [
     </section>
   )}
 
+  <section class="bloque" aria-labelledby="h-calc">
+    <h2 id="h-calc" class="titulo-bloque">Calculadoras</h2>
+    <ul class="herramientas">
+      {HERRAMIENTAS.slice(0, 6).map((h) => <li><a href={h.href}><strong>{h.titulo}</strong><span>{h.texto}</span></a></li>)}
+    </ul>
+    <p class="todas"><a href="/calculadoras/">Todas las calculadoras</a></p>
+  </section>
+
   <AdSlot />
 
   {Object.entries(CATEGORIES).map(([key, c]) => {
@@ -70,6 +79,14 @@ const jsonLd = [
   <Siguenos />
 </Base>
 <style>
+  .herramientas { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 0 28px; }
+  .herramientas a { display: flex; flex-direction: column; gap: 4px; padding: 14px 0; border-bottom: 1px solid var(--rule); text-decoration: none; color: var(--ink); height: 100%; }
+  .herramientas a:hover strong { color: var(--brand); text-decoration: underline; }
+  .herramientas strong { font-family: var(--serif); font-size: 1.125rem; }
+  .herramientas span { color: var(--muted); font-size: .875rem; line-height: 1.45; }
+  .todas { margin: 12px 0 0; font-size: .9375rem; font-weight: 600; }
+  @media (max-width: 860px) { .herramientas { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 560px) { .herramientas { grid-template-columns: 1fr; } }
   .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
   .apertura { display: grid; grid-template-columns: minmax(0, 2.4fr) minmax(260px, 1fr); gap: 40px; align-items: start; }
   .principal { min-width: 0; }
