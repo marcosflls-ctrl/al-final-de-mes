@@ -1,0 +1,42 @@
+name: Descargar fuentes
+
+# Descarga documentos oficiales (PDF o páginas) y los guarda como texto en la rama "fuentes",
+# para poder consultarlos con exactitud al preparar herramientas y guías. No toca la web.
+on:
+  workflow_dispatch:
+    inputs:
+      urls:
+        description: "Enlaces separados por espacios"
+        required: true
+      nombre:
+        description: "Carpeta donde guardarlos"
+        required: true
+
+permissions:
+  contents: write
+
+jobs:
+  descargar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - run: sudo apt-get install -y -qq poppler-utils > /dev/null
+      - name: Descargar y convertir
+        run: |
+          git fetch origin fuentes && git checkout fuentes || git checkout --orphan fuentes
+          git rm -rq --cached . 2>/dev/null || true
+          find . -mindepth 1 -maxdepth 1 ! -name .git ! -name fuentes -exec rm -rf {} +
+          mkdir -p "fuentes/${{ github.event.inputs.nombre }}" && cd "fuentes/${{ github.event.inputs.nombre }}"
+          i=0
+          for u in ${{ github.event.inputs.urls }}; do
+            i=$((i+1))
+            curl -sSL -m 120 -A "Mozilla/5.0" -o "doc$i" "$u" || { echo "::warning title=Descarga::Fallo $u"; continue; }
+            if head -c 5 "doc$i" | grep -q "%PDF"; then mv "doc$i" "doc$i.pdf"; pdftotext -layout "doc$i.pdf" "doc$i.txt"; else mv "doc$i" "doc$i.html"; fi
+            echo "$u" >> fuentes.txt
+            echo "::notice title=Descarga::$u -> doc$i ($(wc -c < doc$i.* | tail -1) bytes)"
+          done
+          cd "$GITHUB_WORKSPACE"
+          git config user.name "fuentes-bot"; git config user.email "fuentes-bot@users.noreply.github.com"
+          git add fuentes && git commit -qm "Fuentes: ${{ github.event.inputs.nombre }}" && git push -q origin fuentes
