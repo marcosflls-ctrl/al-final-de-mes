@@ -16,7 +16,7 @@ from PIL import Image, ImageDraw, ImageFont
 ROOT = Path(__file__).resolve().parent.parent
 FUENTES = Path(__file__).resolve().parent / "fuentes"
 VERDE, VERDE_OSC, CLARO, BLANCO = (11, 93, 75), (8, 68, 54), (183, 214, 203), (255, 255, 255)
-ETIQUETAS = {"inicio": "Al Final de Mes", "luz": "Luz", "pensiones": "Pensiones", "paro": "Paro y ayudas", "hacienda": "Hacienda"}
+ETIQUETAS = {"inicio": "Al Final de Mes", "luz": "Luz y carburantes", "pensiones": "Pensiones", "paro": "Empleo y paro", "vivienda": "Vivienda", "hacienda": "Hacienda"}
 
 
 def fuente(nombre: str, tam: int) -> ImageFont.FreeTypeFont:
@@ -102,7 +102,8 @@ def fijas() -> None:
     textos = {
         "luz": ("Precio de la luz hoy y mañana por horas", "Las horas más baratas de cada día"),
         "pensiones": ("Pensiones: subidas, pagas y fechas de cobro", "Con los datos de la Seguridad Social"),
-        "paro": ("Paro, subsidios y ayudas: requisitos y cuantías", "Con los datos del SEPE"),
+        "paro": ("Salario mínimo, paro y ayudas: requisitos y cuantías", "Con los datos del SEPE y del Ministerio de Trabajo"),
+        "vivienda": ("Alquiler, hipotecas y ayudas a la vivienda", "Lo que cambia para inquilinos y propietarios"),
         "hacienda": ("Renta, IRPF y avisos de Hacienda", "Con los datos de la Agencia Tributaria"),
     }
     for cat, (t, sub) in textos.items():

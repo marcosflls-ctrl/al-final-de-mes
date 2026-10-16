@@ -2,7 +2,7 @@
 title: "El Congreso convalida las ayudas al combustible: butano máximo de 19,55 €"
 description: "La Diputación Permanente mantiene en vigor el decreto: butano a 19,55 € como máximo hasta junio de 2027 y la tarifa del gas limitada. Vox votó en contra."
 date: 2026-10-16T15:24:46+00:00
-category: hacienda
+category: luz
 tags: [combustible, butano, tarifa-del-gas, decreto-ley, iva-luz]
 pendiente: false
 image: /img/articulos/el-congreso-convalida-las-ayudas-al-combustible-butano-maximo-de-19-55.webp
@@ -43,7 +43,7 @@ Se mantiene la salvaguarda que permite rebajar impuestos si los precios se dispa
 
 La rebaja en el recibo de la luz es para quienes tienen menos de 10 kW contratados y para los beneficiarios del bono social. La rebaja del IVA también se aplica al gas natural, las briquetas, los pellets y la leña.
 
-La fuente no aclara si esa condición se ha cumplido ni si la rebaja se aplica ya. Lo único que dice es que la salvaguarda sigue vigente. El IPC general de septiembre fue del 4,9 %. Aquí te contamos [qué pasa con el descuento al combustible tras ese dato](/hacienda/ipc-al-4-9-en-septiembre-el-descuento-de-20-centimos-al-combustible-sigue/).
+La fuente no aclara si esa condición se ha cumplido ni si la rebaja se aplica ya. Lo único que dice es que la salvaguarda sigue vigente. El IPC general de septiembre fue del 4,9 %. Aquí te contamos [qué pasa con el descuento al combustible tras ese dato](/luz/ipc-al-4-9-en-septiembre-el-descuento-de-20-centimos-al-combustible-sigue/).
 
 ## ¿Qué ayudas hay para el transporte y el campo?
 

@@ -8,7 +8,7 @@ const posts = defineCollection({
     description: z.string().max(170), // entradilla y meta description para Google
     date: z.coerce.date(),
     updated: z.coerce.date().optional(),
-    category: z.enum(['luz', 'pensiones', 'paro', 'hacienda']),
+    category: z.enum(['luz', 'pensiones', 'paro', 'vivienda', 'hacienda']),
     tags: z.array(z.string()).default([]),
     image: z.string().optional(),
     imageAlt: z.string().optional(),

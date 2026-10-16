@@ -2,7 +2,7 @@
 title: "Alquiler de cinco años sin aviso del casero: prórroga de 3 años, no de 2"
 description: "Si el casero no avisa al cumplirse los cinco años, el contrato se prorroga tres años, no dos. Y la subida, sin acuerdo, no pasa del 2% hasta 2027."
 date: 2026-10-16T09:55:41+00:00
-category: hacienda
+category: vivienda
 tags: [alquiler, prorroga, lau, subida-del-alquiler, vivienda]
 pendiente: false
 image: /img/articulos/alquiler-de-cinco-anos-sin-aviso-del-casero-prorroga-de-3-anos-no-de-2.webp
@@ -26,7 +26,7 @@ La prórroga automática exige que el propietario no haya comunicado, por un med
 
 No es para este caso. El Real Decreto-ley de vivienda prevé una prórroga de dos años, pero solo puede pedirla el inquilino que **no tiene derecho a la de tres años** porque el casero le avisó correctamente, con cuatro meses de antelación, de que no renovaba.
 
-Si no hubo aviso, la que se aplica es la de tres años de la LAU. Tienes más detalle de la otra en nuestra explicación de que la [prórroga de dos años no es automática y hay que pedirla](/hacienda/prorroga-del-alquiler-de-dos-anos-no-es-automatica-y-hay-que-pedirla/).
+Si no hubo aviso, la que se aplica es la de tres años de la LAU. Tienes más detalle de la otra en nuestra explicación de que la [prórroga de dos años no es automática y hay que pedirla](/vivienda/prorroga-del-alquiler-de-dos-anos-no-es-automatica-y-hay-que-pedirla/).
 
 ## ¿Cuánto puede subir el alquiler?
 

@@ -2,7 +2,7 @@
 title: "Tres de cada diez viviendas vendidas en 2024 dieron pérdidas, según Hacienda"
 description: "La Agencia Tributaria cifra en un 30,1% las viviendas vendidas en 2024 por menos de lo que costaron. De media, la revalorización fue del 28,6%."
 date: 2026-10-15T20:23:41+00:00
-category: hacienda
+category: vivienda
 tags: [vivienda, irpf, agencia-tributaria, plusvalias, compraventa]
 pendiente: false
 image: /img/articulos/tres-de-cada-diez-viviendas-vendidas-en-2024-dieron-perdidas-segun-hacienda.webp

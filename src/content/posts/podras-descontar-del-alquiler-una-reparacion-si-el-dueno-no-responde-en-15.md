@@ -2,7 +2,7 @@
 title: "Podrás descontar del alquiler una reparación si el dueño no responde en 15 días hábiles"
 description: "Si el casero no responde en 15 días hábiles a tu presupuesto, podrás hacer la reparación y descontarla del alquiler, según el Real Decreto-ley 29/2026."
 date: 2026-10-14T00:21:45+00:00
-category: hacienda
+category: vivienda
 tags: [alquiler, inquilinos, reparaciones, vivienda, lau]
 pendiente: false
 image: /img/articulos/podras-descontar-del-alquiler-una-reparacion-si-el-dueno-no-responde-en-15.webp

@@ -2,7 +2,7 @@
 title: "Prórroga del alquiler de dos años: no es automática y hay que pedirla"
 description: "La prórroga de hasta dos años del alquiler no es automática: hay que pedirla antes del vencimiento. La renta se mantiene y, si se actualiza, es con el IRAV."
 date: 2026-10-14T10:19:31+00:00
-category: hacienda
+category: vivienda
 tags: [alquiler, prorroga, vivienda, inquilinos, irav]
 pendiente: false
 image: /img/articulos/prorroga-del-alquiler-de-dos-anos-no-es-automatica-y-hay-que-pedirla.webp
@@ -52,6 +52,6 @@ Sí, con matices. Durante la prórroga extraordinaria se mantienen las mismas co
 
 La respuesta de EL PAÍS solo indica que debe solicitarla el inquilino antes del vencimiento. No detalla ni el formato ni el medio de comunicación. Si tu contrato acaba en octubre, el margen es corto: hoy es 14 de octubre.
 
-Si además tienes pendiente una reparación en casa, mira cómo [descontarla del alquiler si el dueño no responde en 15 días hábiles](/hacienda/podras-descontar-del-alquiler-una-reparacion-si-el-dueno-no-responde-en-15/).
+Si además tienes pendiente una reparación en casa, mira cómo [descontarla del alquiler si el dueño no responde en 15 días hábiles](/vivienda/podras-descontar-del-alquiler-una-reparacion-si-el-dueno-no-responde-en-15/).
 
 Lo que queda por aclarar es el texto exacto del decreto y el procedimiento para presentar la solicitud, que esta respuesta no concreta.

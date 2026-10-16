@@ -38,7 +38,7 @@ El comité de expertos de Trabajo está elaborando una propuesta. No se ha aclar
 | +4,9 % (IPC de septiembre) | casi 60 € | unos 1.281 € (17.932 €/año) |
 | +7 % (propuesta de UGT y CCOO) | 85,5 € | 1.307 € |
 
-Los porcentajes de 3,2 % y 4,9 % son cálculos orientativos, no propuestas del Gobierno. Más detalle de la petición sindical en [los sindicatos piden subir el SMI un 7 %](/hacienda/los-sindicatos-piden-subir-el-smi-un-7-hasta-1-307-euros-en-14-pagas/) y del dato de inflación en [IPC al 4,9 % en septiembre](/hacienda/ipc-al-4-9-en-septiembre-el-descuento-de-20-centimos-al-combustible-sigue/).
+Los porcentajes de 3,2 % y 4,9 % son cálculos orientativos, no propuestas del Gobierno. Más detalle de la petición sindical en [los sindicatos piden subir el SMI un 7 %](/paro/los-sindicatos-piden-subir-el-smi-un-7-hasta-1-307-euros-en-14-pagas/) y del dato de inflación en [IPC al 4,9 % en septiembre](/luz/ipc-al-4-9-en-septiembre-el-descuento-de-20-centimos-al-combustible-sigue/).
 
 ## El debate político sobre las pensiones
 

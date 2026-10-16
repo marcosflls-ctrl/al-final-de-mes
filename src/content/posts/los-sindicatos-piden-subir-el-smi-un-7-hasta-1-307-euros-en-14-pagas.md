@@ -2,7 +2,7 @@
 title: "Los sindicatos piden subir el SMI un 7%, hasta 1.307 euros en 14 pagas"
 description: "UGT y CCOO proponen subir el SMI un 7%: pasaría de 1.221 a 1.307 euros brutos en 14 pagas. Es solo una propuesta; el Gobierno aún no ha fijado la cifra."
 date: 2026-10-13T12:46:32+00:00
-category: hacienda
+category: paro
 tags: [smi, salario-minimo, ugt, ccoo, irpf]
 pendiente: true
 image: /img/articulos/los-sindicatos-piden-subir-el-smi-un-7-hasta-1-307-euros-en-14-pagas.webp

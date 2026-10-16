@@ -2,7 +2,7 @@
 title: "Huelga del 11 de noviembre: unos 65 € menos en nómina con el SMI"
 description: "Quien secunde la huelga del 11 de noviembre pierde el salario de ese día: unos 65 € brutos con el SMI y 113 € brutos con el salario medio."
 date: 2026-10-14T20:46:13+00:00
-category: hacienda
+category: paro
 tags: [huelga-general, nomina, salario, smi, estatuto-de-los-trabajadores]
 pendiente: false
 image: /img/articulos/huelga-del-11-de-noviembre-unos-65-menos-en-nomina-con-el-smi.webp
@@ -36,7 +36,7 @@ Depende de lo que cobres y de cuántos días a la semana trabajes. Estos son los
 
 El salario medio de 2024 es el último dato disponible. Son cifras orientativas. Lo que te descuenten de verdad lo verás en tu nómina.
 
-Si quieres saber cómo está el SMI, la última petición de los sindicatos está en [esta noticia sobre la subida del 7 %](/hacienda/los-sindicatos-piden-subir-el-smi-un-7-hasta-1-307-euros-en-14-pagas/).
+Si quieres saber cómo está el SMI, la última petición de los sindicatos está en [esta noticia sobre la subida del 7 %](/paro/los-sindicatos-piden-subir-el-smi-un-7-hasta-1-307-euros-en-14-pagas/).
 
 ## ¿Qué pasa con la Seguridad Social y el paro?
 

@@ -36,7 +36,7 @@ La fuente no da cifras de ahorro. Como ejemplo orientativo: un cuarto de punto a
 
 Porque el proyecto de Presupuestos para 2027 aún debe pasar por el Parlamento, pero la rebaja se aplicaría desde enero pasado. El texto no explica cómo se regularizaría, así que habrá que esperar a la redacción final de la ley. Si quieres repasar cómo funcionan las deducciones, tienes [nuestra guía de deducciones y límites del IRPF](/hacienda/renta-2027-deducciones-y-limites-clave-para-pagar-menos-irpf/).
 
-El conselleiro de Facenda, Miguel Corgos, justifica la medida por la inflación. En septiembre fue del 5,5 % en Galicia, frente al 4,9 % de la media nacional ([aquí, el dato nacional](/hacienda/ipc-al-4-9-en-septiembre-el-descuento-de-20-centimos-al-combustible-sigue/)). Según Corgos, es la quinta rebaja del IRPF en la comunidad desde 2014.
+El conselleiro de Facenda, Miguel Corgos, justifica la medida por la inflación. En septiembre fue del 5,5 % en Galicia, frente al 4,9 % de la media nacional ([aquí, el dato nacional](/luz/ipc-al-4-9-en-septiembre-el-descuento-de-20-centimos-al-combustible-sigue/)). Según Corgos, es la quinta rebaja del IRPF en la comunidad desde 2014.
 
 ## ¿Qué más cambia en impuestos?
 

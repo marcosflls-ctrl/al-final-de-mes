@@ -2,14 +2,12 @@
 title: "IPC al 4,9% en septiembre: el descuento de 20 céntimos al combustible sigue"
 description: "El IPC sube al 4,9% en septiembre, el nivel más alto desde 2023, y la rebaja de 20 céntimos por litro en gasolina y diésel sigue en noviembre."
 date: 2026-10-14T15:52:31+00:00
-category: hacienda
+category: luz
 tags: [ipc, inflacion, combustible, gasolina, ine]
 pendiente: true
 image: /img/articulos/ipc-al-4-9-en-septiembre-el-descuento-de-20-centimos-al-combustible-sigue.webp
 imageAlt: "Portada: IPC al 4,9% en septiembre: el descuento de 20 céntimos al combustible sigue"
 sources:
-  - name: "INE – IPC de septiembre de 2026 (datos definitivos)"
-    url: "https://www.ine.es"
   - name: "Europa Press Economía: El IPC sube al 4,9% en septiembre y el descuento al combustible seguirá en 20 céntimos en noviembre"
     url: "https://www.europapress.es/economia/macroeconomia-00338/noticia-ine-confirma-ipc-sube-49-septiembre-rebaja-fiscal-combustible-sera-20-centimos-20261014090030.html"
 ---
@@ -78,4 +76,4 @@ Diez comunidades registraron en septiembre una inflación del 5% o más.
 
 ## ¿Qué queda pendiente?
 
-Esta semana, la convalidación del paquete en la Diputación Permanente del Congreso. El descuento de 20 céntimos se aplicaría desde el 1 de noviembre. El INE publicará el IPC de octubre el mes que viene. Mientras tanto, los sindicatos ya reclaman [subir el SMI un 7%](/hacienda/los-sindicatos-piden-subir-el-smi-un-7-hasta-1-307-euros-en-14-pagas/).
+Esta semana, la convalidación del paquete en la Diputación Permanente del Congreso. El descuento de 20 céntimos se aplicaría desde el 1 de noviembre. El INE publicará el IPC de octubre el mes que viene. Mientras tanto, los sindicatos ya reclaman [subir el SMI un 7%](/paro/los-sindicatos-piden-subir-el-smi-un-7-hasta-1-307-euros-en-14-pagas/).

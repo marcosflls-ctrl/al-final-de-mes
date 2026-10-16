@@ -2,7 +2,7 @@
 title: "Hipotecas: la vivienda financiada baja a 248.000 € en septiembre por el euríbor"
 description: "El euríbor cerró septiembre en el 3,24% y las familias piden hipoteca para casas más baratas: 248.000 € de media, frente a 300.000 € en julio."
 date: 2026-10-16T09:55:13+00:00
-category: hacienda
+category: vivienda
 tags: [hipotecas, euribor, hipoteca-fija, vivienda, ocu]
 pendiente: false
 image: /img/articulos/hipotecas-la-vivienda-financiada-baja-a-248-000-en-septiembre-por-el-euribo.webp
@@ -16,7 +16,7 @@ Con el euríbor más alto desde julio de 2024, las familias piden hipoteca para 
 
 ## ¿Cuánto ha subido el euríbor?
 
-El euríbor, el índice al que se referencian la mayoría de las hipotecas variables en España, cerró septiembre con una media mensual del **3,24%**. Es su nivel más alto desde julio de 2024, cuando rondaba el 3,5%. Puedes ver cómo va octubre en [nuestra información sobre el euríbor](/hacienda/el-euribor-sube-al-3-201-y-la-media-de-octubre-ya-es-3-217/).
+El euríbor, el índice al que se referencian la mayoría de las hipotecas variables en España, cerró septiembre con una media mensual del **3,24%**. Es su nivel más alto desde julio de 2024, cuando rondaba el 3,5%. Puedes ver cómo va octubre en [nuestra información sobre el euríbor](/vivienda/el-euribor-sube-al-3-201-y-la-media-de-octubre-ya-es-3-217/).
 
 ## ¿Qué efecto tiene en el precio de las viviendas?
 

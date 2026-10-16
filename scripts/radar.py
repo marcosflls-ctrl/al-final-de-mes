@@ -45,7 +45,7 @@ MODEL = os.environ.get("MODEL", "claude-sonnet-5-5")
 MIN_SOURCE_CHARS = 500        # si no hay texto suficiente, no se escribe (evita inventar)
 SIMILARITY_SKIP = 0.6         # títulos muy parecidos = misma noticia ya cubierta
 UA = "Mozilla/5.0 (compatible; AlFinalDeMesRadar/1.0; +https://alfinaldemes.com)"
-CATEGORIES = ["luz", "pensiones", "paro", "hacienda"]
+CATEGORIES = ["luz", "pensiones", "paro", "vivienda", "hacienda"]
 BOE_API = "https://www.boe.es/datosabiertos/api/boe/sumario/{fecha}"
 BOE_SECCIONES = {"1", "3"}    # I. Disposiciones generales · III. Otras disposiciones
 
@@ -259,13 +259,23 @@ ESTRUCTURA: subtítulos ## que respondan a preguntas reales que la gente busca (
 cobra?", "¿Cómo se pide?"). Una tabla si hay cifras que comparar (tramos, cuantías, fechas). Listas para \
 requisitos o pasos. Termina con lo que queda pendiente o el siguiente paso, sin frases hechas de cierre.
 
+SECCIÓN (category), elige la que mejor encaje:
+- luz: factura eléctrica, gas, butano, gasolina y diésel, bono social, energía en casa.
+- pensiones: pensiones, jubilación, Seguridad Social de los jubilados.
+- paro: salario mínimo, nóminas, huelgas, prestación y subsidios del SEPE, ingreso mínimo vital, ayudas a familias, cuotas de autónomos.
+- vivienda: alquiler, prórrogas, desahucios, ayudas a la vivienda, compraventa, hipotecas y euríbor.
+- hacienda: IRPF, declaración de la renta, IVA y otros impuestos, deducciones, avisos de la Agencia Tributaria.
+Si un tema toca dos secciones (por ejemplo, una deducción fiscal por alquiler), elige la que busca el lector: quien busca su alquiler va a vivienda.
+
+FUENTE OFICIAL: en "official_source" pon solo un enlace a la página concreta del documento o dato oficial (el BOE, la nota de prensa, la tabla del INE), nunca la portada de un organismo. Si no tienes ese enlace concreto, pon null.
+
 ENLACES INTERNOS: incluye 1-3 enlaces a artículos de la lista "ya publicados" si encajan de forma natural, \
 sobre todo a las guías.
 
 FORMATO DE RESPUESTA: solo un objeto JSON válido, sin texto alrededor:
 {
   "skip": false,
-  "category": "luz" | "pensiones" | "paro" | "hacienda",
+  "category": "luz" | "pensiones" | "paro" | "vivienda" | "hacienda",
   "pendiente": true | false,
   "title": "titular de 55-90 caracteres, concreto, con la cifra o fecha si existe",
   "card_title": "versión corta del titular para la imagen de portada, máximo 70 caracteres",
@@ -359,7 +369,9 @@ def save_post(data: dict, item: dict) -> Path:
 
     fuentes = []
     of = data.get("official_source") or {}
-    if of.get("url", "").startswith("http") and of.get("name"):
+    from urllib.parse import urlparse
+    concreta = len(urlparse(of.get("url", "")).path.strip("/")) > 0  # nada de portadas tipo "https://www.ine.es"
+    if of.get("url", "").startswith("http") and of.get("name") and concreta:
         fuentes.append((of["name"], of["url"]))
     if not any(u == item["url"] for _, u in fuentes):
         fuentes.append((f"{item['source']}: {item['title'][:100]}", item["url"]))

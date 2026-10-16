@@ -54,7 +54,7 @@ Las aportaciones forales a las instituciones comunes serán de 15.125 millones.
 
 Sí. Tanto D'Anjou como la diputada general de Bizkaia, Elixabete Etxanobe, piden prudencia por la incertidumbre internacional. Etxanobe ha subrayado la fortaleza del tejido económico vasco, pero ha avisado de que las instituciones deberán seguir atentas a la actividad.
 
-La medida llega con los precios todavía altos. En el conjunto de España, el [IPC se situó en el 4,9 % en septiembre](/hacienda/ipc-al-4-9-en-septiembre-el-descuento-de-20-centimos-al-combustible-sigue/).
+La medida llega con los precios todavía altos. En el conjunto de España, el [IPC se situó en el 4,9 % en septiembre](/luz/ipc-al-4-9-en-septiembre-el-descuento-de-20-centimos-al-combustible-sigue/).
 
 ## ¿Qué falta por saber?
 

@@ -2,7 +2,7 @@
 title: "El euríbor sube al 3,201% y la media de octubre ya es 3,217%"
 description: "El euríbor diario se sitúa el 14 de octubre en el 3,201%, 0,010 puntos más que el día anterior. La media de octubre, de momento, está en el 3,217%."
 date: 2026-10-14T20:45:42+00:00
-category: hacienda
+category: vivienda
 tags: [euribor, hipotecas, hipoteca-variable, tipos-de-interes]
 pendiente: false
 image: /img/articulos/el-euribor-sube-al-3-201-y-la-media-de-octubre-ya-es-3-217.webp

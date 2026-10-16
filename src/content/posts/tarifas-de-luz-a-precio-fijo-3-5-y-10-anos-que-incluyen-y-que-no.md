@@ -8,8 +8,6 @@ pendiente: true
 image: /img/articulos/tarifas-de-luz-a-precio-fijo-3-5-y-10-anos-que-incluyen-y-que-no.webp
 imageAlt: "Portada: Tarifas de luz a precio fijo 3, 5 y 10 años: qué incluyen y qué no"
 sources:
-  - name: "Instituto Nacional de Estadística (INE)"
-    url: "https://www.ine.es"
   - name: "20minutos Economía: Precio de la luz hasta que pasen los vaivenes: las grandes comercializadoras se lanzan a ofrecer tar"
     url: "https://www.20minutos.es/nacional/precio-luz-hasta-que-pasen-los-vaivenes-las-grandes-comercializadoras-se-lanzan-ofrecer-tarifas-fijas-cinco-diez-anos_7047023_0.html"
 ---

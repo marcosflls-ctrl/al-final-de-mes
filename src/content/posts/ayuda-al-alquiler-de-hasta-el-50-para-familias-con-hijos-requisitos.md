@@ -2,7 +2,7 @@
 title: "Ayuda al alquiler de hasta el 50% para familias con hijos: requisitos"
 description: "Varias comunidades cubren hasta el 50% del alquiler a familias con hijos, con tope de 300 a 450 € al mes. Te contamos requisitos y cómo se pide."
 date: 2026-10-15T10:02:08+00:00
-category: hacienda
+category: vivienda
 tags: [ayuda-alquiler, plan-estatal-de-vivienda, familias-con-hijos, vivienda, subvenciones]
 pendiente: false
 image: /img/articulos/ayuda-al-alquiler-de-hasta-el-50-para-familias-con-hijos-requisitos.webp
@@ -53,7 +53,7 @@ Conviene guardar los justificantes de las transferencias del alquiler y vigilar 
 
 ## ¿Y si tengo dudas con mi contrato?
 
-Si estás en pleno alquiler, quizá te interese saber que [no es automática la prórroga del contrato a dos años y hay que pedirla](/hacienda/prorroga-del-alquiler-de-dos-anos-no-es-automatica-y-hay-que-pedirla/). También puedes consultar cuándo [podrías descontar del alquiler una reparación](/hacienda/podras-descontar-del-alquiler-una-reparacion-si-el-dueno-no-responde-en-15/) si el propietario no responde.
+Si estás en pleno alquiler, quizá te interese saber que [no es automática la prórroga del contrato a dos años y hay que pedirla](/vivienda/prorroga-del-alquiler-de-dos-anos-no-es-automatica-y-hay-que-pedirla/). También puedes consultar cuándo [podrías descontar del alquiler una reparación](/vivienda/podras-descontar-del-alquiler-una-reparacion-si-el-dueno-no-responde-en-15/) si el propietario no responde.
 
 ## Qué queda por saber
 

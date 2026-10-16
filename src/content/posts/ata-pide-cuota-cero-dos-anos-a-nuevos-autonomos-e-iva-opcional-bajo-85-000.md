@@ -28,7 +28,7 @@ Además, propone que los estudiantes que compaginen su negocio con estudios regl
 
 ## ¿Y para quienes ya son autónomos y ganan poco?
 
-ATA pide bonificaciones en la cuota para quienes tengan rendimientos inferiores al salario mínimo (puedes ver [qué piden ahora los sindicatos para el SMI](/hacienda/los-sindicatos-piden-subir-el-smi-un-7-hasta-1-307-euros-en-14-pagas/)). Irían con cargo a los Presupuestos Generales del Estado, es decir, a los impuestos. Durarían dos años y rebajarían la cuota ordinaria entre un 15 % y un 75 % según los ingresos:
+ATA pide bonificaciones en la cuota para quienes tengan rendimientos inferiores al salario mínimo (puedes ver [qué piden ahora los sindicatos para el SMI](/paro/los-sindicatos-piden-subir-el-smi-un-7-hasta-1-307-euros-en-14-pagas/)). Irían con cargo a los Presupuestos Generales del Estado, es decir, a los impuestos. Durarían dos años y rebajarían la cuota ordinaria entre un 15 % y un 75 % según los ingresos:
 
 | Tramo | Reducción de la cuota |
 |---|---|

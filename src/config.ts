@@ -28,9 +28,9 @@ export const SITE = {
 // Secciones. Las que tienen `abierta: false` todavía no salen en el menú.
 export const CATEGORIES = {
   luz: {
-    label: 'Luz',
-    titulo: 'Precio de la luz y facturas',
-    desc: 'El precio de la luz de hoy y de mañana por horas, las horas más baratas y las noticias sobre tarifas, bono social y factura eléctrica.',
+    label: 'Luz y carburantes',
+    titulo: 'Precio de la luz, el gas y los carburantes',
+    desc: 'El precio de la luz de hoy y de mañana por horas, y las noticias sobre la factura eléctrica, el gas, el butano, la gasolina y el bono social.',
   },
   pensiones: {
     label: 'Pensiones',
@@ -38,14 +38,19 @@ export const CATEGORIES = {
     desc: 'Subidas de las pensiones, fechas de cobro, pagas extra, jubilación y requisitos, explicados con los datos oficiales de la Seguridad Social.',
   },
   paro: {
-    label: 'Paro y ayudas',
-    titulo: 'Paro, subsidios y ayudas',
-    desc: 'Prestación por desempleo, subsidios del SEPE, ingreso mínimo vital y ayudas públicas: requisitos, cuantías y cómo pedirlas.',
+    label: 'Empleo y paro',
+    titulo: 'Empleo, paro y ayudas',
+    desc: 'Salario mínimo, nóminas, prestación por desempleo, subsidios del SEPE, ingreso mínimo vital y ayudas públicas: requisitos, cuantías y cómo pedirlas.',
+  },
+  vivienda: {
+    label: 'Vivienda',
+    titulo: 'Vivienda, alquiler e hipotecas',
+    desc: 'Alquiler, prórrogas y subidas de renta, ayudas a la vivienda, hipotecas y euríbor: lo que cambia para inquilinos, propietarios y compradores.',
   },
   hacienda: {
     label: 'Hacienda',
     titulo: 'Hacienda, renta e impuestos',
-    desc: 'Declaración de la renta, IRPF, deducciones, plazos y avisos de la Agencia Tributaria explicados para que no se te escape nada.',
+    desc: 'Declaración de la renta, IRPF, IVA, deducciones, plazos y avisos de la Agencia Tributaria explicados para que no se te escape nada.',
   },
 } as const;
 
