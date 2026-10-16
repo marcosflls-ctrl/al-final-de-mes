@@ -13,7 +13,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: luz
+  group: datos
   cancel-in-progress: false
 
 jobs:
