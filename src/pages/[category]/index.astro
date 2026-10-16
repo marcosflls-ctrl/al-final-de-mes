@@ -35,7 +35,10 @@ const destacados: Record<string, { href: string; texto: string }[]> = {
     { href: '/hacienda/calculadora-sueldo-neto/', texto: 'Calculadora de sueldo neto 2026: cuánto cobrarás limpio al mes' },
   ],
   hacienda: [{ href: '/hacienda/calculadora-sueldo-neto/', texto: 'Calculadora de sueldo neto 2026: cuánto cobrarás limpio al mes' }],
-  luz: [{ href: '/gasolina/', texto: 'Precio de la gasolina y el diésel hoy, por provincia' }],
+  luz: [
+    { href: '/luz/cuanto-cuesta-cada-electrodomestico/', texto: 'Cuánto cuesta hoy poner la lavadora, el horno y otros aparatos' },
+    { href: '/gasolina/', texto: 'Precio de la gasolina y el diésel hoy, por provincia' },
+  ],
 };
 const fijos = destacados[category] ?? [];
 const jsonLd = {

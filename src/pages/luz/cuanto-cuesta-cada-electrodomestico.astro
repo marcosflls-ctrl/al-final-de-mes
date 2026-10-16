@@ -1,0 +1,202 @@
+---
+import Base from '../../layouts/Base.astro';
+import Siguenos from '../../components/Siguenos.astro';
+import Compartir from '../../components/Compartir.astro';
+import { SITE } from '../../config';
+import { datosLuz, hoyManana, fechaLarga } from '../../lib/luz';
+
+const luz = datosLuz();
+const [hoy, manana] = hoyManana();
+// Si el bot aún no ha guardado el día de hoy, usamos el último disponible
+const dias = luz ? Object.keys(luz.dias).sort() : [];
+const diaBase = luz?.dias[hoy] ? hoy : dias[dias.length - 1];
+const horasHoy = diaBase ? luz!.dias[diaBase] : [];
+const diaSig = diaBase === hoy ? manana : null;
+const horasManana = diaSig && luz?.dias[diaSig] ? luz.dias[diaSig] : [];
+
+// Impuestos que se aplican sobre la energía en la factura (2026)
+const IEE = 0.0511269632; // impuesto especial sobre la electricidad
+const IVA = 0.21;
+const conImpuestos = (p: number) => p * (1 + IEE) * (1 + IVA);
+
+// Consumos orientativos por uso. «horas» es lo que dura el uso, para buscar la mejor franja.
+const aparatos = [
+  { id: 'lavadora', nombre: 'Lavadora', uso: 'un lavado a 40 °C', kwh: 0.8, horas: 2 },
+  { id: 'lavavajillas', nombre: 'Lavavajillas', uso: 'un lavado normal', kwh: 1.0, horas: 2 },
+  { id: 'secadora-bc', nombre: 'Secadora con bomba de calor', uso: 'un ciclo', kwh: 1.8, horas: 2 },
+  { id: 'secadora', nombre: 'Secadora convencional', uso: 'un ciclo', kwh: 3.5, horas: 2 },
+  { id: 'horno', nombre: 'Horno', uso: 'una hora a 200 °C', kwh: 1.2, horas: 1 },
+  { id: 'placa', nombre: 'Placa de inducción', uso: 'una hora cocinando', kwh: 1.4, horas: 1 },
+  { id: 'microondas', nombre: 'Microondas', uso: '10 minutos', kwh: 0.15, horas: 1 },
+  { id: 'aire', nombre: 'Aire acondicionado', uso: 'una hora', kwh: 0.9, horas: 1 },
+  { id: 'radiador', nombre: 'Radiador o estufa eléctrica de 2.000 W', uso: 'una hora', kwh: 2.0, horas: 1 },
+  { id: 'termo', nombre: 'Termo eléctrico', uso: 'el agua de una ducha', kwh: 1.2, horas: 1 },
+  { id: 'plancha', nombre: 'Plancha', uso: 'una hora', kwh: 1.0, horas: 1 },
+  { id: 'secador', nombre: 'Secador de pelo', uso: '10 minutos', kwh: 0.3, horas: 1 },
+  { id: 'tele', nombre: 'Televisión', uso: 'tres horas', kwh: 0.3, horas: 3 },
+  { id: 'coche', nombre: 'Coche eléctrico', uso: 'cargar 10 kWh (unos 60 km) en un enchufe normal', kwh: 10, horas: 4 },
+];
+
+const eur = (n: number, d = 2) => n.toLocaleString('es-ES', { minimumFractionDigits: d, maximumFractionDigits: d });
+const media = horasHoy.length ? horasHoy.reduce((s, x) => s + x.p, 0) / horasHoy.length : 0;
+// Valores para la versión sin JavaScript y para buscadores: coste al precio medio del día
+const costeMedio = (kwh: number) => kwh * conImpuestos(media);
+
+const titulo = 'Cuánto cuesta poner la lavadora, el horno y otros aparatos hoy';
+const descripcion = `Lo que cuesta hoy, ${diaBase ? fechaLarga(diaBase) : ''}, usar cada electrodoméstico con la tarifa regulada de la luz (PVPC), la hora más barata para ponerlo y cuánto ahorras.`;
+const url = `${SITE.url}/luz/cuanto-cuesta-cada-electrodomestico/`;
+const jsonLd = {
+  '@context': 'https://schema.org', '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Inicio', item: SITE.url + '/' },
+    { '@type': 'ListItem', position: 2, name: 'Precio de la luz', item: `${SITE.url}/luz/` },
+    { '@type': 'ListItem', position: 3, name: titulo, item: url },
+  ],
+};
+const datosCliente = { hoy: diaBase, manana: horasManana.length ? diaSig : null, horas: [...horasHoy.map((x) => x.p), ...horasManana.map((x) => x.p)], factor: (1 + IEE) * (1 + IVA) };
+---
+<Base title={titulo} description={descripcion} jsonLd={jsonLd}>
+  <nav class="breadcrumbs"><a href="/">Inicio</a> › <a href="/luz/">Precio de la luz</a></nav>
+  <article class="pagina">
+    <h1>{titulo}</h1>
+    <p class="lead">Calculado con el precio de la luz de la tarifa regulada (PVPC) de hoy, hora a hora, con impuestos. Para cada aparato verás lo que cuesta ponerlo ahora, la hora más barata que queda y lo que costaría en la peor hora.</p>
+
+    {horasHoy.length === 0 ? (
+      <p>Todavía no tenemos los precios de hoy. Vuelve en un rato.</p>
+    ) : (
+      <>
+        <p class="estado" id="estado">Precios del {fechaLarga(diaBase!)}{horasManana.length > 0 && ' y de mañana'}. Precio medio de hoy: <strong>{eur(conImpuestos(media), 4)} €/kWh</strong> con impuestos.</p>
+
+        <div class="tabla-scroll">
+          <table class="aparatos" id="aparatos">
+            <thead>
+              <tr>
+                <th scope="col">Aparato</th>
+                <th scope="col">Consumo</th>
+                <th scope="col" class="num">Ahora</th>
+                <th scope="col" class="num">En la hora más barata</th>
+                <th scope="col" class="num">En la más cara</th>
+              </tr>
+            </thead>
+            <tbody>
+              {aparatos.map((a) => (
+                <tr data-id={a.id} data-horas={a.horas}>
+                  <th scope="row">{a.nombre}<span class="uso">{a.uso}</span></th>
+                  <td><label class="kwh"><input type="number" min="0" step="0.05" value={a.kwh} aria-label={`Consumo de ${a.nombre} en kWh`} /> kWh</label></td>
+                  <td class="num c-ahora">{eur(costeMedio(a.kwh))} €</td>
+                  <td class="num c-mejor">—</td>
+                  <td class="num c-peor">—</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p class="muted small">El consumo de cada aparato es orientativo y depende del modelo, del programa y de cuánto lo cargues. Si conoces el de tu aparato (viene en la etiqueta energética o en el manual), cámbialo en la casilla y el coste se recalcula. Para los usos de más de una hora, buscamos la franja seguida más barata.</p>
+      </>
+    )}
+
+    <Compartir title={titulo} url={url} />
+
+    <section class="prose">
+      <h2>Cómo calculamos el coste</h2>
+      <p>Multiplicamos lo que consume el aparato, en kilovatios hora (kWh), por el precio de la luz en la hora en que lo usas. A ese precio le sumamos los dos impuestos que paga la energía en la factura: el impuesto especial sobre la electricidad (5,11 %) y el IVA (21 %).</p>
+      <p>No incluimos la parte fija de la factura, es decir, la potencia contratada y el alquiler del contador, porque la pagas igual uses o no el aparato.</p>
+      <h2>¿Me sirve si no tengo la tarifa regulada?</h2>
+      <p>Solo si tienes el PVPC, la tarifa regulada, cuyo precio cambia cada hora. Si tienes una tarifa del mercado libre con precio fijo, multiplica el consumo del aparato por el precio por kWh de tu contrato. En ese caso da igual la hora a la que pongas la lavadora, salvo que tu tarifa tenga tramos horarios.</p>
+      <h2>Cómo ahorrar con los electrodomésticos</h2>
+      <ul>
+        <li><strong>Mueve lo que puedas a las horas baratas.</strong> La lavadora, el lavavajillas, la secadora y la carga del coche se pueden programar. Con la tarifa regulada, las horas más baratas suelen ser las del mediodía, cuando hay más sol, y las de la madrugada.</li>
+        <li><strong>Usa los programas eco.</strong> Tardan más, pero calientan menos el agua, que es lo que más gasta en la lavadora y el lavavajillas.</li>
+        <li><strong>Llena la lavadora y el lavavajillas.</strong> Dos medias cargas gastan casi el doble que una completa.</li>
+        <li><strong>Evita los aparatos que calientan en las horas caras.</strong> Radiadores, hornos, secadoras y termos son los que más consumen.</li>
+      </ul>
+      <p>Mira el <a href="/luz/">precio de la luz de hoy y de mañana por horas</a> para planificar el día.</p>
+      <p class="muted small">Precios: Red Eléctrica, tarifa PVPC 2.0TD, actualizados cada día. Los consumos son estimaciones de Al Final de Mes a partir de potencias y duraciones habituales de cada aparato.</p>
+    </section>
+    <Siguenos />
+  </article>
+</Base>
+
+<script is:inline type="application/json" id="datos-luz" set:html={JSON.stringify(datosCliente)}></script>
+<script>
+  const datos = JSON.parse(document.getElementById('datos-luz')!.textContent || '{}') as { hoy: string; manana: string | null; horas: number[]; factor: number };
+  const fmt = (n: number) => n.toLocaleString('es-ES', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + ' €';
+  const hh = (i: number) => `${String(i % 24).padStart(2, '0')}:00`;
+
+  function horaActual(): number {
+    // Hora de España y posición en la lista de precios (0-23 hoy, 24-47 mañana)
+    const ahora = new Date();
+    const dia = ahora.toLocaleDateString('sv-SE', { timeZone: 'Europe/Madrid' });
+    const h = parseInt(ahora.toLocaleTimeString('es-ES', { timeZone: 'Europe/Madrid', hour: '2-digit', hour12: false }), 10) % 24;
+    if (dia === datos.hoy) return h;
+    if (datos.manana && dia === datos.manana) return 24 + h;
+    return -1; // datos de otro día: no hay "ahora"
+  }
+
+  function franja(desde: number, n: number, kwh: number) {
+    // el consumo se reparte por igual en las n horas: coste = kWh × precio medio de la franja
+    let s = 0;
+    for (let i = 0; i < n; i++) s += datos.horas[desde + i];
+    return kwh * (s / n) * datos.factor;
+  }
+
+  function calcular() {
+    const ahora = horaActual();
+    const inicio = ahora >= 0 ? ahora : 0;
+    document.querySelectorAll<HTMLTableRowElement>('#aparatos tbody tr').forEach((fila) => {
+      const kwh = parseFloat((fila.querySelector('input') as HTMLInputElement).value.replace(',', '.')) || 0;
+      const n = parseInt(fila.dataset.horas || '1', 10);
+      let mejor = { c: Infinity, i: -1 }, peor = { c: -Infinity, i: -1 };
+      for (let i = inicio; i + n <= datos.horas.length; i++) {
+        const c = franja(i, n, kwh);
+        if (c < mejor.c) mejor = { c, i };
+        if (c > peor.c) peor = { c, i };
+      }
+      const celda = (sel: string) => fila.querySelector(sel) as HTMLElement;
+      if (ahora >= 0 && ahora + n <= datos.horas.length) celda('.c-ahora').textContent = fmt(franja(ahora, n, kwh));
+      else if (ahora < 0) celda('.c-ahora').textContent = '—';
+      const dia = (i: number) => (i >= 24 ? ' (mañana)' : '');
+      if (mejor.i >= 0) celda('.c-mejor').innerHTML = `<strong>${fmt(mejor.c)}</strong><span class="cuando">a las ${hh(mejor.i)}${dia(mejor.i)}</span>`;
+      if (peor.i >= 0) celda('.c-peor').innerHTML = `${fmt(peor.c)}<span class="cuando">a las ${hh(peor.i)}${dia(peor.i)}</span>`;
+    });
+  }
+
+  document.getElementById('aparatos')?.addEventListener('input', calcular);
+  calcular();
+</script>
+
+<style>
+  .pagina { max-width: 860px; }
+  h1 { font-size: clamp(1.9rem, 4.6vw, 2.6rem); line-height: 1.15; margin: 4px 0 12px; }
+  .lead { font-size: 1.125rem; line-height: 1.55; margin: 0 0 20px; max-width: 720px; }
+  .estado { font-size: .9375rem; margin: 0 0 12px; }
+  .tabla-scroll { overflow-x: auto; border-top: 2px solid var(--ink); }
+  .aparatos { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
+  .aparatos th, .aparatos td { padding: 10px 12px 10px 0; border-bottom: 1px solid var(--rule); text-align: left; vertical-align: top; font-size: .9375rem; }
+  .aparatos thead th { font-size: .8125rem; font-weight: 600; vertical-align: bottom; }
+  .aparatos tbody th { font-weight: 600; }
+  .uso { display: block; font-weight: 400; font-size: .8125rem; color: var(--muted); }
+  .num { text-align: right !important; white-space: nowrap; }
+  .kwh { display: inline-flex; align-items: center; gap: 6px; font-size: .875rem; color: var(--muted); white-space: nowrap; }
+  .kwh input { width: 5.2em; font: 400 .9375rem var(--sans); padding: 6px 8px; border: 1px solid #b9c0c6; border-radius: 4px; color: var(--ink); background: var(--bg); }
+  .kwh input:focus { outline: 2px solid var(--brand); outline-offset: 0; }
+  .c-mejor :global(strong) { color: var(--good); }
+  .aparatos :global(.cuando) { display: block; font-size: .75rem; color: var(--muted); }
+  .small { font-size: .8125rem; }
+  .prose { margin-top: 36px; }
+
+  @media (max-width: 680px) {
+    .tabla-scroll { overflow: visible; }
+    .aparatos thead { display: none; }
+    .aparatos, .aparatos tbody, .aparatos tr { display: block; width: 100%; }
+    .aparatos tr { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 4px 10px; padding: 12px 0; border-bottom: 1px solid var(--rule); }
+    .aparatos th, .aparatos td { border: 0; padding: 0; }
+    .aparatos tbody th { grid-column: 1 / 3; }
+    .aparatos td:nth-of-type(1) { grid-column: 3; text-align: right; }
+    .aparatos td.num { text-align: left !important; }
+    .aparatos td.num::before { display: block; font-size: .75rem; color: var(--muted); }
+    .c-ahora::before { content: 'Ahora'; }
+    .c-mejor::before { content: 'Más barata'; }
+    .c-peor::before { content: 'Más cara'; }
+  }
+</style>

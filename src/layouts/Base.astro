@@ -81,12 +81,15 @@ const hoy = new Date().toLocaleDateString('es-ES', { weekday: 'long', day: 'nume
         {Object.entries(CATEGORIES).map(([key, c]) => {
           const menu = (c as any).menu as { href: string; label: string; rutas: string[] }[] | undefined;
           if (!menu) return <a href={`/${key}/`} aria-current={path.startsWith(`/${key}/`) ? 'page' : undefined}>{c.label}</a>;
-          const activa = menu.some((m) => m.rutas.some((r) => path.startsWith(r)));
+          // la opción activa es la de la ruta más larga que coincide (así /luz/x/ no marca también /luz/)
+          const largo = (m: any) => Math.max(0, ...m.rutas.filter((r: string) => path.startsWith(r)).map((r: string) => r.length));
+          const actual = [...menu].sort((a, b) => largo(b) - largo(a)).find((m) => largo(m) > 0);
+          const activa = actual !== undefined;
           return (
             <div class:list={['desplegable', { activa }]}>
               <button type="button" class="desplegable-btn" aria-expanded="false" aria-controls={`sub-${key}`}>{c.label}<svg viewBox="0 0 12 12" width="12" height="12" aria-hidden="true"><path d="M2.5 4.5 6 8l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></button>
               <ul id={`sub-${key}`} class="submenu" hidden>
-                {menu.map((m) => <li><a href={m.href} aria-current={m.rutas.some((r) => path.startsWith(r)) ? 'page' : undefined}>{m.label}</a></li>)}
+                {menu.map((m) => <li><a href={m.href} aria-current={actual === m ? 'page' : undefined}>{m.label}</a></li>)}
               </ul>
             </div>
           );

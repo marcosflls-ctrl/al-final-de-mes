@@ -33,6 +33,7 @@ export const CATEGORIES = {
     // Si una sección tiene `menu`, en la cabecera sale como desplegable con estos enlaces
     menu: [
       { href: '/luz/', label: 'Precio de la luz', rutas: ['/luz/'] },
+      { href: '/luz/cuanto-cuesta-cada-electrodomestico/', label: 'Coste de cada electrodoméstico', rutas: ['/luz/cuanto-cuesta-cada-electrodomestico/'] },
       { href: '/gasolina/', label: 'Gasolina y diésel', rutas: ['/gasolina/'] },
     ],
     desc: 'El precio de la luz de hoy y de mañana por horas, y las noticias sobre la factura eléctrica, el gas, el butano, la gasolina y el bono social.',
