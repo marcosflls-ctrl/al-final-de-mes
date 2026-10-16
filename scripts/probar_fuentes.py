@@ -1,28 +1,19 @@
-"""Busca de dónde carga sus datos el Geoportal de gasolineras. Resultado en las anotaciones de la ejecución."""
-import re
+"""Prueba fuentes de datos desde los servidores de GitHub. Resultado en las anotaciones de la ejecución."""
 import requests
 
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36"
-BASE = "https://geoportalgasolineras.es/"
-s = requests.Session()
-s.headers["User-Agent"] = UA
-html = s.get(BASE, timeout=40).text
-scripts = re.findall(r'<script[^>]+src="([^"]+)"', html)
-print("::notice title=Scripts::" + " | ".join(scripts)[:900])
-hallado = set()
-for src in scripts:
-    url = src if src.startswith("http") else BASE + src.lstrip("/")
+PRUEBAS = {
+    "BCE mensual": "https://data-api.ecb.europa.eu/service/data/FM/M.U2.EUR.RT.MM.EURIBOR1YD_.HSTA?format=csvdata&lastNObservations=3",
+    "BCE diario": "https://data-api.ecb.europa.eu/service/data/FM/D.U2.EUR.RT.MM.EURIBOR1YD_.HSTA?format=csvdata&lastNObservations=3",
+    "BdE ti_1_7": "https://www.bde.es/webbe/es/estadisticas/compartido/datos/csv/ti_1_7.csv",
+    "EMMI hist 2026": "https://www.emmi-benchmarks.eu/assets/modules/rateisblue/processed_files/hist_EURIBOR_2026.csv",
+    "euribor-rates": "https://www.euribor-rates.eu/es/tipos-euribor-actuales/4/euribor-valor-12-meses/",
+}
+for nombre, url in PRUEBAS.items():
     try:
-        js = s.get(url, timeout=40).text
-    except Exception:  # noqa: BLE001
-        continue
-    for m in re.findall(r'["\']([^"\']*(?:rest/|/rest|\.xls|\.csv|\.json|descarga|Precios|precios)[^"\']{0,80})["\']', js):
-        if len(m) < 140:
-            hallado.add(m)
-print("::notice title=Rutas::" + " | ".join(sorted(hallado))[:3500])
-for prueba in ["resources/files/preciosEESS_es.xls", "geoportal/resources/files/preciosEESS_es.xls"]:
-    try:
-        r = s.get(BASE + prueba, timeout=60)
-        print(f"::notice title=Excel::{prueba}: {r.status_code} {len(r.content)}B {r.headers.get('content-type')}")
+        r = requests.get(url, headers={"User-Agent": UA}, timeout=40)
+        txt = r.text.replace("\n", " ⏎ ")
+        trozo = txt[:350] if "html" not in r.headers.get("content-type", "") else txt[txt.find("12 meses"):][:350]
+        print(f"::notice title={nombre}::{r.status_code} {len(r.content)}B {r.headers.get('content-type')} | {trozo}")
     except Exception as e:  # noqa: BLE001
-        print(f"::notice title=Excel::{prueba}: {type(e).__name__}")
+        print(f"::notice title={nombre}::{type(e).__name__}: {str(e)[:200]}")
