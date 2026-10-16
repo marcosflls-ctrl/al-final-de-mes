@@ -30,7 +30,11 @@ const descripcion = esLuz && preciosHoy
 // Herramientas y guías fijas de cada sección, que se enlazan arriba
 const destacados: Record<string, { href: string; texto: string }[]> = {
   pensiones: [{ href: '/pensiones/cuando-se-cobra/', texto: 'Cuándo se cobra la pensión: fechas de cada banco' }],
-  paro: [{ href: '/paro/cuando-se-cobra/', texto: 'Cuándo se cobra el paro: fechas de cada banco' }],
+  paro: [
+    { href: '/paro/cuando-se-cobra/', texto: 'Cuándo se cobra el paro: fechas de cada banco' },
+    { href: '/hacienda/calculadora-sueldo-neto/', texto: 'Calculadora de sueldo neto 2026: cuánto cobrarás limpio al mes' },
+  ],
+  hacienda: [{ href: '/hacienda/calculadora-sueldo-neto/', texto: 'Calculadora de sueldo neto 2026: cuánto cobrarás limpio al mes' }],
   luz: [{ href: '/gasolina/', texto: 'Precio de la gasolina y el diésel hoy, por provincia' }],
 };
 const fijos = destacados[category] ?? [];

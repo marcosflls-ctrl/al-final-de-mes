@@ -1,0 +1,384 @@
+---
+import Base from '../../layouts/Base.astro';
+import Siguenos from '../../components/Siguenos.astro';
+import Compartir from '../../components/Compartir.astro';
+import { SITE } from '../../config';
+import { calcular, PARAMETROS_2026 } from '../../lib/sueldo';
+
+const titulo = 'Calculadora de sueldo neto 2026';
+const descripcion = 'Calcula cuánto cobrarás limpio al mes en 2026 a partir de tu sueldo bruto anual: retención de IRPF con el algoritmo oficial de Hacienda y cotizaciones a la Seguridad Social.';
+const url = `${SITE.url}/hacienda/calculadora-sueldo-neto/`;
+
+const eur = (n: number, dec = 0) => n.toLocaleString('es-ES', { minimumFractionDigits: dec, maximumFractionDigits: dec, useGrouping: 'always' } as any);
+
+// Tabla de referencia: persona soltera, sin hijos, contrato indefinido, 14 pagas
+const brutos = [PARAMETROS_2026.smiAnual, 18000, 20000, 22000, 24000, 25000, 28000, 30000, 32000, 35000, 40000, 45000, 50000, 60000, 70000, 80000];
+const tabla = brutos.map((b) => {
+  const r14 = calcular({ brutoAnual: b, pagas: 14, contrato: 'indefinido', anioNacimiento: 1990, situacion: 3, hijos: [], discapacidad: 'no' });
+  const r12 = calcular({ brutoAnual: b, pagas: 12, contrato: 'indefinido', anioNacimiento: 1990, situacion: 3, hijos: [], discapacidad: 'no' });
+  return { b, tipo: r14.tipoRetencion, mes14: r14.netoMensual, extra: r14.netoExtra!, mes12: r12.netoMensual, anual: r14.netoAnual };
+});
+const ej = calcular({ brutoAnual: 30000, pagas: 14, contrato: 'indefinido', anioNacimiento: 1990, situacion: 3, hijos: [], discapacidad: 'no' });
+
+const preguntas = [
+  {
+    q: '¿Qué diferencia hay entre sueldo bruto y sueldo neto?',
+    a: 'El bruto es lo que paga la empresa por tu trabajo antes de descuentos; es la cifra que aparece en el contrato. El neto es lo que llega a tu cuenta después de restar las cotizaciones a la Seguridad Social y la retención de IRPF.',
+  },
+  {
+    q: '¿Cuánto es 30.000 euros brutos en neto al mes?',
+    a: `Para una persona soltera, sin hijos y con contrato indefinido, 30.000 € brutos al año dejan unos ${eur(ej.netoMensual)} € netos al mes en 14 pagas (y ${eur(ej.netoExtra!)} € en cada paga extra), con una retención del ${eur(ej.tipoRetencion, 2)} %. En 12 pagas serían unos ${eur(ej.netoAnual / 12)} € al mes.`,
+  },
+  {
+    q: '¿Cobro menos en total por tener 14 pagas en vez de 12?',
+    a: 'No. El dinero al año es el mismo; solo cambia cómo se reparte. Con 14 pagas cada mes cobras menos, pero en junio y en diciembre (o cuando marque tu convenio) recibes una paga extra.',
+  },
+  {
+    q: '¿Por qué la paga extra me sale más alta que una nómina normal?',
+    a: 'Porque las cotizaciones a la Seguridad Social de las pagas extra ya se descuentan, repartidas, en las doce nóminas ordinarias. En la paga extra solo se resta la retención de IRPF.',
+  },
+  {
+    q: '¿La retención es lo que pago de IRPF?',
+    a: 'Es un adelanto. La empresa retiene cada mes un porcentaje calculado para acercarse a lo que pagarás, y en la declaración de la renta del año siguiente se ajusta: si te retuvieron de más, Hacienda te devuelve; si te retuvieron de menos, pagas la diferencia.',
+  },
+  {
+    q: '¿Sirve para el País Vasco y Navarra?',
+    a: 'No. Esas comunidades tienen sus propias tablas de retención. La calculadora usa el algoritmo de la Agencia Tributaria, válido en el resto de España. Las cotizaciones a la Seguridad Social sí son iguales en todo el país.',
+  },
+  {
+    q: '¿Qué cambió en las retenciones en septiembre de 2026?',
+    a: 'Hacienda publicó un nuevo algoritmo de cálculo aplicable a las nóminas desde el 10 de septiembre de 2026. Esta calculadora usa esa versión, la vigente para lo que queda de año.',
+  },
+];
+
+const jsonLd = [
+  {
+    '@context': 'https://schema.org', '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Inicio', item: SITE.url + '/' },
+      { '@type': 'ListItem', position: 2, name: 'Hacienda', item: `${SITE.url}/hacienda/` },
+      { '@type': 'ListItem', position: 3, name: titulo, item: url },
+    ],
+  },
+  {
+    '@context': 'https://schema.org', '@type': 'WebApplication', name: titulo, url,
+    applicationCategory: 'FinanceApplication', operatingSystem: 'Any', inLanguage: 'es-ES',
+    offers: { '@type': 'Offer', price: '0', priceCurrency: 'EUR' },
+  },
+  {
+    '@context': 'https://schema.org', '@type': 'FAQPage',
+    mainEntity: preguntas.map((p) => ({ '@type': 'Question', name: p.q, acceptedAnswer: { '@type': 'Answer', text: p.a } })),
+  },
+];
+const anioActual = PARAMETROS_2026.ejercicio;
+---
+<Base title={titulo} description={descripcion} jsonLd={jsonLd}>
+  <nav class="breadcrumbs"><a href="/">Inicio</a> › <a href="/hacienda/">Hacienda</a></nav>
+  <article class="calc-pagina">
+    <h1>{titulo}</h1>
+    <p class="lead">Escribe tu sueldo bruto anual y te decimos cuánto cobrarás limpio cada mes. Usamos el algoritmo oficial de retenciones de la Agencia Tributaria vigente desde el 10 de septiembre de 2026 y las cotizaciones de la Seguridad Social de este año.</p>
+
+    <div class="calc">
+      <form id="calc-sueldo" class="formulario" novalidate>
+        <label class="campo campo-grande">
+          <span>Sueldo bruto anual</span>
+          <span class="con-unidad"><input id="bruto" name="bruto" type="text" inputmode="decimal" autocomplete="off" value="25000" aria-describedby="ayuda-bruto" /><span class="unidad">€/año</span></span>
+          <small id="ayuda-bruto" class="muted">Lo que figura en tu contrato, incluidas las pagas extra.</small>
+        </label>
+
+        <fieldset class="campo">
+          <legend>Número de pagas</legend>
+          <div class="segmentado">
+            <label><input type="radio" name="pagas" value="14" checked /><span>14 pagas</span></label>
+            <label><input type="radio" name="pagas" value="12" /><span>12 pagas</span></label>
+          </div>
+        </fieldset>
+
+        <label class="campo">
+          <span>Tipo de contrato</span>
+          <select name="contrato">
+            <option value="indefinido">Indefinido</option>
+            <option value="temporal">Temporal de un año o más</option>
+            <option value="temporal-corto">Temporal de menos de un año</option>
+          </select>
+        </label>
+
+        <label class="campo">
+          <span>Año de nacimiento</span>
+          <input name="nacimiento" type="number" inputmode="numeric" min="1930" max={anioActual - 15} value="1990" />
+        </label>
+
+        <label class="campo">
+          <span>Situación familiar</span>
+          <select name="situacion" aria-describedby="ayuda-situacion">
+            <option value="3">General</option>
+            <option value="2">Con la pareja a cargo</option>
+            <option value="1">Familia monoparental</option>
+          </select>
+          <small id="ayuda-situacion" class="muted">General: soltero/a sin hijos, o casado/a si tu pareja gana más de 1.500 € al año. Pareja a cargo: casado/a y tu pareja gana menos de 1.500 € al año. Monoparental: soltero/a, viudo/a o separado/a con hijos que viven solo contigo.</small>
+        </label>
+
+        <fieldset class="campo">
+          <legend>Hijos menores de 25 años que viven contigo</legend>
+          <div id="hijos"></div>
+          <button type="button" id="mas-hijo" class="boton-texto">+ Añadir hijo</button>
+        </fieldset>
+
+        <label class="campo">
+          <span>Discapacidad</span>
+          <select name="discapacidad">
+            <option value="no">No</option>
+            <option value="33a65">Entre el 33 % y el 65 %</option>
+            <option value="65omas">65 % o más</option>
+          </select>
+        </label>
+      </form>
+
+      <section class="resultado" aria-live="polite" aria-labelledby="res-titulo">
+        <h2 id="res-titulo" class="res-etiqueta">Sueldo neto al mes</h2>
+        <p class="res-cifra"><span id="r-mes">—</span> €</p>
+        <p class="res-sub" id="r-extra"></p>
+        <table class="desglose">
+          <tbody>
+            <tr><th scope="row">Sueldo bruto al año</th><td id="r-bruto">—</td></tr>
+            <tr><th scope="row">Seguridad Social</th><td id="r-ss">—</td></tr>
+            <tr><th scope="row">Retención de IRPF <span class="muted" id="r-tipo"></span></th><td id="r-irpf">—</td></tr>
+            <tr class="total"><th scope="row">Sueldo neto al año</th><td id="r-neto">—</td></tr>
+          </tbody>
+        </table>
+        <p class="aviso" id="r-aviso" hidden></p>
+        <details class="detalle">
+          <summary>Ver el cálculo paso a paso</summary>
+          <table class="desglose pequena">
+            <tbody id="r-pasos"></tbody>
+          </table>
+        </details>
+      </section>
+    </div>
+
+    <p class="muted small nota">Resultado orientativo para trabajadores por cuenta ajena en territorio común (toda España salvo País Vasco y Navarra). No incluye situaciones poco frecuentes como ascendientes a cargo, pensión compensatoria, movilidad geográfica o préstamos de vivienda anteriores a 2013. Puedes comprobar la retención con el <a href="https://www2.agenciatributaria.gob.es/wlpl/PRET-R200/R261/index.zul" rel="nofollow noopener" target="_blank">simulador de la Agencia Tributaria</a>.</p>
+
+    <Compartir title={titulo} url={url} />
+
+    <section class="prose">
+      <h2>Cuánto se cobra en neto según el sueldo bruto</h2>
+      <p>Referencia rápida para una persona soltera, sin hijos, nacida en 1990 y con contrato indefinido. Si tu caso es distinto, usa la calculadora: los hijos, la situación familiar o un contrato temporal cambian el resultado.</p>
+      <div class="tabla-scroll">
+        <table class="referencia">
+          <thead>
+            <tr><th scope="col">Bruto anual</th><th scope="col">Retención</th><th scope="col">Neto al mes (14 pagas)</th><th scope="col">Paga extra</th><th scope="col">Neto al mes (12 pagas)</th></tr>
+          </thead>
+          <tbody>
+            {tabla.map((f) => (
+              <tr>
+                <th scope="row">{eur(f.b)} €{f.b === PARAMETROS_2026.smiAnual && <span class="muted"> (SMI)</span>}</th>
+                <td>{eur(f.tipo, 2)} %</td>
+                <td>{eur(f.mes14)} €</td>
+                <td>{eur(f.extra)} €</td>
+                <td>{eur(f.mes12)} €</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
+      <h2>Qué se descuenta de la nómina</h2>
+      <p>Del sueldo bruto salen dos descuentos: lo que pagas a la Seguridad Social y la retención a cuenta del IRPF.</p>
+      <h3>Cotizaciones a la Seguridad Social</h3>
+      <p>En 2026 el trabajador aporta el 6,50 % de su base de cotización si tiene contrato indefinido y el 6,55 % si es temporal:</p>
+      <ul>
+        <li>Contingencias comunes: 4,70 %.</li>
+        <li>Desempleo: 1,55 % con contrato indefinido y 1,60 % con contrato temporal.</li>
+        <li>Mecanismo de Equidad Intergeneracional (MEI): 0,15 %.</li>
+        <li>Formación profesional: 0,10 %.</li>
+      </ul>
+      <p>La base de cotización tiene un tope de {eur(PARAMETROS_2026.ss.baseMaximaMensual, 2)} € al mes. Por encima de esa cifra se paga además una pequeña cotización de solidaridad, que en 2026 va del 0,19 % al 0,24 % según el tramo.</p>
+      <h3>Retención de IRPF</h3>
+      <p>La empresa no aplica directamente los tramos del IRPF a tu sueldo. Sigue un cálculo fijado por Hacienda:</p>
+      <ol>
+        <li>Al bruto le resta las cotizaciones y 2.000 € de gastos generales.</li>
+        <li>Si el rendimiento neto es bajo, aplica la reducción por rendimientos del trabajo, que puede llegar a 7.302 €.</li>
+        <li>Sobre lo que queda aplica la escala de retención (del 19 % al 47 %).</li>
+        <li>Resta lo que saldría de aplicar esa misma escala a tu mínimo personal y familiar: 5.550 € por ti, más una cantidad por cada hijo y por edad o discapacidad.</li>
+        <li>Divide el resultado entre el bruto anual: ese es tu porcentaje de retención, que se aplica a cada nómina.</li>
+      </ol>
+      <p>Por debajo de cierto sueldo no hay retención. Para una persona soltera sin hijos el límite en 2026 es de 15.876 € al año; con hijos o con la pareja a cargo, es algo mayor.</p>
+
+      <h2>Preguntas frecuentes</h2>
+      {preguntas.map((p) => (
+        <>
+          <h3>{p.q}</h3>
+          <p>{p.a}</p>
+        </>
+      ))}
+
+      <p class="muted small">Fuentes: Agencia Tributaria, <a href="https://sede.agenciatributaria.gob.es/static_files/Sede/Programas_ayuda/Retenciones/2026/Algoritmo%20Retenciones-2026_10sept.pdf" rel="nofollow noopener" target="_blank">algoritmo de cálculo del tipo de retención 2026 (desde el 10 de septiembre)</a>; bases y tipos de cotización de 2026 según la orden de cotización de la Seguridad Social (<a href="https://www.ibermutua.es/wp-content/uploads/2026/04/BASES-Y-TIPOS-DE-COTIZACION-A-LA-SEGURIDAD-SOCIAL-PARA-2026.pdf" rel="nofollow noopener" target="_blank">resumen de Ibermutua</a>). Resultados contrastados con el simulador oficial de retenciones de la Agencia Tributaria el 16 de octubre de 2026.</p>
+    </section>
+    <Siguenos />
+  </article>
+</Base>
+
+<script>
+  import { calcular, type Entrada, type Hijo } from '../../lib/sueldo';
+
+  const form = document.getElementById('calc-sueldo') as HTMLFormElement;
+  const contHijos = document.getElementById('hijos')!;
+  const $ = (id: string) => document.getElementById(id)!;
+  const fmt = (n: number, dec = 2) => n.toLocaleString('es-ES', { minimumFractionDigits: dec, maximumFractionDigits: dec, useGrouping: 'always' } as Intl.NumberFormatOptions);
+  const anio = new Date().getFullYear();
+
+  function leerNumero(v: string): number {
+    // Acepta "25.000", "25000", "25.000,50" y "25000.50"
+    let t = v.replace(/[^\d.,]/g, '');
+    if (t.includes(',')) t = t.replace(/\./g, '').replace(',', '.');
+    else if (/\.\d{3}(\.|$)/.test(t)) t = t.replace(/\./g, '');
+    const n = parseFloat(t);
+    return Number.isFinite(n) ? n : 0;
+  }
+
+  function filaHijo(anioNac = anio - 5) {
+    const fila = document.createElement('div');
+    fila.className = 'hijo';
+    fila.innerHTML = `
+      <label><span>Año de nacimiento</span><input type="number" inputmode="numeric" class="h-anio" min="${anio - 30}" max="${anio}" value="${anioNac}"></label>
+      <label class="check"><input type="checkbox" class="h-compartido"> <span>Lo comparto con el otro progenitor</span></label>
+      <button type="button" class="boton-texto h-quitar" aria-label="Quitar este hijo">Quitar</button>`;
+    fila.querySelector('.h-quitar')!.addEventListener('click', () => { fila.remove(); actualizar(); });
+    contHijos.appendChild(fila);
+  }
+
+  function leer(): Entrada {
+    const d = new FormData(form);
+    const hijos: Hijo[] = [...contHijos.querySelectorAll('.hijo')].map((f) => ({
+      anio: parseInt((f.querySelector('.h-anio') as HTMLInputElement).value, 10) || anio,
+      entero: !(f.querySelector('.h-compartido') as HTMLInputElement).checked,
+    }));
+    return {
+      brutoAnual: leerNumero(String(d.get('bruto') ?? '')),
+      pagas: d.get('pagas') === '12' ? 12 : 14,
+      contrato: d.get('contrato') as Entrada['contrato'],
+      anioNacimiento: parseInt(String(d.get('nacimiento')), 10) || 1990,
+      situacion: Number(d.get('situacion')) as Entrada['situacion'],
+      hijos,
+      discapacidad: d.get('discapacidad') as Entrada['discapacidad'],
+    };
+  }
+
+  function actualizar() {
+    const e = leer();
+    if (e.brutoAnual <= 0) {
+      ['r-mes', 'r-bruto', 'r-ss', 'r-irpf', 'r-neto'].forEach((id) => ($(id).textContent = '—'));
+      $('r-extra').textContent = ''; $('r-tipo').textContent = ''; $('r-pasos').innerHTML = '';
+      return;
+    }
+    const r = calcular(e);
+    $('r-mes').textContent = fmt(r.netoMensual);
+    $('r-extra').textContent = r.netoExtra != null
+      ? `En 14 pagas: 12 nóminas de ${fmt(r.netoMensual)} € y 2 pagas extra de ${fmt(r.netoExtra)} €.`
+      : 'En 12 pagas, con las extras ya repartidas en cada nómina.';
+    $('r-bruto').textContent = `${fmt(r.bruto)} €`;
+    $('r-ss').textContent = `− ${fmt(r.seguridadSocial)} €`;
+    $('r-tipo').textContent = `(${fmt(r.tipoRetencion)} %)`;
+    $('r-irpf').textContent = `− ${fmt(r.retencion)} €`;
+    $('r-neto').textContent = `${fmt(r.netoAnual)} €`;
+
+    const aviso = $('r-aviso');
+    const avisos: string[] = [];
+    if (r.exento) avisos.push('Con este sueldo y tu situación familiar no se aplica retención de IRPF.');
+    if (e.situacion === 1 && !e.hijos.some((h) => anio - h.anio < 25)) avisos.push('La situación de familia monoparental exige tener algún hijo a cargo; hemos calculado como soltero/a sin hijos.');
+    if (e.brutoAnual < 17094 && e.contrato === 'indefinido') avisos.push('Ojo: para jornada completa, el salario mínimo de 2026 es de 17.094 € al año.');
+    aviso.hidden = avisos.length === 0;
+    aviso.textContent = avisos.join(' ');
+
+    const p = r.pasos;
+    const filas: [string, string][] = [
+      ['Bruto anual', fmt(r.bruto)],
+      ['− Cotizaciones a la Seguridad Social', fmt(r.seguridadSocial)],
+      ['= Rendimiento neto', fmt(p.rendimientoNeto)],
+      ['− Gastos deducibles', fmt(p.otrosGastos)],
+      ['− Reducción por rendimientos del trabajo', fmt(p.reduccion)],
+      ['= Base para calcular la retención', fmt(p.base)],
+      ['Mínimo personal y familiar', fmt(p.minimo)],
+      ['Escala aplicada a la base', fmt(p.cuota1)],
+      ['− Escala aplicada al mínimo', fmt(p.cuota2)],
+      ['= Cuota de retención', fmt(p.cuota)],
+      ['Tipo de retención (cuota ÷ bruto)', `${fmt(r.tipoRetencion)} %`],
+    ];
+    if (p.limite43 != null && p.cuota >= p.limite43) filas.splice(10, 0, ['Límite aplicado (43 % de lo que supera el mínimo exento)', fmt(p.limite43)]);
+    $('r-pasos').innerHTML = filas.map(([a, b]) => `<tr><th scope="row">${a}</th><td>${b}</td></tr>`).join('');
+  }
+
+  $('mas-hijo').addEventListener('click', () => { filaHijo(); actualizar(); });
+  form.addEventListener('input', actualizar);
+  form.addEventListener('change', actualizar);
+  form.addEventListener('submit', (ev) => ev.preventDefault());
+  actualizar();
+</script>
+
+<style>
+  .calc-pagina { max-width: 960px; }
+  h1 { font-size: clamp(1.9rem, 4.6vw, 2.6rem); line-height: 1.15; margin: 4px 0 12px; }
+  .lead { font-size: 1.125rem; line-height: 1.55; margin: 0 0 28px; max-width: 720px; }
+
+  .calc { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 32px; align-items: start; border-top: 2px solid var(--ink); padding-top: 24px; }
+  .formulario { display: flex; flex-direction: column; gap: 18px; }
+  .campo { display: flex; flex-direction: column; gap: 6px; border: 0; padding: 0; margin: 0; min-width: 0; }
+  .campo > span, .campo legend { font-weight: 600; font-size: .9375rem; padding: 0; }
+  .campo small { font-size: .8125rem; }
+  .calc :global(input[type='text']), .calc :global(input[type='number']), .calc select {
+    font: 400 1rem var(--sans); color: var(--ink); background: var(--bg);
+    border: 1px solid #b9c0c6; border-radius: 4px; padding: 10px 12px; width: 100%; min-width: 0;
+  }
+  .calc :global(input:focus), .calc select:focus { outline: 2px solid var(--brand); outline-offset: 0; border-color: var(--brand); }
+  .con-unidad { position: relative; display: block; }
+  .campo-grande input { font-size: 1.375rem; font-weight: 600; padding-right: 72px; font-variant-numeric: tabular-nums; }
+  .unidad { position: absolute; right: 12px; top: 50%; transform: translateY(-50%); color: var(--muted); font-size: .9375rem; pointer-events: none; }
+
+  .segmentado { display: inline-flex; border: 1px solid #b9c0c6; border-radius: 4px; overflow: hidden; width: fit-content; }
+  .segmentado label { position: relative; }
+  .segmentado input { position: absolute; opacity: 0; inset: 0; margin: 0; cursor: pointer; }
+  .segmentado span { display: block; padding: 9px 18px; font-size: .9375rem; }
+  .segmentado label + label span { border-left: 1px solid #b9c0c6; }
+  .segmentado input:checked + span { background: var(--ink); color: #fff; }
+  .segmentado input:focus-visible + span { outline: 2px solid var(--brand); outline-offset: -2px; }
+
+  .boton-texto { font: 600 .9375rem var(--sans); color: var(--brand); background: none; border: 0; padding: 4px 0; cursor: pointer; width: fit-content; }
+  .boton-texto:hover { text-decoration: underline; }
+  :global(.hijo) { display: grid; grid-template-columns: 9em 1fr auto; gap: 6px 14px; align-items: end; padding: 10px 0; border-bottom: 1px solid var(--rule); }
+  :global(.hijo label) { display: flex; flex-direction: column; gap: 4px; font-size: .8125rem; color: var(--muted); }
+  :global(.hijo label.check) { flex-direction: row; align-items: center; gap: 8px; font-size: .875rem; color: var(--ink); padding-bottom: 10px; }
+  :global(.hijo .h-quitar) { padding: 0 0 12px; font: 500 .875rem var(--sans); color: var(--muted); background: none; border: 0; cursor: pointer; }
+  :global(.hijo .h-quitar:hover) { color: var(--bad); text-decoration: underline; }
+  :global(.hijo input[type='checkbox']) { width: 18px; height: 18px; accent-color: var(--brand); margin: 0; }
+
+  .resultado { background: var(--surface); border-radius: 4px; padding: 24px; position: sticky; top: 16px; }
+  .res-etiqueta { font: 600 .875rem var(--sans); text-transform: uppercase; letter-spacing: .04em; color: var(--muted); margin: 0; }
+  .res-cifra { font-family: var(--serif); font-size: clamp(2.4rem, 6vw, 3.2rem); font-weight: 600; line-height: 1.1; margin: 6px 0 8px; font-variant-numeric: tabular-nums; color: var(--brand-dark); }
+  .res-sub { margin: 0 0 18px; font-size: .9375rem; }
+  .desglose { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
+  .desglose th, .desglose td { padding: 8px 0; border-bottom: 1px solid var(--rule); font-size: .9375rem; }
+  .desglose th { text-align: left; font-weight: 400; }
+  .desglose td { text-align: right; white-space: nowrap; padding-left: 12px; }
+  .desglose .total th, .desglose .total td { font-weight: 600; border-bottom: 0; border-top: 1px solid var(--ink); }
+  .desglose.pequena th, .desglose.pequena td { font-size: .8125rem; padding: 6px 0; }
+  .aviso { margin: 14px 0 0; padding: 10px 12px; border-left: 3px solid var(--mid); background: var(--bg); font-size: .875rem; }
+  .detalle { margin-top: 16px; }
+  .detalle summary { cursor: pointer; font-weight: 600; font-size: .9375rem; color: var(--brand); }
+  .nota { margin: 18px 0 8px; max-width: 760px; }
+  .small { font-size: .8125rem; }
+
+  .prose { margin-top: 40px; }
+  .tabla-scroll { overflow-x: auto; }
+  .referencia { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums; display: table !important; }
+  .referencia th, .referencia td { padding: 8px 14px 8px 0; border-bottom: 1px solid var(--rule); text-align: right; font-size: .9375rem; white-space: nowrap; }
+  .referencia th:first-child { text-align: left; }
+  .referencia thead th { font-size: .8125rem; font-weight: 600; border-bottom: 1px solid var(--ink); white-space: normal; vertical-align: bottom; }
+  .referencia tbody th { font-weight: 600; }
+
+  @media (max-width: 760px) {
+    .calc { grid-template-columns: 1fr; gap: 24px; }
+    .resultado { position: static; padding: 20px 16px; }
+    :global(.hijo) { grid-template-columns: 1fr auto; }
+    :global(.hijo label.check) { grid-column: 1 / -1; order: 3; }
+  }
+</style>
