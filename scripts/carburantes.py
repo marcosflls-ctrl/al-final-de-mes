@@ -10,6 +10,7 @@ Uso:  python scripts/carburantes.py
 from __future__ import annotations
 
 import json
+import os
 import statistics
 import sys
 import unicodedata
@@ -59,9 +60,17 @@ def resumen(precios: list[float]) -> dict:
 
 
 def main() -> int:
-    r = requests.get(API, headers={"User-Agent": UA, "Accept": "application/json"}, timeout=120)
-    r.raise_for_status()
-    datos = r.json()
+    try:
+        r = requests.get(API, headers={"User-Agent": UA, "Accept": "application/json"}, timeout=180)
+        r.raise_for_status()
+        datos = json.loads(r.content.decode("utf-8-sig"))  # la respuesta puede traer BOM
+    except Exception as e:  # noqa: BLE001
+        aviso = f"{type(e).__name__}: {str(e)[:300]}"
+        print(f"! {aviso}")
+        if os.environ.get("GITHUB_ACTIONS"):
+            extra = f" · estado {r.status_code} · inicio {r.text[:120]!r}" if "r" in locals() else ""
+            print(f"::error title=Carburantes::{aviso}{extra}")
+        return 1
     if datos.get("ResultadoConsulta") != "OK" or not datos.get("ListaEESSPrecio"):
         print(f"! Respuesta inesperada: {datos.get('ResultadoConsulta')}")
         return 1
@@ -127,7 +136,7 @@ def main() -> int:
     OUT.write_text(json.dumps(salida, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
     n = salida["nacional"]
     print(f"✓ Gasolina 95: {n['g95']['media']} €/l · Gasóleo A: {n['diesel']['media']} €/l · {len(salida_prov)} provincias")
-    if "GITHUB_ACTIONS" in __import__("os").environ:
+    if os.environ.get("GITHUB_ACTIONS"):
         print(f"::notice title=Carburantes::G95 {n['g95']['media']} · Diésel {n['diesel']['media']} · {len(estaciones)} gasolineras · {len(salida_prov)} provincias · fuente {datos.get('Fecha')}")
     return 0
 
