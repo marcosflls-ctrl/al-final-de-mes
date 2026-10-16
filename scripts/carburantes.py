@@ -25,6 +25,9 @@ ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "src" / "data" / "carburantes.json"
 MADRID = ZoneInfo("Europe/Madrid")
 API = "https://sedeaplicaciones.minetur.gob.es/ServiciosRESTCarburantes/PreciosCarburantes/EstacionesTerrestres/"
+# El servicio anterior rechaza conexiones desde fuera de España (como los servidores de GitHub);
+# la descarga en Excel del propio Geoportal sí funciona y trae los mismos datos.
+EXCEL = "https://geoportalgasolineras.es/resources/files/preciosEESS_es.xls"
 UA = "Mozilla/5.0 (compatible; AlFinalDeMes/1.0; +https://alfinaldemes.com)"
 COMBUSTIBLES = {"g95": "Precio Gasolina 95 E5", "diesel": "Precio Gasoleo A"}
 BARATAS = 5            # gasolineras más baratas que se guardan por provincia y combustible
@@ -55,27 +58,76 @@ def bonito(t: str) -> str:
     return " ".join(w.capitalize() if len(w) > 2 or i == 0 else w.lower() for i, w in enumerate(t.lower().split()))
 
 
+def _norm(t) -> str:
+    t = unicodedata.normalize("NFKD", str(t or "")).encode("ascii", "ignore").decode().lower()
+    return re.sub(r"\s+", " ", t).strip()
+
+
+def desde_excel() -> tuple[list[dict], str]:
+    """Lee el Excel del Geoportal y devuelve las gasolineras con los mismos campos que el servicio REST."""
+    import io
+
+    r = requests.get(EXCEL, headers={"User-Agent": UA}, timeout=180)
+    r.raise_for_status()
+    contenido = r.content
+    if contenido[:4] == b"\xd0\xcf\x11\xe0":                # Excel antiguo (.xls)
+        import xlrd
+        hoja = xlrd.open_workbook(file_contents=contenido).sheet_by_index(0)
+        filas = [hoja.row_values(i) for i in range(hoja.nrows)]
+    elif contenido[:2] == b"PK":                              # Excel moderno (.xlsx)
+        import openpyxl
+        hoja = openpyxl.load_workbook(io.BytesIO(contenido), read_only=True).worksheets[0]
+        filas = [list(f) for f in hoja.iter_rows(values_only=True)]
+    else:                                                     # tabla HTML con extensión .xls
+        import pandas as pd
+        tabla = pd.read_html(io.BytesIO(contenido))[0]
+        filas = [list(tabla.columns)] + tabla.astype(str).values.tolist()
+    # La cabecera es la primera fila que contiene "Provincia"; antes hay líneas informativas (con la fecha)
+    i_cab = next(i for i, f in enumerate(filas) if any(_norm(c) == "provincia" for c in f))
+    fecha = " ".join(str(c) for f in filas[:i_cab] for c in f if c and re.search(r"\d{2}/\d{2}/\d{4}", str(c)))[:60]
+    cab = [_norm(c) for c in filas[i_cab]]
+
+    def col(*claves, evitar=()):
+        for j, c in enumerate(cab):
+            if all(k in c for k in claves) and not any(e in c for e in evitar):
+                return j
+        raise KeyError(f"columna {claves} no encontrada en {cab}")
+
+    idx = {
+        "Provincia": col("provincia"), "Localidad": col("localidad"), "C.P.": col("codigo postal"),
+        "Dirección": col("direccion"), "Rótulo": col("rotulo"),
+        "Precio Gasolina 95 E5": col("gasolina 95 e5", evitar=("premium",)),
+        "Precio Gasoleo A": col("gasoleo a", evitar=("premium", "renovable")),
+    }
+    estaciones = []
+    for f in filas[i_cab + 1:]:
+        if len(f) <= max(idx.values()) or not str(f[idx["Provincia"]]).strip():
+            continue
+        e = {k: ("" if f[j] is None else str(f[j])) for k, j in idx.items()}
+        e["C.P."] = e["C.P."].split(".")[0].zfill(5) if e["C.P."] else ""
+        estaciones.append(e)
+    return estaciones, fecha or "Excel del Geoportal"
+
+
 def resumen(precios: list[float]) -> dict:
     return {"media": round(statistics.fmean(precios), 3), "min": min(precios), "max": max(precios), "n": len(precios)}
 
 
 def main() -> int:
     try:
-        r = requests.get(API, headers={"User-Agent": UA, "Accept": "application/json"}, timeout=180)
-        r.raise_for_status()
-        datos = json.loads(r.content.decode("utf-8-sig"))  # la respuesta puede traer BOM
+        estaciones, fecha_fuente = desde_excel()
     except Exception as e:  # noqa: BLE001
-        aviso = f"{type(e).__name__}: {str(e)[:300]}"
+        aviso = f"{type(e).__name__}: {str(e)[:400]}"
         print(f"! {aviso}")
         if os.environ.get("GITHUB_ACTIONS"):
-            extra = f" · estado {r.status_code} · inicio {r.text[:120]!r}" if "r" in locals() else ""
-            print(f"::error title=Carburantes::{aviso}{extra}")
+            print(f"::error title=Carburantes::{aviso}")
         return 1
-    if datos.get("ResultadoConsulta") != "OK" or not datos.get("ListaEESSPrecio"):
-        print(f"! Respuesta inesperada: {datos.get('ResultadoConsulta')}")
+    if len(estaciones) < 5000:  # en España hay más de 11.000: si salen pocas, algo ha fallado
+        print(f"! Solo {len(estaciones)} gasolineras: no se cambia nada")
+        if os.environ.get("GITHUB_ACTIONS"):
+            print(f"::error title=Carburantes::Solo {len(estaciones)} gasolineras leídas")
         return 1
-    estaciones = datos["ListaEESSPrecio"]
-    print(f"{len(estaciones)} gasolineras · fecha de la fuente: {datos.get('Fecha')}")
+    print(f"{len(estaciones)} gasolineras · {fecha_fuente}")
 
     nacional = {k: [] for k in COMBUSTIBLES}
     provincias: dict[str, dict] = {}
@@ -124,7 +176,7 @@ def main() -> int:
 
     salida = {
         "fecha": hoy,
-        "fecha_fuente": datos.get("Fecha"),
+        "fecha_fuente": fecha_fuente,
         "actualizado": ahora.replace(microsecond=0).isoformat(),
         "fuente": "Ministerio para la Transición Ecológica y el Reto Demográfico (Geoportal de Hidrocarburos)",
         "gasolineras": len(estaciones),
@@ -137,7 +189,7 @@ def main() -> int:
     n = salida["nacional"]
     print(f"✓ Gasolina 95: {n['g95']['media']} €/l · Gasóleo A: {n['diesel']['media']} €/l · {len(salida_prov)} provincias")
     if os.environ.get("GITHUB_ACTIONS"):
-        print(f"::notice title=Carburantes::G95 {n['g95']['media']} · Diésel {n['diesel']['media']} · {len(estaciones)} gasolineras · {len(salida_prov)} provincias · fuente {datos.get('Fecha')}")
+        print(f"::notice title=Carburantes::G95 {n['g95']['media']} · Diésel {n['diesel']['media']} · {len(estaciones)} gasolineras · {len(salida_prov)} provincias · {fecha_fuente}")
     return 0
 
 
