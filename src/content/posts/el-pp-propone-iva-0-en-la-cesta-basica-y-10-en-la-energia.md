@@ -26,7 +26,7 @@ La deflactación es una reclamación que el PP repite durante toda la legislatur
 
 ## ¿Por qué lo plantea ahora?
 
-El INE ha confirmado una inflación del 4,9 % en septiembre. Puedes ver cómo queda el descuento al combustible en nuestro artículo sobre el [IPC de septiembre](/hacienda/ipc-al-4-9-en-septiembre-el-descuento-de-20-centimos-al-combustible-sigue/). El PP atribuye el alza de los últimos meses al conflicto en Oriente Próximo. Quiere evitar que el encarecimiento de carburantes y energía acabe trasladándose a la cesta de la compra.
+El INE ha confirmado una inflación del 4,9 % en septiembre. Puedes ver cómo queda el descuento al combustible en nuestro artículo sobre el [IPC de septiembre](/luz/ipc-al-4-9-en-septiembre-el-descuento-de-20-centimos-al-combustible-sigue/). El PP atribuye el alza de los últimos meses al conflicto en Oriente Próximo. Quiere evitar que el encarecimiento de carburantes y energía acabe trasladándose a la cesta de la compra.
 
 El vicesecretario de Economía, Alberto Nadal, sostiene que la subida de los alimentos "hace especialmente daño" a las familias con hijos y a las de rentas más modestas, porque en ellas la compra pesa más.
 

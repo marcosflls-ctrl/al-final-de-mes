@@ -73,6 +73,11 @@ jobs:
         run: |
           if [ "${{ github.event.inputs.prueba }}" = "true" ]; then python scripts/radar.py --dry-run; else python scripts/radar.py; fi
 
+      # Corrige enlaces internos que apunten a la sección equivocada
+      - name: Arreglar enlaces internos
+        if: steps.radar.outputs.count != '0' && steps.radar.outputs.count != ''
+        run: python scripts/arreglar_enlaces.py
+
       # Comprueba que la web se construye con los borradores nuevos (un dato mal formado la rompería)
       - uses: actions/setup-node@v4
         if: steps.radar.outputs.count != '0' && steps.radar.outputs.count != ''

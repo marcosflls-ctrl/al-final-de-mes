@@ -27,7 +27,7 @@ Los datos que ha puesto sobre la mesa:
 
 ## ¿Cuánto podría subir?
 
-Según Cinco Días, si la recomendación sigue el IPC medio del año, rondaría el **3,5%**. Si se basa en los últimos datos de inflación, se acercaría al **5%**. Los sindicatos UGT y CC OO piden un 7%, como ya contamos en [la propuesta de los sindicatos](/hacienda/los-sindicatos-piden-subir-el-smi-un-7-hasta-1-307-euros-en-14-pagas/).
+Según Cinco Días, si la recomendación sigue el IPC medio del año, rondaría el **3,5%**. Si se basa en los últimos datos de inflación, se acercaría al **5%**. Los sindicatos UGT y CC OO piden un 7%, como ya contamos en [la propuesta de los sindicatos](/paro/los-sindicatos-piden-subir-el-smi-un-7-hasta-1-307-euros-en-14-pagas/).
 
 El SMI actual es de 1.221 euros brutos al mes en 14 pagas, un 3,1% más que en 2025 (37 euros al mes). Estos son ejemplos aplicando esos porcentajes, no cifras oficiales:
 

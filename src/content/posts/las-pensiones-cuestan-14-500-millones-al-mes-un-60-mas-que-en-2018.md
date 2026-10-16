@@ -44,7 +44,7 @@ Aun así, advierte de que eso no elimina las tensiones. Sus cálculos, según el
 
 ## ¿Qué cambia para los pensionistas?
 
-Por ahora, nada. Es un diagnóstico, no una medida aprobada. La revalorización con el IPC es un mandato legal, no una propuesta electoral. Con la inflación al alza, la subida de 2027 apunta a ser otra vez significativa. Tienes más detalle en [este artículo sobre la subida de pensiones con Gobierno en funciones](/pensiones/cuerpo-asegura-que-pensiones-y-smi-subiran-aunque-haya-gobierno-en-funcione/) y en el [último dato del IPC](/hacienda/ipc-al-4-9-en-septiembre-el-descuento-de-20-centimos-al-combustible-sigue/).
+Por ahora, nada. Es un diagnóstico, no una medida aprobada. La revalorización con el IPC es un mandato legal, no una propuesta electoral. Con la inflación al alza, la subida de 2027 apunta a ser otra vez significativa. Tienes más detalle en [este artículo sobre la subida de pensiones con Gobierno en funciones](/pensiones/cuerpo-asegura-que-pensiones-y-smi-subiran-aunque-haya-gobierno-en-funcione/) y en el [último dato del IPC](/luz/ipc-al-4-9-en-septiembre-el-descuento-de-20-centimos-al-combustible-sigue/).
 
 Las pensiones ya están en la precampaña. El Gobierno defiende la actualización con el IPC y advierte de recortes si gobierna la oposición. El PP promete garantizar el poder adquisitivo con una reforma del modelo que asegure su sostenibilidad. Vox plantea una privatización parcial.
 
