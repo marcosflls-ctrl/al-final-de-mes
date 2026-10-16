@@ -1,45 +1,106 @@
 {
   "_nota": "Fechas de cobro por banco. Cada mes se añade una entrada nueva con las fechas que comunican los bancos y su fuente. Si aún no se conocen, 'pendiente': true.",
   "pensiones": {
-    "regla": "La Seguridad Social paga las pensiones el primer día hábil de cada mes y, en todo caso, antes del día 4. La mayoría de los bancos adelantan el ingreso unos días, normalmente entre el 22 y el 26 del mes anterior.",
+    "regla": "La Seguridad Social paga la pensión de cada mes el primer día hábil del mes siguiente, y siempre antes del día 4. Pero la mayoría de los bancos la adelantan a los últimos días del mismo mes, normalmente entre el 22 y el 26.",
     "extras": "Las pensiones se cobran en 14 pagas: una por mes y dos pagas extra, en junio y en noviembre. La extra de noviembre llega junto con la pensión de ese mes. Las pensiones por accidente de trabajo o enfermedad profesional se cobran en 12 pagas, con las extras repartidas.",
     "fuentes_regla": [
-      { "name": "Revista de la Seguridad Social: ¿Cuándo se cobran las pensiones?", "url": "https://revista.seg-social.es/-/20220610-cobro-pensiones" }
+      {
+        "name": "Revista de la Seguridad Social: ¿Cuándo se cobran las pensiones?",
+        "url": "https://revista.seg-social.es/-/20220610-cobro-pensiones"
+      }
     ],
     "meses": [
       {
         "mes": "2026-10",
         "bancos": [
-          { "banco": "Bankinter", "fecha": "2026-10-22" },
-          { "banco": "Unicaja", "fecha": "2026-10-22" },
-          { "banco": "Caja de Ingenieros", "fecha": "2026-10-22" },
-          { "banco": "Santander", "fecha": "2026-10-23" },
-          { "banco": "Sabadell", "fecha": "2026-10-23" },
-          { "banco": "Ibercaja", "fecha": "2026-10-23" },
-          { "banco": "Cajamar", "fecha": "2026-10-23" },
-          { "banco": "CaixaBank e imaginBank", "fecha": "2026-10-24" },
-          { "banco": "BBVA", "fecha": "2026-10-25" },
-          { "banco": "ING", "fecha": "2026-10-25" },
-          { "banco": "Kutxabank", "fecha": "2026-10-25", "nota": "Puede pasar al lunes 26 si hay alguna incidencia" },
-          { "banco": "Abanca", "fecha": "2026-10-26", "nota": "Si tienes activado su servicio de adelanto; si no, el viernes 30" }
+          {
+            "banco": "Bankinter",
+            "fecha": "2026-10-22"
+          },
+          {
+            "banco": "Unicaja",
+            "fecha": "2026-10-22"
+          },
+          {
+            "banco": "Caja de Ingenieros",
+            "fecha": "2026-10-22"
+          },
+          {
+            "banco": "Santander",
+            "fecha": "2026-10-23"
+          },
+          {
+            "banco": "Sabadell",
+            "fecha": "2026-10-23"
+          },
+          {
+            "banco": "Ibercaja",
+            "fecha": "2026-10-23"
+          },
+          {
+            "banco": "Cajamar",
+            "fecha": "2026-10-23"
+          },
+          {
+            "banco": "CaixaBank e imaginBank",
+            "fecha": "2026-10-24"
+          },
+          {
+            "banco": "BBVA",
+            "fecha": "2026-10-25"
+          },
+          {
+            "banco": "ING",
+            "fecha": "2026-10-25"
+          },
+          {
+            "banco": "Kutxabank",
+            "fecha": "2026-10-25",
+            "nota": "Puede pasar al lunes 26 si hay alguna incidencia"
+          },
+          {
+            "banco": "Abanca",
+            "fecha": "2026-10-26",
+            "nota": "Si tienes activado su servicio de adelanto; si no, el viernes 30"
+          }
         ],
         "fuentes": [
-          { "name": "65ymás: Pago de las pensiones en octubre de 2026 en cada banco (8 de octubre)", "url": "https://www.65ymas.com/economia/pensiones/pago-pensiones-en-octubre-2026-cual-es-fecha-cobro-en-cada-banco_86469_102.html" },
-          { "name": "El Independiente: Cuándo se cobran las pensiones en octubre de 2026 (13 de octubre)", "url": "https://www.elindependiente.com/economia/2026/10/13/cuando-cobran-pensiones-octubre-2026/" }
+          {
+            "name": "65ymás: Pago de las pensiones en octubre de 2026 en cada banco (8 de octubre)",
+            "url": "https://www.65ymas.com/economia/pensiones/pago-pensiones-en-octubre-2026-cual-es-fecha-cobro-en-cada-banco_86469_102.html"
+          },
+          {
+            "name": "El Independiente: Cuándo se cobran las pensiones en octubre de 2026 (13 de octubre)",
+            "url": "https://www.elindependiente.com/economia/2026/10/13/cuando-cobran-pensiones-octubre-2026/"
+          }
         ]
       },
-      { "mes": "2026-11", "pendiente": true, "nota": "Incluye la paga extra de noviembre. Los bancos suelen anunciar sus fechas a primeros de mes." }
+      {
+        "mes": "2026-11",
+        "pendiente": true,
+        "nota": "Incluye la paga extra de noviembre. Los bancos suelen anunciar sus fechas a primeros de mes."
+      }
     ]
   },
   "paro": {
     "regla": "El SEPE paga el paro a mes vencido: lo de un mes se cobra al mes siguiente. Ordena el pago hacia el día 10 y, según el banco, el dinero llega entre ese día y el 13 o el 15. Si el día 10 cae en fin de semana, la orden pasa al siguiente día hábil.",
     "extras": "La prestación por desempleo no tiene pagas extra: se cobra en 12 mensualidades.",
     "fuentes_regla": [
-      { "name": "El Independiente: Cuándo se cobra el paro en julio de 2026", "url": "https://www.elindependiente.com/economia/2026/06/25/cobra-paro-julio-2026/" },
-      { "name": "Legálitas: ¿Cuándo se cobra el paro?", "url": "https://www.legalitas.com/actualidad/cuando-se-cobra-el-paro" }
+      {
+        "name": "El Independiente: Cuándo se cobra el paro en julio de 2026",
+        "url": "https://www.elindependiente.com/economia/2026/06/25/cobra-paro-julio-2026/"
+      },
+      {
+        "name": "Legálitas: ¿Cuándo se cobra el paro?",
+        "url": "https://www.legalitas.com/actualidad/cuando-se-cobra-el-paro"
+      }
     ],
     "meses": [
-      { "mes": "2026-11", "pendiente": true, "nota": "Paro de octubre. El día 10 de noviembre cae en martes." }
+      {
+        "mes": "2026-11",
+        "pendiente": true,
+        "nota": "Paro de octubre. El día 10 de noviembre cae en martes."
+      }
     ]
   }
 }
