@@ -1,0 +1,41 @@
+---
+// Calendario de cobro por banco (pensiones o paro), con los datos de src/data/cobros.json
+import cobros from '../data/cobros.json';
+interface Props { tipo: 'pensiones' | 'paro' }
+const { tipo } = Astro.props;
+const t = (cobros as any)[tipo];
+const nombreMes = (m: string) => new Date(`${m}-15T12:00:00Z`).toLocaleDateString('es-ES', { month: 'long', year: 'numeric', timeZone: 'Europe/Madrid' });
+const dia = (f: string) => {
+  const s = new Date(`${f}T12:00:00Z`).toLocaleDateString('es-ES', { weekday: 'long', day: 'numeric', timeZone: 'Europe/Madrid' });
+  return s.charAt(0).toUpperCase() + s.slice(1);
+};
+const meses = [...t.meses].sort((a: any, b: any) => a.mes.localeCompare(b.mes));
+---
+{meses.map((m: any) => (
+  <section class="mes">
+    <h2 class="titulo-bloque">{tipo === 'pensiones' ? 'Pensión' : 'Paro'} de {nombreMes(m.mes)}</h2>
+    {m.pendiente ? (
+      <p class="nota">Los bancos todavía no han comunicado sus fechas. {m.nota} Actualizaremos esta tabla en cuanto las publiquen.</p>
+    ) : (
+      <>
+        <table>
+          <thead><tr><th>Banco</th><th>Día de ingreso</th></tr></thead>
+          <tbody>
+            {[...m.bancos].sort((a: any, b: any) => a.fecha.localeCompare(b.fecha) || a.banco.localeCompare(b.banco)).map((b: any) => (
+              <tr><td>{b.banco}</td><td>{dia(b.fecha)}{b.nota && <span class="nota-banco">{b.nota}</span>}</td></tr>
+            ))}
+          </tbody>
+        </table>
+        <p class="muted small">Fechas previstas que comunican los bancos; pueden variar por incidencias técnicas. Fuentes: {m.fuentes.map((f: any, i: number) => <>{i > 0 && ' · '}<a href={f.url} rel="nofollow noopener" target="_blank">{f.name}</a></>)}.</p>
+      </>
+    )}
+  </section>
+))}
+<style>
+  .mes { margin-bottom: 36px; }
+  table { border-collapse: collapse; width: 100%; max-width: 560px; font-variant-numeric: tabular-nums; }
+  th, td { text-align: left; padding: 9px 16px 9px 0; border-bottom: 1px solid var(--rule); vertical-align: top; }
+  thead th { border-bottom-color: var(--ink); font-size: .875rem; }
+  .nota-banco { display: block; font-size: .8125rem; color: var(--muted); }
+  .small { max-width: 72ch; }
+</style>
