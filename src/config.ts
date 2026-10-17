@@ -8,10 +8,9 @@ export const SITE = {
   email: 'contacto@alfinaldemes.com',
   // Autor que firma los artículos (página /autor/)
   author: {
-    name: 'Marcos Fernández León',
-    slug: 'marcos-fernandez',
-    // ← personalízala: tu formación o experiencia con estos temas da confianza a lectores y a Google
-    bio: 'Fundador de Al Final de Mes. Explica los cambios en pensiones, prestaciones, impuestos y facturas que afectan a la economía de casa, siempre con el dato y la fuente oficial.',
+    name: 'Redacción Al Final de Mes',
+    slug: 'redaccion',
+    bio: 'El equipo de Al Final de Mes explica los cambios en pensiones, prestaciones, impuestos y facturas que afectan a la economía de casa, siempre con el dato y la fuente oficial.',
   },
   // Datos legales del titular (aviso legal y privacidad)
   ownerName: 'Marcos Fernández León',
