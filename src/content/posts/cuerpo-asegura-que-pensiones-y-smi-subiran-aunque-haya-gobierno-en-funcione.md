@@ -8,10 +8,10 @@ pendiente: true
 sources:
   - name: "20minutos Economía: Cuerpo avanza que el Gobierno subirá pensiones y salario mínimo aunque esté en funciones"
     url: "https://www.20minutos.es/lainformacion/economia-y-finanzas/cuerpo-avanza-que-gobierno-subira-pensiones-salario-minimo-aunque-este-funciones_7049003_0.html"
-image: /img/banco/seguridad-social-02.webp
-imageAlt: "Oficina de la Seguridad Social en Granada"
-imageCredit: "Zarateman / Wikimedia Commons (CC0)"
-imageCreditUrl: "https://commons.wikimedia.org/wiki/File:Granada_-_Oficina_Integral_de_la_Seguridad_Social_2.jpg"
+image: /img/banco/seguridad-social-08.webp
+imageAlt: "Sede de la Seguridad Social en Málaga"
+imageCredit: "Tyk / Wikimedia Commons (CC BY-SA 3.0)"
+imageCreditUrl: "https://commons.wikimedia.org/wiki/File:Sede_de_la_Seguridad_Social,_M%C3%A1laga.jpg"
 ---
 
 El vicepresidente primero y ministro de Economía, Carlos Cuerpo, ha lanzado un "mensaje inequívoco": las pensiones subirán en 2027 lo que marque la regla de revalorización fijada por ley. Y el salario mínimo (SMI) también subirá, aunque el Gobierno esté en funciones por las elecciones generales del 29 de noviembre. Lo ha dicho en declaraciones a TVE, según recoge 20minutos. Por ahora es un compromiso verbal: no hay ninguna subida aprobada.

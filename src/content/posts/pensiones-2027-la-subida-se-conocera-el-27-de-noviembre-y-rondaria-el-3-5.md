@@ -8,10 +8,10 @@ pendiente: true
 sources:
   - name: "La Vanguardia Economía: SMI, pensiones y elecciones"
     url: "https://www.lavanguardia.com/economia/20261012/11656593/smi-pensiones-y-elecciones.html"
-image: /img/banco/seguridad-social-07.webp
-imageAlt: "Oficina de la Seguridad Social en Chiclana de la Frontera"
+image: /img/banco/seguridad-social-06.webp
+imageAlt: "Oficinas de la Seguridad Social en Vitoria"
 imageCredit: "Zarateman / Wikimedia Commons (CC0)"
-imageCreditUrl: "https://commons.wikimedia.org/wiki/File:Chiclana_de_la_Frontera_-_Oficina_de_la_Seguridad_Social.jpg"
+imageCreditUrl: "https://commons.wikimedia.org/wiki/File:Vitoria_-_Calle_Dato,_Oficinas_de_la_Seguridad_Social_1.jpg"
 ---
 
 Los 9,5 millones de pensionistas sabrán el 27 de noviembre cuánto subirá su pensión el próximo año. Ese día se publica el IPC adelantado de noviembre, el dato que cierra el cálculo. Según publica La Vanguardia, la subida estará **en torno al 3,5%**. Es una estimación del medio, no una cifra oficial.

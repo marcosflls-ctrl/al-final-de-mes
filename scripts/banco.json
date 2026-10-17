@@ -35,23 +35,6 @@
    "pagina": "https://commons.wikimedia.org/wiki/File:Vitoria_-_Poste_el%C3%A9ctrico_-_Puesta_del_sol_01.jpg"
   },
   {
-   "slug": "torres-electricas-03",
-   "tema": "torres-electricas",
-   "alt": "Torre de alta tensión en Madrid",
-   "palabras": [
-    "luz",
-    "eléctric",
-    "red eléctrica",
-    "apagón",
-    "energía"
-   ],
-   "secciones": [
-    "luz"
-   ],
-   "credito": "Javier Perez Montes / Wikimedia Commons (CC BY-SA 4.0)",
-   "pagina": "https://commons.wikimedia.org/wiki/File:Torre_de_Alta_Tension_-_Madrid_03.jpg"
-  },
-  {
    "slug": "bombilla-01",
    "tema": "bombilla",
    "alt": "Bombilla encendida en una lámpara",
@@ -169,23 +152,6 @@
    "pagina": "https://commons.wikimedia.org/wiki/File:Radiator-250558_1280.jpg"
   },
   {
-   "slug": "gasolinera-08",
-   "tema": "gasolinera",
-   "alt": "Gasolinera iluminada de noche",
-   "palabras": [
-    "gasolina",
-    "diésel",
-    "carburante",
-    "gasolinera",
-    "combustible"
-   ],
-   "secciones": [
-    "luz"
-   ],
-   "credito": "DgOlsen / Wikimedia Commons (CC BY 4.0)",
-   "pagina": "https://commons.wikimedia.org/wiki/File:Avia_gas_station_before_Spain.jpg"
-  },
-  {
    "slug": "surtidor-01",
    "tema": "surtidor",
    "alt": "Manguera de un surtidor repostando un coche",
@@ -201,22 +167,6 @@
    ],
    "credito": "Rama / Wikimedia Commons (CC BY-SA 2.0 fr)",
    "pagina": "https://commons.wikimedia.org/wiki/File:Petrol_pump_mp3h0355.jpg"
-  },
-  {
-   "slug": "coche-electrico-04",
-   "tema": "coche-electrico",
-   "alt": "Puntos de recarga para coches eléctricos en un aparcamiento",
-   "palabras": [
-    "coche eléctrico",
-    "recarga",
-    "moves"
-   ],
-   "secciones": [
-    "luz",
-    "hacienda"
-   ],
-   "credito": "Philip Halling / Wikimedia Commons (CC BY-SA 2.0)",
-   "pagina": "https://commons.wikimedia.org/wiki/File:Electric_car_charging_points_-_geograph.org.uk_-_7322507.jpg"
   },
   {
    "slug": "coche-electrico-07",
@@ -301,23 +251,6 @@
    "pagina": "https://commons.wikimedia.org/wiki/File:EURO_Cash_Money_Banknote_(49643807026).jpg"
   },
   {
-   "slug": "monedas-euro-04",
-   "tema": "monedas-euro",
-   "alt": "Monedas de euro sobre una mesa",
-   "palabras": [
-    "ahorro",
-    "precio",
-    "subida",
-    "ipc"
-   ],
-   "secciones": [
-    "hacienda",
-    "pensiones"
-   ],
-   "credito": "Jesse Siirilä / Wikimedia Commons (CC BY-SA 4.0)",
-   "pagina": "https://commons.wikimedia.org/wiki/File:Euro_coins_2.jpg"
-  },
-  {
    "slug": "monedas-euro-05",
    "tema": "monedas-euro",
    "alt": "Monedas de euro sobre la bandera de la Unión Europea",
@@ -390,25 +323,6 @@
    "pagina": "https://commons.wikimedia.org/wiki/File:Aurora_electronic_calculator_DT210_02.jpg"
   },
   {
-   "slug": "calculadora-08",
-   "tema": "calculadora",
-   "alt": "Calculadora de sobremesa",
-   "palabras": [
-    "renta",
-    "declaración",
-    "irpf",
-    "impuesto",
-    "deducción",
-    "cuota"
-   ],
-   "secciones": [
-    "hacienda",
-    "paro"
-   ],
-   "credito": "Coyau / Wikimedia Commons (CC BY-SA 3.0)",
-   "pagina": "https://commons.wikimedia.org/wiki/File:Aurora_electronic_calculator_DT210_03.jpg"
-  },
-  {
    "slug": "agencia-tributaria-01",
    "tema": "agencia-tributaria",
    "alt": "Edificio de la Agencia Tributaria en Logroño",
@@ -439,22 +353,6 @@
    ],
    "credito": "Zarateman / Wikimedia Commons (CC0)",
    "pagina": "https://commons.wikimedia.org/wiki/File:Matar%C3%B3_-_Agencia_Tributaria_1.jpg"
-  },
-  {
-   "slug": "agencia-tributaria-04",
-   "tema": "agencia-tributaria",
-   "alt": "Edificio de la Agencia Tributaria en Cornellà de Llobregat",
-   "palabras": [
-    "hacienda",
-    "agencia tributaria",
-    "aeat",
-    "renta"
-   ],
-   "secciones": [
-    "hacienda"
-   ],
-   "credito": "Zarateman / Wikimedia Commons (CC0)",
-   "pagina": "https://commons.wikimedia.org/wiki/File:Cornell%C3%A1_de_Llobregat_-_Agencia_Tributaria_1.JPG"
   },
   {
    "slug": "agencia-tributaria-08",
@@ -667,25 +565,6 @@
    "pagina": "https://commons.wikimedia.org/wiki/File:Palacio_de_la_Moncloa,_Madrid,_Espa%C3%B1a_edited.jpg"
   },
   {
-   "slug": "moncloa-03",
-   "tema": "moncloa",
-   "alt": "Palacio de la Moncloa, sede del Gobierno",
-   "palabras": [
-    "gobierno",
-    "consejo de ministros",
-    "moncloa"
-   ],
-   "secciones": [
-    "hacienda",
-    "vivienda",
-    "pensiones",
-    "paro",
-    "luz"
-   ],
-   "credito": "Luis García (Zaqarbal) / Wikimedia Commons (CC BY-SA 3.0 es)",
-   "pagina": "https://commons.wikimedia.org/wiki/File:Palacio_de_la_Moncloa_(Madrid)_01.jpg"
-  },
-  {
    "slug": "banco-de-espana-03",
    "tema": "banco-de-espana",
    "alt": "Sede del Banco de España en Madrid",
@@ -754,26 +633,6 @@
    "pagina": "https://commons.wikimedia.org/wiki/File:Edificio_del_Banco_de_Espa%C3%B1a_1_Madrid.jpg"
   },
   {
-   "slug": "seguridad-social-02",
-   "tema": "seguridad-social",
-   "alt": "Oficina de la Seguridad Social en Granada",
-   "palabras": [
-    "seguridad social",
-    "inss",
-    "pensión",
-    "cotiza",
-    "jubila",
-    "empleadas del hogar",
-    "baja por"
-   ],
-   "secciones": [
-    "pensiones",
-    "paro"
-   ],
-   "credito": "Zarateman / Wikimedia Commons (CC0)",
-   "pagina": "https://commons.wikimedia.org/wiki/File:Granada_-_Oficina_Integral_de_la_Seguridad_Social_2.jpg"
-  },
-  {
    "slug": "seguridad-social-06",
    "tema": "seguridad-social",
    "alt": "Oficinas de la Seguridad Social en Vitoria",
@@ -792,26 +651,6 @@
    ],
    "credito": "Zarateman / Wikimedia Commons (CC0)",
    "pagina": "https://commons.wikimedia.org/wiki/File:Vitoria_-_Calle_Dato,_Oficinas_de_la_Seguridad_Social_1.jpg"
-  },
-  {
-   "slug": "seguridad-social-07",
-   "tema": "seguridad-social",
-   "alt": "Oficina de la Seguridad Social en Chiclana de la Frontera",
-   "palabras": [
-    "seguridad social",
-    "inss",
-    "pensión",
-    "cotiza",
-    "jubila",
-    "empleadas del hogar",
-    "baja por"
-   ],
-   "secciones": [
-    "pensiones",
-    "paro"
-   ],
-   "credito": "Zarateman / Wikimedia Commons (CC0)",
-   "pagina": "https://commons.wikimedia.org/wiki/File:Chiclana_de_la_Frontera_-_Oficina_de_la_Seguridad_Social.jpg"
   },
   {
    "slug": "seguridad-social-08",
@@ -915,22 +754,6 @@
    ],
    "credito": "Luis García (Zaqarbal) / Wikimedia Commons (CC BY-SA 3.0 es)",
    "pagina": "https://commons.wikimedia.org/wiki/File:Ponzano_68_(Madrid)_01.jpg"
-  },
-  {
-   "slug": "edificio-viviendas-03",
-   "tema": "edificio-viviendas",
-   "alt": "Edificios de viviendas en el barrio de Salamanca de Madrid",
-   "palabras": [
-    "vivienda",
-    "pisos",
-    "edificio",
-    "inmobiliari"
-   ],
-   "secciones": [
-    "vivienda"
-   ],
-   "credito": "Eric Titcombe / Wikimedia Commons (CC BY 2.0)",
-   "pagina": "https://commons.wikimedia.org/wiki/File:Buildings_in_the_Salamanca_neighborhood_of_Madrid_.jpg"
   },
   {
    "slug": "edificio-viviendas-04",
@@ -1048,22 +871,6 @@
    "pagina": "https://commons.wikimedia.org/wiki/File:Piedrah%C3%ADta,_%C3%81vila_47.jpg"
   },
   {
-   "slug": "llaves-casa-05",
-   "tema": "llaves-casa",
-   "alt": "Llaves de casa",
-   "palabras": [
-    "hipoteca",
-    "compra",
-    "vivienda",
-    "comprar"
-   ],
-   "secciones": [
-    "vivienda"
-   ],
-   "credito": "Alejandro Navarro López / Wikimedia Commons (CC0)",
-   "pagina": "https://commons.wikimedia.org/wiki/File:Llaves_casa.jpg"
-  },
-  {
    "slug": "gruas-03",
    "tema": "gruas",
    "alt": "Grúas en la obra de un edificio",
@@ -1078,22 +885,6 @@
    ],
    "credito": "Rjcastillo / Wikimedia Commons (CC BY-SA 4.0)",
    "pagina": "https://commons.wikimedia.org/wiki/File:Estructura_de_hormig%C3%B3n_y_gr%C3%B9as_de_construcci%C3%B2n.jpg"
-  },
-  {
-   "slug": "gruas-08",
-   "tema": "gruas",
-   "alt": "Grúa en una obra junto a edificios de viviendas",
-   "palabras": [
-    "obra nueva",
-    "construcción",
-    "promoción",
-    "suelo"
-   ],
-   "secciones": [
-    "vivienda"
-   ],
-   "credito": "Ruditaly / Wikimedia Commons (CC BY-SA 4.0)",
-   "pagina": "https://commons.wikimedia.org/wiki/File:Construction_site_and_crane_in_Las_Palmas_-_Santa_Cruz_de_la_Sierra,_Bolivia.jpg"
   },
   {
    "slug": "supermercado-01",
@@ -1112,24 +903,6 @@
    ],
    "credito": "Wilfredor / Wikimedia Commons (CC BY-SA 4.0)",
    "pagina": "https://commons.wikimedia.org/wiki/File:Aisle_in_L_Intermarche_supermarket_in_Quebec_City.jpg"
-  },
-  {
-   "slug": "supermercado-03",
-   "tema": "supermercado",
-   "alt": "Pasillo de un supermercado",
-   "palabras": [
-    "supermercado",
-    "precios",
-    "ipc",
-    "cesta",
-    "alimentos",
-    "compra"
-   ],
-   "secciones": [
-    "hacienda"
-   ],
-   "credito": "Infrogmation of New Orleans / Wikimedia Commons (CC BY-SA 4.0)",
-   "pagina": "https://commons.wikimedia.org/wiki/File:Langenstein%27s_Supermarket_Uptown_New_Orleans,_Center_aisle,_March_2021_01.jpg"
   },
   {
    "slug": "supermercado-05",
@@ -1287,23 +1060,6 @@
    "pagina": "https://commons.wikimedia.org/wiki/File:Madrid_-_Do%C3%B1a_Manolita_-_141203_121852.jpg"
   },
   {
-   "slug": "calendario-01",
-   "tema": "calendario",
-   "alt": "Agenda abierta por las páginas de octubre",
-   "palabras": [
-    "calendario",
-    "festivo",
-    "plazo",
-    "fechas"
-   ],
-   "secciones": [
-    "paro",
-    "hacienda"
-   ],
-   "credito": "PepedoCouto / Wikimedia Commons (CC BY-SA 3.0)",
-   "pagina": "https://commons.wikimedia.org/wiki/File:Axenda.JPG"
-  },
-  {
    "slug": "calendario-02",
    "tema": "calendario",
    "alt": "Agenda de anillas abierta",
@@ -1319,23 +1075,6 @@
    ],
    "credito": "Old Photo Profile / Wikimedia Commons (CC BY 2.0)",
    "pagina": "https://commons.wikimedia.org/wiki/File:Personal_organizer_with_metallic_ring_binder.jpg"
-  },
-  {
-   "slug": "calendario-04",
-   "tema": "calendario",
-   "alt": "Agenda cerrada sobre una mesa",
-   "palabras": [
-    "calendario",
-    "festivo",
-    "plazo",
-    "fechas"
-   ],
-   "secciones": [
-    "paro",
-    "hacienda"
-   ],
-   "credito": "Duc Ly from Portland, Oregon, usa / Wikimedia Commons (CC BY-SA 2.0)",
-   "pagina": "https://commons.wikimedia.org/wiki/File:Mo_2007_pocket_daily_planner_-_Flickr_-_lexly87_aka_Duc_N._Ly.jpg"
   }
  ]
 }

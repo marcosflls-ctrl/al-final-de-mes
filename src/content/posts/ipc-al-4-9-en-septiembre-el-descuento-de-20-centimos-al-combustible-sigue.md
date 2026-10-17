@@ -8,10 +8,10 @@ pendiente: true
 sources:
   - name: "Europa Press Economía: El IPC sube al 4,9% en septiembre y el descuento al combustible seguirá en 20 céntimos en noviembre"
     url: "https://www.europapress.es/economia/macroeconomia-00338/noticia-ine-confirma-ipc-sube-49-septiembre-rebaja-fiscal-combustible-sera-20-centimos-20261014090030.html"
-image: /img/banco/gasolinera-08.webp
-imageAlt: "Gasolinera iluminada de noche"
-imageCredit: "DgOlsen / Wikimedia Commons (CC BY 4.0)"
-imageCreditUrl: "https://commons.wikimedia.org/wiki/File:Avia_gas_station_before_Spain.jpg"
+image: /img/banco/monedas-euro-05.webp
+imageAlt: "Monedas de euro sobre la bandera de la Unión Europea"
+imageCredit: "Lukasz Kobus - European Commission / Wikimedia Commons (CC BY 4.0)"
+imageCreditUrl: "https://commons.wikimedia.org/wiki/File:Euro_coins_(07).jpg"
 ---
 
 La inflación de septiembre se ha confirmado en el **4,9%** interanual, seis décimas más que en agosto y el nivel más alto desde febrero de 2023 (6%), según los datos definitivos del Instituto Nacional de Estadística (INE). Con esa cifra, la rebaja fiscal de **20 céntimos por litro** en gasolina y diésel se mantiene a partir del **1 de noviembre**, según ha informado el Ministerio de Economía.

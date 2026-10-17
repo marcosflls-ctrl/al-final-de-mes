@@ -8,10 +8,6 @@
   "alt": "Poste eléctrico al atardecer en Vitoria"
  },
  {
-  "archivo": "torres-electricas-03.jpg",
-  "alt": "Torre de alta tensión en Madrid"
- },
- {
   "archivo": "bombilla-01.jpg",
   "alt": "Bombilla encendida en una lámpara"
  },
@@ -40,16 +36,8 @@
   "alt": "Válvula termostática de un radiador"
  },
  {
-  "archivo": "gasolinera-08.jpg",
-  "alt": "Gasolinera iluminada de noche"
- },
- {
   "archivo": "surtidor-01.jpg",
   "alt": "Manguera de un surtidor repostando un coche"
- },
- {
-  "archivo": "coche-electrico-04.jpg",
-  "alt": "Puntos de recarga para coches eléctricos en un aparcamiento"
  },
  {
   "archivo": "coche-electrico-07.jpg",
@@ -69,10 +57,6 @@
   "alt": "Billetes de 20 y 50 euros"
  },
  {
-  "archivo": "monedas-euro-04.jpg",
-  "alt": "Monedas de euro sobre una mesa"
- },
- {
   "archivo": "monedas-euro-05.jpg",
   "alt": "Monedas de euro sobre la bandera de la Unión Europea"
  },
@@ -89,20 +73,12 @@
   "alt": "Calculadora de sobremesa"
  },
  {
-  "archivo": "calculadora-08.jpg",
-  "alt": "Calculadora de sobremesa"
- },
- {
   "archivo": "agencia-tributaria-01.jpg",
   "alt": "Edificio de la Agencia Tributaria en Logroño"
  },
  {
   "archivo": "agencia-tributaria-02.jpg",
   "alt": "Edificio de la Agencia Tributaria en Mataró"
- },
- {
-  "archivo": "agencia-tributaria-04.jpg",
-  "alt": "Edificio de la Agencia Tributaria en Cornellà de Llobregat"
  },
  {
   "archivo": "agencia-tributaria-08.jpg",
@@ -149,10 +125,6 @@
   "alt": "Palacio de la Moncloa, sede del Gobierno"
  },
  {
-  "archivo": "moncloa-03.jpg",
-  "alt": "Palacio de la Moncloa, sede del Gobierno"
- },
- {
   "archivo": "banco-de-espana-03.jpg",
   "alt": "Sede del Banco de España en Madrid"
  },
@@ -169,16 +141,8 @@
   "alt": "Esquina de la sede del Banco de España en Madrid"
  },
  {
-  "archivo": "seguridad-social-02.jpg",
-  "alt": "Oficina de la Seguridad Social en Granada"
- },
- {
   "archivo": "seguridad-social-06.jpg",
   "alt": "Oficinas de la Seguridad Social en Vitoria"
- },
- {
-  "archivo": "seguridad-social-07.jpg",
-  "alt": "Oficina de la Seguridad Social en Chiclana de la Frontera"
  },
  {
   "archivo": "seguridad-social-08.jpg",
@@ -203,10 +167,6 @@
  {
   "archivo": "edificio-viviendas-02.jpg",
   "alt": "Edificio de viviendas en Madrid"
- },
- {
-  "archivo": "edificio-viviendas-03.jpg",
-  "alt": "Edificios de viviendas en el barrio de Salamanca de Madrid"
  },
  {
   "archivo": "edificio-viviendas-04.jpg",
@@ -237,23 +197,11 @@
   "alt": "Cartel de «se alquila» en un local"
  },
  {
-  "archivo": "llaves-casa-05.jpg",
-  "alt": "Llaves de casa"
- },
- {
   "archivo": "gruas-03.jpg",
   "alt": "Grúas en la obra de un edificio"
  },
  {
-  "archivo": "gruas-08.jpg",
-  "alt": "Grúa en una obra junto a edificios de viviendas"
- },
- {
   "archivo": "supermercado-01.jpg",
-  "alt": "Pasillo de un supermercado"
- },
- {
-  "archivo": "supermercado-03.jpg",
   "alt": "Pasillo de un supermercado"
  },
  {
@@ -297,15 +245,7 @@
   "alt": "Cola para comprar lotería en Doña Manolita, en Madrid"
  },
  {
-  "archivo": "calendario-01.jpg",
-  "alt": "Agenda abierta por las páginas de octubre"
- },
- {
   "archivo": "calendario-02.jpg",
   "alt": "Agenda de anillas abierta"
- },
- {
-  "archivo": "calendario-04.jpg",
-  "alt": "Agenda cerrada sobre una mesa"
  }
 ]

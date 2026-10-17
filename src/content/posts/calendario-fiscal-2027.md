@@ -15,10 +15,10 @@ sources:
     url: "https://www.boe.es/buscar/act.php?id=BOE-A-2022-12482"
   - name: "Guía Fiscal: cuándo empieza la campaña de la renta"
     url: "https://guiafiscal.es/irpf/cuando-empieza-la-renta/"
-image: /img/banco/calendario-01.webp
-imageAlt: "Agenda abierta por las páginas de octubre"
-imageCredit: "PepedoCouto / Wikimedia Commons (CC BY-SA 3.0)"
-imageCreditUrl: "https://commons.wikimedia.org/wiki/File:Axenda.JPG"
+image: /img/banco/calendario-02.webp
+imageAlt: "Agenda de anillas abierta"
+imageCredit: "Old Photo Profile / Wikimedia Commons (CC BY 2.0)"
+imageCreditUrl: "https://commons.wikimedia.org/wiki/File:Personal_organizer_with_metallic_ring_binder.jpg"
 ---
 
 Estas son las fechas en las que hay que presentar o pagar algo a Hacienda en 2027. Muchas se repiten cada año: lo que cambia es el día exacto cuando el plazo acaba en fin de semana, porque entonces se alarga hasta el lunes.
