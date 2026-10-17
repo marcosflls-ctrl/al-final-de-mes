@@ -22,6 +22,8 @@ export const SITE = {
   cfAnalyticsToken: '',
   // Redes sociales (deja vacío lo que aún no exista)
   social: { telegram: '', whatsapp: '', facebook: '', x: '' },
+  // Webs hermanas, para enlazarlas en el pie
+  hermanas: [{ nombre: 'Dinero en Claro', url: 'https://dineroenclaro.com/', texto: 'ahorro e inversión explicados con datos oficiales: depósitos, Letras del Tesoro, fondos, bolsa y planes de pensiones' }],
 };
 
 // Secciones. Las que tienen `abierta: false` todavía no salen en el menú.

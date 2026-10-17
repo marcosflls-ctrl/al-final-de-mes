@@ -132,10 +132,10 @@ El Real Decreto-ley 29/2026, de vivienda, en vigor desde el 8 de octubre, recupe
 
 Lo que se haga antes del 31 de diciembre cuenta para esta declaración:
 
-- Aportar al plan de pensiones, hasta 1.500 €.
+- Aportar al plan de pensiones, hasta 1.500 €. Calcula cuánto te ahorras con la [calculadora de planes de pensiones de Dinero en Claro](https://dineroenclaro.com/jubilacion/calculadora-plan-de-pensiones/).
 - Terminar las obras de eficiencia energética del 20 % y el 40 % y pedir el certificado.
 - Comprar el coche eléctrico o pagar al menos el 25 % a cuenta.
-- Revisar si tienes pérdidas en bolsa o fondos que compensen ganancias del año.
+- Revisar si tienes pérdidas en bolsa o fondos que compensen ganancias del año. Lo explicamos en [cómo tributan los ahorros y las inversiones](https://dineroenclaro.com/impuestos/como-tributan-ahorros-inversiones-2026/).
 
 Tienes más ideas en el artículo sobre [las deducciones y límites para pagar menos en la Renta](/hacienda/renta-2027-deducciones-y-limites-clave-para-pagar-menos-irpf/).
 
