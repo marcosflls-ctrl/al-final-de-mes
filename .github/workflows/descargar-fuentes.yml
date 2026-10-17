@@ -39,4 +39,4 @@ jobs:
           done
           cd "$GITHUB_WORKSPACE"
           git config user.name "fuentes-bot"; git config user.email "fuentes-bot@users.noreply.github.com"
-          git add fuentes && git commit -qm "Fuentes: ${{ github.event.inputs.nombre }}" && git push -q origin fuentes
+          git add fuentes && git commit -qm "Fuentes [CF-Pages-Skip]: ${{ github.event.inputs.nombre }}" && git push -q origin fuentes

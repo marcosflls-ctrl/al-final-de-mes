@@ -28,7 +28,7 @@ const filas = [
   <div class="baratas">
     {[['Gasolina 95 más barata', baratasG95], ['Diésel más barato', baratasDiesel]].map(([t, lista]: any) => lista.length > 0 && (
       <section>
-        <h3>{t}</h3>
+        <h2 class="subtitulo">{t}</h2>
         <ol>
           {lista.map((g: Gasolinera) => (
             <li><span class="precio">{litro(g.p)} €</span><span><b>{g.rotulo || 'Sin rótulo'}</b>, {g.direccion}, {g.localidad}</span></li>
@@ -48,7 +48,7 @@ const filas = [
   .sube { color: var(--bad); }
   .baja { color: var(--good); }
   .baratas { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin-top: 24px; }
-  .baratas h3 { font-size: 1.125rem; margin: 0 0 8px; }
+  .baratas .subtitulo { font-size: 1.125rem; margin: 0 0 8px; }
   ol { margin: 0; padding: 0; list-style: none; }
   li { display: flex; gap: 14px; padding: 8px 0; border-bottom: 1px solid var(--rule); font-size: .9375rem; }
   .precio { font-weight: 600; font-variant-numeric: tabular-nums; flex: none; width: 4.2em; color: var(--good); }

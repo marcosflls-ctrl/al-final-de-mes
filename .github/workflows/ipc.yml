@@ -4,7 +4,7 @@ name: IPC
 # El INE publica a primeros de mes (adelantado) y a mediados (definitivo, por productos). A diario, 9:45 hora de España en invierno.
 on:
   schedule:
-    - cron: "45 8 * * *"
+    - cron: "52 7,8,9,11,15 * * *"
   workflow_dispatch:
 
 permissions:

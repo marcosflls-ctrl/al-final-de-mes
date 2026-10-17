@@ -4,7 +4,8 @@ name: Precio de los carburantes
 # (dato oficial, sin redacción: no necesita revisión). Horas en UTC: 7:15 y 15:15 de España en invierno.
 on:
   schedule:
-    - cron: "15 6,14 * * *"
+    # GitHub se salta a menudo ejecuciones programadas: se reparten varias al día (solo publica si cambian los precios)
+    - cron: "23 5,9,13,17 * * *"
   workflow_dispatch:
 
 permissions:
