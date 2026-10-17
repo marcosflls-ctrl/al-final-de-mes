@@ -52,13 +52,36 @@ def num(v) -> float | None:
     return x if MIN_OK <= x <= MAX_OK else None
 
 
+MENORES = {"de", "del", "la", "las", "los", "el", "i", "y", "en", "d'", "l'"}
+
+
 def bonito(t: str) -> str:
-    """'MADRID' -> 'Madrid', 'CORUÑA (A)' -> 'A Coruña', 'BALEARS (ILLES)' -> 'Illes Balears'."""
+    """'MADRID' -> 'Madrid', 'CORUÑA (A)' -> 'A Coruña', 'VITORIA-GASTEIZ' -> 'Vitoria-Gasteiz',
+    'CERDANYOLA DEL VALLES' -> 'Cerdanyola del Vallès', "L' HOSPITALET" -> "L'Hospitalet"."""
     t = t.strip()
     m = re.match(r"^(.*)\s+\((.*)\)$", t)
     if m:
         t = f"{m.group(2)} {m.group(1)}"
-    return " ".join(w.capitalize() if len(w) > 2 or i == 0 else w.lower() for i, w in enumerate(t.lower().split()))
+    t = re.sub(r"([dl]')\s+", r"\1", t.lower())
+
+    def palabra(w: str, primera: bool) -> str:
+        if not primera and w in MENORES:
+            return w
+        if re.match(r"^[dl]'.", w):                       # l'hospitalet -> L'Hospitalet
+            return w[:2].upper() + w[2:3].upper() + w[3:] if primera else w[:2] + w[2:3].upper() + w[3:]
+        return w[:1].upper() + w[1:]
+
+    partes = re.split(r"(\s+|/|-)", t)
+    salida, primera = [], True
+    for x in partes:
+        if not x or re.fullmatch(r"\s+|/|-", x):
+            salida.append(x)
+            if x in ("/", "-"):
+                primera = True
+            continue
+        salida.append(palabra(x, primera))
+        primera = False
+    return "".join(salida)
 
 
 def _norm(t) -> str:
