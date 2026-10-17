@@ -25,7 +25,10 @@ export const PARAMETROS_2026 = {
       { hasta: Infinity, tipo: 0.0024 },
     ],
   },
-  smiAnual: 17094,
+  // Salario mínimo interprofesional (jornada completa, 14 pagas). Real Decreto del SMI de cada año.
+  // Al cambiar: solo esta cifra. El anual y los textos de las calculadoras se calculan solos.
+  smiMensual: 1221,
+  get smiAnual() { return this.smiMensual * 14; },
 };
 
 export type SituacionFamiliar = 1 | 2 | 3;

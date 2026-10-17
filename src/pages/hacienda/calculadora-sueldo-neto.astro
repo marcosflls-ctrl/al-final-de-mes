@@ -221,7 +221,7 @@ const anioActual = PARAMETROS_2026.ejercicio;
 </Base>
 
 <script>
-  import { calcular, type Entrada, type Hijo } from '../../lib/sueldo';
+  import { calcular, PARAMETROS_2026, type Entrada, type Hijo } from '../../lib/sueldo';
 
   const form = document.getElementById('calc-sueldo') as HTMLFormElement;
   const contHijos = document.getElementById('hijos')!;
@@ -288,7 +288,7 @@ const anioActual = PARAMETROS_2026.ejercicio;
     const avisos: string[] = [];
     if (r.exento) avisos.push('Con este sueldo y tu situación familiar no se aplica retención de IRPF.');
     if (e.situacion === 1 && !e.hijos.some((h) => anio - h.anio < 25)) avisos.push('La situación de familia monoparental exige tener algún hijo a cargo; hemos calculado como soltero/a sin hijos.');
-    if (e.brutoAnual < 17094 && e.contrato === 'indefinido') avisos.push('Ojo: para jornada completa, el salario mínimo de 2026 es de 17.094 € al año.');
+    if (e.brutoAnual < PARAMETROS_2026.smiAnual && e.contrato === 'indefinido') avisos.push(`Ojo: para jornada completa, el salario mínimo de ${PARAMETROS_2026.ejercicio} es de ${PARAMETROS_2026.smiAnual.toLocaleString('es-ES', { useGrouping: 'always' } as any)} € al año.`);
     aviso.hidden = avisos.length === 0;
     aviso.textContent = avisos.join(' ');
 
