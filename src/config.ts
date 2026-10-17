@@ -18,7 +18,7 @@ export const SITE = {
   ownerNif: '48158108H', // si lo dejas vacío, no se muestra
   // AdSense: se puede usar la misma cuenta de Zona Leonida añadiendo este sitio en AdSense.
   // Déjalo vacío hasta que Google apruebe el sitio nuevo.
-  adsenseClient: '',
+  adsenseClient: 'ca-pub-2093028838178784',
   // Cloudflare Web Analytics (sin cookies): pega el token cuando lo crees en Cloudflare.
   cfAnalyticsToken: '',
   // Redes sociales (deja vacío lo que aún no exista)
