@@ -16,7 +16,7 @@ export default defineConfig({
   site: 'https://alfinaldemes.com',
   trailingSlash: 'always',
   integrations: [sitemap({
-    filter: (page) => !page.includes('/buscar/'),
+    filter: (page) => !page.includes('/buscar/') && !page.includes('/hacienda/comisiones-fondos/'),
     serialize: (item) => {
       const m = lastmod[new URL(item.url).pathname];
       return m ? { ...item, lastmod: m } : item;
