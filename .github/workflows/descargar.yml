@@ -1,0 +1,16 @@
+name: Descargar documento
+# Descarga una URL y la guarda como artefacto (para documentos oficiales que no se alcanzan desde otros entornos)
+on:
+  workflow_dispatch:
+    inputs:
+      url:
+        required: true
+jobs:
+  descargar:
+    runs-on: ubuntu-latest
+    steps:
+      - run: curl -sSfL -A "Mozilla/5.0" -o documento "${{ inputs.url }}" && ls -la documento
+      - uses: actions/upload-artifact@v4
+        with:
+          name: documento
+          path: documento
