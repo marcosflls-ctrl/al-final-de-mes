@@ -1,0 +1,93 @@
+---
+import Base from '../../../layouts/Base.astro';
+import Compartir from '../../../components/Compartir.astro';
+import { SITE } from '../../../config';
+import { COMUNIDADES, festivosDe, BOE_FESTIVOS_2027, type Comunidad } from '../../../data/festivos-2027';
+import { diaSemana, fechaCorta, efecto, resumen } from '../../../lib/festivos';
+
+export function getStaticPaths() {
+  return COMUNIDADES.map((c) => ({ params: { comunidad: c.slug }, props: { c } }));
+}
+const { c } = Astro.props as { c: Comunidad };
+const lista = festivosDe(c.slug);
+const r = resumen(lista);
+const fechas = lista.map((f) => f.fecha);
+const propias = lista.filter((f) => f.tipo === 'autonomica');
+const opcionales = lista.filter((f) => f.tipo === 'nacional-opcional' && f.fecha !== '2027-01-06');
+const titulo = `Calendario laboral 2027 ${c.en}: festivos y puentes`;
+const descripcion = `Los ${r.total} festivos de 2027 ${c.en} según el BOE: fechas, día de la semana y puentes. ${r.largos} fines de semana largos y ${r.puentes} posibles puentes.`;
+const url = `${SITE.url}/paro/calendario-laboral-2027/${c.slug}/`;
+const jsonLd = {
+  '@context': 'https://schema.org', '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Inicio', item: SITE.url + '/' },
+    { '@type': 'ListItem', position: 2, name: 'Empleo', item: `${SITE.url}/paro/` },
+    { '@type': 'ListItem', position: 3, name: 'Calendario laboral 2027', item: `${SITE.url}/paro/calendario-laboral-2027/` },
+    { '@type': 'ListItem', position: 4, name: c.nombre, item: url },
+  ],
+};
+const lista_fmt = (xs: string[]) => xs.length < 2 ? xs.join('') : `${xs.slice(0, -1).join(', ')} y ${xs[xs.length - 1]}`;
+---
+<Base title={titulo} description={descripcion.slice(0, 165)} jsonLd={jsonLd}>
+  <nav class="breadcrumbs"><a href="/">Inicio</a> › <a href="/paro/">Empleo</a> › <a href="/paro/calendario-laboral-2027/">Calendario laboral 2027</a></nav>
+  <article class="cal">
+    <h1>Calendario laboral 2027 {c.en}</h1>
+    <p class="lead">{c.slug === 'madrid' ? 'La Comunidad de Madrid' : c.nombre} tiene <strong>{r.total} festivos</strong> en 2027{c.slug === 'canarias' ? ', más la fiesta de cada isla' : ''}, según la relación publicada en el BOE el {BOE_FESTIVOS_2027.fecha}. {r.finde > 0 && <>{r.finde === 1 ? 'Uno cae' : r.finde === 2 ? 'Dos caen' : r.finde === 3 ? 'Tres caen' : `${r.finde} caen`} en fin de semana, así que se libran {r.laborables} días laborables. </>}Hay <strong>{r.largos} fines de semana largos</strong> y <strong>{r.puentes} posibles puentes</strong>. A estos se suman las dos fiestas locales de cada municipio.</p>
+
+    <div class="tabla-scroll">
+      <table class="tabla">
+        <thead><tr><th scope="col">Fecha</th><th scope="col">Día</th><th scope="col">Fiesta</th><th scope="col">Qué supone</th></tr></thead>
+        <tbody>
+          {lista.map((f) => {
+            const e = efecto(f.fecha, fechas);
+            return (
+              <tr class={e.tipo}>
+                <th scope="row">{fechaCorta(f.fecha)}</th>
+                <td>{diaSemana(f.fecha)}</td>
+                <td>{f.nombre}{f.tipo === 'autonomica' && <span class="et">propia</span>}</td>
+                <td>{e.texto}</td>
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>
+    </div>
+    {c.nota && <p class="nota">{c.nota}</p>}
+
+    <section class="prose">
+      <h2>Las fiestas propias {c.en}</h2>
+      <p>{propias.length === 0 ? `No hay en 2027 una fiesta autonómica propia ${c.en}. El calendario se completa con fiestas nacionales que la comunidad podía cambiar y ha mantenido: ${lista_fmt(opcionales.map((f) => `el ${fechaCorta(f.fecha)} (${f.nombre})`))}.` : `Además de las fiestas nacionales, ${c.nombre} ha fijado como festivo ${lista_fmt(propias.map((f) => `el ${fechaCorta(f.fecha)} (${f.nombre})`))}.`}</p>
+      <h2>Fiestas locales</h2>
+      <p>Cada ayuntamiento elige además dos fiestas locales, que no figuran en el BOE. Suelen publicarse en el boletín oficial de la comunidad o de la provincia a finales de año. En total, nadie puede tener más de 14 festivos retribuidos al año.</p>
+      <h2>Qué pasa si trabajas un festivo</h2>
+      <p>Si trabajas en un día festivo, la empresa tiene que pagártelo con un recargo o darte otro día de descanso, según lo que diga tu convenio colectivo. El Estatuto de los Trabajadores fija las 14 fiestas como retribuidas y no recuperables.</p>
+    </section>
+
+    <nav class="otras" aria-label="Otras comunidades">
+      <h2>Calendario de otras comunidades</h2>
+      <ul>{COMUNIDADES.filter((x) => x.slug !== c.slug).map((x) => <li><a href={`/paro/calendario-laboral-2027/${x.slug}/`}>{x.nombre}</a></li>)}</ul>
+    </nav>
+    <p class="muted small">Fuente: <a href={BOE_FESTIVOS_2027.url} rel="noopener" target="_blank">Resolución de 8 de octubre de 2026, de la Dirección General de Trabajo, por la que se publica la relación de fiestas laborales para el año 2027</a> (BOE de {BOE_FESTIVOS_2027.fecha}).</p>
+    <Compartir title={titulo} url={url} />
+  </article>
+</Base>
+<style>
+  .cal { max-width: 860px; }
+  h1 { font-size: clamp(1.9rem, 5vw, 2.6rem); margin: 4px 0 12px; max-width: 24ch; }
+  .lead { font-size: 1.0625rem; line-height: 1.55; max-width: 70ch; margin: 0 0 20px; }
+  .tabla-scroll { overflow-x: auto; }
+  .tabla { border-collapse: collapse; width: 100%; }
+  .tabla th, .tabla td { padding: 9px 12px 9px 0; border-bottom: 1px solid var(--rule); text-align: left; font-size: .9375rem; vertical-align: top; }
+  .tabla thead th { font-size: .8125rem; font-weight: 600; border-bottom: 1px solid var(--ink); }
+  .tabla tbody th { font-weight: 600; white-space: nowrap; }
+  .tabla tr.largo td:last-child, .tabla tr.puente td:last-child { color: var(--brand-dark); font-weight: 600; }
+  .tabla tr.finde td, .tabla tr.finde th { color: var(--muted); }
+  .et { display: inline-block; margin-left: 8px; font-size: .75rem; font-weight: 600; text-transform: uppercase; letter-spacing: .04em; color: var(--brand-dark); border: 1px solid currentColor; border-radius: 3px; padding: 0 5px; vertical-align: 1px; }
+  .nota { margin: 14px 0 0; padding: 10px 12px; border-left: 3px solid var(--brand); background: var(--surface); font-size: .9375rem; max-width: 70ch; }
+  .prose { margin-top: 32px; }
+  .otras { margin: 32px 0 16px; }
+  .otras h2 { font-size: 1.25rem; }
+  .otras ul { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 6px 20px; }
+  .small { font-size: .8125rem; }
+  @media (max-width: 600px) { .tabla th, .tabla td { font-size: .875rem; padding-right: 8px; } }
+</style>

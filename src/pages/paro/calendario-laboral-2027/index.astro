@@ -1,0 +1,90 @@
+---
+import Base from '../../../layouts/Base.astro';
+import Compartir from '../../../components/Compartir.astro';
+import { SITE } from '../../../config';
+import { COMUNIDADES, FESTIVOS_2027, festivosDe, BOE_FESTIVOS_2027 } from '../../../data/festivos-2027';
+import { diaSemana, fechaCorta, resumen } from '../../../lib/festivos';
+
+const titulo = 'Calendario laboral 2027: festivos de cada comunidad autónoma';
+const descripcion = 'Los festivos de 2027 en España y en cada comunidad autónoma según el BOE: fechas, días de la semana, puentes y fines de semana largos.';
+const url = `${SITE.url}/paro/calendario-laboral-2027/`;
+const nombres = Object.fromEntries(COMUNIDADES.map((c) => [c.slug, c.nombre]));
+const total = COMUNIDADES.length;
+const filas = FESTIVOS_2027.map((f) => ({
+  ...f,
+  ambito: f.donde.length === total ? 'Toda España' : f.donde.map((s) => nombres[s]).join(', '),
+}));
+const porComunidad = COMUNIDADES.map((c) => ({ c, r: resumen(festivosDe(c.slug)) }));
+const preguntas = [
+  { q: '¿Cuántos festivos hay en 2027?', a: 'Cada comunidad tiene 12 festivos en 2027, más dos fiestas locales que fija cada ayuntamiento: 14 en total. Ocho fiestas nacionales son iguales en toda España; el resto las elige cada comunidad.' },
+  { q: '¿Qué festivos son iguales en toda España en 2027?', a: 'Año Nuevo (1 de enero), Reyes (6 de enero), Viernes Santo (26 de marzo), Fiesta del Trabajo (1 de mayo), Fiesta Nacional (12 de octubre), Todos los Santos (1 de noviembre), Día de la Constitución (6 de diciembre), Inmaculada Concepción (8 de diciembre) y Navidad (25 de diciembre).' },
+  { q: '¿Qué festivos caen en fin de semana en 2027?', a: 'El 1 de mayo y el 25 de diciembre caen en sábado, y el 15 de agosto en domingo. Por eso seis comunidades pasan el 15 de agosto al lunes 16 y Extremadura lo sustituye por el 11 de octubre.' },
+  { q: '¿Hay puente de la Constitución en 2027?', a: 'Sí, y largo: el 6 de diciembre cae en lunes y el 8 en miércoles. Quien libre el martes 7 tendrá cinco días seguidos, del sábado 4 al miércoles 8.' },
+];
+const jsonLd = [
+  {
+    '@context': 'https://schema.org', '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Inicio', item: SITE.url + '/' },
+      { '@type': 'ListItem', position: 2, name: 'Empleo', item: `${SITE.url}/paro/` },
+      { '@type': 'ListItem', position: 3, name: 'Calendario laboral 2027', item: url },
+    ],
+  },
+  { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: preguntas.map((p) => ({ '@type': 'Question', name: p.q, acceptedAnswer: { '@type': 'Answer', text: p.a } })) },
+];
+---
+<Base title={titulo} description={descripcion} jsonLd={jsonLd}>
+  <nav class="breadcrumbs"><a href="/">Inicio</a> › <a href="/paro/">Empleo</a></nav>
+  <article class="cal">
+    <h1>Calendario laboral 2027</h1>
+    <p class="lead">El BOE publicó el {BOE_FESTIVOS_2027.fecha} los festivos de 2027. Hay ocho fiestas nacionales comunes y cada comunidad completa hasta 12 con días propios. Elige tu comunidad para ver sus fechas y sus puentes.</p>
+
+    <nav class="comunidades" aria-label="Elige tu comunidad">
+      <ul>{porComunidad.map(({ c, r }) => (
+        <li><a href={`/paro/calendario-laboral-2027/${c.slug}/`}><span class="n">{c.nombre}</span><span class="d">{r.largos} fines de semana largos · {r.puentes} puentes</span></a></li>
+      ))}</ul>
+    </nav>
+
+    <section class="prose">
+      <h2>Todos los festivos de 2027</h2>
+      <div class="tabla-scroll">
+        <table class="tabla">
+          <thead><tr><th scope="col">Fecha</th><th scope="col">Día</th><th scope="col">Fiesta</th><th scope="col">Dónde</th></tr></thead>
+          <tbody>
+            {filas.map((f) => (
+              <tr class={diaSemana(f.fecha) === 'sábado' || diaSemana(f.fecha) === 'domingo' ? 'finde' : ''}>
+                <th scope="row">{fechaCorta(f.fecha)}</th><td>{diaSemana(f.fecha)}</td><td>{f.nombre}</td><td class={f.donde.length === total ? 'todas' : ''}>{f.ambito}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p class="muted small">Canarias tiene además la fiesta de cada isla y Arán sustituye el Lunes de Pascua por el 17 de junio. Lo tienes en sus páginas.</p>
+
+      <h2>Preguntas frecuentes</h2>
+      {preguntas.map((p) => (<><h3>{p.q}</h3><p>{p.a}</p></>))}
+    </section>
+    <p class="muted small">Fuente: <a href={BOE_FESTIVOS_2027.url} rel="noopener" target="_blank">Resolución de 8 de octubre de 2026, de la Dirección General de Trabajo</a> (BOE de {BOE_FESTIVOS_2027.fecha}).</p>
+    <Compartir title={titulo} url={url} />
+  </article>
+</Base>
+<style>
+  .cal { max-width: 900px; }
+  h1 { font-size: clamp(1.9rem, 5vw, 2.6rem); margin: 4px 0 12px; }
+  .lead { font-size: 1.0625rem; line-height: 1.55; max-width: 70ch; margin: 0 0 20px; }
+  .comunidades ul { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 1px; background: var(--rule); border-top: 2px solid var(--ink); }
+  .comunidades a { display: flex; flex-direction: column; gap: 2px; padding: 12px 14px; background: var(--bg); text-decoration: none; color: inherit; height: 100%; }
+  .comunidades a:hover { background: var(--surface); }
+  .comunidades .n { font-weight: 600; color: var(--brand-dark); }
+  .comunidades .d { font-size: .8125rem; color: var(--muted); }
+  .prose { margin-top: 32px; }
+  .tabla-scroll { overflow-x: auto; }
+  .tabla { border-collapse: collapse; width: 100%; }
+  .tabla th, .tabla td { padding: 8px 12px 8px 0; border-bottom: 1px solid var(--rule); text-align: left; font-size: .9375rem; vertical-align: top; }
+  .tabla thead th { font-size: .8125rem; font-weight: 600; border-bottom: 1px solid var(--ink); }
+  .tabla tbody th { font-weight: 600; white-space: nowrap; }
+  .tabla td.todas { font-weight: 600; }
+  .tabla tr.finde td, .tabla tr.finde th { color: var(--muted); }
+  .small { font-size: .8125rem; }
+  @media (max-width: 600px) { .tabla th, .tabla td { font-size: .875rem; padding-right: 8px; } }
+</style>
