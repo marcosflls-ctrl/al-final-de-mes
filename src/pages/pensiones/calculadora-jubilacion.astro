@@ -1,0 +1,303 @@
+---
+import Base from '../../layouts/Base.astro';
+import Siguenos from '../../components/Siguenos.astro';
+import Compartir from '../../components/Compartir.astro';
+import { SITE } from '../../config';
+import { PENSION_2026, porcentaje } from '../../lib/pension';
+
+const titulo = 'Calculadora de la pensión de jubilación 2026';
+const descripcion = 'Calcula cuánto cobrarás de pensión al jubilarte, bruta y neta, a qué edad podrás retirarte y cuánto pierdes si te jubilas antes o ganas si lo retrasas.';
+const url = `${SITE.url}/pensiones/calculadora-jubilacion/`;
+const eur = (n: number) => n.toLocaleString('es-ES', { minimumFractionDigits: 2, maximumFractionDigits: 2, useGrouping: 'always' } as any);
+const pc = (n: number) => n.toLocaleString('es-ES', { maximumFractionDigits: 2 });
+const anios = [15, 20, 25, 30, 33, 35, 36, 37];
+const anioActual = new Date().getFullYear();
+
+const preguntas = [
+  { q: '¿Cuántos años hay que cotizar para cobrar la pensión?', a: 'Un mínimo de 15 años, y al menos 2 de ellos dentro de los últimos 15. Con 15 años se cobra el 50 % de la base reguladora. Para el 100 % hacen falta 36 años y 6 meses si te jubilas en 2026, y 37 años a partir de 2027.' },
+  { q: '¿A qué edad me puedo jubilar?', a: 'En 2026, a los 66 años y 10 meses, o a los 65 si has cotizado al menos 38 años y 3 meses. A partir de 2027, a los 67, o a los 65 con 38 años y 6 meses cotizados. Puedes adelantarlo hasta 2 años de forma voluntaria si tienes 35 años cotizados, con un recorte en la pensión.' },
+  { q: '¿Cuánto se pierde por jubilarse antes?', a: 'Depende de los meses de adelanto y de los años cotizados. Adelantarlo 2 años con menos de 38 años y 6 meses cotizados recorta la pensión un 21 % para siempre; adelantarlo un mes, un 3,26 %. Con carreras más largas el recorte es menor: con 44 años y 6 meses, 2 años antes supone un 13 %.' },
+  { q: '¿Y si me jubilo más tarde?', a: 'Por cada año completo que trabajes después de la edad ordinaria, la pensión sube un 4 %. También se puede cobrar ese premio de una vez, como un pago único, en lugar de la subida mensual.' },
+  { q: '¿La pensión paga IRPF?', a: 'Sí. La pensión tributa como rendimiento del trabajo y la Seguridad Social aplica una retención cada mes. Lo que no tiene son cotizaciones sociales, por eso de la pensión bruta a la neta solo se resta el IRPF.' },
+  { q: '¿Cuál es la pensión máxima y la mínima en 2026?', a: `La máxima es de ${eur(PENSION_2026.maxima)} € al mes en 14 pagas. La mínima de jubilación con 65 años es de ${eur(PENSION_2026.minimas['65+'].sinConyuge)} € sin cónyuge y de ${eur(PENSION_2026.minimas['65+'].conyugeACargo)} € con cónyuge a cargo. La mínima solo se cobra si tus otros ingresos no superan el límite que fija la ley cada año.` },
+];
+const jsonLd = [
+  {
+    '@context': 'https://schema.org', '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Inicio', item: SITE.url + '/' },
+      { '@type': 'ListItem', position: 2, name: 'Pensiones', item: `${SITE.url}/pensiones/` },
+      { '@type': 'ListItem', position: 3, name: titulo, item: url },
+    ],
+  },
+  { '@context': 'https://schema.org', '@type': 'WebApplication', name: titulo, url, applicationCategory: 'FinanceApplication', operatingSystem: 'Any', inLanguage: 'es-ES', offers: { '@type': 'Offer', price: '0', priceCurrency: 'EUR' } },
+  { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: preguntas.map((p) => ({ '@type': 'Question', name: p.q, acceptedAnswer: { '@type': 'Answer', text: p.a } })) },
+];
+const meses = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'];
+---
+<Base title={titulo} description={descripcion} jsonLd={jsonLd}>
+  <nav class="breadcrumbs"><a href="/">Inicio</a> › <a href="/pensiones/">Pensiones</a></nav>
+  <article class="pagina">
+    <h1>{titulo}</h1>
+    <p class="lead">Con tu edad, los años que llevas cotizados y tu sueldo, calculamos a qué edad podrás jubilarte, qué pensión te quedará al mes, bruta y neta, y cuánto cambia si te jubilas antes o después.</p>
+
+    <div class="calc">
+      <form id="calc-pen" novalidate>
+        <div class="fila">
+          <label class="campo"><span>Año de nacimiento</span><span class="u"><input name="anio" type="number" inputmode="numeric" min="1959" max={anioActual - 16} step="1" value="1970" /></span></label>
+          <label class="campo"><span>Mes</span>
+            <select name="mes">{meses.map((m, i) => <option value={i} selected={i === 5}>{m}</option>)}</select>
+          </label>
+        </div>
+        <label class="campo"><span>Años cotizados hasta hoy</span><span class="u"><input name="cotizados" type="number" inputmode="decimal" min="0" max="50" step="0.5" value="25" /><i>años</i></span><small class="muted">Aparecen en tu informe de vida laboral, en la sede de la Seguridad Social.</small></label>
+        <fieldset class="campo">
+          <legend>¿Seguirás cotizando hasta jubilarte?</legend>
+          <label class="radio"><input type="radio" name="sigue" value="si" checked /> Sí, sin interrupciones</label>
+          <label class="radio"><input type="radio" name="sigue" value="no" /> No, ya he dejado de cotizar</label>
+        </fieldset>
+        <label class="campo"><span>Sueldo bruto anual</span><span class="u"><input name="sueldo" type="number" inputmode="decimal" min="0" step="500" value="30000" /><i>€</i></span><small class="muted">El que esperas tener de media en tus últimos 25 años de trabajo, en euros de hoy. Si no lo sabes, pon el actual.</small></label>
+        <label class="campo"><span>¿Cuándo quieres jubilarte?</span>
+          <select name="ajuste">
+            <option value="-24">2 años antes de la edad ordinaria</option>
+            <option value="-18">1 año y medio antes</option>
+            <option value="-12">1 año antes</option>
+            <option value="-6">6 meses antes</option>
+            <option value="0" selected>A la edad ordinaria</option>
+            <option value="12">1 año después</option>
+            <option value="24">2 años después</option>
+            <option value="36">3 años después</option>
+            <option value="60">5 años después</option>
+          </select>
+        </label>
+        <label class="campo"><span>Situación familiar</span>
+          <select name="familia">
+            <option value="sinConyuge" selected>Sin cónyuge, o con cónyuge que tiene ingresos propios</option>
+            <option value="conyugeACargo">Con cónyuge a cargo (sin ingresos o casi)</option>
+            <option value="conyugeNoACargo">Con cónyuge que cobra otra pensión</option>
+          </select>
+          <small class="muted">Solo cambia la pensión mínima y la retención de IRPF.</small>
+        </label>
+        <label class="campo"><span>Hijos (complemento de brecha de género)</span>
+          <select name="hijos"><option value="0" selected>No lo cobraré</option><option value="1">1 hijo</option><option value="2">2 hijos</option><option value="3">3 hijos</option><option value="4">4 o más</option></select>
+          <small class="muted">{eur(PENSION_2026.brechaPorHijo)} € al mes por hijo en 2026. Solo lo cobra uno de los dos progenitores, normalmente el de pensión más baja.</small>
+        </label>
+      </form>
+      <section class="res" aria-live="polite">
+        <h2 class="etq">Tu pensión neta, en euros de hoy</h2>
+        <p class="cifra"><span id="p-neta">—</span> € <small>al mes, en 14 pagas</small></p>
+        <p id="p-aviso" class="aviso" hidden></p>
+        <table class="desglose">
+          <tbody>
+            <tr><th scope="row">Pensión bruta</th><td id="p-bruta">—</td></tr>
+            <tr><th scope="row">Retención de IRPF</th><td id="p-irpf">—</td></tr>
+            <tr><th scope="row">Te jubilas</th><td id="p-fecha">—</td></tr>
+            <tr><th scope="row">Edad ordinaria en tu caso</th><td id="p-ord">—</td></tr>
+            <tr><th scope="row">Años cotizados al jubilarte</th><td id="p-cot">—</td></tr>
+            <tr><th scope="row">Base reguladora</th><td id="p-base">—</td></tr>
+            <tr><th scope="row">Porcentaje por años cotizados</th><td id="p-pct">—</td></tr>
+            <tr><th scope="row" id="p-coef-l">Recorte o premio por la edad</th><td id="p-coef">—</td></tr>
+            <tr><th scope="row">Pensión al año, bruta</th><td id="p-anual">—</td></tr>
+            <tr><th scope="row">Lo que cobras frente a tu sueldo neto</th><td id="p-reemp">—</td></tr>
+          </tbody>
+        </table>
+        <p id="p-notas" class="muted small"></p>
+      </section>
+    </div>
+
+    <section class="prose">
+      <h2>Según cuándo te jubiles</h2>
+      <p>Con tus datos, esto es lo que cobrarías al mes, en euros de hoy, según la edad a la que te retires.</p>
+      <div class="tabla-scroll">
+        <table class="ref" id="p-escenarios">
+          <thead><tr><th scope="col">Cuándo</th><th scope="col">Edad</th><th scope="col">Años cotizados</th><th scope="col">Bruta</th><th scope="col">Neta</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+
+    <Compartir title={titulo} url={url} />
+
+    <section class="prose">
+      <h2>Cómo se calcula la pensión</h2>
+      <ol>
+        <li><strong>Base reguladora.</strong> Es la media de lo que has cotizado en los últimos años. En 2026 se elige automáticamente lo más favorable entre los últimos 25 años o las 302 mejores bases de los últimos 304 meses. Las bases antiguas se actualizan con el IPC, así que con un sueldo estable en euros de hoy la base reguladora es, más o menos, tu sueldo bruto anual entre 14, con el tope de la base máxima de cotización ({eur(PENSION_2026.baseMaximaMensual)} € al mes).</li>
+        <li><strong>Porcentaje por años cotizados.</strong> Con 15 años cobras el 50 % de la base reguladora, y cada mes más suma un poco hasta llegar al 100 %.</li>
+        <li><strong>Edad.</strong> Si te jubilas antes de la edad ordinaria se aplica un recorte; si te jubilas después, un premio del 4 % por año.</li>
+        <li><strong>Límites.</strong> La pensión no puede superar la máxima ({eur(PENSION_2026.maxima)} € al mes en 2026) y, si queda por debajo de la mínima y no tienes otros ingresos, la Seguridad Social la completa.</li>
+        <li><strong>IRPF.</strong> De la pensión bruta se resta la retención de Hacienda. No se descuentan cotizaciones sociales. Por eso, con una carrera larga y un sueldo estable, la pensión neta puede parecerse mucho al sueldo neto, o incluso superarlo un poco.</li>
+      </ol>
+
+      <h2>Porcentaje de la pensión según los años cotizados</h2>
+      <div class="tabla-scroll">
+        <table class="ref">
+          <thead><tr><th scope="col">Años cotizados</th><th scope="col">Si te jubilas en 2026</th><th scope="col">Desde 2027</th></tr></thead>
+          <tbody>
+            {anios.map((a) => (<tr><th scope="row">{a} años</th><td>{pc(porcentaje(a * 12, 2026))} %</td><td>{pc(porcentaje(a * 12, 2027))} %</td></tr>))}
+            <tr><th scope="row">36 años y 6 meses</th><td>{pc(porcentaje(438, 2026))} %</td><td>{pc(porcentaje(438, 2027))} %</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>Edad de jubilación</h2>
+      <div class="tabla-scroll">
+        <table class="ref">
+          <thead><tr><th scope="col">Año</th><th scope="col">Edad ordinaria</th><th scope="col">A los 65 si has cotizado</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">2026</th><td>66 años y 10 meses</td><td>38 años y 3 meses</td></tr>
+            <tr><th scope="row">2027 en adelante</th><td>67 años</td><td>38 años y 6 meses</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>Recorte por jubilación anticipada voluntaria</h2>
+      <p>Se aplica para siempre sobre la pensión. Hacen falta al menos 35 años cotizados, y la pensión resultante tiene que superar la mínima.</p>
+      <div class="tabla-scroll">
+        <table class="ref">
+          <thead><tr><th scope="col">Adelanto</th><th scope="col">Menos de 38 años y 6 meses cotizados</th><th scope="col">De 38 años y 6 meses a 41 años y 6 meses</th><th scope="col">De 41 años y 6 meses a 44 años y 6 meses</th><th scope="col">44 años y 6 meses o más</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">24 meses</th><td>21 %</td><td>19 %</td><td>17 %</td><td>13 %</td></tr>
+            <tr><th scope="row">18 meses</th><td>8,8 %</td><td>8,4 %</td><td>8 %</td><td>7,6 %</td></tr>
+            <tr><th scope="row">12 meses</th><td>5,5 %</td><td>5,25 %</td><td>5 %</td><td>4,75 %</td></tr>
+            <tr><th scope="row">6 meses</th><td>4 %</td><td>3,82 %</td><td>3,64 %</td><td>3,45 %</td></tr>
+            <tr><th scope="row">1 mes</th><td>3,26 %</td><td>3,11 %</td><td>2,96 %</td><td>2,81 %</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Quien pierde el empleo sin quererlo puede adelantar la jubilación hasta 4 años, con 33 años cotizados y otros coeficientes. Esta calculadora no incluye ese caso.</p>
+
+      <h2>Lo que la calculadora no tiene en cuenta</h2>
+      <ul>
+        <li><strong>Lagunas de cotización:</strong> los meses sin cotizar dentro del periodo de cálculo se rellenan con la base mínima o con una parte de ella, y bajan la base reguladora.</li>
+        <li><strong>Cambios de sueldo:</strong> calculamos con un sueldo medio. Si cobraste mucho más al final de tu carrera, la pensión saldrá algo más alta, y al revés.</li>
+        <li><strong>Subidas futuras:</strong> todo está en euros de hoy. Las pensiones suben cada año con el IPC, así que la cifra real que cobres será mayor en euros, con el mismo poder de compra.</li>
+        <li><strong>Pensiones altas y jubilación anticipada:</strong> si tu pensión superaría la máxima, adelantar la jubilación también la recorta un poco, aunque menos que el porcentaje general.</li>
+        <li><strong>Autónomos y regímenes especiales:</strong> el cálculo es el del Régimen General. Los autónomos cotizan desde 2023 por sus ingresos reales y su base reguladora depende de la base que hayan elegido.</li>
+      </ul>
+      <p>Para una cifra oficial con tu vida laboral real, usa el simulador de la sede electrónica de la Seguridad Social (Tu Seguridad Social), con certificado digital o Cl@ve.</p>
+
+      <h2>Preguntas frecuentes</h2>
+      {preguntas.map((p) => (<><h3>{p.q}</h3><p>{p.a}</p></>))}
+      <p class="muted small">Fuentes: Ley General de la Seguridad Social, artículos 205, 208 y 210 y disposiciones transitorias (<a href="https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724" rel="nofollow noopener" target="_blank">BOE</a>); <a href="https://www.seg-social.es" rel="nofollow noopener" target="_blank">Seguridad Social</a>; cuantías de 2026 del real decreto de revalorización publicado en el BOE el 24 de diciembre de 2025. Resultado orientativo, no oficial.</p>
+    </section>
+    <Siguenos />
+  </article>
+</Base>
+
+<script>
+  import { calcular, idx, anioDe, mesDe, type Entrada, type Familia } from '../../lib/pension';
+  const form = document.getElementById('calc-pen') as HTMLFormElement;
+  const fmt = (n: number) => n.toLocaleString('es-ES', { minimumFractionDigits: 2, maximumFractionDigits: 2, useGrouping: 'always' } as Intl.NumberFormatOptions);
+  const pc = (n: number) => n.toLocaleString('es-ES', { maximumFractionDigits: 2 });
+  const $ = (id: string) => document.getElementById(id)!;
+  const MESES = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'];
+  const edadTxt = (m: number) => `${Math.floor(m / 12)} años${m % 12 ? ` y ${m % 12} ${m % 12 === 1 ? 'mes' : 'meses'}` : ''}`;
+  const cotTxt = (m: number) => { const a = Math.floor(m / 12), r = m % 12; return `${a} años${r ? ` y ${r} ${r === 1 ? 'mes' : 'meses'}` : ''}`; };
+  const fechaTxt = (i: number) => `${MESES[mesDe(i)]} de ${anioDe(i)}`;
+  const ESCENARIOS: [number, string][] = [[-24, '2 años antes'], [-12, '1 año antes'], [0, 'Edad ordinaria'], [12, '1 año después'], [24, '2 años después']];
+
+  function leer(): Entrada {
+    const d = new FormData(form);
+    const num = (k: string) => parseFloat(String(d.get(k) ?? '').replace(',', '.')) || 0;
+    const ahora = new Date();
+    return {
+      anioNac: Math.round(num('anio')), mesNac: Math.round(num('mes')),
+      cotizadosHoy: Math.round(Math.max(0, num('cotizados')) * 12),
+      sigueCotizando: d.get('sigue') !== 'no',
+      sueldoAnual: Math.max(0, num('sueldo')),
+      ajuste: Math.round(num('ajuste')),
+      familia: (d.get('familia') as Familia) || 'sinConyuge',
+      hijos: Math.round(num('hijos')),
+      hoy: idx(ahora.getFullYear(), ahora.getMonth()),
+    };
+  }
+
+  function pintar() {
+    const e = leer();
+    const aviso = $('p-aviso');
+    const anioMax = new Date().getFullYear() - 16;
+    if (e.anioNac < 1959 || e.anioNac > anioMax) {
+      aviso.textContent = `Escribe un año de nacimiento entre 1959 y ${anioMax}.`; aviso.hidden = false;
+      return;
+    }
+    const r = calcular(e);
+    const pasado = r.fecha < e.hoy;
+    $('p-fecha').textContent = `${fechaTxt(r.fecha)}, con ${edadTxt(r.edad)}`;
+    $('p-ord').textContent = `${edadTxt(r.edadOrdinaria)} (${fechaTxt(r.fechaOrdinaria)})`;
+    $('p-cot').textContent = cotTxt(r.cotizados);
+    $('p-base').textContent = `${fmt(r.baseReguladora)} €`;
+    $('p-pct').textContent = r.porcentaje ? `${pc(r.porcentaje)} %` : '—';
+    $('p-coef-l').textContent = e.ajuste < 0 ? 'Recorte por jubilarte antes' : e.ajuste > 0 ? 'Premio por jubilarte después' : 'Recorte o premio por la edad';
+    $('p-coef').textContent = e.ajuste < 0 ? `−${pc(r.coeficiente)} %` : e.ajuste > 0 ? `+${pc(r.coeficiente)} %` : 'Ninguno';
+    if (!r.ok || pasado) {
+      aviso.textContent = pasado ? 'Esa fecha ya ha pasado: elige otra edad de jubilación.' : r.aviso!;
+      aviso.hidden = false;
+      for (const id of ['p-neta', 'p-bruta', 'p-irpf', 'p-anual', 'p-reemp']) $(id).textContent = '—';
+      $('p-notas').textContent = '';
+    } else {
+      aviso.hidden = true;
+      $('p-neta').textContent = fmt(r.neta);
+      $('p-bruta').textContent = `${fmt(r.bruta)} €`;
+      $('p-irpf').textContent = `${pc(r.tipoIrpf)} % (${fmt(r.bruta - r.neta)} €)`;
+      $('p-anual').textContent = `${fmt(r.anual)} €`;
+      $('p-reemp').textContent = r.reemplazo ? `${pc(Math.round(r.reemplazo))} %` : '—';
+      const notas: string[] = [];
+      if (r.limitadaMaxima) notas.push(e.ajuste < 0 ? 'Tu pensión teórica supera la máxima. Al adelantar la jubilación, la máxima también se recorta algo, así que podrías cobrar un poco menos.' : 'Tu pensión teórica supera la máxima, así que cobrarías la máxima' + (e.ajuste > 0 ? ' más el premio por retrasar la jubilación.' : '.'));
+      if (r.complementoMinimos) notas.push(`Incluye ${fmt(r.complementoMinimos)} € de complemento hasta la pensión mínima, que solo se cobra si tus otros ingresos no superan el límite legal.`);
+      if (r.brecha) notas.push(`Incluye ${fmt(r.brecha)} € del complemento de brecha de género.`);
+      if (!e.sigueCotizando) notas.push('Calculado sin sumar más años cotizados desde hoy.');
+      $('p-notas').textContent = notas.join(' ');
+    }
+
+    const filas = ESCENARIOS.map(([aj, txt]) => {
+      const s = calcular({ ...e, ajuste: aj });
+      const ok = s.ok && s.fecha >= e.hoy;
+      const actual = aj === e.ajuste ? ' class="actual"' : '';
+      return `<tr${actual}><th scope="row">${txt}</th><td>${edadTxt(s.edad)}</td><td>${cotTxt(s.cotizados)}</td>` +
+        (ok ? `<td>${fmt(s.bruta)} €</td><td><strong>${fmt(s.neta)} €</strong></td>` : `<td colspan="2" class="muted">${s.fecha < e.hoy ? 'Fecha ya pasada' : s.cotizados < 180 ? 'Menos de 15 años cotizados' : aj < 0 && s.cotizados < 420 ? 'Hacen falta 35 años cotizados' : 'Quedaría por debajo de la mínima'}</td>`) + '</tr>';
+    });
+    $('p-escenarios').querySelector('tbody')!.innerHTML = filas.join('');
+  }
+  form.addEventListener('input', pintar);
+  form.addEventListener('change', pintar);
+  pintar();
+</script>
+
+<style>
+  .pagina { max-width: 900px; }
+  h1 { font-size: clamp(1.9rem, 4.6vw, 2.6rem); line-height: 1.15; margin: 4px 0 12px; }
+  .lead { font-size: 1.125rem; line-height: 1.55; margin: 0 0 24px; max-width: 720px; }
+  .calc { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; border-top: 2px solid var(--ink); padding-top: 24px; align-items: start; }
+  form { display: flex; flex-direction: column; gap: 18px; }
+  .fila { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .campo { display: flex; flex-direction: column; gap: 6px; border: 0; margin: 0; padding: 0; }
+  .campo > span, legend { font-weight: 600; font-size: .9375rem; padding: 0; margin-bottom: 4px; }
+  .campo small { font-size: .8125rem; }
+  .u { position: relative; display: block; }
+  .u i { position: absolute; right: 12px; top: 50%; transform: translateY(-50%); font-style: normal; color: var(--muted); }
+  input[type='number'] { font: 600 1.25rem var(--sans); padding: 10px 52px 10px 12px; border: 1px solid #b9c0c6; border-radius: 4px; width: 100%; color: var(--ink); background: var(--bg); font-variant-numeric: tabular-nums; }
+  select { font: 500 1rem var(--sans); padding: 11px 10px; border: 1px solid #b9c0c6; border-radius: 4px; width: 100%; color: var(--ink); background: var(--bg); }
+  input:focus, select:focus { outline: 2px solid var(--brand); outline-offset: 0; }
+  .radio { display: flex; gap: 8px; align-items: center; font-size: .9375rem; padding: 4px 0; }
+  .radio input { accent-color: var(--brand); width: 18px; height: 18px; margin: 0; }
+  .res { background: var(--surface); border-radius: 4px; padding: 24px; position: sticky; top: 16px; }
+  .etq { font: 600 .875rem var(--sans); text-transform: uppercase; letter-spacing: .04em; color: var(--muted); margin: 0; }
+  .cifra { font-family: var(--serif); font-size: clamp(2.4rem, 6vw, 3rem); font-weight: 600; line-height: 1.1; margin: 6px 0 16px; color: var(--brand-dark); font-variant-numeric: tabular-nums; }
+  .cifra small { display: block; font: 400 1rem var(--sans); color: var(--muted); margin-top: 4px; }
+  .aviso { border-left: 3px solid #b3261e; padding: 8px 12px; background: var(--bg); font-size: .9375rem; margin: 0 0 16px; }
+  .desglose { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
+  .desglose th, .desglose td { padding: 8px 0; border-bottom: 1px solid var(--rule); font-size: .9375rem; }
+  .desglose th { text-align: left; font-weight: 400; }
+  .desglose td { text-align: right; padding-left: 12px; }
+  .small { font-size: .8125rem; }
+  .prose { margin-top: 36px; }
+  .tabla-scroll { overflow-x: auto; }
+  .ref { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums; display: table !important; }
+  .ref th, .ref td { padding: 8px 12px 8px 0; border-bottom: 1px solid var(--rule); text-align: right; font-size: .9375rem; white-space: nowrap; }
+  .ref th:first-child { text-align: left; font-weight: 500; white-space: normal; }
+  .ref thead th { font-size: .8125rem; font-weight: 600; border-bottom: 1px solid var(--ink); white-space: normal; }
+  .ref :global(tr.actual) th, .ref :global(tr.actual) td { background: var(--surface); }
+  @media (max-width: 720px) {
+    .calc { grid-template-columns: 1fr; }
+    .res { padding: 20px 16px; position: static; }
+  }
+</style>
