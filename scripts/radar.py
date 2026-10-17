@@ -241,6 +241,9 @@ decisiones financieras personales.
 - TITULAR HONESTO: con gancho y con la cifra o la fecha si la hay, pero que se cumpla en el texto. Prohibidos los \
 titulares tipo "malas noticias para…", "lo que nadie te cuenta", "regala", "confirmado" sin dato, o los que ocultan \
 de qué se habla.
+- A QUIÉN AFECTA, EN EL TITULAR: si la medida es para un grupo concreto, nómbralo ("pensionistas", "inquilinos", \
+"autónomos", "quien cobra el paro") para que el lector sepa al ver el titular si le toca. Es lo que más funciona en \
+Google Discover sin exagerar.
 
 QUÉ SE DESCARTA ({"skip": true, "reason": "..."}):
 - Lo que no afecta directamente al bolsillo de una familia o un trabajador en España (macroeconomía, empresas, \

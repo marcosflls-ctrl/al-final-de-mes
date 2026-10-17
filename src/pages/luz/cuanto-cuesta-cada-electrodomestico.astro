@@ -53,7 +53,7 @@ const jsonLd = {
     { '@type': 'ListItem', position: 3, name: titulo, item: url },
   ],
 };
-const datosCliente = { hoy: diaBase, manana: horasManana.length ? diaSig : null, horas: [...horasHoy.map((x) => x.p), ...horasManana.map((x) => x.p)], factor: (1 + IEE) * (1 + IVA) };
+const datosCliente = { hoy: diaBase, manana: horasManana.length ? diaSig : null, horas: [...horasHoy.map((x) => x.p), ...horasManana.map((x) => x.p)], etiquetas: [...horasHoy.map((x) => x.h), ...horasManana.map((x) => x.h)], nHoy: horasHoy.length, factor: (1 + IEE) * (1 + IVA) };
 ---
 <Base title={titulo} description={descripcion} jsonLd={jsonLd}>
   <nav class="breadcrumbs"><a href="/">Inicio</a> › <a href="/luz/">Precio de la luz</a></nav>
@@ -119,18 +119,25 @@ const datosCliente = { hoy: diaBase, manana: horasManana.length ? diaSig : null,
 
 <script is:inline type="application/json" id="datos-luz" set:html={JSON.stringify(datosCliente)}></script>
 <script>
-  const datos = JSON.parse(document.getElementById('datos-luz')!.textContent || '{}') as { hoy: string; manana: string | null; horas: number[]; factor: number };
+  const datos = JSON.parse(document.getElementById('datos-luz')!.textContent || '{}') as { hoy: string; manana: string | null; horas: number[]; etiquetas: string[]; nHoy: number; factor: number };
   const fmt = (n: number) => n.toLocaleString('es-ES', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + ' €';
-  const hh = (i: number) => `${String(i % 24).padStart(2, '0')}:00`;
+  // Etiqueta de cada hora tal como viene de Red Eléctrica: los días de cambio de hora tienen 23 o 25
+  const hh = (i: number) => (datos.etiquetas?.[i] ?? '').replace(' (2.ª)', ' (segunda vez)');
 
   function horaActual(): number {
-    // Hora de España y posición en la lista de precios (0-23 hoy, 24-47 mañana)
+    // Posición de la hora actual de España en la lista de precios (hoy y, detrás, mañana)
     const ahora = new Date();
     const dia = ahora.toLocaleDateString('sv-SE', { timeZone: 'Europe/Madrid' });
-    const h = parseInt(ahora.toLocaleTimeString('es-ES', { timeZone: 'Europe/Madrid', hour: '2-digit', hour12: false }), 10) % 24;
-    if (dia === datos.hoy) return h;
-    if (datos.manana && dia === datos.manana) return 24 + h;
-    return -1; // datos de otro día: no hay "ahora"
+    const h = String(parseInt(ahora.toLocaleTimeString('es-ES', { timeZone: 'Europe/Madrid', hour: '2-digit', hour12: false }), 10) % 24).padStart(2, '0') + ':00';
+    const desde = dia === datos.hoy ? 0 : datos.manana && dia === datos.manana ? datos.nHoy : -1;
+    if (desde < 0) return -1; // datos de otro día: no hay "ahora"
+    const hasta = desde === 0 ? datos.nHoy : datos.etiquetas.length;
+    const coincide: number[] = [];
+    for (let i = desde; i < hasta; i++) if (datos.etiquetas[i].startsWith(h)) coincide.push(i);
+    if (!coincide.length) return -1;
+    // La hora repetida del cambio de octubre: la segunda vez ya es horario de invierno (GMT+1)
+    const invierno = /GMT\+1(?!\d)/.test(new Intl.DateTimeFormat('en-US', { timeZone: 'Europe/Madrid', timeZoneName: 'shortOffset' }).format(ahora));
+    return coincide.length > 1 && invierno ? coincide[1] : coincide[0];
   }
 
   function franja(desde: number, n: number, kwh: number) {
@@ -155,7 +162,7 @@ const datosCliente = { hoy: diaBase, manana: horasManana.length ? diaSig : null,
       const celda = (sel: string) => fila.querySelector(sel) as HTMLElement;
       if (ahora >= 0 && ahora + n <= datos.horas.length) celda('.c-ahora').textContent = fmt(franja(ahora, n, kwh));
       else if (ahora < 0) celda('.c-ahora').textContent = '—';
-      const dia = (i: number) => (i >= 24 ? ' (mañana)' : '');
+      const dia = (i: number) => (i >= datos.nHoy ? ' (mañana)' : '');
       if (mejor.i >= 0) celda('.c-mejor').innerHTML = `<strong>${fmt(mejor.c)}</strong><span class="cuando">a las ${hh(mejor.i)}${dia(mejor.i)}</span>`;
       if (peor.i >= 0) celda('.c-peor').innerHTML = `${fmt(peor.c)}<span class="cuando">a las ${hh(peor.i)}${dia(peor.i)}</span>`;
     });

@@ -148,6 +148,11 @@ if __name__ == "__main__":
     if sys.argv[1:] == ["--fijas"]:
         fijas()
     elif len(sys.argv) == 4:
-        print(crear(sys.argv[1], sys.argv[2], Path(sys.argv[3])))
+        salida = crear(sys.argv[1], sys.argv[2], Path(sys.argv[3]))
+        # Versiones pequeñas para el móvil y recortes 4:3 y 1:1 para Discover
+        sys.path.insert(0, str(Path(__file__).resolve().parent))
+        from miniaturas import make_variants, make_crops
+        make_variants(salida.resolve()); make_crops(salida.resolve())
+        print(salida)
     else:
         print(__doc__)
