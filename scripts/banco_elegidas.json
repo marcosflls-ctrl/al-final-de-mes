@@ -1,0 +1,311 @@
+[
+ {
+  "archivo": "contador-luz-07.jpg",
+  "alt": "Torres de alta tensión bajo un cielo azul"
+ },
+ {
+  "archivo": "torres-electricas-01.jpg",
+  "alt": "Poste eléctrico al atardecer en Vitoria"
+ },
+ {
+  "archivo": "torres-electricas-03.jpg",
+  "alt": "Torre de alta tensión en Madrid"
+ },
+ {
+  "archivo": "bombilla-01.jpg",
+  "alt": "Bombilla encendida en una lámpara"
+ },
+ {
+  "archivo": "placas-solares-01.jpg",
+  "alt": "Placas solares sobre un tejado"
+ },
+ {
+  "archivo": "placas-solares-02.jpg",
+  "alt": "Placas solares sobre un aparcamiento"
+ },
+ {
+  "archivo": "placas-solares-05.jpg",
+  "alt": "Placas solares sobre una pequeña construcción en Mallorca"
+ },
+ {
+  "archivo": "placas-solares-07.jpg",
+  "alt": "Placas solares en la cubierta de un edificio en San Sebastián"
+ },
+ {
+  "archivo": "radiador-01.jpg",
+  "alt": "Radiador eléctrico en una habitación"
+ },
+ {
+  "archivo": "radiador-06.jpg",
+  "alt": "Válvula termostática de un radiador"
+ },
+ {
+  "archivo": "gasolinera-08.jpg",
+  "alt": "Gasolinera iluminada de noche"
+ },
+ {
+  "archivo": "surtidor-01.jpg",
+  "alt": "Manguera de un surtidor repostando un coche"
+ },
+ {
+  "archivo": "coche-electrico-04.jpg",
+  "alt": "Puntos de recarga para coches eléctricos en un aparcamiento"
+ },
+ {
+  "archivo": "coche-electrico-07.jpg",
+  "alt": "Punto de recarga de coches eléctricos en un área de servicio"
+ },
+ {
+  "archivo": "billetes-euro-01.jpg",
+  "alt": "Billetes de euro"
+ },
+ {
+  "archivo": "billetes-euro-02.jpg",
+  "alt": "Monedas y billetes de euro",
+  "autor": "Avij"
+ },
+ {
+  "archivo": "billetes-euro-07.jpg",
+  "alt": "Billetes de 20 y 50 euros"
+ },
+ {
+  "archivo": "monedas-euro-04.jpg",
+  "alt": "Monedas de euro sobre una mesa"
+ },
+ {
+  "archivo": "monedas-euro-05.jpg",
+  "alt": "Monedas de euro sobre la bandera de la Unión Europea"
+ },
+ {
+  "archivo": "monedas-euro-06.jpg",
+  "alt": "Monedas de euro sobre la bandera de la Unión Europea"
+ },
+ {
+  "archivo": "calculadora-03.jpg",
+  "alt": "Teclado de una calculadora"
+ },
+ {
+  "archivo": "calculadora-06.jpg",
+  "alt": "Calculadora de sobremesa"
+ },
+ {
+  "archivo": "calculadora-08.jpg",
+  "alt": "Calculadora de sobremesa"
+ },
+ {
+  "archivo": "agencia-tributaria-01.jpg",
+  "alt": "Edificio de la Agencia Tributaria en Logroño"
+ },
+ {
+  "archivo": "agencia-tributaria-02.jpg",
+  "alt": "Edificio de la Agencia Tributaria en Mataró"
+ },
+ {
+  "archivo": "agencia-tributaria-04.jpg",
+  "alt": "Edificio de la Agencia Tributaria en Cornellà de Llobregat"
+ },
+ {
+  "archivo": "agencia-tributaria-08.jpg",
+  "alt": "Delegación de la Agencia Tributaria en Jerez de la Frontera"
+ },
+ {
+  "archivo": "ministerio-hacienda-03.jpg",
+  "alt": "Sede del Ministerio de Hacienda en la calle de Alcalá de Madrid"
+ },
+ {
+  "archivo": "ministerio-hacienda-04.jpg",
+  "alt": "Sede del Ministerio de Hacienda en Madrid"
+ },
+ {
+  "archivo": "ministerio-hacienda-07.jpg",
+  "alt": "Fachada del Ministerio de Hacienda en Madrid"
+ },
+ {
+  "archivo": "ministerio-hacienda-08.jpg",
+  "alt": "Entrada del Ministerio de Hacienda en Madrid"
+ },
+ {
+  "archivo": "congreso-02.jpg",
+  "alt": "El Congreso de los Diputados de noche"
+ },
+ {
+  "archivo": "congreso-03.jpg",
+  "alt": "Fachada del Congreso de los Diputados"
+ },
+ {
+  "archivo": "congreso-04.jpg",
+  "alt": "Fachada del Congreso de los Diputados"
+ },
+ {
+  "archivo": "congreso-05.jpg",
+  "alt": "Uno de los leones del Congreso de los Diputados"
+ },
+ {
+  "archivo": "congreso-07.jpg",
+  "alt": "Fachada del Congreso de los Diputados"
+ },
+ {
+  "archivo": "moncloa-01.jpg",
+  "alt": "Palacio de la Moncloa, sede del Gobierno"
+ },
+ {
+  "archivo": "moncloa-03.jpg",
+  "alt": "Palacio de la Moncloa, sede del Gobierno"
+ },
+ {
+  "archivo": "banco-de-espana-03.jpg",
+  "alt": "Sede del Banco de España en Madrid"
+ },
+ {
+  "archivo": "banco-de-espana-04.jpg",
+  "alt": "Sede del Banco de España en Madrid"
+ },
+ {
+  "archivo": "banco-de-espana-06.jpg",
+  "alt": "Sede del Banco de España en Madrid"
+ },
+ {
+  "archivo": "banco-de-espana-07.jpg",
+  "alt": "Esquina de la sede del Banco de España en Madrid"
+ },
+ {
+  "archivo": "seguridad-social-02.jpg",
+  "alt": "Oficina de la Seguridad Social en Granada"
+ },
+ {
+  "archivo": "seguridad-social-06.jpg",
+  "alt": "Oficinas de la Seguridad Social en Vitoria"
+ },
+ {
+  "archivo": "seguridad-social-07.jpg",
+  "alt": "Oficina de la Seguridad Social en Chiclana de la Frontera"
+ },
+ {
+  "archivo": "seguridad-social-08.jpg",
+  "alt": "Sede de la Seguridad Social en Málaga"
+ },
+ {
+  "archivo": "oficina-empleo-01.jpg",
+  "alt": "Oficina de empleo en Madrid"
+ },
+ {
+  "archivo": "oficina-empleo-02.jpg",
+  "alt": "Cartel de una oficina de empleo en Madrid"
+ },
+ {
+  "archivo": "oficina-empleo-03.jpg",
+  "alt": "Entrada de una oficina de empleo en Madrid"
+ },
+ {
+  "archivo": "edificio-viviendas-01.jpg",
+  "alt": "Bloque de viviendas en Madrid"
+ },
+ {
+  "archivo": "edificio-viviendas-02.jpg",
+  "alt": "Edificio de viviendas en Madrid"
+ },
+ {
+  "archivo": "edificio-viviendas-03.jpg",
+  "alt": "Edificios de viviendas en el barrio de Salamanca de Madrid"
+ },
+ {
+  "archivo": "edificio-viviendas-04.jpg",
+  "alt": "Bloque de viviendas en Madrid"
+ },
+ {
+  "archivo": "edificio-viviendas-07.jpg",
+  "alt": "Bloque de viviendas"
+ },
+ {
+  "archivo": "edificio-viviendas-08.jpg",
+  "alt": "Bloque de viviendas"
+ },
+ {
+  "archivo": "fachada-balcones-02.jpg",
+  "alt": "Fachada con balcones en Barcelona"
+ },
+ {
+  "archivo": "fachada-balcones-03.jpg",
+  "alt": "Fachada con balcones en Barcelona"
+ },
+ {
+  "archivo": "fachada-balcones-04.jpg",
+  "alt": "Balcones de un edificio del paseo de Gràcia de Barcelona"
+ },
+ {
+  "archivo": "se-alquila-05.jpg",
+  "alt": "Cartel de «se alquila» en un local"
+ },
+ {
+  "archivo": "llaves-casa-05.jpg",
+  "alt": "Llaves de casa"
+ },
+ {
+  "archivo": "gruas-03.jpg",
+  "alt": "Grúas en la obra de un edificio"
+ },
+ {
+  "archivo": "gruas-08.jpg",
+  "alt": "Grúa en una obra junto a edificios de viviendas"
+ },
+ {
+  "archivo": "supermercado-01.jpg",
+  "alt": "Pasillo de un supermercado"
+ },
+ {
+  "archivo": "supermercado-03.jpg",
+  "alt": "Pasillo de un supermercado"
+ },
+ {
+  "archivo": "supermercado-05.jpg",
+  "alt": "Estantería de aceites en un supermercado"
+ },
+ {
+  "archivo": "supermercado-06.jpg",
+  "alt": "Estantería de aceites en un supermercado"
+ },
+ {
+  "archivo": "carro-compra-01.jpg",
+  "alt": "Carro de la compra en un supermercado"
+ },
+ {
+  "archivo": "carro-compra-02.jpg",
+  "alt": "Carro de la compra"
+ },
+ {
+  "archivo": "mercado-fruta-04.jpg",
+  "alt": "Puesto de fruta en un mercado de Barcelona"
+ },
+ {
+  "archivo": "mercado-fruta-05.jpg",
+  "alt": "Puesto de fruta en un mercado de Barcelona"
+ },
+ {
+  "archivo": "aceite-oliva-02.jpg",
+  "alt": "Aceitera con aceite de oliva"
+ },
+ {
+  "archivo": "aceite-oliva-06.jpg",
+  "alt": "Pan tostado con aceite de oliva"
+ },
+ {
+  "archivo": "aceite-oliva-08.jpg",
+  "alt": "Botellas de aceite de oliva en un supermercado"
+ },
+ {
+  "archivo": "loteria-01.jpg",
+  "alt": "Cola para comprar lotería en Doña Manolita, en Madrid"
+ },
+ {
+  "archivo": "calendario-01.jpg",
+  "alt": "Agenda abierta por las páginas de octubre"
+ },
+ {
+  "archivo": "calendario-02.jpg",
+  "alt": "Agenda de anillas abierta"
+ },
+ {
+  "archivo": "calendario-04.jpg",
+  "alt": "Agenda cerrada sobre una mesa"
+ }
+]

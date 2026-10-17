@@ -5,11 +5,13 @@ date: 2026-10-13T12:47:00+00:00
 category: luz
 tags: [tarifa-fija, mercado-libre, iva-luz, endesa, iberdrola]
 pendiente: true
-image: /img/articulos/tarifas-de-luz-a-precio-fijo-3-5-y-10-anos-que-incluyen-y-que-no.webp
-imageAlt: "Portada: Tarifas de luz a precio fijo 3, 5 y 10 años: qué incluyen y qué no"
 sources:
   - name: "20minutos Economía: Precio de la luz hasta que pasen los vaivenes: las grandes comercializadoras se lanzan a ofrecer tar"
     url: "https://www.20minutos.es/nacional/precio-luz-hasta-que-pasen-los-vaivenes-las-grandes-comercializadoras-se-lanzan-ofrecer-tarifas-fijas-cinco-diez-anos_7047023_0.html"
+image: /img/banco/contador-luz-07.webp
+imageAlt: "Torres de alta tensión bajo un cielo azul"
+imageCredit: "Deni Williams from São Paulo, Brasil / Wikimedia Commons (CC BY 2.0)"
+imageCreditUrl: "https://commons.wikimedia.org/wiki/File:Usina_Hidroel%C3%A9trica_Itaipu_Binacional_-_Itaipu_Dam_(17360461611).jpg"
 ---
 
 Las grandes eléctricas han empezado a vender contratos de luz que congelan el precio de la energía durante tres, cinco o incluso diez años. Hasta ahora lo habitual era renovar cada año. Lo cuenta 20minutos, y hay una letra pequeña importante: **el precio fijo solo afecta al término de energía**, no a toda la factura.

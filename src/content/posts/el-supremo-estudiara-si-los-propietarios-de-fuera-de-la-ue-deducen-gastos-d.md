@@ -5,11 +5,13 @@ date: 2026-10-14T10:19:06+00:00
 category: hacienda
 tags: [irnr, no-residentes, alquiler, tribunal-supremo, hacienda]
 pendiente: true
-image: /img/articulos/el-supremo-estudiara-si-los-propietarios-de-fuera-de-la-ue-deducen-gastos-d.webp
-imageAlt: "Portada: El Supremo estudiará si los propietarios de fuera de la UE deducen gastos del alquiler"
 sources:
   - name: "El País Economía: El Supremo estudiará por primera vez si los extracomunitarios pueden deducirse los gastos del alquil"
     url: "https://elpais.com/economia/2026-10-14/el-supremo-estudiara-por-primera-vez-si-los-extracomunitarios-pueden-deducirse-los-gastos-del-alquiler-en-espana.html"
+image: /img/banco/fachada-balcones-04.webp
+imageAlt: "Balcones de un edificio del paseo de Gràcia de Barcelona"
+imageCredit: "Enric / Wikimedia Commons (CC BY-SA 4.0)"
+imageCreditUrl: "https://commons.wikimedia.org/wiki/File:136_Casa_Malagrida,_pg._de_Gr%C3%A0cia_27_(Barcelona),_balcons.jpg"
 ---
 
 El Tribunal Supremo va a decidir, por primera vez, si quien tiene un piso alquilado en España y vive fuera de la Unión Europea puede restar los gastos del alquiler al calcular su impuesto. Por ahora **no hay sentencia y nada cambia**: hoy esos propietarios tributan por el total de lo que cobran. Así lo publica El País.

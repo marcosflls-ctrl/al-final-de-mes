@@ -5,11 +5,13 @@ date: 2026-10-16T15:24:46+00:00
 category: luz
 tags: [combustible, butano, tarifa-del-gas, decreto-ley, iva-luz]
 pendiente: false
-image: /img/articulos/el-congreso-convalida-las-ayudas-al-combustible-butano-maximo-de-19-55.webp
-imageAlt: "Portada: El Congreso convalida las ayudas al combustible: butano máximo de 19,55 €"
 sources:
   - name: "Europa Press Economía: El Congreso refrenda las ayudas fiscales al combustible con el voto en contra de Vox y la abstención"
     url: "https://www.europapress.es/economia/macroeconomia-00338/noticia-congreso-refrenda-ayudas-fiscales-combustible-voto-contra-vox-abstencion-junts-20261016141143.html"
+image: /img/banco/congreso-02.webp
+imageAlt: "El Congreso de los Diputados de noche"
+imageCredit: "Roberto García from Spain / Wikimedia Commons (CC BY 2.0)"
+imageCreditUrl: "https://commons.wikimedia.org/wiki/File:Congreso_de_los_Diputados_(Espa%C3%B1a)_10.jpg"
 ---
 
 El decreto ley con ayudas fiscales a los combustibles sigue en vigor. La Diputación Permanente del Congreso lo ha convalidado este 16 de octubre, según publica Europa Press. Incluye un precio máximo de 19,55 euros para la bombona de butano hasta el 30 de junio de 2027 y un freno a la subida de la tarifa del gas natural.

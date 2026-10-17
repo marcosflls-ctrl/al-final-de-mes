@@ -5,11 +5,13 @@ date: 2026-10-15T10:01:48+00:00
 category: pensiones
 tags: [pensiones, revalorizacion-2027, smi, gobierno-en-funciones, ipc]
 pendiente: true
-image: /img/articulos/cuerpo-asegura-que-pensiones-y-smi-subiran-aunque-haya-gobierno-en-funcione.webp
-imageAlt: "Portada: Cuerpo asegura que pensiones y SMI subirán aunque haya Gobierno en funciones"
 sources:
   - name: "20minutos Economía: Cuerpo avanza que el Gobierno subirá pensiones y salario mínimo aunque esté en funciones"
     url: "https://www.20minutos.es/lainformacion/economia-y-finanzas/cuerpo-avanza-que-gobierno-subira-pensiones-salario-minimo-aunque-este-funciones_7049003_0.html"
+image: /img/banco/seguridad-social-02.webp
+imageAlt: "Oficina de la Seguridad Social en Granada"
+imageCredit: "Zarateman / Wikimedia Commons (CC0)"
+imageCreditUrl: "https://commons.wikimedia.org/wiki/File:Granada_-_Oficina_Integral_de_la_Seguridad_Social_2.jpg"
 ---
 
 El vicepresidente primero y ministro de Economía, Carlos Cuerpo, ha lanzado un "mensaje inequívoco": las pensiones subirán en 2027 lo que marque la regla de revalorización fijada por ley. Y el salario mínimo (SMI) también subirá, aunque el Gobierno esté en funciones por las elecciones generales del 29 de noviembre. Lo ha dicho en declaraciones a TVE, según recoge 20minutos. Por ahora es un compromiso verbal: no hay ninguna subida aprobada.

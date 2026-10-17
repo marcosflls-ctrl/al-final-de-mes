@@ -5,11 +5,13 @@ date: 2026-10-15T20:23:41+00:00
 category: vivienda
 tags: [vivienda, irpf, agencia-tributaria, plusvalias, compraventa]
 pendiente: false
-image: /img/articulos/tres-de-cada-diez-viviendas-vendidas-en-2024-dieron-perdidas-segun-hacienda.webp
-imageAlt: "Portada: Tres de cada diez viviendas vendidas en 2024 dieron pérdidas, según Hacienda"
 sources:
   - name: "El País Economía: Tres de cada diez viviendas vendidas en España generan pérdidas para el propietario"
     url: "https://elpais.com/economia/vivienda/2026-10-15/tres-de-cada-diez-viviendas-vendidas-en-espana-generan-perdidas-para-el-propietario.html"
+image: /img/banco/edificio-viviendas-01.webp
+imageAlt: "Bloque de viviendas en Madrid"
+imageCredit: "Totemkin / Wikimedia Commons (CC BY-SA 3.0)"
+imageCreditUrl: "https://commons.wikimedia.org/wiki/File:Bloque_de_viviendas_de_la_calle_Bas%C3%ADlica,_Cano_Lasso.jpg"
 ---
 
 Tres de cada diez viviendas que se vendieron en España en 2024 se traspasaron por menos de lo que costaron. Lo dice una nueva estadística de la Agencia Tributaria (AEAT), que publicó por primera vez este jueves y que recoge El País. Para el resto, la venta dejó beneficio.

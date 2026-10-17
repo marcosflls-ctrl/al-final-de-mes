@@ -4,8 +4,6 @@ description: "La madrugada del domingo 25, a las 3:00 serán las 2:00. Qué pasa
 date: 2026-10-17T10:54:00+00:00
 category: luz
 tags: [cambio-de-hora, horario-de-invierno, luz, pvpc, factura]
-image: /img/articulos/cambio-de-hora-25-octubre-2026-factura-de-la-luz.webp
-imageAlt: "Portada: Cambio de hora del 25 de octubre"
 sources:
   - name: "Artículo 14: el cambio de hora de invierno, a la vuelta de la esquina (13/10/2026)"
     url: "https://www.articulo14.es/sociedad/el-cambio-de-hora-de-invierno-a-la-vuelta-de-la-esquina-20261013.html"
@@ -13,6 +11,10 @@ sources:
     url: "https://www.boe.es/buscar/act.php?id=BOE-A-2002-4436"
   - name: "Red Eléctrica: precio voluntario para el pequeño consumidor (PVPC)"
     url: "https://www.ree.es/es/datos/mercados/precio-voluntario-para-el-pequeno-consumidor"
+image: /img/banco/bombilla-01.webp
+imageAlt: "Bombilla encendida en una lámpara"
+imageCredit: "Basile Morin / Wikimedia Commons (CC BY-SA 4.0)"
+imageCreditUrl: "https://commons.wikimedia.org/wiki/File:Lamp_with_lit_incandescent_light_bulb_and_black_background.jpg"
 ---
 
 España vuelve al horario de invierno la madrugada del **sábado 24 al domingo 25 de octubre de 2026**. A las 3:00 serán las 2:00 en la península y Baleares, y a las 2:00 serán la 1:00 en Canarias. Esa noche dormimos una hora más y el domingo tiene 25 horas.

@@ -6,8 +6,6 @@ category: pensiones
 guia: true
 orden: 1
 tags: [pensiones, elecciones-29n, revalorizacion, partidos, legislatura]
-image: /img/articulos/pensiones-elecciones-29n-balance-y-propuestas.webp
-imageAlt: "Portada: Pensiones y elecciones del 29N"
 sources:
   - name: "La Moncloa: el Congreso convalida la subida de las pensiones de 2024 (10/01/2024)"
     url: "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/inclusion/Paginas/2024/subida-pensiones-2024.aspx"
@@ -37,6 +35,10 @@ sources:
     url: "https://www.infobae.com/espana/agencias/2026/10/16/yolanda-diaz-no-hay-ningun-riesgo-en-el-sistema-publico-de-pensiones/"
   - name: "Infobae (EFE): el futuro de las pensiones entra en la precampaña (15/10/2026)"
     url: "https://www.infobae.com/america/agencias/2026/10/15/el-futuro-de-las-pensiones-en-espana-entra-con-fuerza-en-la-precampana-electoral/"
+image: /img/banco/congreso-07.webp
+imageAlt: "Fachada del Congreso de los Diputados"
+imageCredit: "Antonio.velez / Wikimedia Commons (CC BY-SA 3.0 es)"
+imageCreditUrl: "https://commons.wikimedia.org/wiki/File:Espa%C3%B1a_-_Madrid_-_Palacio_de_las_Cortes_-_Fachada.JPG"
 ---
 
 Las pensiones son uno de los grandes temas de las elecciones generales del **29 de noviembre de 2026**. Esta guía tiene dos partes. La primera repasa qué se hizo con las pensiones en la legislatura que acaba: qué se aprobó, qué cayó en el Congreso y qué quedó solo anunciado. La segunda recoge lo que dicen los partidos.

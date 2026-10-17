@@ -6,8 +6,6 @@ category: hacienda
 guia: true
 orden: 1
 tags: [impuestos, irpf, iva, elecciones-29n, partidos, legislatura]
-image: /img/articulos/impuestos-elecciones-29n-balance-y-propuestas.webp
-imageAlt: "Portada: Impuestos y elecciones del 29N"
 sources:
   - name: "El Español: fin de la rebaja extraordinaria del IVA de los alimentos (24/12/2024)"
     url: "https://elespanol.com/invertia/economia/20241224/fin-rebaja-extraordinaria-iva-alimentos-basicos-aceite-huevos-frutas-pan-suben-precio/910909274_0.html"
@@ -23,6 +21,10 @@ sources:
     url: "https://www.expansion.com/economia/2026/10/14/pp-plantea-plan-choque-rebajas-iva-e-irpf-contener-alza-precios.html"
   - name: "Hora Punta: la propuesta de IRPF de Vox (07/10/2026)"
     url: "https://www.horapunta.com/noticia/53059/actualidad/vox-propone-una-reforma-del-irpf-que-favorece-a-los-ricos-y-reduce-la-recaudacion-estatal.html"
+image: /img/banco/congreso-04.webp
+imageAlt: "Fachada del Congreso de los Diputados"
+imageCredit: "Vickybol / Wikimedia Commons (CC BY-SA 3.0)"
+imageCreditUrl: "https://commons.wikimedia.org/wiki/File:Congreso_de_los_Diputados,_enero_de_2015.JPG"
 ---
 
 Los impuestos son una de las grandes diferencias entre los partidos de cara a las elecciones generales del **29 de noviembre de 2026**. Esta guía repasa en la primera parte qué cambió en la legislatura en los impuestos que más notan los hogares. En la segunda recoge lo que plantean los partidos.

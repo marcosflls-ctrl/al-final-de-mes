@@ -5,11 +5,13 @@ date: 2026-10-16T23:40:22+00:00
 category: vivienda
 tags: ["hipotecas", "banco-de-espana", "esfuerzo-hipotecario", "euribor", "vivienda"]
 pendiente: false
-image: /img/articulos/el-esfuerzo-para-pagar-una-hipoteca-sube-al-38-01-de-la-renta-maximo-desde.webp
-imageAlt: "Portada: El esfuerzo para pagar una hipoteca sube al 38,01% de la renta, máximo desde 2011"
 sources:
   - name: "ABC Economía: Señales de alarma en el crédito: los españoles dedican ya más del 38% de su renta a la hipoteca"
     url: "https://www.abc.es/economia/senales-alarma-credito-espanoles-dedican-renta-hipoteca-20261016010030-nt.html"
+image: /img/banco/banco-de-espana-03.webp
+imageAlt: "Sede del Banco de España en Madrid"
+imageCredit: "Luis García / Wikimedia Commons (CC BY-SA 2.5)"
+imageCreditUrl: "https://commons.wikimedia.org/wiki/File:Banco_de_Espa%C3%B1a_(Madrid)_02.jpg"
 ---
 
 El Banco de España sitúa en el **38,01%** el esfuerzo teórico para pagar una hipoteca en el segundo trimestre de 2026. Es el nivel más alto desde 2011 y supera el 35% que se considera el máximo recomendable. Los datos los recoge ABC.

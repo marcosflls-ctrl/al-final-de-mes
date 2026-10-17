@@ -6,8 +6,6 @@ category: luz
 guia: true
 orden: 1
 tags: [luz, carburantes, gasolina, elecciones-29n, partidos, legislatura, nucleares]
-image: /img/articulos/luz-carburantes-elecciones-29n-balance-y-propuestas.webp
-imageAlt: "Portada: Luz, gasolina y elecciones del 29N"
 sources:
   - name: "La Moncloa: medidas urgentes ante la guerra en Oriente Próximo (20/03/2026)"
     url: "https://www.lamoncloa.gob.es/presidente/actividades/paginas/2026/200326-sanchez-medidas-guerra-iran.aspx"
@@ -27,6 +25,10 @@ sources:
     url: "https://forbes.es/actualidad/1036705/elecciones-2026-batallas-economicas-29-n/"
   - name: "Expansión: el PP plantea un plan de choque con rebajas de IVA e IRPF (14/10/2026)"
     url: "https://www.expansion.com/economia/2026/10/14/pp-plantea-plan-choque-rebajas-iva-e-irpf-contener-alza-precios.html"
+image: /img/banco/congreso-05.webp
+imageAlt: "Uno de los leones del Congreso de los Diputados"
+imageCredit: "Yvonnefm / Wikimedia Commons (CC BY-SA 4.0)"
+imageCreditUrl: "https://commons.wikimedia.org/wiki/File:Leon_del_Congreso_de_los_Diputados_en_Madrid.jpg"
 ---
 
 Desde marzo de 2026, la guerra de Irán ha disparado el precio de la energía en España, y el Gobierno ha aprobado tres paquetes de medidas para contenerlo. Esta guía repasa en la primera parte qué se ha aprobado y qué sigue vigente. En la segunda recoge lo que plantean los partidos para las elecciones generales del **29 de noviembre de 2026**.

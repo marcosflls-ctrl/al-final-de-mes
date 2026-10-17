@@ -5,11 +5,13 @@ date: 2026-10-15T10:02:08+00:00
 category: vivienda
 tags: [ayuda-alquiler, plan-estatal-de-vivienda, familias-con-hijos, vivienda, subvenciones]
 pendiente: false
-image: /img/articulos/ayuda-al-alquiler-de-hasta-el-50-para-familias-con-hijos-requisitos.webp
-imageAlt: "Portada: Ayuda al alquiler de hasta el 50% para familias con hijos: requisitos"
 sources:
   - name: "20minutos Economía: Hasta el 50% del alquiler para jóvenes con hijos: solicitar la ayuda del Plan Estatal de Vivienda"
     url: "https://www.20minutos.es/lainformacion/economia-y-finanzas/hasta-50-alquiler-jovenes-hijos-solicitar-ayuda-plan-estatal-vivienda_7045867_0.html"
+image: /img/banco/fachada-balcones-03.webp
+imageAlt: "Fachada con balcones en Barcelona"
+imageCredit: "Zarateman / Wikimedia Commons (CC0)"
+imageCreditUrl: "https://commons.wikimedia.org/wiki/File:Barcelona_-_Distrito_de_Sant_Andreu_02.jpg"
 ---
 
 Hay familias con hijos que pueden recibir una subvención de **hasta el 50% de la renta mensual del alquiler**. Según publica 20minutos, las comunidades autónomas gestionan estas ayudas dentro del Plan Estatal de Vivienda. El tope suele estar **entre 300 y 450 euros al mes**, según el territorio.

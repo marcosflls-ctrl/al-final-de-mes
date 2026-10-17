@@ -5,11 +5,13 @@ date: 2026-10-14T00:21:45+00:00
 category: vivienda
 tags: [alquiler, inquilinos, reparaciones, vivienda, lau]
 pendiente: false
-image: /img/articulos/podras-descontar-del-alquiler-una-reparacion-si-el-dueno-no-responde-en-15.webp
-imageAlt: "Portada: Podrás descontar del alquiler una reparación si el dueño no responde en 15 días hábiles"
 sources:
   - name: "El Mundo Economía: Es oficial: los inquilinos podrán reparar desperfectos y descontarlo del coste del alquiler"
     url: "https://www.elmundo.es/economia/2026/10/13/6acdf0a8e85ece26218b4578.html"
+image: /img/banco/fachada-balcones-03.webp
+imageAlt: "Fachada con balcones en Barcelona"
+imageCredit: "Zarateman / Wikimedia Commons (CC0)"
+imageCreditUrl: "https://commons.wikimedia.org/wiki/File:Barcelona_-_Distrito_de_Sant_Andreu_02.jpg"
 ---
 
 Si vives de alquiler y algo se estropea, ya hay un camino para arreglarlo sin quedarte con el gasto. Según recoge El Mundo, el Real Decreto-ley 29/2026, publicado en el BOE, permite que el inquilino haga la reparación y se **descuente su coste de la renta** cuando el propietario no responde en plazo.

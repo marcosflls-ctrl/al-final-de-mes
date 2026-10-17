@@ -5,11 +5,13 @@ date: 2026-10-14T20:45:42+00:00
 category: vivienda
 tags: [euribor, hipotecas, hipoteca-variable, tipos-de-interes]
 pendiente: false
-image: /img/articulos/el-euribor-sube-al-3-201-y-la-media-de-octubre-ya-es-3-217.webp
-imageAlt: "Portada: El euríbor sube al 3,201% y la media de octubre ya es 3,217%"
 sources:
   - name: "El Mundo Economía: Euríbor hoy, jueves 14 de octubre: la tasa diaria marca una nueva subida por encima del 3,2%"
     url: "https://www.elmundo.es/economia/2026/10/14/6ac4cdb4e85ece3f128b45a5.html"
+image: /img/banco/banco-de-espana-04.webp
+imageAlt: "Sede del Banco de España en Madrid"
+imageCredit: "D.Rovchak / Wikimedia Commons (CC BY-SA 4.0)"
+imageCreditUrl: "https://commons.wikimedia.org/wiki/File:Edificio_del_Banco_de_Espa%C3%B1a_en_Madrid_3.jpg"
 ---
 
 El euríbor diario ha marcado este 14 de octubre de 2026 un 3,201%, según recoge El Mundo. Son 0,010 puntos más que el día anterior (3,191%). La media de lo que va de octubre es del 3,217%.

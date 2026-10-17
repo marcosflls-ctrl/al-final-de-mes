@@ -41,7 +41,7 @@ TEMAS: dict[str, dict] = {
     "surtidor": {"q": ["fuel pump nozzle", "surtidor gasolina"], "palabras": ["gasolina", "diésel", "carburante", "repostar", "litro"], "secciones": ["luz"]},
     "bombona-butano": {"q": ["butane gas cylinder Spain", "bombona butano"], "palabras": ["butano", "bombona"], "secciones": ["luz"]},
     "coche-electrico": {"q": ["electric car charging station", "punto de recarga coche eléctrico"], "palabras": ["coche eléctrico", "recarga", "moves"], "secciones": ["luz", "hacienda"]},
-    "billetes-euro": {"q": ["euro banknotes", "billetes de euro"], "palabras": ["euros", "ayuda", "pago", "cobro", "dinero"], "secciones": ["hacienda", "pensiones", "paro"]},
+    "billetes-euro": {"q": ["euro banknotes", "billetes de euro"], "palabras": ["euros", "ayuda", "pago", "cobro", "dinero", "smi", "salario mínimo", "paga extra"], "secciones": ["hacienda", "pensiones", "paro"]},
     "monedas-euro": {"q": ["euro coins", "monedas de euro"], "palabras": ["ahorro", "precio", "subida", "ipc"], "secciones": ["hacienda", "pensiones"]},
     "calculadora": {"q": ["calculator documents desk", "calculadora facturas"], "palabras": ["renta", "declaración", "irpf", "impuesto", "deducción", "cuota"], "secciones": ["hacienda", "paro"]},
     "agencia-tributaria": {"q": ["Agencia Tributaria building", "Agencia Tributaria sede Madrid"], "palabras": ["hacienda", "agencia tributaria", "aeat", "renta"], "secciones": ["hacienda"]},
@@ -49,19 +49,19 @@ TEMAS: dict[str, dict] = {
     "congreso": {"q": ["Congreso de los Diputados fachada", "Palacio de las Cortes Madrid"], "palabras": ["congreso", "convalida", "decreto", "ley", "partido", "elecciones", "votación"], "secciones": ["hacienda", "vivienda", "pensiones", "paro", "luz"]},
     "moncloa": {"q": ["Palacio de la Moncloa"], "palabras": ["gobierno", "consejo de ministros", "moncloa"], "secciones": ["hacienda", "vivienda", "pensiones", "paro", "luz"]},
     "banco-de-espana": {"q": ["Banco de España edificio Madrid"], "palabras": ["banco de españa", "euríbor", "hipoteca", "tipos"], "secciones": ["vivienda", "hacienda"]},
-    "seguridad-social": {"q": ["Seguridad Social oficina", "Instituto Nacional de la Seguridad Social"], "palabras": ["seguridad social", "inss", "pensión", "cotiza"], "secciones": ["pensiones", "paro"]},
+    "seguridad-social": {"q": ["Seguridad Social oficina", "Instituto Nacional de la Seguridad Social"], "palabras": ["seguridad social", "inss", "pensión", "cotiza", "jubila", "empleadas del hogar", "baja por"], "secciones": ["pensiones", "paro"]},
     "pensionistas": {"q": ["elderly people park bench Spain", "jubilados paseo"], "palabras": ["pensión", "pensiones", "jubila", "mayores", "pensionistas"], "secciones": ["pensiones"]},
     "oficina-empleo": {"q": ["oficina de empleo SEPE", "Servicio Público de Empleo Estatal"], "palabras": ["paro", "sepe", "desempleo", "subsidio", "empleo"], "secciones": ["paro"]},
     "trabajo-oficina": {"q": ["office workers desks", "oficina trabajadores"], "palabras": ["trabajador", "jornada", "salario", "nómina", "convenio", "sueldo"], "secciones": ["paro"]},
     "obra-construccion": {"q": ["construction workers building site Spain", "obra construcción edificio"], "palabras": ["obra", "construcción", "autónomo"], "secciones": ["paro", "vivienda"]},
     "edificio-viviendas": {"q": ["apartment buildings Madrid", "bloque de viviendas España"], "palabras": ["vivienda", "pisos", "edificio", "inmobiliari"], "secciones": ["vivienda"]},
-    "fachada-balcones": {"q": ["balconies facade Barcelona", "fachada balcones Valencia"], "palabras": ["alquiler", "inquilino", "casero", "piso"], "secciones": ["vivienda"]},
+    "fachada-balcones": {"q": ["balconies facade Barcelona", "fachada balcones Valencia"], "palabras": ["alquiler", "inquilino", "casero", "piso", "propietario"], "secciones": ["vivienda"]},
     "se-alquila": {"q": ["se alquila cartel", "for rent sign Spain"], "palabras": ["alquiler", "alquila", "arrendamiento", "inquilino"], "secciones": ["vivienda"]},
     "llaves-casa": {"q": ["house keys", "llaves de casa"], "palabras": ["hipoteca", "compra", "vivienda", "comprar"], "secciones": ["vivienda"]},
     "gruas": {"q": ["construction cranes city skyline Spain", "grúas construcción"], "palabras": ["obra nueva", "construcción", "promoción", "suelo"], "secciones": ["vivienda"]},
     "supermercado": {"q": ["supermarket aisle", "supermercado pasillo"], "palabras": ["supermercado", "precios", "ipc", "cesta", "alimentos", "compra"], "secciones": ["hacienda"]},
     "carro-compra": {"q": ["shopping cart supermarket", "carro de la compra"], "palabras": ["compra", "cesta", "iva", "alimentos"], "secciones": ["hacienda"]},
-    "mercado-fruta": {"q": ["fruit market stall Spain", "mercado frutería"], "palabras": ["fruta", "verdura", "alimentos", "precio", "aceite"], "secciones": ["hacienda"]},
+    "mercado-fruta": {"q": ["fruit market stall Spain", "mercado frutería"], "palabras": ["fruta", "verdura", "alimentos", "aceite"], "secciones": ["hacienda"]},
     "aceite-oliva": {"q": ["olive oil bottles", "aceite de oliva"], "palabras": ["aceite"], "secciones": ["hacienda"]},
     "loteria": {"q": ["Lotería de Navidad décimo", "Doña Manolita lotería"], "palabras": ["lotería", "décimo", "sorteo", "gordo"], "secciones": ["hacienda"]},
     "reloj": {"q": ["clock face", "reloj de pared"], "palabras": ["cambio de hora", "horario", "hora"], "secciones": ["luz"]},
@@ -150,7 +150,7 @@ def preparar() -> None:
             im = im.resize((round(im.width * escala), round(im.height * escala)), Image.LANCZOS)
             x, y = (im.width - 1600) // 2, round((im.height - 900) * e.get("y", 0.5))
             salida = DEST / f"{slug}.webp"
-            im.crop((x, y, x + 1600, y + 900)).save(salida, "WEBP", quality=80, method=6)
+            im.crop((x, y, x + 1600, y + 900)).save(salida, "WEBP", quality=70, method=6)
         make_variants(salida)
         make_crops(salida)
         tema = TEMAS[c["tema"]]

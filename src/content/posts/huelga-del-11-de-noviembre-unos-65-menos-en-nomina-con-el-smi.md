@@ -5,13 +5,15 @@ date: 2026-10-14T20:46:13+00:00
 category: paro
 tags: [huelga-general, nomina, salario, smi, estatuto-de-los-trabajadores]
 pendiente: false
-image: /img/articulos/huelga-del-11-de-noviembre-unos-65-menos-en-nomina-con-el-smi.webp
-imageAlt: "Portada: Huelga del 11 de noviembre: unos 65 € menos en nómina con el SMI"
 sources:
   - name: "Estatuto de los Trabajadores (art. 45) en el BOE"
     url: "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11430"
   - name: "El Mundo Economía: Si haces huelga el 11 de noviembre, esto es lo que te pueden descontar de la nómina"
     url: "https://www.elmundo.es/economia/2026/10/14/6acf30ef21efa0734c8b45ac.html"
+image: /img/banco/billetes-euro-02.webp
+imageAlt: "Monedas y billetes de euro"
+imageCredit: "Avij / Wikimedia Commons (Public domain)"
+imageCreditUrl: "https://commons.wikimedia.org/wiki/File:Euro_coins_and_banknotes_(cropped).jpg"
 ---
 
 Si haces huelga el miércoles 11 de noviembre, tu empresa te descontará ese día de la nómina. Con el salario mínimo, según los cálculos de El Mundo, son 65,57 euros brutos si trabajas de lunes a viernes. Con el salario medio, 113 euros brutos (89 netos).

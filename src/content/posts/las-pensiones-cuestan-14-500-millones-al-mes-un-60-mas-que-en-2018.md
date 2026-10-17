@@ -5,11 +5,13 @@ date: 2026-10-15T23:43:03+00:00
 category: pensiones
 tags: [pensiones, jubilacion, revalorizacion, airef, seguridad-social]
 pendiente: false
-image: /img/articulos/las-pensiones-cuestan-14-500-millones-al-mes-un-60-mas-que-en-2018.webp
-imageAlt: "Portada: Las pensiones cuestan 14.500 millones al mes, un 60% más que en 2018"
 sources:
   - name: "El Mundo Economía: La factura de las pensiones se dispara un 60% en la era Sánchez y obliga al futuro Gobierno a hacer"
     url: "https://www.elmundo.es/economia/2026/10/16/6ad0c79dfdddffcb318b45a3.html"
+image: /img/banco/seguridad-social-02.webp
+imageAlt: "Oficina de la Seguridad Social en Granada"
+imageCredit: "Zarateman / Wikimedia Commons (CC0)"
+imageCreditUrl: "https://commons.wikimedia.org/wiki/File:Granada_-_Oficina_Integral_de_la_Seguridad_Social_2.jpg"
 ---
 
 La nómina mensual de pensiones ha pasado de poco más de 9.000 millones de euros en junio de 2018 a rozar los 14.500 millones en septiembre de 2026. Es un 60% más, según los datos que recoge El Mundo. Y el gasto sigue creciendo.

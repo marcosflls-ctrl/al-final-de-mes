@@ -5,11 +5,13 @@ date: 2026-10-16T23:41:02+00:00
 category: paro
 tags: ["smi", "salario-minimo", "convenios", "sindicatos", "nominas"]
 pendiente: true
-image: /img/articulos/casi-5-millones-de-asalariados-quedarian-cerca-del-smi-si-sube-un-7.webp
-imageAlt: "Portada: Casi 5 millones de asalariados quedarían cerca del SMI si sube un 7%"
 sources:
   - name: "ABC Economía: Cinco millones de trabajadores cobrarán en el entorno del salario mínimo si sube un 7% como quieren"
     url: "https://www.abc.es/economia/cuentas-corrientes/cinco-millones-trabajadores-quedaran-encapsulados-smi-sube-20261015013620-nt.html"
+image: /img/banco/billetes-euro-01.webp
+imageAlt: "Billetes de euro"
+imageCredit: "Friedrich Haag / Wikimedia Commons (CC BY-SA 4.0)"
+imageCreditUrl: "https://commons.wikimedia.org/wiki/File:One_stands_out_002_2025_01_01.jpg"
 ---
 
 Los sindicatos piden subir el salario mínimo interprofesional (SMI) un 7% para 2027. Eso lo dejaría en **18.290,58 euros brutos al año**, unos 1.306,5 euros al mes en 14 pagas. Son 85,5 euros más que ahora, lo que sitúa el SMI actual en unos 1.221 euros.

@@ -5,11 +5,13 @@ date: 2026-10-13T07:52:27+00:00
 category: pensiones
 tags: [jubilacion, pensiones-2027, periodo-de-calculo, pension-minima, jubilacion-anticipada]
 pendiente: true
-image: /img/articulos/jubilacion-en-2027-37-anos-para-cobrar-el-100-y-25-anos-y-8-meses-de-calcul.webp
-imageAlt: "Portada: Jubilación en 2027: 37 años para cobrar el 100% y 25 años y 8 meses de cálculo"
 sources:
   - name: "20minutos Economía: Los nueve cambios para la jubilación en 2027, según el abogado laboralista Ignacio Solsona"
     url: "https://www.20minutos.es/lainformacion/economia-y-finanzas/cambios-jubilacion-ignacio-solsona-abogado-laboralista_7046207_0.html"
+image: /img/banco/seguridad-social-08.webp
+imageAlt: "Sede de la Seguridad Social en Málaga"
+imageCredit: "Tyk / Wikimedia Commons (CC BY-SA 3.0)"
+imageCreditUrl: "https://commons.wikimedia.org/wiki/File:Sede_de_la_Seguridad_Social,_M%C3%A1laga.jpg"
 ---
 
 Si te jubilas a partir del 1 de enero de 2027, te afectarán varios cambios a la vez: más años cotizados para jubilarte a los 65, un periodo de cálculo más largo y 37 años de cotización para cobrar el 100% de la base reguladora. Así lo recoge 20minutos, que reproduce el repaso del abogado laboralista Ignacio Solsona. Algunas cifras son calendario ya previsto. Otras son estimaciones suyas o medidas que aún no son ley.

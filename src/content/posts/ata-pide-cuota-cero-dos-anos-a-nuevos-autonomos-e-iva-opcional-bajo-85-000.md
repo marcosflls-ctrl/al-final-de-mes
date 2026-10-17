@@ -5,11 +5,13 @@ date: 2026-10-13T19:53:47+00:00
 category: paro
 tags: [autonomos, cuota-cero, iva, ata, seguridad-social]
 pendiente: true
-image: /img/articulos/ata-pide-cuota-cero-dos-anos-a-nuevos-autonomos-e-iva-opcional-bajo-85-000.webp
-imageAlt: "Portada: ATA pide cuota cero dos años a nuevos autónomos e IVA opcional bajo 85.000 €"
 sources:
   - name: "20minutos Economía: Los autónomos entran en campaña y piden a los partidos cuota cero para las nuevas altas y exención d"
     url: "https://www.20minutos.es/lainformacion/economia-y-finanzas/los-autonomos-entran-campana-piden-los-partidos-cuota-cero-para-las-nuevas-altas-exencion-iva-para-los-que-menos-facturen_7048212_0.html"
+image: /img/banco/calculadora-03.webp
+imageAlt: "Teclado de una calculadora"
+imageCredit: "Coyau / Wikimedia Commons (CC BY-SA 3.0)"
+imageCreditUrl: "https://commons.wikimedia.org/wiki/File:Aurora_electronic_calculator_DT210_05.jpg"
 ---
 
 La asociación de autónomos ATA, integrada en CEOE y presidida por Lorenzo Amor, ha enviado a los partidos que concurren a las próximas elecciones un documento con 10 medidas para el colectivo. Su contenido ha trascendido este martes, según publica 20minutos. La primera: **cuota de cero euros a la Seguridad Social para los nuevos autónomos durante sus dos primeros años de actividad**.

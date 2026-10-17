@@ -5,11 +5,13 @@ date: 2026-10-14T23:58:13+00:00
 category: hacienda
 tags: [iva, irpf, inflacion, cesta-de-la-compra, pp]
 pendiente: true
-image: /img/articulos/el-pp-propone-iva-0-en-la-cesta-basica-y-10-en-la-energia.webp
-imageAlt: "Portada: El PP propone IVA 0 % en la cesta básica y 10 % en la energía"
 sources:
   - name: "Expansión Economía: El PP plantea un \"plan de choque\" con rebajas en IVA e IRPF para contener el alza de precios"
     url: "https://www.expansion.com/economia/2026/10/14/pp-plantea-plan-choque-rebajas-iva-e-irpf-contener-alza-precios.html"
+image: /img/banco/carro-compra-01.webp
+imageAlt: "Carro de la compra en un supermercado"
+imageCredit: "safaritravelplus / Wikimedia Commons (CC0)"
+imageCreditUrl: "https://commons.wikimedia.org/wiki/File:Shopping_Cart_Supermarket.jpg"
 ---
 
 El Partido Popular ha presentado un "plan de choque" para frenar el efecto de la inflación en los hogares. Según publica Expansión, incluye tres medidas fiscales. Por ahora son solo una propuesta de un partido de la oposición: no se ha aprobado nada y no cambia lo que pagas hoy.

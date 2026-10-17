@@ -6,8 +6,6 @@ category: hacienda
 guia: true
 orden: 4
 tags: [loteria-navidad, premios, hacienda, impuestos]
-image: /img/articulos/loteria-navidad-2026-premios-y-cuanto-se-queda-hacienda.webp
-imageAlt: "Portada: Lotería de Navidad 2026"
 sources:
   - name: "BOE: Ley 35/2006 del IRPF, disposición adicional trigésima tercera (gravamen especial sobre premios de loterías)"
     url: "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764"
@@ -15,6 +13,10 @@ sources:
     url: "https://www.elindependiente.com/economia/2025/12/04/hacienda-premios-loteria-navidad/"
   - name: "Loterías y Apuestas del Estado"
     url: "https://www.loteriasyapuestas.es/"
+image: /img/banco/loteria-01.webp
+imageAlt: "Cola para comprar lotería en Doña Manolita, en Madrid"
+imageCredit: "Barcex / Wikimedia Commons (CC BY-SA 3.0)"
+imageCreditUrl: "https://commons.wikimedia.org/wiki/File:Madrid_-_Do%C3%B1a_Manolita_-_141203_121852.jpg"
 ---
 
 El Sorteo Extraordinario de Navidad se celebra el **martes 22 de diciembre de 2026**. Cada décimo cuesta 20 euros. Esta guía recoge lo que paga cada premio, cuánto se queda Hacienda y cómo se cobra.

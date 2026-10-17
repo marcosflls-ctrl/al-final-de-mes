@@ -5,11 +5,13 @@ date: 2026-10-13T07:53:22+00:00
 category: pensiones
 tags: [pensiones, revalorizacion, ipc, salario-minimo, 2027]
 pendiente: true
-image: /img/articulos/pensiones-2027-la-subida-se-conocera-el-27-de-noviembre-y-rondaria-el-3-5.webp
-imageAlt: "Portada: Pensiones 2027: la subida se conocerá el 27 de noviembre y rondaría el 3,5%"
 sources:
   - name: "La Vanguardia Economía: SMI, pensiones y elecciones"
     url: "https://www.lavanguardia.com/economia/20261012/11656593/smi-pensiones-y-elecciones.html"
+image: /img/banco/seguridad-social-07.webp
+imageAlt: "Oficina de la Seguridad Social en Chiclana de la Frontera"
+imageCredit: "Zarateman / Wikimedia Commons (CC0)"
+imageCreditUrl: "https://commons.wikimedia.org/wiki/File:Chiclana_de_la_Frontera_-_Oficina_de_la_Seguridad_Social.jpg"
 ---
 
 Los 9,5 millones de pensionistas sabrán el 27 de noviembre cuánto subirá su pensión el próximo año. Ese día se publica el IPC adelantado de noviembre, el dato que cierra el cálculo. Según publica La Vanguardia, la subida estará **en torno al 3,5%**. Es una estimación del medio, no una cifra oficial.

@@ -5,11 +5,13 @@ date: 2026-10-16T19:59:51+00:00
 category: vivienda
 tags: ["cantabria", "alquiler-asequible", "viviendas-vacias", "ayudas-propietarios", "ibi"]
 pendiente: true
-image: /img/articulos/cantabria-alquila-el-inquilino-pagaria-un-maximo-del-30-de-sus-ingresos.webp
-imageAlt: "Portada: Cantabria Alquila: el inquilino pagaría un máximo del 30% de sus ingresos"
 sources:
   - name: "El Mundo Economía: Cantabria inicia un plan para incorporar viviendas vacías al mercado de alquiler asequible"
     url: "https://www.elmundo.es/economia/vivienda/2026/10/16/6ad26d4be9cf4a2a0b8b45c4.html"
+image: /img/banco/se-alquila-05.webp
+imageAlt: "Cartel de «se alquila» en un local"
+imageCredit: "19Tarrestnom65 / Wikimedia Commons (CC BY-SA 4.0)"
+imageCreditUrl: "https://commons.wikimedia.org/wiki/File:Piedrah%C3%ADta,_%C3%81vila_47.jpg"
 ---
 
 El Gobierno de Cantabria quiere sacar al mercado las viviendas vacías con un programa llamado **'Cantabria Alquila'**. El inquilino pagaría una renta asequible, que no superaría el 30% de los ingresos de su hogar. El propietario cobraría la renta de mercado, y el Ejecutivo regional pondría la diferencia. Por ahora es un **borrador de decreto, no una norma aprobada**.

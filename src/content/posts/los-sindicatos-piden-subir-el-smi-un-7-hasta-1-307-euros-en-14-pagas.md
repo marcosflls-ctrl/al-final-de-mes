@@ -5,11 +5,13 @@ date: 2026-10-13T12:46:32+00:00
 category: paro
 tags: [smi, salario-minimo, ugt, ccoo, irpf]
 pendiente: true
-image: /img/articulos/los-sindicatos-piden-subir-el-smi-un-7-hasta-1-307-euros-en-14-pagas.webp
-imageAlt: "Portada: Los sindicatos piden subir el SMI un 7%, hasta 1.307 euros en 14 pagas"
 sources:
   - name: "20minutos Economía: Los sindicatos plantean subir el SMI un 7% hasta situarlo en 1.307 euros brutos al mes"
     url: "https://www.20minutos.es/lainformacion/economia-y-finanzas/los-sindicatos-plantean-subir-smi-un-7-hasta-situarlos-1-307-euros-brutos-mes_7048076_0.html"
+image: /img/banco/billetes-euro-07.webp
+imageAlt: "Billetes de 20 y 50 euros"
+imageCredit: "Markus Spiske from Forchheim, Bavaria Upper Franconia / Wikimedia Commons (CC BY 2.0)"
+imageCreditUrl: "https://commons.wikimedia.org/wiki/File:EURO_Cash_Money_Banknote_(49643807026).jpg"
 ---
 
 UGT y CCOO han propuesto al Gobierno subir el salario mínimo interprofesional (SMI) un **7%**. Si se aceptara, pasaría de **1.221 euros** a **1.307 euros brutos al mes en 14 pagas**. Son unos 85,5 euros más al mes. Es solo una propuesta sindical: **no hay nada aprobado** y el Gobierno aún no ha decidido la cifra, según publica 20minutos.

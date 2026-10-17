@@ -6,8 +6,6 @@ category: paro
 guia: true
 orden: 1
 tags: [empleo, smi, salario-minimo, jornada-laboral, subsidio, elecciones-29n, partidos]
-image: /img/articulos/empleo-elecciones-29n-balance-y-propuestas.webp
-imageAlt: "Portada: Empleo, salario mínimo y elecciones del 29N"
 sources:
   - name: "elDiario.es: el Congreso aprueba la reforma del subsidio por desempleo en la segunda votación"
     url: "https://www.eldiario.es/economia/congreso-aprueba-reforma-subsidio-desempleo-segunda-voto_1_11463123.html"
@@ -27,6 +25,10 @@ sources:
     url: "https://www.moncloa.com/2026/10/16/propuestas-economicas-vox-pp-29n-3449552/"
   - name: "Forbes: las cinco batallas económicas del 29N"
     url: "https://forbes.es/actualidad/1036705/elecciones-2026-batallas-economicas-29-n/"
+image: /img/banco/congreso-03.webp
+imageAlt: "Fachada del Congreso de los Diputados"
+imageCredit: "Yann Droneaud from Paris (France). / Wikimedia Commons (CC BY-SA 2.0)"
+imageCreditUrl: "https://commons.wikimedia.org/wiki/File:Congreso_de_los_Diputados_(Espa%C3%B1a)_05.jpg"
 ---
 
 El salario mínimo, la jornada laboral y las bajas médicas son algunos de los temas de trabajo que más enfrentan a los partidos de cara a las elecciones generales del **29 de noviembre de 2026**. Esta guía repasa en la primera parte qué se aprobó en la legislatura y qué se quedó por el camino. En la segunda recoge lo que plantean los partidos.

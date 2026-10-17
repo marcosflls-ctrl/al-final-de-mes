@@ -79,7 +79,7 @@ const actualizado = d.updated && d.updated.getTime() - d.date.getTime() > 36e5;
     </header>
     <figure class="hero">
       <img data-pagefind-meta="image[src]" fetchpriority="high" decoding="async" src={img} srcset={srcset(img)} sizes="(max-width: 800px) 100vw, 760px" alt={d.image ? (d.imageAlt ?? '') : ''} width="1600" height="900" />
-      {d.image && d.imageCredit && <figcaption class="credit">Imagen: {d.imageCredit}</figcaption>}
+      {d.image && d.imageCredit && <figcaption class="credit">Imagen: {d.imageCreditUrl ? <a href={d.imageCreditUrl} rel="nofollow noopener" target="_blank">{d.imageCredit}</a> : d.imageCredit}</figcaption>}
     </figure>
     {d.pendiente && (
       <p class="pendiente-nota"><strong>Todavía no es oficial.</strong> Lo que cuenta este artículo está anunciado o en tramitación, pero aún no se ha publicado en el Boletín Oficial del Estado y puede cambiar. Lo actualizaremos cuando se apruebe.</p>

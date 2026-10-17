@@ -13,6 +13,7 @@ const posts = defineCollection({
     image: z.string().optional(),
     imageAlt: z.string().optional(),
     imageCredit: z.string().optional(),
+    imageCreditUrl: z.string().url().optional(),
     // propuesta o anuncio aún no publicado en el BOE → aviso visible
     pendiente: z.boolean().default(false),
     // guía viva: página de referencia que se mantiene actualizada en la misma dirección

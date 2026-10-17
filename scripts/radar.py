@@ -282,11 +282,18 @@ FORMATO DE RESPUESTA: solo un objeto JSON válido, sin texto alrededor:
   "pendiente": true | false,
   "title": "titular de 55-90 caracteres, concreto, con la cifra o fecha si existe",
   "card_title": "versión corta del titular para la imagen de portada, máximo 70 caracteres",
+  "foto": "tema de la foto de portada que mejor encaja, de esta lista: {temas_foto}; o \"\" si ninguno encaja de verdad",
   "description": "entradilla de 130-160 caracteres que ya responde a la pregunta",
   "tags": ["3-5 etiquetas en minúsculas"],
   "official_source": {"name": "nombre del documento u organismo oficial", "url": "enlace oficial"} | null,
   "body": "artículo en Markdown, sin el título como # al principio"
 }"""
+try:
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    from banco import TEMAS as _TEMAS_FOTO, elegir as elegir_foto
+except Exception:  # noqa: BLE001
+    _TEMAS_FOTO, elegir_foto = [], None
+SYSTEM = SYSTEM.replace("{temas_foto}", ", ".join(_TEMAS_FOTO) or "(ninguno)")
 
 _CLIENT = None
 
@@ -358,17 +365,27 @@ def save_post(data: dict, item: dict) -> Path:
         i += 1
     slug = path.stem
 
-    # Portada con el titular (Discover necesita una imagen grande)
+    # Portada: una foto real del banco si encaja con la noticia (Discover las prefiere);
+    # si no, la portada con el titular
     img_lines = ""
+    foto = None
     try:
-        sys.path.insert(0, str(Path(__file__).resolve().parent))
-        from miniaturas import make_variants, make_crops
-        img = crear_portada(data.get("card_title") or data["title"], data["category"], IMG_DIR / f"{slug}.webp")
-        make_variants(img)
-        make_crops(img)
-        img_lines = f"image: /img/articulos/{slug}.webp\nimageAlt: {yaml_str('Portada: ' + data['title'][:140])}\n"
+        foto = elegir_foto(data["title"], data["category"], data.get("foto") or "") if elegir_foto else None
     except Exception as e:  # noqa: BLE001
-        print(f"  ! no se pudo crear la portada: {e}")
+        print(f"  ! no se pudo elegir foto: {e}")
+    if foto:
+        img_lines = (f"image: /img/banco/{foto['slug']}.webp\nimageAlt: {yaml_str(foto['alt'])}\n"
+                     f"imageCredit: {yaml_str(foto['credito'])}\nimageCreditUrl: {yaml_str(foto['pagina'])}\n")
+    else:
+        try:
+            sys.path.insert(0, str(Path(__file__).resolve().parent))
+            from miniaturas import make_variants, make_crops
+            img = crear_portada(data.get("card_title") or data["title"], data["category"], IMG_DIR / f"{slug}.webp")
+            make_variants(img)
+            make_crops(img)
+            img_lines = f"image: /img/articulos/{slug}.webp\nimageAlt: {yaml_str('Portada: ' + data['title'][:140])}\n"
+        except Exception as e:  # noqa: BLE001
+            print(f"  ! no se pudo crear la portada: {e}")
 
     fuentes = []
     of = data.get("official_source") or {}

@@ -6,8 +6,6 @@ category: vivienda
 guia: true
 orden: 1
 tags: [vivienda, alquiler, elecciones-29n, partidos, legislatura, decreto-vivienda]
-image: /img/articulos/vivienda-elecciones-29n-balance-y-propuestas.webp
-imageAlt: "Portada: Vivienda y elecciones del 29N"
 sources:
   - name: "Iberley: el Congreso rechaza el Real Decreto-ley 8/2026 de prórrogas del alquiler"
     url: "https://www.iberley.es/noticias/el-congreso-rechaza-rd-ley-8-2026-20-marzo-alquiler-prorrogas-36398"
@@ -35,6 +33,10 @@ sources:
     url: "https://www.infobae.com/espana/agencias/2026/10/11/vox-propone-construir-masivamente-vivienda-social-y-adjudicarla-con-prioridad-nacional/"
   - name: "Moncloa.com: Bustinduy acusa a PP, Vox y Junts de rentismo (03/10/2026)"
     url: "https://www.moncloa.com/2026/10/03/bustinduy-sumar-rentismo-decretos-vivienda-3441894"
+image: /img/banco/congreso-02.webp
+imageAlt: "El Congreso de los Diputados de noche"
+imageCredit: "Roberto García from Spain / Wikimedia Commons (CC BY 2.0)"
+imageCreditUrl: "https://commons.wikimedia.org/wiki/File:Congreso_de_los_Diputados_(Espa%C3%B1a)_10.jpg"
 ---
 
 La vivienda ha marcado el final de la legislatura: el Congreso tumbó los decretos de vivienda el 2 de octubre, pocos días antes de que se convocaran las elecciones generales del **29 de noviembre de 2026**. Esta guía tiene dos partes. La primera repasa qué se aprobó, qué cayó y qué está pendiente. La segunda recoge lo que plantean los partidos.

@@ -5,11 +5,13 @@ date: 2026-10-16T09:55:41+00:00
 category: vivienda
 tags: [alquiler, prorroga, lau, subida-del-alquiler, vivienda]
 pendiente: false
-image: /img/articulos/alquiler-de-cinco-anos-sin-aviso-del-casero-prorroga-de-3-anos-no-de-2.webp
-imageAlt: "Portada: Alquiler de cinco años sin aviso del casero: prórroga de 3 años, no de 2"
 sources:
   - name: "El País Economía: Mi alquiler cumple cinco años y el casero no ha dicho nada. ¿Se prorroga tres años o dos? ¿A qué pre"
     url: "https://elpais.com/economia/vivienda/consultorio/2026-10-16/mi-alquiler-cumple-cinco-anos-y-el-casero-no-ha-dicho-nada-se-prorroga-tres-anos-o-dos.html"
+image: /img/banco/fachada-balcones-02.webp
+imageAlt: "Fachada con balcones en Barcelona"
+imageCredit: "Zarateman / Wikimedia Commons (CC0)"
+imageCreditUrl: "https://commons.wikimedia.org/wiki/File:Barcelona_-_Fachadas_02.jpg"
 ---
 
 Tu contrato de alquiler cumple cinco años y el propietario no ha dicho nada. En ese caso, **se prorroga tres años, no dos**. Y si toca actualizar la renta antes del 31 de diciembre de 2027 y no hay acuerdo, la subida **no puede superar el 2%**. Es lo que explica el consultorio de vivienda de El País, elaborado con Legálitas, a un lector con un contrato firmado en noviembre de 2021.

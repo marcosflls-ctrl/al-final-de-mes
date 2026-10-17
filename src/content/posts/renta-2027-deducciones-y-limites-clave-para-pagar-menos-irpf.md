@@ -5,11 +5,13 @@ date: 2026-10-14T15:52:03+00:00
 category: hacienda
 tags: [renta, irpf, deducciones, planes-de-pensiones, donaciones]
 pendiente: false
-image: /img/articulos/renta-2027-deducciones-y-limites-clave-para-pagar-menos-irpf.webp
-imageAlt: "Portada: Renta 2027: deducciones y límites clave para pagar menos IRPF"
 sources:
   - name: "20minutos Economía: Hipoteca, planes de pensiones, retribución flexible, donaciones... Los trucos para ahorrar hasta 10."
     url: "https://www.20minutos.es/lainformacion/economia-y-finanzas/trucos-ahorrar-euros-proxima-declaracion-renta_7048738_0.html"
+image: /img/banco/calculadora-06.webp
+imageAlt: "Calculadora de sobremesa"
+imageCredit: "Coyau / Wikimedia Commons (CC BY-SA 3.0)"
+imageCreditUrl: "https://commons.wikimedia.org/wiki/File:Aurora_electronic_calculator_DT210_02.jpg"
 ---
 
 La próxima campaña de la Renta empieza en abril de 2027 y declarará los ingresos de este año. Muchas decisiones que influyen en el resultado se toman antes de que acabe 2026. Según publica 20minutos, una guía de TaxDown y Roams reúne 20 medidas para reducir la factura fiscal. La guía habla de un ahorro de hasta 10.000 euros en el mejor de los casos. Es un máximo, no una cifra para todo el mundo: cada medida depende de tu situación.

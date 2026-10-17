@@ -5,11 +5,13 @@ date: 2026-10-16T09:55:13+00:00
 category: vivienda
 tags: [hipotecas, euribor, hipoteca-fija, vivienda, ocu]
 pendiente: false
-image: /img/articulos/hipotecas-la-vivienda-financiada-baja-a-248-000-en-septiembre-por-el-euribo.webp
-imageAlt: "Portada: Hipotecas: la vivienda financiada baja a 248.000 € en septiembre por el euríbor"
 sources:
   - name: "20minutos Economía: Las consecuencias directas de las nuevas subidas de las hipotecas: \"El gran problema ya no es solo c"
     url: "https://www.20minutos.es/lainformacion/economia-y-finanzas/las-consecuencias-directas-las-nuevas-subidas-las-hipotecas-gran-problema-ya-no-es-solo-conseguir-financiacion_7046971_0.html"
+image: /img/banco/banco-de-espana-06.webp
+imageAlt: "Sede del Banco de España en Madrid"
+imageCredit: "Sanva1959 / Wikimedia Commons (CC BY-SA 3.0 es)"
+imageCreditUrl: "https://commons.wikimedia.org/wiki/File:Edificio_del_Banco_de_Espa%C3%B1a_2_Madrid.jpg"
 ---
 
 Con el euríbor más alto desde julio de 2024, las familias piden hipoteca para viviendas más baratas. Según publica 20minutos con datos del Centro de Estudios de Trioteca, el valor medio de la casa que se quiere financiar fue de **248.000 euros en septiembre**. En julio era de 300.000.
