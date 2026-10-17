@@ -4,6 +4,7 @@ import Siguenos from '../../components/Siguenos.astro';
 import Compartir from '../../components/Compartir.astro';
 import { SITE } from '../../config';
 import { calcular, PARAMETROS_2026 } from '../../lib/sueldo';
+import { BRUTOS_PAGINA, urlSueldo } from '../../lib/sueldos-pagina';
 
 const titulo = 'Calculadora de sueldo neto 2026';
 const descripcion = 'Calcula cuánto cobrarás limpio al mes en 2026 a partir de tu sueldo bruto anual: retención de IRPF con el algoritmo oficial de Hacienda y cotizaciones a la Seguridad Social.';
@@ -171,7 +172,7 @@ const anioActual = PARAMETROS_2026.ejercicio;
           <tbody>
             {tabla.map((f) => (
               <tr>
-                <th scope="row">{eur(f.b)} €{f.b === PARAMETROS_2026.smiAnual && <span class="muted"> (SMI)</span>}</th>
+                <th scope="row">{BRUTOS_PAGINA.includes(f.b) ? <a href={urlSueldo(f.b)}>{eur(f.b)} €</a> : <>{eur(f.b)} €</>}{f.b === PARAMETROS_2026.smiAnual && <span class="muted"> (SMI)</span>}</th>
                 <td>{eur(f.tipo, 2)} %</td>
                 <td>{eur(f.mes14)} €</td>
                 <td>{eur(f.extra)} €</td>
@@ -181,6 +182,7 @@ const anioActual = PARAMETROS_2026.ejercicio;
           </tbody>
         </table>
       </div>
+      <p><a href="/hacienda/sueldo-neto/">Ver la tabla completa, de 15.000 a 100.000 € brutos</a>, con el desglose de cada sueldo.</p>
 
       <h2>Qué se descuenta de la nómina</h2>
       <p>Del sueldo bruto salen dos descuentos: lo que pagas a la Seguridad Social y la retención a cuenta del IRPF.</p>
@@ -312,6 +314,8 @@ const anioActual = PARAMETROS_2026.ejercicio;
   form.addEventListener('input', actualizar);
   form.addEventListener('change', actualizar);
   form.addEventListener('submit', (ev) => ev.preventDefault());
+  const pedido = new URLSearchParams(location.search).get('bruto');
+  if (pedido && leerNumero(pedido) > 0) ($('bruto') as HTMLInputElement).value = String(leerNumero(pedido));
   actualizar();
 </script>
 

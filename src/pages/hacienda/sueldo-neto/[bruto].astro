@@ -1,0 +1,192 @@
+---
+import Base from '../../../layouts/Base.astro';
+import Compartir from '../../../components/Compartir.astro';
+import { SITE } from '../../../config';
+import { PARAMETROS_2026 } from '../../../lib/sueldo';
+import { BRUTOS_PAGINA, slugSueldo, urlSueldo, base, CASOS } from '../../../lib/sueldos-pagina';
+
+export function getStaticPaths() {
+  return BRUTOS_PAGINA.map((b) => ({ params: { bruto: slugSueldo(b) }, props: { b } }));
+}
+const { b } = Astro.props as { b: number };
+
+const eur = (n: number, dec = 0) => n.toLocaleString('es-ES', { minimumFractionDigits: dec, maximumFractionDigits: dec, useGrouping: 'always' } as any);
+const B = eur(b);
+const r14 = base(b, 14);
+const r12 = base(b, 12);
+const smi = PARAMETROS_2026.smiAnual;
+
+const titulo = `${B} euros brutos al año: cuánto es en neto en 2026`;
+const descripcion = `Con ${B} € brutos al año cobras unos ${eur(r14.netoMensual)} € netos al mes en 14 pagas o ${eur(r12.netoMensual)} € en 12 pagas. Retención de IRPF del ${eur(r14.tipoRetencion, 2)} % y desglose de la nómina en 2026.`;
+const url = `${SITE.url}${urlSueldo(b)}`;
+
+// Situaciones familiares
+const casos = CASOS.map((c) => {
+  const a = base(b, 14, c.e), m = base(b, 12, c.e);
+  return { ...c, tipo: a.tipoRetencion, mes14: a.netoMensual, mes12: m.netoMensual, anual: a.netoAnual };
+});
+
+// Qué pasa con una subida: sueldos cercanos
+const cercanos = [-2000, -1000, 0, 1000, 2000, 5000, 10000].map((d) => b + d).filter((x) => x >= 12000);
+const filasCercanos = cercanos.map((x) => {
+  const r = base(x, 14);
+  return { x, tipo: r.tipoRetencion, mes14: r.netoMensual, anual: r.netoAnual, dif: r.netoAnual - r14.netoAnual, pagina: BRUTOS_PAGINA.includes(x) };
+});
+const subida = base(b + 1000, 14);
+const quedan = subida.netoAnual - r14.netoAnual;
+
+const ss = r14.desgloseSS;
+const veces = b / smi;
+const anterior = BRUTOS_PAGINA.includes(b - 1000) ? b - 1000 : null;
+const siguiente = BRUTOS_PAGINA.includes(b + 1000) ? b + 1000 : null;
+
+const preguntas = [
+  {
+    q: `¿Cuánto son ${B} euros brutos al mes?`,
+    a: `En 14 pagas son ${eur(r14.brutoPorPaga, 2)} € brutos en cada nómina y en cada paga extra. En 12 pagas son ${eur(r12.brutoPorPaga, 2)} € brutos al mes. Una vez descontados la Seguridad Social y el IRPF, quedan ${eur(r14.netoMensual, 2)} € y ${eur(r12.netoMensual, 2)} € netos, respectivamente.`,
+  },
+  {
+    q: `¿Qué retención de IRPF corresponde a ${B} euros brutos?`,
+    a: r14.exento
+      ? `A una persona soltera sin hijos no se le aplica retención con ${B} € al año, porque está por debajo del mínimo exento de 15.876 €. Lo que sí se descuenta son las cotizaciones a la Seguridad Social.`
+      : `Para una persona soltera, sin hijos y con contrato indefinido, el tipo de retención en 2026 es del ${eur(r14.tipoRetencion, 2)} %: unos ${eur(r14.retencion)} € al año. Con hijos o con la pareja a cargo la retención baja; lo tienes en la tabla de esta página.`,
+  },
+  {
+    q: `¿Cuánto se paga a la Seguridad Social con ${B} euros brutos?`,
+    a: `El trabajador aporta ${eur(r14.seguridadSocial, 2)} € al año con contrato indefinido, unos ${eur(r14.seguridadSocial / 12, 2)} € al mes. La empresa paga además su parte, que no aparece en el sueldo bruto.`,
+  },
+  {
+    q: `Si me suben a ${eur(b + 1000)} euros, ¿cuánto más cobro?`,
+    a: `De los 1.000 € brutos de subida te quedan unos ${eur(quedan)} € netos al año, ${eur(quedan / 14, 2)} € más en cada una de las 14 pagas. El resto se va en cotizaciones y en la retención, que sube un poco con el sueldo.`,
+  },
+];
+
+const jsonLd = [
+  {
+    '@context': 'https://schema.org', '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Inicio', item: SITE.url + '/' },
+      { '@type': 'ListItem', position: 2, name: 'Hacienda', item: `${SITE.url}/hacienda/` },
+      { '@type': 'ListItem', position: 3, name: 'Sueldo neto según el bruto', item: `${SITE.url}/hacienda/sueldo-neto/` },
+      { '@type': 'ListItem', position: 4, name: `${B} € brutos`, item: url },
+    ],
+  },
+  {
+    '@context': 'https://schema.org', '@type': 'FAQPage',
+    mainEntity: preguntas.map((p) => ({ '@type': 'Question', name: p.q, acceptedAnswer: { '@type': 'Answer', text: p.a } })),
+  },
+];
+---
+<Base title={titulo} description={descripcion.slice(0, 165)} jsonLd={jsonLd}>
+  <nav class="breadcrumbs"><a href="/">Inicio</a> › <a href="/hacienda/">Hacienda</a> › <a href="/hacienda/sueldo-neto/">Sueldo neto según el bruto</a></nav>
+  <article class="sueldo">
+    <h1>{B} euros brutos al año: cuánto es en neto</h1>
+    <p class="lead">Con un sueldo de <strong>{B} € brutos al año</strong> cobras <strong>{eur(r14.netoMensual)} € netos al mes</strong> si lo recibes en 14 pagas, más dos pagas extra de {eur(r14.netoExtra!)} €. Si lo cobras en 12 pagas, son <strong>{eur(r12.netoMensual)} € al mes</strong>. Cálculo para 2026, para una persona soltera, sin hijos y con contrato indefinido.</p>
+
+    <div class="cifras">
+      <div><span class="et">Neto al mes, 14 pagas</span><span class="num">{eur(r14.netoMensual)} €</span><span class="sub">y 2 extras de {eur(r14.netoExtra!)} €</span></div>
+      <div><span class="et">Neto al mes, 12 pagas</span><span class="num">{eur(r12.netoMensual)} €</span><span class="sub">con las extras repartidas</span></div>
+      <div><span class="et">Neto al año</span><span class="num">{eur(r14.netoAnual)} €</span><span class="sub">retención del {eur(r14.tipoRetencion, 2)} %</span></div>
+    </div>
+
+    <p class="cta"><a class="boton" href={`/hacienda/calculadora-sueldo-neto/?bruto=${b}`}>Calcular con tu situación</a> <span class="muted">Hijos, edad, discapacidad o tipo de contrato cambian el resultado.</span></p>
+
+    <section class="prose">
+      <h2>De dónde sale: el desglose de la nómina</h2>
+      <div class="tabla-scroll">
+        <table class="tabla">
+          <thead><tr><th scope="col">Concepto</th><th scope="col">Al año</th><th scope="col">Al mes (14 pagas)</th><th scope="col">Al mes (12 pagas)</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Sueldo bruto</th><td>{eur(b, 2)} €</td><td>{eur(r14.brutoPorPaga, 2)} €</td><td>{eur(r12.brutoPorPaga, 2)} €</td></tr>
+            <tr><th scope="row">− Seguridad Social</th><td>{eur(r14.seguridadSocial, 2)} €</td><td>{eur(r14.seguridadSocial / 12, 2)} €</td><td>{eur(r12.seguridadSocial / 12, 2)} €</td></tr>
+            <tr><th scope="row">− Retención de IRPF ({eur(r14.tipoRetencion, 2)} %)</th><td>{eur(r14.retencion, 2)} €</td><td>{eur(r14.brutoPorPaga * r14.tipoRetencion / 100, 2)} €</td><td>{eur(r12.brutoPorPaga * r12.tipoRetencion / 100, 2)} €</td></tr>
+            <tr class="total"><th scope="row">Sueldo neto</th><td>{eur(r14.netoAnual, 2)} €</td><td>{eur(r14.netoMensual, 2)} €</td><td>{eur(r12.netoMensual, 2)} €</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>En 14 pagas, las cotizaciones de las dos pagas extra se descuentan repartidas en las doce nóminas normales. Por eso cada paga extra, de {eur(r14.netoExtra!, 2)} € netos, es algo mayor que una nómina ordinaria: solo se le resta el IRPF.</p>
+      <p>De los {eur(r14.seguridadSocial, 2)} € de Seguridad Social, {eur(ss.comunes, 2)} € son contingencias comunes (4,70 %), {eur(ss.desempleo, 2)} € desempleo (1,55 %), {eur(ss.mei, 2)} € el Mecanismo de Equidad Intergeneracional (0,15 %) y {eur(ss.formacion, 2)} € formación profesional (0,10 %){ss.solidaridad > 0 && <>. Como el sueldo supera la base máxima de cotización, se suman {eur(ss.solidaridad, 2)} € de cotización de solidaridad</>}.</p>
+
+      <h2>Con hijos, pareja a cargo o contrato temporal</h2>
+      <p>La retención depende de la situación familiar. Con el mismo sueldo de {B} € brutos:</p>
+      <div class="tabla-scroll">
+        <table class="tabla">
+          <thead><tr><th scope="col">Situación</th><th scope="col">Retención</th><th scope="col">Neto al mes (14 pagas)</th><th scope="col">Neto al mes (12 pagas)</th></tr></thead>
+          <tbody>
+            {casos.map((c) => (
+              <tr><th scope="row">{c.nombre}<span class="det">{c.detalle}</span></th><td>{eur(c.tipo, 2)} %</td><td>{eur(c.mes14)} €</td><td>{eur(c.mes12)} €</td></tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p class="muted small">Persona nacida en 1990 y sin discapacidad. Los hijos compartidos se reparten el mínimo por descendientes con el otro progenitor, que es lo habitual cuando los dos trabajan.</p>
+
+      <h2>Si te suben el sueldo</h2>
+      <p>{r14.exento
+        ? <>Con {B} € todavía no hay retención de IRPF para una persona soltera sin hijos. Al subir el sueldo empieza a aplicarse, de forma gradual.</>
+        : <>De cada 1.000 € brutos de subida sobre {B} € te quedan unos <strong>{eur(quedan)} € netos</strong> al año. El resto se va en cotizaciones y en el IRPF.</>}</p>
+      <div class="tabla-scroll">
+        <table class="tabla">
+          <thead><tr><th scope="col">Bruto anual</th><th scope="col">Retención</th><th scope="col">Neto al mes (14 pagas)</th><th scope="col">Neto al año</th><th scope="col">Diferencia al año</th></tr></thead>
+          <tbody>
+            {filasCercanos.map((f) => (
+              <tr class={f.x === b ? 'actual' : ''}>
+                <th scope="row">{f.pagina && f.x !== b ? <a href={urlSueldo(f.x)}>{eur(f.x)} €</a> : <>{eur(f.x)} €</>}</th>
+                <td>{eur(f.tipo, 2)} %</td><td>{eur(f.mes14)} €</td><td>{eur(f.anual)} €</td>
+                <td>{f.x === b ? '—' : `${f.dif > 0 ? '+' : '−'} ${eur(Math.abs(f.dif))} €`}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
+      <h2>Comparado con el salario mínimo</h2>
+      <p>{b < smi
+        ? <>{B} € al año está por debajo del salario mínimo de 2026 para una jornada completa, {eur(smi)} € en 14 pagas de 1.221 €. Es el sueldo de un trabajo a tiempo parcial o de un contrato de menos de un año.</>
+        : <>{B} € brutos al año equivalen a {eur(veces, 2)} veces el salario mínimo de 2026, que es de {eur(smi)} € al año en 14 pagas de 1.221 €.</>}</p>
+
+      <h2>Preguntas frecuentes</h2>
+      {preguntas.map((p) => (<><h3>{p.q}</h3><p>{p.a}</p></>))}
+
+      <p class="muted small">Cálculo para 2026 en territorio común: toda España salvo País Vasco y Navarra, que tienen sus propias tablas de retención. La retención es un adelanto del IRPF: en la declaración de la renta se ajusta lo que pagas de verdad, que también depende de tu comunidad autónoma. Fuentes: Agencia Tributaria, <a href="https://sede.agenciatributaria.gob.es/static_files/Sede/Programas_ayuda/Retenciones/2026/Algoritmo%20Retenciones-2026_10sept.pdf" rel="nofollow noopener" target="_blank">algoritmo de cálculo del tipo de retención 2026</a>; bases y tipos de cotización de la Seguridad Social para 2026.</p>
+    </section>
+
+    <nav class="vecinos" aria-label="Otros sueldos">
+      {anterior ? <a href={urlSueldo(anterior)}>← {eur(anterior)} € brutos</a> : <span></span>}
+      <a href="/hacienda/sueldo-neto/">Todos los sueldos</a>
+      {siguiente ? <a href={urlSueldo(siguiente)}>{eur(siguiente)} € brutos →</a> : <span></span>}
+    </nav>
+    <Compartir title={titulo} url={url} />
+  </article>
+</Base>
+
+<style>
+  .sueldo { max-width: 860px; }
+  h1 { font-size: clamp(1.9rem, 5vw, 2.6rem); margin: 4px 0 12px; max-width: 24ch; }
+  .lead { font-size: 1.125rem; line-height: 1.55; margin: 0 0 24px; max-width: 70ch; }
+  .cifras { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1px; background: var(--rule); border-top: 2px solid var(--ink); margin-bottom: 20px; }
+  .cifras > div { background: var(--surface); padding: 16px; display: flex; flex-direction: column; gap: 4px; }
+  .et { font: 600 .8125rem var(--sans); text-transform: uppercase; letter-spacing: .04em; color: var(--muted); }
+  .num { font-family: var(--serif); font-size: clamp(1.6rem, 4vw, 2.2rem); font-weight: 600; color: var(--brand-dark); font-variant-numeric: tabular-nums; line-height: 1.15; }
+  .sub { font-size: .875rem; }
+  .cta { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; margin: 0 0 8px; }
+  .boton { display: inline-block; background: var(--brand); color: #fff; font-weight: 600; padding: 10px 16px; border-radius: 4px; text-decoration: none; }
+  .boton:hover { background: var(--brand-dark); }
+  .cta .muted { font-size: .875rem; }
+  .prose { margin-top: 32px; }
+  .tabla-scroll { overflow-x: auto; margin: 0 0 12px; }
+  .tabla { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums; display: table !important; }
+  .tabla th, .tabla td { padding: 8px 12px 8px 0; border-bottom: 1px solid var(--rule); text-align: right; font-size: .9375rem; white-space: nowrap; }
+  .tabla th:first-child { text-align: left; white-space: normal; }
+  .tabla thead th { font-size: .8125rem; font-weight: 600; border-bottom: 1px solid var(--ink); white-space: normal; vertical-align: bottom; }
+  .tabla tbody th { font-weight: 600; }
+  .tabla .total th, .tabla .total td { font-weight: 600; border-top: 1px solid var(--ink); border-bottom: 0; }
+  .tabla .actual th, .tabla .actual td { background: var(--surface); }
+  .det { display: block; font-weight: 400; font-size: .8125rem; color: var(--muted); }
+  .small { font-size: .8125rem; }
+  .vecinos { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin: 32px 0 8px; padding-top: 16px; border-top: 1px solid var(--rule); font-weight: 600; }
+  @media (max-width: 600px) {
+    .cifras { grid-template-columns: 1fr; }
+    .tabla th, .tabla td { font-size: .875rem; padding-right: 10px; }
+  }
+</style>
