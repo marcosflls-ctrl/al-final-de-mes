@@ -142,8 +142,8 @@ const jsonLd = [
 
       <h2>Comparado con el salario mínimo</h2>
       <p>{b < smi
-        ? <>{B} € al año está por debajo del salario mínimo de 2026 para una jornada completa, {eur(smi)} € en 14 pagas de 1.221 €. Es el sueldo de un trabajo a tiempo parcial o de un contrato de menos de un año.</>
-        : <>{B} € brutos al año equivalen a {eur(veces, 2)} veces el salario mínimo de 2026, que es de {eur(smi)} € al año en 14 pagas de 1.221 €.</>}</p>
+        ? <>{B} € al año está por debajo del salario mínimo de 2026 para una jornada completa, {eur(smi)} € en 14 pagas de {eur(PARAMETROS_2026.smiMensual)} €. Es el sueldo de un trabajo a tiempo parcial o de un contrato de menos de un año.</>
+        : <>{B} € brutos al año equivalen a {eur(veces, 2)} veces el salario mínimo de 2026, que es de {eur(smi)} € al año en 14 pagas de {eur(PARAMETROS_2026.smiMensual)} €.</>}</p>
 
       <h2>Preguntas frecuentes</h2>
       {preguntas.map((p) => (<><h3>{p.q}</h3><p>{p.a}</p></>))}

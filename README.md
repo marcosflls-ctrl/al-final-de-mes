@@ -27,6 +27,13 @@ Cada noche y cada tarde → scripts/luz.py descarga el precio de la luz de Red E
 | Normas de redacción de la IA | `SYSTEM` en `scripts/radar.py` |
 | Frecuencia de los robots | `cron` en `.github/workflows/*.yml` |
 | Portadas automáticas | `scripts/portada.py` (`python scripts/portada.py --fijas` rehace las fijas) |
+| Salario mínimo (SMI) | `smiMensual` en `src/lib/sueldo.ts` (una sola cifra; el anual y los textos salen solos) |
+
+### Calendario del SMI 2027
+
+1. **Informe de los expertos (finales de octubre):** es una recomendación, no una subida. Revisar que el borrador del robot lo diga así y completar `smi-2027-los-expertos-daran-su-cifra-a-finales-de-octubre.md` con la cifra.
+2. **Real Decreto en el BOE:** artículo con la cifra definitiva y fecha de efectos; poner `pendiente: false`.
+3. **Enero de 2027:** cambiar `smiMensual` a la vez que el resto de parámetros de 2027 (algoritmo de retenciones de la AEAT y orden de cotización). Antes no: las calculadoras son de 2026.
 
 ### Formato de un artículo
 
