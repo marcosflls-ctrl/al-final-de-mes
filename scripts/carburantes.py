@@ -23,6 +23,7 @@ import requests
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "src" / "data" / "carburantes.json"
+OUT_CIUDADES = ROOT / "src" / "data" / "carburantes-ciudades.json"
 MADRID = ZoneInfo("Europe/Madrid")
 API = "https://sedeaplicaciones.minetur.gob.es/ServiciosRESTCarburantes/PreciosCarburantes/EstacionesTerrestres/"
 # El servicio anterior rechaza conexiones desde fuera de España (como los servidores de GitHub);
@@ -32,6 +33,8 @@ UA = "Mozilla/5.0 (compatible; AlFinalDeMes/1.0; +https://alfinaldemes.com)"
 COMBUSTIBLES = {"g95": "Precio Gasolina 95 E5", "diesel": "Precio Gasoleo A"}
 BARATAS = 5            # gasolineras más baratas que se guardan por provincia y combustible
 DIAS_HISTORICO = 90
+MIN_GASOLINERAS_CIUDAD = 10   # municipios con al menos estas gasolineras tienen página propia
+BARATAS_CIUDAD = 10
 # Precios fuera de este rango (€/l) se consideran errores de la fuente y se ignoran
 MIN_OK, MAX_OK = 0.8, 3.5
 
@@ -99,6 +102,10 @@ def desde_excel() -> tuple[list[dict], str]:
         "Precio Gasolina 95 E5": col("gasolina 95 e5", evitar=("premium",)),
         "Precio Gasoleo A": col("gasoleo a", evitar=("premium", "renovable")),
     }
+    try:
+        idx["Municipio"] = col("municipio")
+    except KeyError:
+        pass
     estaciones = []
     for f in filas[i_cab + 1:]:
         if len(f) <= max(idx.values()) or not str(f[idx["Provincia"]]).strip():
@@ -131,6 +138,7 @@ def main() -> int:
 
     nacional = {k: [] for k in COMBUSTIBLES}
     provincias: dict[str, dict] = {}
+    municipios: dict[tuple[str, str], dict] = {}
     for e in estaciones:
         prov = e.get("Provincia", "").strip()
         if not prov:
@@ -145,13 +153,19 @@ def main() -> int:
             if precio is None:
                 continue
             nacional[k].append(precio)
-            p["precios"][k].append({
+            g = {
                 "p": precio,
                 "rotulo": (e.get("Rótulo") or "").strip().title(),
                 "direccion": (e.get("Dirección") or "").strip().title(),
                 "localidad": bonito(e.get("Localidad") or e.get("Municipio") or ""),
                 "cp": (e.get("C.P.") or "").strip(),
-            })
+            }
+            p["precios"][k].append(g)
+            muni = (e.get("Municipio") or "").strip()
+            if muni:
+                m = municipios.setdefault((clave, muni), {"nombre": bonito(muni), "provincia": nombre, "provincia_slug": clave,
+                                                          "precios": {kk: [] for kk in COMBUSTIBLES}})
+                m["precios"][k].append(g)
 
     salida_prov = []
     for prov, p in sorted(provincias.items(), key=lambda x: x[1]["slug"]):
@@ -186,6 +200,25 @@ def main() -> int:
     }
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps(salida, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+
+    # Ciudades: municipios con suficientes gasolineras para que la media signifique algo
+    ciudades = []
+    for (prov_slug, _), m in municipios.items():
+        if len(m["precios"]["g95"]) < MIN_GASOLINERAS_CIUDAD:
+            continue
+        nombre_url = m["nombre"].split("/")[0].strip()
+        fila = {"nombre": m["nombre"], "slug": slug(nombre_url), "provincia": m["provincia"], "provincia_slug": prov_slug}
+        for k in COMBUSTIBLES:
+            lista = m["precios"][k]
+            if lista:
+                fila[k] = resumen([x["p"] for x in lista])
+                fila[f"baratas_{k}"] = sorted(lista, key=lambda x: x["p"])[:BARATAS_CIUDAD]
+        ciudades.append(fila)
+    ciudades.sort(key=lambda c: (c["provincia_slug"], c["slug"]))
+    if ciudades:
+        OUT_CIUDADES.write_text(json.dumps({"fecha": hoy, "actualizado": salida["actualizado"], "ciudades": ciudades},
+                                           ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+    print(f"  {len(ciudades)} ciudades con página")
     n = salida["nacional"]
     print(f"✓ Gasolina 95: {n['g95']['media']} €/l · Gasóleo A: {n['diesel']['media']} €/l · {len(salida_prov)} provincias")
     if os.environ.get("GITHUB_ACTIONS"):

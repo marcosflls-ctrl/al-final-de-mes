@@ -1,0 +1,59 @@
+---
+import Base from '../../../layouts/Base.astro';
+import Carburantes from '../../../components/Carburantes.astro';
+import { SITE } from '../../../config';
+import { datosCarburantes, datosCiudades, litro, type Ciudad } from '../../../lib/carburantes';
+import { fechaLarga } from '../../../lib/luz';
+
+export function getStaticPaths() {
+  const provincias = new Set((datosCarburantes()?.provincias ?? []).map((p) => p.slug));
+  return datosCiudades()
+    .filter((c) => provincias.has(c.provincia_slug))
+    .map((c) => ({ params: { provincia: c.provincia_slug, ciudad: c.slug }, props: { c } }));
+}
+const { c } = Astro.props as { c: Ciudad };
+const d = datosCarburantes()!;
+const prov = d.provincias.find((p) => p.slug === c.provincia_slug)!;
+const vecinas = datosCiudades().filter((x) => x.provincia_slug === c.provincia_slug && x.slug !== c.slug);
+const titulo = `Precio de la gasolina hoy en ${c.nombre}`;
+const comp = (k: 'g95' | 'diesel') => {
+  const a = c[k]?.media, b = prov[k]?.media;
+  if (a == null || b == null) return '';
+  const dif = a - b;
+  return Math.abs(dif) < 0.0005 ? `igual que la media de la provincia` : `${litro(Math.abs(dif))} € ${dif > 0 ? 'más cara' : 'más barata'} que la media de la provincia de ${prov.nombre}`;
+};
+// Ahorro llenando un depósito de 50 litros en la más barata frente a la media
+const ahorro = c.g95 ? (c.g95.media - c.g95.min) * 50 : 0;
+const desc = `Gasolina 95 a ${litro(c.g95?.media)} €/l y diésel a ${litro(c.diesel?.media)} €/l de media hoy en ${c.nombre} (${c.provincia}), y las gasolineras más baratas del municipio.`;
+const url = `${SITE.url}/gasolina/${c.provincia_slug}/${c.slug}/`;
+const jsonLd = {
+  '@context': 'https://schema.org', '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Inicio', item: SITE.url + '/' },
+    { '@type': 'ListItem', position: 2, name: 'Gasolina y diésel', item: `${SITE.url}/gasolina/` },
+    { '@type': 'ListItem', position: 3, name: prov.nombre, item: `${SITE.url}/gasolina/${prov.slug}/` },
+    { '@type': 'ListItem', position: 4, name: c.nombre, item: url },
+  ],
+};
+---
+<Base title={titulo} description={desc.slice(0, 165)} jsonLd={jsonLd}>
+  <nav class="breadcrumbs"><a href="/">Inicio</a> › <a href="/gasolina/">Gasolina y diésel</a> › <a href={`/gasolina/${prov.slug}/`}>{prov.nombre}</a> › {c.nombre}</nav>
+  <h1>{titulo}</h1>
+  <p class="intro">Hoy, {fechaLarga(d.fecha)}, la gasolina 95 cuesta de media <strong>{litro(c.g95?.media)} €/l</strong> en las {c.g95?.n} gasolineras de {c.nombre} ({comp('g95')}) y el diésel, <strong>{litro(c.diesel?.media)} €/l</strong> ({comp('diesel')}).{ahorro >= 1 && <> Llenar un depósito de 50 litros de gasolina en la más barata del municipio ahorra unos <strong>{ahorro.toLocaleString('es-ES', { maximumFractionDigits: 0 })} €</strong> frente al precio medio.</>}</p>
+  <Carburantes g95={c.g95} diesel={c.diesel} baratasG95={c.baratas_g95} baratasDiesel={c.baratas_diesel} ambito={c.nombre} />
+  {vecinas.length > 0 && (
+    <section class="vecinas">
+      <h2>Otros municipios de {prov.nombre}</h2>
+      <ul>{vecinas.map((v) => <li><a href={`/gasolina/${v.provincia_slug}/${v.slug}/`}>{v.nombre}</a> <span class="muted">{litro(v.g95?.media)} €/l</span></li>)}</ul>
+    </section>
+  )}
+  <p class="muted small nota-fuente">Fuente: <a href="https://geoportalgasolineras.es/" rel="noopener" target="_blank">Geoportal de Hidrocarburos</a> del Ministerio para la Transición Ecológica. Los precios incluyen impuestos y los comunica cada gasolinera; pueden cambiar a lo largo del día. <a href={`/gasolina/${prov.slug}/`}>Ver toda la provincia de {prov.nombre}</a>.</p>
+</Base>
+<style>
+  h1 { font-size: clamp(1.9rem, 5vw, 2.6rem); margin: 4px 0 10px; max-width: 24ch; }
+  .intro { max-width: 68ch; margin: 0 0 24px; font-size: 1.0625rem; }
+  .vecinas { margin-top: 32px; }
+  .vecinas ul { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 6px 20px; }
+  .vecinas .muted { font-size: .875rem; font-variant-numeric: tabular-nums; }
+  .nota-fuente { margin-top: 24px; max-width: 72ch; }
+</style>

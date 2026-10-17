@@ -27,3 +27,10 @@ export function hace(d: DatosCarburantes, dias: number, k: 'g95' | 'diesel'): nu
   const fechas = Object.keys(d.historico).filter((f) => new Date(`${f}T12:00:00Z`).getTime() <= objetivo).sort();
   return fechas.length ? d.historico[fechas[fechas.length - 1]][k] : undefined;
 }
+
+export interface Ciudad extends Provincia { provincia: string; provincia_slug: string }
+
+/** Municipios con página propia (scripts/carburantes.py → carburantes-ciudades.json). */
+export function datosCiudades(): Ciudad[] {
+  try { return JSON.parse(fs.readFileSync('src/data/carburantes-ciudades.json', 'utf8')).ciudades ?? []; } catch { return []; }
+}
