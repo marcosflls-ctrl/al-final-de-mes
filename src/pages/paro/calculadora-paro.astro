@@ -1,0 +1,203 @@
+---
+import Base from '../../layouts/Base.astro';
+import Siguenos from '../../components/Siguenos.astro';
+import Compartir from '../../components/Compartir.astro';
+import { SITE } from '../../config';
+import { PARO_2026, calcularParo } from '../../lib/paro';
+
+const titulo = 'Calculadora del paro 2026: cuánto cobrarás y durante cuánto tiempo';
+const descripcion = 'Calcula cuánto cobrarás de paro al mes y cuántos meses, según tu sueldo, lo que has cotizado y tus hijos. Con los topes de 2026 y la escala oficial del SEPE.';
+const url = `${SITE.url}/paro/calculadora-paro/`;
+const eur = (n: number, dec = 2) => n.toLocaleString('es-ES', { minimumFractionDigits: dec, maximumFractionDigits: dec, useGrouping: 'always' } as any);
+const P = PARO_2026;
+const ej = calcularParo({ brutoAnual: 24000, diasCotizados: 1080, hijos: 0 });
+const topes = ([0, 1, 2] as const).map((h) => calcularParo({ brutoAnual: 0, diasCotizados: 0, hijos: h }));
+const meses = (d: number) => {
+  const m = d / 30;
+  return m < 12 ? `${m} meses` : m % 12 === 0 ? `${m / 12} ${m === 12 ? 'año' : 'años'}` : `${m} meses`;
+};
+
+const preguntas = [
+  { q: '¿Cuánto se cobra de paro en 2026?', a: `El 70 % de tu base reguladora durante los primeros seis meses y el 60 % a partir del séptimo, con un máximo de ${eur(topes[0].topeMax)} € al mes sin hijos y un mínimo de ${eur(topes[0].topeMin)} €. Con un sueldo de 24.000 € brutos al año, son unos ${eur(ej.brutoInicio, 0)} € brutos al mes al principio y ${eur(ej.brutoDespues, 0)} € después.` },
+  { q: '¿Cuánto tiempo hay que trabajar para cobrar el paro?', a: 'Al menos 360 días cotizados en los últimos seis años, sin contar los que ya usaste para un paro anterior. Con un año cotizado te corresponden cuatro meses de prestación; el máximo, dos años, se alcanza con seis años cotizados.' },
+  { q: '¿Qué es la base reguladora?', a: 'La media de lo que has cotizado por desempleo en los últimos 180 días trabajados. En la práctica se parece a tu sueldo bruto mensual con las pagas extra repartidas (sueldo anual entre doce), sin pasar de la base máxima de cotización.' },
+  { q: '¿Qué me descuentan del paro?', a: 'Tu parte de la cotización a la Seguridad Social, el 4,85 % de la base reguladora en 2026 (4,70 % de contingencias comunes y 0,15 % del MEI). El SEPE paga además la parte que antes pagaba la empresa. Según lo que cobres en el año, también se te puede retener IRPF.' },
+  { q: '¿El paro cotiza para la jubilación?', a: 'Sí. Mientras cobras la prestación contributiva sigues cotizando a la Seguridad Social, así que ese tiempo cuenta para tu futura pensión.' },
+];
+const jsonLd = [
+  {
+    '@context': 'https://schema.org', '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Inicio', item: SITE.url + '/' },
+      { '@type': 'ListItem', position: 2, name: 'Empleo y paro', item: `${SITE.url}/paro/` },
+      { '@type': 'ListItem', position: 3, name: 'Calculadora del paro', item: url },
+    ],
+  },
+  { '@context': 'https://schema.org', '@type': 'WebApplication', name: 'Calculadora del paro 2026', url, applicationCategory: 'FinanceApplication', operatingSystem: 'Any', inLanguage: 'es-ES', offers: { '@type': 'Offer', price: '0', priceCurrency: 'EUR' } },
+  { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: preguntas.map((p) => ({ '@type': 'Question', name: p.q, acceptedAnswer: { '@type': 'Answer', text: p.a } })) },
+];
+---
+<Base title={titulo} description={descripcion} jsonLd={jsonLd}>
+  <nav class="breadcrumbs"><a href="/">Inicio</a> › <a href="/paro/">Empleo y paro</a></nav>
+  <article class="pagina">
+    <h1>Calculadora del paro 2026</h1>
+    <p class="lead">Escribe tu sueldo y el tiempo que has trabajado en los últimos seis años y te decimos cuánto cobrarás de paro cada mes y durante cuánto tiempo, con las reglas y los topes de 2026.</p>
+
+    <div class="calc">
+      <form id="calc-paro" novalidate>
+        <label class="campo"><span>Sueldo bruto al año</span><span class="u"><input name="bruto" type="number" inputmode="decimal" min="0" step="500" value="24000" /><i>€</i></span><small class="muted">Con las pagas extra. Si tu sueldo cambió, pon el de los últimos seis meses pasado a un año.</small></label>
+        <label class="campo"><span>Meses trabajados en los últimos 6 años</span><span class="u"><input name="meses" type="number" inputmode="numeric" min="0" max="72" step="1" value="36" /><i>meses</i></span><small class="muted">Sin contar los que ya usaste para cobrar un paro anterior.</small></label>
+        <fieldset class="campo">
+          <legend>Hijos a tu cargo</legend>
+          <label class="radio"><input type="radio" name="hijos" value="0" checked /> Ninguno</label>
+          <label class="radio"><input type="radio" name="hijos" value="1" /> Uno</label>
+          <label class="radio"><input type="radio" name="hijos" value="2" /> Dos o más</label>
+          <small class="muted">Menores de 26 años, o mayores con discapacidad, que no ganen más del salario mínimo.</small>
+        </fieldset>
+      </form>
+      <section class="res" aria-live="polite">
+        <h2 class="etq">Paro los primeros 6 meses</h2>
+        <p class="cifra"><span id="p-inicio">—</span> € <small>brutos al mes</small></p>
+        <p id="p-sin" class="aviso" hidden>Con menos de 12 meses cotizados no tienes derecho a la prestación contributiva. Puede que te corresponda un subsidio: consúltalo en el SEPE.</p>
+        <table class="desglose" id="p-tabla">
+          <tbody>
+            <tr><th scope="row">Neto los primeros 6 meses</th><td id="p-neto-inicio">—</td></tr>
+            <tr><th scope="row">Bruto desde el 7.º mes</th><td id="p-despues">—</td></tr>
+            <tr><th scope="row">Neto desde el 7.º mes</th><td id="p-neto-despues">—</td></tr>
+            <tr><th scope="row">Cuánto tiempo</th><td id="p-duracion">—</td></tr>
+            <tr><th scope="row">Total bruto de todo el paro</th><td id="p-total">—</td></tr>
+            <tr><th scope="row">Base reguladora</th><td id="p-base">—</td></tr>
+          </tbody>
+        </table>
+        <p id="p-tope" class="muted small" hidden></p>
+        <p class="muted small">El neto descuenta tu cotización a la Seguridad Social (4,85 %). Según lo que cobres en el año, el SEPE también puede retenerte IRPF.</p>
+      </section>
+    </div>
+
+    <Compartir title={titulo} url={url} />
+
+    <section class="prose">
+      <h2>Cuánto se cobra de paro</h2>
+      <p>La prestación se calcula sobre tu <strong>base reguladora</strong>, que es la media de lo que has cotizado en los últimos 180 días trabajados. Se cobra:</p>
+      <ul>
+        <li>el <strong>70 %</strong> de la base reguladora durante los primeros 180 días (6 meses),</li>
+        <li>y el <strong>60 %</strong> desde el día 181.</li>
+      </ul>
+      <p>Siempre dentro de unos límites, que dependen de los hijos a tu cargo y se calculan sobre el IPREM ({eur(P.ipremMensual, 0)} € al mes en 2026) con las pagas extra:</p>
+      <div class="tabla-scroll">
+        <table class="ref">
+          <thead><tr><th scope="col">Hijos a cargo</th><th scope="col">Paro mínimo</th><th scope="col">Paro máximo</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Ninguno</th><td>{eur(topes[0].topeMin)} €</td><td>{eur(topes[0].topeMax)} €</td></tr>
+            <tr><th scope="row">Uno</th><td>{eur(topes[1].topeMin)} €</td><td>{eur(topes[1].topeMax)} €</td></tr>
+            <tr><th scope="row">Dos o más</th><td>{eur(topes[2].topeMin)} €</td><td>{eur(topes[2].topeMax)} €</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="muted small">Cantidades brutas al mes para quien trabajaba a jornada completa. Con jornada parcial, los límites se reducen en proporción a las horas.</p>
+
+      <h2>Cuánto tiempo se cobra el paro</h2>
+      <p>Depende de los días cotizados en los últimos seis años que no hayas usado ya para otro paro:</p>
+      <div class="tabla-scroll">
+        <table class="ref">
+          <thead><tr><th scope="col">Días cotizados</th><th scope="col">Tiempo trabajado (aprox.)</th><th scope="col">Días de paro</th><th scope="col">Tiempo de paro</th></tr></thead>
+          <tbody>
+            {P.duracion.map(([desde, dias], i) => {
+              const hasta = P.duracion[i + 1]?.[0];
+              return (
+                <tr>
+                  <th scope="row">{hasta ? `De ${eur(desde, 0)} a ${eur(hasta - 1, 0)}` : `${eur(desde, 0)} o más`}</th>
+                  <td>{hasta ? `${desde / 30}-${Math.floor((hasta - 1) / 30)} meses` : `${desde / 30} meses (los 6 años)`}</td>
+                  <td>{dias}</td>
+                  <td>{meses(dias)}</td>
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+      </div>
+
+      <h2>Un ejemplo</h2>
+      <p>Con un sueldo de 24.000 € brutos al año, sin hijos y tres años cotizados, la base reguladora es de unos {eur(ej.baseMensual, 0)} € al mes. Te corresponde un año de paro: {eur(ej.brutoInicio, 0)} € brutos al mes los seis primeros meses (unos {eur(ej.netoInicio, 0)} € netos) y {eur(ej.brutoDespues, 0)} € brutos los seis siguientes (unos {eur(ej.netoDespues, 0)} € netos).{ej.topado === 'max' ? ` Los primeros meses se aplica el máximo sin hijos: el 70 % de la base daría ${eur(ej.baseMensual * 0.7, 0)} €.` : ''}</p>
+      <p>¿Cuándo llega cada mes a tu banco? Lo explicamos en <a href="/paro/cuando-se-cobra/">cuándo se cobra el paro</a>.</p>
+
+      <h2>Preguntas frecuentes</h2>
+      {preguntas.map((p) => (<><h3>{p.q}</h3><p>{p.a}</p></>))}
+      <p class="muted small">Fuentes: <a href="https://www.boe.es/eli/es/rdlg/2015/10/30/8/con" rel="noopener" target="_blank">Ley General de la Seguridad Social</a>, artículos 269 (duración) y 270 (cuantía); IPREM de 2026, el mismo que desde 2023 al no aprobarse nuevos Presupuestos; tipos de cotización de 2026. Resultado orientativo: el importe exacto lo fija el SEPE con tus bases de cotización reales.</p>
+    </section>
+    <Siguenos />
+  </article>
+</Base>
+
+<script>
+  import { calcularParo, type Hijos } from '../../lib/paro';
+  const form = document.getElementById('calc-paro') as HTMLFormElement;
+  const fmt = (n: number) => n.toLocaleString('es-ES', { minimumFractionDigits: 2, maximumFractionDigits: 2, useGrouping: 'always' } as Intl.NumberFormatOptions);
+  const $ = (id: string) => document.getElementById(id)!;
+  const tiempo = (dias: number) => {
+    const m = dias / 30;
+    if (m % 12 === 0) return `${m / 12} ${m === 12 ? 'año' : 'años'} (${dias} días)`;
+    return `${m} meses (${dias} días)`;
+  };
+  function calcular() {
+    const d = new FormData(form);
+    const num = (k: string) => parseFloat(String(d.get(k) ?? '').replace(',', '.')) || 0;
+    const meses = Math.min(72, Math.max(0, num('meses')));
+    const r = calcularParo({ brutoAnual: num('bruto'), diasCotizados: Math.round(meses * 30), hijos: Number(d.get('hijos')) as Hijos });
+    $('p-sin').hidden = r.derecho;
+    $('p-tabla').hidden = !r.derecho;
+    if (!r.derecho) { $('p-inicio').textContent = '0'; $('p-tope').hidden = true; return; }
+    $('p-inicio').textContent = fmt(r.brutoInicio);
+    $('p-neto-inicio').textContent = `${fmt(r.netoInicio)} €`;
+    $('p-despues').textContent = r.diasPrestacion > 180 ? `${fmt(r.brutoDespues)} €` : `No aplica: el paro dura ${r.diasPrestacion / 30} meses`;
+    $('p-neto-despues').textContent = r.diasPrestacion > 180 ? `${fmt(r.netoDespues)} €` : '—';
+    $('p-duracion').textContent = tiempo(r.diasPrestacion);
+    $('p-total').textContent = `${fmt(r.totalBruto)} €`;
+    $('p-base').textContent = `${fmt(r.baseMensual)} € al mes`;
+    const tope = $('p-tope');
+    tope.hidden = !r.topado;
+    if (r.topado === 'max') tope.textContent = `Tu sueldo supera el límite: cobrarías más, pero el paro tiene un máximo de ${fmt(r.topeMax)} € al mes en tu caso.`;
+    if (!r.topado && r.diasPrestacion > 180 && r.brutoDespues === r.topeMin) { tope.hidden = false; tope.textContent = `Desde el 7.º mes se aplica el paro mínimo en tu caso: ${fmt(r.topeMin)} € al mes.`; }
+    if (r.topado === 'min') tope.textContent = `Por tu sueldo cobrarías menos, pero el paro tiene un mínimo de ${fmt(r.topeMin)} € al mes en tu caso.`;
+  }
+  form.addEventListener('input', calcular);
+  form.addEventListener('change', calcular);
+  calcular();
+</script>
+
+<style>
+  .pagina { max-width: 900px; }
+  h1 { font-size: clamp(1.9rem, 4.6vw, 2.6rem); line-height: 1.15; margin: 4px 0 12px; }
+  .lead { font-size: 1.125rem; line-height: 1.55; margin: 0 0 24px; max-width: 720px; }
+  .calc { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; border-top: 2px solid var(--ink); padding-top: 24px; align-items: start; }
+  form { display: flex; flex-direction: column; gap: 18px; }
+  .campo { display: flex; flex-direction: column; gap: 6px; border: 0; margin: 0; padding: 0; }
+  .campo > span, legend { font-weight: 600; font-size: .9375rem; padding: 0; margin-bottom: 4px; }
+  .campo small { font-size: .8125rem; }
+  .u { position: relative; display: block; }
+  .u i { position: absolute; right: 12px; top: 50%; transform: translateY(-50%); font-style: normal; color: var(--muted); }
+  input[type='number'] { font: 600 1.25rem var(--sans); padding: 10px 70px 10px 12px; border: 1px solid #b9c0c6; border-radius: 4px; width: 100%; color: var(--ink); background: var(--bg); font-variant-numeric: tabular-nums; }
+  input:focus { outline: 2px solid var(--brand); outline-offset: 0; }
+  .radio { display: flex; gap: 8px; align-items: center; font-size: .9375rem; padding: 4px 0; }
+  .radio input { accent-color: var(--brand); width: 18px; height: 18px; margin: 0; }
+  .res { background: var(--surface); border-radius: 4px; padding: 24px; }
+  .etq { font: 600 .875rem var(--sans); text-transform: uppercase; letter-spacing: .04em; color: var(--muted); margin: 0; }
+  .cifra { font-family: var(--serif); font-size: clamp(2.4rem, 6vw, 3rem); font-weight: 600; line-height: 1.1; margin: 6px 0 16px; color: var(--brand-dark); font-variant-numeric: tabular-nums; }
+  .cifra small { font: 400 1rem var(--sans); color: var(--muted); }
+  .aviso { font-size: .9375rem; margin: 0 0 12px; }
+  .desglose { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
+  .desglose th, .desglose td { padding: 8px 0; border-bottom: 1px solid var(--rule); font-size: .9375rem; }
+  .desglose th { text-align: left; font-weight: 400; }
+  .desglose td { text-align: right; padding-left: 12px; }
+  .small { font-size: .8125rem; }
+  .prose { margin-top: 36px; }
+  .tabla-scroll { overflow-x: auto; }
+  .ref { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums; display: table !important; }
+  .ref th, .ref td { padding: 8px 12px 8px 0; border-bottom: 1px solid var(--rule); text-align: right; font-size: .9375rem; white-space: nowrap; }
+  .ref th:first-child { text-align: left; font-weight: 500; white-space: normal; }
+  .ref thead th { font-size: .8125rem; font-weight: 600; border-bottom: 1px solid var(--ink); white-space: normal; }
+  @media (max-width: 720px) {
+    .calc { grid-template-columns: 1fr; }
+    .res { padding: 20px 16px; }
+  }
+</style>
