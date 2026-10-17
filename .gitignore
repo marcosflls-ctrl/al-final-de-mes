@@ -4,3 +4,4 @@ dist/
 .env
 __pycache__/
 redes-salida/
+banco_candidatas/
