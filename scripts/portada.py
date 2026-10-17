@@ -116,7 +116,35 @@ def fijas() -> None:
     print("Imágenes fijas creadas")
 
 
+def miniatura(categoria: str, salida: Path, ancho: int = 480, alto: int = 360) -> Path:
+    """Miniatura sin titular para las tarjetas pequeñas del móvil: solo la marca y el nombre de la sección."""
+    img = Image.new("RGB", (ancho, alto), VERDE)
+    d = ImageDraw.Draw(img)
+    etiqueta = ETIQUETAS.get(categoria, categoria)
+    m = 36
+    d.line([(m, m + 6), (m + 44, m + 6)], fill=CLARO, width=4)
+    tam = 64
+    while tam > 30:
+        f = fuente("serif-600", tam)
+        lineas = partir(d, etiqueta, f, ancho - 2 * m)
+        if len(lineas) <= 3:
+            break
+        tam -= 4
+    alto_l = tam * 1.12
+    y = alto - m - alto_l * len(lineas)
+    for i, l in enumerate(lineas):
+        d.text((m, y + i * alto_l), l, font=f, fill=BLANCO)
+    salida.parent.mkdir(parents=True, exist_ok=True)
+    img.save(salida, "WEBP", quality=82, method=6)
+    return salida
+
+
 if __name__ == "__main__":
+    if len(sys.argv) > 1 and sys.argv[1] == "--miniaturas":
+        for c in ETIQUETAS:
+            if c != "inicio":
+                print(miniatura(c, ROOT / "public" / "img" / "miniaturas" / f"{c}.webp"))
+        sys.exit(0)
     if sys.argv[1:] == ["--fijas"]:
         fijas()
     elif len(sys.argv) == 4:
