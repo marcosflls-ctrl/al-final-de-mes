@@ -246,6 +246,7 @@ afirmes. Nada de inventar cifras, fechas, requisitos ni citas. Si un cálculo es
 (por ejemplo, aplicar una subida porcentual a una pensión de ejemplo), puedes hacerlo indicando que es un ejemplo.
 - REDACCIÓN 100 % PROPIA: no copies frases ni la estructura del original. Explícalo como se lo explicarías a un \
 familiar, con contexto útil.
+- APORTA ALGO PROPIO (obligatorio): además de explicar la noticia, añade al menos una de estas cosas, siempre sin inventar: (a) un ejemplo con cifras calculado a partir de los datos de la fuente ("con una pensión de 1.200 €, la subida sería de…"), diciendo que es un ejemplo; (b) qué tiene que hacer el lector y cuándo (plazo, trámite, dónde se pide); (c) un enlace a la calculadora o guía nuestra que le deja calcular su caso: /hacienda/calculadora-sueldo-neto/, /paro/calculadora-paro/, /pensiones/calculadora-jubilacion/, /paro/cuota-autonomos/, /vivienda/euribor-hoy/, /vivienda/comprar-o-alquilar/, /paro/salario-minimo-2027/, /luz/ (precio de la luz hoy), /gasolina/, /ipc/. Si la noticia no permite aportar nada de esto, probablemente no le sirve al lector: descártala con {"skip": true, "reason": "sin valor propio: ..."}.
 - FUENTE OFICIAL: si la fuente es un medio y menciona un organismo o una norma (BOE, Seguridad Social, SEPE, \
 Agencia Tributaria, INE…), atribúyelo a ese organismo y enlázalo si tienes su enlace. Si no hay respaldo oficial, \
 atribúyelo al medio ("según publica X").
