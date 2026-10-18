@@ -112,7 +112,56 @@
     {
       "name": "Newtral",
       "url": "https://www.newtral.es/feed/"
+    },
+    {
+      "name": "INE (novedades)",
+      "url": "https://ine.es/dyngs/Prensa/es/rssNovedades.xml",
+      "oficial": true,
+      "arranque": true
+    },
+    {
+      "name": "Agencia Tributaria (novedades)",
+      "url": "https://sede.agenciatributaria.gob.es/Sede/todas-noticias.xml",
+      "oficial": true,
+      "arranque": true
+    },
+    {
+      "name": "Agencia Tributaria (notas de prensa)",
+      "url": "https://sede.agenciatributaria.gob.es/Sede/sala-prensa/notas-prensa.xml",
+      "oficial": true,
+      "arranque": true
+    },
+    {
+      "name": "La Moncloa (notas de prensa)",
+      "url": "https://www.lamoncloa.gob.es/Paginas/rss.aspx",
+      "oficial": true,
+      "arranque": true
+    },
+    {
+      "name": "OCU",
+      "url": "https://www.ocu.org/rss",
+      "arranque": true
+    },
+    {
+      "name": "Infobae España",
+      "url": "https://www.infobae.com/arc/outboundfeeds/rss/category/espana/",
+      "arranque": true
+    },
+    {
+      "name": "Business Insider España",
+      "url": "https://www.businessinsider.es/rss",
+      "arranque": true
+    },
+    {
+      "name": "El Español Invertia",
+      "url": "https://www.elespanol.com/rss/invertia/",
+      "arranque": true
+    },
+    {
+      "name": "Antena 3 Economía",
+      "url": "https://www.antena3.com/noticias/rss/4013050.xml",
+      "arranque": true
     }
   ],
-  "_nota_fuentes": "Probadas el 13/10/2026 con el flujo «Probar fuentes». La Seguridad Social y elEconomista bloquean los robots (403)."
+  "_nota_fuentes": "Probadas el 13/10/2026 con el flujo «Probar fuentes». La Seguridad Social y elEconomista bloquean los robots (403). El 18/10/2026 se añaden fuentes primarias y medios de mucho tráfico, probados con «Probar fuentes». «arranque»: la primera vez solo se apuntan sus entradas actuales, para no escribir sobre noticias antiguas."
 }
