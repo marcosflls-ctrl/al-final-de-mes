@@ -58,6 +58,8 @@ Plazas de **acceso libre** (las que puede pedir cualquiera que cumpla los requis
 
 *Datos de los anexos del Real Decreto 387/2026. En Justicia, la mayoría de las plazas son de comunidades con las competencias transferidas: de las 1.010 de Tramitación, 791; de las 658 de Gestión, 512; y de las 335 de Auxilio, 265.*
 
+Tenemos guías propias de las oposiciones de [Auxiliar Administrativo del Estado](/oposiciones/oposiciones-auxiliar-administrativo-estado/) y de [Agente de Hacienda](/oposiciones/oposiciones-agente-de-hacienda/), con su examen, temario y sueldo.
+
 **Fuera de esta tabla** hay ofertas propias: 2.704 plazas de la Escala Básica de la Policía Nacional y 150 de la Escala Ejecutiva, 3.240 de Cabos y Guardias de la Guardia Civil y 4.442 de las Fuerzas Armadas, según La Moncloa. Las oposiciones de las comunidades autónomas y los ayuntamientos (sanidad, educación, policía local…) tienen sus propias ofertas.
 
 ## Dónde suben más las plazas
