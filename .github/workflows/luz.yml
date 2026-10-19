@@ -5,8 +5,12 @@ name: Precio de la luz
 # Horas en UTC: se ejecuta tras la medianoche y a partir de las 20:30 de España, en horario de verano y de invierno.
 on:
   schedule:
-    - cron: "7 22,23 * * *"        # 00:07 / 01:07 de España: cambia el "hoy"
-    - cron: "37 18,19,20 * * *"    # 20:37, 21:37, 22:37 (o una hora antes en invierno): precios de mañana
+    # GitHub se salta a veces las tareas programadas cuando tiene mucha carga: por eso hay horas de reserva.
+    # Si nada ha cambiado, el script no toca el archivo y no se publica nada.
+    - cron: "7,37 22,23 * * *"     # de 00:07 a 01:37 de España (una hora antes en invierno): cambia el "hoy"
+    - cron: "17 1,4,6 * * *"       # reserva de madrugada y primera hora: que por la mañana estén los de hoy
+    - cron: "37 18,19,20,21 * * *" # de 20:37 a 23:37 (una hora antes en invierno): precios de mañana
+    - cron: "7 19,20,21 * * *"     # reserva: 21:07, 22:07 y 23:07
   workflow_dispatch:
 
 permissions:
