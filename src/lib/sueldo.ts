@@ -107,6 +107,42 @@ export function cotizaciones(brutoAnual: number, contrato: Contrato, p = PARAMET
   return { total: r2(d.comunes + d.mei + d.desempleo + d.formacion + d.solidaridad), desglose: d };
 }
 
+/** Cotizaciones anuales a cargo de la empresa (Régimen General 2026, contrato indefinido).
+ *  No incluye la prima de accidentes de trabajo y enfermedades profesionales, que depende de la actividad. */
+export const EMPRESA_2026 = {
+  contingenciasComunes: 0.236,
+  mei: 0.0075,
+  desempleoIndefinido: 0.055,
+  fogasa: 0.002,
+  formacion: 0.006,
+  solidaridad: [
+    { hasta: 5611.32, tipo: 0.0096 },
+    { hasta: 7651.8, tipo: 0.0104 },
+    { hasta: Infinity, tipo: 0.0122 },
+  ],
+};
+
+export function cotizacionesEmpresa(brutoAnual: number, p = PARAMETROS_2026, e = EMPRESA_2026) {
+  const mensual = brutoAnual / 12;
+  const base = Math.min(mensual, p.ss.baseMaximaMensual);
+  let solidaridad = 0, desde = p.ss.baseMaximaMensual;
+  for (const t of e.solidaridad) {
+    if (mensual <= desde) break;
+    solidaridad += (Math.min(mensual, t.hasta) - desde) * t.tipo;
+    desde = t.hasta;
+  }
+  const d = {
+    comunes: r2(base * e.contingenciasComunes * 12),
+    mei: r2(base * e.mei * 12),
+    desempleo: r2(base * e.desempleoIndefinido * 12),
+    fogasa: r2(base * e.fogasa * 12),
+    formacion: r2(base * e.formacion * 12),
+    solidaridad: r2(solidaridad * 12),
+  };
+  const total = r2(d.comunes + d.mei + d.desempleo + d.fogasa + d.formacion + d.solidaridad);
+  return { total, desglose: d, costeTotal: r2(brutoAnual + total) };
+}
+
 /** Límites excluyentes de retención (art. 81 RIRPF, tabla 1 del algoritmo). */
 function limiteExcluyente(situacion: SituacionFamiliar, numHijos: number): number | null {
   const n = Math.min(numHijos, 2);

@@ -2,7 +2,7 @@
 import Base from '../../../layouts/Base.astro';
 import Compartir from '../../../components/Compartir.astro';
 import { SITE } from '../../../config';
-import { PARAMETROS_2026 } from '../../../lib/sueldo';
+import { PARAMETROS_2026, cotizacionesEmpresa } from '../../../lib/sueldo';
 import { BRUTOS_PAGINA, slugSueldo, urlSueldo, base, CASOS } from '../../../lib/sueldos-pagina';
 
 export function getStaticPaths() {
@@ -36,6 +36,8 @@ const subida = base(b + 1000, 14);
 const quedan = subida.netoAnual - r14.netoAnual;
 
 const ss = r14.desgloseSS;
+const emp = cotizacionesEmpresa(b);
+const pctNeto = (r14.netoAnual / emp.costeTotal) * 100;
 const veces = b / smi;
 const anterior = BRUTOS_PAGINA.includes(b - 1000) ? b - 1000 : null;
 const siguiente = BRUTOS_PAGINA.includes(b + 1000) ? b + 1000 : null;
@@ -60,6 +62,11 @@ const preguntas = [
     a: `De los 1.000 € brutos de subida te quedan unos ${eur(quedan)} € netos al año, ${eur(quedan / 14, 2)} € más en cada una de las 14 pagas. El resto se va en cotizaciones y en la retención, que sube un poco con el sueldo.`,
   },
 ];
+
+preguntas.push({
+  q: `¿Cuánto le cuesta a la empresa un sueldo de ${B} euros brutos?`,
+  a: `Con contrato indefinido, unos ${eur(emp.costeTotal)} € al año: los ${B} € brutos más unos ${eur(emp.total)} € de cotizaciones a la Seguridad Social a cargo de la empresa en 2026. Falta sumar la prima de accidentes de trabajo, que depende de la actividad.`,
+});
 
 const jsonLd = [
   {
@@ -139,6 +146,22 @@ const jsonLd = [
           </tbody>
         </table>
       </div>
+
+      <h2>Lo que le cuesta a la empresa</h2>
+      <p>Además de tu sueldo bruto, la empresa paga sus propias cotizaciones a la Seguridad Social, que no se descuentan de tu sueldo. Con {B} € brutos y contrato indefinido, son unos <strong>{eur(emp.total)} € al año</strong>, así que tu puesto le cuesta en total unos <strong>{eur(emp.costeTotal)} €</strong>. De ese coste, a ti te llegan netos {eur(r14.netoAnual)} €, el {eur(pctNeto, 1)} %.</p>
+      <div class="tabla-scroll"><table class="tabla">
+        <thead><tr><th scope="col">Cotización de la empresa</th><th scope="col">Tipo</th><th scope="col">Al año</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Contingencias comunes</th><td>23,60 %</td><td>{eur(emp.desglose.comunes)} €</td></tr>
+          <tr><th scope="row">Desempleo</th><td>5,50 %</td><td>{eur(emp.desglose.desempleo)} €</td></tr>
+          <tr><th scope="row">Mecanismo de equidad intergeneracional (MEI)</th><td>0,75 %</td><td>{eur(emp.desglose.mei)} €</td></tr>
+          <tr><th scope="row">Formación profesional</th><td>0,60 %</td><td>{eur(emp.desglose.formacion)} €</td></tr>
+          <tr><th scope="row">Fondo de Garantía Salarial (Fogasa)</th><td>0,20 %</td><td>{eur(emp.desglose.fogasa)} €</td></tr>
+          {emp.desglose.solidaridad > 0 && <tr><th scope="row">Cotización de solidaridad</th><td>Por tramos</td><td>{eur(emp.desglose.solidaridad)} €</td></tr>}
+          <tr><th scope="row">Total</th><td></td><td><strong>{eur(emp.total)} €</strong></td></tr>
+        </tbody>
+      </table></div>
+      <p class="muted small">Tipos del Régimen General para 2026 con contrato indefinido{b / 12 > PARAMETROS_2026.ss.baseMaximaMensual ? `, con la base de cotización limitada a la base máxima de ${eur(PARAMETROS_2026.ss.baseMaximaMensual, 2)} € al mes` : ''}. A esto se suma la prima de accidentes de trabajo y enfermedades profesionales, que paga solo la empresa y depende de la actividad, por lo que no la incluimos. Con un contrato temporal, el desempleo de la empresa sube al 6,70 %.</p>
 
       <h2>Comparado con el salario mínimo</h2>
       <p>{b < smi
