@@ -8,7 +8,7 @@ const posts = defineCollection({
     description: z.string().max(170), // entradilla y meta description para Google
     date: z.coerce.date(),
     updated: z.coerce.date().optional(),
-    category: z.enum(['luz', 'pensiones', 'paro', 'vivienda', 'hacienda']),
+    category: z.enum(['luz', 'pensiones', 'paro', 'vivienda', 'hacienda', 'oposiciones']),
     tags: z.array(z.coerce.string()).default([]),  // una etiqueta como 2027 se lee como número: se convierte a texto
     image: z.string().optional(),
     imageAlt: z.string().optional(),

@@ -59,6 +59,11 @@ export const CATEGORIES = {
     titulo: 'Hacienda, renta e impuestos',
     desc: 'Declaración de la renta, IRPF, IVA, deducciones, plazos y avisos de la Agencia Tributaria explicados para que no se te escape nada.',
   },
+  oposiciones: {
+    label: 'Oposiciones',
+    titulo: 'Oposiciones y empleo público',
+    desc: 'Plazas de la oferta de empleo público, sueldos de los funcionarios por grupo, requisitos para opositar y fechas de las convocatorias, con datos del BOE.',
+  },
 } as const;
 
 export type CategoryKey = keyof typeof CATEGORIES;
