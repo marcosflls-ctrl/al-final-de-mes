@@ -73,3 +73,10 @@ que solo acepta este repositorio y la rama `main`. Los identificadores están en
 | `TELEGRAM_AVISOS_CHAT_ID` | Secreto | Tu chat privado: avisos de borradores y fallos |
 | `TELEGRAM_CHAT` | Variable | El canal público, por ejemplo `@alfinaldemes` |
 | `MAX_PER_RUN` | Variable | Artículos máximos por pasada (2 por defecto) |
+
+## Novedades de octubre de 2026
+
+- **Sección Oposiciones** (`category: oposiciones`): guías de la oferta de empleo público 2026, sueldos de funcionarios, requisitos, Administrativo y Auxiliar del Estado, Agente de Hacienda y Policía Nacional. Pendiente: Guardia Civil (confirmar en el BOE el título que piden).
+- **Sueldo neto** (`src/pages/hacienda/sueldo-neto/[bruto].astro`, 86 páginas de 15.000 a 100.000 €): incluye lo que cuesta cada sueldo a la empresa (`cotizacionesEmpresa` y `EMPRESA_2026` en `src/lib/sueldo.ts`). Actualizar los tipos cada enero.
+- **Robot**: noticias de 400-500 palabras como mínimo, sin «según X» en el título y sin repetir lo que ya cubre una guía (para no tener problemas con AdSense por «contenido de poco valor»).
+- **Calendario**: guía de pensiones 2027 a actualizar con el IPC de finales de octubre, el 27 de noviembre y el 15 de diciembre; salario mínimo 2027 cuando salga el informe de expertos; sueldos de funcionarios con el 0,5 % extra en el primer trimestre de 2027.
