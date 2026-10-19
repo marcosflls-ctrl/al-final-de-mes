@@ -88,6 +88,6 @@ Si te interesan otras oposiciones del Estado, tienes las plazas de todas en la [
 
 **¿Puedo elegir dónde trabajar?** Al aprobar, se elige destino por orden de nota entre las plazas que se ofrecen, en ministerios y organismos de toda España.
 
-**¿Puedo presentarme también a Administrativo del Estado?** Sí, si tienes Bachillerato o un título de Técnico. Es el cuerpo del grupo C1, con 2.300 plazas en la oferta de 2026 y un examen distinto.
+**¿Puedo presentarme también a Administrativo del Estado?** Sí, si tienes Bachillerato o un título de Técnico. Es el cuerpo del grupo C1, con 2.300 plazas en la oferta de 2026 y un examen distinto: lo tienes en [oposiciones a Administrativo del Estado](/oposiciones/oposiciones-administrativo-del-estado/).
 
 *Información orientativa. Los datos que cuentan son los de la convocatoria publicada en el BOE.*
