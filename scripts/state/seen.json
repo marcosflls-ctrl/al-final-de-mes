@@ -768,7 +768,9 @@
   "https://www.elmundo.es/economia/2026/10/20/6ad730a0e85ecece7f8b458c.html",
   "https://www.elmundo.es/economia/vivienda/2026/10/20/6ad7434efdddff12748b457f.html",
   "https://www.elmundo.es/economia/empresas/2026/10/20/6ad73803e4d4d86e188b4575.html",
-  "https://www.elmundo.es/economia/2026/10/20/6ad7172d21efa0e04c8b458b.html"
+  "https://www.elmundo.es/economia/2026/10/20/6ad7172d21efa0e04c8b458b.html",
+  "https://www.elmundo.es/economia/2026/10/20/6ad7938b21efa09b7d8b45a0.html",
+  "https://www.expansion.com/economia/2026/10/20/gobierno-aprobara-ano-subida-sueldo-funcionarios-5.html"
  ],
  "titles": [
   "los nueve cambios para la jubilacio n en 2027 segu n el abogado laboralista ignacio solsona",
@@ -896,7 +898,9 @@
   "el gobierno rescata reformas de ayudas atascadas desde hace ma s de dos an os a las puertas del 29 n y sin acuerdo en el dia logo social",
   "el gobierno aprueba 225 millones para impulsar vivienda asequible en plazas universitarias y en zonas de alquiler tensionado",
   "waymo la empresa de coches auto nomos de google recibe la autorizacio n para circular en madrid y lanza sus primeras pruebas",
-  "es oficial llega una nueva deduccio n por alquiler de hasta 1 163 euros para quienes cumplan estos requisitos"
+  "es oficial llega una nueva deduccio n por alquiler de hasta 1 163 euros para quienes cumplan estos requisitos",
+  "sa nchez carga a la factura del pro ximo gobierno subidas a pensionistas y funcionarios que costara n ma s de 17 600 millones",
+  "el gobierno aprobara antes de fin de an o la subida de sueldo a los funcionarios del 5"
  ],
  "feeds_iniciados": [
   "https://ine.es/dyngs/Prensa/es/rssNovedades.xml",
@@ -1047,6 +1051,18 @@
    "fuente": "El Mundo Economía",
    "titulo": "Es oficial: llega una nueva deducción por alquiler de hasta 1.163 euros para quienes cumplan estos requisitos",
    "resultado": "borrador: deduccion-alquiler-irpf-1163-euros-requisitos.md"
+  },
+  {
+   "fecha": "2026-10-21 01:13",
+   "fuente": "El Mundo Economía",
+   "titulo": "Sánchez carga a la factura del próximo Gobierno subidas a pensionistas y funcionarios que costarán más de 17.600 millones",
+   "resultado": "borrador: funcionarios-subida-sueldo-2027-4-5-sin-fecha.md"
+  },
+  {
+   "fecha": "2026-10-21 01:14",
+   "fuente": "Expansión Economía",
+   "titulo": "El Gobierno aprobará antes de fin de año la subida de sueldo a los funcionarios del 5%",
+   "resultado": "borrador: funcionarios-subida-retroactiva-2026-4-5-2027.md"
   }
  ],
  "escritos": [
@@ -1098,6 +1114,16 @@
   {
    "title": "Inquilinos: deducción de hasta 1.163 € en la renta por el alquiler",
    "url": "/vivienda/deduccion-alquiler-irpf-1163-euros-requisitos/",
+   "guia": false
+  },
+  {
+   "title": "Funcionarios: sueldo +4,5% en 2027, pero sin fecha de subida",
+   "url": "/paro/funcionarios-subida-sueldo-2027-4-5-sin-fecha/",
+   "guia": false
+  },
+  {
+   "title": "Funcionarios: 0,5% retroactivo de 2026 y 4,5% en 2027",
+   "url": "/paro/funcionarios-subida-retroactiva-2026-4-5-2027/",
    "guia": false
   }
  ]
