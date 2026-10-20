@@ -745,6 +745,7 @@
   "https://www.elconfidencial.com/economia/2026-10-20/supremo-exige-visita-inmueble-hacienda-1tps_4448701/",
   "https://www.antena3.com/noticias/espana/rueda-prensa-posterior-consejo-ministros-streaming-directo_202610206ad73cccbb4b2674104f2101.html",
   "https://www.eleconomista.es/economia/noticias/14022066/10/26/el-gobierno-dara-un-ano-a-parejas-convivientes-con-hijos-para-solicitar-la-pension-de-viudedad.html",
+  "https://elpais.com/economia/mis-derechos/2026-10-20/el-supremo-corrige-a-hacienda-los-padres-con-custodia-compartida-si-pueden-deducirse-el-irpf-de-la-pension-de-alimentos.html",
   "https://elpais.com/economia/mis-derechos/2026-10-20/el-supremo-corrige-a-hacienda-los-padres-con-custodia-compartida-si-pueden-deducirse-el-irpf-de-la-pension-de-alimentos.html"
  ],
  "titles": [
@@ -854,7 +855,8 @@
   "la sostenibilidad de las pensiones un debate inco modo en campan a electoral",
   "los motivos detra s de la subida de 500 euros en la pensio n media de jubilacio n de los u ltimos ocho an os",
   "el debate de las pensiones entra en terreno pantanoso hay que reformar el modelo o cambiarlo por otro",
-  "access denied"
+  "access denied",
+  "elpais com"
  ],
  "feeds_iniciados": [
   "https://ine.es/dyngs/Prensa/es/rssNovedades.xml",
@@ -879,6 +881,12 @@
    "fuente": "elpais.com",
    "titulo": "elpais.com",
    "resultado": "error al redactar: WorkloadIdentityError: Token exchange failed (HTTP 401): {'error': {'type': 'authentication_error', 'message': 'Authentication failed'}} Ensure your federation rule matches your identity token. View your authentication even"
+  },
+  {
+   "fecha": "2026-10-20 16:30",
+   "fuente": "elpais.com",
+   "titulo": "elpais.com",
+   "resultado": "texto insuficiente (muro de pago o página vacía)"
   }
  ]
 }
