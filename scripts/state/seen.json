@@ -748,7 +748,10 @@
   "https://elpais.com/economia/mis-derechos/2026-10-20/el-supremo-corrige-a-hacienda-los-padres-con-custodia-compartida-si-pueden-deducirse-el-irpf-de-la-pension-de-alimentos.html",
   "https://elpais.com/economia/mis-derechos/2026-10-20/el-supremo-corrige-a-hacienda-los-padres-con-custodia-compartida-si-pueden-deducirse-el-irpf-de-la-pension-de-alimentos.html",
   "https://elpais.com/economia/2026-10-20/el-consejo-de-ministros-aprueba-ampliar-la-pension-de-viudedad-a-parejas-con-hijos-que-no-formalizasen-la-relacion.html",
-  "https://www.elmundo.es/economia/2026/10/20/6ad742b2fdddff01188b459b.html"
+  "https://www.elmundo.es/economia/2026/10/20/6ad742b2fdddff01188b459b.html",
+  "https://www.cnmc.es/node/422747",
+  "https://www.20minutos.es/lainformacion/economia-y-finanzas/inverco-incorporar-renta-fija-cuenta-ahorro-europea_7050871_0.html",
+  "https://www.20minutos.es/lainformacion/economia-y-finanzas/gobierno-aprueba-ampliar-pension-viudedad-parejas-no-registradas-con-hijos-mejora-las-bajas-para-los-afectados-por-catastrofes_7050975_0.html"
  ],
  "titles": [
   "los nueve cambios para la jubilacio n en 2027 segu n el abogado laboralista ignacio solsona",
@@ -858,7 +861,10 @@
   "los motivos detra s de la subida de 500 euros en la pensio n media de jubilacio n de los u ltimos ocho an os",
   "el debate de las pensiones entra en terreno pantanoso hay que reformar el modelo o cambiarlo por otro",
   "access denied",
-  "elpais com"
+  "elpais com",
+  "comunicacio n com",
+  "inverco pide incorporar renta fija a la cuenta de ahorro europea y mejorar la fiscalidad de los planes de pensiones",
+  "el gobierno aprueba ampliar la pensio n de viudedad a parejas no registradas con hijos y mejora las bajas para los afectados por cata strofes"
  ],
  "feeds_iniciados": [
   "https://ine.es/dyngs/Prensa/es/rssNovedades.xml",
@@ -901,6 +907,36 @@
    "fuente": "20minutos Economía",
    "titulo": "Inverco pide incorporar renta fija a la cuenta de ahorro europea y mejorar la fiscalidad de los planes de pensiones",
    "resultado": "error al redactar: WorkloadIdentityError: Token exchange failed (HTTP 401): {'error': {'type': 'authentication_error', 'message': 'Authentication failed'}} Ensure your federation rule matches your identity token. View your authentication even"
+  },
+  {
+   "fecha": "2026-10-20 16:54",
+   "fuente": "CNMC",
+   "titulo": "Comunicación COM",
+   "resultado": "descartada: sin valor propio: el texto fuente es solo el menú de navegación de la web de la CNMC (secciones, comparador de ofertas, canales de denuncia), sin ninguna noticia, medida, cifra ni fecha que explicar"
+  },
+  {
+   "fecha": "2026-10-20 16:55",
+   "fuente": "20minutos Economía",
+   "titulo": "Inverco pide incorporar renta fija a la cuenta de ahorro europea y mejorar la fiscalidad de los planes de pensiones",
+   "resultado": "borrador: cuenta-de-ahorro-europea-caife-aun-no-arranca-y-las-gestoras-piden-cambios.md"
+  },
+  {
+   "fecha": "2026-10-20 16:55",
+   "fuente": "20minutos Economía",
+   "titulo": "El Gobierno aprueba ampliar la pensión de viudedad a parejas no registradas con hijos y mejora las bajas para los afectados por catástrofes",
+   "resultado": "borrador: viudedad-para-parejas-no-casadas-con-hijos-dos-anos-empadronados.md"
+  }
+ ],
+ "escritos": [
+  {
+   "title": "Cuenta de ahorro europea CAIFE: aún no arranca y las gestoras piden cambios",
+   "url": "/hacienda/cuenta-de-ahorro-europea-caife-aun-no-arranca-y-las-gestoras-piden-cambios/",
+   "guia": false
+  },
+  {
+   "title": "Viudedad para parejas no casadas con hijos: dos años empadronados",
+   "url": "/pensiones/viudedad-para-parejas-no-casadas-con-hijos-dos-anos-empadronados/",
+   "guia": false
   }
  ]
 }
