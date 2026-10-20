@@ -1,5 +1,5 @@
 ---
-title: "Cuerpo asegura que pensiones y SMI subirán aunque haya Gobierno en funciones"
+title: "Cuerpo: pensiones y SMI subirán aunque haya Gobierno en funciones"
 description: "Cuerpo asegura que las pensiones subirán en 2027 según el IPC y que el SMI también, aunque el Gobierno esté en funciones tras las elecciones del 29 de noviembre."
 date: 2026-10-15T10:01:48+00:00
 category: pensiones

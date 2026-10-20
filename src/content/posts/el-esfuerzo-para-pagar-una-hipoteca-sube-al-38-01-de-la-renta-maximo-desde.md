@@ -1,5 +1,5 @@
 ---
-title: "El esfuerzo para pagar una hipoteca sube al 38,01% de la renta, máximo desde 2011"
+title: "Pagar la hipoteca ya se lleva el 38% de la renta, máximo desde 2011"
 description: "Según el Banco de España, una hipoteca tipo exige el 38,01% de la renta neta del hogar en el segundo trimestre de 2026. Lo aconsejable es no pasar del 35%."
 date: 2026-10-16T23:40:22+00:00
 category: vivienda

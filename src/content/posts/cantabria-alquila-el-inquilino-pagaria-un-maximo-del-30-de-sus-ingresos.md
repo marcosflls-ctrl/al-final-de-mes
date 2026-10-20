@@ -1,5 +1,5 @@
 ---
-title: "Cantabria Alquila: el inquilino pagaría un máximo del 30% de sus ingresos"
+title: "Cantabria Alquila: el alquiler no pasaría del 30% de los ingresos"
 description: "Cantabria publica el borrador del decreto de 'Cantabria Alquila': el inquilino pagaría hasta el 30% de sus ingresos y el Gobierno cubre la diferencia."
 date: 2026-10-16T19:59:51+00:00
 category: vivienda

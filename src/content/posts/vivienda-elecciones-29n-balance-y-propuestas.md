@@ -1,5 +1,5 @@
 ---
-title: "Vivienda y elecciones del 29N: qué se aprobó y qué proponen los partidos"
+title: "Vivienda y elecciones del 29N: balance y propuestas de los partidos"
 description: "Los decretos de alquiler que cayeron, los que siguen en vigor y lo que plantean PSOE, PP, Vox y Sumar sobre vivienda antes del 29 de noviembre."
 date: 2026-10-16T17:55:00+00:00
 category: vivienda

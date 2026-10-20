@@ -1,5 +1,5 @@
 ---
-title: "Ayudas de 9 millones para agricultores y ganaderos afectados por incendios"
+title: "Ayudas de 9 millones para agricultores y ganaderos por los incendios"
 description: "El Gobierno aprueba 9 millones en ayudas directas para agricultores y ganaderos afectados por incendios y sube al 70% la subvención del seguro."
 date: 2026-10-20T15:09:45+00:00
 category: paro

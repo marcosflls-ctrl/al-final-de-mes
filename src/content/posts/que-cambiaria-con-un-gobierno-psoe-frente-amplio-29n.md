@@ -1,5 +1,5 @@
 ---
-title: "Qué cambiaría en tu bolsillo con un Gobierno del PSOE y sus socios tras el 29N"
+title: "Qué cambiaría en tu bolsillo con el PSOE y sus socios tras el 29N"
 description: "Lo que añaden Frente Amplio, Podemos y otros posibles socios del PSOE sobre alquiler, salario mínimo, jornada, impuestos y energía, y en qué no coinciden."
 date: 2026-10-20T17:00:00+02:00
 category: hacienda

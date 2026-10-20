@@ -1,5 +1,5 @@
 ---
-title: "Impuestos y elecciones del 29N: qué se aprobó y qué proponen los partidos"
+title: "Impuestos y elecciones del 29N: balance y propuestas de los partidos"
 description: "El IVA de los alimentos, el IRPF del ahorro, el impuesto a la banca y lo que plantean PSOE, PP, Vox, Sumar y Podemos sobre IRPF e IVA antes del 29 de noviembre."
 date: 2026-10-16T21:46:00+00:00
 category: hacienda

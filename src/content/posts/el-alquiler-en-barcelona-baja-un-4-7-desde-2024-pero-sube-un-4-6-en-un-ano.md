@@ -1,5 +1,5 @@
 ---
-title: "El alquiler en Barcelona baja un 4,7% desde 2024, pero sube un 4,6% en un año"
+title: "El alquiler en Barcelona baja un 4,7% desde 2024 pero sube en un año"
 description: "Los nuevos alquileres en Barcelona cuestan 1.137 € al mes: un 4,7% menos que en 2024, pero un 4,6% más que hace un año, según datos de la Generalitat."
 date: 2026-10-17T14:15:04+00:00
 category: vivienda

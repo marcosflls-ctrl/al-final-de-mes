@@ -1,5 +1,5 @@
 ---
-title: "Pensión vitalicia del 20% para hijos mayores de 45 que cuidaron a un familiar"
+title: "Pensión del 20% para hijos de más de 45 que cuidaron a un familiar"
 description: "Los hijos mayores de 45 años que cuidaron del fallecido pueden cobrar una pensión vitalicia del 20% de la base reguladora. Estos son los requisitos."
 date: 2026-10-15T15:39:20+00:00
 category: pensiones

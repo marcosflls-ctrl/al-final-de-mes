@@ -1,5 +1,5 @@
 ---
-title: "Cártel de los coches: 1 de diciembre, fecha clave para reclamar el sobreprecio"
+title: "Cártel de los coches: reclama el sobreprecio antes del 1 de diciembre"
 description: "Si compraste un coche nuevo entre 2006 y 2013 de una marca sancionada, el 1 de diciembre de 2026 es la fecha de referencia para reclamar el sobreprecio."
 date: 2026-10-15T23:43:29+00:00
 category: hacienda

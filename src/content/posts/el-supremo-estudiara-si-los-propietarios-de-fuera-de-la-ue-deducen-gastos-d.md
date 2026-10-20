@@ -1,5 +1,5 @@
 ---
-title: "El Supremo decidirá si los extracomunitarios deducen gastos del alquiler"
+title: "El Supremo decidirá si los extracomunitarios deducen gastos del piso"
 description: "El Supremo admite el recurso de Hacienda y estudiará si los propietarios residentes fuera de la UE pueden deducir gastos del alquiler. Hoy no pueden."
 date: 2026-10-14T10:19:06+00:00
 category: hacienda

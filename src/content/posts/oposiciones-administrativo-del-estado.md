@@ -1,5 +1,5 @@
 ---
-title: "Oposiciones a Administrativo del Estado: plazas, examen, temario y sueldo"
+title: "Oposiciones a Administrativo del Estado: plazas, examen y sueldo"
 description: "La oferta de 2026 trae 2.300 plazas libres de Administrativo del Estado, la oposición con más plazas. Requisitos, cómo es el examen, el temario y el sueldo."
 date: 2026-10-19T16:20:00+02:00
 category: oposiciones

@@ -1,5 +1,5 @@
 ---
-title: "Empleo, salario mínimo y elecciones del 29N: qué se aprobó y qué proponen los partidos"
+title: "Empleo y salario mínimo en el 29N: balance y propuestas"
 description: "El salario mínimo, la reforma del paro, la jornada de 37,5 horas que tumbó el Congreso y lo que plantean PSOE, PP, Vox, Sumar y Podemos sobre trabajo."
 date: 2026-10-16T21:44:00+00:00
 category: paro

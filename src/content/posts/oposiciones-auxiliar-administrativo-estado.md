@@ -1,5 +1,5 @@
 ---
-title: "Oposiciones a Auxiliar Administrativo del Estado: plazas, examen, temario y sueldo"
+title: "Oposiciones a Auxiliar Administrativo del Estado: plazas y examen"
 description: "La oferta de 2026 trae 1.450 plazas de Auxiliar Administrativo del Estado. Requisitos, cómo es el examen, qué temario entra y cuánto se cobra."
 date: 2026-10-19T14:50:00+02:00
 category: oposiciones

@@ -1,5 +1,5 @@
 ---
-title: "Qué cambia en tu bolsillo según quién gobierne tras el 29N: comparativa"
+title: "Qué cambia en tu bolsillo según quién gobierne tras el 29N"
 description: "IRPF, IVA, pensiones, alquiler, salario mínimo y luz: lo que proponen PP, PSOE, Vox y la izquierda, tema a tema, y qué combinaciones dan las encuestas."
 date: 2026-10-20T17:00:00+02:00
 category: hacienda

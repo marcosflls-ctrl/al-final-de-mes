@@ -1,5 +1,5 @@
 ---
-title: "Luz, gasolina y elecciones del 29N: qué se aprobó y qué proponen los partidos"
+title: "Luz, gasolina y elecciones del 29N: balance y propuestas"
 description: "Las rebajas de impuestos por la guerra de Irán, el descuento de 20 céntimos, el butano, las nucleares y lo que plantean PSOE, PP, Vox, Sumar y Podemos."
 date: 2026-10-16T21:35:00+00:00
 category: luz

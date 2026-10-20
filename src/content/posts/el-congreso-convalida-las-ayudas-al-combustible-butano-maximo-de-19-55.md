@@ -1,5 +1,5 @@
 ---
-title: "El Congreso convalida las ayudas al combustible: butano máximo de 19,55 €"
+title: "El Congreso convalida las ayudas al combustible: butano a 19,55 €"
 description: "La Diputación Permanente mantiene en vigor el decreto: butano a 19,55 € como máximo hasta junio de 2027 y la tarifa del gas limitada. Vox votó en contra."
 date: 2026-10-16T15:24:46+00:00
 category: luz

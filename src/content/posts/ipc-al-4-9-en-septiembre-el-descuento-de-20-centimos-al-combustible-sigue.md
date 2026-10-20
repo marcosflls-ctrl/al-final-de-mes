@@ -1,5 +1,5 @@
 ---
-title: "IPC al 4,9% en septiembre: el descuento de 20 céntimos al combustible sigue"
+title: "IPC al 4,9% en septiembre: sigue el descuento de 20 céntimos"
 description: "El IPC sube al 4,9% en septiembre, el nivel más alto desde 2023, y la rebaja de 20 céntimos por litro en gasolina y diésel sigue en noviembre."
 date: 2026-10-14T15:52:31+00:00
 category: luz
