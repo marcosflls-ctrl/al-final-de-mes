@@ -751,7 +751,10 @@
   "https://www.elmundo.es/economia/2026/10/20/6ad742b2fdddff01188b459b.html",
   "https://www.cnmc.es/node/422747",
   "https://www.20minutos.es/lainformacion/economia-y-finanzas/inverco-incorporar-renta-fija-cuenta-ahorro-europea_7050871_0.html",
-  "https://www.20minutos.es/lainformacion/economia-y-finanzas/gobierno-aprueba-ampliar-pension-viudedad-parejas-no-registradas-con-hijos-mejora-las-bajas-para-los-afectados-por-catastrofes_7050975_0.html"
+  "https://www.20minutos.es/lainformacion/economia-y-finanzas/gobierno-aprueba-ampliar-pension-viudedad-parejas-no-registradas-con-hijos-mejora-las-bajas-para-los-afectados-por-catastrofes_7050975_0.html",
+  "https://www.lavanguardia.com/economia/20261020/11663423/supremo-hacienda-inmuebles-catastro-google-maps-impuestos.html",
+  "https://www.20minutos.es/lainformacion/economia-y-finanzas/gobierno-aprueba-ayudas-directas-9-millones-euros-agricultores-ganaderos-afectados-incendios-este-ano_7050963_0.html",
+  "https://www.20minutos.es/lainformacion/economia-y-finanzas/supremo-rechaza-que-hacienda-pueda-tasar-una-vivienda-solo-con-catastro-google-maps-sin-visitarla_7051139_0.html"
  ],
  "titles": [
   "los nueve cambios para la jubilacio n en 2027 segu n el abogado laboralista ignacio solsona",
@@ -864,7 +867,9 @@
   "elpais com",
   "comunicacio n com",
   "inverco pide incorporar renta fija a la cuenta de ahorro europea y mejorar la fiscalidad de los planes de pensiones",
-  "el gobierno aprueba ampliar la pensio n de viudedad a parejas no registradas con hijos y mejora las bajas para los afectados por cata strofes"
+  "el gobierno aprueba ampliar la pensio n de viudedad a parejas no registradas con hijos y mejora las bajas para los afectados por cata strofes",
+  "el ejecutivo lanza ayudas directas para agricultores y ganaderos afectados por los incendios",
+  "el supremo rechaza que hacienda pueda tasar una vivienda solo con el catastro y google maps sin visitarla"
  ],
  "feeds_iniciados": [
   "https://ine.es/dyngs/Prensa/es/rssNovedades.xml",
@@ -925,6 +930,18 @@
    "fuente": "20minutos Economía",
    "titulo": "El Gobierno aprueba ampliar la pensión de viudedad a parejas no registradas con hijos y mejora las bajas para los afectados por catástrofes",
    "resultado": "borrador: viudedad-para-parejas-no-casadas-con-hijos-dos-anos-empadronados.md"
+  },
+  {
+   "fecha": "2026-10-20 17:09",
+   "fuente": "20minutos Economía",
+   "titulo": "El Ejecutivo lanza ayudas directas para agricultores y ganaderos afectados por los incendios",
+   "resultado": "borrador: ayudas-de-9-millones-para-agricultores-y-ganaderos-afectados-por-incendios.md"
+  },
+  {
+   "fecha": "2026-10-20 17:10",
+   "fuente": "20minutos Economía",
+   "titulo": "El Supremo rechaza que Hacienda pueda tasar una vivienda solo con el Catastro y Google Maps sin visitarla",
+   "resultado": "borrador: el-supremo-hacienda-no-puede-tasar-tu-vivienda-solo-con-catastro-y-google.md"
   }
  ],
  "escritos": [
@@ -936,6 +953,16 @@
   {
    "title": "Viudedad para parejas no casadas con hijos: dos años empadronados",
    "url": "/pensiones/viudedad-para-parejas-no-casadas-con-hijos-dos-anos-empadronados/",
+   "guia": false
+  },
+  {
+   "title": "Ayudas de 9 millones para agricultores y ganaderos afectados por incendios",
+   "url": "/paro/ayudas-de-9-millones-para-agricultores-y-ganaderos-afectados-por-incendios/",
+   "guia": false
+  },
+  {
+   "title": "El Supremo: Hacienda no puede tasar tu vivienda solo con Catastro y Google Maps",
+   "url": "/hacienda/el-supremo-hacienda-no-puede-tasar-tu-vivienda-solo-con-catastro-y-google/",
    "guia": false
   }
  ]
