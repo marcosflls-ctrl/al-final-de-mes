@@ -6,10 +6,10 @@ category: paro
 guia: true
 orden: 5
 tags: [ingreso-minimo-vital, imv, ayudas, seguridad-social, familias]
-image: /img/banco/seguridad-social-08.webp
-imageAlt: "Sede de la Seguridad Social en Málaga"
-imageCredit: "Tyk / Wikimedia Commons (CC BY-SA 3.0)"
-imageCreditUrl: "https://commons.wikimedia.org/wiki/File:Sede_de_la_Seguridad_Social,_M%C3%A1laga.jpg"
+image: /img/fotos/ingreso-minimo-vital-2026.webp
+imageAlt: "Pareja de jubilados"
+imageCredit: "jhenning / Pixabay"
+imageCreditUrl: "https://pixabay.com/photos/retiree-pensioners-elderly-couple-7390179/"
 sources:
   - name: "Bankinter: ingreso mínimo vital 2026, cuantías y requisitos (05/01/2026)"
     url: "https://www.bankinter.com/blog/finanzas-personales/ingreso-minimo-vital"

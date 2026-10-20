@@ -6,10 +6,10 @@ category: hacienda
 guia: true
 orden: 5
 tags: [elecciones-29n, pp, vox, partidos, impuestos, pensiones]
-image: /img/banco/congreso-07.webp
-imageAlt: "Fachada del Congreso de los Diputados"
-imageCredit: "Antonio.velez / Wikimedia Commons (CC BY-SA 3.0 es)"
-imageCreditUrl: "https://commons.wikimedia.org/wiki/File:Espa%C3%B1a_-_Madrid_-_Palacio_de_las_Cortes_-_Fachada.JPG"
+image: /img/fotos/que-cambiaria-con-un-gobierno-pp-vox-29n.webp
+imageAlt: "Hemiciclo de un parlamento"
+imageCredit: "12019 / Pixabay"
+imageCreditUrl: "https://pixabay.com/photos/des-moines-iowa-state-capitol-1738285/"
 sources:
   - name: "Infobae: así están los sondeos de las elecciones generales (20/10/2026)"
     url: "https://www.infobae.com/espana/2026/10/20/asi-estan-los-sondeos-de-las-elecciones-generales-de-espana-2026/"

@@ -8,10 +8,10 @@ pendiente: true
 sources:
   - name: "La Vanguardia Economía: Las haciendas vascas deflactarán un 3 % el IRPF en 2027 para aliviar el impacto de la inflación"
     url: "https://www.lavanguardia.com/local/paisvasco/20261015/11659929/haciendas-vascas-deflactaran-3-irpf-2027-aliviar-impacto-inflacion.html"
-image: /img/banco/calculadora-06.webp
-imageAlt: "Calculadora de sobremesa"
-imageCredit: "Coyau / Wikimedia Commons (CC BY-SA 3.0)"
-imageCreditUrl: "https://commons.wikimedia.org/wiki/File:Aurora_electronic_calculator_DT210_02.jpg"
+image: /img/fotos/bizkaia-gipuzkoa-y-alava-subiran-un-3-los-tramos-del-irpf-en-2027.webp
+imageAlt: "Calculadora y cuentas domésticas"
+imageCredit: "Bru-nO / Pixabay"
+imageCreditUrl: "https://pixabay.com/photos/euro-seem-money-finance-piggy-bank-870757/"
 ---
 
 Las haciendas forales de Bizkaia, Gipuzkoa y Álava han acordado **deflactar un 3 % el IRPF en 2027**. Lo publica La Vanguardia, y se ha conocido este jueves, durante la reunión del Consejo Vasco de Finanzas Públicas. Es un acuerdo anunciado. El texto no precisa en qué norma se aprobará ni cuándo se publicará, así que conviene esperar a ese paso formal.

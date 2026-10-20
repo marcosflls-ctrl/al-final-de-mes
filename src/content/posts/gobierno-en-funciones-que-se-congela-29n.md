@@ -6,10 +6,10 @@ category: hacienda
 guia: true
 orden: 8
 tags: [elecciones-29n, gobierno-en-funciones, presupuestos, pensiones, smi]
-image: /img/banco/moncloa-01.webp
-imageAlt: "Palacio de la Moncloa, sede del Gobierno"
-imageCredit: "Yeray Díaz Zbida from Melilla, España / Wikimedia Commons (CC BY 2.0)"
-imageCreditUrl: "https://commons.wikimedia.org/wiki/File:Palacio_de_la_Moncloa,_Madrid,_Espa%C3%B1a_edited.jpg"
+image: /img/fotos/gobierno-en-funciones-que-se-congela-29n.webp
+imageAlt: "Edificio oficial"
+imageCredit: "ValterM / Pixabay"
+imageCreditUrl: "https://pixabay.com/photos/parliament-architecture-building-6962982/"
 sources:
   - name: "BOE: Ley 50/1997, del Gobierno (artículo 21, Gobierno en funciones)"
     url: "https://www.boe.es/buscar/act.php?id=BOE-A-1997-25336"

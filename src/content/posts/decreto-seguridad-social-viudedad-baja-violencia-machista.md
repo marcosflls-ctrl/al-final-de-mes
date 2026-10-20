@@ -5,10 +5,10 @@ date: 2026-10-20T19:29:25+00:00
 category: pensiones
 tags: ["seguridad-social", "pension-de-viudedad", "real-decreto-ley", "cume", "violencia-machista"]
 pendiente: true
-image: /img/banco/seguridad-social-08.webp
-imageAlt: "Sede de la Seguridad Social en Málaga"
-imageCredit: "Tyk / Wikimedia Commons (CC BY-SA 3.0)"
-imageCreditUrl: "https://commons.wikimedia.org/wiki/File:Sede_de_la_Seguridad_Social,_M%C3%A1laga.jpg"
+image: /img/fotos/decreto-seguridad-social-viudedad-baja-violencia-machista.webp
+imageAlt: "Pareja de jubilados"
+imageCredit: "MabelAmber / Pixabay"
+imageCreditUrl: "https://pixabay.com/photos/person-man-woman-people-couple-3553814/"
 sources:
   - name: "El Mundo Economía: El Gobierno rescata reformas de ayudas atascadas desde hace más de dos años a las puertas del 29-N y"
     url: "https://www.elmundo.es/economia/2026/10/20/6ad730a0e85ecece7f8b458c.html"

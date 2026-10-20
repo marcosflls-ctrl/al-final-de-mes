@@ -6,10 +6,10 @@ category: paro
 guia: true
 orden: 6
 tags: [elecciones-29n, mesa-electoral, permisos-laborales, elecciones]
-image: /img/banco/congreso-07.webp
-imageAlt: "Fachada del Congreso de los Diputados"
-imageCredit: "Antonio.velez / Wikimedia Commons (CC BY-SA 3.0 es)"
-imageCreditUrl: "https://commons.wikimedia.org/wiki/File:Espa%C3%B1a_-_Madrid_-_Palacio_de_las_Cortes_-_Fachada.JPG"
+image: /img/fotos/mesa-electoral-29n-cuanto-se-cobra-y-permisos.webp
+imageAlt: "Hemiciclo de un parlamento"
+imageCredit: "tzevena / Pixabay"
+imageCreditUrl: "https://pixabay.com/photos/vienna-sightseeing-building-room-2681697/"
 sources:
   - name: "BOE: Ley Orgánica 5/1985 del Régimen Electoral General (artículos 26, 27, 28 y 143)"
     url: "https://www.boe.es/buscar/act.php?id=BOE-A-1985-11672"

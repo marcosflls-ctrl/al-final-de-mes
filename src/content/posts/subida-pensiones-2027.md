@@ -20,10 +20,10 @@ sources:
     url: "https://theobjective.com/economia/2026-02-04/entra-vigor-subida-pensiones-2026-boe/"
   - name: "Europa Press / Bolsamanía: las mínimas y no contributivas suben entre un 7 % y casi un 11,5 % en 2026, según el Ivie (16/12/2025)"
     url: "https://www.bolsamania.com/noticias/economia/economia--las-pensiones-minimas-y-no-contributivas-se-revalorizaran-entre-un-7-y-casi-un-115-en-2026-segun-ivie--21386530.html"
-image: /img/banco/seguridad-social-06.webp
-imageAlt: "Oficinas de la Seguridad Social en Vitoria"
-imageCredit: "Zarateman / Wikimedia Commons (CC0)"
-imageCreditUrl: "https://commons.wikimedia.org/wiki/File:Vitoria_-_Calle_Dato,_Oficinas_de_la_Seguridad_Social_1.jpg"
+image: /img/fotos/subida-pensiones-2027.webp
+imageAlt: "Pareja de jubilados"
+imageCredit: "balouriarajesh / Pixabay"
+imageCreditUrl: "https://pixabay.com/photos/old-couple-elderly-people-4235995/"
 ---
 
 <!-- ACTUALIZAR: 1) finales de octubre (IPC adelantado de octubre): rehacer la media y los escenarios. 2) 27 de noviembre (IPC adelantado de noviembre): poner la subida calculada en el título, la entradilla y las tablas. 3) 15 de diciembre (IPC definitivo) y publicación en el BOE: cifra oficial, pendiente: false y cuantías de las mínimas y no contributivas. -->

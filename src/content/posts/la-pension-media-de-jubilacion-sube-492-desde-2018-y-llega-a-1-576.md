@@ -5,10 +5,10 @@ date: 2026-10-17T17:17:34+00:00
 category: pensiones
 tags: ["pension-media", "jubilacion", "revalorizacion", "ipc", "seguridad-social"]
 pendiente: false
-image: /img/banco/seguridad-social-08.webp
-imageAlt: "Sede de la Seguridad Social en Málaga"
-imageCredit: "Tyk / Wikimedia Commons (CC BY-SA 3.0)"
-imageCreditUrl: "https://commons.wikimedia.org/wiki/File:Sede_de_la_Seguridad_Social,_M%C3%A1laga.jpg"
+image: /img/fotos/la-pension-media-de-jubilacion-sube-492-desde-2018-y-llega-a-1-576.webp
+imageAlt: "Pareja de jubilados"
+imageCredit: "EddieKphoto / Pixabay"
+imageCreditUrl: "https://pixabay.com/photos/couple-elderly-walking-fall-trail-6653517/"
 sources:
   - name: "Seguridad Social, estadísticas eSTADISS (pensión media de jubilación)"
     url: "https://w6.seg-social.es/ProsaInternetAnonimo/OnlineAccess?ARQ.SPM.ACTION=LOGIN&ARQ.SPM.APPTYPE=SERVICE&ARQ.IDAPP=ESTA0001"

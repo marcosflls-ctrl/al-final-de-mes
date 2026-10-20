@@ -8,10 +8,10 @@ pendiente: false
 sources:
   - name: "El Mundo Economía: La factura de las pensiones se dispara un 60% en la era Sánchez y obliga al futuro Gobierno a hacer"
     url: "https://www.elmundo.es/economia/2026/10/16/6ad0c79dfdddffcb318b45a3.html"
-image: /img/banco/seguridad-social-08.webp
-imageAlt: "Sede de la Seguridad Social en Málaga"
-imageCredit: "Tyk / Wikimedia Commons (CC BY-SA 3.0)"
-imageCreditUrl: "https://commons.wikimedia.org/wiki/File:Sede_de_la_Seguridad_Social,_M%C3%A1laga.jpg"
+image: /img/fotos/las-pensiones-cuestan-14-500-millones-al-mes-un-60-mas-que-en-2018.webp
+imageAlt: "Pareja de jubilados"
+imageCredit: "pasja1000 / Pixabay"
+imageCreditUrl: "https://pixabay.com/photos/senior-elderly-people-couple-3336451/"
 ---
 
 La nómina mensual de pensiones ha pasado de poco más de 9.000 millones de euros en junio de 2018 a rozar los 14.500 millones en septiembre de 2026. Es un 60% más, según los datos que recoge El Mundo. Y el gasto sigue creciendo.

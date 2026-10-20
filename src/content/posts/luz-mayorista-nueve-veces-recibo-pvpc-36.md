@@ -5,10 +5,10 @@ date: 2026-10-20T19:28:50+00:00
 category: luz
 tags: ["precio-de-la-luz", "pvpc", "mercado-electrico", "factura-de-la-luz", "omie"]
 pendiente: false
-image: /img/banco/contador-luz-07.webp
-imageAlt: "Torres de alta tensión bajo un cielo azul"
-imageCredit: "Deni Williams from São Paulo, Brasil / Wikimedia Commons (CC BY 2.0)"
-imageCreditUrl: "https://commons.wikimedia.org/wiki/File:Usina_Hidroel%C3%A9trica_Itaipu_Binacional_-_Itaipu_Dam_(17360461611).jpg"
+image: /img/fotos/luz-mayorista-nueve-veces-recibo-pvpc-36.webp
+imageAlt: "Contador de la luz"
+imageCredit: "geralt / Pixabay"
+imageCreditUrl: "https://pixabay.com/photos/electricity-meter-electricity-pay-96863/"
 sources:
   - name: "El Mundo Economía: El precio de la luz se multiplica casi por nueve entre febrero y septiembre por el gas y la menor pr"
     url: "https://www.elmundo.es/economia/2026/10/20/6ad64e6221efa0423b8b4589.html"

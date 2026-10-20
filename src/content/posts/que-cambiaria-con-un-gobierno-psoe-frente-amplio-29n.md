@@ -6,10 +6,10 @@ category: hacienda
 guia: true
 orden: 6
 tags: [elecciones-29n, psoe, sumar, frente-amplio, podemos, partidos]
-image: /img/banco/congreso-02.webp
-imageAlt: "El Congreso de los Diputados de noche"
-imageCredit: "Roberto García from Spain / Wikimedia Commons (CC BY 2.0)"
-imageCreditUrl: "https://commons.wikimedia.org/wiki/File:Congreso_de_los_Diputados_(Espa%C3%B1a)_10.jpg"
+image: /img/fotos/que-cambiaria-con-un-gobierno-psoe-frente-amplio-29n.webp
+imageAlt: "Hemiciclo de un parlamento"
+imageCredit: "InstagramFOTOGRAFIN / Pixabay"
+imageCreditUrl: "https://pixabay.com/photos/federal-eagle-old-bundestag-bonn-2475738/"
 sources:
   - name: "Infobae: así están los sondeos de las elecciones generales (20/10/2026)"
     url: "https://www.infobae.com/espana/2026/10/20/asi-estan-los-sondeos-de-las-elecciones-generales-de-espana-2026/"

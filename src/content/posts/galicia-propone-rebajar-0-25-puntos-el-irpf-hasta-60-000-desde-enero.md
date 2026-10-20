@@ -8,10 +8,10 @@ pendiente: true
 sources:
   - name: "Expansión Economía: Alfonso Rueda rebaja el IRPF para rentas de hasta 60.000 euros"
     url: "https://www.expansion.com/galicia/2026/10/16/alfonso-rueda-rebaja-irpf-rentas-60-000-euros.html"
-image: /img/banco/calculadora-03.webp
-imageAlt: "Teclado de una calculadora"
-imageCredit: "Coyau / Wikimedia Commons (CC BY-SA 3.0)"
-imageCreditUrl: "https://commons.wikimedia.org/wiki/File:Aurora_electronic_calculator_DT210_05.jpg"
+image: /img/fotos/galicia-propone-rebajar-0-25-puntos-el-irpf-hasta-60-000-desde-enero.webp
+imageAlt: "Calculadora y cuentas domésticas"
+imageCredit: "stevepb / Pixabay"
+imageCreditUrl: "https://pixabay.com/photos/calculator-calculation-insurance-385506/"
 ---
 
 La Xunta de Galicia quiere bajar un cuarto de punto (0,25) los cuatro primeros tramos del IRPF, los que cubren rentas hasta 60.000 euros. Según publica Expansión, la rebaja tendría efecto retroactivo desde enero de este año. **Todavía no es definitiva**: va en la Ley de Acompañamiento de los Presupuestos gallegos de 2027, que tiene que aprobar el Parlamento de Galicia.

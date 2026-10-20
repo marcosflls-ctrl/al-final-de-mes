@@ -6,10 +6,10 @@ category: hacienda
 guia: true
 orden: 7
 tags: [elecciones-29n, voto-por-correo, correos, elecciones]
-image: /img/banco/congreso-04.webp
-imageAlt: "Fachada del Congreso de los Diputados"
-imageCredit: "Vickybol / Wikimedia Commons (CC BY-SA 3.0)"
-imageCreditUrl: "https://commons.wikimedia.org/wiki/File:Congreso_de_los_Diputados,_enero_de_2015.JPG"
+image: /img/fotos/votar-por-correo-29n-plazos-y-pasos.webp
+imageAlt: "Hemiciclo de un parlamento"
+imageCredit: "12019 / Pixabay"
+imageCreditUrl: "https://pixabay.com/photos/london-england-great-britain-90782/"
 sources:
   - name: "La Moncloa: cómo solicitar el voto por correo en las elecciones generales del 29 de noviembre"
     url: "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/interior/paginas/voto-por-correo-elecciones-generales-29n.aspx"

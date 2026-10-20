@@ -8,10 +8,10 @@ pendiente: false
 sources:
   - name: "El País Economía: Mi contrato de alquiler es hasta octubre. ¿Se renueva dos años de manera automática por los decretos"
     url: "https://elpais.com/economia/vivienda/consultorio/2026-10-14/la-prorroga-extraordinaria-de-dos-anos-es-automatica-durante-ese-plazo-se-aplica-alguna-subida-de-la-renta.html"
-image: /img/banco/fachada-balcones-04.webp
-imageAlt: "Balcones de un edificio del paseo de Gràcia de Barcelona"
-imageCredit: "Enric / Wikimedia Commons (CC BY-SA 4.0)"
-imageCreditUrl: "https://commons.wikimedia.org/wiki/File:136_Casa_Malagrida,_pg._de_Gr%C3%A0cia_27_(Barcelona),_balcons.jpg"
+image: /img/fotos/prorroga-del-alquiler-de-dos-anos-no-es-automatica-y-hay-que-pedirla.webp
+imageAlt: "Fachada con balcones"
+imageCredit: "Pexels / Pixabay"
+imageCreditUrl: "https://pixabay.com/photos/apartments-architecture-balconies-1845884/"
 ---
 
 Si tu contrato de alquiler vence este mes, los decretos de vivienda **no lo renuevan por sí solos**. La prórroga extraordinaria de hasta dos años hay que solicitarla, y hay que hacerlo **antes de la fecha de vencimiento** del contrato. Si te la conceden, la renta no sube por IPC: se mantiene y solo se actualiza si el contrato ya lo prevé, con otro índice, el IRAV.
