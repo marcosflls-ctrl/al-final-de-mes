@@ -78,10 +78,22 @@ def load_state() -> dict:
     return {"urls": [], "titles": []}
 
 
+# Registro de lo que ha pasado con cada noticia revisada (se guarda en seen.json → "registro"),
+# para poder ver por qué el robot descarta noticias sin tener que abrir los registros de GitHub.
+REGISTRO: list[dict] = []
+
+
+def anotar(item: dict, resultado: str) -> None:
+    REGISTRO.append({"fecha": datetime.now(MADRID).strftime("%Y-%m-%d %H:%M"),
+                     "fuente": item.get("source", ""), "titulo": item.get("title", "")[:140], "resultado": resultado[:300]})
+
+
 def save_state(state: dict) -> None:
     STATE_FILE.parent.mkdir(parents=True, exist_ok=True)
     state["urls"] = state["urls"][-4000:]
     state["titles"] = state["titles"][-2000:]
+    if REGISTRO:
+        state["registro"] = (state.get("registro", []) + REGISTRO)[-150:]
     STATE_FILE.write_text(json.dumps(state, ensure_ascii=False, indent=1), encoding="utf-8")
 
 
@@ -275,13 +287,22 @@ QUÉ SE DESCARTA ({"skip": true, "reason": "..."}):
 bolsa, política sin medida concreta, otros países).
 - Nombramientos, convocatorias de empleo público, subvenciones a entidades concretas, correcciones de errores \
 menores y trámites internos de la Administración.
-- Lo que ya cubre una de nuestras guías sin aportar un dato nuevo importante: ese dato se añade a la guía, no se publica como noticia suelta. Google valora la web por su contenido propio, no por el número de noticias.
+- Lo que ya cubre una de nuestras guías SIN NINGÚN dato nuevo (por ejemplo, un medio que vuelve a explicar \
+cuánto es el salario mínimo o cómo se pide el paro). OJO: que exista una guía del tema NO es motivo para descartar. \
+Si la noticia trae algo nuevo (una ley o decreto, una sentencia, una cifra o fecha nueva, un cambio de requisitos, \
+una medida aprobada o anunciada por el Gobierno), SÍ se publica, centrada en lo nuevo y enlazando la guía.
 - Lo que trata básicamente de lo mismo que alguno de los "artículos ya publicados", salvo que aporte un dato nuevo \
 relevante (en ese caso, céntrate en lo nuevo). \
   Cuenta como repetición aunque el título sea distinto: el mismo informe, entrevista o reportaje contado por \
 otro medio (por ejemplo, el mismo reportaje de Bloomberg o las mismas declaraciones de un directivo), o un \
 detalle secundario de una noticia ya publicada. Revisa sobre todo los primeros de la lista, que son los más recientes.
 - Refritos sin novedad, opiniones o textos sin datos.
+
+EN CASO DE DUDA, ESCRIBE: todo borrador lo revisa una persona antes de publicarse, así que es mejor proponer una \
+noticia útil que perderla. Son noticias que SÍ hay que escribir (si son nuevas): sentencias del Supremo o de otros \
+tribunales que cambian lo que paga o cobra la gente, decretos y medidas del Consejo de Ministros, cambios en \
+pensiones, paro, ayudas, alquiler o impuestos, avisos de Hacienda o de la Seguridad Social, y datos oficiales nuevos \
+(INE, SEPE, Seguridad Social). Las que NO: opinión, política sin medida concreta, empresas, macroeconomía.
 
 LONGITUD: la marca lo que hay que contar. Un dato: 400-500 palabras como mínimo, con el contexto y lo que significa para el lector. Una medida con requisitos y plazos: \
 500-900 palabras. Nunca rellenes. Antes de responder, repasa la fuente y comprueba que no falta ningún dato \
@@ -371,12 +392,15 @@ def write_article(item: dict, source_text: str, oficiales: list[str], posts: lis
         data = json.loads(raw)
     except json.JSONDecodeError:
         print("  ! respuesta no válida de la IA, se omite")
+        anotar(item, "error: respuesta no válida de la IA")
         return None
     if data.get("skip"):
         print(f"  – descartada: {data.get('reason', '')}")
+        anotar(item, "descartada: " + str(data.get("reason", "")))
         return None
     if data.get("category") not in CATEGORIES or not data.get("title") or not data.get("body"):
         print("  ! faltan campos, se omite")
+        anotar(item, "error: faltan campos")
         return None
     return data
 
@@ -495,12 +519,14 @@ def main() -> int:
         html, text = fetch_page(item["url"])
         if len(text) < MIN_SOURCE_CHARS:
             print("  – texto insuficiente, se omite")
+            anotar(item, "texto insuficiente (muro de pago o página vacía)")
             continue
         intentos += 1
         try:
             data = write_article(item, text, official_links(html), posts)
         except Exception as e:  # noqa: BLE001
             print(f"  ! error al redactar: {type(e).__name__}: {str(e)[:200]}")
+            anotar(item, f"error al redactar: {type(e).__name__}: {str(e)[:200]}")
             state["urls"].remove(item["url"])
             state["titles"].pop()
             errors += 1
@@ -518,6 +544,7 @@ def main() -> int:
             state.setdefault("escritos", []).append(nuevo)
             state["escritos"] = state["escritos"][-80:]
             print(f"  ✓ {p.relative_to(ROOT)}")
+            anotar(item, f"borrador: {p.name}")
 
     save_state(state)
     print(f"\nArtículos nuevos: {len(written)}\n" + "\n".join(f"- {p.stem}" for p in written))
