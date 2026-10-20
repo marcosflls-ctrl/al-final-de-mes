@@ -8,5 +8,6 @@ export const HERRAMIENTAS = [
   { href: '/vivienda/comprar-o-alquilar/', titulo: 'Comprar o alquilar', texto: 'Qué te deja más dinero al cabo de los años: comprar con hipoteca o alquilar e invertir la diferencia.' },
   { href: '/luz/cuanto-cuesta-cada-electrodomestico/', titulo: 'Coste de los electrodomésticos', texto: 'Lo que cuesta hoy poner la lavadora, el horno o cargar el coche, y la hora más barata.' },
   { href: '/ipc/', titulo: 'IPC y cesta de la compra', texto: 'Cuánto han subido los precios de cada producto y cuánto más te cuesta hoy lo mismo que hace un año.' },
+  { href: '/divisas/cambio-euro-hoy/', titulo: 'Cambio de divisas', texto: 'Cuánto vale hoy un euro en dólares, libras o pesos, con el cambio oficial del BCE y un conversor.' },
   { href: '/gasolina/', titulo: 'Gasolineras más baratas', texto: 'El precio de la gasolina y el diésel hoy en tu provincia y dónde repostar más barato.' },
 ];

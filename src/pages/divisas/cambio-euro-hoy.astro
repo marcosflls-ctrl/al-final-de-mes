@@ -1,0 +1,204 @@
+---
+import Base from '../../layouts/Base.astro';
+import Siguenos from '../../components/Siguenos.astro';
+import Compartir from '../../components/Compartir.astro';
+import { SITE } from '../../config';
+import { diaMes } from '../../lib/euribor';
+import { datosDivisas, num, variacion } from '../../lib/divisas';
+
+const dv = datosDivisas();
+const usd = dv?.divisas.find((d) => d.codigo === 'USD');
+const titulo = 'Cambio del euro hoy: dólar, libra y otras divisas';
+const url = `${SITE.url}/divisas/cambio-euro-hoy/`;
+const descripcion = dv && usd
+  ? `Un euro vale hoy ${num(usd.valor)} dólares según el cambio oficial del BCE del ${diaMes(dv.fecha)}. Cambio del euro con la libra, el franco suizo, el peso mexicano y otras divisas, con conversor.`
+  : 'El cambio oficial del euro hoy con el dólar, la libra y otras divisas, con conversor y evolución del último año.';
+
+// Gráfico del euro frente al dólar, último año
+const serie = dv ? Object.entries(dv.series.USD ?? {}) : [];
+const W = 720, H = 240, top = 20, bottom = 30, left = 44, right = 10;
+const vals = serie.map(([, v]) => v);
+const vmax = vals.length ? Math.ceil(Math.max(...vals) * 50) / 50 + 0.01 : 1;
+const vmin = vals.length ? Math.floor(Math.min(...vals) * 50) / 50 - 0.01 : 0;
+const x = (i: number) => left + (i * (W - left - right)) / Math.max(1, serie.length - 1);
+const y = (v: number) => top + ((vmax - v) * (H - top - bottom)) / (vmax - vmin);
+const linea = serie.map(([, v], i) => `${i ? 'L' : 'M'}${x(i).toFixed(1)},${y(v).toFixed(1)}`).join(' ');
+const marcas: number[] = [];
+for (let v = Math.ceil(vmin * 50) / 50; v <= vmax; v = Math.round((v + 0.02) * 100) / 100) marcas.push(v);
+const MESES = ['ene', 'feb', 'mar', 'abr', 'may', 'jun', 'jul', 'ago', 'sep', 'oct', 'nov', 'dic'];
+let mesPrevio = '';
+const etiquetas = serie.flatMap(([f], i) => {
+  const m = f.slice(0, 7);
+  if (m === mesPrevio) return [];
+  mesPrevio = m;
+  return parseInt(f.slice(5, 7), 10) % 3 === 1 ? [{ i, t: `${MESES[parseInt(f.slice(5, 7), 10) - 1]} ${f.slice(2, 4)}` }] : [];
+});
+
+const usdAnio = usd ? variacion(usd.valor, usd.hace_un_anio) : null;
+const pct = (v: number | null) => (v == null ? '—' : `${v > 0 ? '+' : v < 0 ? '−' : ''}${Math.abs(v).toLocaleString('es-ES', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} %`);
+
+const jsonLd = {
+  '@context': 'https://schema.org', '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Inicio', item: SITE.url + '/' },
+    { '@type': 'ListItem', position: 2, name: 'Calculadoras', item: `${SITE.url}/calculadoras/` },
+    { '@type': 'ListItem', position: 3, name: titulo, item: url },
+  ],
+};
+---
+<Base title={titulo} description={descripcion} jsonLd={jsonLd}>
+  <nav class="breadcrumbs"><a href="/">Inicio</a> › <a href="/calculadoras/">Calculadoras</a></nav>
+  <article class="pagina">
+    <h1>{titulo}</h1>
+    {!dv || !usd ? <p>Todavía no tenemos el dato. Vuelve en un rato.</p> : (
+      <>
+        <p class="lead">{descripcion}</p>
+        <dl class="cifras">
+          <div><dt>1 euro en dólares, {diaMes(dv.fecha)}</dt><dd>{num(usd.valor)} $</dd></div>
+          <div><dt>1 dólar en euros</dt><dd>{num(1 / usd.valor)} €</dd></div>
+          <div><dt>Hace un año ({diaMes(dv.fecha_hace_un_anio)} de {dv.fecha_hace_un_anio.slice(0, 4)})</dt><dd>{num(usd.hace_un_anio)} $</dd></div>
+        </dl>
+        <p class="muted small">
+          {usdAnio != null && (usdAnio > 0
+            ? `El euro vale un ${pct(usdAnio).replace('+', '')} más en dólares que hace un año: viajar a Estados Unidos o comprar en dólares te sale más barato.`
+            : `El euro vale un ${pct(usdAnio).replace('−', '')} menos en dólares que hace un año: viajar a Estados Unidos o comprar en dólares te sale más caro.`)}
+        </p>
+
+        <section class="bloque">
+          <h2 class="titulo-bloque">Conversor de divisas</h2>
+          <form id="conv" class="calc" novalidate>
+            <label><span>Cantidad</span><input name="cant" type="number" inputmode="decimal" min="0" step="any" value="100" /></label>
+            <label><span>Divisa</span>
+              <select name="div">
+                {dv.divisas.map((d) => <option value={d.codigo} data-v={d.valor}>{d.nombre} ({d.codigo})</option>)}
+              </select>
+            </label>
+            <label><span>Sentido</span>
+              <select name="sentido">
+                <option value="de-euro">De euros a la otra divisa</option>
+                <option value="a-euro">De la otra divisa a euros</option>
+              </select>
+            </label>
+          </form>
+          <div class="res" aria-live="polite"><p><span class="muted">Resultado</span><strong id="c-res">—</strong></p></div>
+          <p class="muted small">Es el cambio oficial de referencia. Tu banco, la tarjeta o la casa de cambio aplican un cambio peor y a veces una comisión: si cambias en el aeropuerto puedes perder un 5 % o más. Para pagar fuera, suele salir mejor una tarjeta sin comisión por divisa y pagar siempre en la moneda local.</p>
+        </section>
+
+        <section class="bloque">
+          <h2 class="titulo-bloque">Cuánto vale un euro en cada divisa</h2>
+          <table class="tabla">
+            <thead><tr><th scope="col">Divisa</th><th scope="col">1 € =</th><th scope="col">Ayer</th><th scope="col">En un año</th></tr></thead>
+            <tbody>
+              {dv.divisas.map((d) => {
+                const dia = variacion(d.valor, d.anterior);
+                const anio = variacion(d.valor, d.hace_un_anio);
+                return (
+                  <tr>
+                    <th scope="row">{d.nombre} <span class="muted">{d.codigo}</span></th>
+                    <td>{num(d.valor)}</td>
+                    <td class={dia == null ? '' : dia > 0 ? 'sube' : 'baja'}>{pct(dia)}</td>
+                    <td class={anio == null ? '' : anio > 0 ? 'sube' : 'baja'}>{pct(anio)}</td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
+          <p class="muted small">En verde, el euro vale más que antes (te dan más de esa divisa por cada euro); en rojo, vale menos.</p>
+        </section>
+
+        {serie.length > 30 && (
+          <section class="bloque">
+            <h2 class="titulo-bloque">El euro frente al dólar en el último año</h2>
+            <figure class="grafico">
+              <svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label={`Dólares por euro desde el ${diaMes(serie[0][0])} de ${serie[0][0].slice(0, 4)} hasta el ${diaMes(dv.fecha)}`}>
+                {marcas.map((v) => (
+                  <>
+                    <line x1={left} x2={W - right} y1={y(v)} y2={y(v)} class="rejilla" />
+                    <text x={left - 6} y={y(v) + 4} text-anchor="end">{num(v, 2)}</text>
+                  </>
+                ))}
+                <path d={linea} class="linea" />
+                {etiquetas.map((e) => <text x={x(e.i)} y={H - 8} text-anchor="middle">{e.t}</text>)}
+                <circle cx={x(serie.length - 1)} cy={y(vals[vals.length - 1])} r="4" class="punto" />
+              </svg>
+              <figcaption>Dólares que vale un euro, cambio oficial diario del BCE.</figcaption>
+            </figure>
+          </section>
+        )}
+
+        <Compartir title={titulo} url={url} />
+
+        <section class="prose">
+          <h2>Qué es el cambio oficial del euro</h2>
+          <p>Cada día hábil, hacia las 16:00, el Banco Central Europeo publica el cambio de referencia del euro con las principales divisas del mundo. Es el dato que usan como referencia las empresas, la contabilidad y muchas tarjetas, pero no es exactamente el precio al que te cambian el dinero: cada banco o casa de cambio le suma su margen.</p>
+          <h2>Cómo te afecta el cambio del euro</h2>
+          <p>Cuando el euro sube frente a otra moneda, todo lo que se paga en esa moneda te sale más barato: un viaje a Estados Unidos, una compra en una tienda de fuera o una suscripción en dólares. Cuando baja, ocurre lo contrario. También importa si mandas o recibes dinero de otro país: con un euro fuerte, el dinero que envías a México o a Reino Unido rinde más allí.</p>
+          <p class="muted small">Fuente: Banco Central Europeo, tipos de cambio de referencia del euro (descargados con la API gratuita Frankfurter). Los fines de semana y festivos no hay dato nuevo y se mantiene el del último día hábil. Datos del {diaMes(dv.fecha)} de {dv.fecha.slice(0, 4)}.</p>
+        </section>
+      </>
+    )}
+    <Siguenos />
+  </article>
+</Base>
+
+<script>
+  const form = document.getElementById('conv') as HTMLFormElement | null;
+  const fmt = (n: number) => {
+    const d = Math.abs(n) >= 100 ? 2 : Math.abs(n) >= 1 ? 2 : 4;
+    return n.toLocaleString('es-ES', { minimumFractionDigits: d, maximumFractionDigits: d });
+  };
+  function calcular() {
+    if (!form) return;
+    const sel = form.elements.namedItem('div') as HTMLSelectElement;
+    const opt = sel.selectedOptions[0];
+    const tasa = parseFloat(opt?.dataset.v ?? '0');
+    const cant = parseFloat(String((form.elements.namedItem('cant') as HTMLInputElement).value).replace(',', '.')) || 0;
+    const aEuro = (form.elements.namedItem('sentido') as HTMLSelectElement).value === 'a-euro';
+    const out = document.getElementById('c-res')!;
+    if (!tasa) { out.textContent = '—'; return; }
+    out.textContent = aEuro
+      ? `${fmt(cant)} ${sel.value} = ${fmt(cant / tasa)} €`
+      : `${fmt(cant)} € = ${fmt(cant * tasa)} ${sel.value}`;
+  }
+  form?.addEventListener('input', calcular);
+  form?.addEventListener('change', calcular);
+  calcular();
+</script>
+
+<style>
+  .pagina { max-width: 760px; }
+  h1 { font-size: clamp(1.9rem, 4.6vw, 2.6rem); line-height: 1.15; margin: 4px 0 12px; }
+  .lead { font-size: 1.125rem; line-height: 1.55; margin: 0 0 20px; }
+  .cifras { margin: 0 0 10px; border-top: 2px solid var(--ink); }
+  .cifras div { display: flex; justify-content: space-between; gap: 16px; padding: 12px 0; border-bottom: 1px solid var(--rule); align-items: baseline; }
+  .cifras dt { color: var(--muted); }
+  .cifras dd { margin: 0; font-family: var(--serif); font-weight: 600; font-size: 1.375rem; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .cifras div:first-child dd { font-size: 2rem; color: var(--brand-dark); }
+  .small { font-size: .8125rem; }
+  .bloque { margin-top: 36px; }
+  .calc { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px 20px; }
+  .calc label { display: flex; flex-direction: column; gap: 6px; font-weight: 600; font-size: .875rem; }
+  .calc input, .calc select { font: 400 1rem var(--sans); padding: 9px 11px; border: 1px solid #b9c0c6; border-radius: 4px; width: 100%; color: var(--ink); background: var(--bg); font-variant-numeric: tabular-nums; }
+  .calc input:focus, .calc select:focus { outline: 2px solid var(--brand); outline-offset: 0; }
+  .res { background: var(--surface); padding: 16px 18px; border-radius: 4px; margin: 18px 0 8px; }
+  .res p { margin: 0; display: flex; flex-direction: column; gap: 2px; font-size: .875rem; }
+  .res strong { font-size: 1.375rem; font-variant-numeric: tabular-nums; }
+  .sube { color: var(--good); }
+  .baja { color: var(--bad); }
+  .grafico { margin: 8px 0 20px; }
+  .grafico svg { width: 100%; height: auto; display: block; }
+  .grafico text { font: 400 11px var(--sans); fill: var(--muted); }
+  .rejilla { stroke: var(--rule); stroke-width: 1; }
+  .linea { fill: none; stroke: var(--brand); stroke-width: 2; stroke-linejoin: round; }
+  .punto { fill: var(--brand-dark); }
+  figcaption { font-size: .8125rem; color: var(--muted); }
+  .tabla { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
+  .tabla th, .tabla td { padding: 8px 10px 8px 0; border-bottom: 1px solid var(--rule); text-align: right; font-size: .9375rem; }
+  .tabla th:first-child { text-align: left; font-weight: 500; }
+  .tabla thead th { font-size: .8125rem; font-weight: 600; border-bottom: 1px solid var(--ink); }
+  .prose { margin-top: 36px; }
+  @media (max-width: 600px) {
+    .cifras dt { font-size: .875rem; }
+    .tabla th, .tabla td { font-size: .875rem; }
+  }
+</style>
