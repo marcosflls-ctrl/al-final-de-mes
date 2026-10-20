@@ -754,7 +754,16 @@
   "https://www.20minutos.es/lainformacion/economia-y-finanzas/gobierno-aprueba-ampliar-pension-viudedad-parejas-no-registradas-con-hijos-mejora-las-bajas-para-los-afectados-por-catastrofes_7050975_0.html",
   "https://www.lavanguardia.com/economia/20261020/11663423/supremo-hacienda-inmuebles-catastro-google-maps-impuestos.html",
   "https://www.20minutos.es/lainformacion/economia-y-finanzas/gobierno-aprueba-ayudas-directas-9-millones-euros-agricultores-ganaderos-afectados-incendios-este-ano_7050963_0.html",
-  "https://www.20minutos.es/lainformacion/economia-y-finanzas/supremo-rechaza-que-hacienda-pueda-tasar-una-vivienda-solo-con-catastro-google-maps-sin-visitarla_7051139_0.html"
+  "https://www.20minutos.es/lainformacion/economia-y-finanzas/supremo-rechaza-que-hacienda-pueda-tasar-una-vivienda-solo-con-catastro-google-maps-sin-visitarla_7051139_0.html",
+  "https://www.abc.es/economia/gobierno-compromete-subir-sueldo-funcionarios-plena-campana-20261020193636-nt.html",
+  "https://www.20minutos.es/lainformacion/economia-y-finanzas/quienes-podran-cobrar-pension-viudedad-aunque-no-esten-registrados-asi-es-nueva-ampliacion-gobierno_7051050_0.html",
+  "https://www.20minutos.es/lainformacion/economia-y-finanzas/que-casa-te-puedes-permitir-segun-tu-salario-descubre-cuanto-deberias-ganar-para-comprar-casa-que-te-gusta_7047445_0.html",
+  "https://www.20minutos.es/lainformacion/economia-y-finanzas/gobierno-aprobara-que-las-parejas-con-hijos-puedan-acceder-pension-viudedad-aunque-no-esten-registradas_7050703_0.html",
+  "https://elpais.com/economia/2026-10-19/las-parejas-con-hijos-tendran-derecho-a-la-pension-de-viudedad-si-acreditan-dos-anos-de-convivencia.html",
+  "https://elpais.com/tecnologia/2026-10-20/google-despliega-en-madrid-sus-primeros-robotaxis-autonomos-waymo.html",
+  "https://cincodias.elpais.com/extras/construyendo-futuro-negocio-axa/2026-10-19/un-plan-de-pensiones-o-proteger-la-salud-el-mejor-regalo-de-navidad-de-las-pymes-para-sus-trabajadores.html",
+  "https://www.europapress.es/motor/sector-00644/noticia-coche-conductor-google-llegara-espana-waymo-preve-operar-madrid-2027-20261020133227.html",
+  "https://www.europapress.es/economia/fiscal-00347/noticia-supremo-permite-compatibilizar-minimo-hijos-beneficio-fiscal-alimentos-custodia-compartida-20261020140959.html"
  ],
  "titles": [
   "los nueve cambios para la jubilacio n en 2027 segu n el abogado laboralista ignacio solsona",
@@ -869,7 +878,15 @@
   "inverco pide incorporar renta fija a la cuenta de ahorro europea y mejorar la fiscalidad de los planes de pensiones",
   "el gobierno aprueba ampliar la pensio n de viudedad a parejas no registradas con hijos y mejora las bajas para los afectados por cata strofes",
   "el ejecutivo lanza ayudas directas para agricultores y ganaderos afectados por los incendios",
-  "el supremo rechaza que hacienda pueda tasar una vivienda solo con el catastro y google maps sin visitarla"
+  "el supremo rechaza que hacienda pueda tasar una vivienda solo con el catastro y google maps sin visitarla",
+  "quienes podra n cobrar la pensio n de viudedad aunque no este n registrados asi es la nueva ampliacio n del gobierno",
+  "que casa te puedes permitir segu n tu salario descubre cua nto deberi as ganar para comprar la casa que te gusta",
+  "el gobierno aprobara que las parejas con hijos puedan acceder a la pensio n de viudedad aunque no este n registradas",
+  "las parejas con hijos tendra n derecho a la pensio n de viudedad si acreditan dos an os de convivencia",
+  "google despliega en madrid sus primeros robotaxis auto nomos waymo",
+  "un plan de pensiones o proteger la salud el mejor regalo de navidad de las pymes para sus trabajadores",
+  "el coche sin conductor de alphabet llegara a espan a waymo preve operar en madrid en 2027",
+  "supremo permite compatibilizar el mi nimo por hijos y el beneficio fiscal por alimentos en custodia compartida"
  ],
  "feeds_iniciados": [
   "https://ine.es/dyngs/Prensa/es/rssNovedades.xml",
@@ -942,6 +959,54 @@
    "fuente": "20minutos Economía",
    "titulo": "El Supremo rechaza que Hacienda pueda tasar una vivienda solo con el Catastro y Google Maps sin visitarla",
    "resultado": "borrador: el-supremo-hacienda-no-puede-tasar-tu-vivienda-solo-con-catastro-y-google.md"
+  },
+  {
+   "fecha": "2026-10-20 20:46",
+   "fuente": "20minutos Economía",
+   "titulo": "Quienes podrán cobrar la pensión de viudedad aunque no estén registrados: así es la nueva ampliación del Gobierno",
+   "resultado": "descartada: repetición: ya publicamos esta misma noticia (real decreto-ley de viudedad para parejas no casadas con hijos y dos años de empadronamiento) en /pensiones/viudedad-para-parejas-no-casadas-con-hijos-dos-anos-empadronados/. Esta fuente no aporta ningún dato nuevo."
+  },
+  {
+   "fecha": "2026-10-20 20:46",
+   "fuente": "20minutos Economía",
+   "titulo": "Qué casa te puedes permitir según tu salario: descubre cuánto deberías ganar para comprar la casa que te gusta",
+   "resultado": "borrador: hipoteca-sueldo-2000-netos-que-casa-comprar.md"
+  },
+  {
+   "fecha": "2026-10-20 20:46",
+   "fuente": "20minutos Economía",
+   "titulo": "El Gobierno aprobará que las parejas con hijos puedan acceder a la pensión de viudedad aunque no estén registradas",
+   "resultado": "descartada: repetido: ya publicamos 'Viudedad para parejas no casadas con hijos: dos años empadronados' (/pensiones/viudedad-para-parejas-no-casadas-con-hijos-dos-anos-empadronados/), y esta fuente cuenta el mismo real decreto ley sin datos nuevos relevantes. La subida de las pensiones a víctimas de"
+  },
+  {
+   "fecha": "2026-10-20 20:46",
+   "fuente": "El País Economía",
+   "titulo": "Las parejas con hijos tendrán derecho a la pensión de viudedad si acreditan dos años de convivencia",
+   "resultado": "texto insuficiente (muro de pago o página vacía)"
+  },
+  {
+   "fecha": "2026-10-20 20:46",
+   "fuente": "Cinco Días",
+   "titulo": "Google despliega en Madrid sus primeros robotaxis autónomos Waymo",
+   "resultado": "texto insuficiente (muro de pago o página vacía)"
+  },
+  {
+   "fecha": "2026-10-20 20:46",
+   "fuente": "Cinco Días",
+   "titulo": "Un plan de pensiones o proteger la salud: el mejor regalo de Navidad de las pymes para sus trabajadores",
+   "resultado": "texto insuficiente (muro de pago o página vacía)"
+  },
+  {
+   "fecha": "2026-10-20 20:46",
+   "fuente": "Europa Press Economía",
+   "titulo": "El coche sin conductor de Alphabet llegará a España: Waymo prevé operar en Madrid en 2027",
+   "resultado": "descartada: sin valor propio: es una noticia de empresa (Waymo y sus planes de robotaxi en Madrid para 2027) que no cambia lo que paga ni cobra una familia. No hay medida, trámite ni cifra que afecte al bolsillo, y no encaja con ninguna calculadora ni guía nuestra."
+  },
+  {
+   "fecha": "2026-10-20 20:47",
+   "fuente": "Europa Press Economía",
+   "titulo": "Supremo permite compatibilizar el mínimo por hijos y el beneficio fiscal por alimentos en custodia compartida",
+   "resultado": "borrador: supremo-custodia-compartida-minimo-alimentos.md"
   }
  ],
  "escritos": [
@@ -963,6 +1028,16 @@
   {
    "title": "El Supremo: Hacienda no puede tasar tu vivienda solo con Catastro y Google Maps",
    "url": "/hacienda/el-supremo-hacienda-no-puede-tasar-tu-vivienda-solo-con-catastro-y-google/",
+   "guia": false
+  },
+  {
+   "title": "Con 2.000 € netos al mes: qué casa y cuántos ahorros necesitas",
+   "url": "/vivienda/hipoteca-sueldo-2000-netos-que-casa-comprar/",
+   "guia": false
+  },
+  {
+   "title": "Custodia compartida: el Supremo avala mínimo por hijos y pensión",
+   "url": "/hacienda/supremo-custodia-compartida-minimo-alimentos/",
    "guia": false
   }
  ]
