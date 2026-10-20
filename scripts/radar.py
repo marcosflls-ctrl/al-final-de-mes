@@ -287,6 +287,9 @@ QUÉ SE DESCARTA ({"skip": true, "reason": "..."}):
 bolsa, política sin medida concreta, otros países).
 - Nombramientos, convocatorias de empleo público, subvenciones a entidades concretas, correcciones de errores \
 menores y trámites internos de la Administración.
+- Ahorro e inversión (fondos, ETF, Bolsa, Letras y bonos del Tesoro, depósitos, planes de pensiones privados): los cubre \
+nuestra web hermana Dinero en Claro (dineroenclaro.com). Descártalo salvo que afecte a la economía de casa de forma directa \
+(por ejemplo, un cambio en la tributación que toca a todos los contribuyentes) y, en ese caso, enlaza la guía de Dinero en Claro.
 - Lo que ya cubre una de nuestras guías SIN NINGÚN dato nuevo (por ejemplo, un medio que vuelve a explicar \
 cuánto es el salario mínimo o cómo se pide el paro). OJO: que exista una guía del tema NO es motivo para descartar. \
 Si la noticia trae algo nuevo (una ley o decreto, una sentencia, una cifra o fecha nueva, un cambio de requisitos, \
