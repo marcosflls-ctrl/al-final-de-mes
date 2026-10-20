@@ -1,5 +1,5 @@
 ---
-title: "Calendario fiscal 2027: todas las fechas de Hacienda para particulares y autónomos"
+title: "Calendario fiscal 2027: fechas de Hacienda para particulares"
 description: "La declaración de la renta, los trimestres de IVA e IRPF de los autónomos, los resúmenes anuales y los cambios de cuota: los plazos de Hacienda en 2027, mes a mes."
 date: 2026-10-17T10:00:00+00:00
 category: hacienda

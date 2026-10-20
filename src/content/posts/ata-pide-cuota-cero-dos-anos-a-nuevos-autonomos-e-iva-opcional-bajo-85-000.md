@@ -1,5 +1,5 @@
 ---
-title: "ATA pide cuota cero dos años a nuevos autónomos e IVA opcional bajo 85.000 €"
+title: "ATA pide cuota cero dos años para nuevos autónomos e IVA opcional"
 description: "La patronal ATA propone a los partidos cuota cero los dos primeros años para nuevos autónomos e IVA opcional bajo 85.000 euros. Son propuestas, no ley."
 date: 2026-10-13T19:53:47+00:00
 category: paro

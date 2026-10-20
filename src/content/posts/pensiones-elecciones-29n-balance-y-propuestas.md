@@ -1,5 +1,5 @@
 ---
-title: "Pensiones y elecciones del 29N: qué se aprobó y qué proponen los partidos"
+title: "Pensiones y elecciones del 29N: balance y propuestas de los partidos"
 description: "Las subidas de la legislatura, los decretos que cayeron en el Congreso y lo que dicen PSOE, PP, Vox y Sumar sobre las pensiones antes del 29 de noviembre."
 date: 2026-10-16T17:45:00+00:00
 category: pensiones

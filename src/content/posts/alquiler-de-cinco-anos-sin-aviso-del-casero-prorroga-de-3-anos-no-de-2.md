@@ -1,5 +1,5 @@
 ---
-title: "Alquiler de cinco años sin aviso del casero: prórroga de 3 años, no de 2"
+title: "Alquiler de cinco años sin aviso del casero: la prórroga es de 3 años"
 description: "Si el casero no avisa al cumplirse los cinco años, el contrato se prorroga tres años, no dos. Y la subida, sin acuerdo, no pasa del 2% hasta 2027."
 date: 2026-10-16T09:55:41+00:00
 category: vivienda

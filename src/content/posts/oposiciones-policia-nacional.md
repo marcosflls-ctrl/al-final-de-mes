@@ -1,5 +1,5 @@
 ---
-title: "Oposiciones a Policía Nacional (Escala Básica): plazas, requisitos y pruebas"
+title: "Oposiciones a Policía Nacional: plazas, requisitos y pruebas"
 description: "La convocatoria de 2026 de Policía Nacional tiene 2.704 plazas en la Escala Básica. Requisitos, sin estatura mínima, las fases del proceso y las fechas."
 date: 2026-10-19T16:21:00+02:00
 category: oposiciones

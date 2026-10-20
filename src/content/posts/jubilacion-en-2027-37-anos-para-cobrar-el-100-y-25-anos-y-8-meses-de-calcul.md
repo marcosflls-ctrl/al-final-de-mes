@@ -1,5 +1,5 @@
 ---
-title: "Jubilación en 2027: 37 años para cobrar el 100% y 25 años y 8 meses de cálculo"
+title: "Jubilación en 2027: 37 años cotizados para cobrar el 100%"
 description: "En enero de 2027 cambian los años para cobrar el 100% (37), el periodo de cálculo (25 años y 8 meses) y los 38,5 años para jubilarse a los 65."
 date: 2026-10-13T07:52:27+00:00
 category: pensiones

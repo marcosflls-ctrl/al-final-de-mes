@@ -1,5 +1,5 @@
 ---
-title: "Tres de cada diez viviendas vendidas en 2024 dieron pérdidas, según Hacienda"
+title: "Tres de cada diez viviendas vendidas en 2024 dieron pérdidas"
 description: "La Agencia Tributaria cifra en un 30,1% las viviendas vendidas en 2024 por menos de lo que costaron. De media, la revalorización fue del 28,6%."
 date: 2026-10-15T20:23:41+00:00
 category: vivienda

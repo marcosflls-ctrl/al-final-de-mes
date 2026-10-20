@@ -1,5 +1,5 @@
 ---
-title: "Cuenta de ahorro europea CAIFE: aún no arranca y las gestoras piden cambios"
+title: "La cuenta de ahorro Caife aún no arranca y las gestoras piden cambios"
 description: "La cuenta CAIFE necesita aún reglamento y orden ministerial. Inverco pide incluir renta fija y subir el límite de 1.500 € de los planes de pensiones."
 date: 2026-10-20T14:55:27+00:00
 category: hacienda
