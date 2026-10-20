@@ -6,10 +6,10 @@ category: luz
 guia: true
 orden: 2
 tags: [bono-social, luz, pvpc, ayudas, factura-electrica]
-image: /img/banco/bombilla-01.webp
-imageAlt: "Bombilla encendida en una lámpara"
-imageCredit: "Basile Morin / Wikimedia Commons (CC BY-SA 4.0)"
-imageCreditUrl: "https://commons.wikimedia.org/wiki/File:Lamp_with_lit_incandescent_light_bulb_and_black_background.jpg"
+image: /img/fotos/bono-social-electrico-requisitos-y-descuentos.webp
+imageAlt: "Bombilla encendida"
+imageCredit: "jplenio / Pixabay"
+imageCreditUrl: "https://pixabay.com/photos/light-bulb-light-idea-bokeh-energy-3535435/"
 sources:
   - name: "Ministerio para la Transición Ecológica: requisitos del bono social"
     url: "https://www.miteco.gob.es/en/energia/pobreza-energetica/pe-001/requisitos.html"

@@ -6,10 +6,10 @@ category: hacienda
 guia: true
 orden: 3
 tags: [elecciones-29n, pp, partidos, impuestos, pensiones, vivienda]
-image: /img/banco/congreso-03.webp
-imageAlt: "Fachada del Congreso de los Diputados"
-imageCredit: "Yann Droneaud from Paris (France). / Wikimedia Commons (CC BY-SA 2.0)"
-imageCreditUrl: "https://commons.wikimedia.org/wiki/File:Congreso_de_los_Diputados_(Espa%C3%B1a)_05.jpg"
+image: /img/fotos/que-cambiaria-si-gobierna-el-pp-29n.webp
+imageAlt: "Hemiciclo de un parlamento"
+imageCredit: "12019 / Pixabay"
+imageCreditUrl: "https://pixabay.com/photos/hamburg-germany-city-hall-town-hall-85434/"
 sources:
   - name: "Expansión: el PP plantea un plan de choque con rebajas de IVA e IRPF (14/10/2026)"
     url: "https://www.expansion.com/economia/2026/10/14/pp-plantea-plan-choque-rebajas-iva-e-irpf-contener-alza-precios.html"

@@ -8,10 +8,10 @@ pendiente: false
 sources:
   - name: "Expansión Economía: La Seguridad Social recortará hasta un 17% la pensión a quienes adelanten su jubilación aunque hayan"
     url: "https://www.expansion.com/economia/2026/10/14/6ace5cac468aebb4118b4598.html"
-image: /img/banco/seguridad-social-06.webp
-imageAlt: "Oficinas de la Seguridad Social en Vitoria"
-imageCredit: "Zarateman / Wikimedia Commons (CC0)"
-imageCreditUrl: "https://commons.wikimedia.org/wiki/File:Vitoria_-_Calle_Dato,_Oficinas_de_la_Seguridad_Social_1.jpg"
+image: /img/fotos/jubilacion-anticipada-recorte-de-hasta-el-17-aunque-cotices-41-anos.webp
+imageAlt: "Pareja de jubilados"
+imageCredit: "balouriarajesh / Pixabay"
+imageCreditUrl: "https://pixabay.com/photos/old-couple-reading-newspaper-5051770/"
 ---
 
 Haber cotizado más de 41 años no te libra del recorte si te jubilas antes de tiempo. Con dos años de adelanto, la pensión baja un 17% si acreditas entre 41 años y 6 meses y 44 años y 6 meses cotizados. Si superas los 44 años y 6 meses, baja un 13%. Son los datos que recoge Expansión sobre los coeficientes reductores de la Seguridad Social.

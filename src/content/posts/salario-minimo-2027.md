@@ -20,10 +20,10 @@ sources:
     url: "https://www.articulo14.es/economia/diaz-da-de-plazo-a-los-expertos-hasta-el-1-de-noviembre-para-que-planteen-la-subida-del-smi-20261008.html"
   - name: "Artículo 14: 2,5 millones de trabajadores esperan saber cuánto cobrarán en 2027 (12/10/2026)"
     url: "https://www.articulo14.es/economia/el-salario-minimo-vuelve-a-cambiar-en-2027-25-millones-de-trabajadores-esperan-saber-cuanto-cobraran-20261012.html"
-image: /img/banco/billetes-euro-02.webp
-imageAlt: "Monedas y billetes de euro"
-imageCredit: "Avij / Wikimedia Commons (dominio público)"
-imageCreditUrl: "https://commons.wikimedia.org/wiki/File:Euro_coins_and_banknotes_(cropped).jpg"
+image: /img/fotos/salario-minimo-2027.webp
+imageAlt: "Billetes de euro"
+imageCredit: "fotoblend / Pixabay"
+imageCreditUrl: "https://pixabay.com/photos/banknotes-currency-finance-euro-7850299/"
 ---
 
 <!-- ACTUALIZAR: 1) cuando los expertos entreguen su informe (finales de octubre o primeros de noviembre), 2) cuando el Gobierno anuncie la cifra, 3) cuando se publique el Real Decreto en el BOE (entonces pendiente: false y cambiar el título a "Salario mínimo 2027: X € al mes"). -->

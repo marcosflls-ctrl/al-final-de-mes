@@ -13,10 +13,10 @@ sources:
     url: "https://www.elindependiente.com/economia/2025/11/19/paga-extra-navidad-todo-debes-saber/"
   - name: "Agencia Tributaria: algoritmo de cálculo del tipo de retención 2026"
     url: "https://sede.agenciatributaria.gob.es/static_files/Sede/Programas_ayuda/Retenciones/2026/Algoritmo%20Retenciones-2026_10sept.pdf"
-image: /img/banco/billetes-euro-01.webp
+image: /img/fotos/paga-extra-navidad-2026-cuando-se-cobra-y-cuanto-queda-neto.webp
 imageAlt: "Billetes de euro"
-imageCredit: "Friedrich Haag / Wikimedia Commons (CC BY-SA 4.0)"
-imageCreditUrl: "https://commons.wikimedia.org/wiki/File:One_stands_out_002_2025_01_01.jpg"
+imageCredit: "Alexas_Fotos / Pixabay"
+imageCreditUrl: "https://pixabay.com/photos/the-last-shirt-dollar-bill-20-euro-1510597/"
 ---
 
 La paga extra de Navidad es una de las dos pagas extraordinarias que tienen por ley los trabajadores en España. Los pensionistas también la cobran, pero antes: con la pensión de noviembre. Esta guía explica cuándo llega a cada uno y cuánto queda limpio según el sueldo.

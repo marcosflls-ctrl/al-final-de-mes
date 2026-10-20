@@ -21,10 +21,10 @@ sources:
     url: "https://www.articulo14.es/economia/hacienda-recupera-la-deduccion-por-alquiler-los-inquilinos-podran-desgravar-hasta-1-163-euros-20261014.html"
   - name: "Guía Fiscal: cuándo empieza la campaña de la renta"
     url: "https://guiafiscal.es/irpf/cuando-empieza-la-renta/"
-image: /img/banco/calculadora-03.webp
-imageAlt: "Teclado de una calculadora"
-imageCredit: "Coyau / Wikimedia Commons (CC BY-SA 3.0)"
-imageCreditUrl: "https://commons.wikimedia.org/wiki/File:Aurora_electronic_calculator_DT210_05.jpg"
+image: /img/fotos/declaracion-renta-2026-novedades-deducciones-y-fechas.webp
+imageAlt: "Calculadora y cuentas domésticas"
+imageCredit: "stevepb / Pixabay"
+imageCreditUrl: "https://pixabay.com/photos/new-year-calculator-calculation-1680905/"
 ---
 
 La declaración de la renta de 2026 recoge lo que has ganado este año y se presenta en la primavera de 2027. Esta guía reúne lo que cambia respecto al año pasado, las deducciones nuevas o prorrogadas y quién tiene que presentarla. La iremos actualizando hasta que empiece la campaña.

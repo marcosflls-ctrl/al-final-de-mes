@@ -5,10 +5,10 @@ date: 2026-10-20T15:09:45+00:00
 category: paro
 tags: ["ayudas-agricultores", "incendios", "seguro-agrario", "ganaderos", "consejo-de-ministros"]
 pendiente: false
-image: /img/banco/billetes-euro-07.webp
-imageAlt: "Billetes de 20 y 50 euros"
-imageCredit: "Markus Spiske from Forchheim, Bavaria Upper Franconia / Wikimedia Commons (CC BY 2.0)"
-imageCreditUrl: "https://commons.wikimedia.org/wiki/File:EURO_Cash_Money_Banknote_(49643807026).jpg"
+image: /img/fotos/ayudas-de-9-millones-para-agricultores-y-ganaderos-afectados-por-incendios.webp
+imageAlt: "Billetes de euro"
+imageCredit: "Alexas_Fotos / Pixabay"
+imageCreditUrl: "https://pixabay.com/photos/cashbox-money-currency-cash-box-1642989/"
 sources:
   - name: "20minutos Economía: El Ejecutivo lanza ayudas directas para agricultores y ganaderos afectados por los incendios"
     url: "https://www.20minutos.es/lainformacion/economia-y-finanzas/gobierno-aprueba-ayudas-directas-9-millones-euros-agricultores-ganaderos-afectados-incendios-este-ano_7050963_0.html"
