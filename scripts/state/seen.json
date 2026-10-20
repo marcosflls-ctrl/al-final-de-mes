@@ -746,7 +746,9 @@
   "https://www.antena3.com/noticias/espana/rueda-prensa-posterior-consejo-ministros-streaming-directo_202610206ad73cccbb4b2674104f2101.html",
   "https://www.eleconomista.es/economia/noticias/14022066/10/26/el-gobierno-dara-un-ano-a-parejas-convivientes-con-hijos-para-solicitar-la-pension-de-viudedad.html",
   "https://elpais.com/economia/mis-derechos/2026-10-20/el-supremo-corrige-a-hacienda-los-padres-con-custodia-compartida-si-pueden-deducirse-el-irpf-de-la-pension-de-alimentos.html",
-  "https://elpais.com/economia/mis-derechos/2026-10-20/el-supremo-corrige-a-hacienda-los-padres-con-custodia-compartida-si-pueden-deducirse-el-irpf-de-la-pension-de-alimentos.html"
+  "https://elpais.com/economia/mis-derechos/2026-10-20/el-supremo-corrige-a-hacienda-los-padres-con-custodia-compartida-si-pueden-deducirse-el-irpf-de-la-pension-de-alimentos.html",
+  "https://elpais.com/economia/2026-10-20/el-consejo-de-ministros-aprueba-ampliar-la-pension-de-viudedad-a-parejas-con-hijos-que-no-formalizasen-la-relacion.html",
+  "https://www.elmundo.es/economia/2026/10/20/6ad742b2fdddff01188b459b.html"
  ],
  "titles": [
   "los nueve cambios para la jubilacio n en 2027 segu n el abogado laboralista ignacio solsona",
@@ -887,6 +889,18 @@
    "fuente": "elpais.com",
    "titulo": "elpais.com",
    "resultado": "texto insuficiente (muro de pago o página vacía)"
+  },
+  {
+   "fecha": "2026-10-20 16:33",
+   "fuente": "CNMC",
+   "titulo": "Comunicación COM",
+   "resultado": "error al redactar: WorkloadIdentityError: Token exchange failed (HTTP 401): {'error': {'type': 'authentication_error', 'message': 'Authentication failed'}} Ensure your federation rule matches your identity token. View your authentication even"
+  },
+  {
+   "fecha": "2026-10-20 16:33",
+   "fuente": "20minutos Economía",
+   "titulo": "Inverco pide incorporar renta fija a la cuenta de ahorro europea y mejorar la fiscalidad de los planes de pensiones",
+   "resultado": "error al redactar: WorkloadIdentityError: Token exchange failed (HTTP 401): {'error': {'type': 'authentication_error', 'message': 'Authentication failed'}} Ensure your federation rule matches your identity token. View your authentication even"
   }
  ]
 }
