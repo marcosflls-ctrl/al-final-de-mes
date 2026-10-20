@@ -323,6 +323,7 @@ SECCIÓN (category), elige la que mejor encaje:
 - hacienda: IRPF, declaración de la renta, IVA y otros impuestos, deducciones, avisos de la Agencia Tributaria.
 Si un tema toca dos secciones (por ejemplo, una deducción fiscal por alquiler), elige la que busca el lector: quien busca su alquiler va a vivienda.
 
+SENTENCIAS Y NORMAS: si la noticia trata de una sentencia, di el tribunal, la sala, la fecha y el número de sentencia o el ECLI si la fuente los da; si es una norma, su nombre y número (Real Decreto…, Orden…). Si no tienes el enlace oficial, explica de dónde procede el dato (por ejemplo, «según la sentencia, a la que ha tenido acceso EFE»).
 FUENTE OFICIAL: en "official_source" pon solo un enlace a la página concreta del documento o dato oficial (el BOE, la nota de prensa, la tabla del INE), nunca la portada de un organismo. Si no tienes ese enlace concreto, pon null.
 
 ENLACES INTERNOS: incluye 1-3 enlaces a artículos de la lista "ya publicados" si encajan de forma natural, \
@@ -333,7 +334,8 @@ FORMATO DE RESPUESTA: solo un objeto JSON válido, sin texto alrededor:
   "skip": false,
   "category": "luz" | "pensiones" | "paro" | "vivienda" | "hacienda",
   "pendiente": true | false,
-  "title": "titular de 55-90 caracteres, concreto, con la cifra o fecha si existe. Nunca pongas en el título el medio de origen ni «según X»: la atribución va en el texto",
+  "title": "titular de 50-68 caracteres (Google corta los más largos), concreto, con la cifra o fecha si existe. Nunca pongas en el título el medio de origen ni «según X»: la atribución va en el texto",
+  "slug": "dirección corta: 4-8 palabras clave en minúsculas separadas por guiones, sin tildes, sin artículos ni preposiciones sueltas, máximo 60 caracteres y sin cortar palabras (ej. supremo-hacienda-tasar-vivienda-catastro-google-maps)",
   "card_title": "versión corta del titular para la imagen de portada, máximo 70 caracteres",
   "foto": "tema de la foto de portada que mejor encaja, de esta lista: {temas_foto}; o \"\" si ninguno encaja de verdad",
   "description": "entradilla de 130-160 caracteres que ya responde a la pregunta",
@@ -413,7 +415,7 @@ def yaml_str(s: str) -> str:
 
 
 def save_post(data: dict, item: dict) -> Path:
-    slug = slugify(data["title"])
+    slug = slugify(data.get("slug") or data["title"], 60)
     path = POSTS_DIR / f"{slug}.md"
     i = 2
     while path.exists():
