@@ -765,7 +765,10 @@
   "https://www.europapress.es/motor/sector-00644/noticia-coche-conductor-google-llegara-espana-waymo-preve-operar-madrid-2027-20261020133227.html",
   "https://www.europapress.es/economia/fiscal-00347/noticia-supremo-permite-compatibilizar-minimo-hijos-beneficio-fiscal-alimentos-custodia-compartida-20261020140959.html",
   "https://www.elmundo.es/economia/2026/10/20/6ad64e6221efa0423b8b4589.html",
-  "https://www.elmundo.es/economia/2026/10/20/6ad730a0e85ecece7f8b458c.html"
+  "https://www.elmundo.es/economia/2026/10/20/6ad730a0e85ecece7f8b458c.html",
+  "https://www.elmundo.es/economia/vivienda/2026/10/20/6ad7434efdddff12748b457f.html",
+  "https://www.elmundo.es/economia/empresas/2026/10/20/6ad73803e4d4d86e188b4575.html",
+  "https://www.elmundo.es/economia/2026/10/20/6ad7172d21efa0e04c8b458b.html"
  ],
  "titles": [
   "los nueve cambios para la jubilacio n en 2027 segu n el abogado laboralista ignacio solsona",
@@ -890,7 +893,10 @@
   "el coche sin conductor de alphabet llegara a espan a waymo preve operar en madrid en 2027",
   "supremo permite compatibilizar el mi nimo por hijos y el beneficio fiscal por alimentos en custodia compartida",
   "el precio de la luz se multiplica casi por nueve entre febrero y septiembre por el gas y la menor produccio n renovable",
-  "el gobierno rescata reformas de ayudas atascadas desde hace ma s de dos an os a las puertas del 29 n y sin acuerdo en el dia logo social"
+  "el gobierno rescata reformas de ayudas atascadas desde hace ma s de dos an os a las puertas del 29 n y sin acuerdo en el dia logo social",
+  "el gobierno aprueba 225 millones para impulsar vivienda asequible en plazas universitarias y en zonas de alquiler tensionado",
+  "waymo la empresa de coches auto nomos de google recibe la autorizacio n para circular en madrid y lanza sus primeras pruebas",
+  "es oficial llega una nueva deduccio n por alquiler de hasta 1 163 euros para quienes cumplan estos requisitos"
  ],
  "feeds_iniciados": [
   "https://ine.es/dyngs/Prensa/es/rssNovedades.xml",
@@ -1023,6 +1029,24 @@
    "fuente": "El Mundo Economía",
    "titulo": "El Gobierno rescata reformas de ayudas atascadas desde hace más de dos años a las puertas del 29-N y sin acuerdo en el diálogo social",
    "resultado": "borrador: decreto-seguridad-social-viudedad-baja-violencia-machista.md"
+  },
+  {
+   "fecha": "2026-10-20 23:56",
+   "fuente": "El Mundo Economía",
+   "titulo": "El Gobierno aprueba 225 millones para impulsar vivienda asequible en plazas universitarias y en zonas de alquiler tensionado",
+   "resultado": "borrador: 225-millones-vivienda-asequible-zonas-tensionadas.md"
+  },
+  {
+   "fecha": "2026-10-20 23:56",
+   "fuente": "El Mundo Economía",
+   "titulo": "Waymo, la empresa de coches autónomos de Google, recibe la autorización para circular en Madrid y lanza sus primeras pruebas",
+   "resultado": "descartada: sin valor propio: noticia empresarial sobre Waymo y sus pruebas de robotaxis en Madrid. No hay medida, trámite ni cifra que afecte al bolsillo de una familia en España, y no permite aportar un ejemplo, un plazo ni una calculadora nuestra."
+  },
+  {
+   "fecha": "2026-10-20 23:57",
+   "fuente": "El Mundo Economía",
+   "titulo": "Es oficial: llega una nueva deducción por alquiler de hasta 1.163 euros para quienes cumplan estos requisitos",
+   "resultado": "borrador: deduccion-alquiler-irpf-1163-euros-requisitos.md"
   }
  ],
  "escritos": [
@@ -1064,6 +1088,16 @@
   {
    "title": "Viudedad sin pareja de hecho y alimentos a 300 €: el nuevo decreto",
    "url": "/pensiones/decreto-seguridad-social-viudedad-baja-violencia-machista/",
+   "guia": false
+  },
+  {
+   "title": "225 millones para vivienda asequible en zonas tensionadas",
+   "url": "/vivienda/225-millones-vivienda-asequible-zonas-tensionadas/",
+   "guia": false
+  },
+  {
+   "title": "Inquilinos: deducción de hasta 1.163 € en la renta por el alquiler",
+   "url": "/vivienda/deduccion-alquiler-irpf-1163-euros-requisitos/",
    "guia": false
   }
  ]
