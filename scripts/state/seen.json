@@ -763,7 +763,9 @@
   "https://elpais.com/tecnologia/2026-10-20/google-despliega-en-madrid-sus-primeros-robotaxis-autonomos-waymo.html",
   "https://cincodias.elpais.com/extras/construyendo-futuro-negocio-axa/2026-10-19/un-plan-de-pensiones-o-proteger-la-salud-el-mejor-regalo-de-navidad-de-las-pymes-para-sus-trabajadores.html",
   "https://www.europapress.es/motor/sector-00644/noticia-coche-conductor-google-llegara-espana-waymo-preve-operar-madrid-2027-20261020133227.html",
-  "https://www.europapress.es/economia/fiscal-00347/noticia-supremo-permite-compatibilizar-minimo-hijos-beneficio-fiscal-alimentos-custodia-compartida-20261020140959.html"
+  "https://www.europapress.es/economia/fiscal-00347/noticia-supremo-permite-compatibilizar-minimo-hijos-beneficio-fiscal-alimentos-custodia-compartida-20261020140959.html",
+  "https://www.elmundo.es/economia/2026/10/20/6ad64e6221efa0423b8b4589.html",
+  "https://www.elmundo.es/economia/2026/10/20/6ad730a0e85ecece7f8b458c.html"
  ],
  "titles": [
   "los nueve cambios para la jubilacio n en 2027 segu n el abogado laboralista ignacio solsona",
@@ -886,7 +888,9 @@
   "google despliega en madrid sus primeros robotaxis auto nomos waymo",
   "un plan de pensiones o proteger la salud el mejor regalo de navidad de las pymes para sus trabajadores",
   "el coche sin conductor de alphabet llegara a espan a waymo preve operar en madrid en 2027",
-  "supremo permite compatibilizar el mi nimo por hijos y el beneficio fiscal por alimentos en custodia compartida"
+  "supremo permite compatibilizar el mi nimo por hijos y el beneficio fiscal por alimentos en custodia compartida",
+  "el precio de la luz se multiplica casi por nueve entre febrero y septiembre por el gas y la menor produccio n renovable",
+  "el gobierno rescata reformas de ayudas atascadas desde hace ma s de dos an os a las puertas del 29 n y sin acuerdo en el dia logo social"
  ],
  "feeds_iniciados": [
   "https://ine.es/dyngs/Prensa/es/rssNovedades.xml",
@@ -1007,6 +1011,18 @@
    "fuente": "Europa Press Economía",
    "titulo": "Supremo permite compatibilizar el mínimo por hijos y el beneficio fiscal por alimentos en custodia compartida",
    "resultado": "borrador: supremo-custodia-compartida-minimo-alimentos.md"
+  },
+  {
+   "fecha": "2026-10-20 21:28",
+   "fuente": "El Mundo Economía",
+   "titulo": "El precio de la luz se multiplica casi por nueve entre febrero y septiembre por el gas y la menor producción renovable",
+   "resultado": "borrador: luz-mayorista-nueve-veces-recibo-pvpc-36.md"
+  },
+  {
+   "fecha": "2026-10-20 21:29",
+   "fuente": "El Mundo Economía",
+   "titulo": "El Gobierno rescata reformas de ayudas atascadas desde hace más de dos años a las puertas del 29-N y sin acuerdo en el diálogo social",
+   "resultado": "borrador: decreto-seguridad-social-viudedad-baja-violencia-machista.md"
   }
  ],
  "escritos": [
@@ -1038,6 +1054,16 @@
   {
    "title": "Custodia compartida: el Supremo avala mínimo por hijos y pensión",
    "url": "/hacienda/supremo-custodia-compartida-minimo-alimentos/",
+   "guia": false
+  },
+  {
+   "title": "Luz en PVPC: el recibo sube un 36% desde febrero, no 8,7 veces",
+   "url": "/luz/luz-mayorista-nueve-veces-recibo-pvpc-36/",
+   "guia": false
+  },
+  {
+   "title": "Viudedad sin pareja de hecho y alimentos a 300 €: el nuevo decreto",
+   "url": "/pensiones/decreto-seguridad-social-viudedad-baja-violencia-machista/",
    "guia": false
   }
  ]
