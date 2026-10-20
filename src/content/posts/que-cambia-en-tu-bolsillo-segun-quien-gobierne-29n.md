@@ -116,4 +116,12 @@ Las encuestas pueden fallar, y más a cinco semanas de las elecciones. El CIS y 
 - **El decreto de alquiler 29/2026** se vota el **12 de noviembre**, antes de las elecciones. Si se convalida, sigue en vigor hasta que otro Gobierno lo cambie.
 - **El salario mínimo de 2027** se está negociando ahora. Lo seguimos en [salario mínimo 2027](/paro/salario-minimo-2027/).
 
+## Guías prácticas para el 29N
+
+- [Qué proponen los partidos para tu caso](/hacienda/que-proponen-para-tu-caso-29n/): marca tu situación y mira solo lo que te afecta.
+- [Votar por correo](/hacienda/votar-por-correo-29n-plazos-y-pasos/): plazos y pasos.
+- [Si te toca mesa electoral](/paro/mesa-electoral-29n-cuanto-se-cobra-y-permisos/): dieta, permisos y cómo librarte.
+- [Si trabajas el 29N](/paro/permiso-para-votar-29n-horas-trabajo/): horas pagadas para votar.
+- [Gobierno en funciones](/hacienda/gobierno-en-funciones-que-se-congela-29n/): qué se congela tras las elecciones.
+
 *Información electoral divulgativa. No es una recomendación de voto: recogemos lo que dicen los partidos con su fuente.*

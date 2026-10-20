@@ -9,5 +9,6 @@ export const HERRAMIENTAS = [
   { href: '/luz/cuanto-cuesta-cada-electrodomestico/', titulo: 'Coste de los electrodomésticos', texto: 'Lo que cuesta hoy poner la lavadora, el horno o cargar el coche, y la hora más barata.' },
   { href: '/ipc/', titulo: 'IPC y cesta de la compra', texto: 'Cuánto han subido los precios de cada producto y cuánto más te cuesta hoy lo mismo que hace un año.' },
   { href: '/divisas/cambio-euro-hoy/', titulo: 'Cambio de divisas', texto: 'Cuánto vale hoy un euro en dólares, libras o pesos, con el cambio oficial del BCE y un conversor.' },
+  { href: '/hacienda/que-proponen-para-tu-caso-29n/', titulo: 'Elecciones del 29N: tu caso', texto: 'Marca tu situación y mira, partido a partido, lo que proponen en lo que te afecta.' },
   { href: '/gasolina/', titulo: 'Gasolineras más baratas', texto: 'El precio de la gasolina y el diésel hoy en tu provincia y dónde repostar más barato.' },
 ];

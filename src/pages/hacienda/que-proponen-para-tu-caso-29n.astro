@@ -1,0 +1,109 @@
+---
+import Base from '../../layouts/Base.astro';
+import Siguenos from '../../components/Siguenos.astro';
+import Compartir from '../../components/Compartir.astro';
+import { SITE } from '../../config';
+import { PERFILES, PARTIDOS, ACTUALIZADO } from '../../data/propuestas-29n';
+
+const titulo = 'Qué proponen los partidos para tu caso: herramienta del 29N';
+const descripcion = 'Marca si eres asalariado, pensionista, inquilino o propietario y mira, partido a partido, lo que proponen para el 29N en lo que te afecta.';
+const url = `${SITE.url}/hacienda/que-proponen-para-tu-caso-29n/`;
+const jsonLd = [
+  {
+    '@context': 'https://schema.org', '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Inicio', item: SITE.url + '/' },
+      { '@type': 'ListItem', position: 2, name: 'Hacienda', item: `${SITE.url}/hacienda/` },
+      { '@type': 'ListItem', position: 3, name: titulo, item: url },
+    ],
+  },
+  { '@context': 'https://schema.org', '@type': 'WebApplication', name: titulo, url, applicationCategory: 'ReferenceApplication', operatingSystem: 'Any', inLanguage: 'es-ES', offers: { '@type': 'Offer', price: '0', priceCurrency: 'EUR' } },
+];
+---
+<Base title={titulo} description={descripcion} jsonLd={jsonLd}>
+  <nav class="breadcrumbs"><a href="/">Inicio</a> › <a href="/hacienda/">Hacienda</a></nav>
+  <article class="pagina">
+    <h1>Qué proponen los partidos para tu caso</h1>
+    <p class="lead">Marca lo que encaja contigo y verás, partido a partido, lo que han propuesto para las elecciones del <strong>29 de noviembre</strong> en lo que te afecta. No es un test de voto: no te decimos a quién votar, solo ordenamos sus propuestas.</p>
+    <p class="aviso"><strong>Aviso:</strong> los partidos aún no han publicado sus programas completos. Recogemos sus planes y declaraciones con fecha. Última revisión: {ACTUALIZADO}.</p>
+
+    <form id="perfiles" class="perfiles">
+      <fieldset>
+        <legend>Tu situación (puedes marcar varias)</legend>
+        <div class="opciones">
+          {PERFILES.map((p) => (
+            <label class="op"><input type="checkbox" name="perfil" value={p.id} /> <span>{p.etiqueta}</span></label>
+          ))}
+        </div>
+      </fieldset>
+    </form>
+
+    <div id="vacio" class="vacio">Marca al menos una casilla para ver las propuestas.</div>
+
+    {PERFILES.map((p) => (
+      <section class="bloque" data-perfil={p.id} hidden>
+        <h2>{p.titulo}</h2>
+        <div class="tabla">
+          <table>
+            <thead><tr><th scope="col">Partido</th>{p.temas.map((t) => <th scope="col">{t.tema}</th>)}</tr></thead>
+            <tbody>
+              {PARTIDOS.map((partido) => (
+                <tr>
+                  <th scope="row">{partido}</th>
+                  {p.temas.map((t) => <td>{t.propuestas[partido] ?? 'Sin propuesta concreta recogida'}</td>)}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p class="mas">Más detalle: <a href={p.guia.href}>{p.guia.texto}</a></p>
+      </section>
+    ))}
+
+    <Compartir title={titulo} url={url} />
+
+    <section class="prose">
+      <h2>Cómo hemos hecho esta herramienta</h2>
+      <p>Las propuestas salen de nuestra <a href="/hacienda/que-cambia-en-tu-bolsillo-segun-quien-gobierne-29n/">comparativa del 29N</a> y de las guías por temas, donde está la fuente de cada una. Recogemos los cinco partidos con más peso en las encuestas en el orden en que aparecen allí. Cuando un partido no ha dicho nada concreto sobre un tema, lo indicamos así, sin interpretar.</p>
+      <p>La actualizaremos cuando los partidos publiquen sus programas. Para lo que pasa entre las elecciones y el nuevo Gobierno, lee <a href="/hacienda/gobierno-en-funciones-que-se-congela-29n/">qué se congela con un Gobierno en funciones</a>.</p>
+      <p class="muted small">Herramienta divulgativa. No es una recomendación de voto.</p>
+    </section>
+    <Siguenos />
+  </article>
+</Base>
+
+<script>
+  const form = document.getElementById('perfiles') as HTMLFormElement;
+  const vacio = document.getElementById('vacio')!;
+  function mostrar() {
+    const marcados = new Set([...form.querySelectorAll<HTMLInputElement>('input:checked')].map((i) => i.value));
+    document.querySelectorAll<HTMLElement>('.bloque').forEach((b) => { b.hidden = !marcados.has(b.dataset.perfil!); });
+    vacio.hidden = marcados.size > 0;
+  }
+  form.addEventListener('change', mostrar);
+  mostrar();
+</script>
+
+<style>
+  .pagina { max-width: 960px; }
+  h1 { font-size: clamp(1.9rem, 4.6vw, 2.6rem); line-height: 1.15; margin: 4px 0 12px; }
+  .lead { font-size: 1.125rem; line-height: 1.55; margin: 0 0 12px; max-width: 760px; }
+  .aviso { background: var(--surface); border-left: 3px solid var(--brand); padding: 10px 14px; font-size: .9375rem; margin: 0 0 24px; }
+  fieldset { border: 0; margin: 0; padding: 0; }
+  legend { font-family: var(--serif); font-weight: 600; font-size: 1.25rem; margin-bottom: 10px; padding: 0; }
+  .opciones { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 8px 16px; }
+  .op { display: flex; gap: 10px; align-items: center; padding: 10px 12px; border: 1px solid var(--rule); border-radius: 4px; cursor: pointer; }
+  .op input { width: 18px; height: 18px; accent-color: var(--brand); }
+  .op:has(input:checked) { border-color: var(--brand); background: var(--surface); }
+  .vacio { margin: 24px 0; color: var(--muted); }
+  .bloque { margin-top: 32px; }
+  .bloque h2 { font-size: 1.5rem; margin: 0 0 12px; }
+  .tabla { overflow-x: auto; }
+  table { border-collapse: collapse; width: 100%; font-size: .9375rem; min-width: 560px; }
+  th, td { text-align: left; vertical-align: top; padding: 10px 12px; border-bottom: 1px solid var(--rule); }
+  thead th { border-bottom: 2px solid var(--ink); font-size: .875rem; }
+  tbody th { white-space: nowrap; }
+  .mas { font-size: .9375rem; margin: 10px 0 0; }
+  .prose { margin-top: 40px; }
+  .small { font-size: .8125rem; }
+</style>
