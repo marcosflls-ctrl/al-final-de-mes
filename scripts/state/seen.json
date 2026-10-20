@@ -744,7 +744,8 @@
   "https://www.elmundo.es/economia/2026/10/20/6ad718cefc6c83f51d8b4586.html",
   "https://www.elconfidencial.com/economia/2026-10-20/precio-luz-martes-20-octubre-horas-baratas-1qrt_4448677/",
   "https://www.elconfidencial.com/economia/2026-10-20/supremo-exige-visita-inmueble-hacienda-1tps_4448701/",
-  "https://www.antena3.com/noticias/espana/rueda-prensa-posterior-consejo-ministros-streaming-directo_202610206ad73cccbb4b2674104f2101.html"
+  "https://www.antena3.com/noticias/espana/rueda-prensa-posterior-consejo-ministros-streaming-directo_202610206ad73cccbb4b2674104f2101.html",
+  "https://www.eleconomista.es/economia/noticias/14022066/10/26/el-gobierno-dara-un-ano-a-parejas-convivientes-con-hijos-para-solicitar-la-pension-de-viudedad.html"
  ],
  "titles": [
   "los nueve cambios para la jubilacio n en 2027 segu n el abogado laboralista ignacio solsona",
@@ -852,7 +853,8 @@
   "el alquiler medio en barcelona ha bajado casi un 5 desde 2024 como dice bolan os pero ha subido en el u ltimo an o",
   "la sostenibilidad de las pensiones un debate inco modo en campan a electoral",
   "los motivos detra s de la subida de 500 euros en la pensio n media de jubilacio n de los u ltimos ocho an os",
-  "el debate de las pensiones entra en terreno pantanoso hay que reformar el modelo o cambiarlo por otro"
+  "el debate de las pensiones entra en terreno pantanoso hay que reformar el modelo o cambiarlo por otro",
+  "access denied"
  ],
  "feeds_iniciados": [
   "https://ine.es/dyngs/Prensa/es/rssNovedades.xml",
@@ -864,5 +866,13 @@
   "https://www.businessinsider.es/rss",
   "https://www.elespanol.com/rss/invertia/",
   "https://www.antena3.com/noticias/rss/4013050.xml"
+ ],
+ "registro": [
+  {
+   "fecha": "2026-10-20 15:55",
+   "fuente": "eleconomista.es",
+   "titulo": "Access Denied",
+   "resultado": "texto insuficiente (muro de pago o página vacía)"
+  }
  ]
 }
