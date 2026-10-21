@@ -775,7 +775,10 @@
   "https://elpais.com/economia/2026-10-21/la-brecha-entre-salarios-y-precios-se-ensancha-por-el-pico-de-la-inflacion-y-la-paralisis-en-los-convenios.html",
   "https://www.elconfidencial.com/economia/2026-10-21/precio-luz-horas-miercoles-21-octubre-mas-barato-1qrt_4449488/",
   "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-21872",
-  "https://www.ine.es/dyngs/Prensa/UA2026.htm"
+  "https://www.ine.es/dyngs/Prensa/UA2026.htm",
+  "https://www.20minutos.es/lainformacion/economia-y-finanzas/como-pedir-becas-comedor-transporte-escolar-fuera-plazo_7047976_0.html",
+  "https://www.europapress.es/economia/laboral-00346/noticia-gobierno-garantiza-subidas-smi-pensiones-intervenir-forma-mas-ambiciosa-vivienda-20261020195944.html",
+  "https://www.elmundo.es/economia/vivienda/2026/10/21/6ad76830fc6c83f6628b45af.html"
  ],
  "titles": [
   "los nueve cambios para la jubilacio n en 2027 segu n el abogado laboralista ignacio solsona",
@@ -907,7 +910,10 @@
   "sa nchez carga a la factura del pro ximo gobierno subidas a pensionistas y funcionarios que costara n ma s de 17 600 millones",
   "el gobierno aprobara antes de fin de an o la subida de sueldo a los funcionarios del 5",
   "real decreto ley 31 2026 de 20 de octubre para la mejora de la accio n protectora de la seguridad social y de otras normas sociales",
-  "21 nbsp octubre nbsp 26 indicadores urbanos"
+  "21 nbsp octubre nbsp 26 indicadores urbanos",
+  "co mo pedir las becas de comedor y transporte escolar fuera de plazo",
+  "el gobierno garantiza subidas del smi y de las pensiones e intervenir de forma ma s ambiciosa en vivienda",
+  "el mapa del alquiler en el que aterrizan los decretos maricarmen uno de cada tres contratos es temporal y el stock permanente se desploma un 10"
  ],
  "feeds_iniciados": [
   "https://ine.es/dyngs/Prensa/es/rssNovedades.xml",
@@ -1082,6 +1088,24 @@
    "fuente": "INE (novedades)",
    "titulo": "21&nbsp;Octubre&nbsp;26. Indicadores Urbanos",
    "resultado": "borrador: ine-alquiler-precio-vivienda-municipios-2025.md"
+  },
+  {
+   "fecha": "2026-10-21 12:37",
+   "fuente": "20minutos Economía",
+   "titulo": "Cómo pedir las becas de comedor y transporte escolar fuera de plazo",
+   "resultado": "borrador: becas-comedor-transporte-escolar-fuera-plazo.md"
+  },
+  {
+   "fecha": "2026-10-21 12:37",
+   "fuente": "Europa Press Economía",
+   "titulo": "El Gobierno garantiza subidas del SMI y de las pensiones e intervenir \"de forma más ambiciosa\" en vivienda",
+   "resultado": "descartada: sin valor propio: entrevista política con promesas genéricas (SMI, pensiones ligadas al IPC, 'intervenir más' en vivienda) y sin medida, cifra ni fecha nuevas. Los contactos de Trabajo con los expertos del SMI y la garantía de subida de pensiones y SMI con Gobierno en funciones ya están "
+  },
+  {
+   "fecha": "2026-10-21 12:37",
+   "fuente": "El Mundo Economía",
+   "titulo": "El mapa del alquiler en el que aterrizan los decretos Maricarmen: uno de cada tres contratos es temporal y el stock permanente se desploma u",
+   "resultado": "borrador: alquiler-temporal-34-oferta-permanente-cae-10-idealista.md"
   }
  ],
  "escritos": [
@@ -1153,6 +1177,16 @@
   {
    "title": "Alquiler medio: 1.499 € en Pozuelo y 330 € en Lalín en 2024",
    "url": "/vivienda/ine-alquiler-precio-vivienda-municipios-2025/",
+   "guia": false
+  },
+  {
+   "title": "Becas de comedor y transporte fuera de plazo: cómo pedirlas",
+   "url": "/paro/becas-comedor-transporte-escolar-fuera-plazo/",
+   "guia": false
+  },
+  {
+   "title": "Inquilinos: 1 de cada 3 alquileres es temporal y el fijo cae 10%",
+   "url": "/vivienda/alquiler-temporal-34-oferta-permanente-cae-10-idealista/",
    "guia": false
   }
  ]
