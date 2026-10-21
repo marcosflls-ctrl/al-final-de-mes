@@ -807,7 +807,18 @@
   "https://www.abc.es/economia/cuentas-corrientes/tarjeta-monedero-2026-solicitar-220-euros-mes-20261020010950-nt.html",
   "https://www.elmundo.es/economia/2026/10/20/6ad625c2e4d4d8302a8b458e.html",
   "https://www.expansion.com/economia/2026/10/22/pequenos-caseros-futuros-inquilinos-castigados-decretos-vivienda.html",
-  "https://www.abc.es/economia/cuentas-corrientes/obligacion-propietario-asuma-seguro-impago-presiona-alza-20261021012102-nt.html"
+  "https://www.abc.es/economia/cuentas-corrientes/obligacion-propietario-asuma-seguro-impago-presiona-alza-20261021012102-nt.html",
+  "https://www.abc.es/economia/cuentas-corrientes/metodo-definitivo-descargar-nota-simple-casa-tres-20261021011006-nt.html",
+  "https://www.abc.es/economia/cuentas-corrientes/pasar-pensiones-espana-partir-enero-2027-forma-20261020053000-nt.html",
+  "https://www.abc.es/economia/alfonso-munoz-funcionario-seguridad-social-gasto-anual-20261021063000-nt.html",
+  "https://www.abc.es/economia/impuestos-cotizaciones-soporta-trabajador-medio-suben-sanchez-20261021222828-nt.html",
+  "https://www.elconfidencial.com/economia/2026-10-21/funcionario-seguridad-social-pensiones-espana-cosa-reconocer_4449940/",
+  "https://www.elconfidencial.com/economia/2026-10-21/alberto-sanchez-abogado-inmobiliario_4449473/",
+  "https://www.elconfidencial.com/economia/2026-10-21/gonzalo-bernardos-economista_4449475/",
+  "https://www.elconfidencial.com/economia/2026-10-21/cuando-se-cobran-las-pensiones-en-octubre-de-2026_4449494/",
+  "https://www.elconfidencial.com/economia/2026-10-21/alfonso-munoz-funcionario-de-la-seguridad-social-sobre-la-jubilacion-anticipada_4448786/",
+  "https://www.elconfidencial.com/economia/2026-10-20/alberto-medico-jubilado-hacienda-retenia-20000-euros-ano-1qrt_4448896/",
+  "https://www.idealista.com/news/opinion/jose-maria-salcedo/2026/10/21/919902-hacienda-ya-sanciona-por-rectificar-la-declaracion-de-irpf-para-recuperar-lo"
  ],
  "titles": [
   "los nueve cambios para la jubilacio n en 2027 segu n el abogado laboralista ignacio solsona",
@@ -967,7 +978,18 @@
   "tarjeta monedero 2026 co mo solicitar hasta 220 euros al mes para alimentos",
   "la u nica luz de un edificio fantasma los chinos que viven entre las ruinas de la crisis inmobiliaria",
   "los pequen os caseros y los futuros inquilinos los ma s castigados por los decretos de vivienda",
-  "la obligacio n de que el propietario asuma el seguro de impago presiona al alza los nuevos alquileres"
+  "la obligacio n de que el propietario asuma el seguro de impago presiona al alza los nuevos alquileres",
+  "el me todo definitivo para descargar la nota simple de una casa en tres pasos y sin moverte del sofa",
+  "que va a pasar con las pensiones en espan a a partir de enero de 2027 si no se forma gobierno tras las elecciones del 29n",
+  "alfonso mun oz funcionario de la seguridad social el gasto anual en pensiones es un tercio de los presupuestos generales nos enfrentamos a un reto que exige responsabilidad poli tica",
+  "los impuestos y cotizaciones que soporta un trabajador medio suben un 18 con sa nchez mientras su renta cae un 4",
+  "alfonso mun oz funcionario de la seguridad social sobre las pensiones en espan a una cosa es reconocer que tenemos desafi os y otra muy distinta es afirmar que el sistema esta condenado a ser insostenible",
+  "alberto sa nchez abogado inmobiliario el propietario no esta obligado a aceptar la pro rroga de dos an os del contrato de alquiler si el inquilino no cumple estos 7 requisitos y debe cumplirlos todos",
+  "gonzalo bernardos si a un propietario le das elegir entre seguridad juri dica y rentabilidad del alquiler casi todos elegira n seguridad juri dica",
+  "cua ndo se cobran las pensiones en octubre de 2026 fecha en caixabank santander ing bbva y resto de bancos",
+  "alfonso mun oz funcionario de la seguridad social sobre la jubilacio n anticipada elegir una fecha puede hacer que cobres cientos de euros ma s",
+  "alberto m pe rez me dico jubilado con 40 an os cotizados hacienda me reteni a 20 000 euros al an o y me siento muy orgulloso",
+  "hacienda ya sanciona por rectificar la declaracio n de irpf para recuperar lo pagado de ma s asi puedes defenderte"
  ],
  "feeds_iniciados": [
   "https://ine.es/dyngs/Prensa/es/rssNovedades.xml",
@@ -1310,6 +1332,72 @@
    "fuente": "ABC Economía",
    "titulo": "La obligación de que el propietario asuma el seguro de impago presiona al alza los nuevos alquileres",
    "resultado": "borrador: seguro-impago-alquiler-propietario-decreto-pendiente.md"
+  },
+  {
+   "fecha": "2026-10-22 01:25",
+   "fuente": "ABC Economía",
+   "titulo": "El método definitivo para descargar la nota simple de una casa en tres pasos y sin moverte del sofá",
+   "resultado": "descartada: sin valor propio: es un tutorial genérico sin novedad (ninguna norma, fecha ni cambio de requisitos). No da el precio, ni el enlace oficial del Registro, ni la fecha de la supuesta simplificación de la plataforma. Tampoco permite aportar un cálculo ni una guía nuestra."
+  },
+  {
+   "fecha": "2026-10-22 01:25",
+   "fuente": "ABC Economía",
+   "titulo": "Qué va a pasar con las pensiones en España a partir de enero de 2027 si no se forma Gobierno tras las elecciones del 29N",
+   "resultado": "descartada: repetición: ya publicamos 'Cuerpo: pensiones y SMI subirán aunque haya Gobierno en funciones', 'Pensiones 2027: la subida se sabrá el 27 de noviembre' y las guías de subida de pensiones y Gobierno en funciones. La fuente solo repite que la revalorización está garantizada por el artículo "
+  },
+  {
+   "fecha": "2026-10-22 01:25",
+   "fuente": "ABC Economía",
+   "titulo": "Alfonso Muñoz, funcionario de la Seguridad Social: «El gasto anual en pensiones es un tercio de los presupuestos generales. Nos enfrentamos ",
+   "resultado": "descartada: sin valor propio: es una entrevista de opinión a un funcionario sin ninguna medida, cifra oficial ni fecha nueva. El único dato (unos 200.000 millones de gasto anual en pensiones, un tercio de los Presupuestos) ya está cubierto en el artículo publicado sobre el coste mensual de las pensi"
+  },
+  {
+   "fecha": "2026-10-22 01:25",
+   "fuente": "ABC Economía",
+   "titulo": "Los impuestos y cotizaciones que soporta un trabajador medio suben un 18% con Sánchez, mientras su renta cae un 4%",
+   "resultado": "borrador: trabajador-medio-irpf-cotizaciones-suben-18-2018.md"
+  },
+  {
+   "fecha": "2026-10-22 01:25",
+   "fuente": "El Confidencial Economía",
+   "titulo": "Alfonso Muñoz, funcionario de la Seguridad Social, sobre las pensiones en España: “Una cosa es reconocer que tenemos desafíos y otra muy dis",
+   "resultado": "texto insuficiente (muro de pago o página vacía)"
+  },
+  {
+   "fecha": "2026-10-22 01:25",
+   "fuente": "El Confidencial Economía",
+   "titulo": "Alberto Sánchez, abogado inmobiliario: \"El propietario no está obligado a aceptar la prórroga de dos años del contrato de alquiler si el inq",
+   "resultado": "texto insuficiente (muro de pago o página vacía)"
+  },
+  {
+   "fecha": "2026-10-22 01:25",
+   "fuente": "El Confidencial Economía",
+   "titulo": "Gonzalo Bernardos: \"Si a un propietario le das elegir entre seguridad jurídica y rentabilidad del alquiler, casi todos elegirán seguridad ju",
+   "resultado": "texto insuficiente (muro de pago o página vacía)"
+  },
+  {
+   "fecha": "2026-10-22 01:25",
+   "fuente": "El Confidencial Economía",
+   "titulo": "Cuándo se cobran las pensiones en octubre de 2026: fecha en Caixabank, Santander, ING, BBVA y resto de bancos",
+   "resultado": "texto insuficiente (muro de pago o página vacía)"
+  },
+  {
+   "fecha": "2026-10-22 01:25",
+   "fuente": "El Confidencial Economía",
+   "titulo": "Alfonso Muñoz, funcionario de la Seguridad Social, sobre la jubilación anticipada: “Elegir una fecha puede hacer que cobres cientos de euros",
+   "resultado": "texto insuficiente (muro de pago o página vacía)"
+  },
+  {
+   "fecha": "2026-10-22 01:25",
+   "fuente": "El Confidencial Economía",
+   "titulo": "Alberto M. Pérez, médico jubilado con 40 años cotizados: \"Hacienda me retenía 20.000 euros al año y me siento muy orgulloso\"",
+   "resultado": "texto insuficiente (muro de pago o página vacía)"
+  },
+  {
+   "fecha": "2026-10-22 01:26",
+   "fuente": "Idealista News (vivienda)",
+   "titulo": "Hacienda ya sanciona por rectificar la declaración de IRPF para recuperar lo pagado de más: así puedes defenderte",
+   "resultado": "borrador: rectificar-renta-fuera-plazo-multa-100-euros-hacienda.md"
   }
  ],
  "escritos": [
@@ -1436,6 +1524,16 @@
   {
    "title": "Seguro de impago: lo pagaría el casero, no el inquilino",
    "url": "/vivienda/seguro-impago-alquiler-propietario-decreto-pendiente/",
+   "guia": false
+  },
+  {
+   "title": "Trabajador medio: IRPF y cotizaciones suben un 18% real desde 2018",
+   "url": "/hacienda/trabajador-medio-irpf-cotizaciones-suben-18-2018/",
+   "guia": false
+  },
+  {
+   "title": "Rectificar la renta tras junio: multa de 100 € por ejercicio",
+   "url": "/hacienda/rectificar-renta-fuera-plazo-multa-100-euros-hacienda/",
    "guia": false
   }
  ]
