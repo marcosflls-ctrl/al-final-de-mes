@@ -3,13 +3,15 @@ title: "Funcionarios: 0,5% retroactivo de 2026 y 4,5% en 2027"
 description: "El Gobierno se compromete con los sindicatos a aprobar antes de fin de año el 4,5% de 2027 y un 0,5% extra de 2026 con efectos desde el 1 de enero."
 date: 2026-10-20T23:14:11+00:00
 category: paro
-tags: ["funcionarios", "sueldo", "empleo-publico", "subida-salarial", "2027"]
+tags: ["funcionarios", "sueldo", "empleo-publico", "subida-salarial", "2027", "gobierno-en-funciones"]
 pendiente: true
 image: /img/fotos/funcionarios-subida-retroactiva-2026-4-5-2027.webp
 imageAlt: "Empleados trabajando en una oficina de la Administración"
 imageCredit: "StartupStockPhotos / Pixabay"
 imageCreditUrl: "https://pixabay.com/photos/office-startup-business-home-office-594132/"
 sources:
+  - name: "El Mundo Economía: Sánchez carga a la factura del próximo Gobierno subidas a pensionistas y funcionarios que costarán m"
+    url: "https://www.elmundo.es/economia/2026/10/20/6ad7938b21efa09b7d8b45a0.html"
   - name: "Expansión Economía: El Gobierno aprobará antes de fin de año la subida de sueldo a los funcionarios del 5%"
     url: "https://www.expansion.com/economia/2026/10/20/gobierno-aprobara-ano-subida-sueldo-funcionarios-5.html"
 ---
@@ -26,6 +28,21 @@ Son dos cosas distintas:
 | Extra sobre la subida de 2026 | 0,5% | 1 de enero de 2026 (retroactiva) |
 
 El 0,5% adicional compensa la desviación de la inflación. Se suma a la subida de 2026, que fue del 1,5% y aprobó el Consejo de Ministros a comienzos de diciembre del año pasado. Con él, la subida de 2026 quedaría en el 2% en total.
+
+## El acuerdo de subidas hasta 2028
+
+La subida sale del acuerdo salarial que el Gobierno firmó con los sindicatos a finales del año pasado. Se publicó en el BOE a principios de 2026. Esta es la senda pactada:
+
+| Año | Subida |
+|---|---|
+| 2025 | 2,5 % fijo |
+| 2026 | 1,5 % fijo + 0,5 % variable (con efectos desde enero y según el IPC definitivo) |
+| 2027 | 4,5 % fijo |
+| 2028 | 2 % |
+
+El 0,5 % variable es el de 2026, que ahora se pagaría con efectos desde enero. Como se cobra en las nóminas de 2027 junto con el 4,5 %, algunos medios lo cuentan como una subida del 5 % en 2027.
+
+El acuerdo dice que las subidas son "de carácter consolidable". La de 2027 se calculará "sobre la base de las retribuciones ya incrementadas en 2026". Es decir, se aplica sobre un sueldo que ya ha subido.
 
 ## ¿A quién afecta?
 
@@ -46,12 +63,32 @@ Para ver cuánto te quedaría en mano después de impuestos y cotizaciones, pued
 
 No hay fecha. Los sindicatos exigían un real decreto ley antes de las elecciones generales del 29 de noviembre, que después tendría que convalidar la Diputación Permanente. El Gobierno no ha podido garantizarlo. CCOO resume que se ha comprometido a aprobarlo "pero sin especificar la fecha". CSIF mantiene que debe hacerse antes de que el Gobierno entre en funciones, para evitar retrasos.
 
+Cada sindicato ha fijado su postura:
+
+- **CSIF** pide aprobar la subida "antes de las elecciones" para evitar retrasos por las limitaciones del Ejecutivo en funciones.
+- **UGT** sostiene que, esté o no en funciones, el Consejo de Ministros y la Diputación Permanente del Congreso tienen mecanismos legales para aplicarla. Pide que se haga "lo antes posible" y marca como límite el Consejo de Ministros del 24 de noviembre, el último antes de las urnas.
+- **CCOO** exige saber cuándo se aprobará el real decreto ley para que la subida sea efectiva en enero de 2027.
+
 Quedan abiertos dos escenarios:
 
 - Que el decreto salga en alguno de los "martes sociales" que quedan antes del 29 de noviembre.
 - Que salga ya con el Gobierno en funciones.
 
 El año pasado la subida se aprobó a comienzos de diciembre, así que hacerlo en campaña adelantaría ese calendario. Para saber qué se puede y qué no se puede aprobar con un Gobierno en funciones, tienes nuestra guía sobre [qué se congela en tu bolsillo tras el 29N](/hacienda/gobierno-en-funciones-que-se-congela-29n/).
+
+## ¿Cuánto cuesta?
+
+Según los cálculos de El Mundo con datos del INE y la IGAE:
+
+| Concepto | Coste estimado |
+|---|---|
+| Subida del 4,5 % a empleados públicos | unos 8.300 millones |
+| Paga del 0,5 % por inflación | unos 900 millones |
+| **Total funcionarios** | **9.200 millones** |
+| Pensiones (con un 3,6 %, según Funcas) | 8.400 millones |
+| **Total** | **más de 17.600 millones** |
+
+El diario recuerda que son gastos que se consolidan, no puntuales. Compara la cifra con el déficit público del primer semestre de 2026, de 38.195 millones. También cita la advertencia de la AIReF: sin reformas, el aumento del gasto en pensiones obligará a restar recursos a otras políticas o a endeudarse más.
 
 ## ¿Qué queda del Acuerdo Marco?
 
@@ -70,4 +107,4 @@ El Ministerio dice que seguirá trabajando en empleo, tasa de reposición y clas
 
 ## ¿Qué hacer ahora?
 
-No hay que pedir nada. La subida se aplicará en la nómina cuando se publique la norma. Habrá que estar atento al Consejo de Ministros de los próximos martes y al BOE. Ya contamos el detalle de la subida de 2027 en [Funcionarios: sueldo +4,5% en 2027, pero sin fecha de subida](/paro/funcionarios-subida-sueldo-2027-4-5-sin-fecha/). Si quieres ver cuánto cobra cada grupo, tienes la tabla en [Sueldo de un funcionario en 2026](/oposiciones/sueldo-funcionario-2026/).
+No hay que pedir nada. La subida se aplicará en la nómina cuando se publique la norma. Habrá que estar atento al Consejo de Ministros de los próximos martes y al BOE. Si quieres ver cuánto cobra cada grupo, tienes la tabla en [Sueldo de un funcionario en 2026](/oposiciones/sueldo-funcionario-2026/).
