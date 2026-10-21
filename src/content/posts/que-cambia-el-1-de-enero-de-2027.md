@@ -6,10 +6,10 @@ category: hacienda
 guia: true
 orden: 10
 tags: [2027, pensiones, nomina, cotizaciones, ayudas, novedades]
-image: /img/banco/calendario-02.webp
-imageAlt: "Agenda de anillas abierta"
-imageCredit: "Old Photo Profile / Wikimedia Commons (CC BY 2.0)"
-imageCreditUrl: "https://commons.wikimedia.org/wiki/File:Personal_organizer_with_metallic_ring_binder.jpg"
+image: /img/fotos/que-cambia-el-1-de-enero-de-2027.webp
+imageAlt: "Calendario sobre una mesa"
+imageCredit: "RonaldCandonga / Pixabay"
+imageCreditUrl: "https://pixabay.com/photos/job-office-team-business-internet-5382501/"
 sources:
   - name: "BBVA Mi Jubilación: novedades de pensiones y Seguridad Social para 2027"
     url: "https://www.bbvamijubilacion.es/blog/novedades-pensiones-seguridad-social-2027/"
