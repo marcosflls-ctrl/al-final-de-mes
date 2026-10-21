@@ -5,7 +5,7 @@ name: Precio de los carburantes
 on:
   schedule:
     # GitHub se salta a menudo ejecuciones programadas: se reparten varias al día (solo publica si cambian los precios)
-    - cron: "23 5,9,13,17 * * *"
+    - cron: "23 5,7,9,11,13,15,17,19 * * *"   # GitHub se salta muchas ejecuciones programadas: más pasadas
   workflow_dispatch:
 
 permissions:
