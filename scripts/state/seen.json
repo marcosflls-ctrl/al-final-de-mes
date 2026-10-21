@@ -787,7 +787,11 @@
   "https://www.elmundo.es/economia/2026/10/21/6ad87db8fdddff770b8b45b0.html",
   "https://www.elmundo.es/economia/2026/10/21/6ad8943421efa0fb678b4575.html",
   "https://www.elmundo.es/economia/empresas/2026/10/21/6ad8937de9cf4afd2a8b4570.html",
-  "https://www.expansion.com/economia/2026/10/20/seguridad-social-pagar-mitad-complemento-hijos-jubilados-activo.html"
+  "https://www.expansion.com/economia/2026/10/20/seguridad-social-pagar-mitad-complemento-hijos-jubilados-activo.html",
+  "https://www.europapress.es/economia/noticia-netflix-baja-66-ganar-438-mas-tercer-trimestre-ajustar-previsiones-20261021171752.html",
+  "https://www.lavanguardia.com/economia/20261021/11664566/sos-arroceros-delta-ebro-desplome-precios-niveles-25-anos.html",
+  "https://www.lavanguardia.com/local/paisvasco/20261021/11664542/gobierno-vasco-compra-510-viviendas-protegidas-san-sebastian-mantenerlas-alquiler-protegido.html",
+  "https://www.lavanguardia.com/economia/20261021/11664360/fedea-advierte-creditos-publicos-entrada-primera-vivienda-encarecer-mas-precios.html"
  ],
  "titles": [
   "los nueve cambios para la jubilacio n en 2027 segu n el abogado laboralista ignacio solsona",
@@ -928,7 +932,11 @@
   "garamendi premia la fidelidad de madrid y catalun a con la vicepresidencia primera para garrido y las relaciones con las cortes para sa nchez llibre",
   "euri bor hoy mie rcoles 21 de octubre otro mi nimo repunte en su valor",
   "el gran consumo pide al nuevo gobierno bajar impuestos y una poli tica migratoria sensata y ordenada",
-  "la seguridad social no puede pagar solo la mitad del complemento por hijos a los jubilados en activo"
+  "la seguridad social no puede pagar solo la mitad del complemento por hijos a los jubilados en activo",
+  "netflix baja hasta un 6 6 tras ganar un 43 8 ma s en el tercer trimestre y ajustar previsiones",
+  "sos de los arroceros del delta del ebro por el desplome de los precios a niveles de hace 25 an os",
+  "el gobierno vasco compra 510 viviendas protegidas en san sebastia n para mantenerlas como alquiler pu blico",
+  "fedea advierte de que los cre ditos pu blicos para la entrada de la primera vivienda pueden encarecer ma s los precios"
  ],
  "feeds_iniciados": [
   "https://ine.es/dyngs/Prensa/es/rssNovedades.xml",
@@ -1157,6 +1165,30 @@
    "fuente": "Expansión Economía",
    "titulo": "La Seguridad Social no puede pagar solo la mitad del complemento por hijos a los jubilados en activo",
    "resultado": "borrador: supremo-complemento-hijos-jubilacion-activa-100.md"
+  },
+  {
+   "fecha": "2026-10-21 17:39",
+   "fuente": "Europa Press Economía",
+   "titulo": "Netflix baja hasta un 6,6% tras ganar un 43,8% más en el tercer trimestre y ajustar previsiones",
+   "resultado": "descartada: sin valor propio: resultados trimestrales de una empresa (Netflix), cotización en bolsa y despidos en EE. UU.; no afecta directamente a la economía de una familia en España y no hay medida, trámite ni cifra que el lector pueda aplicar ni calculadora nuestra que encaje"
+  },
+  {
+   "fecha": "2026-10-21 17:39",
+   "fuente": "La Vanguardia Economía",
+   "titulo": "'SOS' de los arroceros del delta del Ebro por el desplome de los precios a niveles de hace 25 años",
+   "resultado": "descartada: sin valor propio: es una reclamación de ayudas de un sector agrícola (arroceros del delta del Ebro) a la Generalitat y al Ministerio, sin medida aprobada. No toca directamente al bolsillo de una familia y la fuente no dice nada del precio del arroz en el súper ni de ningún trámite que pu"
+  },
+  {
+   "fecha": "2026-10-21 17:39",
+   "fuente": "La Vanguardia Economía",
+   "titulo": "El Gobierno vasco compra 510 viviendas protegidas en San Sebastián para mantenerlas como alquiler público",
+   "resultado": "borrador: euskadi-compra-510-pisos-protegidos-san-sebastian.md"
+  },
+  {
+   "fecha": "2026-10-21 17:40",
+   "fuente": "La Vanguardia Economía",
+   "titulo": "Fedea advierte de que los créditos públicos para la entrada de la primera vivienda pueden encarecer más los precios",
+   "resultado": "borrador: fedea-creditos-0-entrada-primera-vivienda-precios.md"
   }
  ],
  "escritos": [
@@ -1248,6 +1280,16 @@
   {
    "title": "Jubilados que trabajan: el complemento por hijos, sobre el 100%",
    "url": "/pensiones/supremo-complemento-hijos-jubilacion-activa-100/",
+   "guia": false
+  },
+  {
+   "title": "Euskadi pacta comprar 510 pisos protegidos en San Sebastián",
+   "url": "/vivienda/euskadi-compra-510-pisos-protegidos-san-sebastian/",
+   "guia": false
+  },
+  {
+   "title": "Fedea: los créditos al 0% para la entrada pueden subir precios",
+   "url": "/vivienda/fedea-creditos-0-entrada-primera-vivienda-precios/",
    "guia": false
   }
  ]
