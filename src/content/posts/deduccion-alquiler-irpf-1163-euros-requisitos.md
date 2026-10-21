@@ -4,17 +4,21 @@ description: "Los inquilinos con base imponible de hasta 33.007,20 € podrán d
 date: 2026-10-20T21:57:23+00:00
 category: vivienda
 tags: ["deduccion-alquiler", "irpf", "inquilinos", "real-decreto-ley-29-2026", "declaracion-de-la-renta"]
-pendiente: false
+pendiente: true
 image: /img/fotos/deduccion-alquiler-irpf-1163-euros-requisitos.webp
 imageAlt: "Llaves de un piso de alquiler sobre una mesa"
 imageCredit: "Tumisu / Pixabay"
 imageCreditUrl: "https://pixabay.com/photos/real-estate-agent-sale-home-keys-3337032/"
 sources:
+  - name: "BOE: Real Decreto-ley 29/2026, de 6 de octubre"
+    url: "https://www.boe.es/buscar/act.php?id=BOE-A-2026-20823"
   - name: "El Mundo Economía: Es oficial: llega una nueva deducción por alquiler de hasta 1.163 euros para quienes cumplan estos r"
     url: "https://www.elmundo.es/economia/2026/10/20/6ad7172d21efa0e04c8b458b.html"
 ---
 
 Si vives de alquiler y tu base imponible no llega a 33.007,20 euros, el IRPF te dejará deducir el 10% de lo que pagas por la vivienda habitual. El máximo es de **1.163 euros al año** y solo lo alcanzas con una base imponible de hasta 23.007,20 euros. Así lo recoge el Real Decreto-ley 29/2026, publicado en el BOE el 7 de octubre, según informa El Mundo.
+
+**Ojo:** el decreto está en vigor, pero **el Congreso tiene que convalidarlo** en la Diputación Permanente, con la votación prevista para el **12 de noviembre**. Si no se convalida, la deducción decae. Lo seguimos en [vivienda y elecciones del 29N](/vivienda/vivienda-elecciones-29n-balance-y-propuestas/).
 
 ## ¿Cuánto te puedes deducir?
 
