@@ -796,7 +796,15 @@
   "https://www.expansion.com/economia/2026/10/21/garamendi-blinda-nucleo-duro-ceoe-encarar-nuevo-ciclo-politico.html",
   "https://www.lavanguardia.com/politica/20261021/11664653/ley-fijar-salario-minimo-catalan-referencia-pasa-primer-examen-parlamentario.html",
   "https://www.lavanguardia.com/economia/20261020/11663601/gobierno-reparte-180-millones-subvenciones-comunidades-apliquen-ley-vivienda.html",
-  "https://www.abc.es/economia/57000-euros-puertollano-millon-euros-calvia-precio-20261021133028-nt.html"
+  "https://www.abc.es/economia/57000-euros-puertollano-millon-euros-calvia-precio-20261021133028-nt.html",
+  "https://www.abc.es/economia/ruptura-total-patronal-pymes-avalada-gobierno-grueso-20261021150851-nt.html",
+  "https://www.abc.es/economia/cnmc-expedienta-exolum-abuso-competencia-provocar-subidas-20261021095745-nt.html",
+  "https://www.abc.es/economia/guia-financiera/ferratum-bankinter-unicaja-guerra-ahorro-20261020155352-nt.html",
+  "https://www.abc.es/economia/guia-financiera/cuenta-remunerada-o-deposito-a-plazo-segun-tu-ahorro-20261019052147-nt.html",
+  "https://www.abc.es/economia/garamendi-conforma-equipo-sanchez-llibre-recupera-relaciones-20261021104601-nt.html",
+  "https://www.abc.es/economia/espanoles-ahorran-2140-euros-177-horas-ano-20261021123259-nt.html",
+  "https://www.abc.es/economia/inteligencia-artificial-clave-exito-desarrollo-empresarial-20261021114943-nt.html",
+  "https://www.abc.es/economia/cuentas-corrientes/tarjeta-monedero-2026-solicitar-220-euros-mes-20261020010950-nt.html"
  ],
  "titles": [
   "los nueve cambios para la jubilacio n en 2027 segu n el abogado laboralista ignacio solsona",
@@ -945,7 +953,15 @@
   "garamendi blinda el nu cleo duro de ceoe para encarar el nuevo ciclo poli tico",
   "la ley para fijar un salario mi nimo catala n de referencia pasa el primer examen parlamentario",
   "el gobierno reparte 180 millones en subvenciones a las comunidades que apliquen la ley de vivienda",
-  "de los 57 000 euros de puertollano al casi millo n en calvia el precio medio de la vivienda en espan a"
+  "de los 57 000 euros de puertollano al casi millo n en calvia el precio medio de la vivienda en espan a",
+  "ruptura total en la patronal de pymes avalada por el gobierno el grueso de las asociaciones abandonan la entidad",
+  "la cnmc expedienta a exolum por abuso de competencia y posibles subidas de precios en plena crisis de combustibles",
+  "ferratum ofrece un 3 4 bankinter garantiza el 3 y unicaja sube al 2 55 asi esta la guerra del ahorro",
+  "cuenta remunerada o depo sito a plazo las opciones de octubre para cada tipo de ahorro",
+  "garamendi conforma su equipo sa nchez llibre recupera relaciones con las cortes y lorenzo amor asume seguridad social",
+  "los espan oles ahorran 2 140 euros y 177 horas al an o con el uso de canales digitales para tra mites diarios",
+  "inteligencia artificial como clave de e xito en el desarrollo empresarial",
+  "tarjeta monedero 2026 co mo solicitar hasta 220 euros al mes para alimentos"
  ],
  "feeds_iniciados": [
   "https://ine.es/dyngs/Prensa/es/rssNovedades.xml",
@@ -1222,6 +1238,54 @@
    "fuente": "ABC Economía",
    "titulo": "De los 57.000 euros de Puertollano al casi millón en Calviá: el precio medio de la vivienda en España",
    "resultado": "borrador: precio-vivienda-municipios-calvia-puertollano-ine.md"
+  },
+  {
+   "fecha": "2026-10-21 22:13",
+   "fuente": "ABC Economía",
+   "titulo": "Ruptura total en la patronal de pymes avalada por el Gobierno: el grueso de las asociaciones abandonan la entidad",
+   "resultado": "descartada: sin valor propio: es un conflicto interno de una patronal de pymes (Conpymes y Pimec) sin ninguna medida concreta que afecte al bolsillo de una familia o un trabajador. Entra en política y organizaciones empresariales, no en economía de casa."
+  },
+  {
+   "fecha": "2026-10-21 22:13",
+   "fuente": "ABC Economía",
+   "titulo": "La CNMC expedienta a Exolum por abuso de competencia y posibles subidas de precios en plena crisis de combustibles",
+   "resultado": "descartada: sin valor propio: es un expediente sancionador de la CNMC a una empresa (Exolum) por posible abuso de posición dominante. El propio regulador dice que no prejuzga el resultado y que hay hasta 24 meses para resolver. No hay medida, cifra ni trámite que afecte al bolsillo del lector, y no "
+  },
+  {
+   "fecha": "2026-10-21 22:13",
+   "fuente": "ABC Economía",
+   "titulo": "Ferratum ofrece un 3,4%, Bankinter garantiza el 3% y Unicaja sube al 2,55%: así está la guerra del ahorro",
+   "resultado": "descartada: Contenido patrocinado por Bankinter sobre cuentas remuneradas. Es ahorro bancario, tema que cubre Dinero en Claro (dineroenclaro.com), y no hay medida oficial ni dato que afecte directamente a la economía de casa."
+  },
+  {
+   "fecha": "2026-10-21 22:13",
+   "fuente": "ABC Economía",
+   "titulo": "Cuenta remunerada o depósito a plazo: las opciones de octubre para cada tipo de ahorro",
+   "resultado": "descartada: ahorro e inversión: comparativa de cuentas remuneradas y depósitos a plazo (contenido comercial de Kelisto), que cubre nuestra web hermana Dinero en Claro. No hay cambio de norma, de tributación ni dato oficial que afecte directamente a la economía de casa."
+  },
+  {
+   "fecha": "2026-10-21 22:13",
+   "fuente": "ABC Economía",
+   "titulo": "Garamendi conforma su equipo: Sánchez Llibre recupera relaciones con las Cortes y Lorenzo Amor asume Seguridad Social",
+   "resultado": "descartada: sin valor propio: es un reparto de cargos internos de la patronal CEOE (comisiones y vicepresidencias) sin ninguna medida concreta, cifra, plazo ni trámite que afecte al bolsillo del lector"
+  },
+  {
+   "fecha": "2026-10-21 22:13",
+   "fuente": "ABC Economía",
+   "titulo": "Los españoles ahorran 2.140 euros y 177 horas al año con el uso de canales digitales para trámites diarios",
+   "resultado": "descartada: sin valor propio: es un barómetro de una aseguradora (Línea Directa) sobre digitalización de trámites, sin medida, norma, plazo ni dato oficial que afecte al bolsillo. Las cifras de ahorro (2.140 € y 177 horas) son percepciones de una encuesta, no ahorro real, y no hay ningún trámite que"
+  },
+  {
+   "fecha": "2026-10-21 22:13",
+   "fuente": "ABC Economía",
+   "titulo": "Inteligencia Artificial como clave de éxito en el desarrollo empresarial",
+   "resultado": "descartada: sin valor propio: crónica de un foro empresarial sobre IA en pymes (BBVA, Red.es, IndesIA). No hay medida, norma, ayuda, cifra oficial ni trámite que afecte al bolsillo de una familia o un trabajador. Lo más cercano, la oferta de licencias de ChatGPT Business de BBVA, es una acción comer"
+  },
+  {
+   "fecha": "2026-10-21 22:14",
+   "fuente": "ABC Economía",
+   "titulo": "Tarjeta Monedero 2026: cómo solicitar hasta 220 euros al mes para alimentos",
+   "resultado": "borrador: tarjeta-monedero-100-220-euros-mes-familias-hijos.md"
   }
  ],
  "escritos": [
@@ -1333,6 +1397,11 @@
   {
    "title": "Comprar casa: de 57.698 € en Puertollano a 981.485 € en Calviá",
    "url": "/vivienda/precio-vivienda-municipios-calvia-puertollano-ine/",
+   "guia": false
+  },
+  {
+   "title": "Tarjeta Monedero: de 100 a 220 € al mes para familias con hijos",
+   "url": "/paro/tarjeta-monedero-100-220-euros-mes-familias-hijos/",
    "guia": false
   }
  ]
