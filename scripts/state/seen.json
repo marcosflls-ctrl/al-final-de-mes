@@ -791,7 +791,12 @@
   "https://www.europapress.es/economia/noticia-netflix-baja-66-ganar-438-mas-tercer-trimestre-ajustar-previsiones-20261021171752.html",
   "https://www.lavanguardia.com/economia/20261021/11664566/sos-arroceros-delta-ebro-desplome-precios-niveles-25-anos.html",
   "https://www.lavanguardia.com/local/paisvasco/20261021/11664542/gobierno-vasco-compra-510-viviendas-protegidas-san-sebastian-mantenerlas-alquiler-protegido.html",
-  "https://www.lavanguardia.com/economia/20261021/11664360/fedea-advierte-creditos-publicos-entrada-primera-vivienda-encarecer-mas-precios.html"
+  "https://www.lavanguardia.com/economia/20261021/11664360/fedea-advierte-creditos-publicos-entrada-primera-vivienda-encarecer-mas-precios.html",
+  "https://www.lavanguardia.com/politica/20261020/11663602/parlament-debate-miercoles-ley-fijar-salario-minimo-catalan-referencia.html",
+  "https://www.expansion.com/economia/2026/10/21/garamendi-blinda-nucleo-duro-ceoe-encarar-nuevo-ciclo-politico.html",
+  "https://www.lavanguardia.com/politica/20261021/11664653/ley-fijar-salario-minimo-catalan-referencia-pasa-primer-examen-parlamentario.html",
+  "https://www.lavanguardia.com/economia/20261020/11663601/gobierno-reparte-180-millones-subvenciones-comunidades-apliquen-ley-vivienda.html",
+  "https://www.abc.es/economia/57000-euros-puertollano-millon-euros-calvia-precio-20261021133028-nt.html"
  ],
  "titles": [
   "los nueve cambios para la jubilacio n en 2027 segu n el abogado laboralista ignacio solsona",
@@ -936,7 +941,11 @@
   "netflix baja hasta un 6 6 tras ganar un 43 8 ma s en el tercer trimestre y ajustar previsiones",
   "sos de los arroceros del delta del ebro por el desplome de los precios a niveles de hace 25 an os",
   "el gobierno vasco compra 510 viviendas protegidas en san sebastia n para mantenerlas como alquiler pu blico",
-  "fedea advierte de que los cre ditos pu blicos para la entrada de la primera vivienda pueden encarecer ma s los precios"
+  "fedea advierte de que los cre ditos pu blicos para la entrada de la primera vivienda pueden encarecer ma s los precios",
+  "garamendi blinda el nu cleo duro de ceoe para encarar el nuevo ciclo poli tico",
+  "la ley para fijar un salario mi nimo catala n de referencia pasa el primer examen parlamentario",
+  "el gobierno reparte 180 millones en subvenciones a las comunidades que apliquen la ley de vivienda",
+  "de los 57 000 euros de puertollano al casi millo n en calvia el precio medio de la vivienda en espan a"
  ],
  "feeds_iniciados": [
   "https://ine.es/dyngs/Prensa/es/rssNovedades.xml",
@@ -1189,6 +1198,30 @@
    "fuente": "La Vanguardia Economía",
    "titulo": "Fedea advierte de que los créditos públicos para la entrada de la primera vivienda pueden encarecer más los precios",
    "resultado": "borrador: fedea-creditos-0-entrada-primera-vivienda-precios.md"
+  },
+  {
+   "fecha": "2026-10-21 21:39",
+   "fuente": "Expansión Economía",
+   "titulo": "Garamendi blinda el núcleo duro de CEOE para encarar el nuevo ciclo político",
+   "resultado": "descartada: sin valor propio: reparto de cargos y comisiones internas de la patronal CEOE (vicepresidencias y presidencias de comisiones), sin ninguna medida concreta que afecte al bolsillo del lector. Los datos útiles que menciona (huelga del 11 de noviembre y elecciones del 29N) ya están cubiertos"
+  },
+  {
+   "fecha": "2026-10-21 21:39",
+   "fuente": "La Vanguardia Economía",
+   "titulo": "La ley para fijar un salario mínimo catalán de referencia pasa el primer examen parlamentario",
+   "resultado": "borrador: salario-minimo-catalan-1400-euros-14-pagas-ley.md"
+  },
+  {
+   "fecha": "2026-10-21 21:40",
+   "fuente": "La Vanguardia Economía",
+   "titulo": "El Gobierno reparte 180 millones en subvenciones a las comunidades que apliquen la ley de Vivienda",
+   "resultado": "descartada: repetición: el reparto de 180 millones a las zonas tensionadas y los 45 millones para alojamientos universitarios ya están en «225 millones para vivienda asequible en zonas tensionadas» (180 + 45 = 225). La ampliación de la viudedad y el CUME ya la cubren dos artículos publicados, y las "
+  },
+  {
+   "fecha": "2026-10-21 21:40",
+   "fuente": "ABC Economía",
+   "titulo": "De los 57.000 euros de Puertollano al casi millón en Calviá: el precio medio de la vivienda en España",
+   "resultado": "borrador: precio-vivienda-municipios-calvia-puertollano-ine.md"
   }
  ],
  "escritos": [
@@ -1290,6 +1323,16 @@
   {
    "title": "Fedea: los créditos al 0% para la entrada pueden subir precios",
    "url": "/vivienda/fedea-creditos-0-entrada-primera-vivienda-precios/",
+   "guia": false
+  },
+  {
+   "title": "Salario mínimo catalán: 1.400 € en 14 pagas, aún en trámite",
+   "url": "/paro/salario-minimo-catalan-1400-euros-14-pagas-ley/",
+   "guia": false
+  },
+  {
+   "title": "Comprar casa: de 57.698 € en Puertollano a 981.485 € en Calviá",
+   "url": "/vivienda/precio-vivienda-municipios-calvia-puertollano-ine/",
    "guia": false
   }
  ]
