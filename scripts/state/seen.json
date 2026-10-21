@@ -804,7 +804,10 @@
   "https://www.abc.es/economia/garamendi-conforma-equipo-sanchez-llibre-recupera-relaciones-20261021104601-nt.html",
   "https://www.abc.es/economia/espanoles-ahorran-2140-euros-177-horas-ano-20261021123259-nt.html",
   "https://www.abc.es/economia/inteligencia-artificial-clave-exito-desarrollo-empresarial-20261021114943-nt.html",
-  "https://www.abc.es/economia/cuentas-corrientes/tarjeta-monedero-2026-solicitar-220-euros-mes-20261020010950-nt.html"
+  "https://www.abc.es/economia/cuentas-corrientes/tarjeta-monedero-2026-solicitar-220-euros-mes-20261020010950-nt.html",
+  "https://www.elmundo.es/economia/2026/10/20/6ad625c2e4d4d8302a8b458e.html",
+  "https://www.expansion.com/economia/2026/10/22/pequenos-caseros-futuros-inquilinos-castigados-decretos-vivienda.html",
+  "https://www.abc.es/economia/cuentas-corrientes/obligacion-propietario-asuma-seguro-impago-presiona-alza-20261021012102-nt.html"
  ],
  "titles": [
   "los nueve cambios para la jubilacio n en 2027 segu n el abogado laboralista ignacio solsona",
@@ -961,7 +964,10 @@
   "garamendi conforma su equipo sa nchez llibre recupera relaciones con las cortes y lorenzo amor asume seguridad social",
   "los espan oles ahorran 2 140 euros y 177 horas al an o con el uso de canales digitales para tra mites diarios",
   "inteligencia artificial como clave de e xito en el desarrollo empresarial",
-  "tarjeta monedero 2026 co mo solicitar hasta 220 euros al mes para alimentos"
+  "tarjeta monedero 2026 co mo solicitar hasta 220 euros al mes para alimentos",
+  "la u nica luz de un edificio fantasma los chinos que viven entre las ruinas de la crisis inmobiliaria",
+  "los pequen os caseros y los futuros inquilinos los ma s castigados por los decretos de vivienda",
+  "la obligacio n de que el propietario asuma el seguro de impago presiona al alza los nuevos alquileres"
  ],
  "feeds_iniciados": [
   "https://ine.es/dyngs/Prensa/es/rssNovedades.xml",
@@ -1286,6 +1292,24 @@
    "fuente": "ABC Economía",
    "titulo": "Tarjeta Monedero 2026: cómo solicitar hasta 220 euros al mes para alimentos",
    "resultado": "borrador: tarjeta-monedero-100-220-euros-mes-familias-hijos.md"
+  },
+  {
+   "fecha": "2026-10-22 00:47",
+   "fuente": "El Mundo Economía",
+   "titulo": "La única luz de un edificio fantasma: los chinos que viven entre las ruinas de la crisis inmobiliaria",
+   "resultado": "descartada: sin valor propio: reportaje sobre la crisis inmobiliaria en China (edificios sin terminar, caso Evergrande). Es otro país y no afecta al bolsillo de una familia en España, ni permite ejemplo, trámite ni enlace a nuestras guías."
+  },
+  {
+   "fecha": "2026-10-22 00:47",
+   "fuente": "Expansión Economía",
+   "titulo": "Los pequeños caseros y los futuros inquilinos, los más castigados por los decretos de vivienda",
+   "resultado": "borrador: fedea-decretos-vivienda-alquiler-caseros-indemnizacion.md"
+  },
+  {
+   "fecha": "2026-10-22 00:48",
+   "fuente": "ABC Economía",
+   "titulo": "La obligación de que el propietario asuma el seguro de impago presiona al alza los nuevos alquileres",
+   "resultado": "borrador: seguro-impago-alquiler-propietario-decreto-pendiente.md"
   }
  ],
  "escritos": [
@@ -1402,6 +1426,16 @@
   {
    "title": "Tarjeta Monedero: de 100 a 220 € al mes para familias con hijos",
    "url": "/paro/tarjeta-monedero-100-220-euros-mes-familias-hijos/",
+   "guia": false
+  },
+  {
+   "title": "Decretos de alquiler: Fedea ve rentas más altas y menos pisos",
+   "url": "/vivienda/fedea-decretos-vivienda-alquiler-caseros-indemnizacion/",
+   "guia": false
+  },
+  {
+   "title": "Seguro de impago: lo pagaría el casero, no el inquilino",
+   "url": "/vivienda/seguro-impago-alquiler-propietario-decreto-pendiente/",
    "guia": false
   }
  ]
