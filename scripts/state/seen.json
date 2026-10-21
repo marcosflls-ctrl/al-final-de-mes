@@ -770,7 +770,12 @@
   "https://www.elmundo.es/economia/empresas/2026/10/20/6ad73803e4d4d86e188b4575.html",
   "https://www.elmundo.es/economia/2026/10/20/6ad7172d21efa0e04c8b458b.html",
   "https://www.elmundo.es/economia/2026/10/20/6ad7938b21efa09b7d8b45a0.html",
-  "https://www.expansion.com/economia/2026/10/20/gobierno-aprobara-ano-subida-sueldo-funcionarios-5.html"
+  "https://www.expansion.com/economia/2026/10/20/gobierno-aprobara-ano-subida-sueldo-funcionarios-5.html",
+  "https://cincodias.elpais.com/opinion/2026-10-21/la-viabilidad-de-las-pensiones-en-tiempo-electoral-asi-esta-el-tema.html",
+  "https://elpais.com/economia/2026-10-21/la-brecha-entre-salarios-y-precios-se-ensancha-por-el-pico-de-la-inflacion-y-la-paralisis-en-los-convenios.html",
+  "https://www.elconfidencial.com/economia/2026-10-21/precio-luz-horas-miercoles-21-octubre-mas-barato-1qrt_4449488/",
+  "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-21872",
+  "https://www.ine.es/dyngs/Prensa/UA2026.htm"
  ],
  "titles": [
   "los nueve cambios para la jubilacio n en 2027 segu n el abogado laboralista ignacio solsona",
@@ -900,7 +905,9 @@
   "waymo la empresa de coches auto nomos de google recibe la autorizacio n para circular en madrid y lanza sus primeras pruebas",
   "es oficial llega una nueva deduccio n por alquiler de hasta 1 163 euros para quienes cumplan estos requisitos",
   "sa nchez carga a la factura del pro ximo gobierno subidas a pensionistas y funcionarios que costara n ma s de 17 600 millones",
-  "el gobierno aprobara antes de fin de an o la subida de sueldo a los funcionarios del 5"
+  "el gobierno aprobara antes de fin de an o la subida de sueldo a los funcionarios del 5",
+  "real decreto ley 31 2026 de 20 de octubre para la mejora de la accio n protectora de la seguridad social y de otras normas sociales",
+  "21 nbsp octubre nbsp 26 indicadores urbanos"
  ],
  "feeds_iniciados": [
   "https://ine.es/dyngs/Prensa/es/rssNovedades.xml",
@@ -1063,6 +1070,18 @@
    "fuente": "Expansión Economía",
    "titulo": "El Gobierno aprobará antes de fin de año la subida de sueldo a los funcionarios del 5%",
    "resultado": "borrador: funcionarios-subida-retroactiva-2026-4-5-2027.md"
+  },
+  {
+   "fecha": "2026-10-21 12:15",
+   "fuente": "BOE",
+   "titulo": "Real Decreto-ley 31/2026, de 20 de octubre, para la mejora de la acción protectora de la Seguridad Social y de otras normas sociales.",
+   "resultado": "borrador: baja-menopausia-sin-cotizacion-minima-decreto-ley.md"
+  },
+  {
+   "fecha": "2026-10-21 12:16",
+   "fuente": "INE (novedades)",
+   "titulo": "21&nbsp;Octubre&nbsp;26. Indicadores Urbanos",
+   "resultado": "borrador: ine-alquiler-precio-vivienda-municipios-2025.md"
   }
  ],
  "escritos": [
@@ -1124,6 +1143,16 @@
   {
    "title": "Funcionarios: 0,5% retroactivo de 2026 y 4,5% en 2027",
    "url": "/paro/funcionarios-subida-retroactiva-2026-4-5-2027/",
+   "guia": false
+  },
+  {
+   "title": "Baja por menopausia sin cotización mínima, según el BOE",
+   "url": "/pensiones/baja-menopausia-sin-cotizacion-minima-decreto-ley/",
+   "guia": false
+  },
+  {
+   "title": "Alquiler medio: 1.499 € en Pozuelo y 330 € en Lalín en 2024",
+   "url": "/vivienda/ine-alquiler-precio-vivienda-municipios-2025/",
    "guia": false
   }
  ]
