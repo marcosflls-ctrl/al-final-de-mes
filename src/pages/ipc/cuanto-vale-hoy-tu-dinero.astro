@@ -1,0 +1,139 @@
+---
+// «¿Cuánto vale hoy tu dinero de…?»: actualiza una cantidad con el IPC general del INE desde enero de 2002.
+// La serie larga («historico» en src/data/ipc.json) la baja el robot del IPC cada mes.
+import Base from '../../layouts/Base.astro';
+import Siguenos from '../../components/Siguenos.astro';
+import Compartir from '../../components/Compartir.astro';
+import { SITE } from '../../config';
+import { datosIPC, nombreMes } from '../../lib/ipc';
+
+const d = datosIPC();
+const historico = ((d as any)?.historico ?? {}) as Record<string, number>;
+const meses = Object.keys(historico).sort();
+const primero = meses[0] ?? '2002-01';
+const ultimo = meses.at(-1) ?? '';
+const anios = [...new Set(meses.map((m) => m.slice(0, 4)))].reverse();
+const subida2002 = ultimo ? Math.round((historico[ultimo] / historico[primero] - 1) * 100) : null;
+// ejemplos para el texto
+const ej = (anio: string) => {
+  const m = `${anio}-01`;
+  return historico[m] && ultimo ? Math.round(100 * historico[ultimo] / historico[m]) : null;
+};
+
+const titulo = '¿Cuánto vale hoy tu dinero? Calculadora de inflación';
+const descripcion = `Mira a cuánto equivale hoy una cantidad de cualquier año desde 2002, con el IPC del INE. Desde 2002 los precios han subido un ${subida2002 ?? '—'} %.`;
+const url = `${SITE.url}/ipc/cuanto-vale-hoy-tu-dinero/`;
+const jsonLd = [
+  { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Inicio', item: SITE.url + '/' },
+    { '@type': 'ListItem', position: 2, name: 'IPC', item: `${SITE.url}/ipc/` },
+    { '@type': 'ListItem', position: 3, name: '¿Cuánto vale hoy tu dinero?', item: url } ] },
+  { '@context': 'https://schema.org', '@type': 'WebApplication', name: titulo, url, applicationCategory: 'FinanceApplication', operatingSystem: 'Any', inLanguage: 'es-ES', offers: { '@type': 'Offer', price: '0', priceCurrency: 'EUR' } },
+];
+const MESES = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'];
+---
+<Base title={titulo} description={descripcion} jsonLd={jsonLd}>
+  <nav class="breadcrumbs"><a href="/">Inicio</a> › <a href="/ipc/">IPC</a></nav>
+  <article class="pagina">
+    <h1>¿Cuánto vale hoy tu dinero?</h1>
+    <p class="lead">¿Cobrabas 1.000 € en 2008? ¿Tu piso costaba 600 € de alquiler en 2015? Pon una cantidad y una fecha y te decimos a cuánto equivale hoy, con la subida de precios que mide el INE.</p>
+
+    <form id="calc-valor" class="formulario" novalidate>
+      <label class="campo"><span>Cantidad</span>
+        <span class="u"><input name="cantidad" type="number" inputmode="decimal" min="0" step="10" value="1000" /><i>€</i></span>
+      </label>
+      <label class="campo"><span>Año</span>
+        <select name="anio">{anios.map((a) => <option value={a} selected={a === '2008'}>{a}</option>)}</select>
+      </label>
+      <label class="campo"><span>Mes</span>
+        <select name="mes">{MESES.map((m, i) => <option value={String(i + 1).padStart(2, '0')}>{m}</option>)}</select>
+      </label>
+    </form>
+
+    <section class="res" aria-live="polite">
+      <p class="veredicto" id="veredicto">—</p>
+      <div class="dos">
+        <p><span class="muted">Han subido los precios</span><strong id="r-sube">—</strong></p>
+        <p><span class="muted">Con esa cantidad hoy compras lo que entonces con</span><strong id="r-poder">—</strong></p>
+      </div>
+      <p class="small muted" id="r-detalle"></p>
+    </section>
+
+    <Compartir title={titulo} url={url} />
+
+    <section class="prose">
+      <h2>Lo que valen hoy 100 € de otros años</h2>
+      <ul>
+        {['2002', '2008', '2015', '2020', '2022'].map((a) => ej(a) && <li><strong>100 € de enero de {a}</strong> equivalen hoy a unos <strong>{ej(a)} €</strong>.</li>)}
+      </ul>
+      <p>Las cifras son de {ultimo ? nombreMes(ultimo) : '—'}, el último dato del IPC publicado. La página se actualiza sola cada mes.</p>
+
+      <h2>Para qué te sirve</h2>
+      <ul>
+        <li><strong>Tu sueldo:</strong> si cobras lo mismo que hace unos años, compáralo con lo que valdría hoy. La diferencia es lo que has perdido de poder de compra. Para ver cuánto cobras limpio, usa la <a href="/hacienda/calculadora-sueldo-neto/">calculadora del sueldo neto</a>.</li>
+        <li><strong>Tus ahorros:</strong> el dinero parado en la cuenta pierde valor cada año. Si quieres que al menos no pierda, en <a href="https://dineroenclaro.com/" rel="noopener">Dinero en Claro</a> comparamos cuentas remuneradas, depósitos y Letras del Tesoro.</li>
+        <li><strong>El alquiler:</strong> si te quieren subir la renta, mira <a href="/vivienda/actualizar-alquiler-ipc/">cuánto te pueden subir como máximo</a>.</li>
+        <li><strong>La compra:</strong> mira qué productos han subido más en el <a href="/ipc/">IPC de este mes</a>.</li>
+      </ul>
+
+      <h2>Cómo lo calculamos</h2>
+      <p>Usamos el <strong>índice general del IPC</strong> que publica el INE cada mes, desde enero de {primero.slice(0, 4)}. Dividimos el índice de hoy entre el del mes que eliges y lo multiplicamos por tu cantidad. Es una media de todo lo que compran los hogares: tu inflación personal puede ser mayor o menor según en qué gastes.</p>
+      <p>¿Y las pesetas? La serie empieza en 2002, con el euro. Para cantidades en pesetas, divide entre 166,386 para pasarlas a euros y elige enero de 2002: el resultado se queda corto, porque no cuenta la subida de precios anterior.</p>
+      <p class="muted small">Fuente: <a href="https://www.ine.es/jaxiT3/Tabla.htm?t=76125" rel="noopener">INE, índices nacionales del IPC general</a>.</p>
+    </section>
+    <Siguenos />
+  </article>
+</Base>
+
+<script type="application/json" id="datos-valor" set:html={JSON.stringify({ h: historico, ultimo })} />
+<script>
+  const D = JSON.parse(document.getElementById('datos-valor')!.textContent!) as { h: Record<string, number>; ultimo: string };
+  const MESES = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'];
+  const nombre = (m: string) => `${MESES[+m.slice(5, 7) - 1]} de ${m.slice(0, 4)}`;
+  const form = document.getElementById('calc-valor') as HTMLFormElement;
+  const $ = (id: string) => document.getElementById(id)!;
+  const eur = (n: number) => n.toLocaleString('es-ES', { minimumFractionDigits: 2, maximumFractionDigits: 2, useGrouping: 'always' } as Intl.NumberFormatOptions) + ' €';
+
+  function calcular() {
+    const cantidad = Math.max(0, +(form.cantidad as HTMLInputElement).value || 0);
+    let m = `${(form.anio as HTMLSelectElement).value}-${(form.mes as HTMLSelectElement).value}`;
+    if (!D.h[m]) m = Object.keys(D.h).filter((k) => k.startsWith(m.slice(0, 4))).sort().at(-1) ?? D.ultimo;
+    const factor = D.h[D.ultimo] / D.h[m];
+    const hoy = cantidad * factor;
+    $('veredicto').innerHTML = `${eur(cantidad)} de ${nombre(m)} equivalen hoy a <strong>${eur(hoy)}</strong>.`;
+    $('r-sube').textContent = `${((factor - 1) * 100).toLocaleString('es-ES', { maximumFractionDigits: 1 })} %`;
+    $('r-poder').textContent = eur(cantidad / factor);
+    $('r-detalle').textContent = `Comparamos con ${nombre(D.ultimo)}, el último dato del INE. Si hoy cobras o tienes ${eur(cantidad)}, puedes comprar lo mismo que con ${eur(cantidad / factor)} en ${nombre(m)}.`;
+  }
+  form.addEventListener('input', calcular);
+  form.addEventListener('change', calcular);
+  calcular();
+</script>
+
+<style>
+  .pagina { max-width: 860px; }
+  h1 { font-size: clamp(1.9rem, 4.6vw, 2.6rem); line-height: 1.15; margin: 4px 0 12px; }
+  .lead { font-size: 1.125rem; line-height: 1.55; margin: 0 0 24px; max-width: 720px; }
+  .formulario { display: grid; grid-template-columns: 2fr 1fr 1.4fr; gap: 16px 20px; margin-bottom: 20px; }
+  .campo { display: flex; flex-direction: column; gap: 6px; }
+  .campo > span:first-child { font-weight: 600; font-size: .875rem; }
+  .u { position: relative; display: block; }
+  .u i { position: absolute; right: 11px; top: 50%; transform: translateY(-50%); font-style: normal; color: var(--muted); font-size: .875rem; }
+  .u input, select { font: 400 1rem var(--sans); padding: 9px 11px; border: 1px solid #b9c0c6; border-radius: 4px; width: 100%; color: var(--ink); background: var(--bg); }
+  .u input { padding-right: 40px; font-variant-numeric: tabular-nums; }
+  .res { background: var(--surface); border-radius: 4px; padding: 22px 24px; border-top: 2px solid var(--ink); }
+  .veredicto { font-family: var(--serif); font-size: 1.5rem; line-height: 1.3; margin: 0 0 14px; }
+  .veredicto :global(strong) { color: var(--brand-dark); }
+  .dos { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 8px; }
+  .dos p { margin: 0; display: flex; flex-direction: column; font-size: .875rem; }
+  .dos strong { font-size: 1.375rem; font-variant-numeric: tabular-nums; }
+  .small { font-size: .875rem; margin: 6px 0 0; }
+  .prose { margin-top: 32px; }
+  @media (max-width: 600px) {
+    .formulario { grid-template-columns: 1fr 1fr; }
+    .formulario .campo:first-child { grid-column: 1 / -1; }
+    .res { padding: 18px 16px; }
+    .dos { grid-template-columns: 1fr; }
+    .veredicto { font-size: 1.25rem; }
+  }
+</style>
