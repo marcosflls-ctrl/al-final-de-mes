@@ -42,6 +42,7 @@ jobs:
           BUNNY_API_KEY: ${{ secrets.BUNNY_API_KEY }}
           BUNNY_PULLZONE_ID: "6819557"
           BUNNY_HOSTNAME: alfinaldemes.com,www.alfinaldemes.com,alfinaldemes.b-cdn.net
+          INDEXNOW_KEY: "2a33f191a6762532bf155ddd8256561f"
         run: python scripts/publicar_bunny.py dist
       - name: Avisar del fallo por Telegram
         if: failure()
