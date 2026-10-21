@@ -7,6 +7,7 @@ export const HERRAMIENTAS = [
   { href: '/vivienda/euribor-hoy/', titulo: 'Revisión de la hipoteca', texto: 'El euríbor de hoy y cuánto sube o baja tu cuota en la próxima revisión.' },
   { href: '/vivienda/comprar-o-alquilar/', titulo: 'Comprar o alquilar', texto: 'Qué te deja más dinero al cabo de los años: comprar con hipoteca o alquilar e invertir la diferencia.' },
   { href: '/luz/cuanto-cuesta-cada-electrodomestico/', titulo: 'Coste de los electrodomésticos', texto: 'Lo que cuesta hoy poner la lavadora, el horno o cargar el coche, y la hora más barata.' },
+  { href: '/luz/calculadora-calefaccion/', titulo: 'Coste de la calefacción', texto: 'Qué sale más barato este invierno: radiadores, bomba de calor, gas, gasóleo, pellets o butano.' },
   { href: '/ipc/', titulo: 'IPC y cesta de la compra', texto: 'Cuánto han subido los precios de cada producto y cuánto más te cuesta hoy lo mismo que hace un año.' },
   { href: '/divisas/cambio-euro-hoy/', titulo: 'Cambio de divisas', texto: 'Cuánto vale hoy un euro en dólares, libras o pesos, con el cambio oficial del BCE y un conversor.' },
   { href: '/hacienda/que-proponen-para-tu-caso-29n/', titulo: 'Elecciones del 29N: tu caso', texto: 'Marca tu situación y mira, partido a partido, lo que proponen en lo que te afecta.' },
