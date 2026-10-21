@@ -34,3 +34,16 @@ export interface Ciudad extends Provincia { provincia: string; provincia_slug: s
 export function datosCiudades(): Ciudad[] {
   try { return JSON.parse(fs.readFileSync('src/data/carburantes-ciudades.json', 'utf8')).ciudades ?? []; } catch { return []; }
 }
+
+/** Media de un municipio hace unos 7 días (la más antigua entre 6 y 9 días atrás), o null si aún no hay datos. */
+export function ciudadHaceUnaSemana(clave: string, k: 'g95' | 'diesel'): number | null {
+  let hist: Record<string, Record<string, (number | null)[]>> = {};
+  try { hist = JSON.parse(fs.readFileSync('src/data/carburantes-ciudades.json', 'utf8')).historico ?? {}; } catch { return null; }
+  const fechas = Object.keys(hist).sort();
+  const hoy = fechas[fechas.length - 1];
+  if (!hoy) return null;
+  const dias = (f: string) => (Date.parse(hoy) - Date.parse(f)) / 86400000;
+  const f = fechas.find((x) => dias(x) >= 6 && dias(x) <= 9);
+  const v = f ? hist[f][clave]?.[k === 'g95' ? 0 : 1] : null;
+  return v ?? null;
+}

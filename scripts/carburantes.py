@@ -35,6 +35,7 @@ BARATAS = 5            # gasolineras más baratas que se guardan por provincia y
 DIAS_HISTORICO = 90
 MIN_GASOLINERAS_CIUDAD = 10   # municipios con al menos estas gasolineras tienen página propia
 BARATAS_CIUDAD = 10
+DIAS_HISTORICO_CIUDAD = 9   # para comparar con hace una semana aunque falle algún día
 # Precios fuera de este rango (€/l) se consideran errores de la fuente y se ignoran
 MIN_OK, MAX_OK = 0.8, 3.5
 
@@ -93,7 +94,14 @@ def desde_excel() -> tuple[list[dict], str]:
     """Lee el Excel del Geoportal y devuelve las gasolineras con los mismos campos que el servicio REST."""
     import io
 
-    r = requests.get(EXCEL, headers={"User-Agent": UA}, timeout=180)
+    # El Geoportal a veces da 404 unos minutos mientras regenera el archivo: se reintenta
+    import time
+    for intento in range(4):
+        r = requests.get(EXCEL, headers={"User-Agent": UA}, timeout=180)
+        if r.status_code == 200 or intento == 3:
+            break
+        print(f"  · Geoportal respondió {r.status_code}, reintento en {60 * (intento + 1)} s")
+        time.sleep(60 * (intento + 1))
     r.raise_for_status()
     contenido = r.content
     if contenido[:4] == b"\xd0\xcf\x11\xe0":                # Excel antiguo (.xls)
@@ -238,9 +246,16 @@ def main() -> int:
                 fila[f"baratas_{k}"] = sorted(lista, key=lambda x: x["p"])[:BARATAS_CIUDAD]
         ciudades.append(fila)
     ciudades.sort(key=lambda c: (c["provincia_slug"], c["slug"]))
+    # Histórico corto de medias por municipio, para mostrar cuánto ha cambiado en una semana
+    try:
+        hist_c = json.loads(OUT_CIUDADES.read_text(encoding="utf-8")).get("historico", {})
+    except (FileNotFoundError, json.JSONDecodeError):
+        hist_c = {}
+    hist_c[hoy] = {f"{c['provincia_slug']}/{c['slug']}": [c.get(k, {}).get("media") for k in COMBUSTIBLES] for c in ciudades}
+    hist_c = dict(sorted(hist_c.items())[-DIAS_HISTORICO_CIUDAD:])
     if ciudades:
-        OUT_CIUDADES.write_text(json.dumps({"fecha": hoy, "actualizado": salida["actualizado"], "ciudades": ciudades},
-                                           ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+        OUT_CIUDADES.write_text(json.dumps({"fecha": hoy, "actualizado": salida["actualizado"], "ciudades": ciudades,
+                                            "historico": hist_c}, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
     print(f"  {len(ciudades)} ciudades con página")
     n = salida["nacional"]
     print(f"✓ Gasolina 95: {n['g95']['media']} €/l · Gasóleo A: {n['diesel']['media']} €/l · {len(salida_prov)} provincias")
