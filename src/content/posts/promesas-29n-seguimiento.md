@@ -7,10 +7,10 @@ guia: true
 orden: 9
 draft: true
 tags: [elecciones-29n, promesas, gobierno, seguimiento]
-image: /img/fotos/promesas-29n-seguimiento.webp
-imageAlt: "Edificio oficial"
-imageCredit: "Felix-Mittermeier / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/bundestag-german-flag-parliament-2463236/"
+image: /img/banco/moncloa-01.webp
+imageAlt: "Palacio de la Moncloa, sede del Gobierno"
+imageCredit: "Yeray Díaz Zbida from Melilla, España / Wikimedia Commons (CC BY 2.0)"
+imageCreditUrl: "https://commons.wikimedia.org/wiki/File:Palacio_de_la_Moncloa,_Madrid,_Espa%C3%B1a_edited.jpg"
 sources:
   - name: "Comparativa de propuestas del 29N (Al Final de Mes)"
     url: "https://alfinaldemes.com/hacienda/que-cambia-en-tu-bolsillo-segun-quien-gobierne-29n/"

@@ -15,10 +15,10 @@ sources:
     url: "https://blog.opositatest.com/cuando-sera-examen-auxiliar-administrativo-estado/"
   - name: "Administración de Justicia (blog): convocatoria de Auxiliar Administrativo del Estado 2026-2027"
     url: "https://www.administraciondejusticia.com/blog/oposiciones-estado/convocatoria-auxiliar-administrativo-del-estado"
-image: /img/fotos/oposiciones-auxiliar-administrativo-estado.webp
-imageAlt: "Edificio oficial"
-imageCredit: "LoboStudioHamburg / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/federal-chancellery-637999/"
+image: /img/banco/congreso-03.webp
+imageAlt: "Fachada del Congreso de los Diputados"
+imageCredit: "Yann Droneaud from Paris (France). / Wikimedia Commons (CC BY-SA 2.0)"
+imageCreditUrl: "https://commons.wikimedia.org/wiki/File:Congreso_de_los_Diputados_(Espa%C3%B1a)_05.jpg"
 ---
 
 <!-- ACTUALIZAR: cuando el BOE publique la convocatoria de la oferta de 2026 (plazas, plazo, tasa y fecha de examen) y cuando salgan los aprobados del examen del 23 de mayo de 2026. -->

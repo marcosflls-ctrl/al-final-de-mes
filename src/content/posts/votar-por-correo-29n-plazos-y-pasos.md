@@ -7,9 +7,9 @@ guia: true
 orden: 7
 tags: [elecciones-29n, voto-por-correo, correos, elecciones]
 image: /img/fotos/votar-por-correo-29n-plazos-y-pasos.webp
-imageAlt: "Hemiciclo de un parlamento"
-imageCredit: "12019 / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/london-england-great-britain-90782/"
+imageAlt: "Calculadora y cuentas domésticas"
+imageCredit: "vimbroisi / Pixabay"
+imageCreditUrl: "https://pixabay.com/photos/school-supplies-stationery-backpack-5541102/"
 sources:
   - name: "La Moncloa: cómo solicitar el voto por correo en las elecciones generales del 29 de noviembre"
     url: "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/interior/paginas/voto-por-correo-elecciones-generales-29n.aspx"

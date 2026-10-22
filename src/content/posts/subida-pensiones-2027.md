@@ -22,8 +22,8 @@ sources:
     url: "https://www.bolsamania.com/noticias/economia/economia--las-pensiones-minimas-y-no-contributivas-se-revalorizaran-entre-un-7-y-casi-un-115-en-2026-segun-ivie--21386530.html"
 image: /img/fotos/subida-pensiones-2027.webp
 imageAlt: "Pareja de jubilados"
-imageCredit: "balouriarajesh / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/old-couple-elderly-people-4235995/"
+imageCredit: "HoangDongPhoto / Pixabay"
+imageCreditUrl: "https://pixabay.com/photos/couple-love-kiss-romantic-6706278/"
 ---
 
 <!-- ACTUALIZAR: 1) finales de octubre (IPC adelantado de octubre): rehacer la media y los escenarios. 2) 27 de noviembre (IPC adelantado de noviembre): poner la subida calculada en el título, la entradilla y las tablas. 3) 15 de diciembre (IPC definitivo) y publicación en el BOE: cifra oficial, pendiente: false y cuantías de las mínimas y no contributivas. -->

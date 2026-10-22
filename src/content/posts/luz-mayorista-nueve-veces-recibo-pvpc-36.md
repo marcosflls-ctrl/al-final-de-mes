@@ -7,8 +7,8 @@ tags: ["precio-de-la-luz", "pvpc", "mercado-electrico", "factura-de-la-luz", "om
 pendiente: false
 image: /img/fotos/luz-mayorista-nueve-veces-recibo-pvpc-36.webp
 imageAlt: "Contador de la luz"
-imageCredit: "geralt / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/electricity-meter-electricity-pay-96863/"
+imageCredit: "distelAPPArath / Pixabay"
+imageCreditUrl: "https://pixabay.com/photos/pinwheels-energy-electricity-6535595/"
 sources:
   - name: "El Mundo Economía: El precio de la luz se multiplica casi por nueve entre febrero y septiembre por el gas y la menor pr"
     url: "https://www.elmundo.es/economia/2026/10/20/6ad64e6221efa0423b8b4589.html"

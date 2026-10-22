@@ -15,10 +15,10 @@ sources:
     url: "https://redopositor.com/blog/es-convocatoria-policia-nacional-2026-plazas-fechas/"
   - name: "Red Opositor: requisitos de las oposiciones a Policía Nacional 2026"
     url: "https://redopositor.com/blog/es-requisitos-oposiciones-policia-nacional-2026/"
-image: /img/fotos/oposiciones-policia-nacional.webp
-imageAlt: "Hemiciclo de un parlamento"
-imageCredit: "itsneal / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/parliament-government-edinburgh-480837/"
+image: /img/banco/congreso-04.webp
+imageAlt: "Fachada del Congreso de los Diputados"
+imageCredit: "Vickybol / Wikimedia Commons (CC BY-SA 3.0)"
+imageCreditUrl: "https://commons.wikimedia.org/wiki/File:Congreso_de_los_Diputados,_enero_de_2015.JPG"
 ---
 
 <!-- ACTUALIZAR: con los resultados del examen del 26 de septiembre de 2026 y cuando se anuncie la convocatoria de 2027. -->

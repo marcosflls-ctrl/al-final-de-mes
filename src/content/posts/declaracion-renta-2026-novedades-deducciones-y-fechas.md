@@ -23,8 +23,8 @@ sources:
     url: "https://guiafiscal.es/irpf/cuando-empieza-la-renta/"
 image: /img/fotos/declaracion-renta-2026-novedades-deducciones-y-fechas.webp
 imageAlt: "Calculadora y cuentas domésticas"
-imageCredit: "stevepb / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/new-year-calculator-calculation-1680905/"
+imageCredit: "Flyfin / Pixabay"
+imageCreditUrl: "https://pixabay.com/photos/finance-accounting-tax-7529921/"
 ---
 
 La declaración de la renta de 2026 recoge lo que has ganado este año y se presenta en la primavera de 2027. Esta guía reúne lo que cambia respecto al año pasado, las deducciones nuevas o prorrogadas y quién tiene que presentarla. La iremos actualizando hasta que empiece la campaña.
