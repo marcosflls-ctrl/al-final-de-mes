@@ -842,7 +842,13 @@
   "https://www.20minutos.es/lainformacion/economia-y-finanzas/ayuda-publica-que-puedes-solicitar-si-tu-expareja-no-paga-pension-alimentos-requisitos-cuantia_7052152_0.html",
   "https://www.20minutos.es/lainformacion/economia-y-finanzas/viudedad-menopausia-violencia-machista-impago-alimentos-que-cambia-con-las-nuevas-medidas-proteccion-social_7052028_0.html",
   "https://www.europapress.es/economia/fiscal-00347/noticia-hacienda-mantendra-modulos-irpf-2027-reduccion-incluira-rebajas-fiscales-campo-20261022172241.html",
-  "https://www.europapress.es/economia/construccion-y-vivienda-00342/noticia-esfuerzo-pagar-alquiler-espana-parte-renta-media-lleva-barrios-20261022165749.html"
+  "https://www.europapress.es/economia/construccion-y-vivienda-00342/noticia-esfuerzo-pagar-alquiler-espana-parte-renta-media-lleva-barrios-20261022165749.html",
+  "https://elpais.com/economia/2026-10-22/las-grandes-empresas-de-espana-tributan-solo-un-89-de-sus-beneficios.html",
+  "https://www.elconfidencial.com/economia/2026-10-22/alfonso-munoz-funcionario-seguridad-social-jubilacion-anticipada-5-errores-costar-cientos-euros-1qrt_4449796/",
+  "https://www.infobae.com/espana/2026/10/22/que-dia-se-cobra-la-pension-de-jubilacion-en-octubre-de-2026-caixabank-santander-bbva-ing/",
+  "https://elpais.com/economia/2026-10-22/ceoe-rectifica-y-no-impugnara-finalmente-la-huelga-general-por-la-vivienda-antes-del-11-de-noviembre.html",
+  "https://elpais.com/economia/2026-10-22/las-grandes-empresas-de-espana-tributan-solo-un-89-de-sus-beneficios.html",
+  "https://cincodias.elpais.com/mercados-financieros/2026-10-22/mutua-pide-medidas-para-aliviar-la-presion-sobre-el-sistema-de-pensiones.html"
  ],
  "titles": [
   "los nueve cambios para la jubilacio n en 2027 segu n el abogado laboralista ignacio solsona",
@@ -1029,7 +1035,9 @@
   "la ayuda pu blica que puedes solicitar si tu expareja no paga la pensio n de alimentos requisitos y cuanti a",
   "viudedad menopausia violencia machista e impago de alimentos que cambia con las nuevas medidas de proteccio n social",
   "hacienda mantendra los mo dulos del irpf para 2027 con la reduccio n del 5 e incluira rebajas fiscales al campo",
-  "mapa esfuerzo para pagar el alquiler en espan a que parte de la renta media se lleva por barrios"
+  "mapa esfuerzo para pagar el alquiler en espan a que parte de la renta media se lleva por barrios",
+  "las grandes empresas de espan a tributan solo un 8 9 de sus beneficios",
+  "mutua pide medidas para aliviar la presio n sobre el sistema de pensiones"
  ],
  "feeds_iniciados": [
   "https://ine.es/dyngs/Prensa/es/rssNovedades.xml",
@@ -1534,6 +1542,30 @@
    "fuente": "Europa Press Economía",
    "titulo": "MAPA | Esfuerzo para pagar el alquiler en España: qué parte de la renta media se lleva por barrios",
    "resultado": "borrador: alquiler-esfuerzo-renta-media-madrid-barcelona-barrios-ine.md"
+  },
+  {
+   "fecha": "2026-10-22 22:10",
+   "fuente": "El País Economía",
+   "titulo": "CEOE rectifica y no impugnará finalmente la huelga general por la vivienda antes del 11 de noviembre",
+   "resultado": "error al redactar: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'You have reached your specified API usage limits. You will regain access on 2026-11-01 at 00:00 UTC.'}, 'requ"
+  },
+  {
+   "fecha": "2026-10-22 22:10",
+   "fuente": "El País Economía",
+   "titulo": "Las grandes empresas de España tributan solo un 8,9% de sus beneficios",
+   "resultado": "texto insuficiente (muro de pago o página vacía)"
+  },
+  {
+   "fecha": "2026-10-22 22:10",
+   "fuente": "Cinco Días",
+   "titulo": "Mutua pide medidas para aliviar la presión sobre el sistema de pensiones",
+   "resultado": "texto insuficiente (muro de pago o página vacía)"
+  },
+  {
+   "fecha": "2026-10-22 22:10",
+   "fuente": "Europa Press Economía",
+   "titulo": "Elma Saiz acusa a Feijóo de esconder \"privatización y recortes\" tras su propuesta sobre pensiones",
+   "resultado": "error al redactar: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'You have reached your specified API usage limits. You will regain access on 2026-11-01 at 00:00 UTC.'}, 'requ"
   }
  ],
  "escritos": [
