@@ -833,7 +833,14 @@
   "https://www.europapress.es/economia/construccion-y-vivienda-00342/noticia-caseros-varias-viviendas-concentran-18-subida-alquiler-2019-2023-esade-20261022080153.html",
   "https://www.20minutos.es/lainformacion/economia-y-finanzas/las-propinas-bares-cafes-restaurantes-tambien-pagan-impuestos-cuando-hay-que-declararlas-hacienda-cuando-cotizan_7051938_0.html",
   "https://www.europapress.es/economia/construccion-y-vivienda-00342/noticia-preocupacion-vivienda-escala-12-puntos-ano-alcanza-2026-54-espanoles-20261022113544.html",
-  "https://www.elmundo.es/economia/dinero-inversion/2026/10/22/6ad9c3e821efa0e64a8b459b.html"
+  "https://www.elmundo.es/economia/dinero-inversion/2026/10/22/6ad9c3e821efa0e64a8b459b.html",
+  "https://elpais.com/economia/vivienda/2026-10-22/el-pp-propone-segregar-pisos-de-gran-tamano-como-remedio-ante-la-falta-de-vivienda.html",
+  "https://elpais.com/economia/vivienda/2026-10-22/los-multipropietarios-suben-el-alquiler-casi-el-doble-que-los-caseros-con-un-solo-piso.html",
+  "https://www.elmundo.es/economia/2026/10/22/6ad9f37d21efa0e7508b4598.html",
+  "https://www.lavanguardia.com/economia/20261022/11665615/supremo-irpf-aceptar-rechazar-herencia.html",
+  "https://sede.agenciatributaria.gob.es/Sede/todas-noticias/2026/octubre/22/renovacion-certificado-electronico-sede-electronica-tributaria.html",
+  "https://www.20minutos.es/lainformacion/economia-y-finanzas/ayuda-publica-que-puedes-solicitar-si-tu-expareja-no-paga-pension-alimentos-requisitos-cuantia_7052152_0.html",
+  "https://www.20minutos.es/lainformacion/economia-y-finanzas/viudedad-menopausia-violencia-machista-impago-alimentos-que-cambia-con-las-nuevas-medidas-proteccion-social_7052028_0.html"
  ],
  "titles": [
   "los nueve cambios para la jubilacio n en 2027 segu n el abogado laboralista ignacio solsona",
@@ -1015,7 +1022,10 @@
   "los caseros con varias viviendas concentran el 18 de la subida del alquiler entre 2019 y 2023 segu n esade",
   "las propinas en bares cafe s y restaurantes tambie n pagan impuestos cua ndo hay que declararlas a hacienda y cua ndo cotizan",
   "la preocupacio n por la vivienda escala 12 puntos en un an o y alcanza en 2026 al 54 de los espan oles",
-  "garralda mutua madrilen a cada vez esta ma s en duda que la generosidad de las pensiones pu blicas se pueda mantener en el tiempo"
+  "garralda mutua madrilen a cada vez esta ma s en duda que la generosidad de las pensiones pu blicas se pueda mantener en el tiempo",
+  "renovacio n del certificado electro nico de la sede electro nica de la agencia tributaria",
+  "la ayuda pu blica que puedes solicitar si tu expareja no paga la pensio n de alimentos requisitos y cuanti a",
+  "viudedad menopausia violencia machista e impago de alimentos que cambia con las nuevas medidas de proteccio n social"
  ],
  "feeds_iniciados": [
   "https://ine.es/dyngs/Prensa/es/rssNovedades.xml",
@@ -1490,6 +1500,24 @@
    "fuente": "El Mundo Economía",
    "titulo": "Garralda (Mutua Madrileña): \"Cada vez está más en duda que la generosidad de las pensiones públicas se pueda mantener en el tiempo\"",
    "resultado": "borrador: pensiones-2027-funcas-subida-3-6-8400-millones.md"
+  },
+  {
+   "fecha": "2026-10-22 17:22",
+   "fuente": "Agencia Tributaria (novedades)",
+   "titulo": "Renovación del certificado electrónico de la Sede Electrónica de la Agencia Tributaria",
+   "resultado": "descartada: sin valor propio: es un aviso técnico para entidades con aplicaciones propias que se conectan a la Agencia Tributaria (renovación del certificado de la sede el 16 de noviembre de 2026). No afecta a los contribuyentes, que seguirán accediendo igual, y no hay cifra, trámite ni ejemplo que "
+  },
+  {
+   "fecha": "2026-10-22 17:22",
+   "fuente": "20minutos Economía",
+   "titulo": "La ayuda pública que puedes solicitar si tu expareja no paga la pensión de alimentos: requisitos y cuantía",
+   "resultado": "borrador: anticipo-pension-alimentos-300-euros-fondo-garantia.md"
+  },
+  {
+   "fecha": "2026-10-22 17:23",
+   "fuente": "20minutos Economía",
+   "titulo": "Viudedad, menopausia, violencia machista e impago de alimentos: qué cambia con las nuevas medidas de protección social",
+   "resultado": "borrador: cume-mayores-26-orfandad-doble-smi-decreto-ley.md"
   }
  ],
  "escritos": [
@@ -1641,6 +1669,16 @@
   {
    "title": "Pensiones 2027: Funcas calcula una subida del 3,6% (8.400 M)",
    "url": "/pensiones/pensiones-2027-funcas-subida-3-6-8400-millones/",
+   "guia": false
+  },
+  {
+   "title": "Pensión de alimentos impagada: anticipo de 300 € desde noviembre",
+   "url": "/paro/anticipo-pension-alimentos-300-euros-fondo-garantia/",
+   "guia": false
+  },
+  {
+   "title": "CUME para hijos de más de 26 años y orfandad al doble del SMI",
+   "url": "/pensiones/cume-mayores-26-orfandad-doble-smi-decreto-ley/",
    "guia": false
   }
  ]
