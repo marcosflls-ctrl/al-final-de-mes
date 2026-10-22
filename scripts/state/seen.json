@@ -840,7 +840,9 @@
   "https://www.lavanguardia.com/economia/20261022/11665615/supremo-irpf-aceptar-rechazar-herencia.html",
   "https://sede.agenciatributaria.gob.es/Sede/todas-noticias/2026/octubre/22/renovacion-certificado-electronico-sede-electronica-tributaria.html",
   "https://www.20minutos.es/lainformacion/economia-y-finanzas/ayuda-publica-que-puedes-solicitar-si-tu-expareja-no-paga-pension-alimentos-requisitos-cuantia_7052152_0.html",
-  "https://www.20minutos.es/lainformacion/economia-y-finanzas/viudedad-menopausia-violencia-machista-impago-alimentos-que-cambia-con-las-nuevas-medidas-proteccion-social_7052028_0.html"
+  "https://www.20minutos.es/lainformacion/economia-y-finanzas/viudedad-menopausia-violencia-machista-impago-alimentos-que-cambia-con-las-nuevas-medidas-proteccion-social_7052028_0.html",
+  "https://www.europapress.es/economia/fiscal-00347/noticia-hacienda-mantendra-modulos-irpf-2027-reduccion-incluira-rebajas-fiscales-campo-20261022172241.html",
+  "https://www.europapress.es/economia/construccion-y-vivienda-00342/noticia-esfuerzo-pagar-alquiler-espana-parte-renta-media-lleva-barrios-20261022165749.html"
  ],
  "titles": [
   "los nueve cambios para la jubilacio n en 2027 segu n el abogado laboralista ignacio solsona",
@@ -1025,7 +1027,9 @@
   "garralda mutua madrilen a cada vez esta ma s en duda que la generosidad de las pensiones pu blicas se pueda mantener en el tiempo",
   "renovacio n del certificado electro nico de la sede electro nica de la agencia tributaria",
   "la ayuda pu blica que puedes solicitar si tu expareja no paga la pensio n de alimentos requisitos y cuanti a",
-  "viudedad menopausia violencia machista e impago de alimentos que cambia con las nuevas medidas de proteccio n social"
+  "viudedad menopausia violencia machista e impago de alimentos que cambia con las nuevas medidas de proteccio n social",
+  "hacienda mantendra los mo dulos del irpf para 2027 con la reduccio n del 5 e incluira rebajas fiscales al campo",
+  "mapa esfuerzo para pagar el alquiler en espan a que parte de la renta media se lleva por barrios"
  ],
  "feeds_iniciados": [
   "https://ine.es/dyngs/Prensa/es/rssNovedades.xml",
@@ -1518,6 +1522,18 @@
    "fuente": "20minutos Economía",
    "titulo": "Viudedad, menopausia, violencia machista e impago de alimentos: qué cambia con las nuevas medidas de protección social",
    "resultado": "borrador: cume-mayores-26-orfandad-doble-smi-decreto-ley.md"
+  },
+  {
+   "fecha": "2026-10-22 17:41",
+   "fuente": "Europa Press Economía",
+   "titulo": "Hacienda mantendrá los módulos del IRPF para 2027 con la reducción del 5% e incluirá rebajas fiscales al campo",
+   "resultado": "borrador: modulos-irpf-2027-reduccion-5-agricultores-ganaderos.md"
+  },
+  {
+   "fecha": "2026-10-22 17:42",
+   "fuente": "Europa Press Economía",
+   "titulo": "MAPA | Esfuerzo para pagar el alquiler en España: qué parte de la renta media se lleva por barrios",
+   "resultado": "borrador: alquiler-esfuerzo-renta-media-madrid-barcelona-barrios-ine.md"
   }
  ],
  "escritos": [
@@ -1679,6 +1695,16 @@
   {
    "title": "CUME para hijos de más de 26 años y orfandad al doble del SMI",
    "url": "/pensiones/cume-mayores-26-orfandad-doble-smi-decreto-ley/",
+   "guia": false
+  },
+  {
+   "title": "Autónomos en módulos: Hacienda mantiene en 2027 la rebaja del 5%",
+   "url": "/hacienda/modulos-irpf-2027-reduccion-5-agricultores-ganaderos/",
+   "guia": false
+  },
+  {
+   "title": "El alquiler se lleva más del 50% de la renta en Madrid y Barcelona",
+   "url": "/vivienda/alquiler-esfuerzo-renta-media-madrid-barcelona-barrios-ine/",
    "guia": false
   }
  ]
