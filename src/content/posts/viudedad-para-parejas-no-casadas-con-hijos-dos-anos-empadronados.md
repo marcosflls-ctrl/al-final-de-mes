@@ -7,8 +7,8 @@ tags: ["pension-de-viudedad", "seguridad-social", "parejas-de-hecho", "real-decr
 pendiente: true
 image: /img/fotos/viudedad-para-parejas-no-casadas-con-hijos-dos-anos-empadronados.webp
 imageAlt: "Pareja de jubilados"
-imageCredit: "2078645 / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/old-people-age-elderly-adult-1410013/"
+imageCredit: "LollipopPhotographyUK / Pixabay"
+imageCreditUrl: "https://pixabay.com/photos/couple-romantic-together-vintage-5302344/"
 sources:
   - name: "20minutos Economía: El Gobierno aprueba ampliar la pensión de viudedad a parejas no registradas con hijos y mejora las b"
     url: "https://www.20minutos.es/lainformacion/economia-y-finanzas/gobierno-aprueba-ampliar-pension-viudedad-parejas-no-registradas-con-hijos-mejora-las-bajas-para-los-afectados-por-catastrofes_7050975_0.html"

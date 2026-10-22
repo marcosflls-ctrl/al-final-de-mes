@@ -7,8 +7,8 @@ tags: ["seguridad-social", "pension-de-viudedad", "real-decreto-ley", "cume", "v
 pendiente: true
 image: /img/fotos/decreto-seguridad-social-viudedad-baja-violencia-machista.webp
 imageAlt: "Pareja de jubilados"
-imageCredit: "MabelAmber / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/person-man-woman-people-couple-3553814/"
+imageCredit: "Duncan_Dao / Pixabay"
+imageCreditUrl: "https://pixabay.com/photos/beach-couple-sunset-scenery-7087722/"
 sources:
   - name: "El Mundo Economía: El Gobierno rescata reformas de ayudas atascadas desde hace más de dos años a las puertas del 29-N y"
     url: "https://www.elmundo.es/economia/2026/10/20/6ad730a0e85ecece7f8b458c.html"

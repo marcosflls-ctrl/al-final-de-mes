@@ -15,8 +15,8 @@ sources:
     url: "https://sede.agenciatributaria.gob.es/static_files/Sede/Programas_ayuda/Retenciones/2026/Algoritmo%20Retenciones-2026_10sept.pdf"
 image: /img/fotos/paga-extra-navidad-2026-cuando-se-cobra-y-cuanto-queda-neto.webp
 imageAlt: "Billetes de euro"
-imageCredit: "Alexas_Fotos / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/the-last-shirt-dollar-bill-20-euro-1510597/"
+imageCredit: "HOerwin56 / Pixabay"
+imageCreditUrl: "https://pixabay.com/photos/money-suitcase-paper-money-5092062/"
 ---
 
 La paga extra de Navidad es una de las dos pagas extraordinarias que tienen por ley los trabajadores en España. Los pensionistas también la cobran, pero antes: con la pensión de noviembre. Esta guía explica cuándo llega a cada uno y cuánto queda limpio según el sueldo.

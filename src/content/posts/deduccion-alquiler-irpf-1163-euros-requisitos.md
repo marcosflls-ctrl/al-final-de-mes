@@ -6,9 +6,9 @@ category: vivienda
 tags: ["deduccion-alquiler", "irpf", "inquilinos", "real-decreto-ley-29-2026", "declaracion-de-la-renta"]
 pendiente: true
 image: /img/fotos/deduccion-alquiler-irpf-1163-euros-requisitos.webp
-imageAlt: "Llaves de un piso de alquiler sobre una mesa"
-imageCredit: "Tumisu / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/real-estate-agent-sale-home-keys-3337032/"
+imageAlt: "Edificio de viviendas"
+imageCredit: "rotekirsche20 / Pixabay"
+imageCreditUrl: "https://pixabay.com/photos/building-windows-balconies-facade-5630441/"
 sources:
   - name: "BOE: Real Decreto-ley 29/2026, de 6 de octubre"
     url: "https://www.boe.es/buscar/act.php?id=BOE-A-2026-20823"

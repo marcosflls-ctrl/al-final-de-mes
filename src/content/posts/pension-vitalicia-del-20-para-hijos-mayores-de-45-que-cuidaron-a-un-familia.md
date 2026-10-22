@@ -10,8 +10,8 @@ sources:
     url: "https://www.elmundo.es/economia/2026/10/15/6acf9cffe4d4d8403f8b4578.html"
 image: /img/fotos/pension-vitalicia-del-20-para-hijos-mayores-de-45-que-cuidaron-a-un-familia.webp
 imageAlt: "Pareja de jubilados"
-imageCredit: "MabelAmber / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/couple-love-marriage-elderly-3723548/"
+imageCredit: "KVNSBL / Pixabay"
+imageCreditUrl: "https://pixabay.com/photos/happy-valentines-day-beach-swing-7546731/"
 ---
 
 Si has cuidado durante años de tu padre, tu madre u otro familiar y ha fallecido, la Seguridad Social contempla una prestación contributiva para ti. Es vitalicia y su importe es el **20% de la base reguladora**. No es una medida nueva: es una prestación que ya existe y que la Seguridad Social recuerda, según recoge El Mundo.

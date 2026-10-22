@@ -10,8 +10,8 @@ sources:
     url: "https://www.elmundo.es/economia/2026/10/16/6ad0c79dfdddffcb318b45a3.html"
 image: /img/fotos/las-pensiones-cuestan-14-500-millones-al-mes-un-60-mas-que-en-2018.webp
 imageAlt: "Pareja de jubilados"
-imageCredit: "pasja1000 / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/senior-elderly-people-couple-3336451/"
+imageCredit: "DoniShala / Pixabay"
+imageCreditUrl: "https://pixabay.com/photos/valentines-day-background-couple-6548045/"
 ---
 
 La nómina mensual de pensiones ha pasado de poco más de 9.000 millones de euros en junio de 2018 a rozar los 14.500 millones en septiembre de 2026. Es un 60% más, según los datos que recoge El Mundo. Y el gasto sigue creciendo.

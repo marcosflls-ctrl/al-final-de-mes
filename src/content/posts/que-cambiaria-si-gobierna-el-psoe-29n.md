@@ -6,10 +6,10 @@ category: hacienda
 guia: true
 orden: 4
 tags: [elecciones-29n, psoe, partidos, vivienda, pensiones, salario-minimo]
-image: /img/fotos/que-cambiaria-si-gobierna-el-psoe-29n.webp
-imageAlt: "Hemiciclo de un parlamento"
-imageCredit: "cocoparisienne / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/parliament-berlin-government-366199/"
+image: /img/banco/congreso-07.webp
+imageAlt: "Fachada del Congreso de los Diputados"
+imageCredit: "Antonio.velez / Wikimedia Commons (CC BY-SA 3.0 es)"
+imageCreditUrl: "https://commons.wikimedia.org/wiki/File:Espa%C3%B1a_-_Madrid_-_Palacio_de_las_Cortes_-_Fachada.JPG"
 sources:
   - name: "Infobae: Sánchez abre la precampaña en Dos Hermanas (10/10/2026)"
     url: "https://www.infobae.com/espana/2026/10/10/el-psoe-abre-la-precampana-para-el-29n-con-sanchez-como-un-perro-que-no-tiene-amo-y-promete-que-la-politica-de-vivienda-no-tiene-fecha-de-caducidad/"
