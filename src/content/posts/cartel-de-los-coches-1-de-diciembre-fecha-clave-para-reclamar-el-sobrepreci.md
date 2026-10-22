@@ -6,7 +6,7 @@ category: hacienda
 tags: [cartel-de-los-coches, cnmc, reclamacion, sobreprecio, consumo]
 pendiente: false
 image: /img/articulos/cartel-de-los-coches-1-de-diciembre-fecha-clave-para-reclamar-el-sobrepreci.webp
-imageAlt: "Portada: Cártel de los coches: 1 de diciembre, fecha clave para reclamar el sobreprecio"
+imageAlt: "Cártel de los coches: 1 de diciembre, fecha clave para reclamar el sobreprecio"
 sources:
   - name: "ABC Economía: Los afectados por el 'cártel de los coches' van contra reloj para reclamar los más de 1.500 euros de"
     url: "https://www.abc.es/economia/cuentas-corrientes/afectados-cartel-coches-van-reloj-acceder-1500-20261015013544-nt.html"
