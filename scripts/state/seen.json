@@ -848,7 +848,12 @@
   "https://www.infobae.com/espana/2026/10/22/que-dia-se-cobra-la-pension-de-jubilacion-en-octubre-de-2026-caixabank-santander-bbva-ing/",
   "https://elpais.com/economia/2026-10-22/ceoe-rectifica-y-no-impugnara-finalmente-la-huelga-general-por-la-vivienda-antes-del-11-de-noviembre.html",
   "https://elpais.com/economia/2026-10-22/las-grandes-empresas-de-espana-tributan-solo-un-89-de-sus-beneficios.html",
-  "https://cincodias.elpais.com/mercados-financieros/2026-10-22/mutua-pide-medidas-para-aliviar-la-presion-sobre-el-sistema-de-pensiones.html"
+  "https://cincodias.elpais.com/mercados-financieros/2026-10-22/mutua-pide-medidas-para-aliviar-la-presion-sobre-el-sistema-de-pensiones.html",
+  "https://www.idealista.com/news/inmobiliario/vivienda/2026/10/22/911711-los-mejores-lugares-para-comprar-segunda-residencia-en-cataluna-segun-expertos",
+  "https://www.europapress.es/economia/laboral-00346/noticia-elma-saiz-acusa-feijoo-esconder-privatizacion-recortes-propuesta-pensiones-20261022125612.html",
+  "https://www.elmundo.es/economia/2026/10/23/6ada4e24fc6c8386278b4584.html",
+  "https://www.elmundo.es/economia/ahorro-y-consumo/2026/10/22/6ad9be60fc6c83866a8b45b3.html",
+  "https://www.expansion.com/economia/2026/10/23/ue-avala-espana-endurecer-perdon-deudas-hacienda.html"
  ],
  "titles": [
   "los nueve cambios para la jubilacio n en 2027 segu n el abogado laboralista ignacio solsona",
@@ -1037,7 +1042,11 @@
   "hacienda mantendra los mo dulos del irpf para 2027 con la reduccio n del 5 e incluira rebajas fiscales al campo",
   "mapa esfuerzo para pagar el alquiler en espan a que parte de la renta media se lleva por barrios",
   "las grandes empresas de espan a tributan solo un 8 9 de sus beneficios",
-  "mutua pide medidas para aliviar la presio n sobre el sistema de pensiones"
+  "mutua pide medidas para aliviar la presio n sobre el sistema de pensiones",
+  "elma saiz acusa a feijo o de esconder privatizacio n y recortes tras su propuesta sobre pensiones",
+  "hacienda lanzo un plan de venta de miles de viviendas en 2023 para aprovechar el momento del ciclo inmobiliario ma s favorable",
+  "el supremo avala tributar por el irpf aunque no se haya aceptado o rechazado una herencia",
+  "la ue avala a espan a para endurecer el perdo n de deudas con hacienda"
  ],
  "feeds_iniciados": [
   "https://ine.es/dyngs/Prensa/es/rssNovedades.xml",
@@ -1566,6 +1575,30 @@
    "fuente": "Europa Press Economía",
    "titulo": "Elma Saiz acusa a Feijóo de esconder \"privatización y recortes\" tras su propuesta sobre pensiones",
    "resultado": "error al redactar: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'You have reached your specified API usage limits. You will regain access on 2026-11-01 at 00:00 UTC.'}, 'requ"
+  },
+  {
+   "fecha": "2026-10-23 00:52",
+   "fuente": "Europa Press Economía",
+   "titulo": "Elma Saiz acusa a Feijóo de esconder \"privatización y recortes\" tras su propuesta sobre pensiones",
+   "resultado": "descartada: sin valor propio: es un cruce de acusaciones políticas entre la ministra Saiz y Feijóo sin ninguna medida concreta, cifra ni fecha nueva; el contexto electoral de las pensiones ya lo cubre nuestra guía /pensiones/pensiones-elecciones-29n-balance-y-propuestas/"
+  },
+  {
+   "fecha": "2026-10-23 00:52",
+   "fuente": "El Mundo Economía",
+   "titulo": "Hacienda lanzó un plan de venta de miles de viviendas en 2023 para aprovechar \"el momento del ciclo inmobiliario más favorable\"",
+   "resultado": "descartada: sin valor propio: es un reportaje político sobre una contradicción entre el discurso del Gobierno y un plan de venta de inmuebles públicos de 2023. No hay medida nueva ni dato que cambie lo que paga o cobra una familia, y no se puede aportar ejemplo, trámite ni calculadora útiles al lect"
+  },
+  {
+   "fecha": "2026-10-23 00:52",
+   "fuente": "El Mundo Economía",
+   "titulo": "El Supremo avala tributar por el IRPF aunque no se haya aceptado o rechazado una herencia",
+   "resultado": "borrador: supremo-herencia-yacente-irpf-herederos-termino.md"
+  },
+  {
+   "fecha": "2026-10-23 00:53",
+   "fuente": "Expansión Economía",
+   "titulo": "La UE avala a España para endurecer el perdón de deudas con Hacienda",
+   "resultado": "borrador: segunda-oportunidad-abogado-ue-veto-deudas-hacienda.md"
   }
  ],
  "escritos": [
@@ -1737,6 +1770,16 @@
   {
    "title": "El alquiler se lleva más del 50% de la renta en Madrid y Barcelona",
    "url": "/vivienda/alquiler-esfuerzo-renta-media-madrid-barcelona-barrios-ine/",
+   "guia": false
+  },
+  {
+   "title": "Herencia sin aceptar: el Supremo dice que ya tributa en el IRPF",
+   "url": "/hacienda/supremo-herencia-yacente-irpf-herederos-termino/",
+   "guia": false
+  },
+  {
+   "title": "Segunda oportunidad y Hacienda: el abogado de la UE avala el veto",
+   "url": "/hacienda/segunda-oportunidad-abogado-ue-veto-deudas-hacienda/",
    "guia": false
   }
  ]
