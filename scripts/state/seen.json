@@ -818,7 +818,19 @@
   "https://www.elconfidencial.com/economia/2026-10-21/cuando-se-cobran-las-pensiones-en-octubre-de-2026_4449494/",
   "https://www.elconfidencial.com/economia/2026-10-21/alfonso-munoz-funcionario-de-la-seguridad-social-sobre-la-jubilacion-anticipada_4448786/",
   "https://www.elconfidencial.com/economia/2026-10-20/alberto-medico-jubilado-hacienda-retenia-20000-euros-ano-1qrt_4448896/",
-  "https://www.idealista.com/news/opinion/jose-maria-salcedo/2026/10/21/919902-hacienda-ya-sanciona-por-rectificar-la-declaracion-de-irpf-para-recuperar-lo"
+  "https://www.idealista.com/news/opinion/jose-maria-salcedo/2026/10/21/919902-hacienda-ya-sanciona-por-rectificar-la-declaracion-de-irpf-para-recuperar-lo",
+  "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-22056",
+  "https://www.abc.es/economia/guia-financiera/mejores-depositos-a-plazo-y-alternativas-20261019052503-nt.html",
+  "https://www.elconfidencial.com/economia/2026-10-22/precio-luz-jueves-22-octubre-horas-baratas-1qrt_4450360/",
+  "https://www.idealista.com/news/inmobiliario/vivienda/2026/10/22/920151-los-caseros-con-varias-viviendas-concentran-el-18-de-la-subida-del-alquiler-entre",
+  "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-22024",
+  "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-22025",
+  "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-22046",
+  "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-22047",
+  "https://www.cnmc.es/node/422797",
+  "https://www.20minutos.es/lainformacion/economia-y-finanzas/los-planes-pensiones-empleo-no-despegan-apenas-llegan-uno-cada-siete-trabajadores_7051970_0.html",
+  "https://www.20minutos.es/lainformacion/economia-y-finanzas/las-personas-las-que-se-les-denego-pension-viudedad-podran-volver-solicitarla-requisitos-plazos_7051892_0.html",
+  "https://www.europapress.es/economia/construccion-y-vivienda-00342/noticia-caseros-varias-viviendas-concentran-18-subida-alquiler-2019-2023-esade-20261022080153.html"
  ],
  "titles": [
   "los nueve cambios para la jubilacio n en 2027 segu n el abogado laboralista ignacio solsona",
@@ -989,7 +1001,15 @@
   "cua ndo se cobran las pensiones en octubre de 2026 fecha en caixabank santander ing bbva y resto de bancos",
   "alfonso mun oz funcionario de la seguridad social sobre la jubilacio n anticipada elegir una fecha puede hacer que cobres cientos de euros ma s",
   "alberto m pe rez me dico jubilado con 40 an os cotizados hacienda me reteni a 20 000 euros al an o y me siento muy orgulloso",
-  "hacienda ya sanciona por rectificar la declaracio n de irpf para recuperar lo pagado de ma s asi puedes defenderte"
+  "hacienda ya sanciona por rectificar la declaracio n de irpf para recuperar lo pagado de ma s asi puedes defenderte",
+  "resolucio n de 17 de junio de 2026 de la direccio n general de seguridad juri dica y fe pu blica en el recurso interpuesto contra la nota de calificacio n negativa emitida por la registradora de la propiedad de leo n n o 4 con ocasio n de la solicitud de cancelacio n de una hipoteca unilateral por faltar resolucio n judicial expresa de dicha cancelacio n o consentimiento en escritura pu blica de los acreedores hipotecarios",
+  "resolucio n de 17 de junio de 2026 de la direccio n general de seguridad juri dica y fe pu blica en el recurso interpuesto contra la nota de calificacio n negativa emitida por la registradora de la propiedad de mo stoles n o 3 con ocasio n de la solicitud de cancelacio n de una hipoteca unilateral por faltar resolucio n judicial expresa de dicha cancelacio n o consentimiento en escritura pu blica de los acreedores hipotecarios",
+  "resolucio n de 6 de julio de 2026 de la direccio n general de seguridad juri dica y fe pu blica en el recurso interpuesto contra la nota de calificacio n negativa emitida por el registrador de la propiedad de alca zar de san juan n o 1 en relacio n con el rechazo de la cancelacio n de una hipoteca de personas fi sicas concursadas por faltar una resolucio n judicial expresa en que se ordene dicha cancelacio n o consentimiento en escritura pu blica del acreedor hipotecario",
+  "resolucio n de 7 de julio de 2026 de la direccio n general de seguridad juri dica y fe pu blica en el recurso interpuesto contra la negativa de la registradora de la propiedad accidental de murcia n o 2 a inscribir un decreto de adjudicacio n dictado en procedimiento de ejecucio n de hipoteca",
+  "resolucio n del consejo",
+  "los planes de pensiones de empleo no despegan y apenas llegan a uno de cada siete trabajadores",
+  "las personas a las que se les denego la pensio n de viudedad podra n volver a solicitarla requisitos y plazos",
+  "los caseros con varias viviendas concentran el 18 de la subida del alquiler entre 2019 y 2023 segu n esade"
  ],
  "feeds_iniciados": [
   "https://ine.es/dyngs/Prensa/es/rssNovedades.xml",
@@ -1398,6 +1418,54 @@
    "fuente": "Idealista News (vivienda)",
    "titulo": "Hacienda ya sanciona por rectificar la declaración de IRPF para recuperar lo pagado de más: así puedes defenderte",
    "resultado": "borrador: rectificar-renta-fuera-plazo-multa-100-euros-hacienda.md"
+  },
+  {
+   "fecha": "2026-10-22 12:15",
+   "fuente": "BOE",
+   "titulo": "Resolución de 17 de junio de 2026, de la Dirección General de Seguridad Jurídica y Fe Pública, en el recurso interpuesto contra la nota de c",
+   "resultado": "descartada: sin valor propio: resolución registral sobre la cancelación de una hipoteca unilateral de una sociedad en concurso con decenas de acreedores. Es un caso mercantil muy concreto, sin efecto directo en la economía de una familia ni medida nueva, y no permite ejemplo, trámite ni calculadora "
+  },
+  {
+   "fecha": "2026-10-22 12:15",
+   "fuente": "BOE",
+   "titulo": "Resolución de 17 de junio de 2026, de la Dirección General de Seguridad Jurídica y Fe Pública, en el recurso interpuesto contra la nota de c",
+   "resultado": "descartada: sin valor propio: es una resolución de la DGSJFP sobre la cancelación de una hipoteca unilateral de una sociedad en concurso, con 22 entidades acreedoras. Afecta a un caso mercantil concreto, no al bolsillo de una familia. Es un trámite registral que no trae ningún cambio de norma ni de "
+  },
+  {
+   "fecha": "2026-10-22 12:15",
+   "fuente": "BOE",
+   "titulo": "Resolución de 6 de julio de 2026, de la Dirección General de Seguridad Jurídica y Fe Pública, en el recurso interpuesto contra la nota de ca",
+   "resultado": "descartada: sin valor propio: el texto del BOE llega cortado antes de los fundamentos finales y del fallo, así que no se sabe si la Dirección General estima o desestima el recurso. Es además un caso particular (una hipoteca de un banco que la sentencia concursal calificó como crédito ordinario). Sin"
+  },
+  {
+   "fecha": "2026-10-22 12:15",
+   "fuente": "BOE",
+   "titulo": "Resolución de 7 de julio de 2026, de la Dirección General de Seguridad Jurídica y Fe Pública, en el recurso interpuesto contra la negativa d",
+   "resultado": "descartada: sin valor propio: es una resolución registral sobre un caso concreto entre una sociedad mercantil y un registro de Murcia (tercer poseedor en una ejecución hipotecaria de 2010). Es una cuestión técnica de calificación registral que no cambia lo que paga o cobra una familia y no permite a"
+  },
+  {
+   "fecha": "2026-10-22 12:16",
+   "fuente": "CNMC",
+   "titulo": "Resolución del Consejo",
+   "resultado": "descartada: sin valor propio: el texto fuente es solo el menú de navegación de la web de la CNMC (secciones, comparador de ofertas, test de velocidad). No contiene ninguna resolución, cifra, fecha ni medida que afecte al bolsillo del lector."
+  },
+  {
+   "fecha": "2026-10-22 12:16",
+   "fuente": "20minutos Economía",
+   "titulo": "Los planes de pensiones de empleo no despegan y apenas llegan a uno de cada siete trabajadores",
+   "resultado": "descartada: Es un informe de una aseguradora (Grupo Mutua Madrileña) con una propuesta, la adhesión automática, que no es ninguna medida del Gobierno ni cambia lo que paga o cobra una familia. Además trata de planes de pensiones, ahorro privado que cubre Dinero en Claro (dineroenclaro.com), y no hay"
+  },
+  {
+   "fecha": "2026-10-22 12:16",
+   "fuente": "20minutos Economía",
+   "titulo": "Las personas a las que se les denegó la pensión de viudedad podrán volver a solicitarla: requisitos y plazos",
+   "resultado": "descartada: repetido: la ampliación de la viudedad a parejas con hijos del Real Decreto-ley 31/2026 ya está cubierta en dos artículos publicados (decreto-seguridad-social-viudedad-baja-violencia-machista y viudedad-para-parejas-no-casadas-con-hijos-dos-anos-empadronados). Esta fuente solo recuerda l"
+  },
+  {
+   "fecha": "2026-10-22 12:16",
+   "fuente": "Europa Press Economía",
+   "titulo": "Los caseros con varias viviendas concentran el 18% de la subida del alquiler entre 2019 y 2023, según Esade",
+   "resultado": "borrador: caseros-varias-viviendas-18-subida-alquiler-esade.md"
   }
  ],
  "escritos": [
@@ -1534,6 +1602,11 @@
   {
    "title": "Rectificar la renta tras junio: multa de 100 € por ejercicio",
    "url": "/hacienda/rectificar-renta-fuera-plazo-multa-100-euros-hacienda/",
+   "guia": false
+  },
+  {
+   "title": "Alquiler: caseros con varias casas, ligados al 18% de la subida",
+   "url": "/vivienda/caseros-varias-viviendas-18-subida-alquiler-esade/",
    "guia": false
   }
  ]
