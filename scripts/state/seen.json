@@ -830,7 +830,10 @@
   "https://www.cnmc.es/node/422797",
   "https://www.20minutos.es/lainformacion/economia-y-finanzas/los-planes-pensiones-empleo-no-despegan-apenas-llegan-uno-cada-siete-trabajadores_7051970_0.html",
   "https://www.20minutos.es/lainformacion/economia-y-finanzas/las-personas-las-que-se-les-denego-pension-viudedad-podran-volver-solicitarla-requisitos-plazos_7051892_0.html",
-  "https://www.europapress.es/economia/construccion-y-vivienda-00342/noticia-caseros-varias-viviendas-concentran-18-subida-alquiler-2019-2023-esade-20261022080153.html"
+  "https://www.europapress.es/economia/construccion-y-vivienda-00342/noticia-caseros-varias-viviendas-concentran-18-subida-alquiler-2019-2023-esade-20261022080153.html",
+  "https://www.20minutos.es/lainformacion/economia-y-finanzas/las-propinas-bares-cafes-restaurantes-tambien-pagan-impuestos-cuando-hay-que-declararlas-hacienda-cuando-cotizan_7051938_0.html",
+  "https://www.europapress.es/economia/construccion-y-vivienda-00342/noticia-preocupacion-vivienda-escala-12-puntos-ano-alcanza-2026-54-espanoles-20261022113544.html",
+  "https://www.elmundo.es/economia/dinero-inversion/2026/10/22/6ad9c3e821efa0e64a8b459b.html"
  ],
  "titles": [
   "los nueve cambios para la jubilacio n en 2027 segu n el abogado laboralista ignacio solsona",
@@ -1009,7 +1012,10 @@
   "resolucio n del consejo",
   "los planes de pensiones de empleo no despegan y apenas llegan a uno de cada siete trabajadores",
   "las personas a las que se les denego la pensio n de viudedad podra n volver a solicitarla requisitos y plazos",
-  "los caseros con varias viviendas concentran el 18 de la subida del alquiler entre 2019 y 2023 segu n esade"
+  "los caseros con varias viviendas concentran el 18 de la subida del alquiler entre 2019 y 2023 segu n esade",
+  "las propinas en bares cafe s y restaurantes tambie n pagan impuestos cua ndo hay que declararlas a hacienda y cua ndo cotizan",
+  "la preocupacio n por la vivienda escala 12 puntos en un an o y alcanza en 2026 al 54 de los espan oles",
+  "garralda mutua madrilen a cada vez esta ma s en duda que la generosidad de las pensiones pu blicas se pueda mantener en el tiempo"
  ],
  "feeds_iniciados": [
   "https://ine.es/dyngs/Prensa/es/rssNovedades.xml",
@@ -1466,6 +1472,24 @@
    "fuente": "Europa Press Economía",
    "titulo": "Los caseros con varias viviendas concentran el 18% de la subida del alquiler entre 2019 y 2023, según Esade",
    "resultado": "borrador: caseros-varias-viviendas-18-subida-alquiler-esade.md"
+  },
+  {
+   "fecha": "2026-10-22 12:41",
+   "fuente": "20minutos Economía",
+   "titulo": "Las propinas en bares, cafés y restaurantes también pagan impuestos: cuándo hay que declararlas a Hacienda y cuándo cotizan",
+   "resultado": "borrador: propinas-hosteleria-irpf-cotizan-seguridad-social.md"
+  },
+  {
+   "fecha": "2026-10-22 12:41",
+   "fuente": "Europa Press Economía",
+   "titulo": "La preocupación por la vivienda escala 12 puntos en un año y alcanza en 2026 al 54% de los españoles",
+   "resultado": "descartada: sin valor propio: es una encuesta de opinión (barómetro de CGATE y GAD3) sobre la preocupación por la vivienda. No trae ninguna medida, cifra oficial, plazo ni trámite que cambie lo que paga o cobra una familia, y el tema ya está cubierto por nuestras guías y artículos de vivienda."
+  },
+  {
+   "fecha": "2026-10-22 12:41",
+   "fuente": "El Mundo Economía",
+   "titulo": "Garralda (Mutua Madrileña): \"Cada vez está más en duda que la generosidad de las pensiones públicas se pueda mantener en el tiempo\"",
+   "resultado": "borrador: pensiones-2027-funcas-subida-3-6-8400-millones.md"
   }
  ],
  "escritos": [
@@ -1607,6 +1631,16 @@
   {
    "title": "Alquiler: caseros con varias casas, ligados al 18% de la subida",
    "url": "/vivienda/caseros-varias-viviendas-18-subida-alquiler-esade/",
+   "guia": false
+  },
+  {
+   "title": "Propinas en hostelería: tributan en el IRPF y no en el IVA",
+   "url": "/hacienda/propinas-hosteleria-irpf-cotizan-seguridad-social/",
+   "guia": false
+  },
+  {
+   "title": "Pensiones 2027: Funcas calcula una subida del 3,6% (8.400 M)",
+   "url": "/pensiones/pensiones-2027-funcas-subida-3-6-8400-millones/",
    "guia": false
   }
  ]
