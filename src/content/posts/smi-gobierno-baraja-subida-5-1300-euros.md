@@ -42,7 +42,7 @@ A quien cobra el salario mínimo. También puede notarlo quien tiene un convenio
 
 ## ¿Por qué ahora?
 
-ABC sitúa la medida dentro de un paquete de mejoras que el Gobierno quiere aprobar por decreto antes de las elecciones. Después tendría que convalidarlas la Diputación Permanente. Entre ellas están la [subida del 4,5% a los funcionarios en 2027](/paro/funcionarios-subida-sueldo-2027-4-5-sin-fecha/), la [baja por menopausia](/pensiones/baja-menopausia-sin-cotizacion-minima-decreto-ley/) y los [cambios en viudedad y orfandad](/pensiones/decreto-seguridad-social-viudedad-baja-violencia-machista/).
+ABC sitúa la medida dentro de un paquete de mejoras que el Gobierno quiere aprobar por decreto antes de las elecciones. Después tendría que convalidarlas la Diputación Permanente. Entre ellas están la [subida del 4,5% a los funcionarios en 2027](/paro/funcionarios-subida-retroactiva-2026-4-5-2027/), la [baja por menopausia](/pensiones/baja-menopausia-sin-cotizacion-minima-decreto-ley/) y los [cambios en viudedad y orfandad](/pensiones/decreto-seguridad-social-viudedad-baja-violencia-machista/).
 
 El diario relaciona además el momento de la subida con la candidatura de la vicepresidenta Yolanda Díaz a dirigir la Organización Internacional del Trabajo (OIT). Esa elección se decide el 16 de noviembre. Es una lectura de ABC, no una explicación oficial. Según el diario, al aprobarse en plena campaña, Trabajo no tendría que negociar la cifra con el Ministerio de Economía, con el que ha chocado otros años.
 

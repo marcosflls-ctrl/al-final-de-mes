@@ -34,6 +34,14 @@ COMBUSTIBLES = {"g95": "Precio Gasolina 95 E5", "diesel": "Precio Gasoleo A"}
 BARATAS = 5            # gasolineras más baratas que se guardan por provincia y combustible
 DIAS_HISTORICO = 90
 MIN_GASOLINERAS_CIUDAD = 10   # municipios con al menos estas gasolineras tienen página propia
+# Las capitales de provincia tienen página aunque tengan menos (Bilbao tiene pocas dentro del municipio)
+MIN_GASOLINERAS_CAPITAL = 4
+CAPITALES = ("bilbao", "vitoria-gasteiz", "donostia", "pamplona", "logrono", "santander", "oviedo", "leon", "palencia",
+             "burgos", "soria", "segovia", "avila", "zamora", "salamanca", "valladolid", "lugo", "ourense", "pontevedra",
+             "a-coruna", "huesca", "teruel", "zaragoza", "lleida", "girona", "tarragona", "barcelona", "castellon",
+             "valencia", "alicante", "murcia", "albacete", "cuenca", "guadalajara", "toledo", "ciudad-real", "caceres",
+             "badajoz", "huelva", "sevilla", "cadiz", "malaga", "cordoba", "jaen", "granada", "almeria", "madrid",
+             "palma", "las-palmas-de-gran-canaria", "santa-cruz-de-tenerife", "ceuta", "melilla")
 BARATAS_CIUDAD = 10
 DIAS_HISTORICO_CIUDAD = 9   # para comparar con hace una semana aunque falle algún día
 # Precios fuera de este rango (€/l) se consideran errores de la fuente y se ignoran
@@ -235,9 +243,10 @@ def main() -> int:
     # Ciudades: municipios con suficientes gasolineras para que la media signifique algo
     ciudades = []
     for (prov_slug, _), m in municipios.items():
-        if len(m["precios"]["g95"]) < MIN_GASOLINERAS_CIUDAD:
-            continue
         nombre_url = m["nombre"].split("/")[0].strip()
+        capital = slug(nombre_url) in CAPITALES or slug(nombre_url).startswith(("donostia", "castellon", "palma-de-mallorca"))
+        if len(m["precios"]["g95"]) < (MIN_GASOLINERAS_CAPITAL if capital else MIN_GASOLINERAS_CIUDAD):
+            continue
         fila = {"nombre": m["nombre"], "slug": slug(nombre_url), "provincia": m["provincia"], "provincia_slug": prov_slug}
         for k in COMBUSTIBLES:
             lista = m["precios"][k]
