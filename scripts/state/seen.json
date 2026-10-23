@@ -907,7 +907,10 @@
   "https://www.infobae.com/espana/2026/10/23/cambio-de-euro-a-dolar-hoy-23-de-octubre-como-esta-la-cotizacion-y-previsiones/",
   "https://www.elespanol.com/invertia/economia/macroeconomia/20261023/deuda-publica-crece-ritmo-millones-dia-sanchez-llego-moncloa-hace-anos/1003744431266_0.html",
   "https://www.20minutos.es/nacional/dos-cada-tres-jovenes-necesitan-ayuda-para-independizarse-70-ha-tenido-que-renunciar-un-piso-por-causas-economicas_7051969_0.html",
-  "https://www.20minutos.es/lainformacion/economia-y-finanzas/jubilacion-anticipada-2027-tijeretazo-rentas-cotizaciones-mas-altas_7050812_0.html"
+  "https://www.20minutos.es/lainformacion/economia-y-finanzas/jubilacion-anticipada-2027-tijeretazo-rentas-cotizaciones-mas-altas_7050812_0.html",
+  "https://www.idealista.com/news/inmobiliario/vivienda/2026/10/23/918288-que-es-un-fondo-buitre-indefinicion-juridica-que-traera-conflictos-legales",
+  "https://www.europapress.es/economia/laboral-00346/noticia-feijoo-dice-no-solo-subira-smi-sueldo-medio-smi-estara-exento-irpf-ley-20261023104128.html",
+  "https://www.europapress.es/economia/construccion-y-vivienda-00342/noticia-consumo-exige-plataformas-retirada-8300-anuncios-alojamientos-turisticos-ilegales-decreto-20261023080049.html"
  ],
  "titles": [
   "los nueve cambios para la jubilacio n en 2027 segu n el abogado laboralista ignacio solsona",
@@ -1148,7 +1151,10 @@
   "cambio de euro a do lar hoy 23 de octubre co mo esta la cotizacio n y previsiones",
   "la deuda pu blica crece a un ritmo de 192 millones al di a desde que sa nchez llego a la moncloa hace ocho an os",
   "dos de cada tres jo venes necesitan ayuda para independizarse y el 70 ha tenido que renunciar a un piso por causas econo micas",
-  "jubilacio n anticipada en 2027 el tijeretazo para las rentas y cotizaciones ma s altas"
+  "jubilacio n anticipada en 2027 el tijeretazo para las rentas y cotizaciones ma s altas",
+  "que es un fondo buitre indefinicio n juri dica que traera conflictos legales",
+  "feijo o dice que no so lo subira el smi sino el sueldo medio y que el smi estara exento del irpf por ley",
+  "consumo exige a plataformas la retirada de 8 300 anuncios de alojamientos turi sticos ilegales tras el decreto"
  ],
  "feeds_iniciados": [
   "https://ine.es/dyngs/Prensa/es/rssNovedades.xml",
@@ -1989,6 +1995,24 @@
    "fuente": "20minutos Economía",
    "titulo": "Jubilación anticipada en 2027: el tijeretazo para las rentas y cotizaciones más altas",
    "resultado": "borrador: jubilacion-anticipada-2027-dt34-pensiones-maximas.md"
+  },
+  {
+   "fecha": "2026-10-23 12:32",
+   "fuente": "Idealista News (vivienda)",
+   "titulo": "¿Qué es un 'fondo buitre'? Indefinición jurídica que traerá conflictos legales",
+   "resultado": "descartada (filtro previo): Explicación conceptual sobre un término jurídico sin medida concreta ni dato nuevo que afecte al bolsillo"
+  },
+  {
+   "fecha": "2026-10-23 12:32",
+   "fuente": "Europa Press Economía",
+   "titulo": "Feijóo dice que no sólo subirá el SMI, sino el sueldo medio, y que el SMI estará exento del IRPF por ley",
+   "resultado": "borrador: feijoo-promete-smi-exento-irpf-pensiones-ipc.md"
+  },
+  {
+   "fecha": "2026-10-23 12:33",
+   "fuente": "Europa Press Economía",
+   "titulo": "Consumo exige a plataformas la retirada de 8.300 anuncios de alojamientos turísticos ilegales tras el decreto",
+   "resultado": "borrador: consumo-retirada-8318-anuncios-turisticos-madrid.md"
   }
  ],
  "escritos": [
@@ -2190,6 +2214,16 @@
   {
    "title": "Jubilación anticipada en 2027: en duda el alivio a pensiones altas",
    "url": "/pensiones/jubilacion-anticipada-2027-dt34-pensiones-maximas/",
+   "guia": false
+  },
+  {
+   "title": "Feijóo promete SMI exento de IRPF y pensiones con el IPC",
+   "url": "/paro/feijoo-promete-smi-exento-irpf-pensiones-ipc/",
+   "guia": false
+  },
+  {
+   "title": "Consumo exige retirar 8.318 anuncios turísticos, 6.772 en Madrid",
+   "url": "/vivienda/consumo-retirada-8318-anuncios-turisticos-madrid/",
    "guia": false
   }
  ]
