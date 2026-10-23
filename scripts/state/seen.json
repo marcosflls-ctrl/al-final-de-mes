@@ -926,7 +926,12 @@
   "https://www.newtral.es/smi-urtasun-diaz-factcheck/20261023/",
   "https://www.abc.es/economia/cuentas-corrientes/vas-dar-dinero-hijo-piso-evita-tres-20261022195809-nt.html",
   "https://www.abc.es/economia/cuentas-corrientes/subida-euribor-reactiva-cambio-hipotecas-variables-mixtas-20261023023052-nt.html",
-  "https://www.idealista.com/news/inmobiliario/vivienda/2022/04/21/796185-certificado-energetico-para-que-sirve-como-obtenerlo-y-cuanto-cuesta"
+  "https://www.idealista.com/news/inmobiliario/vivienda/2022/04/21/796185-certificado-energetico-para-que-sirve-como-obtenerlo-y-cuanto-cuesta",
+  "https://www.europapress.es/economia/noticia-gobierno-propone-adjudicar-1745-millones-orange-espana-telefonica-llevar-5g-zonas-muy-rurales-20261023171736.html",
+  "https://www.lavanguardia.com/economia/20261023/11666671/subida-precios-turismo-estanca-demanda-nacional-verano.html",
+  "https://www.newtral.es/feijoo-entrevista-ser/20261023/",
+  "https://www.europapress.es/economia/noticia-brent-roza-117-dolares-toca-niveles-no-vistos-abril-20261023174628.html",
+  "https://www.idealista.com/news/inmobiliario/vivienda/2026/10/23/920353-el-gobierno-abre-una-consulta-publica-sobre-la-futura-ley-europea-de-vivienda"
  ],
  "titles": [
   "los nueve cambios para la jubilacio n en 2027 segu n el abogado laboralista ignacio solsona",
@@ -1184,7 +1189,12 @@
   "desde que yolanda di az es ministra el smi ha subido un 28 5 37 puntos menos de lo que dice urtasun",
   "vas a dar dinero a tu hijo para un piso evita estos tres errores con hacienda",
   "la subida del euri bor reactiva el cambio de hipotecas variables y mixtas a tipo fijo",
-  "certificado energe tico co mo obtenerlo cua nto cuesta y para que sirve"
+  "certificado energe tico co mo obtenerlo cua nto cuesta y para que sirve",
+  "el gobierno propone adjudicar 17 45 millones a orange espan a y telefo nica para llevar 5g a zonas muy rurales",
+  "la subida de precios en el turismo estanca la demanda nacional en verano",
+  "salario mi nimo aborto y vivienda datos y contexto de la entrevista a feijo o en la cadena ser",
+  "el brent roza los 117 do lares y toca niveles no vistos desde abril",
+  "el gobierno abre una consulta pu blica sobre la futura ley europea de vivienda asequible"
  ],
  "feeds_iniciados": [
   "https://ine.es/dyngs/Prensa/es/rssNovedades.xml",
@@ -1198,36 +1208,6 @@
   "https://www.antena3.com/noticias/rss/4013050.xml"
  ],
  "registro": [
-  {
-   "fecha": "2026-10-20 16:54",
-   "fuente": "CNMC",
-   "titulo": "Comunicación COM",
-   "resultado": "descartada: sin valor propio: el texto fuente es solo el menú de navegación de la web de la CNMC (secciones, comparador de ofertas, canales de denuncia), sin ninguna noticia, medida, cifra ni fecha que explicar"
-  },
-  {
-   "fecha": "2026-10-20 16:55",
-   "fuente": "20minutos Economía",
-   "titulo": "Inverco pide incorporar renta fija a la cuenta de ahorro europea y mejorar la fiscalidad de los planes de pensiones",
-   "resultado": "borrador: cuenta-de-ahorro-europea-caife-aun-no-arranca-y-las-gestoras-piden-cambios.md"
-  },
-  {
-   "fecha": "2026-10-20 16:55",
-   "fuente": "20minutos Economía",
-   "titulo": "El Gobierno aprueba ampliar la pensión de viudedad a parejas no registradas con hijos y mejora las bajas para los afectados por catástrofes",
-   "resultado": "borrador: viudedad-para-parejas-no-casadas-con-hijos-dos-anos-empadronados.md"
-  },
-  {
-   "fecha": "2026-10-20 17:09",
-   "fuente": "20minutos Economía",
-   "titulo": "El Ejecutivo lanza ayudas directas para agricultores y ganaderos afectados por los incendios",
-   "resultado": "borrador: ayudas-de-9-millones-para-agricultores-y-ganaderos-afectados-por-incendios.md"
-  },
-  {
-   "fecha": "2026-10-20 17:10",
-   "fuente": "20minutos Economía",
-   "titulo": "El Supremo rechaza que Hacienda pueda tasar una vivienda solo con el Catastro y Google Maps sin visitarla",
-   "resultado": "borrador: el-supremo-hacienda-no-puede-tasar-tu-vivienda-solo-con-catastro-y-google.md"
-  },
   {
    "fecha": "2026-10-20 20:46",
    "fuente": "20minutos Economía",
@@ -2097,6 +2077,36 @@
    "fuente": "Idealista News (vivienda)",
    "titulo": "Certificado energético: cómo obtenerlo, cuánto cuesta y para qué sirve",
    "resultado": "borrador: certificado-energetico-multas-6000-vender-alquilar.md"
+  },
+  {
+   "fecha": "2026-10-23 21:18",
+   "fuente": "Europa Press Economía",
+   "titulo": "El Gobierno propone adjudicar 17,45 millones a Orange España y Telefónica para llevar 5G a zonas muy rurales",
+   "resultado": "descartada (filtro previo): Adjudicación a empresas concretas (Orange y Telefónica) para despliegue 5G; no afecta directamente al bolsillo de las familias"
+  },
+  {
+   "fecha": "2026-10-23 21:18",
+   "fuente": "La Vanguardia Economía",
+   "titulo": "La subida de precios en el turismo estanca la demanda nacional en verano",
+   "resultado": "descartada (filtro previo): Macroeconomía del sector turístico (demanda y precios), sin medida que toque la economía doméstica"
+  },
+  {
+   "fecha": "2026-10-23 21:18",
+   "fuente": "Newtral",
+   "titulo": "Salario mínimo, aborto y vivienda: datos y contexto de la entrevista a Feijóo en la Cadena SER",
+   "resultado": "descartada (filtro previo): Entrevista política sin medida concreta; el tema del SMI exento de IRPF ya está publicado como 'Feijóo promete SMI exento de IRPF y pensiones con el IPC'"
+  },
+  {
+   "fecha": "2026-10-23 21:18",
+   "fuente": "Europa Press Economía",
+   "titulo": "El Brent roza los 117 dólares y toca niveles no vistos desde abril",
+   "resultado": "descartada: sin valor propio: la noticia trata del precio del Brent y de la tensión geopolítica (hutíes, Arabia Saudí, EE. UU. e Irán). No trae ninguna medida ni dato sobre carburantes en España. Los datos de MITECO que he encontrado son informes mensuales poco claros y no dan un precio actual de ga"
+  },
+  {
+   "fecha": "2026-10-23 21:19",
+   "fuente": "Idealista News (vivienda)",
+   "titulo": "El Gobierno abre una consulta pública sobre la futura Ley Europea de Vivienda Asequible",
+   "resultado": "borrador: ley-europea-vivienda-asequible-consulta-publica.md"
   }
  ],
  "escritos": [
@@ -2328,6 +2338,11 @@
   {
    "title": "Propietarios: sin certificado energético, multa de hasta 6.000 €",
    "url": "/vivienda/certificado-energetico-multas-6000-vender-alquilar/",
+   "guia": false
+  },
+  {
+   "title": "Ley europea de vivienda: opina hasta el 4 de noviembre",
+   "url": "/vivienda/ley-europea-vivienda-asequible-consulta-publica/",
    "guia": false
   }
  ]
