@@ -922,7 +922,11 @@
   "https://www.elespanol.com/invertia/economia/20261023/gobierno-dejara-creado-consejo-nacional-antiblanqueo-elecciones/1003744432452_0.html",
   "https://www.antena3.com/noticias/sociedad/detenido-forcejear-policia-disputa-taxi-santander_202610236adb5a201e66613d9f1a8cf1.html",
   "https://www.20minutos.es/lainformacion/economia-y-finanzas/las-pensiones-no-contributivas-cambian-partir-hoy-asi-funciona-nuevo-calculo-para-acceder-conservar-estas-prestaciones_7052438_0.html",
-  "https://www.elmundo.es/economia/2026/10/23/6adb1191e9cf4a427e8b458a.html"
+  "https://www.elmundo.es/economia/2026/10/23/6adb1191e9cf4a427e8b458a.html",
+  "https://www.newtral.es/smi-urtasun-diaz-factcheck/20261023/",
+  "https://www.abc.es/economia/cuentas-corrientes/vas-dar-dinero-hijo-piso-evita-tres-20261022195809-nt.html",
+  "https://www.abc.es/economia/cuentas-corrientes/subida-euribor-reactiva-cambio-hipotecas-variables-mixtas-20261023023052-nt.html",
+  "https://www.idealista.com/news/inmobiliario/vivienda/2022/04/21/796185-certificado-energetico-para-que-sirve-como-obtenerlo-y-cuanto-cuesta"
  ],
  "titles": [
   "los nueve cambios para la jubilacio n en 2027 segu n el abogado laboralista ignacio solsona",
@@ -1176,7 +1180,11 @@
   "el gobierno dejara creado el consejo nacional antiblanqueo antes de las elecciones del 29n",
   "detenido tras forcejear con la polici a por una disputa por un taxi en santander",
   "las pensiones no contributivas cambian a partir de hoy asi funciona el nuevo ca lculo para acceder o conservar estas prestaciones",
-  "la seguridad social lo confirma estos trabajadores podra n recuperar an os para su jubilacio n a partir de navidad"
+  "la seguridad social lo confirma estos trabajadores podra n recuperar an os para su jubilacio n a partir de navidad",
+  "desde que yolanda di az es ministra el smi ha subido un 28 5 37 puntos menos de lo que dice urtasun",
+  "vas a dar dinero a tu hijo para un piso evita estos tres errores con hacienda",
+  "la subida del euri bor reactiva el cambio de hipotecas variables y mixtas a tipo fijo",
+  "certificado energe tico co mo obtenerlo cua nto cuesta y para que sirve"
  ],
  "feeds_iniciados": [
   "https://ine.es/dyngs/Prensa/es/rssNovedades.xml",
@@ -1190,30 +1198,6 @@
   "https://www.antena3.com/noticias/rss/4013050.xml"
  ],
  "registro": [
-  {
-   "fecha": "2026-10-20 15:56",
-   "fuente": "elpais.com",
-   "titulo": "elpais.com",
-   "resultado": "error al redactar: WorkloadIdentityError: Token exchange failed (HTTP 401): {'error': {'type': 'authentication_error', 'message': 'Authentication failed'}} Ensure your federation rule matches your identity token. View your authentication even"
-  },
-  {
-   "fecha": "2026-10-20 16:30",
-   "fuente": "elpais.com",
-   "titulo": "elpais.com",
-   "resultado": "texto insuficiente (muro de pago o página vacía)"
-  },
-  {
-   "fecha": "2026-10-20 16:33",
-   "fuente": "CNMC",
-   "titulo": "Comunicación COM",
-   "resultado": "error al redactar: WorkloadIdentityError: Token exchange failed (HTTP 401): {'error': {'type': 'authentication_error', 'message': 'Authentication failed'}} Ensure your federation rule matches your identity token. View your authentication even"
-  },
-  {
-   "fecha": "2026-10-20 16:33",
-   "fuente": "20minutos Economía",
-   "titulo": "Inverco pide incorporar renta fija a la cuenta de ahorro europea y mejorar la fiscalidad de los planes de pensiones",
-   "resultado": "error al redactar: WorkloadIdentityError: Token exchange failed (HTTP 401): {'error': {'type': 'authentication_error', 'message': 'Authentication failed'}} Ensure your federation rule matches your identity token. View your authentication even"
-  },
   {
    "fecha": "2026-10-20 16:54",
    "fuente": "CNMC",
@@ -2089,6 +2073,30 @@
    "fuente": "El Mundo Economía",
    "titulo": "La Seguridad Social lo confirma: estos trabajadores podrán recuperar años para su jubilación a partir de Navidad",
    "resultado": "borrador: deportistas-recuperar-anos-jubilacion-real-decreto-739.md"
+  },
+  {
+   "fecha": "2026-10-23 17:29",
+   "fuente": "Newtral",
+   "titulo": "Desde que Yolanda Díaz es ministra el SMI ha subido un 28,5%, 37 puntos menos de lo que dice Urtasun",
+   "resultado": "descartada (filtro previo): Polémica política entre Newtral y Urtasun sobre el SMI, sin medida concreta nueva; el tema del SMI ya está cubierto y no aporta un dato que el lector pueda usar."
+  },
+  {
+   "fecha": "2026-10-23 17:29",
+   "fuente": "ABC Economía",
+   "titulo": "¿Vas a dar dinero a tu hijo para un piso? Evita estos tres errores con Hacienda",
+   "resultado": "descartada: sin valor propio: texto de consejos generales sin ninguna cifra, plazo, norma ni dato nuevo (no indica el plazo del trámite, el modelo concreto ni las bonificaciones por comunidad). No se puede ampliar sin añadir datos que la fuente no da."
+  },
+  {
+   "fecha": "2026-10-23 17:30",
+   "fuente": "ABC Economía",
+   "titulo": "La subida del euríbor reactiva el cambio de hipotecas variables y mixtas a tipo fijo",
+   "resultado": "borrador: euribor-cambiar-hipoteca-variable-fija-housfy.md"
+  },
+  {
+   "fecha": "2026-10-23 17:30",
+   "fuente": "Idealista News (vivienda)",
+   "titulo": "Certificado energético: cómo obtenerlo, cuánto cuesta y para qué sirve",
+   "resultado": "borrador: certificado-energetico-multas-6000-vender-alquilar.md"
   }
  ],
  "escritos": [
@@ -2310,6 +2318,16 @@
   {
    "title": "Deportistas: sumar años a la pensión desde el 25 de diciembre",
    "url": "/pensiones/deportistas-recuperar-anos-jubilacion-real-decreto-739/",
+   "guia": false
+  },
+  {
+   "title": "Euríbor al 3,2%: qué mirar antes de pasar tu hipoteca a fijo",
+   "url": "/vivienda/euribor-cambiar-hipoteca-variable-fija-housfy/",
+   "guia": false
+  },
+  {
+   "title": "Propietarios: sin certificado energético, multa de hasta 6.000 €",
+   "url": "/vivienda/certificado-energetico-multas-6000-vender-alquilar/",
    "guia": false
   }
  ]
