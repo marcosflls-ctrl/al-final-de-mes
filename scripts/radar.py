@@ -136,6 +136,7 @@ def matches(text: str, kws: list[str]) -> bool:
     return any(re.search(rf"(?<!\w){re.escape(k)}(?!\w)", t) for k in kws)
 
 
+SIN_OFICIAL: list[str] = []  # borradores que solo citan al medio, sin documento oficial
 RESUMEN: list[str] = []  # qué ha respondido cada fuente (se muestra en GitHub)
 
 
@@ -261,6 +262,9 @@ def official_links(html: str) -> list[str]:
     return out[:8]
 
 
+# Webs oficiales en las que la IA puede buscar el documento original
+DOMINIOS_OFICIALES = ('boe.es', 'seg-social.es', 'inclusion.gob.es', 'sepe.es', 'agenciatributaria.gob.es', 'agenciatributaria.es', 'ine.es', 'lamoncloa.gob.es', 'mites.gob.es', 'hacienda.gob.es', 'miteco.gob.es', 'mivau.gob.es', 'cnmc.es', 'poderjudicial.es', 'ree.es', 'congreso.es', 'bde.es')
+
 # ---------- 3. redactar con IA ----------
 SYSTEM = """Eres redactor de Al Final de Mes, una web española que explica las noticias que afectan a la economía \
 de casa: pensiones, paro y ayudas, Hacienda e impuestos, y la factura de la luz. Escribes en español de España, \
@@ -334,6 +338,7 @@ SECCIÓN (category), elige la que mejor encaje:
 Si un tema toca dos secciones (por ejemplo, una deducción fiscal por alquiler), elige la que busca el lector: quien busca su alquiler va a vivienda.
 
 SENTENCIAS Y NORMAS: si la noticia trata de una sentencia, di el tribunal, la sala, la fecha y el número de sentencia o el ECLI si la fuente los da; si es una norma, su nombre y número (Real Decreto…, Orden…). Si no tienes el enlace oficial, explica de dónde procede el dato (por ejemplo, «según la sentencia, a la que ha tenido acceso EFE»).
+BUSCA LA FUENTE OFICIAL: si la noticia trata de una norma, una ayuda, una sentencia, un dato o una decisión de un organismo y no tienes el enlace al documento, usa la búsqueda web (solo busca en webs oficiales) para encontrarlo. Puedes usar los datos del documento oficial; si no coinciden con los del medio, manda el oficial y dilo en el texto. Si no lo encuentras en dos o tres búsquedas, sigue sin él. Responde al final solo con el JSON.
 FUENTE OFICIAL: en "official_source" pon solo un enlace a la página concreta del documento o dato oficial (el BOE, la nota de prensa, la tabla del INE), nunca la portada de un organismo. Si no tienes ese enlace concreto, pon null.
 
 ENLACES INTERNOS: incluye 1-3 enlaces a artículos de la lista "ya publicados" si encajan de forma natural, \
@@ -344,7 +349,7 @@ FORMATO DE RESPUESTA: solo un objeto JSON válido, sin texto alrededor:
   "skip": false,
   "category": "luz" | "pensiones" | "paro" | "vivienda" | "hacienda",
   "pendiente": true | false,
-  "title": "titular de 50-68 caracteres (Google corta los más largos), concreto, con la cifra o fecha si existe. Nunca pongas en el título el medio de origen ni «según X»: la atribución va en el texto",
+  "title": "titular de 45-60 caracteres (Google corta a partir de unos 60), concreto, con la cifra o fecha si existe. Nunca pongas en el título el medio de origen ni «según X»: la atribución va en el texto",
   "slug": "dirección corta: 4-8 palabras clave en minúsculas separadas por guiones, sin tildes, sin artículos ni preposiciones sueltas, máximo 60 caracteres y sin cortar palabras (ej. supremo-hacienda-tasar-vivienda-catastro-google-maps)",
   "card_title": "versión corta del titular para la imagen de portada, máximo 70 caracteres",
   "foto": "tema de la foto de portada que mejor encaja, de esta lista: {temas_foto}; o \"\" si ninguno encaja de verdad",
@@ -411,10 +416,27 @@ def write_article(item: dict, source_text: str, oficiales: list[str], posts: lis
         + (f"ENLACES OFICIALES QUE CITA LA FUENTE:\n" + "\n".join(oficiales) + "\n" if oficiales else "")
         + f"\nTEXTO FUENTE:\n\"\"\"\n{source_text[:MAX_FUENTE]}\n\"\"\""
     )
-    msg = client.messages.create(model=MODEL, max_tokens=16000, system=SYSTEM_CACHE,
-                                 messages=[{"role": "user", "content": con_cache(contexto, user)}])
-    raw = "".join(b.text for b in msg.content if b.type == "text").strip()
+    mensajes = [{"role": "user", "content": con_cache(contexto, user)}]
+    try:
+        # Búsqueda solo en webs oficiales, para encontrar el documento (BOE, nota de prensa, tabla…) cuando el medio no lo enlaza
+        msg = client.messages.create(model=MODEL, max_tokens=16000, system=SYSTEM_CACHE, messages=mensajes,
+                                     tools=[{"type": "web_search_20250305", "name": "web_search", "max_uses": 3,
+                                             "allowed_domains": list(DOMINIOS_OFICIALES)}])
+        for _ in range(3):  # si la búsqueda se alarga, la API pausa el turno: se le deja seguir
+            if msg.stop_reason != "pause_turn":
+                break
+            mensajes = mensajes + [{"role": "assistant", "content": msg.content}]
+            msg = client.messages.create(model=MODEL, max_tokens=16000, system=SYSTEM_CACHE, messages=mensajes,
+                                         tools=[{"type": "web_search_20250305", "name": "web_search", "max_uses": 3,
+                                                 "allowed_domains": list(DOMINIOS_OFICIALES)}])
+    except Exception as e:  # noqa: BLE001  (si la búsqueda no está disponible, se redacta como antes)
+        print(f"  · sin búsqueda de fuente oficial ({type(e).__name__}): se redacta solo con la fuente")
+        msg = client.messages.create(model=MODEL, max_tokens=16000, system=SYSTEM_CACHE, messages=mensajes)
+    textos = [b.text for b in msg.content if b.type == "text"]
+    raw = (textos[-1] if textos else "").strip()
     raw = re.sub(r"^```(?:json)?|```$", "", raw, flags=re.M).strip()
+    if not raw.startswith("{") and "{" in raw:  # por si la IA comenta algo antes del JSON
+        raw = raw[raw.index("{"): raw.rindex("}") + 1]
     try:
         data = json.loads(raw)
     except json.JSONDecodeError:
@@ -497,6 +519,8 @@ def save_post(data: dict, item: dict) -> Path:
         fuentes.append((of["name"], of["url"]))
     if not any(u == item["url"] for _, u in fuentes):
         fuentes.append((f"{item['source']}: {item['title'][:100]}", item["url"]))
+    if len(fuentes) == 1 and fuentes[0][1] == item["url"] and not item.get("oficial"):
+        SIN_OFICIAL.append(slug)  # solo el medio: se avisa en la propuesta
     src_yaml = "".join(f"  - name: {yaml_str(n)}\n    url: {yaml_str(u)}\n" for n, u in fuentes)
 
     now = datetime.now(timezone.utc).replace(microsecond=0).isoformat()
@@ -609,6 +633,7 @@ def main() -> int:
         with open(gh_out, "a", encoding="utf-8") as fh:
             fh.write(f"count={len(written)}\n")
             fh.write("titulos=" + " | ".join(p.stem for p in written) + "\n")
+            fh.write("sin_oficial=" + ", ".join(SIN_OFICIAL) + "\n")
     return 0
 
 

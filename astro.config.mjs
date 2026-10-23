@@ -7,9 +7,11 @@ const lastmod = {};
 for (const f of fs.readdirSync('src/content/posts').filter((f) => f.endsWith('.md'))) {
   const head = fs.readFileSync(`src/content/posts/${f}`, 'utf8').split('\n---', 2)[0];
   const get = (k) => (head.match(new RegExp(`^${k}:\\s*["']?([^"'\\n]+)`, 'm')) || [])[1];
+  if (/^draft:\s*true/m.test(head)) continue; // los borradores no se publican
   const fecha = get('updated') || get('date');
   const cat = get('category');
-  if (fecha && cat && !Number.isNaN(Date.parse(fecha))) lastmod[`/${cat}/${f.replace(/\.md$/, '')}/`] = new Date(fecha).toISOString();
+  // los artículos programados para más adelante tampoco están publicados todavía
+  if (fecha && cat && !Number.isNaN(Date.parse(fecha)) && Date.parse(fecha) <= Date.now()) lastmod[`/${cat}/${f.replace(/\.md$/, '')}/`] = new Date(fecha).toISOString();
 }
 
 // Páginas de datos que se actualizan solas: su fecha es la del último dato descargado
@@ -23,6 +25,9 @@ const paginasDeDatos = [
   ['/vivienda/euribor-hoy/', datos('euribor')],
   ['/divisas/', datos('divisas')],
 ];
+// Páginas generadas que se revisan a mano (sueldos, calendario laboral): fecha en src/data/fechas-paginas.json
+const fechasPaginas = JSON.parse(fs.readFileSync('src/data/fechas-paginas.json', 'utf8'));
+for (const [pre, f] of Object.entries(fechasPaginas)) if (pre.startsWith('/')) paginasDeDatos.push([pre, new Date(f).toISOString()]);
 // Portada y portadas de sección: la fecha del artículo más reciente
 const masReciente = (prefijo) => Object.entries(lastmod).filter(([u]) => u.startsWith(prefijo)).map(([, f]) => f).sort().pop();
 
