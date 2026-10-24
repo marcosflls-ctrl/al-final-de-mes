@@ -956,7 +956,10 @@
   "https://www.elespanol.com/invertia/observatorios/vivienda/20261024/meses-recuperar-piso-euros-coste-factura-media-impago-alquiler-espana/1003744432253_0.html",
   "https://www.elmundo.es/economia/2026/10/24/6adcc9b421efa06d528b4576.html",
   "https://www.infobae.com/espana/2026/10/24/frente-amplio-presenta-su-plan-de-pensiones-jubilacion-a-los-65-anos-y-cuantia-minima-igual-al-smi/",
-  "https://www.antena3.com/noticias/economia/25000-personas-manifiestan-pensiones-reclaman-que-minimas-igualen-smi_202610246add05b2f655b65cc387f7ad.html"
+  "https://www.antena3.com/noticias/economia/25000-personas-manifiestan-pensiones-reclaman-que-minimas-igualen-smi_202610246add05b2f655b65cc387f7ad.html",
+  "https://www.elmundo.es/economia/macroeconomia/2026/10/25/6adb6fae21efa0e0278b45b1.html",
+  "https://www.abc.es/economia/robotizacion-abre-nueva-frontera-sector-asegurador-20261026000300-nt.html",
+  "https://www.elmundo.es/economia/macroeconomia/2026/10/25/6ada40a8fc6c837f328b45a0.html"
  ],
  "titles": [
   "los nueve cambios para la jubilacio n en 2027 segu n el abogado laboralista ignacio solsona",
@@ -1240,7 +1243,10 @@
   "nueve meses para recuperar un piso y casi 10 000 euros de coste la factura media del impago del alquiler en espan a",
   "miles de pensionistas salen a la calle a exigir subidas de las pensiones del 6 mejores salarios y acceso a la vivienda",
   "frente amplio presenta su plan de pensiones jubilacio n a los 65 an os y cuanti a mi nima igual al smi",
-  "unas 25 000 personas se manifiestan por las pensiones y reclaman que las mi nimas igualen al smi"
+  "unas 25 000 personas se manifiestan por las pensiones y reclaman que las mi nimas igualen al smi",
+  "desde la ayuda sin querer de eeuu a la ia china a los techbros valley que se preparan para el di a despue s de las legislativas",
+  "la robotizacio n abre una nueva frontera para el sector asegurador",
+  "los hijos abandonados del siglo"
  ],
  "feeds_iniciados": [
   "https://ine.es/dyngs/Prensa/es/rssNovedades.xml",
@@ -1254,24 +1260,6 @@
   "https://www.antena3.com/noticias/rss/4013050.xml"
  ],
  "registro": [
-  {
-   "fecha": "2026-10-21 17:21",
-   "fuente": "El País Economía",
-   "titulo": "Garamendi mantiene a sus vicepresidentes en CEOE y Sánchez Llibre volverá a ser el enlace con las Cortes",
-   "resultado": "texto insuficiente (muro de pago o página vacía)"
-  },
-  {
-   "fecha": "2026-10-21 17:21",
-   "fuente": "El Mundo Economía",
-   "titulo": "Garamendi premia la fidelidad de Madrid y Cataluña con la vicepresidencia primera para Garrido y las relaciones con las Cortes para Sánchez ",
-   "resultado": "descartada: sin valor propio: es un reparto de cargos internos de la patronal CEOE (vicepresidencias y comisiones) y no es una medida que afecte al bolsillo de una familia. Los temas laborales que menciona de pasada (huelga del 11N, SMI, pensiones) ya los cubrimos en otros artículos."
-  },
-  {
-   "fecha": "2026-10-21 17:21",
-   "fuente": "El Mundo Economía",
-   "titulo": "Euríbor hoy, miércoles 21 de octubre: otro mínimo repunte en su valor",
-   "resultado": "borrador: euribor-hoy-21-octubre-3-263-media-mensual.md"
-  },
   {
    "fecha": "2026-10-21 17:21",
    "fuente": "El Mundo Economía",
@@ -2153,6 +2141,24 @@
    "fuente": "Antena 3 Economía",
    "titulo": "Unas 25.000 personas se manifiestan por las pensiones y reclaman que las mínimas igualen al SMI",
    "resultado": "descartada: sin valor propio: es una manifestación sin medida concreta. La propuesta de Frente Amplio (pensión mínima igual al SMI y jubilación a los 65) ya está publicada en /pensiones/frente-amplio-pension-minima-smi-jubilacion-65/. La noticia no trae cifras, plazos ni trámites nuevos para el lect"
+  },
+  {
+   "fecha": "2026-10-25 00:44",
+   "fuente": "El Mundo Economía",
+   "titulo": "Desde la ayuda (sin querer) de EEUU a la IA china a los 'techbros' Valley, que se preparan para el día después de las legislativas",
+   "resultado": "descartada (filtro previo): Trata de IA, tecnológicas y geopolítica sin medida concreta que afecte al bolsillo de las familias."
+  },
+  {
+   "fecha": "2026-10-25 00:44",
+   "fuente": "ABC Economía",
+   "titulo": "La robotización abre una nueva frontera para el sector asegurador",
+   "resultado": "descartada (filtro previo): Trata del sector asegurador y la robotización, un asunto empresarial sin impacto directo en la economía de casa."
+  },
+  {
+   "fecha": "2026-10-25 00:44",
+   "fuente": "El Mundo Economía",
+   "titulo": "Los hijos abandonados del siglo",
+   "resultado": "descartada: sin valor propio: es un artículo de opinión sobre las finanzas públicas y las protestas de jóvenes en Francia. No trae ninguna medida que afecte al bolsillo de una familia o un trabajador en España, ni permite un ejemplo, un trámite o un enlace a nuestras calculadoras."
   }
  ],
  "escritos": [
