@@ -945,7 +945,15 @@
   "https://elpais.com/economia/2026-10-24/donde-viven-los-caseros-barrios-de-renta-alta-y-zonas-turisticas-concentran-a-quienes-declaran-ingresos-de-alquiler.html",
   "https://www.abc.es/economia/cuentas-corrientes/vive-vecino-salario-pension-ayudas-20261024022206-nt.html",
   "https://www.abc.es/economia/gobierno-quiere-alquiler-indefinido-alemania-reino-unido-20261024020626-nt.html",
-  "https://www.abc.es/economia/precio-gasolina-seguira-igual-caro-primavera-20261024020314-nt.html"
+  "https://www.abc.es/economia/precio-gasolina-seguira-igual-caro-primavera-20261024020314-nt.html",
+  "https://elpais.com/economia/2026-10-24/miles-de-personas-se-manifiestan-en-madrid-en-defensa-del-sistema-de-pensiones-no-se-venden.html",
+  "https://www.europapress.es/economia/laboral-00346/noticia-pensionistas-manifiestan-madrid-reclamar-pensiones-dignas-mejores-salarios-acceso-vivienda-20261024152028.html",
+  "https://www.infobae.com/espana/2026/10/24/cual-es-el-precio-de-la-luz-en-espana-para-este-25-de-octubre/",
+  "https://elpais.com/economia/2026-10-24/miles-de-personas-se-manifiestan-en-madrid-en-defensa-del-sistema-de-pensiones-no-se-venden.html",
+  "https://www.antena3.com/noticias/espana/alberto-nunez-feijoo-promete-iva-cero-mientras-dure-inflacion-anuncia-rebajas-fiscales-jovenes-autonomos_202610246adc9c9b1e53586bfbbb203e.html",
+  "https://www.abc.es/economia/cuentas-corrientes/ultimos-dias-bono-cultural-joven-solicitar-400-20261023013433-nt.html",
+  "https://www.infobae.com/espana/2026/10/24/un-tribunal-niega-la-custodia-a-un-padre-que-debe-16000-euros-en-la-pension-de-sus-hijas-y-fue-condenado-por-abandono-familiar-afirmaba-que-la-madre-no-les-daba-de-comer/",
+  "https://www.elespanol.com/invertia/observatorios/vivienda/20261024/meses-recuperar-piso-euros-coste-factura-media-impago-alquiler-espana/1003744432253_0.html"
  ],
  "titles": [
   "los nueve cambios para la jubilacio n en 2027 segu n el abogado laboralista ignacio solsona",
@@ -1221,7 +1229,12 @@
   "do nde viven los caseros barrios de renta alta y zonas turi sticas concentran a quienes declaran ingresos de alquiler",
   "de que vive tu vecino salario pensio n o ayudas",
   "el gobierno quiere el alquiler indefinido de alemania y reino unido pero sin la proteccio n que da europa a los caseros",
-  "la gasolina seguira igual de cara al menos hasta la pro xima primavera"
+  "la gasolina seguira igual de cara al menos hasta la pro xima primavera",
+  "miles de personas se manifiestan en madrid en defensa del sistema de pensiones no se venden",
+  "alberto nu n ez feijo o promete iva cero mientras dure la inflacio n y anuncia rebajas fiscales para jo venes y auto nomos",
+  "u ltimos di as bono cultural joven co mo solicitar los 400 euros antes del 31 de octubre",
+  "un tribunal niega la custodia a un padre que debe 16 000 euros en la pensio n de sus hijas y fue condenado por abandono familiar afirmaba que la madre no les daba de comer",
+  "nueve meses para recuperar un piso y casi 10 000 euros de coste la factura media del impago del alquiler en espan a"
  ],
  "feeds_iniciados": [
   "https://ine.es/dyngs/Prensa/es/rssNovedades.xml",
@@ -1235,36 +1248,6 @@
   "https://www.antena3.com/noticias/rss/4013050.xml"
  ],
  "registro": [
-  {
-   "fecha": "2026-10-21 01:13",
-   "fuente": "El Mundo Economía",
-   "titulo": "Sánchez carga a la factura del próximo Gobierno subidas a pensionistas y funcionarios que costarán más de 17.600 millones",
-   "resultado": "borrador: funcionarios-subida-sueldo-2027-4-5-sin-fecha.md"
-  },
-  {
-   "fecha": "2026-10-21 01:14",
-   "fuente": "Expansión Economía",
-   "titulo": "El Gobierno aprobará antes de fin de año la subida de sueldo a los funcionarios del 5%",
-   "resultado": "borrador: funcionarios-subida-retroactiva-2026-4-5-2027.md"
-  },
-  {
-   "fecha": "2026-10-21 12:15",
-   "fuente": "BOE",
-   "titulo": "Real Decreto-ley 31/2026, de 20 de octubre, para la mejora de la acción protectora de la Seguridad Social y de otras normas sociales.",
-   "resultado": "borrador: baja-menopausia-sin-cotizacion-minima-decreto-ley.md"
-  },
-  {
-   "fecha": "2026-10-21 12:16",
-   "fuente": "INE (novedades)",
-   "titulo": "21&nbsp;Octubre&nbsp;26. Indicadores Urbanos",
-   "resultado": "borrador: ine-alquiler-precio-vivienda-municipios-2025.md"
-  },
-  {
-   "fecha": "2026-10-21 12:37",
-   "fuente": "20minutos Economía",
-   "titulo": "Cómo pedir las becas de comedor y transporte escolar fuera de plazo",
-   "resultado": "borrador: becas-comedor-transporte-escolar-fuera-plazo.md"
-  },
   {
    "fecha": "2026-10-21 12:37",
    "fuente": "Europa Press Economía",
@@ -2134,6 +2117,36 @@
    "fuente": "ABC Economía",
    "titulo": "La gasolina seguirá igual de cara al menos hasta la próxima primavera",
    "resultado": "borrador: gasolina-diesel-precio-alto-hasta-abril-brent.md"
+  },
+  {
+   "fecha": "2026-10-24 16:02",
+   "fuente": "El País Economía",
+   "titulo": "Miles de personas se manifiestan en Madrid en defensa del sistema de pensiones: “¡No se venden!”",
+   "resultado": "descartada (filtro previo): Manifestación sin medida concreta ni dato nuevo: política sin medida concreta"
+  },
+  {
+   "fecha": "2026-10-24 16:02",
+   "fuente": "Antena 3 Economía",
+   "titulo": "Alberto Núñez Feijóo promete IVA cero mientras dure la inflación y anuncia rebajas fiscales para jóvenes y autónomos",
+   "resultado": "descartada (filtro previo): Promesa electoral ya cubierta por los artículos publicados sobre los programas tras el 29N y sobre la promesa de Feijóo sobre el SMI y las pensiones"
+  },
+  {
+   "fecha": "2026-10-24 16:02",
+   "fuente": "ABC Economía",
+   "titulo": "Últimos días Bono Cultural Joven: cómo solicitar los 400 euros antes del 31 de octubre",
+   "resultado": "borrador: bono-cultural-joven-400-euros-31-octubre.md"
+  },
+  {
+   "fecha": "2026-10-24 16:03",
+   "fuente": "Infobae España",
+   "titulo": "Un tribunal niega la custodia a un padre que debe 16.000 euros en la pensión de sus hijas y fue condenado por “abandono familiar”: afirmaba ",
+   "resultado": "descartada: sin valor propio: es un caso familiar concreto de la Audiencia Provincial de Cádiz (custodia de una menor de 14 años). No cambia lo que paga o cobra nadie ni fija un criterio general. La fuente no da número de sentencia ni datos útiles para el lector, como plazos o trámites."
+  },
+  {
+   "fecha": "2026-10-24 16:03",
+   "fuente": "El Español Invertia",
+   "titulo": "Nueve meses para recuperar un piso y casi 10.000 euros de coste: la factura media del impago del alquiler en España",
+   "resultado": "borrador: impago-alquiler-278-dias-9700-euros-seag.md"
   }
  ],
  "escritos": [
@@ -2390,6 +2403,16 @@
   {
    "title": "Gasolina a 1,75 € y diésel casi a 2 €: caros hasta abril",
    "url": "/luz/gasolina-diesel-precio-alto-hasta-abril-brent/",
+   "guia": false
+  },
+  {
+   "title": "Bono Cultural: nacidos en 2008, 400 € hasta el 31 de octubre",
+   "url": "/paro/bono-cultural-joven-400-euros-31-octubre/",
+   "guia": false
+  },
+  {
+   "title": "Impago del alquiler: 278 días y 9.700 € de coste al casero",
+   "url": "/vivienda/impago-alquiler-278-dias-9700-euros-seag/",
    "guia": false
   }
  ]
