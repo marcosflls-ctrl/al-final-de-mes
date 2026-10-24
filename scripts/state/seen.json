@@ -943,7 +943,9 @@
   "https://www.elespanol.com/invertia/disruptores/grandes-actores/empresas/20261024/funciona-exoesqueleto-industrial-pruebo-sistema-ayuda-levantar-cargas-almacenes-logisticos/1003744432304_0.html",
   "https://www.20minutos.es/lainformacion/economia-y-finanzas/como-pedir-pago-anticipado-deduccion-familia-numerosa-monoparental_7045290_0.html",
   "https://elpais.com/economia/2026-10-24/donde-viven-los-caseros-barrios-de-renta-alta-y-zonas-turisticas-concentran-a-quienes-declaran-ingresos-de-alquiler.html",
-  "https://www.abc.es/economia/cuentas-corrientes/vive-vecino-salario-pension-ayudas-20261024022206-nt.html"
+  "https://www.abc.es/economia/cuentas-corrientes/vive-vecino-salario-pension-ayudas-20261024022206-nt.html",
+  "https://www.abc.es/economia/gobierno-quiere-alquiler-indefinido-alemania-reino-unido-20261024020626-nt.html",
+  "https://www.abc.es/economia/precio-gasolina-seguira-igual-caro-primavera-20261024020314-nt.html"
  ],
  "titles": [
   "los nueve cambios para la jubilacio n en 2027 segu n el abogado laboralista ignacio solsona",
@@ -1217,7 +1219,9 @@
   "asi funciona un exoesqueleto industrial pruebo el sistema que ayuda a levantar cargas en los almacenes logi sticos",
   "co mo pedir el pago anticipado de la deduccio n por familia numerosa o monoparental",
   "do nde viven los caseros barrios de renta alta y zonas turi sticas concentran a quienes declaran ingresos de alquiler",
-  "de que vive tu vecino salario pensio n o ayudas"
+  "de que vive tu vecino salario pensio n o ayudas",
+  "el gobierno quiere el alquiler indefinido de alemania y reino unido pero sin la proteccio n que da europa a los caseros",
+  "la gasolina seguira igual de cara al menos hasta la pro xima primavera"
  ],
  "feeds_iniciados": [
   "https://ine.es/dyngs/Prensa/es/rssNovedades.xml",
@@ -1231,18 +1235,6 @@
   "https://www.antena3.com/noticias/rss/4013050.xml"
  ],
  "registro": [
-  {
-   "fecha": "2026-10-20 23:56",
-   "fuente": "El Mundo Economía",
-   "titulo": "Waymo, la empresa de coches autónomos de Google, recibe la autorización para circular en Madrid y lanza sus primeras pruebas",
-   "resultado": "descartada: sin valor propio: noticia empresarial sobre Waymo y sus pruebas de robotaxis en Madrid. No hay medida, trámite ni cifra que afecte al bolsillo de una familia en España, y no permite aportar un ejemplo, un plazo ni una calculadora nuestra."
-  },
-  {
-   "fecha": "2026-10-20 23:57",
-   "fuente": "El Mundo Economía",
-   "titulo": "Es oficial: llega una nueva deducción por alquiler de hasta 1.163 euros para quienes cumplan estos requisitos",
-   "resultado": "borrador: deduccion-alquiler-irpf-1163-euros-requisitos.md"
-  },
   {
    "fecha": "2026-10-21 01:13",
    "fuente": "El Mundo Economía",
@@ -2130,6 +2122,18 @@
    "fuente": "ABC Economía",
    "titulo": "¿De qué vive tu vecino? Salario, pensión o ayudas",
    "resultado": "borrador: ine-atlas-renta-hogares-sueldo-pension-ayudas.md"
+  },
+  {
+   "fecha": "2026-10-24 11:49",
+   "fuente": "ABC Economía",
+   "titulo": "El Gobierno quiere el alquiler indefinido de Alemania y Reino Unido, pero sin la protección que da Europa a los caseros",
+   "resultado": "borrador: alquiler-indefinido-espana-alemania-reino-unido.md"
+  },
+  {
+   "fecha": "2026-10-24 11:50",
+   "fuente": "ABC Economía",
+   "titulo": "La gasolina seguirá igual de cara al menos hasta la próxima primavera",
+   "resultado": "borrador: gasolina-diesel-precio-alto-hasta-abril-brent.md"
   }
  ],
  "escritos": [
@@ -2376,6 +2380,16 @@
   {
    "title": "Más de la mitad vive del sueldo y 1 de cada 4 de la pensión",
    "url": "/paro/ine-atlas-renta-hogares-sueldo-pension-ayudas/",
+   "guia": false
+  },
+  {
+   "title": "Alquiler indefinido: España frente a Alemania y Reino Unido",
+   "url": "/vivienda/alquiler-indefinido-espana-alemania-reino-unido/",
+   "guia": false
+  },
+  {
+   "title": "Gasolina a 1,75 € y diésel casi a 2 €: caros hasta abril",
+   "url": "/luz/gasolina-diesel-precio-alto-hasta-abril-brent/",
    "guia": false
   }
  ]
