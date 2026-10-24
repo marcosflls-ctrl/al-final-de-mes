@@ -953,7 +953,9 @@
   "https://www.antena3.com/noticias/espana/alberto-nunez-feijoo-promete-iva-cero-mientras-dure-inflacion-anuncia-rebajas-fiscales-jovenes-autonomos_202610246adc9c9b1e53586bfbbb203e.html",
   "https://www.abc.es/economia/cuentas-corrientes/ultimos-dias-bono-cultural-joven-solicitar-400-20261023013433-nt.html",
   "https://www.infobae.com/espana/2026/10/24/un-tribunal-niega-la-custodia-a-un-padre-que-debe-16000-euros-en-la-pension-de-sus-hijas-y-fue-condenado-por-abandono-familiar-afirmaba-que-la-madre-no-les-daba-de-comer/",
-  "https://www.elespanol.com/invertia/observatorios/vivienda/20261024/meses-recuperar-piso-euros-coste-factura-media-impago-alquiler-espana/1003744432253_0.html"
+  "https://www.elespanol.com/invertia/observatorios/vivienda/20261024/meses-recuperar-piso-euros-coste-factura-media-impago-alquiler-espana/1003744432253_0.html",
+  "https://www.elmundo.es/economia/2026/10/24/6adcc9b421efa06d528b4576.html",
+  "https://www.infobae.com/espana/2026/10/24/frente-amplio-presenta-su-plan-de-pensiones-jubilacion-a-los-65-anos-y-cuantia-minima-igual-al-smi/"
  ],
  "titles": [
   "los nueve cambios para la jubilacio n en 2027 segu n el abogado laboralista ignacio solsona",
@@ -1234,7 +1236,9 @@
   "alberto nu n ez feijo o promete iva cero mientras dure la inflacio n y anuncia rebajas fiscales para jo venes y auto nomos",
   "u ltimos di as bono cultural joven co mo solicitar los 400 euros antes del 31 de octubre",
   "un tribunal niega la custodia a un padre que debe 16 000 euros en la pensio n de sus hijas y fue condenado por abandono familiar afirmaba que la madre no les daba de comer",
-  "nueve meses para recuperar un piso y casi 10 000 euros de coste la factura media del impago del alquiler en espan a"
+  "nueve meses para recuperar un piso y casi 10 000 euros de coste la factura media del impago del alquiler en espan a",
+  "miles de pensionistas salen a la calle a exigir subidas de las pensiones del 6 mejores salarios y acceso a la vivienda",
+  "frente amplio presenta su plan de pensiones jubilacio n a los 65 an os y cuanti a mi nima igual al smi"
  ],
  "feeds_iniciados": [
   "https://ine.es/dyngs/Prensa/es/rssNovedades.xml",
@@ -1248,18 +1252,6 @@
   "https://www.antena3.com/noticias/rss/4013050.xml"
  ],
  "registro": [
-  {
-   "fecha": "2026-10-21 12:37",
-   "fuente": "Europa Press Economía",
-   "titulo": "El Gobierno garantiza subidas del SMI y de las pensiones e intervenir \"de forma más ambiciosa\" en vivienda",
-   "resultado": "descartada: sin valor propio: entrevista política con promesas genéricas (SMI, pensiones ligadas al IPC, 'intervenir más' en vivienda) y sin medida, cifra ni fecha nuevas. Los contactos de Trabajo con los expertos del SMI y la garantía de subida de pensiones y SMI con Gobierno en funciones ya están "
-  },
-  {
-   "fecha": "2026-10-21 12:37",
-   "fuente": "El Mundo Economía",
-   "titulo": "El mapa del alquiler en el que aterrizan los decretos Maricarmen: uno de cada tres contratos es temporal y el stock permanente se desploma u",
-   "resultado": "borrador: alquiler-temporal-34-oferta-permanente-cae-10-idealista.md"
-  },
   {
    "fecha": "2026-10-21 17:21",
    "fuente": "20minutos Economía",
@@ -2147,6 +2139,18 @@
    "fuente": "El Español Invertia",
    "titulo": "Nueve meses para recuperar un piso y casi 10.000 euros de coste: la factura media del impago del alquiler en España",
    "resultado": "borrador: impago-alquiler-278-dias-9700-euros-seag.md"
+  },
+  {
+   "fecha": "2026-10-24 19:29",
+   "fuente": "El Mundo Economía",
+   "titulo": "Miles de pensionistas salen a la calle a exigir subidas de las pensiones del 6%, mejores salarios y acceso a la vivienda",
+   "resultado": "descartada: sin valor propio: es una manifestación con reivindicaciones (subida del 6% de las pensiones en 2027, pensiones mínimas al nivel del SMI, auditoría pública). No hay ninguna medida aprobada ni anunciada por el Gobierno, y las cifras de asistencia no cambian nada para el bolsillo del lector"
+  },
+  {
+   "fecha": "2026-10-24 19:30",
+   "fuente": "Infobae España",
+   "titulo": "Frente Amplio presenta su plan de pensiones: jubilación a los 65 años y cuantía mínima igual al SMI",
+   "resultado": "borrador: frente-amplio-pension-minima-smi-jubilacion-65.md"
   }
  ],
  "escritos": [
@@ -2413,6 +2417,11 @@
   {
    "title": "Impago del alquiler: 278 días y 9.700 € de coste al casero",
    "url": "/vivienda/impago-alquiler-278-dias-9700-euros-seag/",
+   "guia": false
+  },
+  {
+   "title": "Frente Amplio propone pensión mínima igual al SMI: 1.221 €",
+   "url": "/pensiones/frente-amplio-pension-minima-smi-jubilacion-65/",
    "guia": false
   }
  ]
