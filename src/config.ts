@@ -18,8 +18,9 @@ export const SITE = {
   // AdSense: se puede usar la misma cuenta de Zona Leonida añadiendo este sitio en AdSense.
   // Déjalo vacío hasta que Google apruebe el sitio nuevo.
   adsenseClient: 'ca-pub-2093028838178784',
-  // Cloudflare Web Analytics (sin cookies): pega el token cuando lo crees en Cloudflare.
-  cfAnalyticsToken: '',
+  // Contador de visitas GoatCounter (gratis, sin cookies). Es el nombre de tu cuenta en goatcounter.com.
+  // Déjalo vacío para desactivarlo.
+  goatcounterCode: 'alfinaldemes',
   // Redes sociales (deja vacío lo que aún no exista)
   social: { telegram: '', whatsapp: '', facebook: '', x: '' },
   // Webs hermanas, para enlazarlas en el pie
