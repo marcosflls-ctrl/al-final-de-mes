@@ -971,7 +971,9 @@
   "https://www.elconfidencial.com/economia/2026-10-25/gonzalo-bernardos-economista_4451414/",
   "https://www.elespanol.com/invertia/economia/macroeconomia/20261025/compromisos-preelectorales-sanchez-hipotecan-millones-gasto-publico/1003744432351_0.html",
   "https://www.europapress.es/economia/laboral-00346/noticia-exencion-fiscal-subida-smi-pendiente-cambio-legal-diputacion-permanente-nuevo-congreso-20261025102649.html",
-  "https://www.europapress.es/economia/laboral-00346/noticia-sector-metal-empieza-poner-freno-absentismo-limitando-complementos-bajas-medicas-20261025094253.html"
+  "https://www.europapress.es/economia/laboral-00346/noticia-sector-metal-empieza-poner-freno-absentismo-limitando-complementos-bajas-medicas-20261025094253.html",
+  "https://www.elespanol.com/invertia/observatorios/vivienda/20261025/inmigrantes-colapsan-inmobiliarias-ceuta-pisos-patera-siguen-inundando-ciudad/1003744432723_0.html",
+  "https://www.abc.es/economia/cuentas-corrientes/cambio-hora-dispara-factura-luz-precios-altos-20261025021511-nt.html"
  ],
  "titles": [
   "los nueve cambios para la jubilacio n en 2027 segu n el abogado laboralista ignacio solsona",
@@ -1269,7 +1271,9 @@
   "gonzalo bernardos economista deberi amos retrasar la edad de jubilacio n ya que ha aumentado la esperanza de vida y en la mayori a de los pai ses europeos tambie n se esta haciendo",
   "los compromisos preelectorales de sa nchez hipotecan casi 20 000 millones de gasto pu blico de 2027",
   "la exencio n fiscal de la subida del smi pendiente de un cambio legal en la diputacio n permanente o el nuevo congreso",
-  "el sector del metal empieza a poner freno al absentismo limitando los complementos por bajas me dicas"
+  "el sector del metal empieza a poner freno al absentismo limitando los complementos por bajas me dicas",
+  "los inmigrantes colapsan las inmobiliarias de ceuta mientras los pisos patera siguen inundando la ciudad",
+  "el cambio de hora dispara la factura de la luz con los precios ma s altos en cuatro an os"
  ],
  "feeds_iniciados": [
   "https://ine.es/dyngs/Prensa/es/rssNovedades.xml",
@@ -1283,18 +1287,6 @@
   "https://www.antena3.com/noticias/rss/4013050.xml"
  ],
  "registro": [
-  {
-   "fecha": "2026-10-21 22:13",
-   "fuente": "ABC Economía",
-   "titulo": "La CNMC expedienta a Exolum por abuso de competencia y posibles subidas de precios en plena crisis de combustibles",
-   "resultado": "descartada: sin valor propio: es un expediente sancionador de la CNMC a una empresa (Exolum) por posible abuso de posición dominante. El propio regulador dice que no prejuzga el resultado y que hay hasta 24 meses para resolver. No hay medida, cifra ni trámite que afecte al bolsillo del lector, y no "
-  },
-  {
-   "fecha": "2026-10-21 22:13",
-   "fuente": "ABC Economía",
-   "titulo": "Ferratum ofrece un 3,4%, Bankinter garantiza el 3% y Unicaja sube al 2,55%: así está la guerra del ahorro",
-   "resultado": "descartada: Contenido patrocinado por Bankinter sobre cuentas remuneradas. Es ahorro bancario, tema que cubre Dinero en Claro (dineroenclaro.com), y no hay medida oficial ni dato que afecte directamente a la economía de casa."
-  },
   {
    "fecha": "2026-10-21 22:13",
    "fuente": "ABC Economía",
@@ -2182,6 +2174,18 @@
    "fuente": "Europa Press Economía",
    "titulo": "El sector del metal empieza a poner freno al absentismo limitando los complementos por bajas médicas",
    "resultado": "borrador: metal-convenios-recortan-complemento-baja-absentismo.md"
+  },
+  {
+   "fecha": "2026-10-25 11:10",
+   "fuente": "El Español Invertia",
+   "titulo": "Los inmigrantes colapsan las inmobiliarias de Ceuta mientras los 'pisos patera' siguen inundando la ciudad",
+   "resultado": "descartada (filtro previo): Trata de inmobiliarias y 'pisos patera' en Ceuta con enfoque político y sin medida concreta ni dato que afecte al bolsillo de las familias; cae en lo que las normas descartan (política sin medida, tono de opinión)."
+  },
+  {
+   "fecha": "2026-10-25 11:10",
+   "fuente": "ABC Economía",
+   "titulo": "El cambio de hora dispara la factura de la luz con los precios más altos en cuatro años",
+   "resultado": "borrador: cambio-hora-luz-precio-noche-pvpc-200-mwh.md"
   }
  ],
  "escritos": [
@@ -2463,6 +2467,11 @@
   {
    "title": "Metal: convenios limitan el 100% del sueldo en la baja",
    "url": "/paro/metal-convenios-recortan-complemento-baja-absentismo/",
+   "guia": false
+  },
+  {
+   "title": "Cambio de hora: la luz supera los 20 cts/kWh de noche",
+   "url": "/luz/cambio-hora-luz-precio-noche-pvpc-200-mwh/",
    "guia": false
   }
  ]
