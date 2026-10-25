@@ -983,7 +983,9 @@
   "https://www.infobae.com/espana/2026/10/25/la-teoria-de-friedrich-hayek-economista-autriaco-sobre-la-subida-de-precios-despues-de-un-periodo-de-inflacion-no-podemos-salir-sin-un-desempleo-considerable/",
   "https://www.elconfidencial.com/economia/2026-10-25/cobrar-alquiler-pareja-reparto-gastos_4451547/",
   "https://www.idealista.com/news/inmobiliario/vivienda/2026/10/25/920217-de-la-moraleja-al-pla-del-remei-los-precios-de-la-vivienda-en-los-barrios-mas-ricos",
-  "https://www.idealista.com/news/inmobiliario/vivienda/2026/10/25/914660-metodo-flylady-la-sencilla-rutina-que-ayuda-a-mantener-tu-hogar-en-orden"
+  "https://www.idealista.com/news/inmobiliario/vivienda/2026/10/25/914660-metodo-flylady-la-sencilla-rutina-que-ayuda-a-mantener-tu-hogar-en-orden",
+  "https://www.abc.es/economia/peso-regulatorio-arruga-competitividad-sector-cosmetica-perfume-20261026000500-nt.html",
+  "https://www.expansion.com/economia/politica/2026/10/25/3-6-millones-trabajadores-blindado-sueldo-escalada-ipc.html"
  ],
  "titles": [
   "los nueve cambios para la jubilacio n en 2027 segu n el abogado laboralista ignacio solsona",
@@ -1292,7 +1294,9 @@
   "la teori a de friedrich hayek economista autriaco sobre la subida de precios despue s de un peri odo de inflacio n no podemos salir sin un desempleo considerable",
   "si le cobro el alquiler a mi pareja sigue siendo mi pareja lo que el nuevo reparto de gastos dice del cambio en los hogares",
   "de la moraleja al pla del remei los precios de la vivienda en los barrios ma s ricos de espan a",
-  "me todo flylady la sencilla rutina que ayuda a mantener tu hogar en orden"
+  "me todo flylady la sencilla rutina que ayuda a mantener tu hogar en orden",
+  "el peso regulatorio arruga la competitividad del sector de la cosme tica y el perfume",
+  "ma s de 3 6 millones de trabajadores tienen blindado el sueldo ante la escalada del ipc"
  ],
  "feeds_iniciados": [
   "https://ine.es/dyngs/Prensa/es/rssNovedades.xml",
@@ -1306,18 +1310,6 @@
   "https://www.antena3.com/noticias/rss/4013050.xml"
  ],
  "registro": [
-  {
-   "fecha": "2026-10-22 01:25",
-   "fuente": "ABC Economía",
-   "titulo": "Qué va a pasar con las pensiones en España a partir de enero de 2027 si no se forma Gobierno tras las elecciones del 29N",
-   "resultado": "descartada: repetición: ya publicamos 'Cuerpo: pensiones y SMI subirán aunque haya Gobierno en funciones', 'Pensiones 2027: la subida se sabrá el 27 de noviembre' y las guías de subida de pensiones y Gobierno en funciones. La fuente solo repite que la revalorización está garantizada por el artículo "
-  },
-  {
-   "fecha": "2026-10-22 01:25",
-   "fuente": "ABC Economía",
-   "titulo": "Alfonso Muñoz, funcionario de la Seguridad Social: «El gasto anual en pensiones es un tercio de los presupuestos generales. Nos enfrentamos ",
-   "resultado": "descartada: sin valor propio: es una entrevista de opinión a un funcionario sin ninguna medida, cifra oficial ni fecha nueva. El único dato (unos 200.000 millones de gasto anual en pensiones, un tercio de los Presupuestos) ya está cubierto en el artículo publicado sobre el coste mensual de las pensi"
-  },
   {
    "fecha": "2026-10-22 01:25",
    "fuente": "ABC Economía",
@@ -2205,6 +2197,18 @@
    "fuente": "Idealista News (vivienda)",
    "titulo": "Método FlyLady: la sencilla rutina que ayuda a mantener tu hogar en orden",
    "resultado": "descartada (filtro previo): consejos de organización del hogar; fuera de tema (no afecta a la economía de casa en el sentido de la web)"
+  },
+  {
+   "fecha": "2026-10-26 00:34",
+   "fuente": "ABC Economía",
+   "titulo": "El peso regulatorio arruga la competitividad del sector de la cosmética y el perfume",
+   "resultado": "descartada (filtro previo): Trata de regulación y competitividad de un sector empresarial, sin efecto directo en el bolsillo de las familias."
+  },
+  {
+   "fecha": "2026-10-26 00:35",
+   "fuente": "Expansión Economía",
+   "titulo": "Más de 3,6 millones de trabajadores tienen blindado el sueldo ante la escalada del IPC",
+   "resultado": "borrador: clausula-garantia-salarial-ipc-3-6-millones-convenio.md"
   }
  ],
  "escritos": [
@@ -2491,6 +2495,11 @@
   {
    "title": "Cambio de hora: la luz supera los 20 cts/kWh de noche",
    "url": "/luz/cambio-hora-luz-precio-noche-pvpc-200-mwh/",
+   "guia": false
+  },
+  {
+   "title": "3,6 millones de asalariados tienen cláusula IPC en convenio",
+   "url": "/paro/clausula-garantia-salarial-ipc-3-6-millones-convenio/",
    "guia": false
   }
  ]
