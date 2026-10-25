@@ -980,7 +980,10 @@
   "https://www.antena3.com/noticias/espana/feijoo-acusa-sanchez-jugar-fuego-disturbios-barcelona-promete-bajar-impuestos-subir-pensiones_202610256addfe50f655b65cc389a31e.html",
   "https://www.elconfidencial.com/economia/2026-10-25/jubilada-anticipada-pesar-esfuerzo-recortado-pension_4452251/",
   "https://www.infobae.com/espana/2026/10/25/el-economista-gonzalo-bernardos-asegura-que-el-sistema-de-pensiones-espanol-es-absolutamente-viable-pero-necesita-ajustes-el-primero-es-la-edad-de-jubilacion/",
-  "https://www.infobae.com/espana/2026/10/25/la-teoria-de-friedrich-hayek-economista-autriaco-sobre-la-subida-de-precios-despues-de-un-periodo-de-inflacion-no-podemos-salir-sin-un-desempleo-considerable/"
+  "https://www.infobae.com/espana/2026/10/25/la-teoria-de-friedrich-hayek-economista-autriaco-sobre-la-subida-de-precios-despues-de-un-periodo-de-inflacion-no-podemos-salir-sin-un-desempleo-considerable/",
+  "https://www.elconfidencial.com/economia/2026-10-25/cobrar-alquiler-pareja-reparto-gastos_4451547/",
+  "https://www.idealista.com/news/inmobiliario/vivienda/2026/10/25/920217-de-la-moraleja-al-pla-del-remei-los-precios-de-la-vivienda-en-los-barrios-mas-ricos",
+  "https://www.idealista.com/news/inmobiliario/vivienda/2026/10/25/914660-metodo-flylady-la-sencilla-rutina-que-ayuda-a-mantener-tu-hogar-en-orden"
  ],
  "titles": [
   "los nueve cambios para la jubilacio n en 2027 segu n el abogado laboralista ignacio solsona",
@@ -1286,7 +1289,10 @@
   "feijo o acusa a sa nchez de jugar con fuego tras los disturbios en barcelona y promete bajar impuestos y subir pensiones",
   "carmen jubilada anticipada con 45 an os cotizados a pesar de todo mi esfuerzo me han recortado la pensio n injustamente mes a mes",
   "el economista gonzalo bernardos asegura que el sistema de pensiones espan ol es absolutamente viable pero necesita ajustes el primero es la edad de jubilacio n",
-  "la teori a de friedrich hayek economista autriaco sobre la subida de precios despue s de un peri odo de inflacio n no podemos salir sin un desempleo considerable"
+  "la teori a de friedrich hayek economista autriaco sobre la subida de precios despue s de un peri odo de inflacio n no podemos salir sin un desempleo considerable",
+  "si le cobro el alquiler a mi pareja sigue siendo mi pareja lo que el nuevo reparto de gastos dice del cambio en los hogares",
+  "de la moraleja al pla del remei los precios de la vivienda en los barrios ma s ricos de espan a",
+  "me todo flylady la sencilla rutina que ayuda a mantener tu hogar en orden"
  ],
  "feeds_iniciados": [
   "https://ine.es/dyngs/Prensa/es/rssNovedades.xml",
@@ -1300,24 +1306,6 @@
   "https://www.antena3.com/noticias/rss/4013050.xml"
  ],
  "registro": [
-  {
-   "fecha": "2026-10-22 00:47",
-   "fuente": "Expansión Economía",
-   "titulo": "Los pequeños caseros y los futuros inquilinos, los más castigados por los decretos de vivienda",
-   "resultado": "borrador: fedea-decretos-vivienda-alquiler-caseros-indemnizacion.md"
-  },
-  {
-   "fecha": "2026-10-22 00:48",
-   "fuente": "ABC Economía",
-   "titulo": "La obligación de que el propietario asuma el seguro de impago presiona al alza los nuevos alquileres",
-   "resultado": "borrador: seguro-impago-alquiler-propietario-decreto-pendiente.md"
-  },
-  {
-   "fecha": "2026-10-22 01:25",
-   "fuente": "ABC Economía",
-   "titulo": "El método definitivo para descargar la nota simple de una casa en tres pasos y sin moverte del sofá",
-   "resultado": "descartada: sin valor propio: es un tutorial genérico sin novedad (ninguna norma, fecha ni cambio de requisitos). No da el precio, ni el enlace oficial del Registro, ni la fecha de la supuesta simplificación de la plataforma. Tampoco permite aportar un cálculo ni una guía nuestra."
-  },
   {
    "fecha": "2026-10-22 01:25",
    "fuente": "ABC Economía",
@@ -2199,6 +2187,24 @@
    "fuente": "Infobae España",
    "titulo": "La teoría de Friedrich Hayek, economista autriaco, sobre la subida de precios: “Después de un período de inflación, no podemos salir sin un ",
    "resultado": "descartada: sin valor propio: es un texto de opinión sobre una teoría económica de Hayek (entrevista de 1992), sin medida, cifra, fecha ni dato oficial nuevo que afecte al bolsillo del lector en España."
+  },
+  {
+   "fecha": "2026-10-25 22:16",
+   "fuente": "El Confidencial Economía",
+   "titulo": "Si le cobro el alquiler a mi pareja, ¿sigue siendo mi pareja? Lo que el nuevo reparto de gastos dice del cambio en los hogares",
+   "resultado": "descartada (filtro previo): opinión sobre reparto de gastos en pareja; no es una medida ni un dato oficial, fuera de las secciones de la web"
+  },
+  {
+   "fecha": "2026-10-25 22:16",
+   "fuente": "Idealista News (vivienda)",
+   "titulo": "De La Moraleja al Pla del Remei: los precios de la vivienda en los barrios más ricos de España",
+   "resultado": "descartada (filtro previo): reportaje de precios por barrio; repite el enfoque de 'Comprar casa: de 57.698 € en Puertollano a 981.485 € en Calviá' ya publicado y no aporta una novedad normativa ni un dato nuevo claro"
+  },
+  {
+   "fecha": "2026-10-25 22:16",
+   "fuente": "Idealista News (vivienda)",
+   "titulo": "Método FlyLady: la sencilla rutina que ayuda a mantener tu hogar en orden",
+   "resultado": "descartada (filtro previo): consejos de organización del hogar; fuera de tema (no afecta a la economía de casa en el sentido de la web)"
   }
  ],
  "escritos": [
