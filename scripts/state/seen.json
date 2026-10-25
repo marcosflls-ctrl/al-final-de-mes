@@ -979,7 +979,8 @@
   "https://www.infobae.com/espana/2026/10/25/precio-de-la-luz-en-espana-este-26-de-octubre/",
   "https://www.antena3.com/noticias/espana/feijoo-acusa-sanchez-jugar-fuego-disturbios-barcelona-promete-bajar-impuestos-subir-pensiones_202610256addfe50f655b65cc389a31e.html",
   "https://www.elconfidencial.com/economia/2026-10-25/jubilada-anticipada-pesar-esfuerzo-recortado-pension_4452251/",
-  "https://www.infobae.com/espana/2026/10/25/el-economista-gonzalo-bernardos-asegura-que-el-sistema-de-pensiones-espanol-es-absolutamente-viable-pero-necesita-ajustes-el-primero-es-la-edad-de-jubilacion/"
+  "https://www.infobae.com/espana/2026/10/25/el-economista-gonzalo-bernardos-asegura-que-el-sistema-de-pensiones-espanol-es-absolutamente-viable-pero-necesita-ajustes-el-primero-es-la-edad-de-jubilacion/",
+  "https://www.infobae.com/espana/2026/10/25/la-teoria-de-friedrich-hayek-economista-autriaco-sobre-la-subida-de-precios-despues-de-un-periodo-de-inflacion-no-podemos-salir-sin-un-desempleo-considerable/"
  ],
  "titles": [
   "los nueve cambios para la jubilacio n en 2027 segu n el abogado laboralista ignacio solsona",
@@ -1284,7 +1285,8 @@
   "precio de la luz en espan a este 26 de octubre",
   "feijo o acusa a sa nchez de jugar con fuego tras los disturbios en barcelona y promete bajar impuestos y subir pensiones",
   "carmen jubilada anticipada con 45 an os cotizados a pesar de todo mi esfuerzo me han recortado la pensio n injustamente mes a mes",
-  "el economista gonzalo bernardos asegura que el sistema de pensiones espan ol es absolutamente viable pero necesita ajustes el primero es la edad de jubilacio n"
+  "el economista gonzalo bernardos asegura que el sistema de pensiones espan ol es absolutamente viable pero necesita ajustes el primero es la edad de jubilacio n",
+  "la teori a de friedrich hayek economista autriaco sobre la subida de precios despue s de un peri odo de inflacio n no podemos salir sin un desempleo considerable"
  ],
  "feeds_iniciados": [
   "https://ine.es/dyngs/Prensa/es/rssNovedades.xml",
@@ -1298,12 +1300,6 @@
   "https://www.antena3.com/noticias/rss/4013050.xml"
  ],
  "registro": [
-  {
-   "fecha": "2026-10-22 00:47",
-   "fuente": "El Mundo Economía",
-   "titulo": "La única luz de un edificio fantasma: los chinos que viven entre las ruinas de la crisis inmobiliaria",
-   "resultado": "descartada: sin valor propio: reportaje sobre la crisis inmobiliaria en China (edificios sin terminar, caso Evergrande). Es otro país y no afecta al bolsillo de una familia en España, ni permite ejemplo, trámite ni enlace a nuestras guías."
-  },
   {
    "fecha": "2026-10-22 00:47",
    "fuente": "Expansión Economía",
@@ -2197,6 +2193,12 @@
    "fuente": "Infobae España",
    "titulo": "El economista Gonzalo Bernardos asegura que el sistema de pensiones español “es absolutamente viable”, pero necesita ajustes: “El primero es",
    "resultado": "descartada: sin valor propio: es una opinión de un economista en televisión sobre la viabilidad de las pensiones. No hay medida, norma, dato oficial ni cambio de requisitos. El déficit de más de 70.000 millones y el 80,4 % de tasa de sustitución son cifras que cita él, sin respaldo oficial. No permi"
+  },
+  {
+   "fecha": "2026-10-25 19:26",
+   "fuente": "Infobae España",
+   "titulo": "La teoría de Friedrich Hayek, economista autriaco, sobre la subida de precios: “Después de un período de inflación, no podemos salir sin un ",
+   "resultado": "descartada: sin valor propio: es un texto de opinión sobre una teoría económica de Hayek (entrevista de 1992), sin medida, cifra, fecha ni dato oficial nuevo que afecte al bolsillo del lector en España."
   }
  ],
  "escritos": [
