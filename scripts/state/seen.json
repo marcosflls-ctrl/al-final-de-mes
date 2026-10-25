@@ -959,7 +959,19 @@
   "https://www.antena3.com/noticias/economia/25000-personas-manifiestan-pensiones-reclaman-que-minimas-igualen-smi_202610246add05b2f655b65cc387f7ad.html",
   "https://www.elmundo.es/economia/macroeconomia/2026/10/25/6adb6fae21efa0e0278b45b1.html",
   "https://www.abc.es/economia/robotizacion-abre-nueva-frontera-sector-asegurador-20261026000300-nt.html",
-  "https://www.elmundo.es/economia/macroeconomia/2026/10/25/6ada40a8fc6c837f328b45a0.html"
+  "https://www.elmundo.es/economia/macroeconomia/2026/10/25/6ada40a8fc6c837f328b45a0.html",
+  "https://www.20minutos.es/lainformacion/economia-y-finanzas/gonzalo-bernardos-economista-sobre-las-pensiones-deberiamos-retrasar-edad-jubilacion_7053045_0.html",
+  "https://elpais.com/economia/vivienda/2026-10-25/el-modelo-vasco-para-la-crisis-de-la-vivienda-mas-pisos-protegidos-reserva-de-suelo-y-hasta-reconvertir-una-antigua-carcel.html",
+  "https://www.elmundo.es/economia/2026/10/25/6addcd56fc6c832d1f8b456d.html",
+  "https://www.abc.es/economia/oscar-vara-economista-sobre-problema-vivienda-espana-20261025073000-nt.html",
+  "https://www.abc.es/economia/espana-aprueba-dos-normas-dia-cinco-paises-20261025023522-nt.html",
+  "https://www.abc.es/economia/pais-tiendas-vacias-50000-locales-cerrados-cuestionan-20261025023334-nt.html",
+  "https://www.abc.es/economia/zurdos-camaleon-infiltran-tablero-empresarial-vira-derecha-20261025023310-nt.html",
+  "https://www.abc.es/economia/uber-google-bolt-lanzan-coches-autonomos-espana-20261025022455-nt.html",
+  "https://www.elconfidencial.com/economia/2026-10-25/gonzalo-bernardos-economista_4451414/",
+  "https://www.elespanol.com/invertia/economia/macroeconomia/20261025/compromisos-preelectorales-sanchez-hipotecan-millones-gasto-publico/1003744432351_0.html",
+  "https://www.europapress.es/economia/laboral-00346/noticia-exencion-fiscal-subida-smi-pendiente-cambio-legal-diputacion-permanente-nuevo-congreso-20261025102649.html",
+  "https://www.europapress.es/economia/laboral-00346/noticia-sector-metal-empieza-poner-freno-absentismo-limitando-complementos-bajas-medicas-20261025094253.html"
  ],
  "titles": [
   "los nueve cambios para la jubilacio n en 2027 segu n el abogado laboralista ignacio solsona",
@@ -1246,7 +1258,18 @@
   "unas 25 000 personas se manifiestan por las pensiones y reclaman que las mi nimas igualen al smi",
   "desde la ayuda sin querer de eeuu a la ia china a los techbros valley que se preparan para el di a despue s de las legislativas",
   "la robotizacio n abre una nueva frontera para el sector asegurador",
-  "los hijos abandonados del siglo"
+  "los hijos abandonados del siglo",
+  "el modelo vasco para la crisis de la vivienda ma s pisos protegidos reserva de suelo y hasta reconvertir una antigua ca rcel",
+  "los trabajadores que cobran el smi pagara n irpf si el gobierno no aprueba otro ajuste fiscal en la diputacio n permanente o en 2027",
+  "o scar vara economista sobre el problema de la vivienda en espan a el gobierno teni a que haber tomado medidas para solucionarlo lo han empeorado con medidas populistas",
+  "espan a aprueba ma s de dos normas al di a pero esta entre los cinco pai ses peores en regulacio n",
+  "el pai s de las tiendas vaci as ma s de 50 000 locales cerrados cuestionan la respuesta poli tica a la crisis de vivienda",
+  "los zurdos camaleo n se infiltran en un tablero empresarial que vira a la derecha",
+  "uber google y bolt lanzan coches auto nomos en espan a pero nadie sabe au n co mo asegurarlos",
+  "gonzalo bernardos economista deberi amos retrasar la edad de jubilacio n ya que ha aumentado la esperanza de vida y en la mayori a de los pai ses europeos tambie n se esta haciendo",
+  "los compromisos preelectorales de sa nchez hipotecan casi 20 000 millones de gasto pu blico de 2027",
+  "la exencio n fiscal de la subida del smi pendiente de un cambio legal en la diputacio n permanente o el nuevo congreso",
+  "el sector del metal empieza a poner freno al absentismo limitando los complementos por bajas me dicas"
  ],
  "feeds_iniciados": [
   "https://ine.es/dyngs/Prensa/es/rssNovedades.xml",
@@ -1260,72 +1283,6 @@
   "https://www.antena3.com/noticias/rss/4013050.xml"
  ],
  "registro": [
-  {
-   "fecha": "2026-10-21 17:21",
-   "fuente": "El Mundo Economía",
-   "titulo": "El gran consumo pide al nuevo Gobierno bajar impuestos y una política migratoria \"sensata y ordenada\"",
-   "resultado": "descartada: sin valor propio: es una petición de la patronal del gran consumo (AECOC) al próximo Gobierno, sin ninguna medida concreta ni dato oficial nuevo. La inflación del 4,9% y el IVA en las propuestas electorales ya están cubiertos en nuestros artículos y guías del 29N."
-  },
-  {
-   "fecha": "2026-10-21 17:22",
-   "fuente": "Expansión Economía",
-   "titulo": "La Seguridad Social no puede pagar solo la mitad del complemento por hijos a los jubilados en activo",
-   "resultado": "borrador: supremo-complemento-hijos-jubilacion-activa-100.md"
-  },
-  {
-   "fecha": "2026-10-21 17:39",
-   "fuente": "Europa Press Economía",
-   "titulo": "Netflix baja hasta un 6,6% tras ganar un 43,8% más en el tercer trimestre y ajustar previsiones",
-   "resultado": "descartada: sin valor propio: resultados trimestrales de una empresa (Netflix), cotización en bolsa y despidos en EE. UU.; no afecta directamente a la economía de una familia en España y no hay medida, trámite ni cifra que el lector pueda aplicar ni calculadora nuestra que encaje"
-  },
-  {
-   "fecha": "2026-10-21 17:39",
-   "fuente": "La Vanguardia Economía",
-   "titulo": "'SOS' de los arroceros del delta del Ebro por el desplome de los precios a niveles de hace 25 años",
-   "resultado": "descartada: sin valor propio: es una reclamación de ayudas de un sector agrícola (arroceros del delta del Ebro) a la Generalitat y al Ministerio, sin medida aprobada. No toca directamente al bolsillo de una familia y la fuente no dice nada del precio del arroz en el súper ni de ningún trámite que pu"
-  },
-  {
-   "fecha": "2026-10-21 17:39",
-   "fuente": "La Vanguardia Economía",
-   "titulo": "El Gobierno vasco compra 510 viviendas protegidas en San Sebastián para mantenerlas como alquiler público",
-   "resultado": "borrador: euskadi-compra-510-pisos-protegidos-san-sebastian.md"
-  },
-  {
-   "fecha": "2026-10-21 17:40",
-   "fuente": "La Vanguardia Economía",
-   "titulo": "Fedea advierte de que los créditos públicos para la entrada de la primera vivienda pueden encarecer más los precios",
-   "resultado": "borrador: fedea-creditos-0-entrada-primera-vivienda-precios.md"
-  },
-  {
-   "fecha": "2026-10-21 21:39",
-   "fuente": "Expansión Economía",
-   "titulo": "Garamendi blinda el núcleo duro de CEOE para encarar el nuevo ciclo político",
-   "resultado": "descartada: sin valor propio: reparto de cargos y comisiones internas de la patronal CEOE (vicepresidencias y presidencias de comisiones), sin ninguna medida concreta que afecte al bolsillo del lector. Los datos útiles que menciona (huelga del 11 de noviembre y elecciones del 29N) ya están cubiertos"
-  },
-  {
-   "fecha": "2026-10-21 21:39",
-   "fuente": "La Vanguardia Economía",
-   "titulo": "La ley para fijar un salario mínimo catalán de referencia pasa el primer examen parlamentario",
-   "resultado": "borrador: salario-minimo-catalan-1400-euros-14-pagas-ley.md"
-  },
-  {
-   "fecha": "2026-10-21 21:40",
-   "fuente": "La Vanguardia Economía",
-   "titulo": "El Gobierno reparte 180 millones en subvenciones a las comunidades que apliquen la ley de Vivienda",
-   "resultado": "descartada: repetición: el reparto de 180 millones a las zonas tensionadas y los 45 millones para alojamientos universitarios ya están en «225 millones para vivienda asequible en zonas tensionadas» (180 + 45 = 225). La ampliación de la viudedad y el CUME ya la cubren dos artículos publicados, y las "
-  },
-  {
-   "fecha": "2026-10-21 21:40",
-   "fuente": "ABC Economía",
-   "titulo": "De los 57.000 euros de Puertollano al casi millón en Calviá: el precio medio de la vivienda en España",
-   "resultado": "borrador: precio-vivienda-municipios-calvia-puertollano-ine.md"
-  },
-  {
-   "fecha": "2026-10-21 22:13",
-   "fuente": "ABC Economía",
-   "titulo": "Ruptura total en la patronal de pymes avalada por el Gobierno: el grueso de las asociaciones abandonan la entidad",
-   "resultado": "descartada: sin valor propio: es un conflicto interno de una patronal de pymes (Conpymes y Pimec) sin ninguna medida concreta que afecte al bolsillo de una familia o un trabajador. Entra en política y organizaciones empresariales, no en economía de casa."
-  },
   {
    "fecha": "2026-10-21 22:13",
    "fuente": "ABC Economía",
@@ -2159,6 +2116,72 @@
    "fuente": "El Mundo Economía",
    "titulo": "Los hijos abandonados del siglo",
    "resultado": "descartada: sin valor propio: es un artículo de opinión sobre las finanzas públicas y las protestas de jóvenes en Francia. No trae ninguna medida que afecte al bolsillo de una familia o un trabajador en España, ni permite un ejemplo, un trámite o un enlace a nuestras calculadoras."
+  },
+  {
+   "fecha": "2026-10-25 10:51",
+   "fuente": "El País Economía",
+   "titulo": "El modelo vasco para la crisis de la vivienda: más pisos protegidos, reserva de suelo y hasta reconvertir una antigua cárcel",
+   "resultado": "descartada (filtro previo): Repetición: el modelo vasco de vivienda es el mismo asunto que 'Euskadi pacta comprar 510 pisos protegidos en San Sebastián', ya publicado"
+  },
+  {
+   "fecha": "2026-10-25 10:51",
+   "fuente": "El Mundo Economía",
+   "titulo": "Los trabajadores que cobran el SMI pagarán IRPF si el Gobierno no aprueba otro ajuste fiscal en la Diputación Permanente o en 2027",
+   "resultado": "descartada (filtro previo): Misma noticia que la candidata 1 (exención del IRPF al SMI), que es la de Europa Press"
+  },
+  {
+   "fecha": "2026-10-25 10:51",
+   "fuente": "ABC Economía",
+   "titulo": "Óscar Vara, economista, sobre el problema de la vivienda en España: «El Gobierno tenía que haber tomado medidas para solucionarlo. Lo han em",
+   "resultado": "descartada (filtro previo): Entrevista de opinión a un economista, sin datos ni medida concreta"
+  },
+  {
+   "fecha": "2026-10-25 10:51",
+   "fuente": "ABC Economía",
+   "titulo": "España aprueba más de dos normas al día pero está entre los cinco países peores en regulación",
+   "resultado": "descartada (filtro previo): Macroeconomía y comparativa de regulación, sin efecto directo en el bolsillo"
+  },
+  {
+   "fecha": "2026-10-25 10:51",
+   "fuente": "ABC Economía",
+   "titulo": "El país de las tiendas vacías: más de 50.000 locales cerrados cuestionan la respuesta política a la crisis de vivienda",
+   "resultado": "descartada (filtro previo): Trata de locales comerciales cerrados, no de la economía de las familias"
+  },
+  {
+   "fecha": "2026-10-25 10:51",
+   "fuente": "ABC Economía",
+   "titulo": "Los 'zurdos camaleón' se infiltran en un tablero empresarial que vira a la derecha",
+   "resultado": "descartada (filtro previo): Análisis político-empresarial, sin medida ni dato para el lector"
+  },
+  {
+   "fecha": "2026-10-25 10:51",
+   "fuente": "ABC Economía",
+   "titulo": "Uber, Google y Bolt lanzan coches autónomos en España pero nadie sabe aún cómo asegurarlos",
+   "resultado": "descartada (filtro previo): Asunto empresarial (coches autónomos y seguros de las plataformas), sin valor propio para el lector"
+  },
+  {
+   "fecha": "2026-10-25 10:51",
+   "fuente": "El Confidencial Economía",
+   "titulo": "Gonzalo Bernardos, economista: \"Deberíamos retrasar la edad de jubilación, ya que ha aumentado la esperanza de vida y en la mayoría de los p",
+   "resultado": "descartada (filtro previo): Opinión de un economista sobre retrasar la jubilación, sin medida concreta"
+  },
+  {
+   "fecha": "2026-10-25 10:51",
+   "fuente": "El Español Invertia",
+   "titulo": "Los compromisos preelectorales de Sánchez hipotecan casi 20.000 millones de gasto público de 2027",
+   "resultado": "descartada (filtro previo): Política sin medida concreta: compromisos preelectorales y gasto público global"
+  },
+  {
+   "fecha": "2026-10-25 10:52",
+   "fuente": "Europa Press Economía",
+   "titulo": "La exención fiscal de la subida del SMI, pendiente de un cambio legal en la Diputación Permanente o el nuevo Congreso",
+   "resultado": "borrador: smi-2027-exencion-irpf-reforma-legal-diputacion-permanente.md"
+  },
+  {
+   "fecha": "2026-10-25 10:52",
+   "fuente": "Europa Press Economía",
+   "titulo": "El sector del metal empieza a poner freno al absentismo limitando los complementos por bajas médicas",
+   "resultado": "borrador: metal-convenios-recortan-complemento-baja-absentismo.md"
   }
  ],
  "escritos": [
@@ -2430,6 +2453,16 @@
   {
    "title": "Frente Amplio propone pensión mínima igual al SMI: 1.221 €",
    "url": "/pensiones/frente-amplio-pension-minima-smi-jubilacion-65/",
+   "guia": false
+  },
+  {
+   "title": "SMI 2027: su exención en el IRPF depende de una nueva ley",
+   "url": "/paro/smi-2027-exencion-irpf-reforma-legal-diputacion-permanente/",
+   "guia": false
+  },
+  {
+   "title": "Metal: convenios limitan el 100% del sueldo en la baja",
+   "url": "/paro/metal-convenios-recortan-complemento-baja-absentismo/",
    "guia": false
   }
  ]
