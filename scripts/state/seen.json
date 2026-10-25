@@ -978,7 +978,8 @@
   "https://www.20minutos.es/lainformacion/economia-y-finanzas/nino-becerra-economista-senala-error-que-afecta-sistema-pensiones-bruselas-ha-dicho-que-no-es-sostenible_7050058_0.html",
   "https://www.infobae.com/espana/2026/10/25/precio-de-la-luz-en-espana-este-26-de-octubre/",
   "https://www.antena3.com/noticias/espana/feijoo-acusa-sanchez-jugar-fuego-disturbios-barcelona-promete-bajar-impuestos-subir-pensiones_202610256addfe50f655b65cc389a31e.html",
-  "https://www.elconfidencial.com/economia/2026-10-25/jubilada-anticipada-pesar-esfuerzo-recortado-pension_4452251/"
+  "https://www.elconfidencial.com/economia/2026-10-25/jubilada-anticipada-pesar-esfuerzo-recortado-pension_4452251/",
+  "https://www.infobae.com/espana/2026/10/25/el-economista-gonzalo-bernardos-asegura-que-el-sistema-de-pensiones-espanol-es-absolutamente-viable-pero-necesita-ajustes-el-primero-es-la-edad-de-jubilacion/"
  ],
  "titles": [
   "los nueve cambios para la jubilacio n en 2027 segu n el abogado laboralista ignacio solsona",
@@ -1282,7 +1283,8 @@
   "nin o becerra economista sen ala el error que afecta al sistema de pensiones bruselas ha dicho que no es sostenible",
   "precio de la luz en espan a este 26 de octubre",
   "feijo o acusa a sa nchez de jugar con fuego tras los disturbios en barcelona y promete bajar impuestos y subir pensiones",
-  "carmen jubilada anticipada con 45 an os cotizados a pesar de todo mi esfuerzo me han recortado la pensio n injustamente mes a mes"
+  "carmen jubilada anticipada con 45 an os cotizados a pesar de todo mi esfuerzo me han recortado la pensio n injustamente mes a mes",
+  "el economista gonzalo bernardos asegura que el sistema de pensiones espan ol es absolutamente viable pero necesita ajustes el primero es la edad de jubilacio n"
  ],
  "feeds_iniciados": [
   "https://ine.es/dyngs/Prensa/es/rssNovedades.xml",
@@ -1296,12 +1298,6 @@
   "https://www.antena3.com/noticias/rss/4013050.xml"
  ],
  "registro": [
-  {
-   "fecha": "2026-10-21 22:14",
-   "fuente": "ABC Economía",
-   "titulo": "Tarjeta Monedero 2026: cómo solicitar hasta 220 euros al mes para alimentos",
-   "resultado": "borrador: tarjeta-monedero-100-220-euros-mes-familias-hijos.md"
-  },
   {
    "fecha": "2026-10-22 00:47",
    "fuente": "El Mundo Economía",
@@ -2195,6 +2191,12 @@
    "fuente": "El Confidencial Economía",
    "titulo": "Carmen, jubilada anticipada con 45 años cotizados: \"A pesar de todo mi esfuerzo, me han recortado la pensión injustamente, mes a mes”",
    "resultado": "texto insuficiente (muro de pago o página vacía)"
+  },
+  {
+   "fecha": "2026-10-25 18:52",
+   "fuente": "Infobae España",
+   "titulo": "El economista Gonzalo Bernardos asegura que el sistema de pensiones español “es absolutamente viable”, pero necesita ajustes: “El primero es",
+   "resultado": "descartada: sin valor propio: es una opinión de un economista en televisión sobre la viabilidad de las pensiones. No hay medida, norma, dato oficial ni cambio de requisitos. El déficit de más de 70.000 millones y el 80,4 % de tasa de sustitución son cifras que cita él, sin respaldo oficial. No permi"
   }
  ],
  "escritos": [
