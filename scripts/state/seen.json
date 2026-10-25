@@ -973,7 +973,12 @@
   "https://www.europapress.es/economia/laboral-00346/noticia-exencion-fiscal-subida-smi-pendiente-cambio-legal-diputacion-permanente-nuevo-congreso-20261025102649.html",
   "https://www.europapress.es/economia/laboral-00346/noticia-sector-metal-empieza-poner-freno-absentismo-limitando-complementos-bajas-medicas-20261025094253.html",
   "https://www.elespanol.com/invertia/observatorios/vivienda/20261025/inmigrantes-colapsan-inmobiliarias-ceuta-pisos-patera-siguen-inundando-ciudad/1003744432723_0.html",
-  "https://www.abc.es/economia/cuentas-corrientes/cambio-hora-dispara-factura-luz-precios-altos-20261025021511-nt.html"
+  "https://www.abc.es/economia/cuentas-corrientes/cambio-hora-dispara-factura-luz-precios-altos-20261025021511-nt.html",
+  "https://www.infobae.com/espana/2026/10/25/cuando-se-cobra-el-paro-en-noviembre-de-2026-las-fechas-de-pago-de-caixabank-ing-bbva-santander/",
+  "https://www.20minutos.es/lainformacion/economia-y-finanzas/nino-becerra-economista-senala-error-que-afecta-sistema-pensiones-bruselas-ha-dicho-que-no-es-sostenible_7050058_0.html",
+  "https://www.infobae.com/espana/2026/10/25/precio-de-la-luz-en-espana-este-26-de-octubre/",
+  "https://www.antena3.com/noticias/espana/feijoo-acusa-sanchez-jugar-fuego-disturbios-barcelona-promete-bajar-impuestos-subir-pensiones_202610256addfe50f655b65cc389a31e.html",
+  "https://www.elconfidencial.com/economia/2026-10-25/jubilada-anticipada-pesar-esfuerzo-recortado-pension_4452251/"
  ],
  "titles": [
   "los nueve cambios para la jubilacio n en 2027 segu n el abogado laboralista ignacio solsona",
@@ -1273,7 +1278,11 @@
   "la exencio n fiscal de la subida del smi pendiente de un cambio legal en la diputacio n permanente o el nuevo congreso",
   "el sector del metal empieza a poner freno al absentismo limitando los complementos por bajas me dicas",
   "los inmigrantes colapsan las inmobiliarias de ceuta mientras los pisos patera siguen inundando la ciudad",
-  "el cambio de hora dispara la factura de la luz con los precios ma s altos en cuatro an os"
+  "el cambio de hora dispara la factura de la luz con los precios ma s altos en cuatro an os",
+  "nin o becerra economista sen ala el error que afecta al sistema de pensiones bruselas ha dicho que no es sostenible",
+  "precio de la luz en espan a este 26 de octubre",
+  "feijo o acusa a sa nchez de jugar con fuego tras los disturbios en barcelona y promete bajar impuestos y subir pensiones",
+  "carmen jubilada anticipada con 45 an os cotizados a pesar de todo mi esfuerzo me han recortado la pensio n injustamente mes a mes"
  ],
  "feeds_iniciados": [
   "https://ine.es/dyngs/Prensa/es/rssNovedades.xml",
@@ -1287,30 +1296,6 @@
   "https://www.antena3.com/noticias/rss/4013050.xml"
  ],
  "registro": [
-  {
-   "fecha": "2026-10-21 22:13",
-   "fuente": "ABC Economía",
-   "titulo": "Cuenta remunerada o depósito a plazo: las opciones de octubre para cada tipo de ahorro",
-   "resultado": "descartada: ahorro e inversión: comparativa de cuentas remuneradas y depósitos a plazo (contenido comercial de Kelisto), que cubre nuestra web hermana Dinero en Claro. No hay cambio de norma, de tributación ni dato oficial que afecte directamente a la economía de casa."
-  },
-  {
-   "fecha": "2026-10-21 22:13",
-   "fuente": "ABC Economía",
-   "titulo": "Garamendi conforma su equipo: Sánchez Llibre recupera relaciones con las Cortes y Lorenzo Amor asume Seguridad Social",
-   "resultado": "descartada: sin valor propio: es un reparto de cargos internos de la patronal CEOE (comisiones y vicepresidencias) sin ninguna medida concreta, cifra, plazo ni trámite que afecte al bolsillo del lector"
-  },
-  {
-   "fecha": "2026-10-21 22:13",
-   "fuente": "ABC Economía",
-   "titulo": "Los españoles ahorran 2.140 euros y 177 horas al año con el uso de canales digitales para trámites diarios",
-   "resultado": "descartada: sin valor propio: es un barómetro de una aseguradora (Línea Directa) sobre digitalización de trámites, sin medida, norma, plazo ni dato oficial que afecte al bolsillo. Las cifras de ahorro (2.140 € y 177 horas) son percepciones de una encuesta, no ahorro real, y no hay ningún trámite que"
-  },
-  {
-   "fecha": "2026-10-21 22:13",
-   "fuente": "ABC Economía",
-   "titulo": "Inteligencia Artificial como clave de éxito en el desarrollo empresarial",
-   "resultado": "descartada: sin valor propio: crónica de un foro empresarial sobre IA en pymes (BBVA, Red.es, IndesIA). No hay medida, norma, ayuda, cifra oficial ni trámite que afecte al bolsillo de una familia o un trabajador. Lo más cercano, la oferta de licencias de ChatGPT Business de BBVA, es una acción comer"
-  },
   {
    "fecha": "2026-10-21 22:14",
    "fuente": "ABC Economía",
@@ -2186,6 +2171,30 @@
    "fuente": "ABC Economía",
    "titulo": "El cambio de hora dispara la factura de la luz con los precios más altos en cuatro años",
    "resultado": "borrador: cambio-hora-luz-precio-noche-pvpc-200-mwh.md"
+  },
+  {
+   "fecha": "2026-10-25 15:25",
+   "fuente": "20minutos Economía",
+   "titulo": "Niño Becerra, economista, señala el error que afecta al sistema de pensiones: \"Bruselas ha dicho que no es sostenible\"",
+   "resultado": "descartada (filtro previo): opinión de un economista sobre el sistema de pensiones, sin medida concreta ni datos nuevos"
+  },
+  {
+   "fecha": "2026-10-25 15:25",
+   "fuente": "Infobae España",
+   "titulo": "Precio de la luz en España este 26 de octubre",
+   "resultado": "descartada (filtro previo): precio diario de la luz, ya cubierto por nuestra guía /luz/ sin dato normativo nuevo"
+  },
+  {
+   "fecha": "2026-10-25 15:25",
+   "fuente": "Antena 3 Economía",
+   "titulo": "Feijóo acusa a Sánchez de \"jugar con fuego\" tras los disturbios en Barcelona y promete bajar impuestos y subir pensiones",
+   "resultado": "descartada (filtro previo): declaraciones políticas sin medida concreta; ya publicamos las promesas de Feijóo sobre pensiones e IRPF"
+  },
+  {
+   "fecha": "2026-10-25 15:25",
+   "fuente": "El Confidencial Economía",
+   "titulo": "Carmen, jubilada anticipada con 45 años cotizados: \"A pesar de todo mi esfuerzo, me han recortado la pensión injustamente, mes a mes”",
+   "resultado": "texto insuficiente (muro de pago o página vacía)"
   }
  ],
  "escritos": [
