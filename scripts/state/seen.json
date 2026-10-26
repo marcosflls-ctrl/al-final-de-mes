@@ -1035,7 +1035,9 @@
   "https://www.elespanol.com/invertia/mercados/20261026/bolsa-brasil-suspende-cotizacion-desplomarse-preapertura-despues-victoria-lula-da-silva/1003744434898_0.html",
   "https://www.antena3.com/noticias/economia/disturbios-barcelona-dejan-importantes-perdidas-economicas-23-comercios-vandalizados-ayudas-500000-euros_202610266adf7401c0483453480a2419.html",
   "https://www.20minutos.es/lainformacion/economia-y-finanzas/gobierno-confirma-que-salario-minimo-seguira-sin-pagar-irpf-ano-que-viene_7053574_0.html",
-  "https://www.europapress.es/economia/noticia-huelga-general-11-noviembre-pueden-hacer-empresas-no-permitido-20261026143509.html"
+  "https://www.europapress.es/economia/noticia-huelga-general-11-noviembre-pueden-hacer-empresas-no-permitido-20261026143509.html",
+  "https://www.elmundo.es/economia/2026/10/26/6adf3243e9cf4aea308b4585.html",
+  "https://www.infobae.com/espana/2026/10/26/habra-que-cotizar-mas-anos-para-cobrar-la-pension-el-gobierno-lo-aclara/"
  ],
  "titles": [
   "los nueve cambios para la jubilacio n en 2027 segu n el abogado laboralista ignacio solsona",
@@ -1383,7 +1385,9 @@
   "la bolsa de brasil se desploma hasta un 16 tras la victoria de lula en las presidenciales",
   "los disturbios en barcelona dejan importantes pe rdidas econo micas 23 comercios vandalizados y ayudas de 500 000 euros",
   "el gobierno confirma que el salario mi nimo seguira sin pagar irpf el an o que viene",
-  "huelga general del 11 de noviembre que pueden hacer las empresas y que no esta permitido"
+  "huelga general del 11 de noviembre que pueden hacer las empresas y que no esta permitido",
+  "es oficial la seguridad social permite descargar un documento con la fecha exacta de tu jubilacio n",
+  "habra que cotizar ma s an os para cobrar la pensio n el gobierno lo aclara"
  ],
  "feeds_iniciados": [
   "https://ine.es/dyngs/Prensa/es/rssNovedades.xml",
@@ -1397,18 +1401,6 @@
   "https://www.antena3.com/noticias/rss/4013050.xml"
  ],
  "registro": [
-  {
-   "fecha": "2026-10-23 01:26",
-   "fuente": "ABC Economía",
-   "titulo": "El banco Barclays recortará unos 5.000 puestos de trabajo en el marco de su apuesta por la inteligencia artificial",
-   "resultado": "descartada (filtro previo): Noticia empresarial sobre recortes de empleo en un banco"
-  },
-  {
-   "fecha": "2026-10-23 01:26",
-   "fuente": "ABC Economía",
-   "titulo": "FlatEarn, la app española que gestiona los pisos compartidos con IA, firma alianzas con Finaer, Selectra y Wolly",
-   "resultado": "descartada (filtro previo): Noticia empresarial sobre una startup y sus alianzas"
-  },
   {
    "fecha": "2026-10-23 01:26",
    "fuente": "ABC Economía",
@@ -2296,6 +2288,18 @@
    "fuente": "Europa Press Economía",
    "titulo": "Huelga general del 11 de noviembre: qué pueden hacer las empresas y qué no está permitido",
    "resultado": "borrador: huelga-general-11-noviembre-sueldo-descuento-cotizacion.md"
+  },
+  {
+   "fecha": "2026-10-26 18:40",
+   "fuente": "El Mundo Economía",
+   "titulo": "Es oficial: la Seguridad Social permite descargar un documento con la fecha exacta de tu jubilación",
+   "resultado": "borrador: informe-edad-jubilacion-fecha-exacta-seguridad-social.md"
+  },
+  {
+   "fecha": "2026-10-26 18:40",
+   "fuente": "Infobae España",
+   "titulo": "¿Habrá que cotizar más años para cobrar la pensión? El Gobierno lo aclara",
+   "resultado": "borrador: gobierno-descarta-mas-anos-cotizados-pension.md"
   }
  ],
  "escritos": [
@@ -2617,6 +2621,16 @@
   {
    "title": "Huelga general 11N: descuento de sueldo y cotización",
    "url": "/paro/huelga-general-11-noviembre-sueldo-descuento-cotizacion/",
+   "guia": false
+  },
+  {
+   "title": "Jubilación: descarga el informe con tu fecha exacta",
+   "url": "/pensiones/informe-edad-jubilacion-fecha-exacta-seguridad-social/",
+   "guia": false
+  },
+  {
+   "title": "Pensión: el Gobierno descarta exigir más años cotizados",
+   "url": "/pensiones/gobierno-descarta-mas-anos-cotizados-pension/",
    "guia": false
   }
  ]
