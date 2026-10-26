@@ -22,7 +22,8 @@ export const SITE = {
   // Déjalo vacío para desactivarlo.
   goatcounterCode: 'alfinaldemes',
   // Redes sociales (deja vacío lo que aún no exista)
-  social: { telegram: '', whatsapp: '', facebook: '', x: '' },
+  // youtube, tiktok e instagram: el identificador sin la @ (por ejemplo 'alfinaldemes')
+  social: { telegram: '', whatsapp: '', facebook: '', x: '', youtube: 'alfinaldemes', tiktok: '', instagram: '' },
   // Webs hermanas, para enlazarlas en el pie
   hermanas: [{ nombre: 'Dinero en Claro', url: 'https://dineroenclaro.com/', texto: 'ahorro e inversión explicados con datos oficiales: depósitos, Letras del Tesoro, fondos, bolsa y planes de pensiones' }],
 };
