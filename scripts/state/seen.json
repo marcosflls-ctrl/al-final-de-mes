@@ -1015,7 +1015,10 @@
   "https://www.europapress.es/economia/laboral-00346/noticia-saiz-confirma-gobierno-subira-smi-2027-mantendra-exencion-irpf-20261026100909.html",
   "https://www.abc.es/economia/cuentas-corrientes/ventajas-fiscales-autonomos-truco-hacienda-aprovecha-pagar-20261023011930-nt.html",
   "https://www.abc.es/economia/cuentas-corrientes/pagas-poco-tasa-basuras-media-cuota-100-20261026011953-nt.html",
-  "https://www.abc.es/economia/maria-cristina-clemente-notaria-sobre-donaciones-dinero-20261026063000-nt.html"
+  "https://www.abc.es/economia/maria-cristina-clemente-notaria-sobre-donaciones-dinero-20261026063000-nt.html",
+  "https://www.20minutos.es/lainformacion/economia-y-finanzas/58-los-autonomos-subira-precios-antes-que-acabe-ano-uno-cada-seis-ve-peligro-continuidad-su-negocio_7053388_0.html",
+  "https://www.abc.es/economia/guia-financiera/hipotecas-al-100-bancos-que-financian-toda-la-tasacion-20261021055300-nt.html",
+  "https://www.idealista.com/news/inmobiliario/vivienda/2026/10/26/920389-la-competencia-por-cada-vivienda-en-alquiler-se-quintuplica-en-los-ultimos-8-anos"
  ],
  "titles": [
   "los nueve cambios para la jubilacio n en 2027 segu n el abogado laboralista ignacio solsona",
@@ -1348,7 +1351,10 @@
   "saiz confirma que el gobierno subira el smi en 2027 y mantendra su exencio n en el irpf",
   "ventajas fiscales para auto nomos el truco de hacienda que casi nadie aprovecha para pagar menos impuestos",
   "pagas mucho o poco de tasa de basuras la media es una cuota de 100 euros pero algunos municipios doblan la cantidad",
-  "mari a cristina clemente notaria sobre las donaciones las de dinero son las ma s puras pero no vale una transferencia y darle pistas a hacienda en el concepto"
+  "mari a cristina clemente notaria sobre las donaciones las de dinero son las ma s puras pero no vale una transferencia y darle pistas a hacienda en el concepto",
+  "el 58 de los auto nomos subira precios antes de que acabe el an o y uno de cada seis ve en peligro la continuidad de su negocio",
+  "hipotecas al 100 en octubre que bancos financian toda la tasacio n y en que comunidades",
+  "la competencia por cada vivienda en alquiler se quintuplica en los u ltimos 8 an os"
  ],
  "feeds_iniciados": [
   "https://ine.es/dyngs/Prensa/es/rssNovedades.xml",
@@ -1362,24 +1368,6 @@
   "https://www.antena3.com/noticias/rss/4013050.xml"
  ],
  "registro": [
-  {
-   "fecha": "2026-10-22 17:41",
-   "fuente": "Europa Press Economía",
-   "titulo": "Hacienda mantendrá los módulos del IRPF para 2027 con la reducción del 5% e incluirá rebajas fiscales al campo",
-   "resultado": "borrador: modulos-irpf-2027-reduccion-5-agricultores-ganaderos.md"
-  },
-  {
-   "fecha": "2026-10-22 17:42",
-   "fuente": "Europa Press Economía",
-   "titulo": "MAPA | Esfuerzo para pagar el alquiler en España: qué parte de la renta media se lleva por barrios",
-   "resultado": "borrador: alquiler-esfuerzo-renta-media-madrid-barcelona-barrios-ine.md"
-  },
-  {
-   "fecha": "2026-10-22 22:10",
-   "fuente": "El País Economía",
-   "titulo": "CEOE rectifica y no impugnará finalmente la huelga general por la vivienda antes del 11 de noviembre",
-   "resultado": "error al redactar: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'You have reached your specified API usage limits. You will regain access on 2026-11-01 at 00:00 UTC.'}, 'requ"
-  },
   {
    "fecha": "2026-10-22 22:10",
    "fuente": "El País Economía",
@@ -2261,6 +2249,24 @@
    "fuente": "ABC Economía",
    "titulo": "María Cristina Clemente, notaria, sobre las donaciones: «Las de dinero son las más puras. Pero no vale una transferencia y darle pistas a Ha",
    "resultado": "borrador: donar-dinero-hijo-comprar-casa-escritura-notario.md"
+  },
+  {
+   "fecha": "2026-10-26 12:34",
+   "fuente": "20minutos Economía",
+   "titulo": "El 58% de los autónomos subirá precios antes de que acabe el año y uno de cada seis ve en peligro la continuidad de su negocio",
+   "resultado": "descartada (filtro previo): Encuesta de opinión sobre la intención de subir precios de los autónomos; es un dato de empresas, sin medida ni cambio que afecte al bolsillo de la familia."
+  },
+  {
+   "fecha": "2026-10-26 12:35",
+   "fuente": "ABC Economía",
+   "titulo": "Hipotecas al 100% en octubre: qué bancos financian toda la tasación y en qué comunidades",
+   "resultado": "borrador: hipotecas-100-bancos-financian-tasacion-primera-vivienda.md"
+  },
+  {
+   "fecha": "2026-10-26 12:35",
+   "fuente": "Idealista News (vivienda)",
+   "titulo": "La competencia por cada vivienda en alquiler se quintuplica en los últimos 8 años",
+   "resultado": "borrador: alquiler-competencia-43-contactos-anuncio-idealista.md"
   }
  ],
  "escritos": [
@@ -2562,6 +2568,16 @@
   {
    "title": "Donar dinero a un hijo para su casa: hace falta escritura",
    "url": "/hacienda/donar-dinero-hijo-comprar-casa-escritura-notario/",
+   "guia": false
+  },
+  {
+   "title": "Hipotecas al 100%: qué bancos financian toda la tasación",
+   "url": "/vivienda/hipotecas-100-bancos-financian-tasacion-primera-vivienda/",
+   "guia": false
+  },
+  {
+   "title": "Alquiler: 43 contactos por anuncio, 5 veces más que en 2018",
+   "url": "/vivienda/alquiler-competencia-43-contactos-anuncio-idealista/",
    "guia": false
   }
  ]
