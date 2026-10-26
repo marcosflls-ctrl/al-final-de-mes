@@ -1041,7 +1041,8 @@
   "https://www.infobae.com/espana/2026/10/26/elecciones-generales-en-espana-29-n-en-directo-ultima-hora-de-los-sondeos-los-disturbios-en-barcelona-y-la-precampana/",
   "https://www.infobae.com/espana/2024/02/19/rosa-lopez-la-primera-ganadora-de-operacion-triunfo-que-nunca-llego-a-cobrar-el-cheque-del-premio-se-perdio/",
   "https://www.infobae.com/espana/2026/10/26/jubilarse-en-2026-o-esperar-a-2027-la-decision-que-puede-aumentar-la-pension/",
-  "https://www.infobae.com/espana/2026/10/26/ignacio-de-la-calzada-abogado-el-gobierno-ha-cambiado-como-se-calcula-lo-que-cobras-de-baja/"
+  "https://www.infobae.com/espana/2026/10/26/ignacio-de-la-calzada-abogado-el-gobierno-ha-cambiado-como-se-calcula-lo-que-cobras-de-baja/",
+  "https://www.antena3.com/noticias/espana/pedro-sanchez-promete-reformar-constitucion-subir-pensiones-conforme-ipc_202610266adfb602a9eeee544aad8991.html"
  ],
  "titles": [
   "los nueve cambios para la jubilacio n en 2027 segu n el abogado laboralista ignacio solsona",
@@ -1395,7 +1396,8 @@
   "elecciones generales en espan a 29 n en directo sa nchez anuncia desde gijo n que reformara la constitucio n en la pro xima legislatura para blindar las pensiones y su revalorizacio n conforme al ipc",
   "rosa lo pez la primera ganadora de operacio n triunfo que nunca llego a cobrar el cheque del premio se perdio",
   "jubilarse en 2026 o esperar a 2027 la decisio n que puede aumentar la pensio n",
-  "ignacio de la calzada abogado el gobierno ha cambiado co mo se calcula lo que cobras de baja"
+  "ignacio de la calzada abogado el gobierno ha cambiado co mo se calcula lo que cobras de baja",
+  "pedro sa nchez promete reformar la constitucio n para subir las pensiones conforme al ipc"
  ],
  "feeds_iniciados": [
   "https://ine.es/dyngs/Prensa/es/rssNovedades.xml",
@@ -1409,12 +1411,6 @@
   "https://www.antena3.com/noticias/rss/4013050.xml"
  ],
  "registro": [
-  {
-   "fecha": "2026-10-23 01:26",
-   "fuente": "El Confidencial Economía",
-   "titulo": "Rosario, jubilada anticipada con menos de 1.000 euros de pensión: “Vivo porque soy muy organizada y ahorradora”",
-   "resultado": "descartada (filtro previo): Testimonio personal sin dato nuevo ni utilidad práctica"
-  },
   {
    "fecha": "2026-10-23 01:26",
    "fuente": "El Confidencial Economía",
@@ -2308,6 +2304,12 @@
    "fuente": "Infobae España",
    "titulo": "Ignacio de la Calzada, abogado: “El Gobierno ha cambiado cómo se calcula lo que cobras de baja”",
    "resultado": "borrador: baja-medica-calculo-base-reguladora-1-diciembre-rdl-31-2026.md"
+  },
+  {
+   "fecha": "2026-10-26 23:43",
+   "fuente": "Antena 3 Economía",
+   "titulo": "Pedro Sánchez promete reformar la Constitución para subir las pensiones conforme al IPC",
+   "resultado": "borrador: sanchez-promete-reforma-constitucion-pensiones-ipc.md"
   }
  ],
  "escritos": [
@@ -2649,6 +2651,11 @@
   {
    "title": "Baja médica desde el 1 de diciembre: cambia el cálculo",
    "url": "/paro/baja-medica-calculo-base-reguladora-1-diciembre-rdl-31-2026/",
+   "guia": false
+  },
+  {
+   "title": "Sánchez promete blindar en la Constitución pensiones al IPC",
+   "url": "/pensiones/sanchez-promete-reforma-constitucion-pensiones-ipc/",
    "guia": false
   }
  ]
