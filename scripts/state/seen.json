@@ -1037,7 +1037,11 @@
   "https://www.20minutos.es/lainformacion/economia-y-finanzas/gobierno-confirma-que-salario-minimo-seguira-sin-pagar-irpf-ano-que-viene_7053574_0.html",
   "https://www.europapress.es/economia/noticia-huelga-general-11-noviembre-pueden-hacer-empresas-no-permitido-20261026143509.html",
   "https://www.elmundo.es/economia/2026/10/26/6adf3243e9cf4aea308b4585.html",
-  "https://www.infobae.com/espana/2026/10/26/habra-que-cotizar-mas-anos-para-cobrar-la-pension-el-gobierno-lo-aclara/"
+  "https://www.infobae.com/espana/2026/10/26/habra-que-cotizar-mas-anos-para-cobrar-la-pension-el-gobierno-lo-aclara/",
+  "https://www.infobae.com/espana/2026/10/26/elecciones-generales-en-espana-29-n-en-directo-ultima-hora-de-los-sondeos-los-disturbios-en-barcelona-y-la-precampana/",
+  "https://www.infobae.com/espana/2024/02/19/rosa-lopez-la-primera-ganadora-de-operacion-triunfo-que-nunca-llego-a-cobrar-el-cheque-del-premio-se-perdio/",
+  "https://www.infobae.com/espana/2026/10/26/jubilarse-en-2026-o-esperar-a-2027-la-decision-que-puede-aumentar-la-pension/",
+  "https://www.infobae.com/espana/2026/10/26/ignacio-de-la-calzada-abogado-el-gobierno-ha-cambiado-como-se-calcula-lo-que-cobras-de-baja/"
  ],
  "titles": [
   "los nueve cambios para la jubilacio n en 2027 segu n el abogado laboralista ignacio solsona",
@@ -1387,7 +1391,11 @@
   "el gobierno confirma que el salario mi nimo seguira sin pagar irpf el an o que viene",
   "huelga general del 11 de noviembre que pueden hacer las empresas y que no esta permitido",
   "es oficial la seguridad social permite descargar un documento con la fecha exacta de tu jubilacio n",
-  "habra que cotizar ma s an os para cobrar la pensio n el gobierno lo aclara"
+  "habra que cotizar ma s an os para cobrar la pensio n el gobierno lo aclara",
+  "elecciones generales en espan a 29 n en directo sa nchez anuncia desde gijo n que reformara la constitucio n en la pro xima legislatura para blindar las pensiones y su revalorizacio n conforme al ipc",
+  "rosa lo pez la primera ganadora de operacio n triunfo que nunca llego a cobrar el cheque del premio se perdio",
+  "jubilarse en 2026 o esperar a 2027 la decisio n que puede aumentar la pensio n",
+  "ignacio de la calzada abogado el gobierno ha cambiado co mo se calcula lo que cobras de baja"
  ],
  "feeds_iniciados": [
   "https://ine.es/dyngs/Prensa/es/rssNovedades.xml",
@@ -1401,30 +1409,6 @@
   "https://www.antena3.com/noticias/rss/4013050.xml"
  ],
  "registro": [
-  {
-   "fecha": "2026-10-23 01:26",
-   "fuente": "ABC Economía",
-   "titulo": "Ahorrar para la entrada del piso: ¿Qué pasó con la cuenta ahorro vivienda? ¿Qué alternativas dan los bancos?",
-   "resultado": "descartada (filtro previo): Ahorro bancario (cuenta vivienda): lo cubre Dinero en Claro"
-  },
-  {
-   "fecha": "2026-10-23 01:26",
-   "fuente": "ABC Economía",
-   "titulo": "Varias cuentas abiertas a la vez: los españoles se abonan a la infidelidad con su banco",
-   "resultado": "descartada (filtro previo): Producto bancario y comportamiento de clientes, sin medida para el lector"
-  },
-  {
-   "fecha": "2026-10-23 01:26",
-   "fuente": "El Confidencial Economía",
-   "titulo": "Alfonso Muñoz, funcionario de la Seguridad Social: \"Desde mi experiencia personal el sistema de pensiones no solamente ha sobrevivido, sino ",
-   "resultado": "descartada (filtro previo): Opinión personal de un funcionario, sin datos nuevos"
-  },
-  {
-   "fecha": "2026-10-23 01:26",
-   "fuente": "El Confidencial Economía",
-   "titulo": "Sordo (CCOO): \"El sistema de pensiones no puede petar\"",
-   "resultado": "descartada (filtro previo): Declaración de opinión sobre el sistema de pensiones, sin datos nuevos"
-  },
   {
    "fecha": "2026-10-23 01:26",
    "fuente": "El Confidencial Economía",
@@ -2300,6 +2284,30 @@
    "fuente": "Infobae España",
    "titulo": "¿Habrá que cotizar más años para cobrar la pensión? El Gobierno lo aclara",
    "resultado": "borrador: gobierno-descarta-mas-anos-cotizados-pension.md"
+  },
+  {
+   "fecha": "2026-10-26 22:54",
+   "fuente": "Infobae España",
+   "titulo": "Elecciones generales en España 29-N, en directo | Sánchez anuncia desde Gijón que reformará la Constitución en la próxima legislatura para “",
+   "resultado": "descartada (filtro previo): Misma promesa de reforma constitucional sobre pensiones que la candidata 4, contada en un directo general con más contenido ajeno al tema; se queda la fuente más concreta"
+  },
+  {
+   "fecha": "2026-10-26 22:54",
+   "fuente": "Infobae España",
+   "titulo": "Rosa López, la primera ganadora de ‘Operación Triunfo’ que nunca llegó a cobrar el cheque del premio: “Se perdió”",
+   "resultado": "descartada (filtro previo): Sin relación con la economía de casa: anécdota de un concurso televisivo"
+  },
+  {
+   "fecha": "2026-10-26 22:54",
+   "fuente": "Infobae España",
+   "titulo": "Jubilarse en 2026 o esperar a 2027: la decisión que puede aumentar la pensión",
+   "resultado": "borrador: jubilacion-final-2026-esperar-2027-coeficientes.md"
+  },
+  {
+   "fecha": "2026-10-26 22:55",
+   "fuente": "Infobae España",
+   "titulo": "Ignacio de la Calzada, abogado: “El Gobierno ha cambiado cómo se calcula lo que cobras de baja”",
+   "resultado": "borrador: baja-medica-calculo-base-reguladora-1-diciembre-rdl-31-2026.md"
   }
  ],
  "escritos": [
@@ -2631,6 +2639,16 @@
   {
    "title": "Pensión: el Gobierno descarta exigir más años cotizados",
    "url": "/pensiones/gobierno-descarta-mas-anos-cotizados-pension/",
+   "guia": false
+  },
+  {
+   "title": "Jubilación a final de 2026: recorte del 3,26% al 3,52%",
+   "url": "/pensiones/jubilacion-final-2026-esperar-2027-coeficientes/",
+   "guia": false
+  },
+  {
+   "title": "Baja médica desde el 1 de diciembre: cambia el cálculo",
+   "url": "/paro/baja-medica-calculo-base-reguladora-1-diciembre-rdl-31-2026/",
    "guia": false
   }
  ]
