@@ -59,3 +59,5 @@ Si te interesa cómo afectan los años cotizados a tu pensión, tienes la guía 
 ## Qué queda pendiente
 
 La propuesta de los expertos sobre el SMI llegará como muy tarde el 31 de octubre. El IPC adelantado del 27 de noviembre fijará la subida de las pensiones, y el dato definitivo del INE llegará el 15 de diciembre. Falta saber si el Gobierno en funciones aprobará la revalorización antes de fin de año.
+
+Todas las cifras, actualizadas con cada dato del IPC, están en la guía [¿Cuánto subirán las pensiones en 2027?](/pensiones/subida-pensiones-2027/).
