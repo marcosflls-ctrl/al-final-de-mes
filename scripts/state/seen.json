@@ -1104,7 +1104,12 @@
   "https://www.infobae.com/espana/2026/10/27/los-ninis-ganan-terreno-a-los-sisis-122-millones-de-jovenes-ni-estudia-ni-trabaja-frente-al-millon-que-si-lo-hace/",
   "https://www.abc.es/economia/acuerdo-parcial-pac-frena-campo-500-tractores-20261027173529-nt.html",
   "https://www.idealista.com/news/fiscalidad/2026/10/27/918457-divorciarse-no-impide-aplicar-la-exencion-por-reinversion-en-vivienda-habitual-aunque-pasen",
-  "https://www.ocu.org/consumo-familia/viajes-vacaciones/noticias/huelga-trenes"
+  "https://www.ocu.org/consumo-familia/viajes-vacaciones/noticias/huelga-trenes",
+  "https://www.20minutos.es/lainformacion/economia-y-finanzas/ceim-propone-recuperar-despido-por-bajas-reiteradas-que-seguridad-social-asuma-toda-prestacion_7054125_0.html",
+  "https://www.20minutos.es/lainformacion/economia-y-finanzas/por-que-sube-paro-si-se-esta-creando-empleo-te-explicamos-un-minuto_7054183_0.html",
+  "https://www.infobae.com/espana/cultura/2026/10/27/aitana-defiende-que-los-ricos-paguen-mas-impuestos-y-reivindica-tributar-en-espana-la-mitad-de-mis-ingresos-se-van-a-hacienda-nunca-me-vas-a-escuchar-quejarme-de-eso/",
+  "https://www.newtral.es/familia-desahuciada-vitoria/20261027/",
+  "https://www.infobae.com/espana/2026/10/27/policias-y-guardias-civiles-se-encierran-en-la-secretaria-de-estado-de-seguridad-por-la-jubilacion-el-gobierno-pone-fin-a-la-negociacion-por-las-elecciones-del-29-n/"
  ],
  "titles": [
   "los nueve cambios para la jubilacio n en 2027 segu n el abogado laboralista ignacio solsona",
@@ -1506,7 +1511,12 @@
   "los ninis ganan terreno a los sisis 1 22 millones de jo venes ni estudia ni trabaja frente al millo n que si lo hace",
   "estamos asfixiados 500 tractores y miles de agricultores colapsara n madrid por el aumento de los costes de produccio n",
   "divorciarse no impide aplicar la exencio n por reinversio n en vivienda habitual aunque pasen ma s de dos an os",
-  "huelga de trenes cua les son tus derechos"
+  "huelga de trenes cua les son tus derechos",
+  "ceim propone recuperar el despido por bajas reiteradas y que la seguridad social asuma toda la prestacio n",
+  "por que sube el paro si se esta creando empleo te lo explicamos en un minuto",
+  "aitana defiende que los ricos paguen ma s impuestos y reivindica tributar en espan a la mitad de mis ingresos se van a hacienda nunca me vas a escuchar quejarme de eso",
+  "nos pregunta is por la familia desahuciada en vitoria que recibe 2 454 euros mensuales de ayudas pu blicas",
+  "polici as y guardias civiles se encierran en la secretari a de estado de seguridad por la jubilacio n el gobierno pone fin a la negociacio n por las elecciones del 29 n"
  ],
  "feeds_iniciados": [
   "https://ine.es/dyngs/Prensa/es/rssNovedades.xml",
@@ -1520,36 +1530,6 @@
   "https://www.antena3.com/noticias/rss/4013050.xml"
  ],
  "registro": [
-  {
-   "fecha": "2026-10-23 17:09",
-   "fuente": "20minutos Economía",
-   "titulo": "Las pensiones no contributivas cambian a partir de hoy: así funciona el nuevo cálculo para acceder o conservar estas prestaciones",
-   "resultado": "borrador: pension-no-contributiva-indemnizaciones-ley-4-2026.md"
-  },
-  {
-   "fecha": "2026-10-23 17:09",
-   "fuente": "El Mundo Economía",
-   "titulo": "La Seguridad Social lo confirma: estos trabajadores podrán recuperar años para su jubilación a partir de Navidad",
-   "resultado": "borrador: deportistas-recuperar-anos-jubilacion-real-decreto-739.md"
-  },
-  {
-   "fecha": "2026-10-23 17:29",
-   "fuente": "Newtral",
-   "titulo": "Desde que Yolanda Díaz es ministra el SMI ha subido un 28,5%, 37 puntos menos de lo que dice Urtasun",
-   "resultado": "descartada (filtro previo): Polémica política entre Newtral y Urtasun sobre el SMI, sin medida concreta nueva; el tema del SMI ya está cubierto y no aporta un dato que el lector pueda usar."
-  },
-  {
-   "fecha": "2026-10-23 17:29",
-   "fuente": "ABC Economía",
-   "titulo": "¿Vas a dar dinero a tu hijo para un piso? Evita estos tres errores con Hacienda",
-   "resultado": "descartada: sin valor propio: texto de consejos generales sin ninguna cifra, plazo, norma ni dato nuevo (no indica el plazo del trámite, el modelo concreto ni las bonificaciones por comunidad). No se puede ampliar sin añadir datos que la fuente no da."
-  },
-  {
-   "fecha": "2026-10-23 17:30",
-   "fuente": "ABC Economía",
-   "titulo": "La subida del euríbor reactiva el cambio de hipotecas variables y mixtas a tipo fijo",
-   "resultado": "borrador: euribor-cambiar-hipoteca-variable-fija-housfy.md"
-  },
   {
    "fecha": "2026-10-23 17:30",
    "fuente": "Idealista News (vivienda)",
@@ -2419,6 +2399,36 @@
    "fuente": "OCU",
    "titulo": "Huelga de trenes: ¿cuáles son tus derechos?",
    "resultado": "borrador: huelga-renfe-29-octubre-derechos-reembolso-indemnizacion.md"
+  },
+  {
+   "fecha": "2026-10-27 22:22",
+   "fuente": "20minutos Economía",
+   "titulo": "CEIM propone recuperar el despido por bajas reiteradas y que la Seguridad Social asuma toda la prestación",
+   "resultado": "descartada (filtro previo): propuesta de la patronal CEIM, sin medida aprobada ni concreta"
+  },
+  {
+   "fecha": "2026-10-27 22:22",
+   "fuente": "20minutos Economía",
+   "titulo": "¿Por qué sube el paro si se está creando empleo? te lo explicamos en un minuto",
+   "resultado": "descartada (filtro previo): explicación macroeconómica del paro, sin dato ni medida nueva para el bolsillo"
+  },
+  {
+   "fecha": "2026-10-27 22:22",
+   "fuente": "Infobae España",
+   "titulo": "Aitana defiende que los ricos paguen más impuestos y reivindica tributar en España: “La mitad de mis ingresos se van a Hacienda. Nunca me va",
+   "resultado": "descartada (filtro previo): opinión de una persona famosa sobre impuestos"
+  },
+  {
+   "fecha": "2026-10-27 22:23",
+   "fuente": "Newtral",
+   "titulo": "Nos preguntáis por la familia desahuciada en Vitoria que recibe “2.454 euros mensuales” de ayudas públicas",
+   "resultado": "borrador: vitoria-familia-desahuciada-2454-euros-ayudas-imv.md"
+  },
+  {
+   "fecha": "2026-10-27 22:23",
+   "fuente": "Infobae España",
+   "titulo": "Policías y guardias civiles se encierran en la Secretaría de Estado de Seguridad por la jubilación: el Gobierno pone fin a la negociación po",
+   "resultado": "borrador: jubilacion-policia-guardia-civil-encierro-negociacion.md"
   }
  ],
  "escritos": [
@@ -2805,6 +2815,16 @@
   {
    "title": "Huelga de Renfe el 29 de octubre: hasta el 100% del billete",
    "url": "/paro/huelga-renfe-29-octubre-derechos-reembolso-indemnizacion/",
+   "guia": false
+  },
+  {
+   "title": "Vitoria: qué se sabe de los 2.454 € de ayudas a la familia",
+   "url": "/paro/vitoria-familia-desahuciada-2454-euros-ayudas-imv/",
+   "guia": false
+  },
+  {
+   "title": "Jubilación de policías y guardias civiles: sin acuerdo",
+   "url": "/pensiones/jubilacion-policia-guardia-civil-encierro-negociacion/",
    "guia": false
   }
  ]
