@@ -1099,7 +1099,12 @@
   "https://www.elconfidencial.com/economia/declaracion-renta/2026-10-27/ayuda-fiscal-hasta-9000-euros-desgravar-renta-2026-fechas-requisitos-1qrt_4453495/",
   "https://www.elconfidencial.com/economia/2026-10-27/ignacio-de-la-calzada-abogado-laboralista_4453018/",
   "https://www.idealista.com/news/inmobiliario/vivienda/2026/10/27/920966-el-constitucional-admite-el-recurso-del-pp-contra-el-blindaje-permanente-de-la-vpo",
-  "https://www.idealista.com/news/inmobiliario/vivienda/2026/10/27/920410-alquiler-de-950-euros-para-despues-comprar-por-300-000-euros-asi-seran-las-700"
+  "https://www.idealista.com/news/inmobiliario/vivienda/2026/10/27/920410-alquiler-de-950-euros-para-despues-comprar-por-300-000-euros-asi-seran-las-700",
+  "https://www.lavanguardia.com/local/girona/20261027/11668591/retencion-talento-ia-retos-pendientes-tejido-empresarial-girona.html",
+  "https://www.infobae.com/espana/2026/10/27/los-ninis-ganan-terreno-a-los-sisis-122-millones-de-jovenes-ni-estudia-ni-trabaja-frente-al-millon-que-si-lo-hace/",
+  "https://www.abc.es/economia/acuerdo-parcial-pac-frena-campo-500-tractores-20261027173529-nt.html",
+  "https://www.idealista.com/news/fiscalidad/2026/10/27/918457-divorciarse-no-impide-aplicar-la-exencion-por-reinversion-en-vivienda-habitual-aunque-pasen",
+  "https://www.ocu.org/consumo-familia/viajes-vacaciones/noticias/huelga-trenes"
  ],
  "titles": [
   "los nueve cambios para la jubilacio n en 2027 segu n el abogado laboralista ignacio solsona",
@@ -1496,7 +1501,12 @@
   "la ayuda fiscal de hasta 9 000 euros que puedes desgravar en la declaracio n de la renta 2026 fechas clave y requisitos necesarios",
   "ignacio de la calzada abogado laboralista para una incapacidad permanente tienes que tener un mi nimo de an os cotizados en la seguridad social pero si es por accidente de trabajo no necesitas un mi nimo",
   "el constitucional admite el recurso del pp contra el blindaje permanente de la vpo de alquiler en navarra",
-  "alquiler de 950 euros para despue s comprar por 300 000 euros asi sera n las 700 casas que madrid licita en los berrocales"
+  "alquiler de 950 euros para despue s comprar por 300 000 euros asi sera n las 700 casas que madrid licita en los berrocales",
+  "la retencio n de talento y la ia entre los retos pendientes del tejido empresarial de girona",
+  "los ninis ganan terreno a los sisis 1 22 millones de jo venes ni estudia ni trabaja frente al millo n que si lo hace",
+  "estamos asfixiados 500 tractores y miles de agricultores colapsara n madrid por el aumento de los costes de produccio n",
+  "divorciarse no impide aplicar la exencio n por reinversio n en vivienda habitual aunque pasen ma s de dos an os",
+  "huelga de trenes cua les son tus derechos"
  ],
  "feeds_iniciados": [
   "https://ine.es/dyngs/Prensa/es/rssNovedades.xml",
@@ -1510,36 +1520,6 @@
   "https://www.antena3.com/noticias/rss/4013050.xml"
  ],
  "registro": [
-  {
-   "fecha": "2026-10-23 17:08",
-   "fuente": "Infobae España",
-   "titulo": "Antes de las pensiones, jubilarse dependía de la caridad: así sobrevivían los ancianos en la España medieval y en el Renacimiento",
-   "resultado": "descartada (filtro previo): Historia de la jubilación en la Edad Media y el Renacimiento, sin relación con la situación actual"
-  },
-  {
-   "fecha": "2026-10-23 17:08",
-   "fuente": "Infobae España",
-   "titulo": "Buscan voluntarios para vivir gratis en Galicia: solo hay que cuidar una pequeña huerta y saber cocinar",
-   "resultado": "descartada (filtro previo): Oferta de voluntariado en Galicia, no afecta a la economía de casa"
-  },
-  {
-   "fecha": "2026-10-23 17:08",
-   "fuente": "El Español Invertia",
-   "titulo": "Repsol logra frenar su actual fase de ajuste y consolidación ante el soporte de los 28,35 euros",
-   "resultado": "descartada (filtro previo): Cotización bursátil de Repsol, ahorro e inversión fuera de nuestro ámbito"
-  },
-  {
-   "fecha": "2026-10-23 17:08",
-   "fuente": "El Español Invertia",
-   "titulo": "El Gobierno dejará creado el Consejo Nacional antiblanqueo antes de las elecciones del 29N",
-   "resultado": "descartada (filtro previo): Consejo antiblanqueo, trámite institucional sin efecto directo en el bolsillo"
-  },
-  {
-   "fecha": "2026-10-23 17:08",
-   "fuente": "Antena 3 Economía",
-   "titulo": "Detenido tras forcejear con la Policía por una disputa por un taxi en Santander",
-   "resultado": "descartada (filtro previo): Suceso policial sin relación con la economía de las familias"
-  },
   {
    "fecha": "2026-10-23 17:09",
    "fuente": "20minutos Economía",
@@ -2409,6 +2389,36 @@
    "fuente": "Idealista News (vivienda)",
    "titulo": "Alquiler de 950 euros para después comprar por 300.000 euros: así serán las 700 casas que Madrid licita en Los Berrocales",
    "resultado": "borrador: madrid-berrocales-700-viviendas-alquiler-opcion-compra.md"
+  },
+  {
+   "fecha": "2026-10-27 17:52",
+   "fuente": "La Vanguardia Economía",
+   "titulo": "La retención de talento y la IA, entre los retos pendientes del tejido empresarial de Girona",
+   "resultado": "descartada (filtro previo): Macroeconomía regional sobre el tejido empresarial de Girona; no afecta directamente a la economía de las familias."
+  },
+  {
+   "fecha": "2026-10-27 17:52",
+   "fuente": "Infobae España",
+   "titulo": "Los ‘ninis’ ganan terreno a los ‘sisis’: 1,22 millones de jóvenes ni estudia ni trabaja frente al millón que sí lo hace",
+   "resultado": "descartada (filtro previo): Dato sociológico sobre jóvenes ni-ni sin medida concreta ni efecto directo en el bolsillo; sin valor propio para el lector."
+  },
+  {
+   "fecha": "2026-10-27 17:52",
+   "fuente": "ABC Economía",
+   "titulo": "«Estamos asfixiados»: 500 tractores y miles de agricultores colapsarán Madrid por el aumento de los costes de producción",
+   "resultado": "descartada: sin valor propio: es una movilización de agricultores (tractorada en Madrid) y un acuerdo parcial de la PAC en la UE, sin ninguna medida concreta, cifra o plazo que cambie el bolsillo de una familia o un trabajador. Las reclamaciones (gasóleo profesional agrario, paquete de ayudas) son p"
+  },
+  {
+   "fecha": "2026-10-27 17:53",
+   "fuente": "Idealista News (vivienda)",
+   "titulo": "Divorciarse no impide aplicar la exención por reinversión en vivienda habitual aunque pasen más de dos años",
+   "resultado": "borrador: supremo-divorcio-exencion-reinversion-vivienda-habitual.md"
+  },
+  {
+   "fecha": "2026-10-27 17:54",
+   "fuente": "OCU",
+   "titulo": "Huelga de trenes: ¿cuáles son tus derechos?",
+   "resultado": "borrador: huelga-renfe-29-octubre-derechos-reembolso-indemnizacion.md"
   }
  ],
  "escritos": [
@@ -2785,6 +2795,16 @@
   {
    "title": "Madrid: 700 pisos en alquiler a 950 € con opción a compra",
    "url": "/vivienda/madrid-berrocales-700-viviendas-alquiler-opcion-compra/",
+   "guia": false
+  },
+  {
+   "title": "Divorcio: mantienes la exención al vender la casa familiar",
+   "url": "/hacienda/supremo-divorcio-exencion-reinversion-vivienda-habitual/",
+   "guia": false
+  },
+  {
+   "title": "Huelga de Renfe el 29 de octubre: hasta el 100% del billete",
+   "url": "/paro/huelga-renfe-29-octubre-derechos-reembolso-indemnizacion/",
    "guia": false
   }
  ]
