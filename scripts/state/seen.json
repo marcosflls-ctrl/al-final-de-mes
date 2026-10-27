@@ -1042,7 +1042,20 @@
   "https://www.infobae.com/espana/2024/02/19/rosa-lopez-la-primera-ganadora-de-operacion-triunfo-que-nunca-llego-a-cobrar-el-cheque-del-premio-se-perdio/",
   "https://www.infobae.com/espana/2026/10/26/jubilarse-en-2026-o-esperar-a-2027-la-decision-que-puede-aumentar-la-pension/",
   "https://www.infobae.com/espana/2026/10/26/ignacio-de-la-calzada-abogado-el-gobierno-ha-cambiado-como-se-calcula-lo-que-cobras-de-baja/",
-  "https://www.antena3.com/noticias/espana/pedro-sanchez-promete-reformar-constitucion-subir-pensiones-conforme-ipc_202610266adfb602a9eeee544aad8991.html"
+  "https://www.antena3.com/noticias/espana/pedro-sanchez-promete-reformar-constitucion-subir-pensiones-conforme-ipc_202610266adfb602a9eeee544aad8991.html",
+  "https://elpais.com/economia/2026-10-27/el-paro-repunta-en-el-tercer-trimestre-hasta-el-1018.html",
+  "https://www.expansion.com/economia/2026/10/27/gasto-pensiones-sube-6-3-octubre-marca-record-14-540-millones-euros.html",
+  "https://www.elconfidencial.com/economia/2026-10-27/precio-luz-martes-27-octubre-horas-baratas-1qrt_4453667/",
+  "https://www.elconfidencial.com/economia/2026-10-27/espana-record-22-9m-ocupados-verano-paro-10-2_4453650/",
+  "https://www.idealista.com/news/finanzas/laboral/2026/10/27/920828-el-paro-sube-en-95-900-personas-en-verano-y-el-empleo-marca-nuevo-record-de-22-8",
+  "https://www.elespanol.com/invertia/economia/empleo/20261027/paro-sube-tercer-trimestre-ano-millones-ocupados-epa/1003744435882_0.html",
+  "https://www.elespanol.com/invertia/economia/20261027/gasto-pensiones-alcanza-cifra-record-millones-euros/1003744435947_0.html",
+  "https://www.lamoncloa.gob.es/consejodeministros/resumenes/Paginas/2026/271026-rueda-prensa-ministros.aspx?qfr=1",
+  "https://www.20minutos.es/lainformacion/economia-y-finanzas/espana-suma-73-600-empleos-tercer-trimestre-bate-un-nuevo-record-ocupacion-pero-paro-aumenta-10-2_7053792_0.html",
+  "https://www.20minutos.es/lainformacion/economia-y-finanzas/claves-dt34-asi-cambiara-penalizacion-retiro-voluntario-tres-anos_7049004_0.html",
+  "https://elpais.com/economia/2026-10-27/el-paro-repunta-en-el-tercer-trimestre-hasta-el-1018.html",
+  "https://www.europapress.es/economia/laboral-00346/noticia-paro-sube-95900-personas-verano-empleo-marca-nuevo-record-228-millones-ocupados-20261027090055.html",
+  "https://www.europapress.es/economia/laboral-00346/noticia-gasto-pensiones-sube-63-octubre-nuevo-maximo-14540-millones-euros-20261027091823.html"
  ],
  "titles": [
   "los nueve cambios para la jubilacio n en 2027 segu n el abogado laboralista ignacio solsona",
@@ -1397,7 +1410,13 @@
   "rosa lo pez la primera ganadora de operacio n triunfo que nunca llego a cobrar el cheque del premio se perdio",
   "jubilarse en 2026 o esperar a 2027 la decisio n que puede aumentar la pensio n",
   "ignacio de la calzada abogado el gobierno ha cambiado co mo se calcula lo que cobras de baja",
-  "pedro sa nchez promete reformar la constitucio n para subir las pensiones conforme al ipc"
+  "pedro sa nchez promete reformar la constitucio n para subir las pensiones conforme al ipc",
+  "la rueda de prensa tras el consejo de ministros se celebrara a partir de las 12 30 horas",
+  "espan a bate un nuevo re cord de ocupacio n en el tercer trimestre pero el paro aumenta al 10 2",
+  "claves de la dt34 asi cambiara la penalizacio n por retiro voluntario dentro de tres an os",
+  "el paro repunta en el tercer trimestre hasta el 10 18",
+  "el paro sube en 95 900 personas en verano y el empleo marca re cord de 22 8 millones de ocupados",
+  "el gasto en pensiones sube un 6 3 en octubre hasta un ma ximo de 14 540 millones de euros"
  ],
  "feeds_iniciados": [
   "https://ine.es/dyngs/Prensa/es/rssNovedades.xml",
@@ -1411,42 +1430,6 @@
   "https://www.antena3.com/noticias/rss/4013050.xml"
  ],
  "registro": [
-  {
-   "fecha": "2026-10-23 01:26",
-   "fuente": "El Confidencial Economía",
-   "titulo": "Gonzalo Bernardos, economista: “El mejor plan de pensiones que pueden ustedes tener es una vivienda”",
-   "resultado": "descartada (filtro previo): Opinión de un economista, sin datos ni medida concreta"
-  },
-  {
-   "fecha": "2026-10-23 01:26",
-   "fuente": "Idealista News (vivienda)",
-   "titulo": "Vender una casa que aún no existe: llega la promotora que convierte la obra en una inversión",
-   "resultado": "descartada (filtro previo): Inversión inmobiliaria promocional de una promotora"
-  },
-  {
-   "fecha": "2026-10-23 01:26",
-   "fuente": "Idealista News (vivienda)",
-   "titulo": "España, el país con la tasa de paro más alta de Europa tras Finlandia",
-   "resultado": "descartada (filtro previo): Macroeconomía comparativa europea del paro, sin medida para el bolsillo"
-  },
-  {
-   "fecha": "2026-10-23 01:26",
-   "fuente": "Idealista News (vivienda)",
-   "titulo": "El programa del PP en vivienda: un millón de casas, desalojar okupas en 48 horas y recuperar el mercado del alquiler",
-   "resultado": "descartada (filtro previo): Programa electoral de un partido, ya cubierto por la serie sobre el 29N"
-  },
-  {
-   "fecha": "2026-10-23 01:26",
-   "fuente": "Idealista News (vivienda)",
-   "titulo": "La hipoteca fija más barata de BBVA para primeras y segundas viviendas",
-   "resultado": "descartada (filtro previo): Oferta comercial de un banco (hipoteca fija de BBVA)"
-  },
-  {
-   "fecha": "2026-10-23 01:26",
-   "fuente": "OCU",
-   "titulo": "Planea ahora tu próxima declaración de Hacienda",
-   "resultado": "descartada (filtro previo): Consejos genéricos para la declaración de la renta, sin dato nuevo"
-  },
   {
    "fecha": "2026-10-23 01:26",
    "fuente": "Infobae España",
@@ -2310,6 +2293,42 @@
    "fuente": "Antena 3 Economía",
    "titulo": "Pedro Sánchez promete reformar la Constitución para subir las pensiones conforme al IPC",
    "resultado": "borrador: sanchez-promete-reforma-constitucion-pensiones-ipc.md"
+  },
+  {
+   "fecha": "2026-10-27 11:39",
+   "fuente": "La Moncloa (notas de prensa)",
+   "titulo": "La rueda de prensa tras el Consejo de Ministros se celebrará a partir de las 12:30 horas",
+   "resultado": "descartada: sin valor propio: la fuente solo avisa de la hora de la rueda de prensa del Consejo de Ministros del 27/10/2026 (12:30) y de qué ministras comparecen. No cita ninguna medida, cifra ni fecha. La referencia oficial de ese día aún no está publicada, así que no hay datos de los que informar."
+  },
+  {
+   "fecha": "2026-10-27 11:39",
+   "fuente": "20minutos Economía",
+   "titulo": "España bate un nuevo récord de ocupación en el tercer trimestre, pero el paro aumenta al 10,2%",
+   "resultado": "borrador: epa-tercer-trimestre-2026-ocupados-paro-10-2.md"
+  },
+  {
+   "fecha": "2026-10-27 11:39",
+   "fuente": "20minutos Economía",
+   "titulo": "Claves de la DT34: Así cambiará la penalización por retiro voluntario dentro de tres años",
+   "resultado": "descartada: repite el tema ya publicado de la DT34 y la jubilación anticipada en 2027 (/pensiones/jubilacion-anticipada-2027-dt34-pensiones-maximas/). El texto es confuso sobre qué hace la DT34 y sobre el plazo de tres años. Los porcentajes del 21%, 19%, 17% y 13% son los coeficientes generales de l"
+  },
+  {
+   "fecha": "2026-10-27 11:39",
+   "fuente": "El País Economía",
+   "titulo": "El paro repunta en el tercer trimestre hasta el 10,18%",
+   "resultado": "texto insuficiente (muro de pago o página vacía)"
+  },
+  {
+   "fecha": "2026-10-27 11:40",
+   "fuente": "Europa Press Economía",
+   "titulo": "El paro sube en 95.900 personas en verano y el empleo marca récord de 22,8 millones de ocupados",
+   "resultado": "descartada: repetición: es la misma EPA del tercer trimestre (INE, 27 de octubre) que ya publicamos en /paro/epa-tercer-trimestre-2026-ocupados-paro-10-2/. Los datos nuevos, como la subida del paro en 95.900 personas, el reparto entre sector público y privado o el peso de la temporalidad, son detall"
+  },
+  {
+   "fecha": "2026-10-27 11:40",
+   "fuente": "Europa Press Economía",
+   "titulo": "El gasto en pensiones sube un 6,3% en octubre, hasta un máximo de 14.540 millones de euros",
+   "resultado": "borrador: pension-media-jubilacion-octubre-2026-1577-euros.md"
   }
  ],
  "escritos": [
@@ -2656,6 +2675,16 @@
   {
    "title": "Sánchez promete blindar en la Constitución pensiones al IPC",
    "url": "/pensiones/sanchez-promete-reforma-constitucion-pensiones-ipc/",
+   "guia": false
+  },
+  {
+   "title": "EPA: récord de 22,85 millones de ocupados y paro al 10,2%",
+   "url": "/paro/epa-tercer-trimestre-2026-ocupados-paro-10-2/",
+   "guia": false
+  },
+  {
+   "title": "Pensión media de jubilación: 1.577,6 € en octubre",
+   "url": "/pensiones/pension-media-jubilacion-octubre-2026-1577-euros/",
    "guia": false
   }
  ]
