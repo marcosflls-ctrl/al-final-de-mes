@@ -1143,7 +1143,15 @@
   "https://www.antena3.com/noticias/economia/desalojan-policias-guardias-civiles-que-encerraron-ministerio-interior-exigiendo-jubilacion-digna-reconocimiento-profesion-riesgo_202610286ae18eb202501232156a7337.html",
   "https://www.20minutos.es/lainformacion/economia-y-finanzas/cinco-primeros-anos-jubilacion-son-claves-para-tu-dinero_7036392_0.html",
   "https://www.elmundo.es/economia/vivienda/2026/10/28/6ae1ca35e85ecefa5a8b456e.html",
-  "https://www.abc.es/economia/cuentas-corrientes/crisis-vivienda-ceba-autonomos-ingresos-inestables-locales-20261028015635-nt.html"
+  "https://www.abc.es/economia/cuentas-corrientes/crisis-vivienda-ceba-autonomos-ingresos-inestables-locales-20261028015635-nt.html",
+  "https://www.elmundo.es/economia/2026/10/28/6ae1dcc3e9cf4ae34d8b45bc.html",
+  "https://www.elconfidencial.com/economia/2026-10-28/alfonso-munoz-funcionario-seguridad-social-norma-boe-cambia-requisitos-pension-1qrt_4454659/",
+  "https://sede.agenciatributaria.gob.es/Sede/notas-prensa/notas-prensa/2026/octubre/28/desarticulada-red-blanqueo-organizacion-ciberdelincuencia-industrial.html",
+  "https://www.elmundo.es/economia/2026/10/28/6ae1e3c8e4d4d8256c8b458e.html",
+  "https://www.abc.es/economia/ing-lanza-banca-privada-espana-6000-clientes-20261028162430-nt.html",
+  "https://www.idealista.com/news/inmobiliario/internacional/2026/10/28/921193-la-expropiacion-de-viviendas-en-berlin-amenaza-con-un-golpe-de-8-000-millones",
+  "https://www.infobae.com/espana/2026/10/28/quien-vive-mejor-un-jubilado-espanol-con-pension-publica-o-uno-mexicano-con-un-sistema-mixto-de-reparto-y-capitalizacion/",
+  "https://www.ocu.org/dinero/trabajo-paro/informe/pasarela-imv-mayores-52"
  ],
  "titles": [
   "los nueve cambios para la jubilacio n en 2027 segu n el abogado laboralista ignacio solsona",
@@ -1579,7 +1587,13 @@
   "desalojan a los polici as y guardias civiles que se encerraron en el ministerio del interior exigiendo una jubilacio n digna y el reconocimiento de profesio n de riesgo",
   "el motivo por el que los 5 primeros an os de jubilacio n son claves para tu dinero",
   "ca ritas alerta de que 51 de los inquilinos actuales no tendri an un nivel de ingresos suficientes para acceder hoy al mismo alquiler",
-  "la crisis de vivienda se ceba ma s con los auto nomos ingresos inestables y locales por las nubes"
+  "la crisis de vivienda se ceba ma s con los auto nomos ingresos inestables y locales por las nubes",
+  "desarticulada la red de blanqueo de una organizacio n de ciberdelincuencia que inyectaba el dinero de las estafas en compra de vino y maquinaria industrial",
+  "bruselas examinara con detalle el accidente de tren de urda y ofrece toda su ayuda a espan a europa llora con vosotros",
+  "ing lanza su banca privada en espan a con 6 000 clientes con ma s de 500 000 euros de patrimonio invertido",
+  "la expropiacio n de viviendas en berli n amenaza con un golpe de 8 000 millones a vonovia",
+  "quie n vive mejor un jubilado espan ol con pensio n pu blica o uno mexicano con un sistema mixto de reparto y capitalizacio n",
+  "ingreso mi nimo vital y subsidio para mayores de 52 an os asi funcionan"
  ],
  "feeds_iniciados": [
   "https://ine.es/dyngs/Prensa/es/rssNovedades.xml",
@@ -1593,42 +1607,6 @@
   "https://www.antena3.com/noticias/rss/4013050.xml"
  ],
  "registro": [
-  {
-   "fecha": "2026-10-25 00:44",
-   "fuente": "El Mundo Economía",
-   "titulo": "Los hijos abandonados del siglo",
-   "resultado": "descartada: sin valor propio: es un artículo de opinión sobre las finanzas públicas y las protestas de jóvenes en Francia. No trae ninguna medida que afecte al bolsillo de una familia o un trabajador en España, ni permite un ejemplo, un trámite o un enlace a nuestras calculadoras."
-  },
-  {
-   "fecha": "2026-10-25 10:51",
-   "fuente": "El País Economía",
-   "titulo": "El modelo vasco para la crisis de la vivienda: más pisos protegidos, reserva de suelo y hasta reconvertir una antigua cárcel",
-   "resultado": "descartada (filtro previo): Repetición: el modelo vasco de vivienda es el mismo asunto que 'Euskadi pacta comprar 510 pisos protegidos en San Sebastián', ya publicado"
-  },
-  {
-   "fecha": "2026-10-25 10:51",
-   "fuente": "El Mundo Economía",
-   "titulo": "Los trabajadores que cobran el SMI pagarán IRPF si el Gobierno no aprueba otro ajuste fiscal en la Diputación Permanente o en 2027",
-   "resultado": "descartada (filtro previo): Misma noticia que la candidata 1 (exención del IRPF al SMI), que es la de Europa Press"
-  },
-  {
-   "fecha": "2026-10-25 10:51",
-   "fuente": "ABC Economía",
-   "titulo": "Óscar Vara, economista, sobre el problema de la vivienda en España: «El Gobierno tenía que haber tomado medidas para solucionarlo. Lo han em",
-   "resultado": "descartada (filtro previo): Entrevista de opinión a un economista, sin datos ni medida concreta"
-  },
-  {
-   "fecha": "2026-10-25 10:51",
-   "fuente": "ABC Economía",
-   "titulo": "España aprueba más de dos normas al día pero está entre los cinco países peores en regulación",
-   "resultado": "descartada (filtro previo): Macroeconomía y comparativa de regulación, sin efecto directo en el bolsillo"
-  },
-  {
-   "fecha": "2026-10-25 10:51",
-   "fuente": "ABC Economía",
-   "titulo": "El país de las tiendas vacías: más de 50.000 locales cerrados cuestionan la respuesta política a la crisis de vivienda",
-   "resultado": "descartada (filtro previo): Trata de locales comerciales cerrados, no de la economía de las familias"
-  },
   {
    "fecha": "2026-10-25 10:51",
    "fuente": "ABC Economía",
@@ -2492,14 +2470,45 @@
    "fuente": "ABC Economía",
    "titulo": "La crisis de vivienda se ceba más con los autónomos: ingresos inestables y locales por las nubes",
    "resultado": "borrador: autonomos-vivienda-alquiler-local-facturacion-uatae.md"
+  },
+  {
+   "fecha": "2026-10-28 18:25",
+   "fuente": "Agencia Tributaria (notas de prensa)",
+   "titulo": "Desarticulada la red de blanqueo de una organización de ciberdelincuencia que inyectaba el dinero de las estafas en compra de vino y maquina",
+   "resultado": "descartada (filtro previo): Crimen organizado y blanqueo de dinero; no afecta directamente a la economía de una familia."
+  },
+  {
+   "fecha": "2026-10-28 18:25",
+   "fuente": "El Mundo Economía",
+   "titulo": "Bruselas \"examinará con detalle\" el accidente de tren de Urda y ofrece \"toda su ayuda\" a España: \"Europa llora con vosotros\"",
+   "resultado": "descartada (filtro previo): Accidente ferroviario; no es una noticia de economía doméstica."
+  },
+  {
+   "fecha": "2026-10-28 18:25",
+   "fuente": "ABC Economía",
+   "titulo": "ING lanza su banca privada en España con 6.000 clientes con más de 500.000 euros de patrimonio invertido",
+   "resultado": "descartada (filtro previo): Banca privada para clientes de alto patrimonio; es producto de inversión y corresponde a Dinero en Claro."
+  },
+  {
+   "fecha": "2026-10-28 18:25",
+   "fuente": "Idealista News (vivienda)",
+   "titulo": "La expropiación de viviendas en Berlín amenaza con un golpe de 8.000 millones a Vonovia",
+   "resultado": "descartada (filtro previo): Empresa y expropiación en Alemania; otro país y sin efecto directo en España."
+  },
+  {
+   "fecha": "2026-10-28 18:25",
+   "fuente": "Infobae España",
+   "titulo": "Quién vive mejor un jubilado español con pensión pública o uno mexicano con un sistema mixto de reparto y capitalización",
+   "resultado": "descartada (filtro previo): Comparativa con México sobre sistemas de pensiones; otro país y sin datos nuevos para España."
+  },
+  {
+   "fecha": "2026-10-28 18:26",
+   "fuente": "OCU",
+   "titulo": "Ingreso Mínimo Vital y subsidio para mayores de 52 años: así funcionan",
+   "resultado": "borrador: subsidio-mayores-52-imv-pasarela-compatibilidad.md"
   }
  ],
  "escritos": [
-  {
-   "title": "Ayudas de 9 millones para agricultores y ganaderos afectados por incendios",
-   "url": "/paro/ayudas-de-9-millones-para-agricultores-y-ganaderos-afectados-por-incendios/",
-   "guia": false
-  },
   {
    "title": "El Supremo: Hacienda no puede tasar tu vivienda solo con Catastro y Google Maps",
    "url": "/hacienda/el-supremo-hacienda-no-puede-tasar-tu-vivienda-solo-con-catastro-y-google/",
@@ -2894,9 +2903,14 @@
    "title": "Autónomos: el local cuesta del 25 al 50% de su facturación",
    "url": "/vivienda/autonomos-vivienda-alquiler-local-facturacion-uatae/",
    "guia": false
+  },
+  {
+   "title": "Subsidio +52 años (480 €) e IMV: cuándo cobrar ambos",
+   "url": "/paro/subsidio-mayores-52-imv-pasarela-compatibilidad/",
+   "guia": false
   }
  ],
  "por_dia": {
-  "2026-10-28": 3
+  "2026-10-28": 4
  }
 }
