@@ -1,0 +1,167 @@
+---
+// «¿Te sobra potencia?»: cuánta potencia necesitas y cuánto ahorras bajándola. Precios en src/lib/potencia.ts.
+import Base from '../../layouts/Base.astro';
+import Siguenos from '../../components/Siguenos.astro';
+import Compartir from '../../components/Compartir.astro';
+import { SITE } from '../../config';
+import { APARATOS, POTENCIAS_NORMALIZADAS, POTENCIA_2026, IMPUESTOS, ENGANCHE, costeKwAnio } from '../../lib/potencia';
+
+const titulo = '¿Te sobra potencia? Calcula cuánto ahorras bajándola';
+const descripcion = `Cada kW de potencia contratada cuesta unos ${Math.round(costeKwAnio())} € al año con impuestos. Mira cuánta potencia necesitas según lo que enciendes a la vez y cuánto ahorras bajándola.`;
+const url = `${SITE.url}/luz/calculadora-potencia/`;
+const eur = (n: number, dec = 2) => n.toLocaleString('es-ES', { minimumFractionDigits: dec, maximumFractionDigits: dec, useGrouping: 'always' } as Intl.NumberFormatOptions);
+const kw = (n: number) => n.toLocaleString('es-ES', { maximumFractionDigits: 2 });
+const anual = costeKwAnio();
+const P = POTENCIA_2026;
+const preguntas = [
+  { q: '¿Cuánto cuesta cada kW de potencia contratada?', a: `En la tarifa regulada (PVPC), unos ${eur(anual)} € al año por cada kW con impuestos, unos ${eur(anual / 12)} € al mes. Lo pagas aunque no gastes nada: es la parte fija de la factura. En el mercado libre cada compañía pone su precio, que suele ser parecido o algo más alto.` },
+  { q: '¿Cuánto ahorro si bajo de 4,6 a 3,45 kW?', a: `Unos ${eur(1.15 * anual, 0)} € al año, ${eur(1.15 * anual / 12)} € al mes, con los precios del PVPC de 2026.` },
+  { q: '¿Qué pasa si me quedo corto de potencia?', a: 'Si enciendes a la vez más aparatos de los que permite tu potencia, salta el limitador del contador y se va la luz. Basta con apagar algo y volver a subir el interruptor general.' },
+  { q: '¿Cuánto cuesta cambiar la potencia?', a: `Al bajarla, la distribuidora cobra unos derechos de enganche de ${eur(ENGANCHE)} € más IVA. Si después tienes que volver a subirla, pagarás más: enganche, derechos de acceso y, a veces, de extensión por cada kW. Además, la distribuidora no tiene por qué aceptar más de un cambio al año. Por eso conviene probar antes y no bajar de golpe más de un escalón.` },
+  { q: '¿Puedo tener distinta potencia de día y de noche?', a: 'Sí. Desde 2021 hay dos potencias: punta (de 8:00 a 24:00 los días laborables) y valle (de 0:00 a 8:00 y todo el fin de semana). La de valle es casi gratis, así que puedes tener más por la noche si cargas el coche eléctrico, por ejemplo.' },
+];
+const jsonLd = [
+  { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Inicio', item: SITE.url + '/' },
+    { '@type': 'ListItem', position: 2, name: 'Luz', item: `${SITE.url}/luz/` },
+    { '@type': 'ListItem', position: 3, name: 'Calculadora de potencia', item: url } ] },
+  { '@context': 'https://schema.org', '@type': 'WebApplication', name: titulo, url, applicationCategory: 'UtilitiesApplication', operatingSystem: 'Any', inLanguage: 'es-ES', offers: { '@type': 'Offer', price: '0', priceCurrency: 'EUR' } },
+  { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: preguntas.map((p) => ({ '@type': 'Question', name: p.q, acceptedAnswer: { '@type': 'Answer', text: p.a } })) },
+];
+---
+<Base title={titulo} description={descripcion} jsonLd={jsonLd}>
+  <nav class="breadcrumbs"><a href="/">Inicio</a> › <a href="/luz/">Luz</a></nav>
+  <article class="pagina">
+    <h1>¿Te sobra potencia?</h1>
+    <p class="lead">La potencia contratada es lo que pagas en la factura aunque no gastes nada: unos <strong>{eur(anual, 0)} € al año por cada kW</strong>. Mucha gente tiene más de la que usa. Marca lo que enciendes a la vez en el peor momento y te decimos cuánta necesitas y cuánto ahorrarías.</p>
+
+    <div class="calc">
+      <form id="calc-pot" novalidate>
+        <fieldset class="campo">
+          <legend>1. ¿Qué tienes encendido a la vez en el peor momento?</legend>
+          {APARATOS.map((a) => (
+            <label class="radio"><input type="checkbox" name="ap" value={a.w} checked={a.siempre || a.id === 'horno'} disabled={a.siempre} /> {a.nombre} <span class="muted">({kw(a.w / 1000)} kW)</span></label>
+          ))}
+          <small class="muted">Por ejemplo, una noche de invierno con el horno, la lavadora y la calefacción. Si nunca coinciden, no los marques juntos.</small>
+        </fieldset>
+        <label class="campo"><span>2. Potencia que tienes ahora</span>
+          <select name="actual">{POTENCIAS_NORMALIZADAS.map((p) => <option value={p} selected={p === 4.6}>{kw(p)} kW</option>)}</select>
+          <small class="muted">Aparece en tu factura como «potencia contratada» (P1).</small>
+        </label>
+        <label class="campo"><span>Precio de tu tarifa (opcional)</span><span class="u"><input name="precio" type="number" inputmode="decimal" min="0" step="0.001" placeholder={eur(anual / 365, 3)} /><i>€/kW día</i></span><small class="muted">Si estás en el mercado libre, el precio de la potencia viene en tu contrato o en la factura. Si lo dejas vacío, usamos el de la tarifa regulada con impuestos.</small></label>
+      </form>
+      <section class="res" aria-live="polite">
+        <h2 class="etq">Potencia que necesitas</h2>
+        <p class="cifra"><span id="r-necesitas">—</span> <small>kW</small></p>
+        <p class="frase" id="r-frase"></p>
+        <table class="desglose">
+          <tbody>
+            <tr><th scope="row">Lo que enciendes a la vez</th><td id="r-suma">—</td></tr>
+            <tr><th scope="row">Ahorro al año</th><td id="r-anual"><strong>—</strong></td></tr>
+            <tr><th scope="row">Ahorro al mes</th><td id="r-mes">—</td></tr>
+            <tr><th scope="row">Coste del cambio (enganche)</th><td>{eur(ENGANCHE * (1 + IMPUESTOS.iva))} €</td></tr>
+          </tbody>
+        </table>
+        <p class="muted small">Sumamos lo que enciendes a la vez y redondeamos a la potencia normalizada siguiente. Si vas muy justo, deja un escalón de margen.</p>
+      </section>
+    </div>
+
+    <Compartir title={titulo} url={url} />
+
+    <section class="prose">
+      <h2>Cuánto cuesta cada potencia al año</h2>
+      <div class="tabla-scroll">
+        <table class="ref">
+          <thead><tr><th scope="col">Potencia</th><th scope="col">Al año</th><th scope="col">Al mes</th><th scope="col">Si bajas un escalón ahorras</th></tr></thead>
+          <tbody>
+            {POTENCIAS_NORMALIZADAS.map((p, i) => (
+              <tr><th scope="row">{kw(p)} kW</th><td>{eur(p * anual, 0)} €</td><td>{eur(p * anual / 12)} €</td><td>{i > 0 ? `${eur((p - POTENCIAS_NORMALIZADAS[i - 1]) * anual, 0)} € al año` : '—'}</td></tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p class="muted small">Tarifa regulada (PVPC) de 2026, con la misma potencia en punta y en valle, impuesto sobre la electricidad e IVA del 21 %. No incluye el alquiler del contador ni la energía que consumes.</p>
+
+      <h2>Antes de bajarla</h2>
+      <ul>
+        <li><strong>Mira tu máximo real.</strong> En la web de tu distribuidora (i-DE, e-distribución, UFD, etc.) puedes ver con tu factura la potencia máxima que has usado cada mes, gracias al contador inteligente. Si nunca pasas de 3 kW, te sobra con 3,45.</li>
+        <li><strong>Baja un escalón cada vez.</strong> Volver a subir cuesta más que bajar, y la distribuidora puede no aceptar más de un cambio al año.</li>
+        <li><strong>Organízate en las horas de más consumo:</strong> no pongas el horno y la lavadora a la vez. Además, si estás en la tarifa regulada, mira <a href="/luz/">la hora más barata de la luz hoy</a> y <a href="/luz/cuanto-cuesta-cada-electrodomestico/">lo que cuesta cada electrodoméstico</a>.</li>
+        <li><strong>Cómo se pide:</strong> llamando o escribiendo a tu compañía de luz, no a la distribuidora. Tarda unos días y no hace falta que vaya nadie a casa si tienes contador inteligente.</li>
+      </ul>
+
+      <h2>Preguntas frecuentes</h2>
+      {preguntas.map((p) => <><h3>{p.q}</h3><p>{p.a}</p></>)}
+
+      <p class="muted small">Fuentes: <a href="https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26348" rel="noopener" target="_blank">Resolución de la CNMC de 18 de diciembre de 2025 (peajes 2026)</a>, punta {kw(P.peajesP1)} y valle {kw(P.peajesP2)} €/kW año; <a href="https://www.boe.es/eli/es/o/2025/12/23/ted1524" rel="noopener" target="_blank">Orden TED/1524/2025 (cargos 2026)</a>, punta {kw(P.cargosP1)} y valle {kw(P.cargosP2)} €/kW año; margen de comercialización del PVPC, {kw(P.margenPVPC)} €/kW año. Las potencias de cada aparato son orientativas: mira la etiqueta del tuyo.</p>
+    </section>
+    <Siguenos />
+  </article>
+</Base>
+
+<script define:vars={{ anualDefecto: anual, normalizadas: POTENCIAS_NORMALIZADAS }}>
+  window.__potencia = { anualDefecto, normalizadas };
+</script>
+<script>
+  const { anualDefecto, normalizadas } = (window as any).__potencia as { anualDefecto: number; normalizadas: number[] };
+  const form = document.getElementById('calc-pot') as HTMLFormElement;
+  const $ = (id: string) => document.getElementById(id)!;
+  const eur = (n: number, dec = 2) => n.toLocaleString('es-ES', { minimumFractionDigits: dec, maximumFractionDigits: dec, useGrouping: 'always' } as Intl.NumberFormatOptions);
+  const kw = (n: number) => n.toLocaleString('es-ES', { maximumFractionDigits: 2 });
+  function calcular() {
+    const w = [...form.querySelectorAll<HTMLInputElement>('input[name=ap]')].filter((c) => c.checked).reduce((s, c) => s + +c.value, 0);
+    const necesita = normalizadas.find((p) => p >= w / 1000) ?? Math.ceil(w / 100) / 10;
+    const actual = +(form.actual as HTMLSelectElement).value;
+    const precioDia = +(form.precio as HTMLInputElement).value;
+    const porKw = precioDia > 0 ? precioDia * 365 : anualDefecto;
+    const sobra = Math.max(0, actual - necesita);
+    $('r-necesitas').textContent = kw(necesita);
+    $('r-suma').textContent = `${kw(w / 1000)} kW`;
+    $('r-anual').innerHTML = `<strong>${eur(sobra * porKw)} €</strong>`;
+    $('r-mes').textContent = `${eur(sobra * porKw / 12)} €`;
+    $('r-frase').textContent = sobra > 0
+      ? `Te sobran ${kw(sobra)} kW: bajando de ${kw(actual)} a ${kw(necesita)} kW ahorrarías unos ${eur(sobra * porKw, 0)} € al año.`
+      : necesita > actual ? `Con lo que marcas, podría saltarte el limitador con ${kw(actual)} kW: no enciendas todo a la vez o sube a ${kw(necesita)} kW.` : 'Tienes la potencia justa para lo que marcas.';
+  }
+  form.addEventListener('input', calcular);
+  form.addEventListener('change', calcular);
+  calcular();
+</script>
+
+<style>
+  .pagina { max-width: 900px; }
+  h1 { font-size: clamp(1.9rem, 4.6vw, 2.6rem); line-height: 1.15; margin: 4px 0 12px; }
+  .lead { font-size: 1.125rem; line-height: 1.55; margin: 0 0 24px; max-width: 720px; }
+  .calc { display: grid; grid-template-columns: 1.1fr 1fr; gap: 32px; border-top: 2px solid var(--ink); padding-top: 24px; align-items: start; }
+  form { display: flex; flex-direction: column; gap: 18px; }
+  .campo { display: flex; flex-direction: column; gap: 6px; border: 0; margin: 0; padding: 0; }
+  .campo > span, legend { font-weight: 600; font-size: .9375rem; padding: 0; margin-bottom: 4px; }
+  .campo small { font-size: .8125rem; }
+  .u { position: relative; display: block; }
+  .u i { position: absolute; right: 12px; top: 50%; transform: translateY(-50%); font-style: normal; color: var(--muted); }
+  input[type='number'], select { font: 600 1.125rem var(--sans); padding: 10px 12px; border: 1px solid #b9c0c6; border-radius: 4px; width: 100%; color: var(--ink); background: var(--bg); }
+  input[type='number'] { padding-right: 90px; font-variant-numeric: tabular-nums; }
+  input:focus, select:focus { outline: 2px solid var(--brand); outline-offset: 0; }
+  .radio { display: flex; gap: 8px; align-items: flex-start; font-size: .9375rem; padding: 3px 0; }
+  .radio input { accent-color: var(--brand); width: 18px; height: 18px; margin: 2px 0 0; flex: none; }
+  .res { background: var(--surface); border-radius: 4px; padding: 24px; position: sticky; top: 16px; }
+  .etq { font: 600 .875rem var(--sans); text-transform: uppercase; letter-spacing: .04em; color: var(--muted); margin: 0; }
+  .cifra { font-family: var(--serif); font-size: clamp(2.4rem, 6vw, 3rem); font-weight: 600; line-height: 1.1; margin: 6px 0 8px; color: var(--brand-dark); font-variant-numeric: tabular-nums; }
+  .cifra small { font: 400 1rem var(--sans); color: var(--muted); }
+  .frase { margin: 0 0 12px; font-size: .9375rem; }
+  .desglose { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
+  .desglose th, .desglose td { padding: 8px 0; border-bottom: 1px solid var(--rule); font-size: .9375rem; }
+  .desglose th { text-align: left; font-weight: 400; }
+  .desglose td { text-align: right; padding-left: 12px; white-space: nowrap; }
+  .small { font-size: .8125rem; }
+  .prose { margin-top: 36px; }
+  .tabla-scroll { overflow-x: auto; }
+  .ref { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums; display: table !important; }
+  .ref th, .ref td { padding: 8px 12px 8px 0; border-bottom: 1px solid var(--rule); text-align: right; font-size: .9375rem; white-space: nowrap; }
+  .ref th:first-child { text-align: left; font-weight: 500; }
+  .ref thead th { font-size: .8125rem; font-weight: 600; border-bottom: 1px solid var(--ink); white-space: normal; }
+  @media (max-width: 720px) {
+    .calc { grid-template-columns: 1fr; }
+    .res { padding: 20px 16px; position: static; }
+  }
+</style>

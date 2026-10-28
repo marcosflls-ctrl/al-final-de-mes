@@ -1,6 +1,7 @@
 ---
 import Base from '../../../layouts/Base.astro';
 import Carburantes from '../../../components/Carburantes.astro';
+import AhorroRepostar from '../../../components/AhorroRepostar.astro';
 import { SITE } from '../../../config';
 import { datosCarburantes, datosCiudades, litro, type Provincia } from '../../../lib/carburantes';
 import { fechaLarga } from '../../../lib/luz';
@@ -35,6 +36,7 @@ const jsonLd = {
   <h1>{titulo}</h1>
   <p class="intro">Hoy, {fechaLarga(d.fecha)}, la gasolina 95 cuesta de media <strong>{litro(p.g95?.media)} €/l</strong> en {p.nombre} ({comp('g95')}) y el diésel, <strong>{litro(p.diesel?.media)} €/l</strong> ({comp('diesel')}).</p>
   <Carburantes g95={p.g95} diesel={p.diesel} baratasG95={p.baratas_g95} baratasDiesel={p.baratas_diesel} ambito={p.nombre} />
+  <AhorroRepostar g95={p.g95} diesel={p.diesel} ambito={p.nombre} provincia />
   {ciudades.length > 0 && (
     <section class="ciudades">
       <h2>Precio por municipio</h2>

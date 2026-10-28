@@ -1,0 +1,39 @@
+---
+// Cuánto ahorras llenando el depósito en la gasolinera más barata en vez de en una de precio medio.
+// Se calcula con los datos del día (media y mínimo de la provincia o del municipio).
+interface R { media: number; min: number }
+interface Props { g95?: R; diesel?: R; ambito: string; provincia?: boolean }
+const { g95, diesel, ambito, provincia = false } = Astro.props;
+const LITROS = 50, VECES_ANIO = 24; // un depósito cada dos semanas
+const eur = (n: number, d = 0) => n.toLocaleString('es-ES', { minimumFractionDigits: d, maximumFractionDigits: d, useGrouping: 'always' } as Intl.NumberFormatOptions);
+const filas = [
+  { nombre: 'Gasolina 95', r: g95 },
+  { nombre: 'Diésel', r: diesel },
+].filter((f) => f.r && f.r.media - f.r.min > 0.005) as { nombre: string; r: R }[];
+---
+{filas.length > 0 && (
+  <section class="ahorro">
+    <h2>Cuánto ahorras repostando en la más barata</h2>
+    <div class="tabla-scroll">
+      <table>
+        <thead><tr><th scope="col"></th><th scope="col">Depósito de {LITROS} l a precio medio</th><th scope="col">En la más barata</th><th scope="col">Ahorras cada vez</th><th scope="col">Al año*</th></tr></thead>
+        <tbody>
+          {filas.map((f) => (
+            <tr><th scope="row">{f.nombre}</th><td>{eur(f.r.media * LITROS, 2)} €</td><td>{eur(f.r.min * LITROS, 2)} €</td><td><strong>{eur((f.r.media - f.r.min) * LITROS, 2)} €</strong></td><td><strong>{eur((f.r.media - f.r.min) * LITROS * VECES_ANIO)} €</strong></td></tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+    <p class="muted small">* Si llenas el depósito cada dos semanas ({VECES_ANIO} veces al año) con los precios de hoy en {ambito}.{provincia && ' La más barata de la provincia puede estar lejos: compensa si te pilla de camino. Mira también las de tu municipio.'} Las gasolineras automáticas o de supermercado suelen ser las más baratas.</p>
+  </section>
+)}
+<style>
+  .ahorro { margin: 28px 0; }
+  .ahorro h2 { font-size: 1.375rem; margin: 0 0 10px; }
+  .tabla-scroll { overflow-x: auto; }
+  table { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums; }
+  th, td { padding: 8px 10px 8px 0; border-bottom: 1px solid var(--rule); text-align: right; font-size: .9375rem; white-space: nowrap; }
+  th:first-child { text-align: left; font-weight: 500; }
+  thead th { font-size: .8125rem; font-weight: 600; border-bottom: 1px solid var(--ink); white-space: normal; }
+  .small { font-size: .8125rem; }
+</style>
