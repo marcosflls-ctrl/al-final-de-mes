@@ -1109,7 +1109,16 @@
   "https://www.20minutos.es/lainformacion/economia-y-finanzas/por-que-sube-paro-si-se-esta-creando-empleo-te-explicamos-un-minuto_7054183_0.html",
   "https://www.infobae.com/espana/cultura/2026/10/27/aitana-defiende-que-los-ricos-paguen-mas-impuestos-y-reivindica-tributar-en-espana-la-mitad-de-mis-ingresos-se-van-a-hacienda-nunca-me-vas-a-escuchar-quejarme-de-eso/",
   "https://www.newtral.es/familia-desahuciada-vitoria/20261027/",
-  "https://www.infobae.com/espana/2026/10/27/policias-y-guardias-civiles-se-encierran-en-la-secretaria-de-estado-de-seguridad-por-la-jubilacion-el-gobierno-pone-fin-a-la-negociacion-por-las-elecciones-del-29-n/"
+  "https://www.infobae.com/espana/2026/10/27/policias-y-guardias-civiles-se-encierran-en-la-secretaria-de-estado-de-seguridad-por-la-jubilacion-el-gobierno-pone-fin-a-la-negociacion-por-las-elecciones-del-29-n/",
+  "https://www.expansion.com/economia/2026/10/28/ayuso-lanza-hoy-presupuesto-record-32-911-millones-cerrar-legislatura.html",
+  "https://www.expansion.com/economia/2026/10/28/absentismo-desbocado-amenaza-supervivencia-pymes-autonomos.html",
+  "https://www.abc.es/economia/sanchez-planea-crear-fondo-soberano-explotar-sol-20261028012356-nt.html",
+  "https://www.abc.es/economia/neobanco-monzo-irrumpe-espana-revolut-diana-queremos-20261028012307-nt.html",
+  "https://www.abc.es/economia/cuentas-corrientes/expareja-paga-pension-puedes-pedir-ayuda-300-20261027010105-nt.html",
+  "https://www.abc.es/economia/cuentas-corrientes/evita-problemas-comprar-casa-clausulas-contrato-arras-20261027010059-nt.html",
+  "https://www.abc.es/economia/cuentas-corrientes/futuro-pensiones-debate-haciendo-paises-europa-garantizar-20261028010054-nt.html",
+  "https://www.elmundo.es/economia/2026/10/28/6ae0dddcfc6c8359288b4572.html",
+  "https://www.expansion.com/economia/2026/10/28/nuevos-jubilados-cobran-1-863-euros-mitad-asalariados.html"
  ],
  "titles": [
   "los nueve cambios para la jubilacio n en 2027 segu n el abogado laboralista ignacio solsona",
@@ -1516,7 +1525,16 @@
   "por que sube el paro si se esta creando empleo te lo explicamos en un minuto",
   "aitana defiende que los ricos paguen ma s impuestos y reivindica tributar en espan a la mitad de mis ingresos se van a hacienda nunca me vas a escuchar quejarme de eso",
   "nos pregunta is por la familia desahuciada en vitoria que recibe 2 454 euros mensuales de ayudas pu blicas",
-  "polici as y guardias civiles se encierran en la secretari a de estado de seguridad por la jubilacio n el gobierno pone fin a la negociacio n por las elecciones del 29 n"
+  "polici as y guardias civiles se encierran en la secretari a de estado de seguridad por la jubilacio n el gobierno pone fin a la negociacio n por las elecciones del 29 n",
+  "ayuso lanza hoy un presupuesto re cord de 32 911 millones para cerrar la legislatura",
+  "el absentismo desbocado amenaza la supervivencia de pymes y auto nomos",
+  "sa nchez planea la creacio n de un fondo soberano para explotar el sol y el viento de espan a",
+  "el neobanco brita nico monzo irrumpe en espan a con revolut en la diana",
+  "tu expareja no paga la pensio n asi puedes pedir la ayuda de 300 euros",
+  "evita problemas al comprar una casa las 3 cla usulas del contrato de arras que te salvara n de perder miles de euros",
+  "el futuro de las pensiones a debate que esta n haciendo otros pai ses de europa para garantizar la jubilacio n",
+  "fedea desmonta tres reformas estrella del gobierno prometidas a la ue a cambio de los fondos vivienda pensiones y educacio n",
+  "los nuevos jubilados cobran 1 863 euros ma s que la mitad de los asalariados"
  ],
  "feeds_iniciados": [
   "https://ine.es/dyngs/Prensa/es/rssNovedades.xml",
@@ -1530,60 +1548,6 @@
   "https://www.antena3.com/noticias/rss/4013050.xml"
  ],
  "registro": [
-  {
-   "fecha": "2026-10-23 17:30",
-   "fuente": "Idealista News (vivienda)",
-   "titulo": "Certificado energético: cómo obtenerlo, cuánto cuesta y para qué sirve",
-   "resultado": "borrador: certificado-energetico-multas-6000-vender-alquilar.md"
-  },
-  {
-   "fecha": "2026-10-23 21:18",
-   "fuente": "Europa Press Economía",
-   "titulo": "El Gobierno propone adjudicar 17,45 millones a Orange España y Telefónica para llevar 5G a zonas muy rurales",
-   "resultado": "descartada (filtro previo): Adjudicación a empresas concretas (Orange y Telefónica) para despliegue 5G; no afecta directamente al bolsillo de las familias"
-  },
-  {
-   "fecha": "2026-10-23 21:18",
-   "fuente": "La Vanguardia Economía",
-   "titulo": "La subida de precios en el turismo estanca la demanda nacional en verano",
-   "resultado": "descartada (filtro previo): Macroeconomía del sector turístico (demanda y precios), sin medida que toque la economía doméstica"
-  },
-  {
-   "fecha": "2026-10-23 21:18",
-   "fuente": "Newtral",
-   "titulo": "Salario mínimo, aborto y vivienda: datos y contexto de la entrevista a Feijóo en la Cadena SER",
-   "resultado": "descartada (filtro previo): Entrevista política sin medida concreta; el tema del SMI exento de IRPF ya está publicado como 'Feijóo promete SMI exento de IRPF y pensiones con el IPC'"
-  },
-  {
-   "fecha": "2026-10-23 21:18",
-   "fuente": "Europa Press Economía",
-   "titulo": "El Brent roza los 117 dólares y toca niveles no vistos desde abril",
-   "resultado": "descartada: sin valor propio: la noticia trata del precio del Brent y de la tensión geopolítica (hutíes, Arabia Saudí, EE. UU. e Irán). No trae ninguna medida ni dato sobre carburantes en España. Los datos de MITECO que he encontrado son informes mensuales poco claros y no dan un precio actual de ga"
-  },
-  {
-   "fecha": "2026-10-23 21:19",
-   "fuente": "Idealista News (vivienda)",
-   "titulo": "El Gobierno abre una consulta pública sobre la futura Ley Europea de Vivienda Asequible",
-   "resultado": "borrador: ley-europea-vivienda-asequible-consulta-publica.md"
-  },
-  {
-   "fecha": "2026-10-24 11:36",
-   "fuente": "20minutos Economía",
-   "titulo": "'Solos' ante la Shamonda: los ganaderos españoles deben afrontar sin ayudas económicas ni protocolos actualizados esta nueva enfermedad",
-   "resultado": "descartada (filtro previo): fuera de tema: sanidad animal y ganadería, sin impacto directo en el bolsillo de las familias"
-  },
-  {
-   "fecha": "2026-10-24 11:36",
-   "fuente": "20minutos Economía",
-   "titulo": "Pequeños gestos recomendados por expertos para ahorrar en la factura de la luz con el cambio de hora",
-   "resultado": "descartada (filtro previo): consejos genéricos de ahorro sin novedad ni datos nuevos"
-  },
-  {
-   "fecha": "2026-10-24 11:36",
-   "fuente": "ABC Economía",
-   "titulo": "Bajas por menopausia y violencia de género: requisitos, cómo se solicitan y cuánto se cobra",
-   "resultado": "descartada (filtro previo): repite el tema de la baja por menopausia ya publicado (BOE)"
-  },
   {
    "fecha": "2026-10-24 11:36",
    "fuente": "El Confidencial Economía",
@@ -2429,6 +2393,60 @@
    "fuente": "Infobae España",
    "titulo": "Policías y guardias civiles se encierran en la Secretaría de Estado de Seguridad por la jubilación: el Gobierno pone fin a la negociación po",
    "resultado": "borrador: jubilacion-policia-guardia-civil-encierro-negociacion.md"
+  },
+  {
+   "fecha": "2026-10-28 01:45",
+   "fuente": "Expansión Economía",
+   "titulo": "Ayuso lanza hoy un presupuesto récord de 32.911 millones para cerrar la legislatura",
+   "resultado": "descartada (filtro previo): Presupuesto autonómico de Madrid: política sin medida concreta que afecte directamente al bolsillo"
+  },
+  {
+   "fecha": "2026-10-28 01:45",
+   "fuente": "Expansión Economía",
+   "titulo": "El absentismo desbocado amenaza la supervivencia de pymes y autónomos",
+   "resultado": "descartada (filtro previo): Absentismo laboral: enfoque empresarial y macroeconómico, sin medida que toque a las familias"
+  },
+  {
+   "fecha": "2026-10-28 01:45",
+   "fuente": "ABC Economía",
+   "titulo": "Sánchez planea la creación de un «fondo soberano» para explotar el sol y el viento de España",
+   "resultado": "descartada (filtro previo): Fondo soberano para energía: decisión empresarial y de política industrial, sin efecto directo en la factura"
+  },
+  {
+   "fecha": "2026-10-28 01:45",
+   "fuente": "ABC Economía",
+   "titulo": "El neobanco británico Monzo irrumpe en España con Revolut en la diana",
+   "resultado": "descartada (filtro previo): Neobanco británico: producto financiero y empresas, no economía de casa"
+  },
+  {
+   "fecha": "2026-10-28 01:45",
+   "fuente": "ABC Economía",
+   "titulo": "¿Tu expareja no paga la pensión? Así puedes pedir la ayuda de 300 euros",
+   "resultado": "descartada (filtro previo): Ya publicado: 'Pensión de alimentos impagada: anticipo de 300 € desde noviembre'"
+  },
+  {
+   "fecha": "2026-10-28 01:45",
+   "fuente": "ABC Economía",
+   "titulo": "Evita problemas al comprar una casa: las 3 cláusulas del contrato de arras que te salvarán de perder miles de euros",
+   "resultado": "descartada (filtro previo): Consejos generales sobre contratos de arras sin noticia nueva ni datos oficiales: sin valor propio"
+  },
+  {
+   "fecha": "2026-10-28 01:45",
+   "fuente": "ABC Economía",
+   "titulo": "El futuro de las pensiones, a debate: qué están haciendo otros países de Europa para garantizar la jubilación",
+   "resultado": "descartada (filtro previo): Comparativa de pensiones en otros países de Europa: no afecta directamente al lector español"
+  },
+  {
+   "fecha": "2026-10-28 01:45",
+   "fuente": "El Mundo Economía",
+   "titulo": "Fedea desmonta tres reformas 'estrella' del Gobierno prometidas a la UE a cambio de los fondos: vivienda, pensiones y educación",
+   "resultado": "descartada: sin valor propio: es un informe de valoración de Fedea sobre reformas del Plan de Recuperación (vivienda, pensiones, educación). No trae ninguna medida, plazo, cuantía ni trámite nuevo para el bolsillo del lector. Es análisis macro y política sin medida concreta, y no hay documento ofici"
+  },
+  {
+   "fecha": "2026-10-28 01:46",
+   "fuente": "Expansión Economía",
+   "titulo": "Los nuevos jubilados cobran 1.863 euros, más que la mitad de los asalariados",
+   "resultado": "borrador: nuevos-jubilados-pension-1863-euros-gasto-pensiones.md"
   }
  ],
  "escritos": [
@@ -2826,6 +2844,14 @@
    "title": "Jubilación de policías y guardias civiles: sin acuerdo",
    "url": "/pensiones/jubilacion-policia-guardia-civil-encierro-negociacion/",
    "guia": false
+  },
+  {
+   "title": "Nuevos jubilados: 1.863 € al mes, un 20% más que las bajas",
+   "url": "/pensiones/nuevos-jubilados-pension-1863-euros-gasto-pensiones/",
+   "guia": false
   }
- ]
+ ],
+ "por_dia": {
+  "2026-10-28": 1
+ }
 }
