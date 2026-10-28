@@ -1152,7 +1152,14 @@
   "https://www.idealista.com/news/inmobiliario/internacional/2026/10/28/921193-la-expropiacion-de-viviendas-en-berlin-amenaza-con-un-golpe-de-8-000-millones",
   "https://www.infobae.com/espana/2026/10/28/quien-vive-mejor-un-jubilado-espanol-con-pension-publica-o-uno-mexicano-con-un-sistema-mixto-de-reparto-y-capitalizacion/",
   "https://www.ocu.org/dinero/trabajo-paro/informe/pasarela-imv-mayores-52",
-  "https://www.elespanol.com/invertia/economia/bancos-centrales/20261028/fed-mantiene-tipos-no-anade-presion-trump-dias-midterms-pese-repunte-inflacion/1003744437202_0.html"
+  "https://www.elespanol.com/invertia/economia/bancos-centrales/20261028/fed-mantiene-tipos-no-anade-presion-trump-dias-midterms-pese-repunte-inflacion/1003744437202_0.html",
+  "https://www.abc.es/economia/reserva-federal-mantiene-tipos-pese-presion-inflacion-20261028190247-nt.html",
+  "https://www.abc.es/economia/cuentas-corrientes/companias-cancelan-trenes-madridandalucia-saber-reanudara-servicio-20261028181945-nt.html",
+  "https://www.idealista.com/news/vacacional/destinos-turisticos/2026/10/28/921252-el-secreto-del-nombre-de-logrono-que-significa-y-de-donde-procede",
+  "https://www.infobae.com/espana/2026/10/28/se-empiezan-a-conocer-los-nombres-de-las-victimas-del-accidente-ferroviario-de-toledo-un-guardia-civil-y-un-reconocido-inspector-de-hacienda-entre-los-fallecidos/",
+  "https://www.infobae.com/espana/2026/10/28/rescatan-al-perro-de-un-pasajero-desaparecido-en-el-accidente-ferroviario-de-toledo-mientras-su-familia-sigue-buscandolo-como-puede-ser-que-no-sepan-en-que-asiento-viajaba/",
+  "https://www.antena3.com/noticias/sociedad/maquinista-jubilado-senala-posibles-errores-accidente-ferroviarrio-toledo-manda-mensaje-oscar-puente_202610286ae26b2002501232156b8123.html",
+  "https://www.businessinsider.es/mercados/alarma-energetica-europa-precio-gas-supera-los-100-euros-maximo-desde-2022_7054660_0.html"
  ],
  "titles": [
   "los nueve cambios para la jubilacio n en 2027 segu n el abogado laboralista ignacio solsona",
@@ -1594,7 +1601,14 @@
   "ing lanza su banca privada en espan a con 6 000 clientes con ma s de 500 000 euros de patrimonio invertido",
   "la expropiacio n de viviendas en berli n amenaza con un golpe de 8 000 millones a vonovia",
   "quie n vive mejor un jubilado espan ol con pensio n pu blica o uno mexicano con un sistema mixto de reparto y capitalizacio n",
-  "ingreso mi nimo vital y subsidio para mayores de 52 an os asi funcionan"
+  "ingreso mi nimo vital y subsidio para mayores de 52 an os asi funcionan",
+  "la reserva federal mantiene los tipos en el 4 pese a la presio n de la inflacio n",
+  "las compan i as cancelan los trenes madrid andaluci a sin saber cua ndo se reanudara el servicio",
+  "el secreto del nombre de logron o que significa y de do nde procede",
+  "se empiezan a conocer los nombres de las vi ctimas mortales del accidente ferroviario de toledo un guardia civil y un reconocido inspector de hacienda entre los fallecidos",
+  "rescatan al perro de un pasajero desaparecido en el accidente ferroviario de toledo mientras su familia sigue busca ndolo co mo puede ser que no sepan en que asiento viajaba",
+  "un maquinista jubilado sen ala los posibles errores en el accidente ferroviario de toledo y le manda un mensaje a o scar puente",
+  "alarma energe tica en europa el gas natural supera los 100 euros ma ximo desde 2022 empujando al precio de la luz"
  ],
  "feeds_iniciados": [
   "https://ine.es/dyngs/Prensa/es/rssNovedades.xml",
@@ -1608,48 +1622,6 @@
   "https://www.antena3.com/noticias/rss/4013050.xml"
  ],
  "registro": [
-  {
-   "fecha": "2026-10-25 10:51",
-   "fuente": "ABC Economía",
-   "titulo": "Los 'zurdos camaleón' se infiltran en un tablero empresarial que vira a la derecha",
-   "resultado": "descartada (filtro previo): Análisis político-empresarial, sin medida ni dato para el lector"
-  },
-  {
-   "fecha": "2026-10-25 10:51",
-   "fuente": "ABC Economía",
-   "titulo": "Uber, Google y Bolt lanzan coches autónomos en España pero nadie sabe aún cómo asegurarlos",
-   "resultado": "descartada (filtro previo): Asunto empresarial (coches autónomos y seguros de las plataformas), sin valor propio para el lector"
-  },
-  {
-   "fecha": "2026-10-25 10:51",
-   "fuente": "El Confidencial Economía",
-   "titulo": "Gonzalo Bernardos, economista: \"Deberíamos retrasar la edad de jubilación, ya que ha aumentado la esperanza de vida y en la mayoría de los p",
-   "resultado": "descartada (filtro previo): Opinión de un economista sobre retrasar la jubilación, sin medida concreta"
-  },
-  {
-   "fecha": "2026-10-25 10:51",
-   "fuente": "El Español Invertia",
-   "titulo": "Los compromisos preelectorales de Sánchez hipotecan casi 20.000 millones de gasto público de 2027",
-   "resultado": "descartada (filtro previo): Política sin medida concreta: compromisos preelectorales y gasto público global"
-  },
-  {
-   "fecha": "2026-10-25 10:52",
-   "fuente": "Europa Press Economía",
-   "titulo": "La exención fiscal de la subida del SMI, pendiente de un cambio legal en la Diputación Permanente o el nuevo Congreso",
-   "resultado": "borrador: smi-2027-exencion-irpf-reforma-legal-diputacion-permanente.md"
-  },
-  {
-   "fecha": "2026-10-25 10:52",
-   "fuente": "Europa Press Economía",
-   "titulo": "El sector del metal empieza a poner freno al absentismo limitando los complementos por bajas médicas",
-   "resultado": "borrador: metal-convenios-recortan-complemento-baja-absentismo.md"
-  },
-  {
-   "fecha": "2026-10-25 11:10",
-   "fuente": "El Español Invertia",
-   "titulo": "Los inmigrantes colapsan las inmobiliarias de Ceuta mientras los 'pisos patera' siguen inundando la ciudad",
-   "resultado": "descartada (filtro previo): Trata de inmobiliarias y 'pisos patera' en Ceuta con enfoque político y sin medida concreta ni dato que afecte al bolsillo de las familias; cae en lo que las normas descartan (política sin medida, tono de opinión)."
-  },
   {
    "fecha": "2026-10-25 11:10",
    "fuente": "ABC Economía",
@@ -2507,14 +2479,51 @@
    "fuente": "OCU",
    "titulo": "Ingreso Mínimo Vital y subsidio para mayores de 52 años: así funcionan",
    "resultado": "borrador: subsidio-mayores-52-imv-pasarela-compatibilidad.md"
+  },
+  {
+   "fecha": "2026-10-29 00:15",
+   "fuente": "ABC Economía",
+   "titulo": "La Reserva Federal mantiene los tipos en el 4% pese a la presión de la inflación",
+   "resultado": "descartada (filtro previo): macroeconomía y otro país (Reserva Federal), fuera de tema"
+  },
+  {
+   "fecha": "2026-10-29 00:15",
+   "fuente": "ABC Economía",
+   "titulo": "Las compañías cancelan los trenes Madrid-Andalucía sin saber cuándo se reanudará el servicio",
+   "resultado": "descartada (filtro previo): transporte ferroviario; no afecta directamente a la economía de casa y no es tema de la web"
+  },
+  {
+   "fecha": "2026-10-29 00:15",
+   "fuente": "Idealista News (vivienda)",
+   "titulo": "El secreto del nombre de Logroño: qué significa y de dónde procede",
+   "resultado": "descartada (filtro previo): curiosidad sobre el nombre de una ciudad, sin relación con la economía de casa"
+  },
+  {
+   "fecha": "2026-10-29 00:15",
+   "fuente": "Infobae España",
+   "titulo": "Se empiezan a conocer los nombres de las víctimas mortales del accidente ferroviario de Toledo: un guardia civil y un reconocido inspector d",
+   "resultado": "descartada (filtro previo): sucesos (víctimas de un accidente ferroviario), fuera de tema"
+  },
+  {
+   "fecha": "2026-10-29 00:15",
+   "fuente": "Infobae España",
+   "titulo": "Rescatan al perro de un pasajero desaparecido en el accidente ferroviario de Toledo, mientras su familia sigue buscándolo: “¿Cómo puede ser ",
+   "resultado": "descartada (filtro previo): sucesos (perro de un pasajero), fuera de tema"
+  },
+  {
+   "fecha": "2026-10-29 00:15",
+   "fuente": "Antena 3 Economía",
+   "titulo": "Un maquinista jubilado señala los posibles errores en el accidente ferroviario de Toledo y le manda un mensaje a Óscar Puente",
+   "resultado": "descartada (filtro previo): sucesos (accidente ferroviario y declaraciones de un jubilado), fuera de tema"
+  },
+  {
+   "fecha": "2026-10-29 00:16",
+   "fuente": "Business Insider España",
+   "titulo": "Alarma energética en Europa: el gas natural supera los 100 euros, máximo desde 2022, empujando al precio de la luz",
+   "resultado": "borrador: gas-supera-100-euros-mwh-factura-luz.md"
   }
  ],
  "escritos": [
-  {
-   "title": "El Supremo: Hacienda no puede tasar tu vivienda solo con Catastro y Google Maps",
-   "url": "/hacienda/el-supremo-hacienda-no-puede-tasar-tu-vivienda-solo-con-catastro-y-google/",
-   "guia": false
-  },
   {
    "title": "Con 2.000 € netos al mes: qué casa y cuántos ahorros necesitas",
    "url": "/vivienda/hipoteca-sueldo-2000-netos-que-casa-comprar/",
@@ -2909,9 +2918,15 @@
    "title": "Subsidio +52 años (480 €) e IMV: cuándo cobrar ambos",
    "url": "/paro/subsidio-mayores-52-imv-pasarela-compatibilidad/",
    "guia": false
+  },
+  {
+   "title": "El gas supera los 100 €/MWh: qué supone para tu luz",
+   "url": "/luz/gas-supera-100-euros-mwh-factura-luz/",
+   "guia": false
   }
  ],
  "por_dia": {
-  "2026-10-28": 4
+  "2026-10-28": 4,
+  "2026-10-29": 1
  }
 }
