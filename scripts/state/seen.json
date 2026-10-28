@@ -1142,7 +1142,8 @@
   "https://www.antena3.com/noticias/mundo/donald-trump-aprueba-que-bolsonaro-vaya-estados-unidos-aprobaria-creo-que-son-buenas-personas_202610286ae1a33da5f83c2fb8e6176b.html",
   "https://www.antena3.com/noticias/economia/desalojan-policias-guardias-civiles-que-encerraron-ministerio-interior-exigiendo-jubilacion-digna-reconocimiento-profesion-riesgo_202610286ae18eb202501232156a7337.html",
   "https://www.20minutos.es/lainformacion/economia-y-finanzas/cinco-primeros-anos-jubilacion-son-claves-para-tu-dinero_7036392_0.html",
-  "https://www.elmundo.es/economia/vivienda/2026/10/28/6ae1ca35e85ecefa5a8b456e.html"
+  "https://www.elmundo.es/economia/vivienda/2026/10/28/6ae1ca35e85ecefa5a8b456e.html",
+  "https://www.abc.es/economia/cuentas-corrientes/crisis-vivienda-ceba-autonomos-ingresos-inestables-locales-20261028015635-nt.html"
  ],
  "titles": [
   "los nueve cambios para la jubilacio n en 2027 segu n el abogado laboralista ignacio solsona",
@@ -1577,7 +1578,8 @@
   "donald trump aprueba que bolsonaro vaya a estados unidos yo lo aprobari a creo que son buenas personas",
   "desalojan a los polici as y guardias civiles que se encerraron en el ministerio del interior exigiendo una jubilacio n digna y el reconocimiento de profesio n de riesgo",
   "el motivo por el que los 5 primeros an os de jubilacio n son claves para tu dinero",
-  "ca ritas alerta de que 51 de los inquilinos actuales no tendri an un nivel de ingresos suficientes para acceder hoy al mismo alquiler"
+  "ca ritas alerta de que 51 de los inquilinos actuales no tendri an un nivel de ingresos suficientes para acceder hoy al mismo alquiler",
+  "la crisis de vivienda se ceba ma s con los auto nomos ingresos inestables y locales por las nubes"
  ],
  "feeds_iniciados": [
   "https://ine.es/dyngs/Prensa/es/rssNovedades.xml",
@@ -1591,12 +1593,6 @@
   "https://www.antena3.com/noticias/rss/4013050.xml"
  ],
  "registro": [
-  {
-   "fecha": "2026-10-25 00:44",
-   "fuente": "ABC Economía",
-   "titulo": "La robotización abre una nueva frontera para el sector asegurador",
-   "resultado": "descartada (filtro previo): Trata del sector asegurador y la robotización, un asunto empresarial sin impacto directo en la economía de casa."
-  },
   {
    "fecha": "2026-10-25 00:44",
    "fuente": "El Mundo Economía",
@@ -2490,14 +2486,15 @@
    "fuente": "El Mundo Economía",
    "titulo": "Cáritas alerta de que 51% de los inquilinos actuales no tendrían un nivel de ingresos suficientes para acceder hoy al mismo alquiler",
    "resultado": "borrador: caritas-foessa-inquilinos-alquiler-ingresos-insuficientes.md"
+  },
+  {
+   "fecha": "2026-10-28 12:40",
+   "fuente": "ABC Economía",
+   "titulo": "La crisis de vivienda se ceba más con los autónomos: ingresos inestables y locales por las nubes",
+   "resultado": "borrador: autonomos-vivienda-alquiler-local-facturacion-uatae.md"
   }
  ],
  "escritos": [
-  {
-   "title": "Viudedad para parejas no casadas con hijos: dos años empadronados",
-   "url": "/pensiones/viudedad-para-parejas-no-casadas-con-hijos-dos-anos-empadronados/",
-   "guia": false
-  },
   {
    "title": "Ayudas de 9 millones para agricultores y ganaderos afectados por incendios",
    "url": "/paro/ayudas-de-9-millones-para-agricultores-y-ganaderos-afectados-por-incendios/",
@@ -2892,9 +2889,14 @@
    "title": "Cáritas: 1 de cada 2 inquilinos no alquilaría hoy su piso",
    "url": "/vivienda/caritas-foessa-inquilinos-alquiler-ingresos-insuficientes/",
    "guia": false
+  },
+  {
+   "title": "Autónomos: el local cuesta del 25 al 50% de su facturación",
+   "url": "/vivienda/autonomos-vivienda-alquiler-local-facturacion-uatae/",
+   "guia": false
   }
  ],
  "por_dia": {
-  "2026-10-28": 2
+  "2026-10-28": 3
  }
 }
