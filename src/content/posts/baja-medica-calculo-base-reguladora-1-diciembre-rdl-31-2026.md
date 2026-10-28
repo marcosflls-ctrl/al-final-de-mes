@@ -48,6 +48,8 @@ Aquí puede notarse el cambio. Si la subida aparece en la cotización del mes an
 
 Un ejemplo: la base de diciembre es de 2.000 € y la de enero, de 2.200 €. Con una baja en febrero, la base diaria sería de 66,67 € y no de 73,33 €. Desde el día 21, cobrarías unos 50 € al día en lugar de unos 55 €.
 
+Para tu caso, con cada tramo y quién te lo paga, usa la [calculadora de la baja laboral](/paro/calculadora-baja-laboral/).
+
 ## ¿Hay excepciones?
 
 Sí. El texto fuente recoge estas:

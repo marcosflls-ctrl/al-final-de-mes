@@ -1,0 +1,173 @@
+---
+// Calculadora de la baja laboral (incapacidad temporal). Reglas en src/lib/baja.ts.
+import Base from '../../layouts/Base.astro';
+import Siguenos from '../../components/Siguenos.astro';
+import Compartir from '../../components/Compartir.astro';
+import { SITE } from '../../config';
+import { calcularBaja, BAJA_2026 } from '../../lib/baja';
+
+const titulo = '¿Cuánto cobro de baja? Calculadora de la baja laboral 2026';
+const descripcion = 'Calcula cuánto cobras cada día de baja médica, quién te lo paga y cuánto dejas de ganar: enfermedad común, accidente de trabajo y bajas especiales, con las reglas de 2026.';
+const url = `${SITE.url}/paro/calculadora-baja-laboral/`;
+const eur = (n: number, dec = 2) => n.toLocaleString('es-ES', { minimumFractionDigits: dec, maximumFractionDigits: dec, useGrouping: 'always' } as Intl.NumberFormatOptions);
+
+// Ejemplos para el texto: 24.000 € brutos, 10 y 30 días de baja por enfermedad común
+const ej10 = calcularBaja({ brutoAnual: 24000, tipo: 'comun', dias: 10, complemento: 'no' });
+const ej30 = calcularBaja({ brutoAnual: 24000, tipo: 'comun', dias: 30, complemento: 'no' });
+
+const preguntas = [
+  { q: '¿Cuánto se cobra de baja por enfermedad común?', a: 'Los tres primeros días no se cobra nada, salvo que tu convenio lo mejore. Del día 4 al 20 cobras el 60 % de tu base reguladora y desde el día 21, el 75 %. Del día 4 al 15 te lo paga la empresa y desde el 16, la Seguridad Social o la mutua, aunque normalmente lo sigues recibiendo en la nómina.' },
+  { q: '¿Y si es un accidente de trabajo?', a: 'La empresa te paga el sueldo completo del día del accidente y desde el día siguiente cobras el 75 % de tu base reguladora, que en este caso incluye las horas extra del año anterior.' },
+  { q: '¿Qué bajas se cobran desde el primer día?', a: 'Además del accidente de trabajo, las bajas especiales: menstruación incapacitante, embarazo desde la semana 39, trastorno menopáusico y lesiones por violencia de género (estas dos últimas desde el Real Decreto-ley 31/2026). La empresa paga el día de la baja y desde el siguiente se cobra el 60 % hasta el día 20 y el 75 % después.' },
+  { q: '¿Cuánto pierdo si me pongo de baja?', a: `Con un sueldo de 24.000 € brutos al año, una baja de 10 días por enfermedad común te deja unos ${eur(ej10.totalBaja, 0)} € en lugar de ${eur(ej10.totalSueldo, 0)} €: pierdes unos ${eur(ej10.pierdes, 0)} €. Si dura un mes, cobras unos ${eur(ej30.totalBaja, 0)} € en vez de ${eur(ej30.totalSueldo, 0)} €.` },
+  { q: '¿Qué es la base reguladora de la baja?', a: 'Tu base de cotización por contingencias comunes de un mes dividida entre 30. Aparece en la nómina. Para quien cobra lo mismo cada mes, se parece a su sueldo bruto anual entre 12. Desde el 1 de diciembre de 2026 se usa la del mes anterior al mes previo a la baja: si te subieron el sueldo hace poco, puede que aún no cuente.' },
+  { q: '¿Me descuentan algo de lo que cobro de baja?', a: 'Sí. Lo que cobras de baja es una cantidad bruta: sigues cotizando a la Seguridad Social y se te retiene IRPF como en la nómina.' },
+];
+const jsonLd = [
+  { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Inicio', item: SITE.url + '/' },
+    { '@type': 'ListItem', position: 2, name: 'Empleo y paro', item: `${SITE.url}/paro/` },
+    { '@type': 'ListItem', position: 3, name: 'Calculadora de la baja', item: url } ] },
+  { '@context': 'https://schema.org', '@type': 'WebApplication', name: 'Calculadora de la baja laboral 2026', url, applicationCategory: 'FinanceApplication', operatingSystem: 'Any', inLanguage: 'es-ES', offers: { '@type': 'Offer', price: '0', priceCurrency: 'EUR' } },
+  { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: preguntas.map((p) => ({ '@type': 'Question', name: p.q, acceptedAnswer: { '@type': 'Answer', text: p.a } })) },
+];
+---
+<Base title={titulo} description={descripcion} jsonLd={jsonLd}>
+  <nav class="breadcrumbs"><a href="/">Inicio</a> › <a href="/paro/">Empleo y paro</a></nav>
+  <article class="pagina">
+    <h1>¿Cuánto cobro de baja?</h1>
+    <p class="lead">Pon tu sueldo, el tipo de baja y cuántos días dura, y te decimos cuánto cobras cada día, quién te lo paga y cuánto dejas de ganar respecto a un mes normal.</p>
+
+    <div class="calc">
+      <form id="calc-baja" novalidate>
+        <label class="campo"><span>Sueldo bruto al año</span><span class="u"><input name="bruto" type="number" inputmode="decimal" min="0" step="500" value="24000" /><i>€</i></span><small class="muted">Con las pagas extra.</small></label>
+        <label class="campo"><span>Base de cotización (opcional)</span><span class="u"><input name="base" type="number" inputmode="decimal" min="0" step="10" placeholder="la calculamos" /><i>€/mes</i></span><small class="muted">Si la tienes, es más exacto: en la nómina, «base de contingencias comunes». Si cobras horas extra o pluses variables, úsala.</small></label>
+        <fieldset class="campo">
+          <legend>Tipo de baja</legend>
+          <label class="radio"><input type="radio" name="tipo" value="comun" checked /> Enfermedad común o accidente fuera del trabajo</label>
+          <label class="radio"><input type="radio" name="tipo" value="profesional" /> Accidente de trabajo o enfermedad profesional</label>
+          <label class="radio"><input type="radio" name="tipo" value="especial" /> Baja especial: menstruación incapacitante, embarazo desde la semana 39, menopausia o violencia de género</label>
+        </fieldset>
+        <label class="campo"><span>Días de baja</span><span class="u"><input name="dias" type="number" inputmode="numeric" min="1" max="545" step="1" value="10" /><i>días</i></span><small class="muted">Días naturales, contando fines de semana.</small></label>
+        <fieldset class="campo">
+          <legend>¿Tu convenio completa el sueldo?</legend>
+          <label class="radio"><input type="radio" name="compl" value="no" checked /> No, o no lo sé</label>
+          <label class="radio"><input type="radio" name="compl" value="desde4" /> Sí, al 100 % desde el día 4</label>
+          <label class="radio"><input type="radio" name="compl" value="desde1" /> Sí, al 100 % desde el primer día</label>
+          <small class="muted">Muchos convenios lo hacen. Búscalo en el tuyo en «incapacidad temporal» o «complemento».</small>
+        </fieldset>
+      </form>
+      <section class="res" aria-live="polite">
+        <h2 class="etq">Cobras de baja</h2>
+        <p class="cifra"><span id="b-total">—</span> € <small>brutos en total</small></p>
+        <table class="desglose">
+          <tbody>
+            <tr><th scope="row">Si hubieras trabajado esos días</th><td id="b-sueldo">—</td></tr>
+            <tr><th scope="row"><strong>Dejas de ganar</strong></th><td id="b-pierdes"><strong>—</strong></td></tr>
+            <tr><th scope="row">Base reguladora diaria</th><td id="b-base">—</td></tr>
+          </tbody>
+        </table>
+        <h3 class="etq sub">Día a día</h3>
+        <div class="tabla-scroll"><table class="ref" id="b-tramos"><thead><tr><th scope="col">Días</th><th scope="col">Cobras</th><th scope="col">Al día</th><th scope="col">Quién paga</th></tr></thead><tbody></tbody></table></div>
+        <p class="muted small">Cantidades brutas: de lo que cobras de baja se descuentan la cotización a la Seguridad Social y el IRPF, como en la nómina.</p>
+      </section>
+    </div>
+
+    <Compartir title={titulo} url={url} />
+
+    <section class="prose">
+      <h2>Cuánto se cobra cada día de baja</h2>
+      <div class="tabla-scroll">
+        <table class="ref">
+          <thead><tr><th scope="col">Tipo de baja</th><th scope="col">Días 1 a 3</th><th scope="col">Días 4 a 20</th><th scope="col">Desde el día 21</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Enfermedad común o accidente no laboral</th><td>Nada</td><td>60 %</td><td>75 %</td></tr>
+            <tr><th scope="row">Accidente de trabajo o enfermedad profesional</th><td>Día 1: sueldo; después, 75 %</td><td>75 %</td><td>75 %</td></tr>
+            <tr><th scope="row">Bajas especiales</th><td>Día 1: sueldo; después, 60 %</td><td>60 %</td><td>75 %</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="muted small">Porcentajes de la base reguladora diaria. Los convenios pueden mejorarlos con un complemento a cargo de la empresa.</p>
+
+      <h2>Un ejemplo</h2>
+      <p>Con un sueldo de 24.000 € brutos al año, tu base reguladora es de unos {eur(ej10.baseMensual)} € al mes, {eur(ej10.baseDiaria)} € al día. Si estás <strong>10 días de baja por una gripe</strong>, los tres primeros no cobras nada y del 4 al 10 cobras el 60 %: unos <strong>{eur(ej10.totalBaja, 0)} € en total</strong>, cuando trabajando habrías ganado {eur(ej10.totalSueldo, 0)} €. Dejas de ganar unos <strong>{eur(ej10.pierdes, 0)} €</strong>, salvo que tu convenio complete el sueldo.</p>
+
+      <h2>Lo que cambia con el Real Decreto-ley 31/2026</h2>
+      <ul>
+        <li><strong>Desde el 1 de diciembre de 2026</strong>, la base reguladora se calcula con la cotización de dos meses antes de la baja, no la del mes anterior. Si te han subido el sueldo hace poco, durante un mes la baja se calcula con el sueldo antiguo. Lo explicamos en <a href="/paro/baja-medica-calculo-base-reguladora-1-diciembre-rdl-31-2026/">baja médica: cambia el cálculo</a>.</li>
+        <li><strong>Nuevas bajas especiales</strong> que se cobran desde el día siguiente y sin un mínimo de cotización: el trastorno menopáusico y las lesiones por violencia de género, que se suman a la menstruación incapacitante y al embarazo desde la semana 39.</li>
+      </ul>
+
+      <h2>Preguntas frecuentes</h2>
+      {preguntas.map((p) => <><h3>{p.q}</h3><p>{p.a}</p></>)}
+
+      <p>Para ver cuánto cobras limpio en un mes normal, usa la <a href="/hacienda/calculadora-sueldo-neto/">calculadora del sueldo neto</a>. Si pierdes el trabajo, mira <a href="/paro/calculadora-paro/">cuánto cobrarías de paro</a>.</p>
+      <p class="muted small">Fuentes: <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724" rel="noopener" target="_blank">Ley General de la Seguridad Social</a>, artículos 169 a 173, y <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2026-21872" rel="noopener" target="_blank">Real Decreto-ley 31/2026</a>. Calculadora orientativa para trabajadores por cuenta ajena a jornada completa del Régimen General. Base mínima usada: {eur(BAJA_2026.baseMinimaMensual)} € al mes; base máxima: {eur(BAJA_2026.baseMaximaMensual)} €. Para contratos a tiempo parcial, fijos discontinuos, empleadas del hogar y autónomos el cálculo es distinto.</p>
+    </section>
+    <Siguenos />
+  </article>
+</Base>
+
+<script>
+  import { calcularBaja, type TipoBaja, type Complemento } from '../../lib/baja';
+  const form = document.getElementById('calc-baja') as HTMLFormElement;
+  const $ = (id: string) => document.getElementById(id)!;
+  const eur = (n: number, dec = 2) => n.toLocaleString('es-ES', { minimumFractionDigits: dec, maximumFractionDigits: dec, useGrouping: 'always' } as Intl.NumberFormatOptions);
+  function calcular() {
+    const f = new FormData(form);
+    const tipo = f.get('tipo') as TipoBaja;
+    const r = calcularBaja({ brutoAnual: +(f.get('bruto') || 0), baseMensual: +(f.get('base') || 0), tipo, dias: +(f.get('dias') || 0), complemento: f.get('compl') as Complemento });
+    $('b-total').textContent = eur(r.totalBaja);
+    $('b-sueldo').textContent = `${eur(r.totalSueldo)} €`;
+    $('b-pierdes').innerHTML = `<strong>${eur(r.pierdes)} €</strong>`;
+    $('b-base').textContent = `${eur(r.baseDiaria)} €`;
+    ($('b-tramos').querySelector('tbody') as HTMLElement).innerHTML = r.tramos.map((t) => {
+      const dias = t.desde === t.hasta ? `${t.desde}` : `${t.desde} a ${t.hasta}`;
+      const cobras = t.nota ? '100 % del sueldo' : t.desde === 1 && t.hasta === 1 && tipo !== 'comun' ? 'Sueldo del día' : t.pct === 0 ? 'Nada' : `${t.pct} %`;
+      return `<tr><th scope="row">${dias}</th><td>${cobras}</td><td>${eur(t.euDia)} €</td><td>${t.paga}</td></tr>`;
+    }).join('');
+  }
+  form.addEventListener('input', calcular);
+  form.addEventListener('change', calcular);
+  calcular();
+</script>
+
+<style>
+  .pagina { max-width: 900px; }
+  h1 { font-size: clamp(1.9rem, 4.6vw, 2.6rem); line-height: 1.15; margin: 4px 0 12px; }
+  .lead { font-size: 1.125rem; line-height: 1.55; margin: 0 0 24px; max-width: 720px; }
+  .calc { display: grid; grid-template-columns: 1fr 1.1fr; gap: 32px; border-top: 2px solid var(--ink); padding-top: 24px; align-items: start; }
+  form { display: flex; flex-direction: column; gap: 18px; }
+  .campo { display: flex; flex-direction: column; gap: 6px; border: 0; margin: 0; padding: 0; }
+  .campo > span, legend { font-weight: 600; font-size: .9375rem; padding: 0; margin-bottom: 4px; }
+  .campo small { font-size: .8125rem; }
+  .u { position: relative; display: block; }
+  .u i { position: absolute; right: 12px; top: 50%; transform: translateY(-50%); font-style: normal; color: var(--muted); }
+  input[type='number'] { font: 600 1.25rem var(--sans); padding: 10px 70px 10px 12px; border: 1px solid #b9c0c6; border-radius: 4px; width: 100%; color: var(--ink); background: var(--bg); font-variant-numeric: tabular-nums; }
+  input:focus { outline: 2px solid var(--brand); outline-offset: 0; }
+  .radio { display: flex; gap: 8px; align-items: flex-start; font-size: .9375rem; padding: 4px 0; }
+  .radio input { accent-color: var(--brand); width: 18px; height: 18px; margin: 2px 0 0; flex: none; }
+  .res { background: var(--surface); border-radius: 4px; padding: 24px; }
+  .etq { font: 600 .875rem var(--sans); text-transform: uppercase; letter-spacing: .04em; color: var(--muted); margin: 0; }
+  .etq.sub { margin: 20px 0 6px; }
+  .cifra { font-family: var(--serif); font-size: clamp(2.4rem, 6vw, 3rem); font-weight: 600; line-height: 1.1; margin: 6px 0 16px; color: var(--brand-dark); font-variant-numeric: tabular-nums; }
+  .cifra small { font: 400 1rem var(--sans); color: var(--muted); }
+  .desglose { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
+  .desglose th, .desglose td { padding: 8px 0; border-bottom: 1px solid var(--rule); font-size: .9375rem; }
+  .desglose th { text-align: left; font-weight: 400; }
+  .desglose td { text-align: right; padding-left: 12px; white-space: nowrap; }
+  .small { font-size: .8125rem; }
+  .prose { margin-top: 36px; }
+  .tabla-scroll { overflow-x: auto; }
+  .ref { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums; display: table !important; }
+  .ref :global(th), .ref :global(td) { padding: 8px 12px 8px 0; border-bottom: 1px solid var(--rule); text-align: right; font-size: .875rem; }
+  .ref :global(th:first-child) { text-align: left; font-weight: 500; }
+  #b-tramos :global(th:first-child) { white-space: nowrap; }
+  #b-tramos :global(td:last-child) { text-align: left; }
+  #b-tramos :global(td:nth-child(3)) { white-space: nowrap; }
+  .ref thead th { font-size: .8125rem; font-weight: 600; border-bottom: 1px solid var(--ink); }
+  @media (max-width: 720px) {
+    .calc { grid-template-columns: 1fr; }
+    .res { padding: 20px 16px; }
+  }
+</style>
