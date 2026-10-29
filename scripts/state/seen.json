@@ -1178,7 +1178,12 @@
   "https://www.elespanol.com/invertia/mercados/20261029/bbva-abre-contundente-hueco-bajista-arriesgando-tendencia-principal-euros/1003744439129_0.html",
   "https://www.antena3.com/noticias/espana/pedro-sanchez-comparece-cecopi-toledo-accidente-trenes-streaming-directo_202610296ae312eba5f83c2fb8e7d3d3.html",
   "https://www.antena3.com/noticias/sociedad/maquinistas-mantienen-huelga-renfe-dia-despues-accidente-ferroviario-urda_202610296ae2eea002501232156c1ee5.html",
-  "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-22617"
+  "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-22617",
+  "https://elpais.com/economia/2026-10-29/los-inspectores-de-hacienda-lamentan-el-accidente-ferroviario-y-denuncian-el-abandono-de-la-administracion-publica.html",
+  "https://www.elconfidencial.com/economia/2026-10-29/precio-de-la-luz-por-horas-hoy-jueves-29-de-octubre_4455207/",
+  "https://elpais.com/economia/2026-10-29/los-inspectores-de-hacienda-lamentan-el-accidente-ferroviario-y-denuncian-el-abandono-de-la-administracion-publica.html",
+  "https://www.elconfidencial.com/economia/2026-10-29/jubilado-comida-limpieza-seguros-todo-sube-mas-pension_4454983/",
+  "https://www.20minutos.es/lainformacion/economia-y-finanzas/euribor-estabiliza-prevision-bce-aplazara-subida-tipos_7054637_0.html"
  ],
  "titles": [
   "los nueve cambios para la jubilacio n en 2027 segu n el abogado laboralista ignacio solsona",
@@ -1642,7 +1647,10 @@
   "bbva abre un contundente hueco bajista arriesgando su tendencia principal en los 21 euros",
   "pedro sa nchez todo el estado esta volcado en la respuesta ante esta tragedia humana",
   "los maquinistas mantienen la huelga de renfe un di a despue s del accidente ferroviario de urda",
-  "real decreto 928 2026 de 28 de octubre por el que se regula la concesio n directa de subvenciones destinadas a la financiacio n de los contratos de concesio n de obra para la promocio n de vivienda destinada al alquiler asequible licitados por casa 47 entidad pu blica empresarial en el marco del plan de vivienda para el alquiler asequible del ministerio de vivienda y agenda urbana"
+  "real decreto 928 2026 de 28 de octubre por el que se regula la concesio n directa de subvenciones destinadas a la financiacio n de los contratos de concesio n de obra para la promocio n de vivienda destinada al alquiler asequible licitados por casa 47 entidad pu blica empresarial en el marco del plan de vivienda para el alquiler asequible del ministerio de vivienda y agenda urbana",
+  "los inspectores de hacienda lamentan el accidente ferroviario y denuncian el abandono de la administracio n pu blica",
+  "eusebio jubilado de 75 an os la comida la limpieza los seguros todo sube ma s que la pensio n",
+  "el euri bor se estabiliza ante la previsio n de que el bce aplace la subida de tipos a diciembre"
  ],
  "feeds_iniciados": [
   "https://ine.es/dyngs/Prensa/es/rssNovedades.xml",
@@ -1656,24 +1664,6 @@
   "https://www.antena3.com/noticias/rss/4013050.xml"
  ],
  "registro": [
-  {
-   "fecha": "2026-10-26 12:11",
-   "fuente": "El País Economía",
-   "titulo": "El fondo Brookfield busca vender 1.550 casas de alquiler con la duda del impacto del 29-N",
-   "resultado": "descartada (filtro previo): Noticia empresarial sobre un fondo, sin medida para los hogares"
-  },
-  {
-   "fecha": "2026-10-26 12:11",
-   "fuente": "Cinco Días",
-   "titulo": "Óscar Puente: “Es mentira que las pensiones estén en crisis y, si gobernamos, veo el salario mínimo cerca de los 2.000 euros”",
-   "resultado": "descartada (filtro previo): Declaraciones políticas sin medida concreta"
-  },
-  {
-   "fecha": "2026-10-26 12:11",
-   "fuente": "Europa Press Economía",
-   "titulo": "El Gobierno fija los servicios mínimos de Renfe en la huelga de maquinistas de este jueves",
-   "resultado": "descartada (filtro previo): Servicios mínimos de Renfe en una huelga: sin impacto económico directo para el hogar"
-  },
   {
    "fecha": "2026-10-26 12:11",
    "fuente": "El Mundo Economía",
@@ -2555,14 +2545,27 @@
    "fuente": "BOE",
    "titulo": "Real Decreto 928/2026, de 28 de octubre, por el que se regula la concesión directa de subvenciones destinadas a la financiación de los contr",
    "resultado": "borrador: casa-47-201-millones-alquiler-asequible-decreto-928.md"
+  },
+  {
+   "fecha": "2026-10-29 12:47",
+   "fuente": "El País Economía",
+   "titulo": "Los inspectores de Hacienda lamentan el accidente ferroviario y denuncian el “abandono” de la Administración pública",
+   "resultado": "descartada (filtro previo): Denuncia sindical sobre un accidente ferroviario y la gestión de la Administración; no es una medida que afecte al bolsillo."
+  },
+  {
+   "fecha": "2026-10-29 12:47",
+   "fuente": "El Confidencial Economía",
+   "titulo": "Eusebio, jubilado de 75 años: \"La comida, la limpieza, los seguros… todo sube más que la pensión\"",
+   "resultado": "descartada (filtro previo): Testimonio personal sin datos ni medida concreta; es opinión, no noticia útil."
+  },
+  {
+   "fecha": "2026-10-29 12:48",
+   "fuente": "20minutos Economía",
+   "titulo": "El euríbor se estabiliza ante la previsión de que el BCE aplace la subida de tipos a diciembre",
+   "resultado": "borrador: euribor-3-2-bce-tipos-hipoteca-diciembre.md"
   }
  ],
  "escritos": [
-  {
-   "title": "Custodia compartida: el Supremo avala mínimo por hijos y pensión",
-   "url": "/hacienda/supremo-custodia-compartida-minimo-alimentos/",
-   "guia": false
-  },
   {
    "title": "Luz en PVPC: el recibo sube un 36% desde febrero, no 8,7 veces",
    "url": "/luz/luz-mayorista-nueve-veces-recibo-pvpc-36/",
@@ -2957,10 +2960,15 @@
    "title": "Alquiler asequible: 201,7 M€ para 2.425 pisos de CASA 47",
    "url": "/vivienda/casa-47-201-millones-alquiler-asequible-decreto-928/",
    "guia": false
+  },
+  {
+   "title": "Euríbor al 3,2%: el BCE decide hoy sobre los tipos",
+   "url": "/vivienda/euribor-3-2-bce-tipos-hipoteca-diciembre/",
+   "guia": false
   }
  ],
  "por_dia": {
   "2026-10-28": 4,
-  "2026-10-29": 2
+  "2026-10-29": 3
  }
 }
