@@ -1183,7 +1183,21 @@
   "https://www.elconfidencial.com/economia/2026-10-29/precio-de-la-luz-por-horas-hoy-jueves-29-de-octubre_4455207/",
   "https://elpais.com/economia/2026-10-29/los-inspectores-de-hacienda-lamentan-el-accidente-ferroviario-y-denuncian-el-abandono-de-la-administracion-publica.html",
   "https://www.elconfidencial.com/economia/2026-10-29/jubilado-comida-limpieza-seguros-todo-sube-mas-pension_4454983/",
-  "https://www.20minutos.es/lainformacion/economia-y-finanzas/euribor-estabiliza-prevision-bce-aplazara-subida-tipos_7054637_0.html"
+  "https://www.20minutos.es/lainformacion/economia-y-finanzas/euribor-estabiliza-prevision-bce-aplazara-subida-tipos_7054637_0.html",
+  "https://www.elmundo.es/economia/vivienda/2026/10/29/6ae3356be9cf4a094f8b4591.html",
+  "https://www.idealista.com/news/inmobiliario/empresas/2026/10/29/921528-la-ceoe-confirma-la-muerte-de-la-exministr-fatima-banez-en-el-accidente-de-urda",
+  "https://www.infobae.com/espana/2026/10/29/precio-de-la-luz-en-espana-este-30-de-octubre/",
+  "https://www.20minutos.es/lainformacion/economia-y-finanzas/fatima-banez-ministra-dialogante-leal-que-encaro-mayor-crisis-empleo-espana_7054605_0.html",
+  "https://www.europapress.es/economia/transportes-00343/noticia-confirma-fallecimiento-exministra-fatima-banez-viajaba-tren-iryo-20261029135419.html",
+  "https://www.expansion.com/economia/2026/10/29/adios-fatima-banez-ministra-sento-bases-recuperacion-empleo-gran-crisis.html",
+  "https://www.abc.es/economia/antonio-garamendi-fatima-banez-sabia-leal-consejera-20261029175228-nt.html",
+  "https://www.abc.es/economia/gobierno-cambio-ante-bruselas-compromisos-inversion-seguridad-20261029130411-nt.html",
+  "https://www.abc.es/economia/reforma-laboral-mujer-valiente-20261028162304-nt.html",
+  "https://www.elconfidencial.com/economia/2026-10-29/funcionario-seguridad-social-perdido-puesto-trabajo-jubilacion-anticipada_4454948/",
+  "https://www.idealista.com/news/inmobiliario/vivienda/2026/10/29/921458-reino-unido-activa-el-programa-your-first-home-con-5-600-millones-para-acceso-a-la",
+  "https://www.businessinsider.es/big-tech/elon-musk-afirma-que-ahorrar-largo-plazo-es-inutil-mientras-promueve-un-futuro-abundancia_7055092_0.html",
+  "https://www.idealista.com/news/inmobiliario/vivienda/2026/10/29/921435-fai-los-decretos-han-paralizado-contratos-de-alquiler-de-viviendas-que-se-han",
+  "https://www.idealista.com/news/finanzas/economia/2026/10/29/921468-el-bce-mantiene-tipos-el-mercado-inmobiliario-pierde-fuelle-a-la-espera-de-una-subida"
  ],
  "titles": [
   "los nueve cambios para la jubilacio n en 2027 segu n el abogado laboralista ignacio solsona",
@@ -1650,7 +1664,18 @@
   "real decreto 928 2026 de 28 de octubre por el que se regula la concesio n directa de subvenciones destinadas a la financiacio n de los contratos de concesio n de obra para la promocio n de vivienda destinada al alquiler asequible licitados por casa 47 entidad pu blica empresarial en el marco del plan de vivienda para el alquiler asequible del ministerio de vivienda y agenda urbana",
   "los inspectores de hacienda lamentan el accidente ferroviario y denuncian el abandono de la administracio n pu blica",
   "eusebio jubilado de 75 an os la comida la limpieza los seguros todo sube ma s que la pensio n",
-  "el euri bor se estabiliza ante la previsio n de que el bce aplace la subida de tipos a diciembre"
+  "el euri bor se estabiliza ante la previsio n de que el bce aplace la subida de tipos a diciembre",
+  "fa tima ba n ez la ministra dialogante y leal que encaro la mayor crisis del empleo en espan a",
+  "muere la exministra fa tima ba n ez en el accidente ferroviario de toledo",
+  "adio s a fa tima ba n ez la ministra que sento las bases de la recuperacio n del empleo tras la gran crisis",
+  "fa tima ba n ez sabia y leal consejera",
+  "el gobierno rebajo ante bruselas sus compromisos de inversio n en seguridad ferroviaria para asegurarse los fondos europeos",
+  "la reforma laboral de una mujer valiente",
+  "alfonso mun oz funcionario de la seguridad social que hayas perdido tu puesto de trabajo no significa que puedas tener derecho a la jubilacio n anticipada involuntaria",
+  "reino unido activa el programa your first home con 5 600 millones para acceso a la vivienda",
+  "elon musk afirma que ahorrar a largo plazo es inu til mientras promueve un futuro de abundancia",
+  "fai los decretos han paralizado contratos de alquiler de viviendas que se han pasado a la venta",
+  "el bce mantiene tipos el mercado inmobiliario pierde fuelle a la espera de una subida en diciembre"
  ],
  "feeds_iniciados": [
   "https://ine.es/dyngs/Prensa/es/rssNovedades.xml",
@@ -1664,72 +1689,6 @@
   "https://www.antena3.com/noticias/rss/4013050.xml"
  ],
  "registro": [
-  {
-   "fecha": "2026-10-26 12:11",
-   "fuente": "El Mundo Economía",
-   "titulo": "Londres subirá los impuestos a la banca para financiar ayudas a hogares con rentas bajas y pymes por los costes energéticos",
-   "resultado": "descartada (filtro previo): Medida fiscal de Reino Unido, otro país"
-  },
-  {
-   "fecha": "2026-10-26 12:11",
-   "fuente": "La Vanguardia Economía",
-   "titulo": "La IA ya empieza a afectar al empleo en las actividades más expuestas",
-   "resultado": "descartada (filtro previo): Macroeconomía sobre IA y empleo, sin medida concreta"
-  },
-  {
-   "fecha": "2026-10-26 12:11",
-   "fuente": "La Vanguardia Economía",
-   "titulo": "¿Pensiones dignas y sostenibles?",
-   "resultado": "descartada (filtro previo): Opinión sin datos"
-  },
-  {
-   "fecha": "2026-10-26 12:11",
-   "fuente": "ABC Economía",
-   "titulo": "Aumenta el temor entre los autónomos a que el incremento de los costes les obligue a cerrar sus negocios",
-   "resultado": "descartada (filtro previo): Opinión y temor general de autónomos, sin datos ni medida"
-  },
-  {
-   "fecha": "2026-10-26 12:11",
-   "fuente": "ABC Economía",
-   "titulo": "Consumo abre expediente a una plataforma por  no retirar sus anuncios de alquiler turístico de territorios palestinos ocupados por Israel",
-   "resultado": "descartada (filtro previo): Repite la noticia de Consumo sobre anuncios turísticos ya publicada"
-  },
-  {
-   "fecha": "2026-10-26 12:11",
-   "fuente": "ABC Economía",
-   "titulo": "El SEPE busca personal para trabajar esta Navidad: cómo apuntarse paso a paso",
-   "resultado": "descartada (filtro previo): Convocatoria de contratación temporal en la Administración"
-  },
-  {
-   "fecha": "2026-10-26 12:11",
-   "fuente": "ABC Economía",
-   "titulo": "Cuentas remuneradas sin nómina que pagan más de un 3,40% TAE este octubre: Revolut y Ferratum",
-   "resultado": "descartada (filtro previo): Cuentas remuneradas: ahorro, cubierto por Dinero en Claro"
-  },
-  {
-   "fecha": "2026-10-26 12:11",
-   "fuente": "ABC Economía",
-   "titulo": "El petróleo a 60 dólares",
-   "resultado": "descartada (filtro previo): Macroeconomía sobre el precio del petróleo, sin medida para el hogar"
-  },
-  {
-   "fecha": "2026-10-26 12:11",
-   "fuente": "El Confidencial Economía",
-   "titulo": "Gonzalo Bernardos, economista: \"¿Qué colectivo decide el resultado de las próximas elecciones en España? Los pensionistas\"",
-   "resultado": "descartada (filtro previo): Opinión de un economista sobre elecciones"
-  },
-  {
-   "fecha": "2026-10-26 12:11",
-   "fuente": "Idealista News (vivienda)",
-   "titulo": "Llegan las primeras 'branded residences' de Fairmont a Europa: en venta 31 villas de lujo en Sotogrande",
-   "resultado": "descartada (filtro previo): Inmobiliario de lujo en otro contexto, sin relevancia para la economía de casa"
-  },
-  {
-   "fecha": "2026-10-26 12:11",
-   "fuente": "Infobae España",
-   "titulo": "Arabia Saudí sube el salario mínimo a unos 1.190 euros y da ayudas de casi 120 al mes para pagar la luz y el agua",
-   "resultado": "descartada (filtro previo): Medida de Arabia Saudí, otro país"
-  },
   {
    "fecha": "2026-10-26 12:11",
    "fuente": "El Español Invertia",
@@ -2563,14 +2522,75 @@
    "fuente": "20minutos Economía",
    "titulo": "El euríbor se estabiliza ante la previsión de que el BCE aplace la subida de tipos a diciembre",
    "resultado": "borrador: euribor-3-2-bce-tipos-hipoteca-diciembre.md"
+  },
+  {
+   "fecha": "2026-10-29 18:35",
+   "fuente": "20minutos Economía",
+   "titulo": "Fátima Báñez, la ministra dialogante y leal que encaró la mayor crisis del empleo en España",
+   "resultado": "descartada (filtro previo): Homenaje a la exministra Fátima Báñez, no es una noticia con medida que afecte al bolsillo"
+  },
+  {
+   "fecha": "2026-10-29 18:35",
+   "fuente": "Europa Press Economía",
+   "titulo": "Muere la exministra Fátima Báñez en el accidente ferroviario de Toledo",
+   "resultado": "descartada (filtro previo): Noticia del fallecimiento de una exministra en un accidente; no trae medida económica para hogares"
+  },
+  {
+   "fecha": "2026-10-29 18:35",
+   "fuente": "Expansión Economía",
+   "titulo": "Adiós a Fátima Báñez, la ministra que sentó las bases de la recuperación del empleo tras la Gran Crisis",
+   "resultado": "descartada (filtro previo): Mismo homenaje a Fátima Báñez; no aporta medida ni dato para el lector"
+  },
+  {
+   "fecha": "2026-10-29 18:35",
+   "fuente": "ABC Economía",
+   "titulo": "Fátima Báñez, sabia y leal consejera",
+   "resultado": "descartada (filtro previo): Columna de opinión sobre Fátima Báñez"
+  },
+  {
+   "fecha": "2026-10-29 18:35",
+   "fuente": "ABC Economía",
+   "titulo": "El Gobierno rebajó ante Bruselas sus compromisos de inversión en seguridad ferroviaria para asegurarse los fondos europeos",
+   "resultado": "descartada (filtro previo): Compromisos de inversión en seguridad ferroviaria ante Bruselas; política y macroeconomía sin efecto directo en el bolsillo"
+  },
+  {
+   "fecha": "2026-10-29 18:35",
+   "fuente": "ABC Economía",
+   "titulo": "La reforma laboral de una mujer valiente",
+   "resultado": "descartada (filtro previo): Opinión sobre la reforma laboral"
+  },
+  {
+   "fecha": "2026-10-29 18:35",
+   "fuente": "El Confidencial Economía",
+   "titulo": "Alfonso Muñoz, funcionario de la Seguridad Social: “Que hayas perdido tu puesto de trabajo no significa que puedas tener derecho a la jubila",
+   "resultado": "descartada (filtro previo): Opinión de un funcionario sobre la jubilación anticipada involuntaria, sin medida nueva concreta"
+  },
+  {
+   "fecha": "2026-10-29 18:35",
+   "fuente": "Idealista News (vivienda)",
+   "titulo": "Reino Unido activa el programa ‘Your First Home’ con 5.600 millones para acceso a la vivienda",
+   "resultado": "descartada (filtro previo): Programa de vivienda de Reino Unido, otro país"
+  },
+  {
+   "fecha": "2026-10-29 18:35",
+   "fuente": "Business Insider España",
+   "titulo": "Elon Musk afirma que ahorrar a largo plazo es \"inútil\" mientras promueve un futuro de abundancia",
+   "resultado": "descartada (filtro previo): Declaración de Elon Musk sobre el ahorro; opinión, sin relación con medidas en España"
+  },
+  {
+   "fecha": "2026-10-29 18:36",
+   "fuente": "Idealista News (vivienda)",
+   "titulo": "FAI: \"Los decretos han paralizado contratos de alquiler de viviendas que se han pasado a la venta\"",
+   "resultado": "descartada: sin valor propio: es la crónica de un foro del sector (FAI, aseguradoras de alquiler e Ikea) con opiniones y sin ninguna medida, norma ni dato oficial nuevo. La fuente no dice a qué decretos se refiere. El único dato, un esfuerzo de los inquilinos superior al 40%, lo da un directivo de u"
+  },
+  {
+   "fecha": "2026-10-29 18:36",
+   "fuente": "Idealista News (vivienda)",
+   "titulo": "El BCE mantiene tipos: el mercado inmobiliario pierde fuelle a la espera de una subida en diciembre",
+   "resultado": "borrador: bce-mantiene-tipos-2-5-hipoteca-subida-diciembre.md"
   }
  ],
  "escritos": [
-  {
-   "title": "Luz en PVPC: el recibo sube un 36% desde febrero, no 8,7 veces",
-   "url": "/luz/luz-mayorista-nueve-veces-recibo-pvpc-36/",
-   "guia": false
-  },
   {
    "title": "Viudedad sin pareja de hecho y alimentos a 300 €: el nuevo decreto",
    "url": "/pensiones/decreto-seguridad-social-viudedad-baja-violencia-machista/",
@@ -2965,10 +2985,15 @@
    "title": "Euríbor al 3,2%: el BCE decide hoy sobre los tipos",
    "url": "/vivienda/euribor-3-2-bce-tipos-hipoteca-diciembre/",
    "guia": false
+  },
+  {
+   "title": "Hipotecados: el BCE mantiene el 2,5% y decide el 17-D",
+   "url": "/vivienda/bce-mantiene-tipos-2-5-hipoteca-subida-diciembre/",
+   "guia": false
   }
  ],
  "por_dia": {
   "2026-10-28": 4,
-  "2026-10-29": 3
+  "2026-10-29": 4
  }
 }
