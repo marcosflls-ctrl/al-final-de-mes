@@ -1197,7 +1197,12 @@
   "https://www.idealista.com/news/inmobiliario/vivienda/2026/10/29/921458-reino-unido-activa-el-programa-your-first-home-con-5-600-millones-para-acceso-a-la",
   "https://www.businessinsider.es/big-tech/elon-musk-afirma-que-ahorrar-largo-plazo-es-inutil-mientras-promueve-un-futuro-abundancia_7055092_0.html",
   "https://www.idealista.com/news/inmobiliario/vivienda/2026/10/29/921435-fai-los-decretos-han-paralizado-contratos-de-alquiler-de-viviendas-que-se-han",
-  "https://www.idealista.com/news/finanzas/economia/2026/10/29/921468-el-bce-mantiene-tipos-el-mercado-inmobiliario-pierde-fuelle-a-la-espera-de-una-subida"
+  "https://www.idealista.com/news/finanzas/economia/2026/10/29/921468-el-bce-mantiene-tipos-el-mercado-inmobiliario-pierde-fuelle-a-la-espera-de-una-subida",
+  "https://www.idealista.com/news/inmobiliario/vivienda/2026/10/29/920674-madrid-lidera-la-construccion-de-viviendas-de-alquiler-asequible-y-prepara-200",
+  "https://www.idealista.com/news/inmobiliario/vivienda/2026/10/29/921233-colau-propone-un-impuesto-del-10-a-propietarios-particulares-con-cuatro-o-mas",
+  "https://www.infobae.com/espana/2026/10/29/el-truco-de-la-hoja-de-papel-para-comprobar-si-tu-frigorifico-pierde-frio-y-te-aumenta-la-factura-de-la-luz/",
+  "https://www.elespanol.com/invertia/observatorios/movilidad/20261029/maquinista-iryo-urda-intento-desbloquear-tren-veces-pidio-ayuda-empresa-colision/1003744439896_0.html",
+  "https://www.idealista.com/news/opinion/jose-maria-salcedo/2026/10/29/921429-el-supremo-permite-contar-al-hijo-no-nacido-para-ser-familia-numerosa-en-que"
  ],
  "titles": [
   "los nueve cambios para la jubilacio n en 2027 segu n el abogado laboralista ignacio solsona",
@@ -1675,7 +1680,12 @@
   "reino unido activa el programa your first home con 5 600 millones para acceso a la vivienda",
   "elon musk afirma que ahorrar a largo plazo es inu til mientras promueve un futuro de abundancia",
   "fai los decretos han paralizado contratos de alquiler de viviendas que se han pasado a la venta",
-  "el bce mantiene tipos el mercado inmobiliario pierde fuelle a la espera de una subida en diciembre"
+  "el bce mantiene tipos el mercado inmobiliario pierde fuelle a la espera de una subida en diciembre",
+  "madrid lidera la construccio n de viviendas de alquiler asequible y prepara 200 millones para 2027",
+  "colau propone un impuesto del 10 a propietarios particulares con cuatro o ma s viviendas",
+  "el truco de la hoja de papel para comprobar si tu frigori fico pierde fri o y te aumenta la factura de la luz",
+  "la maquinista del iryo de urda intento desbloquear su tren dos veces y pidio ayuda a su empresa antes de la colisio n",
+  "el supremo permite contar al hijo no nacido para ser familia numerosa en que impuestos puedes ahorrar"
  ],
  "feeds_iniciados": [
   "https://ine.es/dyngs/Prensa/es/rssNovedades.xml",
@@ -1689,36 +1699,6 @@
   "https://www.antena3.com/noticias/rss/4013050.xml"
  ],
  "registro": [
-  {
-   "fecha": "2026-10-26 12:11",
-   "fuente": "El Español Invertia",
-   "titulo": "Banco Santander continúa debilitando su aspecto técnico y abre un peligroso hueco a la baja",
-   "resultado": "descartada (filtro previo): Análisis bursátil de un banco, cubierto por la sección de bolsa"
-  },
-  {
-   "fecha": "2026-10-26 12:11",
-   "fuente": "Europa Press Economía",
-   "titulo": "Saiz confirma que el Gobierno subirá el SMI en 2027 y mantendrá su exención en el IRPF",
-   "resultado": "descartada: repite lo ya publicado: la exención del SMI en el IRPF depende de una reforma legal (/paro/smi-2027-exencion-irpf-reforma-legal-diputacion-permanente/) y el Gobierno baraja subir el SMI antes del 29N (/paro/smi-gobierno-baraja-subida-5-1300-euros/). La confirmación de Saiz en una entrevi"
-  },
-  {
-   "fecha": "2026-10-26 12:12",
-   "fuente": "ABC Economía",
-   "titulo": "Ventajas fiscales para autónomos: el truco de Hacienda que casi nadie aprovecha para pagar menos impuestos",
-   "resultado": "error: respuesta no válida de la IA"
-  },
-  {
-   "fecha": "2026-10-26 12:12",
-   "fuente": "ABC Economía",
-   "titulo": "¿Pagas mucho o poco de tasa de basuras? La media es una cuota de 100 euros, pero algunos municipios doblan la cantidad",
-   "resultado": "borrador: tasa-basuras-media-116-euros-2025-subida.md"
-  },
-  {
-   "fecha": "2026-10-26 12:12",
-   "fuente": "ABC Economía",
-   "titulo": "María Cristina Clemente, notaria, sobre las donaciones: «Las de dinero son las más puras. Pero no vale una transferencia y darle pistas a Ha",
-   "resultado": "borrador: donar-dinero-hijo-comprar-casa-escritura-notario.md"
-  },
   {
    "fecha": "2026-10-26 12:34",
    "fuente": "20minutos Economía",
@@ -2588,14 +2568,39 @@
    "fuente": "Idealista News (vivienda)",
    "titulo": "El BCE mantiene tipos: el mercado inmobiliario pierde fuelle a la espera de una subida en diciembre",
    "resultado": "borrador: bce-mantiene-tipos-2-5-hipoteca-subida-diciembre.md"
+  },
+  {
+   "fecha": "2026-10-30 00:20",
+   "fuente": "Idealista News (vivienda)",
+   "titulo": "Madrid lidera la construcción de viviendas de alquiler asequible y prepara 200 millones para 2027",
+   "resultado": "descartada (filtro previo): repite la noticia del programa de alquiler asequible de Madrid y CASA 47 ya publicada"
+  },
+  {
+   "fecha": "2026-10-30 00:20",
+   "fuente": "Idealista News (vivienda)",
+   "titulo": "Colau propone un impuesto del 10% a propietarios particulares con cuatro o más viviendas",
+   "resultado": "descartada (filtro previo): propuesta política de un particular sin medida oficial ni norma concreta"
+  },
+  {
+   "fecha": "2026-10-30 00:20",
+   "fuente": "Infobae España",
+   "titulo": "El truco de la hoja de papel para comprobar si tu frigorífico pierde frío y te aumenta la factura de la luz",
+   "resultado": "descartada (filtro previo): consejo práctico sin datos oficiales ni valor propio para la economía del hogar"
+  },
+  {
+   "fecha": "2026-10-30 00:20",
+   "fuente": "El Español Invertia",
+   "titulo": "La maquinista del Iryo de Urda intentó desbloquear su tren dos veces y pidió ayuda a su empresa antes de la colisión",
+   "resultado": "descartada (filtro previo): accidente ferroviario, fuera de los temas de la web"
+  },
+  {
+   "fecha": "2026-10-30 00:20",
+   "fuente": "Idealista News (vivienda)",
+   "titulo": "El Supremo permite contar al hijo no nacido para ser familia numerosa: ¿en qué impuestos puedes ahorrar?",
+   "resultado": "borrador: supremo-hijo-no-nacido-familia-numerosa-itp.md"
   }
  ],
  "escritos": [
-  {
-   "title": "Viudedad sin pareja de hecho y alimentos a 300 €: el nuevo decreto",
-   "url": "/pensiones/decreto-seguridad-social-viudedad-baja-violencia-machista/",
-   "guia": false
-  },
   {
    "title": "225 millones para vivienda asequible en zonas tensionadas",
    "url": "/vivienda/225-millones-vivienda-asequible-zonas-tensionadas/",
@@ -2990,10 +2995,16 @@
    "title": "Hipotecados: el BCE mantiene el 2,5% y decide el 17-D",
    "url": "/vivienda/bce-mantiene-tipos-2-5-hipoteca-subida-diciembre/",
    "guia": false
+  },
+  {
+   "title": "Familia numerosa: el hijo por nacer cuenta para el ITP",
+   "url": "/hacienda/supremo-hijo-no-nacido-familia-numerosa-itp/",
+   "guia": false
   }
  ],
  "por_dia": {
   "2026-10-28": 4,
-  "2026-10-29": 4
+  "2026-10-29": 4,
+  "2026-10-30": 1
  }
 }
