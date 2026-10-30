@@ -1228,7 +1228,11 @@
   "https://www.elespanol.com/invertia/economia/macroeconomia/20261030/crecimiento-eurozona-desacelera-tercer-trimestre-impacto-guerra-iran/1003744440842_0.html",
   "https://www.elespanol.com/invertia/economia/20261030/inspectores-hacienda-reclaman-facultades-investigar-politicos-no-fallar-casos-zapatero/1003744440662_0.html",
   "https://www.elespanol.com/invertia/observatorios/sanidad/20261030/masculinidad-toxica-redes-machosfera-problema-salud-propios-hombres/1003744440346_0.html",
-  "https://www.ine.es/dyngs/Prensa/adIPC1026.htm"
+  "https://www.ine.es/dyngs/Prensa/adIPC1026.htm",
+  "https://www.abc.es/economia/cuentas-corrientes/precio-gasolina-diesel-contiene-puertas-puente-gracias-20261030011211-nt.html",
+  "https://www.infobae.com/espana/2026/10/30/el-euribor-baja-en-octubre-pero-resiste-por-encima-del-3-y-encarece-las-cuotas-de-las-hipotecas-unos-1200-euros-anuales/",
+  "https://elpais.com/economia/2026-10-30/el-euribor-no-da-tregua-cierra-octubre-en-el-3239-y-sigue-encareciendo-las-hipotecas.html",
+  "https://www.elmundo.es/economia/2026/10/30/6ae45426fc6c83e0058b4575.html"
  ],
  "titles": [
   "los nueve cambios para la jubilacio n en 2027 segu n el abogado laboralista ignacio solsona",
@@ -1730,7 +1734,11 @@
   "el crecimiento de la eurozona se desacelera al 0 4 durante el tercer trimestre por el impacto de la guerra de ira n",
   "los inspectores de hacienda reclaman ma s facultades para investigar a poli ticos y no fallar en casos como el de zapatero",
   "por que la masculinidad to xica en redes o machosfera es un problema de salud para los propios hombres",
-  "30 nbsp octubre nbsp 26 indicador adelantado del i ndice de precios de consumo ipc"
+  "30 nbsp octubre nbsp 26 indicador adelantado del i ndice de precios de consumo ipc",
+  "el precio de la gasolina y el die sel se contiene pero las ayudas no impiden que repostar sea ma s caro que hace un an o",
+  "el euri bor baja en octubre pero resiste por encima del 3 y encarece las cuotas de las hipotecas unos 1 200 euros anuales",
+  "el euri bor no da tregua cierra octubre en el 3 239 y sigue encareciendo las hipotecas",
+  "es oficial para jubilarte anticipadamente no basta con tener 35 an os cotizados tambie n importa cua nto cobrara s"
  ],
  "feeds_iniciados": [
   "https://ine.es/dyngs/Prensa/es/rssNovedades.xml",
@@ -1744,30 +1752,6 @@
   "https://www.antena3.com/noticias/rss/4013050.xml"
  ],
  "registro": [
-  {
-   "fecha": "2026-10-26 22:54",
-   "fuente": "Infobae España",
-   "titulo": "Jubilarse en 2026 o esperar a 2027: la decisión que puede aumentar la pensión",
-   "resultado": "borrador: jubilacion-final-2026-esperar-2027-coeficientes.md"
-  },
-  {
-   "fecha": "2026-10-26 22:55",
-   "fuente": "Infobae España",
-   "titulo": "Ignacio de la Calzada, abogado: “El Gobierno ha cambiado cómo se calcula lo que cobras de baja”",
-   "resultado": "borrador: baja-medica-calculo-base-reguladora-1-diciembre-rdl-31-2026.md"
-  },
-  {
-   "fecha": "2026-10-26 23:43",
-   "fuente": "Antena 3 Economía",
-   "titulo": "Pedro Sánchez promete reformar la Constitución para subir las pensiones conforme al IPC",
-   "resultado": "borrador: sanchez-promete-reforma-constitucion-pensiones-ipc.md"
-  },
-  {
-   "fecha": "2026-10-27 11:39",
-   "fuente": "La Moncloa (notas de prensa)",
-   "titulo": "La rueda de prensa tras el Consejo de Ministros se celebrará a partir de las 12:30 horas",
-   "resultado": "descartada: sin valor propio: la fuente solo avisa de la hora de la rueda de prensa del Consejo de Ministros del 27/10/2026 (12:30) y de qué ministras comparecen. No cita ninguna medida, cifra ni fecha. La referencia oficial de ese día aún no está publicada, así que no hay datos de los que informar."
-  },
   {
    "fecha": "2026-10-27 11:39",
    "fuente": "20minutos Economía",
@@ -2643,14 +2627,33 @@
    "fuente": "INE (novedades)",
    "titulo": "30&nbsp;Octubre&nbsp;26. Indicador adelantado del Índice de Precios de Consumo (IPC)",
    "resultado": "borrador: ipc-octubre-2026-4-9-pensiones-subida-2027.md"
+  },
+  {
+   "fecha": "2026-10-30 12:40",
+   "fuente": "ABC Economía",
+   "titulo": "El precio de la gasolina y el diésel se contiene, pero las ayudas no impiden que repostar sea más caro que hace un año",
+   "resultado": "descartada (filtro previo): Repite el tema de la gasolina ya publicado (\"Gasolina a 1,75 € y diésel casi a 2 €\") sin un dato nuevo claro"
+  },
+  {
+   "fecha": "2026-10-30 12:40",
+   "fuente": "Infobae España",
+   "titulo": "El euríbor baja en octubre, pero resiste por encima del 3% y encarece las cuotas de las hipotecas unos 1.200 euros anuales",
+   "resultado": "descartada (filtro previo): Misma noticia del euríbor de octubre que la candidata 0, que es la de cifra más precisa"
+  },
+  {
+   "fecha": "2026-10-30 12:40",
+   "fuente": "Cinco Días",
+   "titulo": "El euríbor no da tregua: cierra octubre en el 3,239% y sigue encareciendo las hipotecas",
+   "resultado": "texto insuficiente (muro de pago o página vacía)"
+  },
+  {
+   "fecha": "2026-10-30 12:40",
+   "fuente": "El Mundo Economía",
+   "titulo": "Es oficial: para jubilarte anticipadamente no basta con tener 35 años cotizados, también importa cuánto cobrarás",
+   "resultado": "borrador: jubilacion-anticipada-voluntaria-pension-minima-requisito.md"
   }
  ],
  "escritos": [
-  {
-   "title": "Inquilinos: deducción de hasta 1.163 € en la renta por el alquiler",
-   "url": "/vivienda/deduccion-alquiler-irpf-1163-euros-requisitos/",
-   "guia": false
-  },
   {
    "title": "Funcionarios: sueldo +4,5% en 2027, pero sin fecha de subida",
    "url": "/paro/funcionarios-subida-sueldo-2027-4-5-sin-fecha/",
@@ -3045,11 +3048,16 @@
    "title": "IPC de octubre al 4,9%: así afecta a tu pensión",
    "url": "/pensiones/ipc-octubre-2026-4-9-pensiones-subida-2027/",
    "guia": false
+  },
+  {
+   "title": "Jubilación anticipada: la pensión debe pasar de 936 €",
+   "url": "/pensiones/jubilacion-anticipada-voluntaria-pension-minima-requisito/",
+   "guia": false
   }
  ],
  "por_dia": {
   "2026-10-28": 4,
   "2026-10-29": 4,
-  "2026-10-30": 2
+  "2026-10-30": 3
  }
 }
