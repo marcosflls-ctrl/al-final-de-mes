@@ -1232,7 +1232,18 @@
   "https://www.abc.es/economia/cuentas-corrientes/precio-gasolina-diesel-contiene-puertas-puente-gracias-20261030011211-nt.html",
   "https://www.infobae.com/espana/2026/10/30/el-euribor-baja-en-octubre-pero-resiste-por-encima-del-3-y-encarece-las-cuotas-de-las-hipotecas-unos-1200-euros-anuales/",
   "https://elpais.com/economia/2026-10-30/el-euribor-no-da-tregua-cierra-octubre-en-el-3239-y-sigue-encareciendo-las-hipotecas.html",
-  "https://www.elmundo.es/economia/2026/10/30/6ae45426fc6c83e0058b4575.html"
+  "https://www.elmundo.es/economia/2026/10/30/6ae45426fc6c83e0058b4575.html",
+  "https://www.europapress.es/economia/finanzas-00340/noticia-euribor-asienta-encima-32-seguira-subiendo-cuota-hipotecaria-20261030141437.html",
+  "https://www.idealista.com/news/finanzas/hipotecas/2026/10/30/921706-el-euribor-cierra-octubre-en-el-3-23-y-encarece-mas-las-hipotecas-variables",
+  "https://www.infobae.com/espana/2026/10/30/el-precio-maximo-y-minimo-de-la-luz-en-espana-para-este-31-de-octubre/",
+  "https://www.20minutos.es/lainformacion/economia-y-finanzas/director-aeat-advierte-los-riesgos-ia-no-podemos-permitir-que-sea-un-aliado-fraude_7055551_0.html",
+  "https://www.abc.es/economia/fundacion-elon-musk-opaca-tacana-egoista-20261102170701-nt.html",
+  "https://www.abc.es/economia/robin-decaux-ceo-y-cofundador-de-equito-problema-vivienda-empieza-casas-20261030125942-nt.html",
+  "https://www.abc.es/economia/caixabank-sobre-precios-desbocados-vivienda-bajarlos-construir-20261030124838-nt.html",
+  "https://www.idealista.com/news/finanzas/economia/2026/10/30/921157-la-comunidad-de-madrid-presenta-un-presupuesto-record-para-2027-con-552-millones-para",
+  "https://www.newtral.es/centros-datos-union-europea-ue/20261030/",
+  "https://www.businessinsider.es/branded/autonomos-finanzas-personales-profesionales-banco_7051683_5.html",
+  "https://www.abc.es/economia/cuentas-corrientes/euribor-frena-escalada-octubre-evita-hipotecas-encarezcan-20261030132715-nt.html"
  ],
  "titles": [
   "los nueve cambios para la jubilacio n en 2027 segu n el abogado laboralista ignacio solsona",
@@ -1738,7 +1749,15 @@
   "el precio de la gasolina y el die sel se contiene pero las ayudas no impiden que repostar sea ma s caro que hace un an o",
   "el euri bor baja en octubre pero resiste por encima del 3 y encarece las cuotas de las hipotecas unos 1 200 euros anuales",
   "el euri bor no da tregua cierra octubre en el 3 239 y sigue encareciendo las hipotecas",
-  "es oficial para jubilarte anticipadamente no basta con tener 35 an os cotizados tambie n importa cua nto cobrara s"
+  "es oficial para jubilarte anticipadamente no basta con tener 35 an os cotizados tambie n importa cua nto cobrara s",
+  "el director de la aeat advierte de los riesgos de la ia no podemos permitir que sea un aliado del fraude",
+  "la fundacio n de elon musk es opaca tacan a y egoi sta",
+  "el problema de la vivienda empieza por las casas que no tenemos",
+  "caixabank sobre los precios desbocados de la vivienda para bajarlos hay que construir ma s",
+  "la comunidad de madrid presenta un presupuesto re cord para 2027 con 552 millones para vivienda",
+  "que se sabe sobre la regulacio n de los centros de datos que viene de la ue y que espan a debe aplicar",
+  "por que cada vez ma s auto nomos gestionan sus finanzas personales y profesionales desde un mismo banco",
+  "el euri bor frena su escalada en octubre pero no evita que las hipotecas sean ma s caras"
  ],
  "feeds_iniciados": [
   "https://ine.es/dyngs/Prensa/es/rssNovedades.xml",
@@ -1752,54 +1771,6 @@
   "https://www.antena3.com/noticias/rss/4013050.xml"
  ],
  "registro": [
-  {
-   "fecha": "2026-10-27 11:39",
-   "fuente": "20minutos Economía",
-   "titulo": "España bate un nuevo récord de ocupación en el tercer trimestre, pero el paro aumenta al 10,2%",
-   "resultado": "borrador: epa-tercer-trimestre-2026-ocupados-paro-10-2.md"
-  },
-  {
-   "fecha": "2026-10-27 11:39",
-   "fuente": "20minutos Economía",
-   "titulo": "Claves de la DT34: Así cambiará la penalización por retiro voluntario dentro de tres años",
-   "resultado": "descartada: repite el tema ya publicado de la DT34 y la jubilación anticipada en 2027 (/pensiones/jubilacion-anticipada-2027-dt34-pensiones-maximas/). El texto es confuso sobre qué hace la DT34 y sobre el plazo de tres años. Los porcentajes del 21%, 19%, 17% y 13% son los coeficientes generales de l"
-  },
-  {
-   "fecha": "2026-10-27 11:39",
-   "fuente": "El País Economía",
-   "titulo": "El paro repunta en el tercer trimestre hasta el 10,18%",
-   "resultado": "texto insuficiente (muro de pago o página vacía)"
-  },
-  {
-   "fecha": "2026-10-27 11:40",
-   "fuente": "Europa Press Economía",
-   "titulo": "El paro sube en 95.900 personas en verano y el empleo marca récord de 22,8 millones de ocupados",
-   "resultado": "descartada: repetición: es la misma EPA del tercer trimestre (INE, 27 de octubre) que ya publicamos en /paro/epa-tercer-trimestre-2026-ocupados-paro-10-2/. Los datos nuevos, como la subida del paro en 95.900 personas, el reparto entre sector público y privado o el peso de la temporalidad, son detall"
-  },
-  {
-   "fecha": "2026-10-27 11:40",
-   "fuente": "Europa Press Economía",
-   "titulo": "El gasto en pensiones sube un 6,3% en octubre, hasta un máximo de 14.540 millones de euros",
-   "resultado": "borrador: pension-media-jubilacion-octubre-2026-1577-euros.md"
-  },
-  {
-   "fecha": "2026-10-27 12:01",
-   "fuente": "El Mundo Economía",
-   "titulo": "La Seguridad Social lo confirma: para cobrar dos años de paro necesitas 2.160 días cotizados en los últimos seis años",
-   "resultado": "descartada (filtro previo): refrito: explica requisitos de paro ya cubiertos en nuestra guía, sin dato nuevo"
-  },
-  {
-   "fecha": "2026-10-27 12:01",
-   "fuente": "El Mundo Economía",
-   "titulo": "El paro vuelve a superar la barrera del 10% pese al récord de empleo impulsado por los extranjeros",
-   "resultado": "descartada (filtro previo): repetición de la EPA del tercer trimestre ya publicada"
-  },
-  {
-   "fecha": "2026-10-27 12:01",
-   "fuente": "Expansión Economía",
-   "titulo": "La tasa de paro sube al 10,2% en el tercer trimestre con récord de población activa",
-   "resultado": "descartada (filtro previo): repetición de la EPA del tercer trimestre ya publicada"
-  },
   {
    "fecha": "2026-10-27 12:01",
    "fuente": "La Vanguardia Economía",
@@ -2651,14 +2622,57 @@
    "fuente": "El Mundo Economía",
    "titulo": "Es oficial: para jubilarte anticipadamente no basta con tener 35 años cotizados, también importa cuánto cobrarás",
    "resultado": "borrador: jubilacion-anticipada-voluntaria-pension-minima-requisito.md"
+  },
+  {
+   "fecha": "2026-10-30 18:13",
+   "fuente": "20minutos Economía",
+   "titulo": "El director de la AEAT advierte de los riesgos de la IA: \"No podemos permitir que sea un aliado del fraude\"",
+   "resultado": "descartada (filtro previo): Declaración institucional sobre IA y fraude, sin medida concreta ni dato que afecte al bolsillo"
+  },
+  {
+   "fecha": "2026-10-30 18:13",
+   "fuente": "ABC Economía",
+   "titulo": "La fundación de Elon Musk es opaca, tacaña y egoísta",
+   "resultado": "descartada (filtro previo): Opinión sobre una fundación privada, fuera de tema"
+  },
+  {
+   "fecha": "2026-10-30 18:13",
+   "fuente": "ABC Economía",
+   "titulo": "El problema de la vivienda empieza por las casas que no tenemos",
+   "resultado": "descartada (filtro previo): Artículo de opinión sin datos nuevos"
+  },
+  {
+   "fecha": "2026-10-30 18:13",
+   "fuente": "ABC Economía",
+   "titulo": "Caixabank, sobre los precios desbocados de la vivienda: «Para bajarlos hay que construir más»",
+   "resultado": "descartada (filtro previo): Declaración de una empresa privada, sin medida ni dato oficial"
+  },
+  {
+   "fecha": "2026-10-30 18:13",
+   "fuente": "Idealista News (vivienda)",
+   "titulo": "La Comunidad de Madrid presenta un presupuesto récord para 2027 con 552 millones para vivienda",
+   "resultado": "descartada (filtro previo): Presupuesto autonómico genérico, sin medida concreta para los hogares"
+  },
+  {
+   "fecha": "2026-10-30 18:13",
+   "fuente": "Newtral",
+   "titulo": "Qué se sabe sobre la regulación de los centros de datos que viene de la UE y que España debe aplicar",
+   "resultado": "descartada (filtro previo): Regulación europea de centros de datos, sin efecto directo en la economía de casa"
+  },
+  {
+   "fecha": "2026-10-30 18:13",
+   "fuente": "Business Insider España",
+   "titulo": "Por qué cada vez más autónomos gestionan sus finanzas personales y profesionales desde un mismo banco",
+   "resultado": "descartada (filtro previo): Tema de productos bancarios para autónomos, más cercano a ahorro y empresa que a una medida pública"
+  },
+  {
+   "fecha": "2026-10-30 18:14",
+   "fuente": "ABC Economía",
+   "titulo": "El euríbor frena su escalada en octubre, pero no evita que las hipotecas sean más caras",
+   "resultado": "borrador: euribor-octubre-3-239-cuota-hipoteca-variable.md"
   }
  ],
  "escritos": [
-  {
-   "title": "Funcionarios: sueldo +4,5% en 2027, pero sin fecha de subida",
-   "url": "/paro/funcionarios-subida-sueldo-2027-4-5-sin-fecha/",
-   "guia": false
-  },
   {
    "title": "Funcionarios: 0,5% retroactivo de 2026 y 4,5% en 2027",
    "url": "/paro/funcionarios-subida-retroactiva-2026-4-5-2027/",
@@ -3053,11 +3067,16 @@
    "title": "Jubilación anticipada: la pensión debe pasar de 936 €",
    "url": "/pensiones/jubilacion-anticipada-voluntaria-pension-minima-requisito/",
    "guia": false
+  },
+  {
+   "title": "Euríbor de octubre al 3,239%: cuánto sube tu cuota",
+   "url": "/vivienda/euribor-octubre-3-239-cuota-hipoteca-variable/",
+   "guia": false
   }
  ],
  "por_dia": {
   "2026-10-28": 4,
   "2026-10-29": 4,
-  "2026-10-30": 3
+  "2026-10-30": 4
  }
 }
