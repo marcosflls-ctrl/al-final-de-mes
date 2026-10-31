@@ -4,6 +4,16 @@ import { SITE } from '../config';
 ---
 <Page title="Quiénes somos" description={`Qué es ${SITE.name}, quién lo hace y cómo trabajamos.`}>
   <p><strong>{SITE.name}</strong> explica las noticias que afectan a la economía de casa en España: pensiones, paro y ayudas, Hacienda y el precio de la luz. Sin titulares engañosos y siempre con el dato oficial.</p>
+  <h2>Qué encontrarás</h2>
+  <p>Además de las noticias, preparamos herramientas propias para que hagas tus cuentas con los datos oficiales de 2026:</p>
+  <ul>
+    <li><a href="/hacienda/calculadora-sueldo-neto/">Calculadora de sueldo neto</a>, con la retención de IRPF y las cotizaciones de este año.</li>
+    <li><a href="/paro/calculadora-paro/">Calculadora del paro</a> y <a href="/paro/calculadora-baja-laboral/">de la baja laboral</a>, día a día y con quién paga cada tramo.</li>
+    <li><a href="/pensiones/calculadora-jubilacion/">Calculadora de la jubilación</a>.</li>
+    <li><a href="/vivienda/actualizar-alquiler-ipc/">Subida del alquiler</a> con el IPC o el índice de referencia, y <a href="/vivienda/comprar-o-alquilar/">comprar o alquilar</a>.</li>
+    <li><a href="/luz/calculadora-potencia/">Qué potencia de luz necesitas</a> y <a href="/luz/cuanto-cuesta-cada-electrodomestico/">cuánto gasta cada electrodoméstico</a>.</li>
+    <li><a href="/gasolina/">Precio de la gasolina</a> por provincia, actualizado a diario con los datos del Ministerio.</li>
+  </ul>
   <h2>Quién lo hace</h2>
   <p>Los artículos los firma la <a href={`/autor/${SITE.author.slug}/`}>redacción de {SITE.name}</a>. Usamos herramientas automáticas para detectar novedades y preparar borradores, y cada texto se revisa antes de publicarse.</p>
   <h2>Cómo trabajamos</h2>

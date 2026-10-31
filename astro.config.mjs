@@ -31,11 +31,34 @@ for (const [pre, f] of Object.entries(fechasPaginas)) if (pre.startsWith('/')) p
 // Portada y portadas de sección: la fecha del artículo más reciente
 const masReciente = (prefijo) => Object.entries(lastmod).filter(([u]) => u.startsWith(prefijo)).map(([, f]) => f).sort().pop();
 
+// Páginas generadas que llevan noindex y, por tanto, no van al mapa del sitio (misma regla que en
+// src/lib/carburantes.ts y src/lib/sueldos-pagina.ts)
+const CAPITALES = ['bilbao', 'vitoria-gasteiz', 'donostia', 'pamplona', 'logrono', 'santander', 'oviedo', 'leon', 'palencia',
+  'burgos', 'soria', 'segovia', 'avila', 'zamora', 'salamanca', 'valladolid', 'lugo', 'ourense', 'pontevedra',
+  'a-coruna', 'huesca', 'teruel', 'zaragoza', 'lleida', 'girona', 'tarragona', 'barcelona', 'castellon',
+  'valencia', 'alicante', 'murcia', 'albacete', 'cuenca', 'guadalajara', 'toledo', 'ciudad-real', 'caceres',
+  'badajoz', 'huelva', 'sevilla', 'cadiz', 'malaga', 'cordoba', 'jaen', 'granada', 'almeria', 'madrid',
+  'palma', 'las-palmas-de-gran-canaria', 'santa-cruz-de-tenerife', 'ceuta', 'melilla'];
+const sinIndexar = new Set();
+try {
+  for (const c of JSON.parse(fs.readFileSync('src/data/carburantes-ciudades.json', 'utf8')).ciudades ?? []) {
+    const capital = CAPITALES.includes(c.slug) || /^(donostia|castellon|palma-de-mallorca)/.test(c.slug);
+    if (!capital && (c.g95?.n ?? 0) < 20) sinIndexar.add(`/gasolina/${c.provincia_slug}/${c.slug}/`);
+  }
+} catch {}
+const sueldoSinIndexar = (ruta) => {
+  const m = ruta.match(/^\/hacienda\/sueldo-neto\/(\d+)-euros-brutos\/$/);
+  return m && !(+m[1] <= 45000 || +m[1] % 5000 === 0);
+};
+
 export default defineConfig({
   site: 'https://alfinaldemes.com',
   trailingSlash: 'always',
   integrations: [sitemap({
-    filter: (page) => !page.includes('/buscar/') && !page.includes('/hacienda/comisiones-fondos/'),
+    filter: (page) => {
+      const ruta = new URL(page).pathname;
+      return !page.includes('/buscar/') && !page.includes('/hacienda/comisiones-fondos/') && !sinIndexar.has(ruta) && !sueldoSinIndexar(ruta);
+    },
     serialize: (item) => {
       const ruta = new URL(item.url).pathname;
       let m = lastmod[ruta];

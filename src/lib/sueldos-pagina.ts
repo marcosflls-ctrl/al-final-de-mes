@@ -4,6 +4,10 @@ import { calcular, type Entrada } from './sueldo';
 export const BRUTOS_PAGINA: number[] = [];
 for (let b = 15000; b <= 100000; b += 1000) BRUTOS_PAGINA.push(b);
 
+// Solo los sueldos más buscados se ofrecen a Google: de 15.000 a 45.000 € de mil en mil y después de 5.000 en 5.000
+// (50.000, 55.000…). El resto siguen en la web con noindex. Mantener igual que en astro.config.mjs.
+export const sueldoIndexable = (b: number) => b <= 45000 || b % 5000 === 0;
+
 export const slugSueldo = (b: number) => `${b}-euros-brutos`;
 export const urlSueldo = (b: number) => `/hacienda/sueldo-neto/${slugSueldo(b)}/`;
 
