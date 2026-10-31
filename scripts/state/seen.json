@@ -1262,7 +1262,16 @@
   "https://elpais.com/economia/negocios/2026-10-31/el-vaiven-regulatorio-y-las-elecciones-paralizan-el-mercado-del-alquiler-de-viviendas.html",
   "https://www.abc.es/economia/cuentas-corrientes/consumiremos-luz-pagaremos-factura-cara-cuatro-anos-20261031011125-nt.html",
   "https://www.idealista.com/news/finanzas/economia/2026/10/30/919353-como-solicitar-el-bono-social-de-la-luz-pasos-requisitos-y-descuentos",
-  "https://www.infobae.com/espana/2026/10/31/el-precio-de-la-luz-en-espana-para-este-1-de-noviembre/"
+  "https://www.infobae.com/espana/2026/10/31/el-precio-de-la-luz-en-espana-para-este-1-de-noviembre/",
+  "https://elpais.com/economia/2026-10-31/las-alternativas-al-tren-lanzan-nuevas-ofertas-a-pasajeros-para-paliar-el-deficit-a-andalucia-tras-el-accidente-de-urda.html",
+  "https://www.expansion.com/economia/2026/10/31/pp-critica-puente-busque-cabeza-turco-accidente-urda.html",
+  "https://www.abc.es/economia/barcelona-lleva-tecnologia-urbana-inteligente-mercado-global-20261101001400-nt.html",
+  "https://www.abc.es/economia/paso-laboratorio-publico-mercado-desatasca-20261101000500-nt.html",
+  "https://www.abc.es/economia/inteligencia-artificial-abre-nuevo-frente-industrial-oro-20261101000400-nt.html",
+  "https://www.abc.es/economia/promesa-oscurecida-comunidades-energeticas-20261101000200-nt.html",
+  "https://www.20minutos.es/lainformacion/economia-y-finanzas/gonzalo-bernardos-economista-jubilado-medio-espana-20-anos-pension-solo-pagado-maximo-12_7055766_0.html",
+  "https://www.elconfidencial.com/economia/2026-10-31/economista-piso-alquilado-vender-hijo-inquilino-mismo-precio_4456917/",
+  "https://www.idealista.com/news/inmobiliario/vivienda/2026/10/31/918355-descalificar-vpo-como-hacerlo-cuando-y-cuanto-cuesta"
  ],
  "titles": [
   "los nueve cambios para la jubilacio n en 2027 segu n el abogado laboralista ignacio solsona",
@@ -1791,7 +1800,16 @@
   "un experto en seguridad deja de ahorrar para la jubilacio n porque cree que la ia nos matara en 10 an os",
   "el vaive n regulatorio y las elecciones ya impactan el mercado del alquiler de viviendas se paralizan contratos y cae la oferta",
   "consumiremos menos luz pero pagaremos ma s por que sera la factura ma s cara en cuatro an os",
-  "co mo solicitar el bono social de la luz pasos requisitos y descuentos"
+  "co mo solicitar el bono social de la luz pasos requisitos y descuentos",
+  "las alternativas al tren lanzan nuevas ofertas a pasajeros para paliar el de ficit a andaluci a tras el accidente de urda",
+  "el pp critica que puente busque una cabeza de turco en el accidente de urda",
+  "barcelona lleva la tecnologi a urbana inteligente al mercado global",
+  "el paso del laboratorio pu blico al mercado se desatasca",
+  "la inteligencia artificial abre un nuevo frente industrial para el oro y la plata",
+  "la promesa oscurecida de las comunidades energe ticas",
+  "gonzalo bernardos economista el jubilado medio en espan a tiene 20 an os de pensio n pero solo ha pagado como ma ximo por 12",
+  "jose mari a pa ez economista si tienes un piso alquilado y piensas vende rselo a tu hijo tu inquilino puede comprarlo antes que e l y al mismo precio",
+  "descalificar vpo co mo hacerlo cua ndo y cua nto cuesta"
  ],
  "feeds_iniciados": [
   "https://ine.es/dyngs/Prensa/es/rssNovedades.xml",
@@ -1805,60 +1823,6 @@
   "https://www.antena3.com/noticias/rss/4013050.xml"
  ],
  "registro": [
-  {
-   "fecha": "2026-10-27 12:01",
-   "fuente": "El Español Invertia",
-   "titulo": "Dónde invertir en bolsa hoy: valores para aprovechar una reacción tras las recientes correcciones",
-   "resultado": "descartada (filtro previo): bolsa e inversión, cubierto por Dinero en Claro"
-  },
-  {
-   "fecha": "2026-10-27 12:01",
-   "fuente": "El Mundo Economía",
-   "titulo": "La huelga también divide a los autónomos: las organizaciones vinculadas a los sindicatos llaman a bajar las persianas el 11-N mientras los a",
-   "resultado": "borrador: huelga-11n-autonomos-sin-derecho-cierre-patronal.md"
-  },
-  {
-   "fecha": "2026-10-27 12:01",
-   "fuente": "La Vanguardia Economía",
-   "titulo": "El paro sube en 31.000 personas en la Comunitat Valenciana y se crean 8.400 empleos",
-   "resultado": "descartada: sin valor propio: es el desglose regional (Comunitat Valenciana) de la EPA del tercer trimestre, que ya cubrimos en el artículo nacional. Son datos de mercado laboral sin medida, plazo ni trámite que afecte al bolsillo, y no permiten un cálculo ni una guía útil para el lector."
-  },
-  {
-   "fecha": "2026-10-27 12:02",
-   "fuente": "La Vanguardia Economía",
-   "titulo": "EPA: Catalunya suma 18.900 desempleados y el paro sube al 8,30% en el tercer trimestre",
-   "resultado": "borrador: epa-cataluna-paro-8-30-tercer-trimestre-2026.md"
-  },
-  {
-   "fecha": "2026-10-27 17:43",
-   "fuente": "20minutos Economía",
-   "titulo": "Uber Eats renuncia a los repartidores autónomos y acuerda la contratación de más de 4.000 trabajadores",
-   "resultado": "descartada (filtro previo): Misma noticia que la 18 (acuerdo Uber Eats sobre repartidores), que trae más detalle"
-  },
-  {
-   "fecha": "2026-10-27 17:43",
-   "fuente": "20minutos Economía",
-   "titulo": "La pensión media de jubilación alcanza los 1.577,6 euros y el gasto mensual marca nuevo récord",
-   "resultado": "descartada (filtro previo): Ya publicada: 'Pensión media de jubilación: 1.577,6 € en octubre'"
-  },
-  {
-   "fecha": "2026-10-27 17:43",
-   "fuente": "Cinco Días",
-   "titulo": "‘España puede ser la hostia’, la campaña que propone crear un fondo para vivienda pública y pensiones con ingresos de las renovables",
-   "resultado": "descartada (filtro previo): Campaña de opinión sobre un fondo propuesto, sin medida concreta"
-  },
-  {
-   "fecha": "2026-10-27 17:43",
-   "fuente": "La Vanguardia Economía",
-   "titulo": "Madrid ensancha la distancia en PIB per cápita de Catalunya por los trabajadores no residentes",
-   "resultado": "descartada (filtro previo): Macroeconomía: diferencias de PIB per cápita entre comunidades"
-  },
-  {
-   "fecha": "2026-10-27 17:43",
-   "fuente": "ABC Economía",
-   "titulo": "Repsol amplía sus descuentos en carburantes por la crisis del petróleo hasta el 30 de noviembre: hasta 45 céntimos de ahorro por litro",
-   "resultado": "descartada (filtro previo): Promoción comercial de una empresa (descuentos de Repsol), no una medida pública"
-  },
   {
    "fecha": "2026-10-27 17:43",
    "fuente": "Idealista News (vivienda)",
@@ -2704,14 +2668,63 @@
    "fuente": "Idealista News (vivienda)",
    "titulo": "¿Cómo solicitar el bono social de la luz? Pasos, requisitos y descuentos",
    "resultado": "descartada: sin valor propio: el texto es una explicación general de cómo pedir el bono social (pasos, requisitos, documentación) y ya lo cubre nuestra guía /luz/bono-social-electrico-requisitos-y-descuentos/. No trae ninguna medida, cifra ni fecha nuevas. Los descuentos del 42,5 % y el 57,5 % hasta"
+  },
+  {
+   "fecha": "2026-11-01 00:26",
+   "fuente": "Cinco Días",
+   "titulo": "Las alternativas al tren lanzan nuevas ofertas a pasajeros para paliar el déficit a Andalucía tras el accidente de Urda",
+   "resultado": "descartada (filtro previo): Transporte ferroviario y ofertas de aerolíneas tras un accidente: no afecta directamente a la economía de casa"
+  },
+  {
+   "fecha": "2026-11-01 00:26",
+   "fuente": "Expansión Economía",
+   "titulo": "El PP critica que Puente \"busque una cabeza de turco\" en el accidente de Urda",
+   "resultado": "descartada (filtro previo): Crítica política sobre el accidente de Urda: política sin medida concreta"
+  },
+  {
+   "fecha": "2026-11-01 00:26",
+   "fuente": "ABC Economía",
+   "titulo": "Barcelona lleva la tecnología urbana inteligente al mercado global",
+   "resultado": "descartada (filtro previo): Tecnología urbana y mercado global: macroeconomía y empresas"
+  },
+  {
+   "fecha": "2026-11-01 00:26",
+   "fuente": "ABC Economía",
+   "titulo": "El paso del laboratorio público al mercado se desatasca",
+   "resultado": "descartada (filtro previo): Innovación y transferencia de laboratorios al mercado: no afecta al bolsillo de las familias"
+  },
+  {
+   "fecha": "2026-11-01 00:26",
+   "fuente": "ABC Economía",
+   "titulo": "La inteligencia artificial abre un nuevo frente industrial para el oro y la plata",
+   "resultado": "descartada (filtro previo): Inteligencia artificial e industria del oro y la plata: macroeconomía y empresas"
+  },
+  {
+   "fecha": "2026-11-01 00:26",
+   "fuente": "ABC Economía",
+   "titulo": "La promesa oscurecida de las comunidades energéticas",
+   "resultado": "descartada (filtro previo): Titular de análisis sobre comunidades energéticas sin medida concreta ni dato para el bolsillo"
+  },
+  {
+   "fecha": "2026-11-01 00:26",
+   "fuente": "20minutos Economía",
+   "titulo": "Gonzalo Bernardos, economista: \"El jubilado medio en España tiene 20 años de pensión, pero solo ha pagado como máximo por 12\"",
+   "resultado": "descartada: sin valor propio: es una opinión de un economista en televisión, sin ninguna medida, norma ni dato oficial nuevo. Las edades de jubilación que cita ya las cubren nuestras guías y los artículos ya publicados sobre jubilación, y además la edad de 66 años y 10 meses de la fuente no se puede"
+  },
+  {
+   "fecha": "2026-11-01 00:26",
+   "fuente": "El Confidencial Economía",
+   "titulo": "José María Páez, economista: “Si tienes un piso alquilado y piensas vendérselo a tu hijo, tu inquilino puede comprarlo antes que él y al mis",
+   "resultado": "texto insuficiente (muro de pago o página vacía)"
+  },
+  {
+   "fecha": "2026-11-01 00:27",
+   "fuente": "Idealista News (vivienda)",
+   "titulo": "Descalificar VPO, ¿cómo hacerlo, cuándo y cuánto cuesta?",
+   "resultado": "borrador: descalificar-vpo-coste-plazos-requisitos-ley-vivienda.md"
   }
  ],
  "escritos": [
-  {
-   "title": "Alquiler medio: 1.499 € en Pozuelo y 330 € en Lalín en 2024",
-   "url": "/vivienda/ine-alquiler-precio-vivienda-municipios-2025/",
-   "guia": false
-  },
   {
    "title": "Becas de comedor y transporte fuera de plazo: cómo pedirlas",
    "url": "/paro/becas-comedor-transporte-escolar-fuera-plazo/",
@@ -3106,12 +3119,18 @@
    "title": "Luz en noviembre: 71,60 € con PVPC, un 38% más",
    "url": "/luz/factura-luz-noviembre-pvpc-subida-38/",
    "guia": false
+  },
+  {
+   "title": "Descalificar una VPO: de gratis a más de 24.000 euros",
+   "url": "/vivienda/descalificar-vpo-coste-plazos-requisitos-ley-vivienda/",
+   "guia": false
   }
  ],
  "por_dia": {
   "2026-10-28": 4,
   "2026-10-29": 4,
   "2026-10-30": 4,
-  "2026-10-31": 2
+  "2026-10-31": 2,
+  "2026-11-01": 1
  }
 }
