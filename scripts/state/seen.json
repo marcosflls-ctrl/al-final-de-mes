@@ -1243,7 +1243,13 @@
   "https://www.idealista.com/news/finanzas/economia/2026/10/30/921157-la-comunidad-de-madrid-presenta-un-presupuesto-record-para-2027-con-552-millones-para",
   "https://www.newtral.es/centros-datos-union-europea-ue/20261030/",
   "https://www.businessinsider.es/branded/autonomos-finanzas-personales-profesionales-banco_7051683_5.html",
-  "https://www.abc.es/economia/cuentas-corrientes/euribor-frena-escalada-octubre-evita-hipotecas-encarezcan-20261030132715-nt.html"
+  "https://www.abc.es/economia/cuentas-corrientes/euribor-frena-escalada-octubre-evita-hipotecas-encarezcan-20261030132715-nt.html",
+  "https://www.elmundo.es/economia/empresas/2026/10/31/6ae48d7fe9cf4aa34e8b4588.html",
+  "https://www.abc.es/economia/juan-ramon-rallo-grave-deterioro-ave-puente-quiere-ocultar-20261031013305-nt.html",
+  "https://www.abc.es/economia/gobierno-lleva-dos-anos-aplicar-directiva-refuerza-20261030013239-nt.html",
+  "https://www.idealista.com/news/deco/consejos/2026/10/30/921610-la-bolsa-de-bolsas-no-es-desorden-el-truco-para-ahorrar-espacio-dinero-y-tiempo-en-casa",
+  "https://www.idealista.com/news/finanzas/hogar/2026/10/30/921669-que-pasa-si-no-ventilas-la-casa-no-es-solo-el-olor-puede-afectar-a-tu-salud-y-a-tu",
+  "https://www.abc.es/economia/cuentas-corrientes/evitar-tus-hijos-renuncien-herencia-trucos-internet-20261030011147-nt.html"
  ],
  "titles": [
   "los nueve cambios para la jubilacio n en 2027 segu n el abogado laboralista ignacio solsona",
@@ -1757,7 +1763,13 @@
   "la comunidad de madrid presenta un presupuesto re cord para 2027 con 552 millones para vivienda",
   "que se sabe sobre la regulacio n de los centros de datos que viene de la ue y que espan a debe aplicar",
   "por que cada vez ma s auto nomos gestionan sus finanzas personales y profesionales desde un mismo banco",
-  "el euri bor frena su escalada en octubre pero no evita que las hipotecas sean ma s caras"
+  "el euri bor frena su escalada en octubre pero no evita que las hipotecas sean ma s caras",
+  "la gran banca pierde 26 700 millones de euros de valor en bolsa pese a una semana de beneficios re cord",
+  "el grave deterioro del ave que puente quiere ocultar",
+  "el gobierno lleva dos an os sin aplicar una directiva que refuerza la seguridad en las infraestructuras ferroviarias",
+  "la bolsa de bolsas no es desorden el truco para ahorrar espacio dinero y tiempo en casa",
+  "que pasa si no ventilas la casa no es solo el olor puede afectar a tu salud y a tu vivienda",
+  "co mo evitar que tus hijos renuncien a la herencia sin trucos de internet por culpa de los impuestos"
  ],
  "feeds_iniciados": [
   "https://ine.es/dyngs/Prensa/es/rssNovedades.xml",
@@ -1771,42 +1783,6 @@
   "https://www.antena3.com/noticias/rss/4013050.xml"
  ],
  "registro": [
-  {
-   "fecha": "2026-10-27 12:01",
-   "fuente": "La Vanguardia Economía",
-   "titulo": "Un flojo tercer trimestre registra un aumento del paro de 95.900 personas",
-   "resultado": "descartada (filtro previo): repetición de la EPA nacional ya publicada"
-  },
-  {
-   "fecha": "2026-10-27 12:01",
-   "fuente": "ABC Economía",
-   "titulo": "Caos en las oposiciones: decenas de altos funcionarios denuncian que cobran poco más de 1.000 euros a la espera de destino",
-   "resultado": "descartada (filtro previo): trámite interno de la Administración (asignación de destinos)"
-  },
-  {
-   "fecha": "2026-10-27 12:01",
-   "fuente": "ABC Economía",
-   "titulo": "La tasa de paro vuelve a situarse por encima del 10% tras el proceso de regularización",
-   "resultado": "descartada (filtro previo): repetición de la EPA ya publicada"
-  },
-  {
-   "fecha": "2026-10-27 12:01",
-   "fuente": "ABC Economía",
-   "titulo": "El Consejo de la UE logra un acuerdo parcial sobre las normas de la PAC",
-   "resultado": "descartada (filtro previo): política agrícola de la UE, sin impacto directo en la economía de casa"
-  },
-  {
-   "fecha": "2026-10-27 12:01",
-   "fuente": "ABC Economía",
-   "titulo": "Alfonso Muñoz, funcionario de la Seguridad Social, tajante sobre las pensiones en 2027: «Se termina el periodo de reformas y llegan cambios ",
-   "resultado": "descartada (filtro previo): declaraciones genéricas sin datos"
-  },
-  {
-   "fecha": "2026-10-27 12:01",
-   "fuente": "ABC Economía",
-   "titulo": "Gana hasta 1.889 euros al mes con estas becas del Parlamento Europeo: requisitos, plazos y perfiles profesionales",
-   "resultado": "descartada (filtro previo): convocatoria de becas de una institución europea, no una ayuda en España"
-  },
   {
    "fecha": "2026-10-27 12:01",
    "fuente": "ABC Economía",
@@ -2670,14 +2646,45 @@
    "fuente": "ABC Economía",
    "titulo": "El euríbor frena su escalada en octubre, pero no evita que las hipotecas sean más caras",
    "resultado": "borrador: euribor-octubre-3-239-cuota-hipoteca-variable.md"
+  },
+  {
+   "fecha": "2026-10-31 02:06",
+   "fuente": "El Mundo Economía",
+   "titulo": "La gran banca pierde 26.700 millones de euros de valor en Bolsa pese a una semana de beneficios récord",
+   "resultado": "descartada (filtro previo): Macroeconomía y bolsa: la banca y su valor en Bolsa no afectan directamente a la economía de casa."
+  },
+  {
+   "fecha": "2026-10-31 02:06",
+   "fuente": "ABC Economía",
+   "titulo": "El grave deterioro del AVE que Puente quiere ocultar",
+   "resultado": "descartada (filtro previo): Infraestructura ferroviaria, no afecta al bolsillo de las familias."
+  },
+  {
+   "fecha": "2026-10-31 02:06",
+   "fuente": "ABC Economía",
+   "titulo": "El Gobierno lleva dos años sin aplicar una directiva que refuerza la seguridad en las infraestructuras ferroviarias",
+   "resultado": "descartada (filtro previo): Seguridad ferroviaria y trámites internos de la Administración, sin impacto directo en el bolsillo."
+  },
+  {
+   "fecha": "2026-10-31 02:06",
+   "fuente": "Idealista News (vivienda)",
+   "titulo": "La bolsa de bolsas no es desorden: el truco para ahorrar espacio, dinero y tiempo en casa",
+   "resultado": "descartada (filtro previo): Consejos de organización del hogar, sin relación con las secciones de la web."
+  },
+  {
+   "fecha": "2026-10-31 02:06",
+   "fuente": "Idealista News (vivienda)",
+   "titulo": "¿Qué pasa si no ventilas la casa? No es solo el olor: puede afectar a tu salud y a tu vivienda",
+   "resultado": "descartada (filtro previo): Consejos de salud y mantenimiento de la vivienda, fuera de tema."
+  },
+  {
+   "fecha": "2026-10-31 02:07",
+   "fuente": "ABC Economía",
+   "titulo": "Cómo evitar que tus hijos renuncien a la herencia (sin trucos de Internet) por culpa de los impuestos",
+   "resultado": "borrador: herencia-pagar-impuesto-sucesiones-cuenta-fallecido.md"
   }
  ],
  "escritos": [
-  {
-   "title": "Funcionarios: 0,5% retroactivo de 2026 y 4,5% en 2027",
-   "url": "/paro/funcionarios-subida-retroactiva-2026-4-5-2027/",
-   "guia": false
-  },
   {
    "title": "Baja por menopausia sin cotización mínima, según el BOE",
    "url": "/pensiones/baja-menopausia-sin-cotizacion-minima-decreto-ley/",
@@ -3072,11 +3079,17 @@
    "title": "Euríbor de octubre al 3,239%: cuánto sube tu cuota",
    "url": "/vivienda/euribor-octubre-3-239-cuota-hipoteca-variable/",
    "guia": false
+  },
+  {
+   "title": "Herencia: paga el impuesto con la cuenta del fallecido",
+   "url": "/hacienda/herencia-pagar-impuesto-sucesiones-cuenta-fallecido/",
+   "guia": false
   }
  ],
  "por_dia": {
   "2026-10-28": 4,
   "2026-10-29": 4,
-  "2026-10-30": 4
+  "2026-10-30": 4,
+  "2026-10-31": 1
  }
 }
