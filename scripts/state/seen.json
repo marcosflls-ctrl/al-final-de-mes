@@ -1271,7 +1271,8 @@
   "https://www.abc.es/economia/promesa-oscurecida-comunidades-energeticas-20261101000200-nt.html",
   "https://www.20minutos.es/lainformacion/economia-y-finanzas/gonzalo-bernardos-economista-jubilado-medio-espana-20-anos-pension-solo-pagado-maximo-12_7055766_0.html",
   "https://www.elconfidencial.com/economia/2026-10-31/economista-piso-alquilado-vender-hijo-inquilino-mismo-precio_4456917/",
-  "https://www.idealista.com/news/inmobiliario/vivienda/2026/10/31/918355-descalificar-vpo-como-hacerlo-cuando-y-cuanto-cuesta"
+  "https://www.idealista.com/news/inmobiliario/vivienda/2026/10/31/918355-descalificar-vpo-como-hacerlo-cuando-y-cuanto-cuesta",
+  "https://www.infobae.com/espana/2026/10/31/eduardo-figares-abogado-de-vivienda-un-inquilino-puede-prorrogar-su-contrato-de-alquiler-dos-anos-si-acaba-antes-de-2028/"
  ],
  "titles": [
   "los nueve cambios para la jubilacio n en 2027 segu n el abogado laboralista ignacio solsona",
@@ -1809,7 +1810,8 @@
   "la promesa oscurecida de las comunidades energe ticas",
   "gonzalo bernardos economista el jubilado medio en espan a tiene 20 an os de pensio n pero solo ha pagado como ma ximo por 12",
   "jose mari a pa ez economista si tienes un piso alquilado y piensas vende rselo a tu hijo tu inquilino puede comprarlo antes que e l y al mismo precio",
-  "descalificar vpo co mo hacerlo cua ndo y cua nto cuesta"
+  "descalificar vpo co mo hacerlo cua ndo y cua nto cuesta",
+  "eduardo figares abogado de vivienda un inquilino puede prorrogar su contrato de alquiler dos an os si acaba antes de 2028"
  ],
  "feeds_iniciados": [
   "https://ine.es/dyngs/Prensa/es/rssNovedades.xml",
@@ -1823,12 +1825,6 @@
   "https://www.antena3.com/noticias/rss/4013050.xml"
  ],
  "registro": [
-  {
-   "fecha": "2026-10-27 17:43",
-   "fuente": "Idealista News (vivienda)",
-   "titulo": "El Gobierno lanza 200 millones en ayudas a promotores para levantar viviendas asequibles en suelos de Casa 47",
-   "resultado": "descartada (filtro previo): Misma noticia que la 2 (ayuda de 200 millones a promotores para vivienda asequible en Casa 47)"
-  },
   {
    "fecha": "2026-10-27 17:43",
    "fuente": "Idealista News (vivienda)",
@@ -2722,14 +2718,15 @@
    "fuente": "Idealista News (vivienda)",
    "titulo": "Descalificar VPO, ¿cómo hacerlo, cuándo y cuánto cuesta?",
    "resultado": "borrador: descalificar-vpo-coste-plazos-requisitos-ley-vivienda.md"
+  },
+  {
+   "fecha": "2026-11-01 00:47",
+   "fuente": "Infobae España",
+   "titulo": "Eduardo Figares, abogado de vivienda: “Un inquilino puede prorrogar su contrato de alquiler dos años si acaba antes de 2028”",
+   "resultado": "borrador: prorroga-extraordinaria-alquiler-dos-anos-inquilinos.md"
   }
  ],
  "escritos": [
-  {
-   "title": "Becas de comedor y transporte fuera de plazo: cómo pedirlas",
-   "url": "/paro/becas-comedor-transporte-escolar-fuera-plazo/",
-   "guia": false
-  },
   {
    "title": "Inquilinos: 1 de cada 3 alquileres es temporal y el fijo cae 10%",
    "url": "/vivienda/alquiler-temporal-34-oferta-permanente-cae-10-idealista/",
@@ -3124,6 +3121,11 @@
    "title": "Descalificar una VPO: de gratis a más de 24.000 euros",
    "url": "/vivienda/descalificar-vpo-coste-plazos-requisitos-ley-vivienda/",
    "guia": false
+  },
+  {
+   "title": "Inquilinos: prórroga del alquiler de hasta 2 años",
+   "url": "/vivienda/prorroga-extraordinaria-alquiler-dos-anos-inquilinos/",
+   "guia": false
   }
  ],
  "por_dia": {
@@ -3131,6 +3133,6 @@
   "2026-10-29": 4,
   "2026-10-30": 4,
   "2026-10-31": 2,
-  "2026-11-01": 1
+  "2026-11-01": 2
  }
 }
