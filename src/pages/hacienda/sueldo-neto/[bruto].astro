@@ -3,7 +3,7 @@ import Base from '../../../layouts/Base.astro';
 import Compartir from '../../../components/Compartir.astro';
 import { SITE } from '../../../config';
 import { PARAMETROS_2026, cotizacionesEmpresa } from '../../../lib/sueldo';
-import { BRUTOS_PAGINA, slugSueldo, urlSueldo, base, CASOS } from '../../../lib/sueldos-pagina';
+import { BRUTOS_PAGINA, sueldoIndexable, slugSueldo, urlSueldo, base, CASOS } from '../../../lib/sueldos-pagina';
 
 export function getStaticPaths() {
   return BRUTOS_PAGINA.map((b) => ({ params: { bruto: slugSueldo(b) }, props: { b } }));
@@ -84,7 +84,7 @@ const jsonLd = [
   },
 ];
 ---
-<Base title={titulo} description={descripcion.slice(0, 165)} jsonLd={jsonLd}>
+<Base title={titulo} description={descripcion.slice(0, 165)} jsonLd={jsonLd} noindex={!sueldoIndexable(b)}>
   <nav class="breadcrumbs"><a href="/">Inicio</a> › <a href="/hacienda/">Hacienda</a> › <a href="/hacienda/sueldo-neto/">Sueldo neto según el bruto</a></nav>
   <article class="sueldo">
     <h1>{B} euros brutos al año: cuánto es en neto</h1>

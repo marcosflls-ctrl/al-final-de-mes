@@ -30,6 +30,19 @@ export function hace(d: DatosCarburantes, dias: number, k: 'g95' | 'diesel'): nu
 
 export interface Ciudad extends Provincia { provincia: string; provincia_slug: string }
 
+// Las páginas de municipio solo se ofrecen a Google si tienen datos de sobra: capitales de provincia y municipios con
+// al menos 20 gasolineras. El resto siguen en la web (enlazadas desde su provincia) pero con noindex, para que Google y
+// AdSense no juzguen el sitio por cientos de páginas casi iguales. Mantener igual que en astro.config.mjs.
+export const MIN_GASOLINERAS_INDEXAR = 20;
+export const CAPITALES = ['bilbao', 'vitoria-gasteiz', 'donostia', 'pamplona', 'logrono', 'santander', 'oviedo', 'leon', 'palencia',
+  'burgos', 'soria', 'segovia', 'avila', 'zamora', 'salamanca', 'valladolid', 'lugo', 'ourense', 'pontevedra',
+  'a-coruna', 'huesca', 'teruel', 'zaragoza', 'lleida', 'girona', 'tarragona', 'barcelona', 'castellon',
+  'valencia', 'alicante', 'murcia', 'albacete', 'cuenca', 'guadalajara', 'toledo', 'ciudad-real', 'caceres',
+  'badajoz', 'huelva', 'sevilla', 'cadiz', 'malaga', 'cordoba', 'jaen', 'granada', 'almeria', 'madrid',
+  'palma', 'las-palmas-de-gran-canaria', 'santa-cruz-de-tenerife', 'ceuta', 'melilla'];
+export const esCapital = (slug: string) => CAPITALES.includes(slug) || /^(donostia|castellon|palma-de-mallorca)/.test(slug);
+export const ciudadIndexable = (c: { slug: string; g95?: { n?: number } | null }) => esCapital(c.slug) || (c.g95?.n ?? 0) >= MIN_GASOLINERAS_INDEXAR;
+
 /** Municipios con página propia (scripts/carburantes.py → carburantes-ciudades.json). */
 export function datosCiudades(): Ciudad[] {
   try { return JSON.parse(fs.readFileSync('src/data/carburantes-ciudades.json', 'utf8')).ciudades ?? []; } catch { return []; }

@@ -3,7 +3,7 @@ import Base from '../../../layouts/Base.astro';
 import Carburantes from '../../../components/Carburantes.astro';
 import AhorroRepostar from '../../../components/AhorroRepostar.astro';
 import { SITE } from '../../../config';
-import { datosCarburantes, datosCiudades, ciudadHaceUnaSemana, litro, type Ciudad } from '../../../lib/carburantes';
+import { ciudadIndexable, datosCarburantes, datosCiudades, ciudadHaceUnaSemana, litro, type Ciudad } from '../../../lib/carburantes';
 import { fechaLarga } from '../../../lib/luz';
 
 export function getStaticPaths() {
@@ -80,7 +80,7 @@ const jsonLd = [
   },
 ];
 ---
-<Base title={titulo} description={desc.slice(0, 165)} jsonLd={jsonLd}>
+<Base title={titulo} description={desc.slice(0, 165)} jsonLd={jsonLd} noindex={!ciudadIndexable(c)}>
   <nav class="breadcrumbs"><a href="/">Inicio</a> › <a href="/gasolina/">Gasolina y diésel</a> › <a href={`/gasolina/${prov.slug}/`}>{prov.nombre}</a> › {c.nombre}</nav>
   <h1>{h1}</h1>
   <p class="intro">Con los precios del {fechaLarga(d.fecha)}, la gasolina 95 cuesta de media <strong>{litro(c.g95?.media)} €/l</strong> en las {c.g95?.n} gasolineras de {c.nombre} ({comp('g95')}) y el diésel, <strong>{litro(c.diesel?.media)} €/l</strong> ({comp('diesel')}).{ahorro >= 1 && <> Llenar un depósito de 50 litros de gasolina en la más barata del municipio ahorra unos <strong>{ahorro.toLocaleString('es-ES', { maximumFractionDigits: 0 })} €</strong> frente al precio medio{ahorroDiesel >= 1 && <>, y de diésel, unos <strong>{eur0(ahorroDiesel)} €</strong></>}.</>}{c.g95 && nac.g95 && <> En el conjunto de España, la gasolina 95 de {c.nombre} está {frenteEspana('g95')}.</>}</p>

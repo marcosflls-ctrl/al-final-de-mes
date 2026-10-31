@@ -12,7 +12,7 @@ Uso:
                                        # en tu PC puedes usar ANTHROPIC_API_KEY=...)
   python scripts/radar.py --dry-run    # solo lista lo que encontraría
   python scripts/radar.py --url URL    # redacta solo esa noticia
-Variables opcionales: MAX_PER_RUN (1), MAX_PER_DAY (4), MODEL (claude-sonnet-5-5)
+Variables opcionales: MAX_PER_RUN (1), MAX_PER_DAY (2), MODEL (claude-sonnet-5-5)
 """
 from __future__ import annotations
 
@@ -43,7 +43,7 @@ MADRID = ZoneInfo("Europe/Madrid")
 MAX_AGE_HOURS = 36            # lo más antiguo ya no es noticia
 MAX_PER_RUN = int(os.environ.get("MAX_PER_RUN", "1"))
 # Tope de artículos al día: publicar mucho y rápido hace que Google desconfíe de una web nueva
-MAX_PER_DAY = int(os.environ.get("MAX_PER_DAY", "4"))
+MAX_PER_DAY = int(os.environ.get("MAX_PER_DAY", "2"))
 # Ahorro: cuánto texto de la fuente lee el redactor y cuántos artículos recientes ve para enlazar y no repetir
 MAX_FUENTE = int(os.environ.get("MAX_FUENTE", "12000"))
 RECIENTES = int(os.environ.get("RECIENTES", "50"))
