@@ -1260,7 +1260,8 @@
   "https://www.idealista.com/news/inmobiliario/internacional/2026/10/31/921659-la-construccion-de-viviendas-es-la-mejor-forma-de-abordar-la-crisis-de-los",
   "https://www.businessinsider.es/tecnologia/experto-seguridad-ahorrar-jubilacion-cree-ia-mata_7054450_0.html",
   "https://elpais.com/economia/negocios/2026-10-31/el-vaiven-regulatorio-y-las-elecciones-paralizan-el-mercado-del-alquiler-de-viviendas.html",
-  "https://www.abc.es/economia/cuentas-corrientes/consumiremos-luz-pagaremos-factura-cara-cuatro-anos-20261031011125-nt.html"
+  "https://www.abc.es/economia/cuentas-corrientes/consumiremos-luz-pagaremos-factura-cara-cuatro-anos-20261031011125-nt.html",
+  "https://www.idealista.com/news/finanzas/economia/2026/10/30/919353-como-solicitar-el-bono-social-de-la-luz-pasos-requisitos-y-descuentos"
  ],
  "titles": [
   "los nueve cambios para la jubilacio n en 2027 segu n el abogado laboralista ignacio solsona",
@@ -1788,7 +1789,8 @@
   "la construccio n de viviendas es la mejor forma de abordar la crisis de los costes de vida",
   "un experto en seguridad deja de ahorrar para la jubilacio n porque cree que la ia nos matara en 10 an os",
   "el vaive n regulatorio y las elecciones ya impactan el mercado del alquiler de viviendas se paralizan contratos y cae la oferta",
-  "consumiremos menos luz pero pagaremos ma s por que sera la factura ma s cara en cuatro an os"
+  "consumiremos menos luz pero pagaremos ma s por que sera la factura ma s cara en cuatro an os",
+  "co mo solicitar el bono social de la luz pasos requisitos y descuentos"
  ],
  "feeds_iniciados": [
   "https://ine.es/dyngs/Prensa/es/rssNovedades.xml",
@@ -1802,12 +1804,6 @@
   "https://www.antena3.com/noticias/rss/4013050.xml"
  ],
  "registro": [
-  {
-   "fecha": "2026-10-27 12:01",
-   "fuente": "Infobae España",
-   "titulo": "Los diputados reciben hasta 2.162 euros al mes exentos de IRPF para gastos parlamentarios",
-   "resultado": "descartada (filtro previo): asunto parlamentario sin medida que afecte a la economía de casa"
-  },
   {
    "fecha": "2026-10-27 12:01",
    "fuente": "El Español Invertia",
@@ -2701,6 +2697,12 @@
    "fuente": "ABC Economía",
    "titulo": "Consumiremos menos luz pero pagaremos más: por qué será la factura más cara en cuatro años",
    "resultado": "borrador: factura-luz-noviembre-pvpc-subida-38.md"
+  },
+  {
+   "fecha": "2026-10-31 12:15",
+   "fuente": "Idealista News (vivienda)",
+   "titulo": "¿Cómo solicitar el bono social de la luz? Pasos, requisitos y descuentos",
+   "resultado": "descartada: sin valor propio: el texto es una explicación general de cómo pedir el bono social (pasos, requisitos, documentación) y ya lo cubre nuestra guía /luz/bono-social-electrico-requisitos-y-descuentos/. No trae ninguna medida, cifra ni fecha nuevas. Los descuentos del 42,5 % y el 57,5 % hasta"
   }
  ],
  "escritos": [
