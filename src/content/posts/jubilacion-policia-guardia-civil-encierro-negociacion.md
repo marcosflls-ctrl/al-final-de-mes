@@ -2,6 +2,7 @@
 title: "Jubilación de policías y guardias civiles: sin acuerdo"
 description: "Sindicatos de Policía y Guardia Civil se encierran en Madrid: Interior da por cerrada la negociación de la jubilación anticipada por las elecciones del 29-N."
 date: 2026-10-27T21:23:51+00:00
+noindex: true
 category: pensiones
 tags: ["jubilacion-anticipada", "policia-nacional", "guardia-civil", "clases-pasivas", "coeficientes-reductores"]
 pendiente: true

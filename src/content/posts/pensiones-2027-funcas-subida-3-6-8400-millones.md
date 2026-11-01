@@ -2,6 +2,7 @@
 title: "Pensiones 2027: Funcas calcula una subida del 3,6% (8.400 M)"
 description: "Si las pensiones suben con la inflación, Funcas estima un 3,6% en 2027: unos 43 € más al mes con 1.200 €. Costaría 8.400 millones extra. Aún no está aprobado."
 date: 2026-10-22T10:41:54+00:00
+noindex: true
 category: pensiones
 tags: ["pensiones", "revalorizacion", "funcas", "2027", "elecciones-29n"]
 pendiente: true

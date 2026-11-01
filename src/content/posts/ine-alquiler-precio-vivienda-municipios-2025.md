@@ -2,6 +2,7 @@
 title: "Alquiler medio: 1.499 € en Pozuelo y 330 € en Lalín en 2024"
 description: "Según el INE, el alquiler medio va de 1.499 € en Pozuelo a 330 € en Lalín. De los 100 barrios más caros, 94 son de Madrid o Barcelona."
 date: 2026-10-21T10:16:02+00:00
+noindex: true
 category: vivienda
 tags: ["alquiler", "precio-vivienda", "ine", "indicadores-urbanos", "barrios"]
 pendiente: false

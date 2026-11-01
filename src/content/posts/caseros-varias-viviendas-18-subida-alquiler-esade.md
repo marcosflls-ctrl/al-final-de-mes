@@ -2,6 +2,7 @@
 title: "Alquiler: caseros con varias casas, ligados al 18% de la subida"
 description: "Un estudio de EsadeEcPol asocia a los propietarios con varias viviendas alquiladas el 18% del alza de rentas entre 2019 y 2023. Así afecta a los inquilinos."
 date: 2026-10-22T10:16:37+00:00
+noindex: true
 category: vivienda
 tags: ["alquiler", "inquilinos", "caseros", "esade", "precio-vivienda"]
 pendiente: false

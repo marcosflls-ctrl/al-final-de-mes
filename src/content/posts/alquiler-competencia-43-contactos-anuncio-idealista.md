@@ -2,6 +2,7 @@
 title: "Alquiler: 43 contactos por anuncio, 5 veces más que en 2018"
 description: "Cada anuncio de alquiler en idealista recibió 43 contactos en el tercer trimestre de 2026, frente a 8 en 2018. Lleida y Tarragona, las más disparadas."
 date: 2026-10-26T11:35:57+00:00
+noindex: true
 category: vivienda
 tags: ["alquiler", "inquilinos", "idealista", "vivienda", "zonas-tensionadas"]
 pendiente: false

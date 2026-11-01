@@ -2,6 +2,7 @@
 title: "Menores de 30: 2 de cada 3 necesitan ayuda para independizarse"
 description: "Dos de cada tres menores de 30 años necesitan ayuda para independizarse y el 70% de los inquilinos jóvenes ha renunciado a un piso, según un barómetro."
 date: 2026-10-23T10:09:15+00:00
+noindex: true
 category: vivienda
 tags: ["jovenes", "vivienda", "alquiler", "independizarse", "barometro"]
 pendiente: false

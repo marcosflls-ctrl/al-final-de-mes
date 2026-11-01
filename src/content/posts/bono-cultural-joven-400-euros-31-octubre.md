@@ -2,6 +2,7 @@
 title: "Bono Cultural: nacidos en 2008, 400 € hasta el 31 de octubre"
 description: "Los nacidos en 2008 pueden pedir el Bono Cultural Joven de 400 € hasta el 31 de octubre a las 23:59 h. Necesitas Cl@ve o certificado digital."
 date: 2026-10-24T14:02:56+00:00
+noindex: true
 category: paro
 tags: ["bono-cultural-joven", "ayudas-jovenes", "400-euros", "ministerio-de-cultura", "cl-ve"]
 pendiente: false

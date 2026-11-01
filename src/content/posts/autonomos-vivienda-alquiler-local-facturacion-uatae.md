@@ -2,6 +2,7 @@
 title: "Autónomos: el local cuesta del 25 al 50% de su facturación"
 description: "Casi la mitad de los autónomos tiene problemas para alquilar casa y la mayoría paga entre el 25% y el 50% de su facturación por el local, según UATAE."
 date: 2026-10-28T11:40:26+00:00
+noindex: true
 category: vivienda
 tags: ["autonomos", "alquiler", "vivienda", "locales-comerciales", "uatae"]
 pendiente: true

@@ -2,6 +2,7 @@
 title: "Pensiones 2027: la subida se sabrá el 27 de noviembre (sobre el 3,5%)"
 description: "La revalorización de las pensiones se conocerá con el IPC adelantado del 27 de noviembre. Según La Vanguardia, rondaría el 3,5%, aunque aún no es oficial."
 date: 2026-10-13T07:53:22+00:00
+noindex: true
 category: pensiones
 tags: [pensiones, revalorizacion, ipc, salario-minimo, 2027]
 pendiente: true

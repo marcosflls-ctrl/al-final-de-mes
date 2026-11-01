@@ -2,6 +2,7 @@
 title: "Las pensiones cuestan 14.500 millones al mes, un 60% más que en 2018"
 description: "La Seguridad Social pagó cerca de 14.500 millones en pensiones en septiembre. La jubilación media ya es de 1.576 euros y la AIReF avisa del coste futuro."
 date: 2026-10-15T23:43:03+00:00
+noindex: true
 category: pensiones
 tags: [pensiones, jubilacion, revalorizacion, airef, seguridad-social]
 pendiente: false

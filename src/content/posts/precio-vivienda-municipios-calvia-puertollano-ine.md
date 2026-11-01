@@ -2,6 +2,7 @@
 title: "Comprar casa: de 57.698 € en Puertollano a 981.485 € en Calviá"
 description: "Calviá (981.485 €) es el municipio con la vivienda más cara de España y Puertollano (57.698 €) el más barato, según el INE. Y el metro cuadrado, por barrios."
 date: 2026-10-21T19:40:31+00:00
+noindex: true
 category: vivienda
 tags: ["precio-vivienda", "ine", "comprar-casa", "municipios", "metro-cuadrado"]
 pendiente: false

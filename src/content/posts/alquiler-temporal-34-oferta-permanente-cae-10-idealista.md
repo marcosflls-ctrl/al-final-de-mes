@@ -2,6 +2,7 @@
 title: "Inquilinos: 1 de cada 3 alquileres es temporal y el fijo cae 10%"
 description: "El 34% de los alquileres anunciados ya es de temporada y la oferta de contratos permanentes baja un 10% en un año, según Idealista."
 date: 2026-10-21T10:37:40+00:00
+noindex: true
 category: vivienda
 tags: ["alquiler", "alquiler-de-temporada", "zonas-tensionadas", "idealista", "inquilinos"]
 pendiente: false

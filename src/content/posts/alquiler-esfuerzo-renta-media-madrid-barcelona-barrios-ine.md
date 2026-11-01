@@ -2,6 +2,7 @@
 title: "El alquiler se lleva más del 50% de la renta en Madrid y Barcelona"
 description: "Con el alquiler mediano, quien tiene la renta media gasta el 50% en Madrid, el 53% en Barcelona y el 48% en Valencia, según datos del INE de 2024."
 date: 2026-10-22T15:42:04+00:00
+noindex: true
 category: vivienda
 tags: ["alquiler", "inquilinos", "ine", "esfuerzo-de-alquiler", "madrid"]
 pendiente: false

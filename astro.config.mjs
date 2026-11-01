@@ -2,12 +2,16 @@ import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 import fs from 'node:fs';
 
+// Páginas con noindex: no van al mapa del sitio
+const sinIndexar = new Set();
+
 // Fecha de última modificación de cada artículo (updated o date) para el mapa del sitio
 const lastmod = {};
 for (const f of fs.readdirSync('src/content/posts').filter((f) => f.endsWith('.md'))) {
   const head = fs.readFileSync(`src/content/posts/${f}`, 'utf8').split('\n---', 2)[0];
   const get = (k) => (head.match(new RegExp(`^${k}:\\s*["']?([^"'\\n]+)`, 'm')) || [])[1];
   if (/^draft:\s*true/m.test(head)) continue; // los borradores no se publican
+  if (/^noindex:\s*true/m.test(head)) { sinIndexar.add(`/${get('category')}/${f.replace(/\.md$/, '')}/`); continue; } // fuera de Google
   const fecha = get('updated') || get('date');
   const cat = get('category');
   // los artículos programados para más adelante tampoco están publicados todavía
@@ -39,7 +43,6 @@ const CAPITALES = ['bilbao', 'vitoria-gasteiz', 'donostia', 'pamplona', 'logrono
   'valencia', 'alicante', 'murcia', 'albacete', 'cuenca', 'guadalajara', 'toledo', 'ciudad-real', 'caceres',
   'badajoz', 'huelva', 'sevilla', 'cadiz', 'malaga', 'cordoba', 'jaen', 'granada', 'almeria', 'madrid',
   'palma', 'las-palmas-de-gran-canaria', 'santa-cruz-de-tenerife', 'ceuta', 'melilla'];
-const sinIndexar = new Set();
 try {
   for (const c of JSON.parse(fs.readFileSync('src/data/carburantes-ciudades.json', 'utf8')).ciudades ?? []) {
     const capital = CAPITALES.includes(c.slug) || /^(donostia|castellon|palma-de-mallorca)/.test(c.slug);

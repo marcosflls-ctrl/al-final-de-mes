@@ -2,6 +2,7 @@
 title: "Metal: convenios limitan el 100% del sueldo en la baja"
 description: "Los nuevos convenios del metal acortan a 100-200 días el cobro del 100% en bajas por enfermedad común y penalizan las repeticiones. Así te afecta."
 date: 2026-10-25T09:52:52+00:00
+noindex: true
 category: paro
 tags: ["baja-medica", "convenios-colectivos", "incapacidad-temporal", "metal", "nomina"]
 pendiente: false

@@ -2,6 +2,7 @@
 title: "Los desahucios por impago del alquiler caen un 59% hasta junio"
 description: "Hubo 4.499 lanzamientos por impago del alquiler hasta junio, un 59% menos que hace un año, según el CGPJ. Cataluña concentra uno de cada cinco."
 date: 2026-10-16T20:00:32+00:00
+noindex: true
 category: vivienda
 tags: ["desahucios", "alquiler", "cgpj", "vivienda", "hipotecas"]
 pendiente: false

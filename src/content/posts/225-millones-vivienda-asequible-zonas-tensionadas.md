@@ -2,6 +2,7 @@
 title: "225 millones para vivienda asequible en zonas tensionadas"
 description: "El Consejo de Ministros aprueba 225 millones: 180 para vivienda asequible en 317 municipios tensionados y 45 para 2.000 plazas universitarias."
 date: 2026-10-20T21:56:49+00:00
+noindex: true
 category: vivienda
 tags: ["vivienda-asequible", "zonas-tensionadas", "alquiler", "alojamiento-universitario", "consejo-de-ministros"]
 pendiente: true

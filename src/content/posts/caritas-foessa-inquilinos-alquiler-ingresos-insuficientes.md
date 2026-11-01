@@ -2,6 +2,7 @@
 title: "Cáritas: 1 de cada 2 inquilinos no alquilaría hoy su piso"
 description: "El 50,6% de los inquilinos no podría contratar hoy su vivienda sin superar el 30% de sus ingresos, según Cáritas y Foessa. Estos son los datos y el cálculo."
 date: 2026-10-28T11:24:19+00:00
+noindex: true
 category: vivienda
 tags: ["alquiler", "caritas", "foessa", "vivienda", "inquilinos"]
 pendiente: false

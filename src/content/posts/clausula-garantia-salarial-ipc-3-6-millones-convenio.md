@@ -2,6 +2,7 @@
 title: "3,6 millones de asalariados tienen cláusula IPC en convenio"
 description: "Según Trabajo, 3,64 millones de asalariados tienen en su convenio una cláusula que revisa el sueldo si sube el IPC. La patronal calcula un 1% más de media."
 date: 2026-10-25T23:35:04+00:00
+noindex: true
 category: paro
 tags: ["convenios-colectivos", "ipc", "sueldo", "clausula-de-garantia-salarial", "inflacion"]
 pendiente: false

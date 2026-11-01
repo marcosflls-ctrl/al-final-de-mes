@@ -2,6 +2,7 @@
 title: "Impago del alquiler: 278 días y 9.700 € de coste al casero"
 description: "Recuperar un piso tras un impago tarda de media 278 días y cuesta unos 9.700 € al propietario, según los datos del tercer trimestre de Seag."
 date: 2026-10-24T14:03:29+00:00
+noindex: true
 category: vivienda
 tags: ["impago-alquiler", "desahucio", "propietarios", "alquiler", "seag"]
 pendiente: false

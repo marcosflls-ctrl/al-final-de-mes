@@ -2,6 +2,7 @@
 title: "Canarias propone 10 años de residencia para poder comprar vivienda"
 description: "Canarias pide al Gobierno un decreto-ley: 10 años de residencia (o 15) para comprar casa y un máximo de dos viviendas por residente. Aún es solo una propuesta."
 date: 2026-10-17T14:14:40+00:00
+noindex: true
 category: vivienda
 tags: ["canarias", "compra-de-vivienda", "residencia", "decreto-ley", "vivienda"]
 pendiente: true

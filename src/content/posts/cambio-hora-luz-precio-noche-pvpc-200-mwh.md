@@ -2,6 +2,7 @@
 title: "Cambio de hora: la luz supera los 20 cts/kWh de noche"
 description: "Con el cambio de hora de hoy, consumirás luz antes de las 19.00, cuando el precio sube. Afecta sobre todo a los 8 millones de hogares con PVPC."
 date: 2026-10-25T10:10:48+00:00
+noindex: true
 category: luz
 tags: ["precio-de-la-luz", "cambio-de-hora", "pvpc", "omie", "gas"]
 pendiente: false

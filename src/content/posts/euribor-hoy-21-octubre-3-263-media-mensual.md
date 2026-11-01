@@ -2,6 +2,7 @@
 title: "Euríbor hoy, 21 de octubre: 3,263% y media del mes en 3,222%"
 description: "El euríbor sube hoy al 3,263%, 0,018 puntos más que ayer. La media de octubre está en el 3,222%, por debajo de la de septiembre (3,247%)."
 date: 2026-10-21T15:21:48+00:00
+noindex: true
 category: vivienda
 tags: ["euribor", "hipotecas", "hipoteca-variable", "tipos-de-interes"]
 pendiente: false
