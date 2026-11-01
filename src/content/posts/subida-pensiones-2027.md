@@ -2,7 +2,7 @@
 title: "¿Cuánto subirán las pensiones en 2027? Subida, mínimas y PNC"
 description: "Las pensiones subirían entre un 3,5 % y un 3,6 % en 2027. Cuánto sube la tuya, qué pasa con las mínimas, la no contributiva y el IMV, y cuándo se cobra."
 date: 2026-10-18T20:00:00+02:00
-updated: 2026-10-26T15:00:00+01:00
+updated: 2026-10-30T12:00:00+01:00
 category: pensiones
 guia: true
 pendiente: true
@@ -11,6 +11,10 @@ tags: [pensiones, revalorizacion, 2027, ipc, jubilacion]
 sources:
   - name: "BOE: Ley General de la Seguridad Social, artículo 58 (revalorización de las pensiones)"
     url: "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724#a58"
+  - name: "Hispanidad: el IPC adelantado de octubre se mantiene en el 4,9 % (30/10/2026)"
+    url: "https://www.hispanidad.com/economia/ipc-anual-adelantado-octubre-continua-en-elevadisimo-inaceptable-49_20001367_102.html"
+  - name: "65ymas: las pensiones subirán el 3,5 % en 2027, según apunta el IPC de octubre (30/10/2026)"
+    url: "https://www.65ymas.com/economia/pensiones/pensiones-subiran-3-5-en-2027-segun-apunta-ipc-octubre_87300_102.html"
   - name: "INE: IPC de septiembre de 2026, dato definitivo (14/10/2026)"
     url: "https://www.ine.es/dyngs/Prensa/IPC0926.htm"
   - name: "El Mundo: Funcas estima una subida de las pensiones del 3,6 % en 2027 (22/10/2026)"
@@ -35,9 +39,9 @@ imageCredit: "HoangDongPhoto / Pixabay"
 imageCreditUrl: "https://pixabay.com/photos/couple-love-kiss-romantic-6706278/"
 ---
 
-<!-- ACTUALIZAR: 1) finales de octubre (IPC adelantado de octubre): rehacer la media y los escenarios. 2) 27 de noviembre (IPC adelantado de noviembre): poner la subida calculada en el título, la entradilla y las tablas. 3) 15 de diciembre (IPC definitivo) y publicación en el BOE: cifra oficial, pendiente: false y cuantías de las mínimas y no contributivas. -->
+<!-- ACTUALIZAR: 1) hecho el 30/10 con el IPC adelantado de octubre (4,9 %). 2) 27 de noviembre (IPC adelantado de noviembre): poner la subida calculada en el título, la entradilla y las tablas. 3) 15 de diciembre (IPC definitivo) y publicación en el BOE: cifra oficial, pendiente: false y cuantías de las mínimas y no contributivas. -->
 
-**Las pensiones contributivas subirían entre un 3,5 % y un 3,6 % en enero de 2027.** El Instituto BBVA de Pensiones calcula un 3,5 % y [Funcas, un 3,6 %](/pensiones/pensiones-2027-funcas-subida-3-6-8400-millones/). La cifra exacta se sabrá el 27 de noviembre, cuando el INE publique el IPC adelantado de noviembre, y será oficial cuando se publique en el BOE. Esta guía se actualizará en cada paso.
+**Las pensiones contributivas subirían entre un 3,5 % y un 3,6 % en enero de 2027.** El Instituto BBVA de Pensiones calcula un 3,5 % y [Funcas, un 3,6 %](/pensiones/pensiones-2027-funcas-subida-3-6-8400-millones/). Con el IPC adelantado de octubre, publicado el 30 de octubre (4,9 %), ya solo falta un mes: la cifra exacta se sabrá el 27 de noviembre, cuando el INE publique el IPC adelantado de noviembre, y será oficial cuando se publique en el BOE. Esta guía se actualizará en cada paso.
 
 ## Lo esencial
 
@@ -66,16 +70,17 @@ Estos son los datos que ya se conocen, según el INE:
 | Julio | 3,6 % |
 | Agosto | 4,3 % |
 | Septiembre | 4,9 % |
+| Octubre (adelantado) | 4,9 % |
 
-La media de estos diez meses es del **3,33 %**. Faltan octubre y noviembre, y como la inflación de los últimos meses está por encima del 4 %, la media final subirá un poco:
+La media de estos once meses es del **3,47 %**. Solo falta noviembre, así que la horquilla ya es muy estrecha:
 
-| Si octubre y noviembre quedan en… | La subida de 2027 sería de… |
+| Si noviembre queda en… | La subida de 2027 sería de… |
 |---|---|
-| 4 % | unos 3,4 % |
-| 4,4 % | unos 3,5 % |
-| 4,9 % (en línea con Funcas) | unos 3,6 % |
+| 4 % | unos 3,52 % |
+| 4,5 % | unos 3,56 % |
+| 4,9 %, como octubre | unos 3,59 % |
 
-*Cálculos de esta web con los datos anteriores. La cifra final depende del IPC de octubre y noviembre.*
+*Cálculos de esta web con los datos anteriores. Para que la subida bajara del 3,5 %, la inflación de noviembre tendría que caer por debajo del 3,8 %, más de un punto por debajo del dato de octubre.*
 
 ## Cuánto subiría tu pensión
 
