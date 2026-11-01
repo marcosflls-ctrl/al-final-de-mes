@@ -2,6 +2,7 @@
 title: "Huelga de Renfe el 29 de octubre: hasta el 100% del billete"
 description: "Los maquinistas paran 24 horas el jueves 29 de octubre. Si tu tren se cancela o llega tarde, tienes derecho a reembolso o a una indemnización de hasta el 100%."
 date: 2026-10-27T16:54:19+00:00
+noindex: true
 category: paro
 tags: ["huelga", "renfe", "trenes", "derechos-del-viajero", "indemnizacion"]
 pendiente: false

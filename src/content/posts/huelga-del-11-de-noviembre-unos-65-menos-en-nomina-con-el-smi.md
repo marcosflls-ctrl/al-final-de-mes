@@ -2,6 +2,7 @@
 title: "Huelga del 11 de noviembre: unos 65 € menos en nómina con el SMI"
 description: "Quien secunde la huelga del 11 de noviembre pierde el salario de ese día: unos 65 € brutos con el SMI y 113 € brutos con el salario medio."
 date: 2026-10-14T20:46:13+00:00
+noindex: true
 category: paro
 tags: [huelga-general, nomina, salario, smi, estatuto-de-los-trabajadores]
 pendiente: false

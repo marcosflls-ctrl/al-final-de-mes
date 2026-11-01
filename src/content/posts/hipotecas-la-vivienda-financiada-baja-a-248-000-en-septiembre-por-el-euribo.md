@@ -2,6 +2,7 @@
 title: "Hipotecas: la vivienda financiada baja a 248.000 € en septiembre"
 description: "El euríbor cerró septiembre en el 3,24% y las familias piden hipoteca para casas más baratas: 248.000 € de media, frente a 300.000 € en julio."
 date: 2026-10-16T09:55:13+00:00
+noindex: true
 category: vivienda
 tags: [hipotecas, euribor, hipoteca-fija, vivienda, ocu]
 pendiente: false

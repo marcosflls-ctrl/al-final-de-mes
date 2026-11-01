@@ -2,6 +2,7 @@
 title: "Casi 5 millones de asalariados quedarían cerca del SMI si sube un 7%"
 description: "Con un SMI de 18.290,58 € brutos al año, unos 4,8 millones de asalariados estarían entre 1 y 1,5 veces el mínimo, según la Agencia Tributaria."
 date: 2026-10-16T23:41:02+00:00
+noindex: true
 category: paro
 tags: ["smi", "salario-minimo", "convenios", "sindicatos", "nominas"]
 pendiente: true

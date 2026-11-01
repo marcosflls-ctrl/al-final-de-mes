@@ -2,6 +2,7 @@
 title: "Prórroga del alquiler de dos años: no es automática y hay que pedirla"
 description: "La prórroga de hasta dos años del alquiler no es automática: hay que pedirla antes del vencimiento. La renta se mantiene y, si se actualiza, es con el IRAV."
 date: 2026-10-14T10:19:31+00:00
+noindex: true
 category: vivienda
 tags: [alquiler, prorroga, vivienda, inquilinos, irav]
 pendiente: false

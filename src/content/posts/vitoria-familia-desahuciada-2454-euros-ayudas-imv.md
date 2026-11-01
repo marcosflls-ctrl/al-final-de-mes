@@ -2,6 +2,7 @@
 title: "Vitoria: qué se sabe de los 2.454 € de ayudas a la familia"
 description: "Circula que una familia desahuciada en Vitoria cobra 2.454 € al mes. El IMV llega a 1.613,92 €, pero esa cifra concreta no está confirmada."
 date: 2026-10-27T21:23:25+00:00
+noindex: true
 category: paro
 tags: ["ingreso-minimo-vital", "ayudas", "desahucio", "verificacion", "familias"]
 pendiente: false

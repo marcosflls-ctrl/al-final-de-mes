@@ -2,6 +2,7 @@
 title: "Luz en PVPC: el recibo sube un 36% desde febrero, no 8,7 veces"
 description: "El precio mayorista de la luz pasó de 16,41 a 143,25 €/MWh entre febrero y septiembre, pero el recibo regulado (PVPC) subió un 36,4%, según la OCU."
 date: 2026-10-20T19:28:50+00:00
+noindex: true
 category: luz
 tags: ["precio-de-la-luz", "pvpc", "mercado-electrico", "factura-de-la-luz", "omie"]
 pendiente: false

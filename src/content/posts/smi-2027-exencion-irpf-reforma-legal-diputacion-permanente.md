@@ -2,6 +2,7 @@
 title: "SMI 2027: su exención en el IRPF depende de una nueva ley"
 description: "El Gobierno subirá el SMI antes del 29N, pero librarlo de IRPF exige una ley sin fecha: la votaría la Diputación Permanente o el nuevo Congreso."
 date: 2026-10-25T09:52:14+00:00
+noindex: true
 category: paro
 tags: ["smi", "irpf", "salario-minimo", "retenciones", "2027"]
 pendiente: true

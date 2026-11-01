@@ -2,6 +2,7 @@
 title: "Autónomos en módulos: Hacienda mantiene en 2027 la rebaja del 5%"
 description: "Hacienda propone mantener en 2027 los módulos del IRPF y la reducción del 5%, y dar al campo rebajas extra por el gasóleo y los fertilizantes en 2026."
 date: 2026-10-22T15:41:35+00:00
+noindex: true
 category: hacienda
 tags: ["modulos", "irpf", "autonomos", "agricultores", "hacienda"]
 pendiente: true

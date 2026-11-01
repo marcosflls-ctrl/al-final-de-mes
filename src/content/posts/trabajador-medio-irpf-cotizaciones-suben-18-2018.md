@@ -2,6 +2,7 @@
 title: "Trabajador medio: IRPF y cotizaciones suben un 18% real desde 2018"
 description: "Un informe del Instituto Juan de Mariana calcula que el trabajador medio paga un 17,6% más en IRPF y cotizaciones que en 2018 y su neto compra un 3,8% menos."
 date: 2026-10-21T23:25:50+00:00
+noindex: true
 category: hacienda
 tags: ["irpf", "cotizaciones", "nomina", "poder-adquisitivo", "inflacion"]
 pendiente: false

@@ -2,6 +2,7 @@
 title: "Decretos de alquiler: Fedea ve rentas más altas y menos pisos"
 description: "Fedea advierte de que los decretos de vivienda limitan las subidas al 2% o 0%, pero pueden encarecer los alquileres nuevos y reducir la oferta."
 date: 2026-10-21T22:47:56+00:00
+noindex: true
 category: vivienda
 tags: ["alquiler", "decretos-de-vivienda", "fedea", "inquilinos", "propietarios"]
 pendiente: true

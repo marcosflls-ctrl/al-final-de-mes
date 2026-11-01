@@ -2,6 +2,7 @@
 title: "Consumo exige retirar 8.318 anuncios turísticos, 6.772 en Madrid"
 description: "Consumo ha pedido a dos plataformas quitar 8.318 anuncios que ofrecen pisos turísticos como alquiler de temporada por menos de 31 días."
 date: 2026-10-23T10:33:21+00:00
+noindex: true
 category: vivienda
 tags: ["alquiler", "alquiler-de-temporada", "consumo", "pisos-turisticos", "madrid"]
 pendiente: false

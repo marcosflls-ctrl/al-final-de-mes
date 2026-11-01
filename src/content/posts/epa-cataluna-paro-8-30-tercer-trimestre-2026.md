@@ -2,6 +2,7 @@
 title: "EPA Cataluña: el paro sube al 8,30% y suma 18.900 parados"
 description: "El paro en Cataluña sube en 18.900 personas en el tercer trimestre y la tasa llega al 8,30%. Hay 361.800 parados, según la EPA del INE."
 date: 2026-10-27T11:02:03+00:00
+noindex: true
 category: paro
 tags: ["epa", "paro", "cataluna", "ine", "empleo"]
 pendiente: false

@@ -2,6 +2,7 @@
 title: "Cambio de hora del 25 de octubre: cómo afecta a tu factura de la luz"
 description: "La madrugada del domingo 25, a las 3:00 serán las 2:00. Qué pasa con las horas baratas y caras de la tarifa, con el día de 25 horas y con el consumo en invierno."
 date: 2026-10-17T10:54:00+00:00
+noindex: true
 category: luz
 tags: [cambio-de-hora, horario-de-invierno, luz, pvpc, factura]
 sources:

@@ -2,6 +2,7 @@
 title: "Fedea: los créditos al 0% para la entrada pueden subir precios"
 description: "Fedea avisa de que los créditos públicos al 0% para cubrir hasta el 20% de la entrada podrían trasladarse a precios. Los decretos se votan en noviembre."
 date: 2026-10-21T15:40:19+00:00
+noindex: true
 category: vivienda
 tags: ["vivienda", "fedea", "alquiler", "primera-vivienda", "decreto-vivienda"]
 pendiente: true

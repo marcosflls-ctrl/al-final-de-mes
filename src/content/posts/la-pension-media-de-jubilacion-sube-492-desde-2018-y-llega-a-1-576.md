@@ -2,6 +2,7 @@
 title: "La pensión media de jubilación sube 492 € desde 2018 y llega a 1.576 €"
 description: "La pensión media de jubilación es de 1.576,10 euros en septiembre de 2026, 492,4 más que en junio de 2018. Estas son las causas de la subida."
 date: 2026-10-17T17:17:34+00:00
+noindex: true
 category: pensiones
 tags: ["pension-media", "jubilacion", "revalorizacion", "ipc", "seguridad-social"]
 pendiente: false

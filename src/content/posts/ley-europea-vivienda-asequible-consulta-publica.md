@@ -2,6 +2,7 @@
 title: "Ley europea de vivienda: opina hasta el 4 de noviembre"
 description: "Vivienda abre una consulta sobre la ley europea de vivienda asequible. Puedes enviar tus aportaciones hasta el 4 de noviembre de 2026 en su formulario."
 date: 2026-10-23T19:19:07+00:00
+noindex: true
 category: vivienda
 tags: ["vivienda", "alquiler", "union-europea", "consulta-publica", "pisos-turisticos"]
 pendiente: true

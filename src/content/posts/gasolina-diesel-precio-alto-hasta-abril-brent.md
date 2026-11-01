@@ -2,6 +2,7 @@
 title: "Gasolina a 1,75 € y diésel casi a 2 €: caros hasta abril"
 description: "La gasolina 95 supera 1,75 € el litro y el diésel roza los 2 €. El petróleo apunta a precios altos hasta abril, y la rebaja fiscal baja cada mes hasta diciembre."
 date: 2026-10-24T09:50:02+00:00
+noindex: true
 category: luz
 tags: ["gasolina", "diesel", "petroleo", "impuesto-hidrocarburos", "carburantes"]
 pendiente: false

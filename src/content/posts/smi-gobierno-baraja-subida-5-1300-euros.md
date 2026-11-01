@@ -2,6 +2,7 @@
 title: "SMI: el Gobierno baraja una subida del 5%, cerca de 1.300 €"
 description: "El Gobierno baraja subir el salario mínimo en torno al 5% antes del 29N, según ABC. Los sindicatos piden al menos un 7%. Aún no está aprobado."
 date: 2026-10-22T23:27:27+00:00
+noindex: true
 category: paro
 tags: ["salario-minimo", "smi", "consejo-de-ministros", "sindicatos", "nomina"]
 pendiente: true

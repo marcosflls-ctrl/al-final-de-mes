@@ -2,6 +2,7 @@
 title: "Tasa de basuras: 116 € de media en 2025, un 16% más"
 description: "El hogar medio pagó 116,32 € de tasa de basuras en 2025, un 16,2% más que en 2024. En Gerona son 238 €. Mira cómo se calcula y qué bonificaciones hay."
 date: 2026-10-26T11:12:29+00:00
+noindex: true
 category: hacienda
 tags: ["tasa-de-basuras", "ayuntamientos", "impuestos-locales", "alquiler", "residuos"]
 pendiente: false
