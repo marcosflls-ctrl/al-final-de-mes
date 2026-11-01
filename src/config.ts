@@ -7,10 +7,12 @@ export const SITE = {
   locale: 'es_ES',
   email: 'contacto@alfinaldemes.com',
   // Autor que firma los artículos (página /autor/)
+  // Firma de los artículos. «Marcos León» es el nombre de firma del editor (el titular legal está en el aviso legal).
   author: {
-    name: 'Redacción Al Final de Mes',
-    slug: 'redaccion',
-    bio: 'El equipo de Al Final de Mes explica los cambios en pensiones, prestaciones, impuestos y facturas que afectan a la economía de casa, siempre con el dato y la fuente oficial.',
+    name: 'Marcos León',
+    slug: 'marcos-leon',
+    bio: 'Marcos León escribe y revisa Al Final de Mes. Explica pensiones, paro, impuestos, vivienda y facturas con el dato oficial delante: cada artículo enlaza al BOE, la Seguridad Social, el SEPE, la Agencia Tributaria o el INE, y las calculadoras usan los parámetros de 2026.',
+    temas: 'Pensiones, paro, Hacienda, vivienda y luz',
   },
   // Datos legales del titular (aviso legal y privacidad)
   ownerName: 'Marcos Fernández León',
