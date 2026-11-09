@@ -2,7 +2,7 @@
 title: "Trabajo el 29N: cuántas horas me dan para votar y si me las pagan"
 description: "Si trabajas el domingo 29 de noviembre tienes hasta cuatro horas pagadas para votar, según cuánto coincida tu turno con el horario de los colegios."
 date: 2026-10-20T23:00:00+02:00
-updated: 2026-11-04T09:30:00+01:00
+updated: 2026-11-09T09:30:00+01:00
 category: paro
 guia: true
 orden: 7
@@ -24,6 +24,8 @@ sources:
     url: "https://www.legalitas.com/actualidad/elecciones-2026"
   - name: "Valencia Plaza: la Generalitat publica en el DOGV el permiso retribuido para votar el 29N (3/11/2026)"
     url: "https://valenciaplaza.com/valenciaplaza/nacional/la-personas-que-trabajen-el-29-n-tendran-un-permiso-retribuido-para-poder-ir-a-votar"
+  - name: "SGTEX: Resolución de 28 de octubre de 2026 de la Dirección General de Trabajo de Extremadura (DOE n.º 214, 6/11/2026)"
+    url: "https://www.sgtex.es/archives/2026/11/06/elecciones-del-29-de-noviembre-permisos-retribuidos-para-facilitar-el-derecho-al-voto/"
 ---
 
 El **domingo 29 de noviembre** muchas personas trabajan: comercio, hostelería, hospitales, transporte, seguridad. Si es tu caso, la ley te da **hasta cuatro horas pagadas** para ir a votar. Cuántas exactamente depende de cuánto coincida tu horario con el de los colegios electorales, **de 9:00 a 20:00**.
@@ -55,7 +57,7 @@ La regla general es que tengas hasta cuatro horas. Las resoluciones oficiales qu
 
 **Si trabajas a tiempo parcial**, el permiso se reduce en proporción a tu jornada.
 
-**Ya hay escala oficial para el 29N en la Comunidad Valenciana.** La Dirección General de Trabajo de la Generalitat la publicó en el Diari Oficial (DOGV) el 3 de noviembre, y es la misma de la tabla: 2 horas si coinciden entre 2 y 4, 3 horas si coinciden entre 4 y 6, y 4 horas si coinciden 6 o más. El Gobierno Vasco también ha publicado ya sus normas. El resto de comunidades y delegaciones del Gobierno las irán publicando en sus boletines estos días; si en la tuya sale una escala distinta, manda la oficial.
+**Ya hay escala oficial para el 29N en varias comunidades, y es la misma de la tabla.** La Comunidad Valenciana la publicó en el Diari Oficial (DOGV) el 3 de noviembre y Extremadura en el Diario Oficial (DOE) el 6 de noviembre, con una resolución de su Dirección General de Trabajo del 28 de octubre. En las dos: 2 horas si coinciden entre 2 y 4, 3 horas si coinciden entre 4 y 6, y 4 horas si coinciden 6 o más. El Gobierno Vasco también ha publicado ya sus normas. El resto de comunidades y delegaciones del Gobierno las irán publicando en sus boletines estos días; si en la tuya sale una escala distinta, manda la oficial.
 
 ## Si trabajas lejos de casa
 
