@@ -2,6 +2,7 @@
 title: "Pensiones y elecciones del 29N: balance y propuestas de los partidos"
 description: "Las subidas de la legislatura, los decretos que cayeron en el Congreso y lo que dicen PSOE, PP, Vox y Sumar sobre las pensiones antes del 29 de noviembre."
 date: 2026-10-16T17:45:00+00:00
+updated: 2026-11-10T16:00:00+01:00
 category: pensiones
 guia: true
 orden: 1
@@ -89,13 +90,15 @@ Con la subida de 2026, la pensión mínima de jubilación para mayores de 65 añ
 
 ## Parte 2. Qué proponen los partidos
 
-**Aviso:** todavía no hay programas electorales publicados. Lo que sigue son declaraciones públicas de dirigentes de cada partido, con su fecha. Cuando salgan los programas, añadiremos sus propuestas concretas e indicaremos cualquier diferencia con lo dicho en precampaña.
+**Actualizado el 10 de noviembre:** el **PP** publicó ese día su programa, «La Reconstrucción Nacional», y abajo recogemos lo que dice. Vox, PSOE, Sumar (Frente Amplio) y Podemos todavía no han publicado el suyo: de ellos recogemos declaraciones y documentos con su fecha, y los actualizaremos cuando salgan.
 
 ### PSOE
 
 Pedro Sánchez dijo el 15 de octubre de 2026, en Bruselas, que su intención es que la revalorización de 2027 **se apruebe antes de que termine el año**, aunque sea con el Gobierno en funciones. Se haría por real decreto-ley, cuando se conozca el IPC de noviembre. Sánchez acusó al PP y a Vox de querer recortar las pensiones si gobiernan.
 
 ### PP
+
+**Programa del 10 de noviembre:** mantiene la **subida de las pensiones con el IPC** y propone un **pacto de Estado por la dependencia**, con un 50 % de financiación del Estado y una deducción del 40 % en el IRPF por los gastos de cuidados profesionales de mayores dependientes. Lo que sigue son declaraciones anteriores.
 
 Alberto Núñez Feijóo dijo el 13 de octubre de 2026, en una entrevista en esRadio y en un acto en Huesca, que **subirá las pensiones con el IPC** y que no cuestionará «en ningún caso» el sistema público. También dijo que quiere garantizar que el sistema siga siendo viable para quienes aún no cobran pensión, sin concretar medidas. Para eso propone que la economía crezca sin subir el gasto público ni los impuestos.
 

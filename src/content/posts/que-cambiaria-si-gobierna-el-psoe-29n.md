@@ -2,6 +2,7 @@
 title: "Qué cambiaría en tu bolsillo si gobierna el PSOE tras el 29N"
 description: "Alquiler, pensiones, salario mínimo, jornada e impuestos: lo que ha propuesto el PSOE antes de las elecciones del 29 de noviembre y qué apoyos necesitaría."
 date: 2026-10-20T17:00:00+02:00
+updated: 2026-11-10T16:00:00+01:00
 category: hacienda
 guia: true
 orden: 4
@@ -33,7 +34,7 @@ sources:
 
 Esta guía reúne lo que el **PSOE** ha propuesto sobre los temas que más notan los hogares —vivienda, pensiones, trabajo, impuestos y energía— de cara a las elecciones generales del **29 de noviembre de 2026**. No es una predicción ni una recomendación de voto: recoge lo que el partido ha dicho y lo que ha hecho en el Gobierno, con su fecha. Hay una guía igual para cada escenario y una [comparativa de todos](/hacienda/que-cambia-en-tu-bolsillo-segun-quien-gobierne-29n/).
 
-**Aviso:** los partidos todavía no han publicado sus programas electorales. Lo que sigue son las resoluciones de su último congreso federal, decretos del Gobierno y declaraciones públicas. Actualizaremos esta guía cuando salga el programa del PSOE.
+**Aviso:** el PSOE todavía no ha publicado su programa electoral (el PP publicó el suyo el 10 de noviembre). Lo que sigue son las resoluciones de su último congreso federal, decretos del Gobierno y declaraciones públicas. Actualizaremos esta guía cuando salga el programa del PSOE.
 
 ## Lo esencial
 
