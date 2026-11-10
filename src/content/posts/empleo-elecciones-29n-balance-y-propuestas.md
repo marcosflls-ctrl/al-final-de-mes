@@ -2,11 +2,14 @@
 title: "Empleo y salario mínimo en el 29N: balance y propuestas"
 description: "El salario mínimo, la reforma del paro, la jornada de 37,5 horas que tumbó el Congreso y lo que plantean PSOE, PP, Vox, Sumar y Podemos sobre trabajo."
 date: 2026-10-16T21:44:00+00:00
+updated: 2026-11-10T16:00:00+01:00
 category: paro
 guia: true
 orden: 1
 tags: [empleo, smi, salario-minimo, jornada-laboral, subsidio, elecciones-29n, partidos]
 sources:
+  - name: "Demócrata: el programa del PP para el 29N, «La Reconstrucción Nacional» (10/11/2026)"
+    url: "https://www.democrata.es/elecciones-generales-espana/programa-electoral-pp-29n-propuestas/"
   - name: "elDiario.es: el Congreso aprueba la reforma del subsidio por desempleo en la segunda votación"
     url: "https://www.eldiario.es/economia/congreso-aprueba-reforma-subsidio-desempleo-segunda-voto_1_11463123.html"
   - name: "La Moncloa: el Congreso convalida la reforma del nivel asistencial del desempleo (Real Decreto-ley 2/2024)"
@@ -74,13 +77,15 @@ El registro horario digital iba inicialmente en esa ley. Después el Gobierno lo
 
 ## Parte 2. Qué proponen los partidos
 
-**Aviso:** sin programas publicados, recogemos documentos y declaraciones con su fecha. Los actualizaremos cuando salgan los programas.
+**Actualizado el 10 de noviembre:** el **PP** publicó ese día su programa, «La Reconstrucción Nacional», y abajo recogemos lo que dice. Vox, PSOE, Sumar (Frente Amplio) y Podemos todavía no han publicado el suyo: de ellos recogemos documentos y declaraciones con su fecha, y los actualizaremos cuando salgan.
 
 ### PSOE
 
 Las resoluciones de su último congreso federal piden que el salario mínimo equivalga al **60 % del salario medio** y reducir de forma progresiva la jornada hasta las **36 horas semanales antes de 2030**.
 
 ### PP
+
+**Programa del 10 de noviembre:** para los **autónomos**, cuota cero el primer año, declaraciones de impuestos semestrales, no declarar IVA por debajo de 85.000 € de facturación y una bonificación del 100 % de la cuota por el primer trabajador que contraten. Propone además que quien cobre el **salario mínimo no pague IRPF**, sin dar una cifra de subida. Los resúmenes del programa no recogen las medidas sobre bajas laborales y horas extra que siguen, que son declaraciones anteriores.
 
 - **Bajas laborales:** Alberto Núñez Feijóo propuso el 8 de julio de 2026, ante el Círculo de Empresarios Vascos, rebajar lo que se cobra durante una baja médica. Lo plantea como una medida contra el absentismo y dijo que la aplicaría «con o sin acuerdo» con sindicatos y patronal. El Gobierno y los sindicatos la rechazaron.
 - **Mutuas:** Feijóo ha planteado en varias ocasiones que las mutuas puedan dar el alta médica.

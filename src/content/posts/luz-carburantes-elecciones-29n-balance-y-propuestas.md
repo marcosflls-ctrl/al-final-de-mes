@@ -2,11 +2,14 @@
 title: "Luz, gasolina y elecciones del 29N: balance y propuestas"
 description: "Las rebajas de impuestos por la guerra de Irán, el descuento de 20 céntimos, el butano, las nucleares y lo que plantean PSOE, PP, Vox, Sumar y Podemos."
 date: 2026-10-16T21:35:00+00:00
+updated: 2026-11-10T16:00:00+01:00
 category: luz
 guia: true
 orden: 1
 tags: [luz, carburantes, gasolina, elecciones-29n, partidos, legislatura, nucleares]
 sources:
+  - name: "Demócrata: el programa del PP para el 29N, «La Reconstrucción Nacional» (10/11/2026)"
+    url: "https://www.democrata.es/elecciones-generales-espana/programa-electoral-pp-29n-propuestas/"
   - name: "La Moncloa: medidas urgentes ante la guerra en Oriente Próximo (20/03/2026)"
     url: "https://www.lamoncloa.gob.es/presidente/actividades/paginas/2026/200326-sanchez-medidas-guerra-iran.aspx"
   - name: "Idealista: el Congreso convalida el Real Decreto-ley 7/2026 (26/03/2026)"
@@ -40,7 +43,7 @@ Desde marzo de 2026, la guerra de Irán ha disparado el precio de la energía en
 - **En noviembre sigue la rebaja de 20 céntimos por litro** en gasolina y diésel. Se mantiene porque el precio de los carburantes ha subido más de un 15 % en un año. El decreto que la recoge, el tercero de la crisis, se convalidó el 16 de octubre y está vigente hasta el 31 de diciembre.
 - **La luz y el gas no tienen hoy rebaja de impuestos.** El IVA de la luz es del 21 %. Solo bajaría al 10 % si su precio sube más de un 15 % en un año.
 - **La bombona de butano** no podrá pasar de 19,55 € hasta el 30 de junio de 2027.
-- **Qué se hace en 2027 lo decidirá el próximo Gobierno.** El PP propone dejar el IVA de la energía en el 10 % de forma permanente y alargar la vida de las nucleares.
+- **Qué se hace en 2027 lo decidirá el próximo Gobierno.** El PP, en su programa, propone quitar el impuesto del 7 % a la producción eléctrica y el calendario de cierre de las nucleares; antes había planteado también dejar el IVA de la energía en el 10 %.
 
 ## Parte 1. Qué se hizo en la legislatura (2023-2026)
 
@@ -68,13 +71,15 @@ La bombona de butano tiene hoy un precio máximo de 18,84 €. Con el tercer dec
 
 ## Parte 2. Qué proponen los partidos
 
-**Aviso:** sin programas publicados, recogemos documentos y declaraciones con su fecha. Los actualizaremos cuando salgan los programas.
+**Actualizado el 10 de noviembre:** el **PP** publicó ese día su programa, «La Reconstrucción Nacional», y abajo recogemos lo que dice. Vox, PSOE, Sumar (Frente Amplio) y Podemos todavía no han publicado el suyo: de ellos recogemos documentos y declaraciones con su fecha, y los actualizaremos cuando salgan.
 
 ### PSOE
 
 El Gobierno aprobó los tres paquetes y diseñó las últimas rebajas para que se activen solo cuando los precios se disparan. Las resoluciones de su último congreso federal priorizan la transición energética y las renovables. No incluyen rebajas fiscales permanentes de la energía. Amplió la vida de Almaraz hasta 2030 en agosto.
 
 ### PP
+
+**Programa del 10 de noviembre:** eliminar en los primeros 100 días el **calendario de cierre de las nucleares** (Almaraz, Ascó, Vandellós, Cofrentes y Trillo), suprimir el **impuesto del 7 %** a la producción de electricidad y aprobar un **plan contra los apagones**. Los resúmenes del programa no recogen medidas sobre el precio de los carburantes ni el IVA de la energía, que sí había propuesto antes:
 
 Lo que ha planteado en su decálogo económico de septiembre y en su «plan de choque» del 14 de octubre:
 

@@ -2,11 +2,14 @@
 title: "Vivienda y elecciones del 29N: balance y propuestas de los partidos"
 description: "Los decretos de alquiler que cayeron, los que siguen en vigor y lo que plantean PSOE, PP, Vox y Sumar sobre vivienda antes del 29 de noviembre."
 date: 2026-10-16T17:55:00+00:00
+updated: 2026-11-10T16:00:00+01:00
 category: vivienda
 guia: true
 orden: 1
 tags: [vivienda, alquiler, elecciones-29n, partidos, legislatura, decreto-vivienda]
 sources:
+  - name: "Demócrata: el programa del PP para el 29N, «La Reconstrucción Nacional» (10/11/2026)"
+    url: "https://www.democrata.es/elecciones-generales-espana/programa-electoral-pp-29n-propuestas/"
   - name: "Iberley: el Congreso rechaza el Real Decreto-ley 8/2026 de prórrogas del alquiler"
     url: "https://www.iberley.es/noticias/el-congreso-rechaza-rd-ley-8-2026-20-marzo-alquiler-prorrogas-36398"
   - name: "Civio: todas las medidas del decreto ley de vivienda de septiembre de 2026"
@@ -88,13 +91,15 @@ Antes, en abril de 2026, ya había caído el Real Decreto-ley 8/2026, que permit
 
 ## Parte 2. Qué proponen los partidos
 
-**Aviso:** todavía no hay programas electorales publicados. Lo que sigue son propuestas y declaraciones públicas de cada partido, con su fecha. Las actualizaremos cuando salgan los programas.
+**Actualizado el 10 de noviembre:** el **PP** publicó ese día su programa, «La Reconstrucción Nacional», y abajo recogemos lo que dice. Vox, PSOE, Sumar (Frente Amplio) y Podemos todavía no han publicado el suyo: de ellos recogemos declaraciones y documentos con su fecha, y los actualizaremos cuando salgan.
 
 ### PSOE
 
 Pedro Sánchez abrió la precampaña el 10 de octubre en Dos Hermanas (Sevilla) presentando la vivienda como su gran prioridad. Dijo que «la política de vivienda no tiene fecha de caducidad». Prometió que un Gobierno progresista **«reforzará y mantendrá»** el decreto de vivienda y confió en que la Diputación Permanente lo convalide.
 
 ### PP
+
+**Programa del 10 de noviembre:** **derogar la Ley de Vivienda** (incluidas las zonas tensionadas y el índice de precios del alquiler), un millón de hogares en la legislatura, licencias por silencio positivo en tres meses, **IVA del 4 %** en la primera vivienda para menores de 40, **avales públicos de hasta el 20 %** del valor para la entrada, la **«Hucha Hogar Joven»** (ahorrar hasta 2.000 € al año con una deducción del 20 %), ventajas fiscales para los caseros que renueven por debajo del IPC («Tres años+») y desalojar a los okupas en 48 horas. Antes del programa, Feijóo había presentado esto:
 
 Alberto Núñez Feijóo presentó sus propuestas el 5 de octubre en el Congreso Nacional de la Empresa Familiar, en Madrid:
 
@@ -136,7 +141,7 @@ Junts votó en contra de los decretos y pide un texto nuevo negociado. El PNV ap
 | Partido | Decretos de alquiler | Qué plantea |
 |---|---|---|
 | PSOE | Mantenerlos y reforzarlos | Proteger a los inquilinos y frenar los desahucios |
-| PP | En contra | 250.000 viviendas al año, suelo, IVA al 4 % y avales del 100 % para jóvenes |
+| PP | En contra | Derogar la Ley de Vivienda, un millón de hogares en la legislatura, IVA al 4 % para menores de 40 y avales para la entrada |
 | Vox | En contra | Vivienda social con «prioridad nacional», liberalizar suelo y bajar impuestos |
 | Sumar | Sus impulsores | Contratos indefinidos y congelación de rentas |
 

@@ -2,6 +2,7 @@
 title: "Qué cambiaría en tu bolsillo con el PSOE y sus socios tras el 29N"
 description: "Lo que añaden Frente Amplio, Podemos y otros posibles socios del PSOE sobre alquiler, salario mínimo, jornada, impuestos y energía, y en qué no coinciden."
 date: 2026-10-20T17:00:00+02:00
+updated: 2026-11-10T16:00:00+01:00
 category: hacienda
 guia: true
 orden: 6
@@ -33,7 +34,7 @@ sources:
 
 Con las encuestas de octubre, el PSOE no podría gobernar solo: necesitaría al **Frente Amplio**, a **Podemos** y a otros partidos, como ERC, Junts, PNV o EH Bildu. Esta guía explica qué añaden esos posibles socios a lo que propone el PSOE, y en qué no coinciden, sobre los temas que más notan los hogares. No es una predicción ni una recomendación de voto. Lo que propone el PSOE por sí solo está en [qué cambiaría si gobierna el PSOE](/hacienda/que-cambiaria-si-gobierna-el-psoe-29n/), y todo junto, en la [comparativa](/hacienda/que-cambia-en-tu-bolsillo-segun-quien-gobierne-29n/).
 
-**Aviso:** los partidos todavía no han publicado sus programas. Recogemos propuestas y declaraciones con su fecha, y la actualizaremos cuando salgan los programas.
+**Aviso:** PSOE, Sumar (Frente Amplio) y Podemos todavía no han publicado sus programas (el PP publicó el suyo el 10 de noviembre). Recogemos propuestas y declaraciones con su fecha, y la actualizaremos cuando salgan.
 
 ## Lo esencial
 

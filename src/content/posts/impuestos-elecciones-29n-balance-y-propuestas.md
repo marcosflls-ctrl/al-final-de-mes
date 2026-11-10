@@ -2,11 +2,14 @@
 title: "Impuestos y elecciones del 29N: balance y propuestas de los partidos"
 description: "El IVA de los alimentos, el IRPF del ahorro, el impuesto a la banca y lo que plantean PSOE, PP, Vox, Sumar y Podemos sobre IRPF e IVA antes del 29 de noviembre."
 date: 2026-10-16T21:46:00+00:00
+updated: 2026-11-10T16:00:00+01:00
 category: hacienda
 guia: true
 orden: 1
 tags: [impuestos, irpf, iva, elecciones-29n, partidos, legislatura]
 sources:
+  - name: "Demócrata: el programa del PP para el 29N, «La Reconstrucción Nacional» (10/11/2026)"
+    url: "https://www.democrata.es/elecciones-generales-espana/programa-electoral-pp-29n-propuestas/"
   - name: "El Español: fin de la rebaja extraordinaria del IVA de los alimentos (24/12/2024)"
     url: "https://elespanol.com/invertia/economia/20241224/fin-rebaja-extraordinaria-iva-alimentos-basicos-aceite-huevos-frutas-pan-suben-precio/910909274_0.html"
   - name: "Cuatrecasas: incremento del tipo del ahorro en el IRPF desde 2025 (Ley 7/2024)"
@@ -36,7 +39,7 @@ Los impuestos son una de las grandes diferencias entre los partidos de cara a la
 - **La rebaja del IVA de los alimentos terminó** el 1 de enero de 2025. Los alimentos básicos volvieron al 4 %, y el aceite de oliva pasó a considerarse básico.
 - **El IRPF del ahorro sube** desde 2025 para quien gana más de 300.000 € al año con intereses, dividendos o ventas: el último tramo pasa del 28 % al 30 %.
 - **La tarifa general del IRPF estatal no se ha actualizado con la inflación.** Es una de las grandes reclamaciones del PP.
-- **Qué proponen:** el PP plantea IVA 0 % para los alimentos básicos, actualizar el IRPF con la inflación y duplicar el mínimo por hijos. Vox habla de un IRPF con solo dos tipos, del 15 % y el 25 %. Sumar y Podemos piden más impuestos a las rentas y patrimonios altos.
+- **Qué proponen:** el PP, en su programa del 10 de noviembre, plantea IVA 0 % para los alimentos básicos, actualizar el IRPF con la inflación, que el salario mínimo no pague IRPF y una rebaja para los menores de 35. Vox habla de un IRPF con solo dos tipos, del 15 % y el 25 %. Sumar y Podemos piden más impuestos a las rentas y patrimonios altos.
 
 ## Parte 1. Qué se hizo en la legislatura (2023-2026)
 
@@ -57,13 +60,25 @@ Si quieres saber cuánto te retienen en la nómina, usa la [calculadora de sueld
 
 ## Parte 2. Qué proponen los partidos
 
-**Aviso:** sin programas publicados, recogemos documentos y declaraciones con su fecha. Los actualizaremos cuando salgan los programas.
+**Actualizado el 10 de noviembre:** el **PP** publicó ese día su programa, «La Reconstrucción Nacional», y abajo recogemos lo que dice. Vox, PSOE, Sumar (Frente Amplio) y Podemos todavía no han publicado el suyo: de ellos recogemos documentos y declaraciones con su fecha, y los actualizaremos cuando salgan.
 
 ### PSOE
 
 Las resoluciones de su último congreso federal defienden la progresividad fiscal: que pague proporcionalmente más quien más tiene. No incluyen cifras concretas de IRPF o IVA.
 
 ### PP
+
+**Programa del 10 de noviembre:**
+
+- **IVA del 0 %** para los alimentos básicos, incluidos la carne, el pescado y las conservas, «mientras persista la crisis inflacionaria».
+- **Actualizar la tarifa del IRPF** con la inflación.
+- **El salario mínimo, exento de IRPF** por ley.
+- **Menores de 35:** reducción del 100 % en su primera declaración del IRPF, del 75 % en la segunda, del 50 % en la tercera y del 25 % en la cuarta.
+- **IVA del 4 %** (en lugar del 10 %) en la primera vivienda para los menores de 40.
+- **Autónomos** que facturen menos de 85.000 € al año: no tendrían que declarar IVA.
+- Suprimir el **impuesto del 7 %** a la producción de electricidad.
+
+No incluye una memoria con lo que costarían las rebajas. Antes, en su «plan de choque» del 14 de octubre, había propuesto además lo que sigue; las fuentes que resumen el programa no recogen el IVA del 10 % en la energía ni la duplicación del mínimo por hijos, así que no podemos confirmar si siguen en él.
 
 Su decálogo económico de septiembre y el «plan de choque» que presentó el 14 de octubre incluyen:
 
@@ -92,7 +107,7 @@ Irene Montero pide que las grandes empresas y los grandes patrimonios aporten m�
 | Partido | IRPF | IVA |
 |---|---|---|
 | PSOE | Progresividad, sin cifras | Sin propuesta concreta |
-| PP | Actualizar con la inflación y duplicar el mínimo por hijos | 0 % en alimentos básicos, 10 % en energía y exención para autónomos de menos de 85.000 € |
+| PP | Actualizar con la inflación, SMI exento y rebaja para menores de 35 | 0 % en alimentos básicos, 4 % en la primera vivienda para menores de 40 y exención para autónomos de menos de 85.000 € |
 | Vox | Mínimo exento de 22.000 € y tipos del 15 % y 25 % | Rebajarlo, sin cifras |
 | Sumar | Más progresivo; más impuesto a rentas, patrimonios y herencias altas | Sin propuesta concreta |
 | Podemos | Más aportación de grandes empresas y patrimonios | Sin propuesta concreta |

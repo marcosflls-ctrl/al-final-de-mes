@@ -2,6 +2,7 @@
 title: "Qué cambiaría en tu bolsillo con un Gobierno de PP y Vox tras el 29N"
 description: "En qué coinciden y en qué chocan PP y Vox sobre IRPF, IVA, pensiones, vivienda, energía y trabajo, y qué dicen las encuestas sobre esta mayoría."
 date: 2026-10-20T17:00:00+02:00
+updated: 2026-11-10T16:00:00+01:00
 category: hacienda
 guia: true
 orden: 5
@@ -39,12 +40,12 @@ sources:
 
 Las encuestas privadas de octubre dan a **PP y Vox** juntos alrededor de **200 escaños**, por encima de la mayoría absoluta de 176. Esta guía explica en qué coinciden y en qué se diferencian sobre los temas que más notan los hogares, de cara a las elecciones del **29 de noviembre de 2026**. No es una predicción ni una recomendación de voto. Hay una guía igual para cada escenario y una [comparativa de todos](/hacienda/que-cambia-en-tu-bolsillo-segun-quien-gobierne-29n/).
 
-**Aviso:** los partidos todavía no han publicado sus programas. Recogemos planes y declaraciones con su fecha, y la actualizaremos cuando salgan los programas.
+**Actualizado el 10 de noviembre:** el PP publicó ese día su programa, «La Reconstrucción Nacional»; lo detallamos en [si gobierna el PP](/hacienda/que-cambiaria-si-gobierna-el-pp-29n/). Vox todavía no ha publicado el suyo: de Vox recogemos planes y declaraciones con su fecha, y actualizaremos la página cuando salga.
 
 ## Lo esencial
 
 - **Coinciden en:** bajar impuestos, mantener las nucleares, rechazar los decretos de alquiler del Gobierno y no reducir la jornada por ley.
-- **Chocan en el IRPF:** el PP propone actualizarlo con la inflación y duplicar el mínimo por hijos; Vox, un mínimo exento de 22.000 € y solo dos tipos, del 15 % y el 25 %.
+- **Chocan en el IRPF:** el PP propone actualizarlo con la inflación, que el salario mínimo no pague IRPF y una rebaja para los menores de 35; Vox, un mínimo exento de 22.000 € y solo dos tipos, del 15 % y el 25 %.
 - **Pensiones:** el PP promete subirlas con el IPC; Vox, pagarlas «como sea», y uno de sus diputados plantea añadir una parte de capitalización.
 - **Vivienda:** el PP apuesta por suelo, IVA al 4 % y avales para jóvenes; Vox, por vivienda social adjudicada con «prioridad nacional».
 - **Qué se aprobaría** dependería de lo que pactaran. Si Vox entra en el Gobierno o solo apoya la investidura cambia cuánto pesa cada programa.
@@ -64,9 +65,9 @@ Santiago Abascal confirmó el 11 de octubre contactos con Alberto Núñez Feijó
 
 | | PP | Vox |
 |---|---|---|
-| **IRPF** | Actualizar la tarifa con la inflación y duplicar el mínimo por hijos | Mínimo exento de 22.000 € y dos tipos: 15 % hasta 70.000 € y 25 % por encima |
-| **IVA** | 0 % en alimentos básicos, 10 % en energía y exención para autónomos de menos de 85.000 € | Rebajarlo, sin cifras |
-| **Energía** | IVA al 10 % y eliminar el impuesto a la generación | Bajar impuestos y costes |
+| **IRPF** | Actualizar la tarifa con la inflación, SMI exento y rebaja para menores de 35 en sus cuatro primeras declaraciones | Mínimo exento de 22.000 € y dos tipos: 15 % hasta 70.000 € y 25 % por encima |
+| **IVA** | 0 % en alimentos básicos, 4 % en la primera vivienda para menores de 40 y sin IVA para autónomos de menos de 85.000 € | Rebajarlo, sin cifras |
+| **Energía** | Quitar el impuesto del 7 % a la generación y el calendario de cierre nuclear | Bajar impuestos y costes |
 
 La propuesta de IRPF de Vox la expuso su portavoz económico, José María Figaredo, el 7 de octubre. Vox no ha explicado cómo compensaría la pérdida de recaudación. Economistas de Fedea y Oxford Economics citados por Hora Punta cuestionan su coste y su efecto en la progresividad del impuesto. El PP no ha dado una estimación del coste de sus rebajas.
 
@@ -79,7 +80,7 @@ Pedro Sánchez acusa a PP y Vox de querer recortar las pensiones. Los dos lo nie
 
 ## Vivienda y alquiler
 
-- **PP:** 250.000 viviendas al año, suelo público, licencias por silencio administrativo, **IVA de la vivienda al 4 %**, rebaja del 60 % en los impuestos para jóvenes y **avales de hasta el 100 %**.
+- **PP (programa del 10 de noviembre):** **derogar la Ley de Vivienda**, un millón de hogares en la legislatura, licencias por silencio positivo en tres meses, **IVA del 4 %** en la primera vivienda para menores de 40, **avales de hasta el 20 %** del valor para la entrada y desalojo de okupas en 48 horas.
 - **Vox:** construir **«masivamente» vivienda social** y adjudicarla con **«prioridad nacional»**, liberalizar el suelo, bajar impuestos a la construcción y ayudas directas a jóvenes compradores.
 
 Los dos votaron el 2 de octubre **contra los decretos de alquiler** del Gobierno, junto a Junts. El decreto 29/2026, que topa las subidas del alquiler hasta 2027, se votará el 12 de noviembre, antes de las elecciones. Lo explicamos en [vivienda y elecciones del 29N](/vivienda/vivienda-elecciones-29n-balance-y-propuestas/).
