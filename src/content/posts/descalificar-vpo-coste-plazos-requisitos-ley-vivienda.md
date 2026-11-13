@@ -5,10 +5,8 @@ date: 2026-10-31T23:27:01+00:00
 category: vivienda
 tags: ["vpo", "vivienda-protegida", "descalificacion", "ley-de-vivienda", "venta-de-vivienda"]
 pendiente: false
-image: /img/fotos/descalificar-vpo-coste-plazos-requisitos-ley-vivienda.webp
-imageAlt: "Bloque de viviendas visto desde la calle"
-imageCredit: "Pix-Off / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/windows-sample-net-door-7509369/"
+image: /img/datos/descalificar-vpo-coste-plazos-requisitos-ley-vivienda.webp
+imageAlt: "Descalificar una VPO: de gratis a más de 24.000 euros"
 sources:
   - name: "BOE: Sentencia del Tribunal Constitucional 79/2024, de 21 de mayo, sobre la Ley 12/2023"
     url: "https://www.boe.es/buscar/doc.php?id=BOE-A-2024-12808"

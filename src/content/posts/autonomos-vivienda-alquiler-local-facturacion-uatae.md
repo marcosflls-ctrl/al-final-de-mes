@@ -6,10 +6,8 @@ noindex: true
 category: vivienda
 tags: ["autonomos", "alquiler", "vivienda", "locales-comerciales", "uatae"]
 pendiente: true
-image: /img/fotos/autonomos-vivienda-alquiler-local-facturacion-uatae.webp
-imageAlt: "Fachada de un pequeño comercio de barrio con el cartel de alquiler"
-imageCredit: "viarami / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/business-bar-restaurant-shield-5475283/"
+image: /img/datos/autonomos-vivienda-alquiler-local-facturacion-uatae.webp
+imageAlt: "Autónomos: el local cuesta del 25 al 50% de su facturación"
 sources:
   - name: "ABC Economía: La crisis de vivienda se ceba más con los autónomos: ingresos inestables y locales por las nubes"
     url: "https://www.abc.es/economia/cuentas-corrientes/crisis-vivienda-ceba-autonomos-ingresos-inestables-locales-20261028015635-nt.html"

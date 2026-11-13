@@ -5,10 +5,8 @@ date: 2026-10-21T15:22:24+00:00
 category: pensiones
 tags: ["jubilacion-activa", "complemento-por-hijos", "tribunal-supremo", "pensiones", "seguridad-social"]
 pendiente: false
-image: /img/fotos/supremo-complemento-hijos-jubilacion-activa-100.webp
-imageAlt: "Jubilado trabajando en su taller"
-imageCredit: "trilemedia / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/pottery-man-delivery-hoi-an-5680464/"
+image: /img/datos/supremo-complemento-hijos-jubilacion-activa-100.webp
+imageAlt: "Jubilados que trabajan: el complemento por hijos, sobre el 100%"
 sources:
   - name: "Expansión Economía: La Seguridad Social no puede pagar solo la mitad del complemento por hijos a los jubilados en activo"
     url: "https://www.expansion.com/economia/2026/10/20/seguridad-social-pagar-mitad-complemento-hijos-jubilados-activo.html"

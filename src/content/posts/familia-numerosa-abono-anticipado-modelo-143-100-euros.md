@@ -5,10 +5,8 @@ date: 2026-10-24T09:37:14+00:00
 category: hacienda
 tags: ["familia-numerosa", "modelo-143", "irpf", "deducciones", "familia-monoparental"]
 pendiente: false
-image: /img/fotos/familia-numerosa-abono-anticipado-modelo-143-100-euros.webp
-imageAlt: "Familia con hijos en casa revisando papeles"
-imageCredit: "Icsilviu / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/woman-female-girl-portrait-model-5667299/"
+image: /img/datos/familia-numerosa-abono-anticipado-modelo-143-100-euros.webp
+imageAlt: "Familia numerosa: 100 o 200 € al mes con el modelo 143"
 sources:
   - name: "Agencia Tributaria: deducción por familia numerosa, solicitud y cesión del abono anticipado"
     url: "https://sede.agenciatributaria.gob.es/Sede/ciudadanos-familias-personas-discapacidad/deducciones-relacionadas-hijos-descendientes/deduccion-familia-numerosa/solicitud-cesion-abono-anticipado.html"

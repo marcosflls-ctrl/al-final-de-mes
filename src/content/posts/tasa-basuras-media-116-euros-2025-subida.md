@@ -6,10 +6,8 @@ noindex: true
 category: hacienda
 tags: ["tasa-de-basuras", "ayuntamientos", "impuestos-locales", "alquiler", "residuos"]
 pendiente: false
-image: /img/fotos/tasa-basuras-media-116-euros-2025-subida.webp
-imageAlt: "Contenedores de basura en una calle de una ciudad"
-imageCredit: "pasja1000 / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/the-bottle-plastic-segregation-5128607/"
+image: /img/datos/tasa-basuras-media-116-euros-2025-subida.webp
+imageAlt: "Tasa de basuras: 116 € de media en 2025, un 16% más"
 sources:
   - name: "Ley 7/2022, de 8 de abril, de residuos y suelos contaminados para una economía circular (BOE)"
     url: "https://www.boe.es/buscar/act.php?id=BOE-A-2022-5809"

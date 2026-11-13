@@ -5,10 +5,8 @@ date: 2026-10-20T14:55:52+00:00
 category: pensiones
 tags: ["pension-de-viudedad", "seguridad-social", "parejas-de-hecho", "real-decreto-ley", "incapacidad-temporal"]
 pendiente: true
-image: /img/fotos/viudedad-para-parejas-no-casadas-con-hijos-dos-anos-empadronados.webp
-imageAlt: "Pareja de jubilados"
-imageCredit: "LollipopPhotographyUK / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/couple-romantic-together-vintage-5302344/"
+image: /img/articulos/viudedad-para-parejas-no-casadas-con-hijos-dos-anos-empadronados.webp
+imageAlt: "Viudedad para parejas no casadas con hijos: dos años empadronados"
 sources:
   - name: "20minutos Economía: El Gobierno aprueba ampliar la pensión de viudedad a parejas no registradas con hijos y mejora las b"
     url: "https://www.20minutos.es/lainformacion/economia-y-finanzas/gobierno-aprueba-ampliar-pension-viudedad-parejas-no-registradas-con-hijos-mejora-las-bajas-para-los-afectados-por-catastrofes_7050975_0.html"

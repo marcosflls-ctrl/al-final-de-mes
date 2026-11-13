@@ -6,10 +6,8 @@ noindex: true
 category: vivienda
 tags: ["alquiler", "inquilinos", "caseros", "esade", "precio-vivienda"]
 pendiente: false
-image: /img/fotos/caseros-varias-viviendas-18-subida-alquiler-esade.webp
-imageAlt: "Cartel de se alquila en el balcón de un edificio de viviendas"
-imageCredit: "23555986 / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/bedroom-interior-design-7132435/"
+image: /img/datos/caseros-varias-viviendas-18-subida-alquiler-esade.webp
+imageAlt: "Alquiler: caseros con varias casas, ligados al 18% de la subida"
 sources:
   - name: "Europa Press Economía: Los caseros con varias viviendas concentran el 18% de la subida del alquiler entre 2019 y 2023, segú"
     url: "https://www.europapress.es/economia/construccion-y-vivienda-00342/noticia-caseros-varias-viviendas-concentran-18-subida-alquiler-2019-2023-esade-20261022080153.html"

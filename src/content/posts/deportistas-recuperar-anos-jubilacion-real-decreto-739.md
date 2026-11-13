@@ -5,10 +5,8 @@ date: 2026-10-23T15:09:36+00:00
 category: pensiones
 tags: ["jubilacion", "deportistas-profesionales", "seguridad-social", "real-decreto-739-2026", "cotizacion"]
 pendiente: false
-image: /img/fotos/deportistas-recuperar-anos-jubilacion-real-decreto-739.webp
-imageAlt: "Grupo de ciclistas en una carrera por carretera"
-imageCredit: "TieuBaoTruong / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/women-ao-dai-bicycle-girls-friends-6710736/"
+image: /img/articulos/deportistas-recuperar-anos-jubilacion-real-decreto-739.webp
+imageAlt: "Deportistas: sumar años a la pensión desde el 25 de diciembre"
 sources:
   - name: "El Mundo Economía: La Seguridad Social lo confirma: estos trabajadores podrán recuperar años para su jubilación a parti"
     url: "https://www.elmundo.es/economia/2026/10/23/6adb1191e9cf4a427e8b458a.html"

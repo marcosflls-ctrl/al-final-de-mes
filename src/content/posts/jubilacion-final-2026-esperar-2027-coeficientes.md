@@ -5,10 +5,8 @@ date: 2026-10-26T21:54:47+00:00
 category: pensiones
 tags: ["jubilacion-anticipada", "pensiones-2027", "coeficientes-reductores", "edad-de-jubilacion", "bbva"]
 pendiente: false
-image: /img/fotos/jubilacion-final-2026-esperar-2027-coeficientes.webp
-imageAlt: "Pareja de jubilados paseando"
-imageCredit: "snapitostudio / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/couple-marriage-wedding-love-heart-7743478/"
+image: /img/datos/jubilacion-final-2026-esperar-2027-coeficientes.webp
+imageAlt: "Jubilación a final de 2026: recorte del 3,26% al 3,52%"
 sources:
   - name: "Seguridad Social: pensión de jubilación, requisitos desde 2027"
     url: "https://www.seg-social.es/wps/portal/wss/internet/Trabajadores/PrestacionesPensionesTrabajadores/10963/28393/28396/28472"

@@ -5,10 +5,8 @@ date: 2026-10-26T17:40:10+00:00
 category: pensiones
 tags: ["jubilacion", "seguridad-social", "tu-seguridad-social", "edad-de-jubilacion", "tramites"]
 pendiente: false
-image: /img/fotos/informe-edad-jubilacion-fecha-exacta-seguridad-social.webp
-imageAlt: "Pareja de mayores consultando un trámite en el ordenador"
-imageCredit: "pasja1000 / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/park-bike-senior-lonely-cycling-5528190/"
+image: /img/articulos/informe-edad-jubilacion-fecha-exacta-seguridad-social.webp
+imageAlt: "Jubilación: descarga el informe con tu fecha exacta"
 sources:
   - name: "Revista Seguridad Social: Guía para obtener el informe que acredita tu edad legal de jubilación"
     url: "https://revista.seg-social.es/-/guia-para-obtener-el-informe-que-acredita-tu-edad-legal-de-jubilacion"

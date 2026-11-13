@@ -5,10 +5,8 @@ date: 2026-10-26T22:43:51+00:00
 category: pensiones
 tags: ["pensiones", "ipc", "revalorizacion", "elecciones-29n", "constitucion"]
 pendiente: true
-image: /img/fotos/sanchez-promete-reforma-constitucion-pensiones-ipc.webp
-imageAlt: "Pareja de jubilados paseando"
-imageCredit: "JosepMonter / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/walk-couple-path-rural-7945711/"
+image: /img/articulos/sanchez-promete-reforma-constitucion-pensiones-ipc.webp
+imageAlt: "Sánchez promete blindar en la Constitución pensiones al IPC"
 sources:
   - name: "Real Decreto-ley 3/2026, de 3 de febrero, de revalorización de las pensiones públicas (BOE)"
     url: "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-2548"

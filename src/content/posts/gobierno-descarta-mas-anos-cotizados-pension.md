@@ -5,10 +5,8 @@ date: 2026-10-26T17:40:41+00:00
 category: pensiones
 tags: ["pensiones", "jubilacion", "cotizacion", "seguridad-social", "elma-saiz"]
 pendiente: false
-image: /img/fotos/gobierno-descarta-mas-anos-cotizados-pension.webp
-imageAlt: "Pareja de jubilados paseando"
-imageCredit: "mina6120 / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/hands-people-couple-man-woman-5075436/"
+image: /img/articulos/gobierno-descarta-mas-anos-cotizados-pension.webp
+imageAlt: "Pensión: el Gobierno descarta exigir más años cotizados"
 sources:
   - name: "Ley General de la Seguridad Social (BOE-A-2015-11724)"
     url: "https://www.boe.es/buscar/doc.php?id=BOE-A-2015-11724"

@@ -5,10 +5,8 @@ date: 2026-10-20T21:57:23+00:00
 category: vivienda
 tags: ["deduccion-alquiler", "irpf", "inquilinos", "real-decreto-ley-29-2026", "declaracion-de-la-renta"]
 pendiente: true
-image: /img/fotos/deduccion-alquiler-irpf-1163-euros-requisitos.webp
-imageAlt: "Edificio de viviendas"
-imageCredit: "rotekirsche20 / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/building-windows-balconies-facade-5630441/"
+image: /img/datos/deduccion-alquiler-irpf-1163-euros-requisitos.webp
+imageAlt: "Inquilinos: deducción de hasta 1.163 € en la renta por el alquiler"
 sources:
   - name: "BOE: Real Decreto-ley 29/2026, de 6 de octubre"
     url: "https://www.boe.es/buscar/act.php?id=BOE-A-2026-20823"

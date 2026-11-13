@@ -5,10 +5,8 @@ date: 2026-10-22T15:23:22+00:00
 category: pensiones
 tags: ["cume", "pension-de-orfandad", "seguridad-social", "real-decreto-ley-31-2026", "smi"]
 pendiente: true
-image: /img/fotos/cume-mayores-26-orfandad-doble-smi-decreto-ley.webp
-imageAlt: "Padre con su hijo en un pasillo de hospital"
-imageCredit: "ThanhTN / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/desert-children-sand-dune-playing-7008952/"
+image: /img/datos/cume-mayores-26-orfandad-doble-smi-decreto-ley.webp
+imageAlt: "CUME para hijos de más de 26 años y orfandad al doble del SMI"
 sources:
   - name: "BOE: Real Decreto-ley 31/2026, de 20 de octubre"
     url: "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-21872"

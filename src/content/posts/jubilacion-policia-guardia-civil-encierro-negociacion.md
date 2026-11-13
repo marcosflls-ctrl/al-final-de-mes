@@ -6,10 +6,8 @@ noindex: true
 category: pensiones
 tags: ["jubilacion-anticipada", "policia-nacional", "guardia-civil", "clases-pasivas", "coeficientes-reductores"]
 pendiente: true
-image: /img/fotos/jubilacion-policia-guardia-civil-encierro-negociacion.webp
-imageAlt: "Agentes de policía en una concentración de protesta"
-imageCredit: "Antonio_Cansino / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/riot-protest-street-crowd-laws-6129239/"
+image: /img/articulos/jubilacion-policia-guardia-civil-encierro-negociacion.webp
+imageAlt: "Jubilación de policías y guardias civiles: sin acuerdo"
 sources:
   - name: "Infobae España: Policías y guardias civiles se encierran en la Secretaría de Estado de Seguridad por la jubilación:"
     url: "https://www.infobae.com/espana/2026/10/27/policias-y-guardias-civiles-se-encierran-en-la-secretaria-de-estado-de-seguridad-por-la-jubilacion-el-gobierno-pone-fin-a-la-negociacion-por-las-elecciones-del-29-n/"

@@ -6,10 +6,8 @@ noindex: true
 category: vivienda
 tags: ["vivienda", "alquiler", "union-europea", "consulta-publica", "pisos-turisticos"]
 pendiente: true
-image: /img/fotos/ley-europea-vivienda-asequible-consulta-publica.webp
-imageAlt: "Bloques de viviendas en una ciudad"
-imageCredit: "analogicus / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/skyscraper-block-of-flats-building-8173578/"
+image: /img/articulos/ley-europea-vivienda-asequible-consulta-publica.webp
+imageAlt: "Ley europea de vivienda: opina hasta el 4 de noviembre"
 sources:
   - name: "Idealista News (vivienda): El Gobierno abre una consulta pública sobre la futura Ley Europea de Vivienda Asequible"
     url: "https://www.idealista.com/news/inmobiliario/vivienda/2026/10/23/920353-el-gobierno-abre-una-consulta-publica-sobre-la-futura-ley-europea-de-vivienda"

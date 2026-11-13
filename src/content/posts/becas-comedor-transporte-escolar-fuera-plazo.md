@@ -5,10 +5,8 @@ date: 2026-10-21T10:37:04+00:00
 category: paro
 tags: ["becas-comedor", "transporte-escolar", "ayudas-familias", "educacion", "recurso"]
 pendiente: false
-image: /img/fotos/becas-comedor-transporte-escolar-fuera-plazo.webp
-imageAlt: "Niños comiendo en el comedor de un colegio"
-imageCredit: "Katrina_S / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/kindergarten-school-the-main-yellow-2456159/"
+image: /img/articulos/becas-comedor-transporte-escolar-fuera-plazo.webp
+imageAlt: "Becas de comedor y transporte fuera de plazo: cómo pedirlas"
 sources:
   - name: "20minutos Economía: Cómo pedir las becas de comedor y transporte escolar fuera de plazo"
     url: "https://www.20minutos.es/lainformacion/economia-y-finanzas/como-pedir-becas-comedor-transporte-escolar-fuera-plazo_7047976_0.html"

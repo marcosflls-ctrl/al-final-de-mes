@@ -5,10 +5,8 @@ date: 2026-10-30T11:40:51+00:00
 category: pensiones
 tags: ["jubilacion-anticipada", "pension-minima", "seguridad-social", "coeficientes-reductores"]
 pendiente: false
-image: /img/fotos/jubilacion-anticipada-voluntaria-pension-minima-requisito.webp
-imageAlt: "Pareja de jubilados paseando por un parque"
-imageCredit: "yugifrias / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/beach-couple-leisure-stroll-5571545/"
+image: /img/datos/jubilacion-anticipada-voluntaria-pension-minima-requisito.webp
+imageAlt: "Jubilación anticipada: la pensión debe pasar de 936 €"
 sources:
   - name: "Real Decreto Legislativo 8/2015, texto refundido de la Ley General de la Seguridad Social (art. 208)"
     url: "https://www.boe.es/buscar/doc.php?id=BOE-A-2015-11724"

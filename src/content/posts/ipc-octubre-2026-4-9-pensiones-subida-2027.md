@@ -5,10 +5,8 @@ date: 2026-10-30T11:27:18+00:00
 category: pensiones
 tags: ["ipc", "inflacion", "pensiones-2027", "ine", "precios"]
 pendiente: false
-image: /img/fotos/ipc-octubre-2026-4-9-pensiones-subida-2027.webp
-imageAlt: "Calculadora y ticket de compra sobre una mesa"
-imageCredit: "djedj / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/buildings-people-road-boulevard-5655593/"
+image: /img/datos/ipc-octubre-2026-4-9-pensiones-subida-2027.webp
+imageAlt: "IPC de octubre al 4,9%: así afecta a tu pensión"
 sources:
   - name: "INE: indicador adelantado del IPC, octubre 2026"
     url: "https://www.ine.es/dyngs/Prensa/adIPC1026.htm"

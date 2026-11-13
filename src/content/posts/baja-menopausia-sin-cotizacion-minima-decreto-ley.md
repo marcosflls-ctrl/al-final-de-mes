@@ -5,10 +5,8 @@ date: 2026-10-21T10:15:33+00:00
 category: pensiones
 tags: ["incapacidad-temporal", "menopausia", "seguridad-social", "baja-medica", "real-decreto-ley"]
 pendiente: false
-image: /img/fotos/baja-menopausia-sin-cotizacion-minima-decreto-ley.webp
-imageAlt: "Consulta médica con una mujer hablando con su doctora"
-imageCredit: "ovariancancer1 / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/doctor-patient-gynecologist-women-9628974/"
+image: /img/articulos/baja-menopausia-sin-cotizacion-minima-decreto-ley.webp
+imageAlt: "Baja por menopausia sin cotización mínima, según el BOE"
 sources:
   - name: "BOE: Real Decreto-ley 31/2026, de 20 de octubre, para la mejora de la acción protectora de la Seguridad Social y de otras normas sociales"
     url: "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-21872"

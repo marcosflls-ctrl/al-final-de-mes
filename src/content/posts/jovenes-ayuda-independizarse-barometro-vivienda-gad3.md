@@ -6,10 +6,8 @@ noindex: true
 category: vivienda
 tags: ["jovenes", "vivienda", "alquiler", "independizarse", "barometro"]
 pendiente: false
-image: /img/fotos/jovenes-ayuda-independizarse-barometro-vivienda-gad3.webp
-imageAlt: "Joven con las llaves de un piso recién alquilado"
-imageCredit: "wal_172619 / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/piano-music-keys-exercise-pianist-5353974/"
+image: /img/articulos/jovenes-ayuda-independizarse-barometro-vivienda-gad3.webp
+imageAlt: "Menores de 30: 2 de cada 3 necesitan ayuda para independizarse"
 sources:
   - name: "20minutos Economía: Dos de cada tres jóvenes necesitan ayuda para independizarse y el 70% ha tenido que renunciar a un p"
     url: "https://www.20minutos.es/nacional/dos-cada-tres-jovenes-necesitan-ayuda-para-independizarse-70-ha-tenido-que-renunciar-un-piso-por-causas-economicas_7051969_0.html"

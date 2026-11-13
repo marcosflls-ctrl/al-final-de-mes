@@ -5,10 +5,8 @@ date: 2026-10-26T11:12:55+00:00
 category: hacienda
 tags: ["donaciones", "notario", "comprar-vivienda", "hijos", "impuesto-de-donaciones"]
 pendiente: false
-image: /img/fotos/donar-dinero-hijo-comprar-casa-escritura-notario.webp
-imageAlt: "Pareja recibiendo las llaves de una vivienda"
-imageCredit: "REFLEX_PRODUCTION / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/woman-portrait-light-projector-7136446/"
+image: /img/articulos/donar-dinero-hijo-comprar-casa-escritura-notario.webp
+imageAlt: "Donar dinero a un hijo para su casa: hace falta escritura"
 sources:
   - name: "ABC Economía: María Cristina Clemente, notaria, sobre las donaciones: «Las de dinero son las más puras. Pero no va"
     url: "https://www.abc.es/economia/maria-cristina-clemente-notaria-sobre-donaciones-dinero-20261026063000-nt.html"

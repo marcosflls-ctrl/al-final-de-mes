@@ -5,10 +5,8 @@ date: 2026-10-21T19:39:58+00:00
 category: paro
 tags: ["salario-minimo", "catalunya", "smi", "nominas", "parlament"]
 pendiente: true
-image: /img/fotos/salario-minimo-catalan-1400-euros-14-pagas-ley.webp
-imageAlt: "Billetes de euro saliendo de una cartera"
-imageCredit: "vjkombajn / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/money-cash-czech-crowns-banknotes-8033100/"
+image: /img/datos/salario-minimo-catalan-1400-euros-14-pagas-ley.webp
+imageAlt: "Salario mínimo catalán: 1.400 € en 14 pagas, aún en trámite"
 sources:
   - name: "La Vanguardia Economía: La ley para fijar un salario mínimo catalán de referencia pasa el primer examen parlamentario"
     url: "https://www.lavanguardia.com/politica/20261021/11664653/ley-fijar-salario-minimo-catalan-referencia-pasa-primer-examen-parlamentario.html"

@@ -6,10 +6,8 @@ noindex: true
 category: vivienda
 tags: ["alquiler", "inquilinos", "ine", "esfuerzo-de-alquiler", "madrid"]
 pendiente: false
-image: /img/fotos/alquiler-esfuerzo-renta-media-madrid-barcelona-barrios-ine.webp
-imageAlt: "Fachada de un edificio de viviendas en una ciudad española"
-imageCredit: "wal_172619 / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/house-building-balconies-apartments-7124141/"
+image: /img/datos/alquiler-esfuerzo-renta-media-madrid-barcelona-barrios-ine.webp
+imageAlt: "El alquiler se lleva más del 50% de la renta en Madrid y Barcelona"
 sources:
   - name: "Europa Press Economía: MAPA | Esfuerzo para pagar el alquiler en España: qué parte de la renta media se lleva por barrios"
     url: "https://www.europapress.es/economia/construccion-y-vivienda-00342/noticia-esfuerzo-pagar-alquiler-espana-parte-renta-media-lleva-barrios-20261022165749.html"

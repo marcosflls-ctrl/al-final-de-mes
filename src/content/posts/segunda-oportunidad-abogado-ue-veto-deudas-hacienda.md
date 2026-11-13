@@ -5,10 +5,8 @@ date: 2026-10-22T22:53:15+00:00
 category: hacienda
 tags: ["segunda-oportunidad", "deudas", "hacienda", "tjue", "exoneracion"]
 pendiente: true
-image: /img/fotos/segunda-oportunidad-abogado-ue-veto-deudas-hacienda.webp
-imageAlt: "Documentos de deudas sobre una mesa con una calculadora"
-imageCredit: "JoshuaWoroniecki / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/laptop-digital-device-technology-5673901/"
+image: /img/articulos/segunda-oportunidad-abogado-ue-veto-deudas-hacienda.webp
+imageAlt: "Segunda oportunidad y Hacienda: el abogado de la UE avala el veto"
 sources:
   - name: "Expansión Economía: La UE avala a España para endurecer el perdón de deudas con Hacienda"
     url: "https://www.expansion.com/economia/2026/10/23/ue-avala-espana-endurecer-perdon-deudas-hacienda.html"

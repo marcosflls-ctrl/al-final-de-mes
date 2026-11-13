@@ -6,10 +6,8 @@ noindex: true
 category: vivienda
 tags: ["alquiler", "precio-vivienda", "ine", "indicadores-urbanos", "barrios"]
 pendiente: false
-image: /img/fotos/ine-alquiler-precio-vivienda-municipios-2025.webp
-imageAlt: "Bloques de viviendas en una ciudad española"
-imageCredit: "Alef_photograph / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/city-building-architecture-urban-7358078/"
+image: /img/datos/ine-alquiler-precio-vivienda-municipios-2025.webp
+imageAlt: "Alquiler medio: 1.499 € en Pozuelo y 330 € en Lalín en 2024"
 sources:
   - name: "INE – Indicadores Urbanos (21 de octubre de 2026)"
     url: "https://www.ine.es/dyngs/Prensa/UA2026.htm"

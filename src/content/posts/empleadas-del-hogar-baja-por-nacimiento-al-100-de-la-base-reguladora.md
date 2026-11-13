@@ -8,10 +8,8 @@ pendiente: false
 sources:
   - name: "20minutos Economía: Baja por maternidad y ayudas para empleadas del hogar: prestaciones y derechos de la nueva ley"
     url: "https://www.20minutos.es/lainformacion/economia-y-finanzas/baja-maternidad-ayudas-empleadas-hogar-prestaciones-derechos-nueva-ley_7046936_0.html"
-image: /img/fotos/empleadas-del-hogar-baja-por-nacimiento-al-100-de-la-base-reguladora.webp
-imageAlt: "Pareja de jubilados"
-imageCredit: "3345557 / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/old-couple-bike-ride-countryside-6631599/"
+image: /img/datos/empleadas-del-hogar-baja-por-nacimiento-al-100-de-la-base-reguladora.webp
+imageAlt: "Empleadas del hogar: baja por nacimiento al 100% de la base reguladora"
 ---
 
 Una empleada del hogar que tenga un hijo, por parto o por adopción, tiene derecho al permiso por nacimiento y cuidado del menor. Cobra el **100% de la base reguladora** del mes anterior al inicio del descanso. Lo paga íntegramente la Seguridad Social, no la familia empleadora. Así lo recoge 20minutos al explicar los derechos que da la reforma del régimen especial del hogar, que equipara a estas trabajadoras con el resto en protección social.

@@ -5,10 +5,8 @@ date: 2026-10-23T10:09:42+00:00
 category: pensiones
 tags: ["jubilacion-anticipada", "pension-maxima", "seguridad-social", "pensiones-2027"]
 pendiente: true
-image: /img/fotos/jubilacion-anticipada-2027-dt34-pensiones-maximas.webp
-imageAlt: "Pareja de jubilados paseando"
-imageCredit: "palinska / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/tree-park-nature-forest-landscape-5102896/"
+image: /img/articulos/jubilacion-anticipada-2027-dt34-pensiones-maximas.webp
+imageAlt: "Jubilación anticipada en 2027: en duda el alivio a pensiones altas"
 sources:
   - name: "20minutos Economía: Jubilación anticipada en 2027: el tijeretazo para las rentas y cotizaciones más altas"
     url: "https://www.20minutos.es/lainformacion/economia-y-finanzas/jubilacion-anticipada-2027-tijeretazo-rentas-cotizaciones-mas-altas_7050812_0.html"

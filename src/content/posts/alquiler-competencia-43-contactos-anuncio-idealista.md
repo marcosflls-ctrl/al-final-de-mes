@@ -6,10 +6,8 @@ noindex: true
 category: vivienda
 tags: ["alquiler", "inquilinos", "idealista", "vivienda", "zonas-tensionadas"]
 pendiente: false
-image: /img/fotos/alquiler-competencia-43-contactos-anuncio-idealista.webp
-imageAlt: "Cartel de se alquila en la fachada de un edificio de viviendas"
-imageCredit: "moshehar / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/window-building-home-house-shadow-6800397/"
+image: /img/articulos/alquiler-competencia-43-contactos-anuncio-idealista.webp
+imageAlt: "Alquiler: 43 contactos por anuncio, 5 veces más que en 2018"
 sources:
   - name: "Idealista News (vivienda): La competencia por cada vivienda en alquiler se quintuplica en los últimos 8 años"
     url: "https://www.idealista.com/news/inmobiliario/vivienda/2026/10/26/920389-la-competencia-por-cada-vivienda-en-alquiler-se-quintuplica-en-los-ultimos-8-anos"

@@ -5,10 +5,8 @@ date: 2026-10-24T17:30:25+00:00
 category: pensiones
 tags: ["pensiones", "frente-amplio", "elecciones-29n", "salario-minimo", "jubilacion-a-los-65"]
 pendiente: true
-image: /img/fotos/frente-amplio-pension-minima-smi-jubilacion-65.webp
-imageAlt: "Pareja de jubilados paseando por la calle"
-imageCredit: "alllessandro_ / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/lovers-meadow-portrait-outdoors-7258617/"
+image: /img/datos/frente-amplio-pension-minima-smi-jubilacion-65.webp
+imageAlt: "Frente Amplio propone pensión mínima igual al SMI: 1.221 €"
 sources:
   - name: "Infobae España: Frente Amplio presenta su plan de pensiones: jubilación a los 65 años y cuantía mínima igual al SMI"
     url: "https://www.infobae.com/espana/2026/10/24/frente-amplio-presenta-su-plan-de-pensiones-jubilacion-a-los-65-anos-y-cuantia-minima-igual-al-smi/"

@@ -6,10 +6,8 @@ noindex: true
 category: vivienda
 tags: ["alquiler", "decretos-de-vivienda", "fedea", "inquilinos", "propietarios"]
 pendiente: true
-image: /img/fotos/fedea-decretos-vivienda-alquiler-caseros-indemnizacion.webp
-imageAlt: "Cartel de se alquila en el balcón de un edificio de viviendas"
-imageCredit: "23555986 / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/bedroom-interior-design-furniture-6778193/"
+image: /img/articulos/fedea-decretos-vivienda-alquiler-caseros-indemnizacion.webp
+imageAlt: "Decretos de alquiler: Fedea ve rentas más altas y menos pisos"
 sources:
   - name: "Expansión Economía: Los pequeños caseros y los futuros inquilinos, los más castigados por los decretos de vivienda"
     url: "https://www.expansion.com/economia/2026/10/22/pequenos-caseros-futuros-inquilinos-castigados-decretos-vivienda.html"

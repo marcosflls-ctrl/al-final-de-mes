@@ -5,10 +5,8 @@ date: 2026-10-23T10:32:56+00:00
 category: paro
 tags: ["smi", "irpf", "pensiones", "elecciones-29n", "pp"]
 pendiente: true
-image: /img/fotos/feijoo-promete-smi-exento-irpf-pensiones-ipc.webp
-imageAlt: "Nómina y calculadora sobre una mesa"
-imageCredit: "papazachariasa / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/rubiks-cube-cube-rubik-dice-pc-5017116/"
+image: /img/articulos/feijoo-promete-smi-exento-irpf-pensiones-ipc.webp
+imageAlt: "Feijóo promete SMI exento de IRPF y pensiones con el IPC"
 sources:
   - name: "Europa Press Economía: Feijóo dice que no sólo subirá el SMI, sino el sueldo medio, y que el SMI estará exento del IRPF por"
     url: "https://www.europapress.es/economia/laboral-00346/noticia-feijoo-dice-no-solo-subira-smi-sueldo-medio-smi-estara-exento-irpf-ley-20261023104128.html"

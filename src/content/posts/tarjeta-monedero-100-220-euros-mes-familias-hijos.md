@@ -5,10 +5,8 @@ date: 2026-10-21T20:14:00+00:00
 category: paro
 tags: ["tarjeta-monedero", "ayudas-familias", "servicios-sociales", "alimentos", "vulnerabilidad"]
 pendiente: false
-image: /img/fotos/tarjeta-monedero-100-220-euros-mes-familias-hijos.webp
-imageAlt: "Cesta de la compra con alimentos frescos"
-imageCredit: "udayteja7770 / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/market-produce-farmers-market-7094635/"
+image: /img/datos/tarjeta-monedero-100-220-euros-mes-familias-hijos.webp
+imageAlt: "Tarjeta Monedero: de 100 a 220 € al mes para familias con hijos"
 sources:
   - name: "ABC Economía: Tarjeta Monedero 2026: cómo solicitar hasta 220 euros al mes para alimentos"
     url: "https://www.abc.es/economia/cuentas-corrientes/tarjeta-monedero-2026-solicitar-220-euros-mes-20261020010950-nt.html"

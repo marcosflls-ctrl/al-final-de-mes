@@ -6,10 +6,8 @@ noindex: true
 category: vivienda
 tags: ["vivienda", "fedea", "alquiler", "primera-vivienda", "decreto-vivienda"]
 pendiente: true
-image: /img/fotos/fedea-creditos-0-entrada-primera-vivienda-precios.webp
-imageAlt: "Bloque de viviendas visto desde la calle"
-imageCredit: "wal_172619 / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/city-building-heaven-skyscraper-5974876/"
+image: /img/datos/fedea-creditos-0-entrada-primera-vivienda-precios.webp
+imageAlt: "Fedea: los créditos al 0% para la entrada pueden subir precios"
 sources:
   - name: "La Vanguardia Economía: Fedea advierte de que los créditos públicos para la entrada de la primera vivienda pueden encarecer"
     url: "https://www.lavanguardia.com/economia/20261021/11664360/fedea-advierte-creditos-publicos-entrada-primera-vivienda-encarecer-mas-precios.html"

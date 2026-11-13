@@ -6,10 +6,8 @@ noindex: true
 category: vivienda
 tags: ["alquiler", "caritas", "foessa", "vivienda", "inquilinos"]
 pendiente: false
-image: /img/fotos/caritas-foessa-inquilinos-alquiler-ingresos-insuficientes.webp
-imageAlt: "Cartel de se alquila en la fachada de un edificio de viviendas"
-imageCredit: "u_ojq9rdzqq7 / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/camera-photographer-photography-7726802/"
+image: /img/articulos/caritas-foessa-inquilinos-alquiler-ingresos-insuficientes.webp
+imageAlt: "Cáritas: 1 de cada 2 inquilinos no alquilaría hoy su piso"
 sources:
   - name: "El Mundo Economía: Cáritas alerta de que 51% de los inquilinos actuales no tendrían un nivel de ingresos suficientes pa"
     url: "https://www.elmundo.es/economia/vivienda/2026/10/28/6ae1ca35e85ecefa5a8b456e.html"

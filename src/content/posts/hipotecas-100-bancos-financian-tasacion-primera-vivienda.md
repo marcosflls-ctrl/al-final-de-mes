@@ -5,10 +5,8 @@ date: 2026-10-26T11:35:29+00:00
 category: vivienda
 tags: ["hipotecas", "primera-vivienda", "entrada", "tasacion", "bancos"]
 pendiente: false
-image: /img/fotos/hipotecas-100-bancos-financian-tasacion-primera-vivienda.webp
-imageAlt: "Llaves de una vivienda sobre un contrato de compraventa"
-imageCredit: "Shimabdinzade / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/woman-face-eye-light-alone-iran-7740613/"
+image: /img/datos/hipotecas-100-bancos-financian-tasacion-primera-vivienda.webp
+imageAlt: "Hipotecas al 100%: qué bancos financian toda la tasación"
 sources:
   - name: "Banco de España (Portal del Cliente Bancario): gastos de la hipoteca y Ley 5/2019"
     url: "https://clientebancario.bde.es/pcb/es/blog/que-gastos-te-toca-pagar-cuando-contratas-una-hipoteca-.html"

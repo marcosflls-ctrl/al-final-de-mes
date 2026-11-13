@@ -6,10 +6,8 @@ noindex: true
 category: paro
 tags: ["bono-cultural-joven", "ayudas-jovenes", "400-euros", "ministerio-de-cultura", "cl-ve"]
 pendiente: false
-image: /img/fotos/bono-cultural-joven-400-euros-31-octubre.webp
-imageAlt: "Joven mirando el móvil en un concierto"
-imageCredit: "Rodrigo_SalomonHC / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/receptionists-phone-call-hotel-5975962/"
+image: /img/datos/bono-cultural-joven-400-euros-31-octubre.webp
+imageAlt: "Bono Cultural: nacidos en 2008, 400 € hasta el 31 de octubre"
 sources:
   - name: "BOE: extracto de la Orden de 10 de junio de 2026 que convoca el Bono Cultural Joven 2026"
     url: "https://www.boe.es/boe/dias/2026/06/22/pdfs/BOE-B-2026-21271.pdf"

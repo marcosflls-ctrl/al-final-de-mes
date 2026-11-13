@@ -5,10 +5,8 @@ date: 2026-10-26T21:55:14+00:00
 category: paro
 tags: ["baja-medica", "incapacidad-temporal", "seguridad-social", "autonomos", "nomina"]
 pendiente: false
-image: /img/fotos/baja-medica-calculo-base-reguladora-1-diciembre-rdl-31-2026.webp
-imageAlt: "Trabajador de baja médica en casa con un termómetro y un portátil"
-imageCredit: "HelenJank / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/protective-suit-face-mask-5716753/"
+image: /img/articulos/baja-medica-calculo-base-reguladora-1-diciembre-rdl-31-2026.webp
+imageAlt: "Baja médica desde el 1 de diciembre: cambia el cálculo"
 sources:
   - name: "Real Decreto-ley 31/2026, de 20 de octubre (BOE)"
     url: "https://www.boe.es/buscar/act.php?id=BOE-A-2026-21872"

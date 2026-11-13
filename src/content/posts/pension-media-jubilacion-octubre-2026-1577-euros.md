@@ -5,10 +5,8 @@ date: 2026-10-27T10:40:35+00:00
 category: pensiones
 tags: ["pensiones", "jubilacion", "pension-media", "seguridad-social", "nomina"]
 pendiente: false
-image: /img/fotos/pension-media-jubilacion-octubre-2026-1577-euros.webp
-imageAlt: "Pareja de jubilados paseando por un parque"
-imageCredit: "wal_172619_II / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/horizon-clouds-beach-sky-nature-7476439/"
+image: /img/datos/pension-media-jubilacion-octubre-2026-1577-euros.webp
+imageAlt: "Pensión media de jubilación: 1.577,6 € en octubre"
 sources:
   - name: "Europa Press Economía: El gasto en pensiones sube un 6,3% en octubre, hasta un máximo de 14.540 millones de euros"
     url: "https://www.europapress.es/economia/laboral-00346/noticia-gasto-pensiones-sube-63-octubre-nuevo-maximo-14540-millones-euros-20261027091823.html"

@@ -5,10 +5,8 @@ date: 2026-10-30T17:14:11+00:00
 category: vivienda
 tags: ["euribor", "hipoteca-variable", "cuota-hipoteca", "bce", "banco-de-espana"]
 pendiente: false
-image: /img/fotos/euribor-octubre-3-239-cuota-hipoteca-variable.webp
-imageAlt: "Llaves de una vivienda sobre un contrato de hipoteca"
-imageCredit: "H031175 / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/house-homeland-architecture-7313645/"
+image: /img/datos/euribor-octubre-3-239-cuota-hipoteca-variable.webp
+imageAlt: "Euríbor de octubre al 3,239%: cuánto sube tu cuota"
 sources:
   - name: "BOE: Resolución del Banco de España de 1 de octubre de 2026 (euríbor de septiembre, 3,247%)"
     url: "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20519"

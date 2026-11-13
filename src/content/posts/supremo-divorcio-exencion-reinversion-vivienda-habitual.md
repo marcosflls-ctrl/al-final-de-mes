@@ -5,10 +5,8 @@ date: 2026-10-27T16:53:35+00:00
 category: hacienda
 tags: ["irpf", "divorcio", "vivienda-habitual", "tribunal-supremo", "reinversion"]
 pendiente: false
-image: /img/fotos/supremo-divorcio-exencion-reinversion-vivienda-habitual.webp
-imageAlt: "Bloque de viviendas visto desde la calle"
-imageCredit: "강춘성 / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/city-ocean-sky-cloud-scrapped-ship-7492749/"
+image: /img/articulos/supremo-divorcio-exencion-reinversion-vivienda-habitual.webp
+imageAlt: "Divorcio: mantienes la exención al vender la casa familiar"
 sources:
   - name: "Real Decreto-ley 29/2026, de 6 de octubre (BOE)"
     url: "https://www.boe.es/buscar/act.php?id=BOE-A-2026-20823"

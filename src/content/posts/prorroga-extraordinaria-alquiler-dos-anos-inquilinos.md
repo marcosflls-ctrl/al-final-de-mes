@@ -5,10 +5,8 @@ date: 2026-10-31T23:47:04+00:00
 category: vivienda
 tags: ["alquiler", "prorroga", "inquilinos", "real-decreto-ley-29-2026", "lau"]
 pendiente: false
-image: /img/fotos/prorroga-extraordinaria-alquiler-dos-anos-inquilinos.webp
-imageAlt: "Llaves de un piso de alquiler sobre un contrato"
-imageCredit: "Radafy / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/piano-music-keyboard-instrument-7360086/"
+image: /img/datos/prorroga-extraordinaria-alquiler-dos-anos-inquilinos.webp
+imageAlt: "Inquilinos: prórroga del alquiler de hasta 2 años"
 sources:
   - name: "Real Decreto-ley 29/2026, de 6 de octubre (BOE-A-2026-20823)"
     url: "https://www.boe.es/buscar/act.php?id=BOE-A-2026-20823"

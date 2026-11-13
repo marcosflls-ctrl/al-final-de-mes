@@ -5,10 +5,8 @@ date: 2026-10-21T15:39:50+00:00
 category: vivienda
 tags: ["alquiler-protegido", "vivienda-publica", "san-sebastian", "euskadi", "inquilinos"]
 pendiente: true
-image: /img/fotos/euskadi-compra-510-pisos-protegidos-san-sebastian.webp
-imageAlt: "Bloques de viviendas en un barrio residencial"
-imageCredit: "RandyJost / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/architecture-real-estate-property-5339245/"
+image: /img/articulos/euskadi-compra-510-pisos-protegidos-san-sebastian.webp
+imageAlt: "Euskadi pacta comprar 510 pisos protegidos en San Sebastián"
 sources:
   - name: "La Vanguardia Economía: El Gobierno vasco compra 510 viviendas protegidas en San Sebastián para mantenerlas como alquiler pú"
     url: "https://www.lavanguardia.com/local/paisvasco/20261021/11664542/gobierno-vasco-compra-510-viviendas-protegidas-san-sebastian-mantenerlas-alquiler-protegido.html"

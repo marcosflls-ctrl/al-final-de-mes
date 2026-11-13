@@ -5,10 +5,8 @@ date: 2026-10-26T17:26:59+00:00
 category: paro
 tags: ["huelga-general", "11-de-noviembre", "nomina", "derechos-laborales", "seguridad-social"]
 pendiente: false
-image: /img/fotos/huelga-general-11-noviembre-sueldo-descuento-cotizacion.webp
-imageAlt: "Trabajadores concentrados en una manifestación sindical"
-imageCredit: "jannonivergall / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/worker-grinder-factory-workplace-5736096/"
+image: /img/articulos/huelga-general-11-noviembre-sueldo-descuento-cotizacion.webp
+imageAlt: "Huelga general 11N: descuento de sueldo y cotización"
 sources:
   - name: "Europa Press Economía: Huelga general del 11 de noviembre: qué pueden hacer las empresas y qué no está permitido"
     url: "https://www.europapress.es/economia/noticia-huelga-general-11-noviembre-pueden-hacer-empresas-no-permitido-20261026143509.html"

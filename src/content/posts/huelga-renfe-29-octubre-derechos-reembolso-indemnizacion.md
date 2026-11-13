@@ -6,10 +6,8 @@ noindex: true
 category: paro
 tags: ["huelga", "renfe", "trenes", "derechos-del-viajero", "indemnizacion"]
 pendiente: false
-image: /img/fotos/huelga-renfe-29-octubre-derechos-reembolso-indemnizacion.webp
-imageAlt: "Andén de una estación de tren con viajeros esperando"
-imageCredit: "Fang_Y_M / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/woman-platform-waiting-train-5477042/"
+image: /img/datos/huelga-renfe-29-octubre-derechos-reembolso-indemnizacion.webp
+imageAlt: "Huelga de Renfe el 29 de octubre: hasta el 100% del billete"
 sources:
   - name: "Real Decreto 2387/2004, Reglamento del Sector Ferroviario (art. 89)"
     url: "https://www.boe.es/buscar/act.php?id=BOE-A-2004-21908"

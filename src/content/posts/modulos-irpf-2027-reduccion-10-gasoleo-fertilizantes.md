@@ -5,10 +5,8 @@ date: 2026-10-22T23:27:01+00:00
 category: hacienda
 tags: ["modulos", "irpf", "agricultores", "ganaderos", "gasoleo"]
 pendiente: true
-image: /img/fotos/modulos-irpf-2027-reduccion-10-gasoleo-fertilizantes.webp
-imageAlt: "Tractor trabajando en un campo de cultivo"
-imageCredit: "dendoktoor / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/machinery-farmer-field-tillage-8154964/"
+image: /img/datos/modulos-irpf-2027-reduccion-10-gasoleo-fertilizantes.webp
+imageAlt: "Agricultores en módulos: reducción del 10% y 35% en gasóleo"
 sources:
   - name: "ABC Economía: El Gobierno propone reducciones fiscales a los agricultores y ganaderos que declaren por módulos en"
     url: "https://www.abc.es/economia/gobierno-propone-reducciones-fiscales-agricultores-ganaderos-declaren-20261022152644-nt.html"

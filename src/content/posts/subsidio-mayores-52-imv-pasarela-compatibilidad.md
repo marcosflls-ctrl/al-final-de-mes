@@ -5,10 +5,8 @@ date: 2026-10-28T17:26:10+00:00
 category: paro
 tags: ["subsidio-mayores-52", "ingreso-minimo-vital", "sepe", "paro", "pasarela-imv"]
 pendiente: false
-image: /img/fotos/subsidio-mayores-52-imv-pasarela-compatibilidad.webp
-imageAlt: "Hombre mayor consultando información en una oficina de empleo"
-imageCredit: "garten-gg / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/sunflower-flower-yellow-flower-6546993/"
+image: /img/datos/subsidio-mayores-52-imv-pasarela-compatibilidad.webp
+imageAlt: "Subsidio +52 años (480 €) e IMV: cuándo cobrar ambos"
 sources:
   - name: "SEPE – Subsidio para mayores de 52 años"
     url: "https://www.sepe.es/HomeSepe/prestaciones-desempleo/subsidio-desempleo/tengo-mas-de-52.html"

@@ -5,10 +5,8 @@ date: 2026-10-21T22:48:23+00:00
 category: vivienda
 tags: ["alquiler", "seguro-de-impago", "propietarios", "inquilinos", "decreto-vivienda"]
 pendiente: true
-image: /img/fotos/seguro-impago-alquiler-propietario-decreto-pendiente.webp
-imageAlt: "Llaves de una vivienda en alquiler sobre un contrato"
-imageCredit: "Nika_Akin / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/green-face-light-portrait-woman-5124174/"
+image: /img/articulos/seguro-impago-alquiler-propietario-decreto-pendiente.webp
+imageAlt: "Seguro de impago: lo pagaría el casero, no el inquilino"
 sources:
   - name: "ABC Economía: La obligación de que el propietario asuma el seguro de impago presiona al alza los nuevos alquileres"
     url: "https://www.abc.es/economia/cuentas-corrientes/obligacion-propietario-asuma-seguro-impago-presiona-alza-20261021012102-nt.html"

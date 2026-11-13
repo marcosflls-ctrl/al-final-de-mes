@@ -5,10 +5,8 @@ date: 2026-10-22T10:41:20+00:00
 category: hacienda
 tags: ["propinas", "irpf", "hosteleria", "seguridad-social", "retenciones"]
 pendiente: false
-image: /img/fotos/propinas-hosteleria-irpf-cotizan-seguridad-social.webp
-imageAlt: "Camarero recogiendo una propina en la mesa de un restaurante"
-imageCredit: "jcx516 / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/cyberpunk-street-city-platform-6061251/"
+image: /img/articulos/propinas-hosteleria-irpf-cotizan-seguridad-social.webp
+imageAlt: "Propinas en hostelería: tributan en el IRPF y no en el IVA"
 sources:
   - name: "Ley del IRPF, artículo 17 (BOE)"
     url: "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764"

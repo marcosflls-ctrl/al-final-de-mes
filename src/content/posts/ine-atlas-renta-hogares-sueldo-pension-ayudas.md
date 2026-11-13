@@ -5,10 +5,8 @@ date: 2026-10-24T09:37:48+00:00
 category: paro
 tags: ["ine", "renta", "pensiones", "salarios", "ingreso-minimo-vital"]
 pendiente: false
-image: /img/fotos/ine-atlas-renta-hogares-sueldo-pension-ayudas.webp
-imageAlt: "Monedas y billetes de euro sobre una mesa"
-imageCredit: "alandsmann / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/coins-money-poverty-homeless-8975531/"
+image: /img/articulos/ine-atlas-renta-hogares-sueldo-pension-ayudas.webp
+imageAlt: "Más de la mitad vive del sueldo y 1 de cada 4 de la pensión"
 sources:
   - name: "INE · Atlas de Distribución de Renta de los Hogares. Año 2024"
     url: "https://www.ine.es/dyngs/Prensa/ADRH2024.htm"

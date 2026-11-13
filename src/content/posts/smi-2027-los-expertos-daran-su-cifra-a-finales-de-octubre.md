@@ -11,10 +11,8 @@ sources:
     url: "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11430"
   - name: "Cinco Días: Yolanda Díaz, a los empresarios: “Mejoren los salarios. El esfuerzo no puede caer solo en el SMI”"
     url: "https://cincodias.elpais.com/economia/foro-creo-creando-oportunidades/2026-10-15/yolanda-diaz-a-los-empresarios-mejoren-los-salarios-el-esfuerzo-no-puede-caer-solo-en-el-smi.html"
-image: /img/fotos/smi-2027-los-expertos-daran-su-cifra-a-finales-de-octubre.webp
-imageAlt: "Billetes de euro"
-imageCredit: "fotoblend / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/energy-save-energy-electricity-7551283/"
+image: /img/articulos/smi-2027-los-expertos-daran-su-cifra-a-finales-de-octubre.webp
+imageAlt: "SMI 2027: los expertos darán su cifra a finales de octubre"
 ---
 
 La ministra de Trabajo, Yolanda Díaz, ha convocado a la comisión de expertos del salario mínimo (SMI) para preparar la subida de 2027. Les ha pedido su recomendación **como tarde para finales de octubre**. Todavía no hay cifra: es una propuesta en marcha, no una subida aprobada. Lo ha explicado este jueves en el Foro CREO, organizado por Cinco Días.

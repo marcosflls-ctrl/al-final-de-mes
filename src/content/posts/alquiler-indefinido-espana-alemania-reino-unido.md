@@ -5,10 +5,8 @@ date: 2026-10-24T09:49:23+00:00
 category: vivienda
 tags: ["alquiler", "decreto-vivienda", "contratos-indefinidos", "inquilinos", "desahucios"]
 pendiente: true
-image: /img/fotos/alquiler-indefinido-espana-alemania-reino-unido.webp
-imageAlt: "Cartel de se alquila en la fachada de un edificio de viviendas"
-imageCredit: "merlinlightpainting / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/woman-beauty-light-painting-face-6063087/"
+image: /img/articulos/alquiler-indefinido-espana-alemania-reino-unido.webp
+imageAlt: "Alquiler indefinido: España frente a Alemania y Reino Unido"
 sources:
   - name: "La Moncloa: Medidas urgentes para el fomento y protección del derecho a la vivienda"
     url: "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/vivienda-agenda-urbana/paginas/2026/decreto-vivienda-medidas.aspx"
