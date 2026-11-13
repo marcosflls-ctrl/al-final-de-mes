@@ -28,9 +28,9 @@ La fuente no detalla qué artículo se tocaría, qué redacción tendría la ref
 
 ## ¿Cómo se actualizan hoy las pensiones?
 
-Ahora mismo la subida con el IPC no está en la Constitución. Está en la ley. <cite index="2-3">La Ley 21/2021 estableció la revalorización de las pensiones conforme al IPC medio interanual calculado entre diciembre del año anterior y noviembre del año en curso.</cite>
+Ahora mismo la subida con el IPC no está en la Constitución. Está en la ley. La Ley 21/2021 estableció la revalorización de las pensiones conforme al IPC medio interanual calculado entre diciembre del año anterior y noviembre del año en curso.
 
-El Gobierno la aplica cada año con una norma. Para 2026, el Real Decreto-ley 3/2026 fijó <cite index="7-1">la revalorización en el valor medio de las tasas de variación interanual del IPC de los doce meses previos a diciembre, con un resultado del 2,7 %.</cite>
+El Gobierno la aplica cada año con una norma. Para 2026, el Real Decreto-ley 3/2026 fijó la revalorización en el valor medio de las tasas de variación interanual del IPC de los doce meses previos a diciembre, con un resultado del 2,7 %.
 
 Lo que propone Sánchez es subir ese principio a rango constitucional. Eso, según se desprende de su discurso, no dependería de cada Gobierno ni de cada ley anual. Un cambio así solo llegaría si se aprobara la reforma, algo que la fuente no concreta.
 

@@ -38,11 +38,11 @@ El artículo 41 bis.3 del Reglamento del IRPF dice que la vivienda que se transm
 
 El Supremo no lo lee de forma aislada. Lo interpreta junto con el resto del artículo, que ya tiene en cuenta las rupturas matrimoniales. También lo vincula con la igualdad ante la ley (artículo 14 de la Constitución). Así evita que quien tuvo que irse pague más impuestos que quien se quedó.
 
-No es un criterio nuevo. <cite index="11-2">El Supremo ya fijó doctrina en la sentencia 553/2023</cite>, y el tribunal se remitió a ella. Según Idealista, la Abogacía del Estado se allanó porque ya había jurisprudencia.
+No es un criterio nuevo. El Supremo ya fijó doctrina en la sentencia 553/2023, y el tribunal se remitió a ella. Según Idealista, la Abogacía del Estado se allanó porque ya había jurisprudencia.
 
 ## ¿Ya está en la norma?
 
-Sí. <cite index="3-2">El Real Decreto-ley 29/2026, de 6 de octubre, se publicó en el BOE del 7 de octubre.</cite> <cite index="1-17,1-19">Su disposición final tercera modifica el Reglamento del IRPF y contempla los supuestos de separación, divorcio o nulidad.</cite> <cite index="5-2">El cambio afecta al apartado 3 del artículo 41 bis, por la disposición final 3.1.</cite>
+Sí. El Real Decreto-ley 29/2026, de 6 de octubre, se publicó en el BOE del 7 de octubre. Su disposición final tercera modifica el Reglamento del IRPF y contempla los supuestos de separación, divorcio o nulidad. El cambio afecta al apartado 3 del artículo 41 bis, por la disposición final 3.1.
 
 El texto reglamentario recoge ahora lo que ya decía la jurisprudencia. Si uno de los cónyuges abandona la vivienda por la ruptura, el requisito de ocupación efectiva también se cumple si el otro continúa en ella.
 
@@ -65,8 +65,8 @@ Con la exención reconocida, esa ganancia patrimonial no tributa. Si la reinvers
 
 La sentencia resuelve solo la cuestión de la residencia. El resto de condiciones de la exención sigue vigente:
 
-- Hay que reinvertir el importe obtenido en una nueva vivienda habitual. <cite index="16-3">La reinversión debe hacerse en un período no superior a dos años, que pueden ser anteriores o posteriores a la venta.</cite>
-- <cite index="12-5">La nueva vivienda también tiene que tener la consideración de habitual.</cite>
+- Hay que reinvertir el importe obtenido en una nueva vivienda habitual. La reinversión debe hacerse en un período no superior a dos años, que pueden ser anteriores o posteriores a la venta.
+- La nueva vivienda también tiene que tener la consideración de habitual.
 - Si reinviertes solo una parte, la exención es proporcional.
 
 ## ¿Qué puedes hacer si Hacienda te lo ha negado?

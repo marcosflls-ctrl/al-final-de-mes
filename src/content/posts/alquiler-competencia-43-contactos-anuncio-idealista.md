@@ -15,7 +15,7 @@ sources:
     url: "https://www.idealista.com/news/inmobiliario/vivienda/2026/10/26/920389-la-competencia-por-cada-vivienda-en-alquiler-se-quintuplica-en-los-ultimos-8-anos"
 ---
 
-Alquilar un piso es hoy mucho más competido que hace ocho años. En el tercer trimestre de 2026, cada anuncio de alquiler en idealista recibió de media 43 contactos antes de darse de baja. En el mismo periodo de 2018 recibía 8. <cite index="1-1,1-2">Es un aumento del 405%, según un estudio publicado por idealista.</cite>
+Alquilar un piso es hoy mucho más competido que hace ocho años. En el tercer trimestre de 2026, cada anuncio de alquiler en idealista recibió de media 43 contactos antes de darse de baja. En el mismo periodo de 2018 recibía 8. Es un aumento del 405%, según un estudio publicado por idealista.
 
 El dato mide contactos por anuncio, no personas distintas. Una misma familia puede escribir a varios pisos. Aun así, sirve para ver cuánto ha crecido la demanda frente a la oferta.
 

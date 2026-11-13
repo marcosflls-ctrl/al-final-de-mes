@@ -2,7 +2,7 @@
 title: "Qué cambiaría en tu bolsillo si gobierna el PSOE tras el 29N"
 description: "Alquiler, pensiones, salario mínimo, jornada e impuestos: lo que ha propuesto el PSOE antes de las elecciones del 29 de noviembre y qué apoyos necesitaría."
 date: 2026-10-20T17:00:00+02:00
-updated: 2026-11-13T10:00:00+01:00
+updated: 2026-11-13T10:30:00+01:00
 category: hacienda
 guia: true
 orden: 4
@@ -12,6 +12,8 @@ imageAlt: "Fachada del Congreso de los Diputados"
 imageCredit: "Antonio.velez / Wikimedia Commons (CC BY-SA 3.0 es)"
 imageCreditUrl: "https://commons.wikimedia.org/wiki/File:Espa%C3%B1a_-_Madrid_-_Palacio_de_las_Cortes_-_Fachada.JPG"
 sources:
+  - name: "El Diario de Madrid: la Diputación Permanente convalida el Real Decreto-ley 29/2026 (35 a 34) y rechaza el 28/2026 (12/11/2026)"
+    url: "https://www.eldiariodemadrid.es/articulo/vivienda/congreso-decretos-vivienda-prorroga-alquileres-renovacion-automatica/20261112162933146758.html"
   - name: "Infobae: Sánchez abre la precampaña en Dos Hermanas (10/10/2026)"
     url: "https://www.infobae.com/espana/2026/10/10/el-psoe-abre-la-precampana-para-el-29n-con-sanchez-como-un-perro-que-no-tiene-amo-y-promete-que-la-politica-de-vivienda-no-tiene-fecha-de-caducidad/"
   - name: "BOE: Real Decreto-ley 29/2026, de 6 de octubre"
@@ -94,7 +96,7 @@ Para gobernar necesitaría al **Frente Amplio** (Sumar, IU, Más Madrid y los co
 
 ## Lo que queda por saber
 
-- **El 12 de noviembre**, si la Diputación Permanente convalida el decreto de vivienda.
+- **El 12 de noviembre** la Diputación Permanente convalidó el decreto de vivienda (29/2026) y rechazó el de los contratos renovables automáticamente (28/2026).
 - **El programa del PSOE**, con sus cifras. Cuando se publique, actualizaremos esta guía.
 
 *Información electoral divulgativa. No es una recomendación de voto: recogemos lo que dicen los partidos con su fuente.*

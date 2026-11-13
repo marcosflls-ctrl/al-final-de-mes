@@ -45,7 +45,7 @@ Si quieres ver cómo está el gas en la factura, lo explicamos en [El gas supera
 
 ## ¿Cómo ha evolucionado el IPC este año?
 
-En septiembre el IPC fue del 4,9%, <cite index="16-7,16-8">seis décimas más que en agosto y la tasa más alta desde febrero de 2023</cite>. Esta es la serie de tasas anuales del INE:
+En septiembre el IPC fue del 4,9%, seis décimas más que en agosto y la tasa más alta desde febrero de 2023. Esta es la serie de tasas anuales del INE:
 
 | Mes | IPC anual |
 |---|---|
@@ -58,18 +58,18 @@ En septiembre el IPC fue del 4,9%, <cite index="16-7,16-8">seis décimas más qu
 | Septiembre 2026 | 4,9% |
 | Octubre 2026 (avance) | 4,9% |
 
-Los datos de diciembre a septiembre son los <cite index="12-3">publicados por el INE en su tabla de variaciones</cite>.
+Los datos de diciembre a septiembre son los publicados por el INE en su tabla de variaciones.
 
 ## ¿Qué supone para la subida de las pensiones de 2027?
 
-Es lo que más va a mirar mucha gente. Las pensiones contributivas se revalorizan con la media del IPC anual de los doce meses que van de diciembre a noviembre. <cite index="2-3">Así lo fija la ley de garantía del poder adquisitivo de 2021.</cite> Para 2026 se usó la media de diciembre de 2024 a noviembre de 2025, y salió un 2,7%.
+Es lo que más va a mirar mucha gente. Las pensiones contributivas se revalorizan con la media del IPC anual de los doce meses que van de diciembre a noviembre. Así lo fija la ley de garantía del poder adquisitivo de 2021. Para 2026 se usó la media de diciembre de 2024 a noviembre de 2025, y salió un 2,7%.
 
 Para 2027 faltan dos datos: el de octubre definitivo y el de noviembre. Con la serie anterior y el avance de hoy se puede hacer una cuenta aproximada:
 
 - Si noviembre también fuera del 4,9%, la media saldría en torno al **3,6%**.
 - Si noviembre bajara al 4,0%, saldría en torno al **3,5%**.
 
-Es un cálculo nuestro, con décimas redondeadas. No es una previsión oficial. La cifra real la fijará el IPC de noviembre. Como referencia, el año pasado <cite index="7-5,7-6">el avance de noviembre salió el 28 de noviembre y el dato definitivo se confirmó el 12 de diciembre</cite>.
+Es un cálculo nuestro, con décimas redondeadas. No es una previsión oficial. La cifra real la fijará el IPC de noviembre. Como referencia, el año pasado el avance de noviembre salió el 28 de noviembre y el dato definitivo se confirmó el 12 de diciembre.
 
 Ejemplo con pensiones de distinta cuantía (importes mensuales, solo ilustrativos):
 

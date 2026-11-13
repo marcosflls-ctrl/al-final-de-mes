@@ -91,7 +91,7 @@ Lo que recoge el programa:
 
 En octubre, Feijóo había hablado de avales de hasta el 100 % del precio para los jóvenes. Según los resúmenes del programa, la cifra que recoge es la del 20 % del valor para cubrir la entrada.
 
-El PP **votó en contra** de los decretos de alquiler del Gobierno, que topan las subidas y prorrogan contratos, y defiende construir más en lugar de intervenir el mercado. El decreto que está en vigor, el 29/2026, se votará el 12 de noviembre. Lo explicamos en [vivienda y elecciones del 29N](/vivienda/vivienda-elecciones-29n-balance-y-propuestas/).
+El PP **votó en contra** de los decretos de alquiler del Gobierno, que topan las subidas y prorrogan contratos, y defiende construir más en lugar de intervenir el mercado. El decreto que está en vigor, el 29/2026, se convalidó el 12 de noviembre por 35 votos a 34, con el voto en contra del PP. Lo explicamos en [vivienda y elecciones del 29N](/vivienda/vivienda-elecciones-29n-balance-y-propuestas/).
 
 ## Luz y gasolina
 

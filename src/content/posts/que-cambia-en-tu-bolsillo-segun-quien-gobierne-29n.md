@@ -2,7 +2,7 @@
 title: "Qué cambia en tu bolsillo según quién gobierne tras el 29N"
 description: "IRPF, IVA, pensiones, alquiler, salario mínimo y luz: lo que proponen PP, PSOE, Vox y la izquierda, tema a tema, y qué combinaciones dan las encuestas."
 date: 2026-10-20T17:00:00+02:00
-updated: 2026-11-13T10:00:00+01:00
+updated: 2026-11-13T10:30:00+01:00
 category: hacienda
 guia: true
 orden: 2
@@ -12,6 +12,8 @@ imageAlt: "Sede del Ministerio de Hacienda en Madrid"
 imageCredit: "Luis García (Zaqarbal) / Wikimedia Commons (CC BY-SA 3.0)"
 imageCreditUrl: "https://commons.wikimedia.org/wiki/File:Real_Casa_de_la_Aduana_(Madrid)_05.jpg"
 sources:
+  - name: "El Diario de Madrid: la Diputación Permanente convalida el Real Decreto-ley 29/2026 (35 a 34) y rechaza el 28/2026 (12/11/2026)"
+    url: "https://www.eldiariodemadrid.es/articulo/vivienda/congreso-decretos-vivienda-prorroga-alquileres-renovacion-automatica/20261112162933146758.html"
   - name: "Infobae: el programa de Vox para el 29N, «Es sentido común», 115 medidas (12/11/2026)"
     url: "https://www.infobae.com/espana/2026/11/12/vox-lleva-al-29-n-un-programa-electoral-con-repatriaciones-y-deportaciones-de-migrantes-prioridad-nacional-y-derogacion-de-leyes-de-genero/"
   - name: "OKDiario: las 13 grandes medidas del programa de Vox para el 29N (12/11/2026)"
@@ -118,7 +120,7 @@ Las encuestas pueden fallar, y más a cinco semanas de las elecciones. El CIS y 
 ## Lo que pasa gane quien gane
 
 - **La subida de las pensiones de 2027** depende del IPC de noviembre, que se conoce a finales de mes. El Gobierno quiere aprobarla antes de fin de año, aunque esté en funciones.
-- **El decreto de alquiler 29/2026** se vota el **12 de noviembre**, antes de las elecciones. Si se convalida, sigue en vigor hasta que otro Gobierno lo cambie.
+- **El decreto de alquiler 29/2026** se **convalidó el 12 de noviembre** por 35 votos a 34. Sigue en vigor hasta que otro Gobierno lo cambie.
 - **El salario mínimo de 2027** se está negociando ahora. Lo seguimos en [salario mínimo 2027](/paro/salario-minimo-2027/).
 
 ## Guías prácticas para el 29N

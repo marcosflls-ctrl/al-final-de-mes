@@ -2,11 +2,14 @@
 title: "Declaración de la renta 2026: novedades, deducciones y fechas"
 description: "Qué cambia en la renta de 2026, que se presenta en 2027: deducción para sueldos bajos, coche eléctrico, obras de eficiencia, placas solares, alquiler y quién declara."
 date: 2026-10-17T10:05:00+00:00
+updated: 2026-11-13T10:30:00+01:00
 category: hacienda
 guia: true
 orden: 2
 tags: [renta, irpf, deducciones, declaracion-renta, hacienda]
 sources:
+  - name: "El Diario de Madrid: la Diputación Permanente convalida el Real Decreto-ley 29/2026 (35 a 34) y rechaza el 28/2026 (12/11/2026)"
+    url: "https://www.eldiariodemadrid.es/articulo/vivienda/congreso-decretos-vivienda-prorroga-alquileres-renovacion-automatica/20261112162933146758.html"
   - name: "Agencia Tributaria: medidas en materia de tributación del Real Decreto-ley 7/2026 (23/03/2026)"
     url: "https://sede.agenciatributaria.gob.es/Sede/todas-noticias/2026/marzo/23/medidas-materia-tributacion.html"
   - name: "Pérez-Llorca: análisis de las medidas tributarias del Real Decreto-ley 7/2026"
@@ -38,7 +41,7 @@ La declaración de la renta de 2026 recoge lo que has ganado este año y se pres
 - **Coche eléctrico y puntos de recarga:** se mantiene la deducción del **15 %** para lo comprado en 2026.
 - **Obras de eficiencia energética:** siguen las deducciones del 20 %, 40 % y 60 %.
 - **Placas solares:** hay una deducción nueva del 10 % o el 20 % por instalaciones de autoconsumo pagadas en 2026.
-- **Alquiler:** el decreto de vivienda en vigor crea una deducción del 10 % del alquiler, de hasta 1.163 €, pero **depende de que el Congreso lo convalide**.
+- **Alquiler:** el decreto de vivienda en vigor crea una deducción del 10 % del alquiler, de hasta 1.163 €, y el Congreso lo **convalidó el 12 de noviembre**.
 - **Paro:** cobrar la prestación ya no obliga por sí solo a hacer la declaración.
 
 ## Cuándo se presenta
@@ -118,7 +121,7 @@ El Real Decreto-ley 29/2026, de vivienda, en vigor desde el 8 de octubre, recupe
 - Completa para bases imponibles de hasta 23.007,20 €; se reduce poco a poco hasta desaparecer en 33.007,20 €.
 - Ni tú ni nadie de tu unidad familiar puede tener otra vivienda a menos de 50 kilómetros.
 
-**Ojo:** el decreto tiene que convalidarlo la Diputación Permanente del Congreso, con votación prevista el 12 de noviembre. El anterior decreto con esta deducción cayó el 2 de octubre. Si no se convalida, la deducción desaparece. Tampoco está claro si contará el alquiler pagado antes de octubre. Lo tienes todo en la [guía de vivienda y elecciones](/vivienda/vivienda-elecciones-29n-balance-y-propuestas/).
+**Ya es definitivo:** la Diputación Permanente del Congreso convalidó el decreto el 12 de noviembre, por 35 votos a 34. El anterior decreto con esta deducción había caído el 2 de octubre.
 
 ## Lo que no cambia
 
@@ -142,5 +145,5 @@ Tienes más ideas en el artículo sobre [las deducciones y límites para pagar m
 ## Lo que queda por saber
 
 - **Fechas oficiales de la campaña:** llegarán con la orden del modelo 100, previsiblemente en marzo de 2027.
-- **Deducción por alquiler:** depende de la votación del 12 de noviembre.
+- **Deducción por alquiler:** confirmada; el decreto se convalidó el 12 de noviembre.
 - **Elecciones del 29N:** lo que propone cada partido sobre el IRPF está en la [guía de impuestos y elecciones](/hacienda/impuestos-elecciones-29n-balance-y-propuestas/).

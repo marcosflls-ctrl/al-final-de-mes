@@ -27,24 +27,24 @@ Si tienes 52 años o más y estás en paro, hay dos ayudas que se confunden. Son
 | Qué se mira | Solo tus rentas propias | Ingresos, patrimonio y convivientes |
 | Cotiza para jubilación | Sí | No |
 
-El SEPE confirma que <cite index="2-15">la cuantía mensual es el 80 % del IPREM</cite>. Además, <cite index="2-16,2-17">ingresa las cotizaciones de jubilación tomando como base el 125 % de la base mínima del Régimen General</cite>.
+El SEPE confirma que la cuantía mensual es el 80 % del IPREM. Además, ingresa las cotizaciones de jubilación tomando como base el 125 % de la base mínima del Régimen General.
 
 ## ¿Quién puede pedir el subsidio de mayores de 52?
 
 Según el SEPE y la OCU, necesitas:
 
 - Tener 52 años en el momento en que se produce la situación de desempleo.
-- <cite index="2-2">Acreditar situación legal de desempleo desde el 1 de noviembre de 2024, con al menos 90 días cotizados.</cite>
-- <cite index="2-8">Haber cotizado por desempleo en España al menos seis años a lo largo de tu vida laboral.</cite>
+- Acreditar situación legal de desempleo desde el 1 de noviembre de 2024, con al menos 90 días cotizados.
+- Haber cotizado por desempleo en España al menos seis años a lo largo de tu vida laboral.
 - Cumplir todos los requisitos de una pensión contributiva de jubilación, salvo la edad.
 - Estar inscrito como demandante de empleo y haber firmado el acuerdo de actividad.
 - No superar el límite de rentas propias.
 
 Ese límite es el <strong>75 % del SMI sin pagas extra</strong>. Con el SMI de 2026 (1.221 euros), son **915,75 euros al mes**. Solo cuentan tus rentas, no las del hogar.
 
-Un dato que la OCU no destaca: el SEPE explica que <cite index="2-14">el subsidio dura hasta que alcances la edad ordinaria de jubilación</cite>. Por eso es un puente hasta la pensión. Si quieres saber cuándo te toca, tienes [el informe con tu fecha exacta](/pensiones/informe-edad-jubilacion-fecha-exacta-seguridad-social/) y la [calculadora de jubilación](/pensiones/calculadora-jubilacion/).
+Un dato que la OCU no destaca: el SEPE explica que el subsidio dura hasta que alcances la edad ordinaria de jubilación. Por eso es un puente hasta la pensión. Si quieres saber cuándo te toca, tienes [el informe con tu fecha exacta](/pensiones/informe-edad-jubilacion-fecha-exacta-seguridad-social/) y la [calculadora de jubilación](/pensiones/calculadora-jubilacion/).
 
-El SEPE también marca un plazo para pedirlo. <cite index="1-15,1-16">Si lo solicitas dentro de los quince días siguientes al hecho que da derecho, cobras desde el día siguiente. Si te retrasas, cobras desde la fecha de la solicitud.</cite>
+El SEPE también marca un plazo para pedirlo. Si lo solicitas dentro de los quince días siguientes al hecho que da derecho, cobras desde el día siguiente. Si te retrasas, cobras desde la fecha de la solicitud.
 
 ## ¿Puedo cobrar el subsidio y el IMV a la vez?
 
@@ -56,20 +56,20 @@ Puede ser, pero no es automático. El IMV tiene en cuenta los ingresos de todo e
 
 La pasarela es un trámite simplificado para pasar del subsidio por desempleo al IMV cuando el subsidio se agota. La creó el Real Decreto-ley 2/2024, de 21 de mayo. Funciona así:
 
-1. <cite index="13-4">En el trimestre previo al agotamiento, el SEPE te informa de que puedes enviar tus datos y los de tu unidad familiar.</cite>
-2. <cite index="13-5">Tienes que dar tu consentimiento y, si procede, firmar una declaración responsable del consentimiento de tus convivientes.</cite>
-3. <cite index="13-6">Con tu consentimiento, el SEPE envía la información al INSS en los diez días siguientes al agotamiento.</cite>
-4. <cite index="13-7">Si se reconoce el IMV, se cobra desde el primer día del mes siguiente al fin del subsidio.</cite>
+1. En el trimestre previo al agotamiento, el SEPE te informa de que puedes enviar tus datos y los de tu unidad familiar.
+2. Tienes que dar tu consentimiento y, si procede, firmar una declaración responsable del consentimiento de tus convivientes.
+3. Con tu consentimiento, el SEPE envía la información al INSS en los diez días siguientes al agotamiento.
+4. Si se reconoce el IMV, se cobra desde el primer día del mes siguiente al fin del subsidio.
 
-La pasarela no garantiza el IMV: el INSS comprueba los requisitos. Si no puedes usarla o no das tu consentimiento, <cite index="13-9">puedes pedir el IMV en el portal del INSS, por correo postal o en los CAISS</cite>.
+La pasarela no garantiza el IMV: el INSS comprueba los requisitos. Si no puedes usarla o no das tu consentimiento, puedes pedir el IMV en el portal del INSS, por correo postal o en los CAISS.
 
-El mismo decreto contiene otra medida útil. <cite index="13-10">Si el subsidio ya se ha extinguido cuando pides el IMV, no se cuenta como ingreso.</cite> Así no reduce la cuantía.
+El mismo decreto contiene otra medida útil. Si el subsidio ya se ha extinguido cuando pides el IMV, no se cuenta como ingreso. Así no reduce la cuantía.
 
 Esta pasarela afecta sobre todo a subsidios con fecha de fin. El de mayores de 52 años dura hasta la jubilación, así que quien lo cobra suele plantearse el IMV como complemento y no como relevo.
 
 ## ¿Qué tienes que hacer para no perder el subsidio?
 
-Tienes que justificar cada año que sigues cumpliendo el límite de rentas. El SEPE exige <cite index="2-24">una declaración de rentas cada doce meses desde el nacimiento del derecho o desde la última reanudación</cite>. La OCU precisa que, al cumplirse el año, tienes **15 días hábiles** para presentarla. Si no lo haces, se suspenden el pago y las cotizaciones. Puedes pedir la reanudación fuera de plazo, pero no recuperas lo perdido durante la suspensión.
+Tienes que justificar cada año que sigues cumpliendo el límite de rentas. El SEPE exige una declaración de rentas cada doce meses desde el nacimiento del derecho o desde la última reanudación. La OCU precisa que, al cumplirse el año, tienes **15 días hábiles** para presentarla. Si no lo haces, se suspenden el pago y las cotizaciones. Puedes pedir la reanudación fuera de plazo, pero no recuperas lo perdido durante la suspensión.
 
 Si estás cerca de agotar otro subsidio, revisa cuanto antes quién vive empadronado en tu casa. Según la OCU, personas empadronadas distintas de las que contempla la pasarela pueden obligarte a pedir el IMV por el procedimiento ordinario.
 

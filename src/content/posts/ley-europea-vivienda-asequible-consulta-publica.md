@@ -23,7 +23,7 @@ Es una propuesta, no una norma. Hoy no cambia nada en tu alquiler, en tu hipotec
 
 Es una propuesta de Reglamento de la Unión Europea que presentó la Comisión Europea el 9 de septiembre. Su objetivo es fijar un marco común para que los Estados miembros puedan justificar medidas que garanticen el acceso a la vivienda. También fija criterios compartidos para identificar zonas con mercados tensionados.
 
-La Comisión publicó ese mismo día una Recomendación (UE) 2026/2069. <cite index="11-4">Complementa la propuesta con medidas para aumentar la oferta de vivienda en zonas tensionadas.</cite> <cite index="11-5">La propuesta de Reglamento fue adoptada por la Comisión el 9 de septiembre de 2026.</cite>
+La Comisión publicó ese mismo día una Recomendación (UE) 2026/2069. Complementa la propuesta con medidas para aumentar la oferta de vivienda en zonas tensionadas. La propuesta de Reglamento fue adoptada por la Comisión el 9 de septiembre de 2026.
 
 ## ¿Qué dice la propuesta?
 
