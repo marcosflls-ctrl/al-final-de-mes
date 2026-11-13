@@ -1,18 +1,20 @@
 ---
-title: "Seguro de impago: lo pagaría el casero, no el inquilino"
-description: "El decreto de alquiler pendiente de convalidar impide exigir al inquilino el seguro de impago. Lo pagaría el propietario y ya sube las rentas nuevas."
+title: "Seguro de impago: ya no se le puede exigir al inquilino"
+description: "El decreto de vivienda, convalidado el 12 de noviembre, prohíbe exigir al inquilino el seguro de impago. Lo paga el propietario, y ya encarece las rentas nuevas."
 date: 2026-10-21T22:48:23+00:00
+updated: 2026-11-13T10:30:00+01:00
 category: vivienda
 tags: ["alquiler", "seguro-de-impago", "propietarios", "inquilinos", "decreto-vivienda"]
-pendiente: true
 image: /img/articulos/seguro-impago-alquiler-propietario-decreto-pendiente.webp
-imageAlt: "Seguro de impago: lo pagaría el casero, no el inquilino"
+imageAlt: "Seguro de impago: ya no se le puede exigir al inquilino"
 sources:
+  - name: "El Diario de Madrid: la Diputación Permanente convalida el Real Decreto-ley 29/2026 (35 a 34) y rechaza el 28/2026 (12/11/2026)"
+    url: "https://www.eldiariodemadrid.es/articulo/vivienda/congreso-decretos-vivienda-prorroga-alquileres-renovacion-automatica/20261112162933146758.html"
   - name: "ABC Economía: La obligación de que el propietario asuma el seguro de impago presiona al alza los nuevos alquileres"
     url: "https://www.abc.es/economia/cuentas-corrientes/obligacion-propietario-asuma-seguro-impago-presiona-alza-20261021012102-nt.html"
 ---
 
-Si el decreto que reforma el alquiler sale adelante, **no se podrá exigir al inquilino que pague el seguro de impago**. Lo tendrá que contratar y costear el propietario, si quiere tenerlo. El texto aún está **pendiente de aprobación en la Diputación Permanente del Congreso**, así que todavía no es definitivo.
+**Ya no se puede exigir al inquilino que pague el seguro de impago.** Lo tiene que contratar y costear el propietario, si quiere tenerlo. Lo establece el Real Decreto-ley 29/2026, que la Diputación Permanente del Congreso **convalidó el 12 de noviembre** por 35 votos a 34.
 
 Según publica ABC, algunos arrendadores ya reaccionan con **subidas en las rentas de los contratos nuevos**. Otros prefieren no sacar la vivienda al mercado mientras dure la incertidumbre.
 
@@ -71,7 +73,7 @@ Ojo con la lectura: el porcentaje mide el peso del impago entre las incidencias 
 
 ## ¿Qué te toca hacer?
 
-- **Si eres inquilino:** por ahora nada cambia por ley. Si te piden pagar el seguro de impago, ten en cuenta que el decreto lo prohíbe, pero solo si se convalida.
+- **Si eres inquilino:** si te piden pagar el seguro de impago, el decreto ya convalidado lo prohíbe: no tienes que pagarlo.
 - **Si eres propietario:** revisa tu póliza de continente y de impago, y comprueba si cubre actos vandálicos y con qué franquicia.
 - Para valorar tu caso, tienes nuestra guía [comprar o alquilar](/vivienda/comprar-o-alquilar/). Sobre otros cambios del decreto, mira [la prórroga de dos años](/vivienda/prorroga-del-alquiler-de-dos-anos-no-es-automatica-y-hay-que-pedirla/) y [descontar una reparación del alquiler](/vivienda/podras-descontar-del-alquiler-una-reparacion-si-el-dueno-no-responde-en-15/).
 

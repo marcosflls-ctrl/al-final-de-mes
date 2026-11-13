@@ -2,7 +2,7 @@
 title: "Qué cambiaría en tu bolsillo si gobierna el PP tras el 29N"
 description: "IVA, IRPF, pensiones, vivienda, luz y autónomos: lo que dice el programa del PP para el 29N, «La Reconstrucción Nacional», y qué apoyos necesitaría."
 date: 2026-10-20T17:00:00+02:00
-updated: 2026-11-10T16:00:00+01:00
+updated: 2026-11-13T10:00:00+01:00
 category: hacienda
 guia: true
 orden: 3
@@ -42,7 +42,7 @@ sources:
 
 Esta guía reúne lo que el **Partido Popular** ha propuesto sobre los temas que más notan los hogares —impuestos, pensiones, vivienda, energía y trabajo— de cara a las elecciones generales del **29 de noviembre de 2026**. No es una predicción ni una recomendación de voto: recoge lo que el partido ha dicho, con su fecha, para que puedas comparar. Hay una guía igual para cada escenario de gobierno y una [comparativa de todos](/hacienda/que-cambia-en-tu-bolsillo-segun-quien-gobierne-29n/).
 
-**Actualizado el 10 de noviembre:** el PP presentó ese día su programa, **«La Reconstrucción Nacional»**, con 249 medidas. Esta guía ya recoge lo que dice el programa; donde solo hay declaraciones anteriores, lo indicamos. El partido ha dejado ocho medidas para anunciarlas durante la campaña, y el programa no incluye una estimación de lo que costarían las rebajas de impuestos.
+**Actualizado el 10 de noviembre:** el PP presentó ese día su programa, **«La Reconstrucción Nacional»**, con 249 medidas. Esta guía ya recoge lo que dice el programa; donde solo hay declaraciones anteriores, lo indicamos. Vox publicó el suyo el 12 de noviembre; lo comparamos en [un Gobierno de PP y Vox](/hacienda/que-cambiaria-con-un-gobierno-pp-vox-29n/). El PP ha dejado ocho medidas para anunciarlas durante la campaña, y el programa no incluye una estimación de lo que costarían las rebajas de impuestos.
 
 ## Lo esencial
 
@@ -91,7 +91,7 @@ Lo que recoge el programa:
 
 En octubre, Feijóo había hablado de avales de hasta el 100 % del precio para los jóvenes. Según los resúmenes del programa, la cifra que recoge es la del 20 % del valor para cubrir la entrada.
 
-El PP **votó en contra** de los decretos de alquiler del Gobierno, que topan las subidas y prorrogan contratos, y defiende construir más en lugar de intervenir el mercado. El decreto que está en vigor, el 29/2026, se votará el 12 de noviembre. Lo explicamos en [vivienda y elecciones del 29N](/vivienda/vivienda-elecciones-29n-balance-y-propuestas/).
+El PP **votó en contra** de los decretos de alquiler del Gobierno, que topan las subidas y prorrogan contratos, y defiende construir más en lugar de intervenir el mercado. El decreto que está en vigor, el 29/2026, se convalidó el 12 de noviembre por 35 votos a 34, con el voto en contra del PP. Lo explicamos en [vivienda y elecciones del 29N](/vivienda/vivienda-elecciones-29n-balance-y-propuestas/).
 
 ## Luz y gasolina
 

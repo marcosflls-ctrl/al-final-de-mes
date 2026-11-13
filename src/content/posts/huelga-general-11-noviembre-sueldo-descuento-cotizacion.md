@@ -18,7 +18,7 @@ Lo explica la guía que ha elaborado KPMG Abogados para las empresas y que recog
 
 ## ¿Quién ha convocado la huelga y por qué?
 
-La convocan los sindicatos. Según la información recogida, sus objetivos son garantizar el acceso a una vivienda digna, subir los salarios y el SMI, y recuperar poder adquisitivo en prestaciones y pensiones frente al aumento del coste de la vida. <cite index="1-3,1-9">El presidente del Gobierno ha dicho que el Ejecutivo solo puede respetar este derecho constitucional.</cite>
+La convocan los sindicatos. Según la información recogida, sus objetivos son garantizar el acceso a una vivienda digna, subir los salarios y el SMI, y recuperar poder adquisitivo en prestaciones y pensiones frente al aumento del coste de la vida. El presidente del Gobierno ha dicho que el Ejecutivo solo puede respetar este derecho constitucional.
 
 ## ¿Cuándo empieza y cuándo termina?
 

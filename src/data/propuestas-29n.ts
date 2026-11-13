@@ -3,7 +3,7 @@
 // por temas, donde está la fuente de cada dato. Si cambia algo allí, hay que cambiarlo también aquí.
 // Un partido sin entrada en un tema sale como «Sin propuesta concreta recogida».
 
-export const ACTUALIZADO = '10 de noviembre de 2026';
+export const ACTUALIZADO = '13 de noviembre de 2026';
 export const PARTIDOS = ['PP', 'Vox', 'PSOE', 'Sumar', 'Podemos'] as const;
 type Partido = (typeof PARTIDOS)[number];
 type Tema = { tema: string; propuestas: Partial<Record<Partido, string>> };
@@ -13,7 +13,7 @@ const IRPF: Tema = {
   tema: 'IRPF',
   propuestas: {
     PP: 'Actualizarlo con la inflación, salario mínimo exento y rebaja para menores de 35',
-    Vox: 'Mínimo exento de 22.000 € y solo dos tipos, del 15 % y el 25 %',
+    Vox: 'Bajarlo y simplificarlo, con rebaja por hijos (sin cifras)',
     PSOE: 'Más progresividad, sin cifras',
     Sumar: 'Que paguen más las rentas, patrimonios y herencias altas',
     Podemos: 'Que paguen más las grandes empresas y patrimonios',
@@ -26,7 +26,7 @@ export const PERFILES: Perfil[] = [
     temas: [
       IRPF,
       { tema: 'Jornada', propuestas: { PP: 'No apoyó la reducción a 37,5 horas', Vox: 'En contra de reducirla por ley', PSOE: '36 horas antes de 2030', Sumar: 'Impulsó las 37,5 horas', Podemos: '35 horas' } },
-      { tema: 'Otras', propuestas: { PP: 'Autónomos: cuota cero el primer año y sin IVA por debajo de 85.000 €', Sumar: 'Registro horario digital' } },
+      { tema: 'Otras', propuestas: { PP: 'Autónomos: cuota cero el primer año y sin IVA por debajo de 85.000 €', Vox: 'Autónomos: cuota cero si ganan menos del salario mínimo', Sumar: 'Registro horario digital' } },
     ],
     guia: { href: '/paro/empleo-elecciones-29n-balance-y-propuestas/', texto: 'empleo y elecciones del 29N' },
   },
@@ -42,7 +42,7 @@ export const PERFILES: Perfil[] = [
     id: 'pensionista', etiqueta: 'Cobro una pensión', titulo: 'Si cobras una pensión',
     temas: [
       { tema: 'Subida con el IPC', propuestas: { PP: 'Sí', Vox: 'Pagarlas «como sea»', PSOE: 'Sí; la de 2027, aprobada antes de fin de año', Sumar: 'Sí' } },
-      { tema: 'El sistema', propuestas: { PP: 'Mantener el sistema público y un pacto de Estado por la dependencia', Vox: 'Un modelo mixto que añada capitalización', PSOE: 'Acusa a PP y Vox de querer recortar', Sumar: '«No hay ningún riesgo»' } },
+      { tema: 'El sistema', propuestas: { PP: 'Mantener el sistema público y un pacto de Estado por la dependencia', Vox: 'Sostenerlo con más empleo y natalidad, sin capitalización', PSOE: 'Acusa a PP y Vox de querer recortar', Sumar: '«No hay ningún riesgo»' } },
     ],
     guia: { href: '/pensiones/pensiones-elecciones-29n-balance-y-propuestas/', texto: 'pensiones y elecciones del 29N' },
   },
@@ -50,15 +50,15 @@ export const PERFILES: Perfil[] = [
     id: 'inquilino', etiqueta: 'Vivo de alquiler', titulo: 'Si vives de alquiler',
     temas: [
       { tema: 'Decretos de alquiler', propuestas: { PP: 'En contra', Vox: 'En contra', PSOE: 'Mantenerlos y reforzarlos', Sumar: 'Ir más allá: contratos indefinidos y rentas congeladas' } },
-      { tema: 'Qué plantean', propuestas: { PP: 'Derogar la Ley de Vivienda y un millón de hogares en la legislatura', Vox: 'Vivienda social con «prioridad nacional» y liberalizar suelo', PSOE: 'Proteger a los inquilinos', Sumar: 'Más protección frente a los desahucios' } },
+      { tema: 'Qué plantean', propuestas: { PP: 'Derogar la Ley de Vivienda y un millón de hogares en la legislatura', Vox: 'Derogar la Ley de Vivienda y ayudas con «prioridad nacional»', PSOE: 'Proteger a los inquilinos', Sumar: 'Más protección frente a los desahucios' } },
     ],
     guia: { href: '/vivienda/vivienda-elecciones-29n-balance-y-propuestas/', texto: 'vivienda y elecciones del 29N' },
   },
   {
     id: 'comprador', etiqueta: 'Quiero comprar vivienda', titulo: 'Si quieres comprar vivienda',
     temas: [
-      { tema: 'Ayudas a la compra', propuestas: { PP: 'IVA al 4 % para menores de 40, avales para la entrada y «Hucha Hogar Joven»', Vox: 'Liberalizar suelo para que haya más vivienda', PSOE: 'Préstamos para pagar la entrada' } },
-      { tema: 'Oferta de vivienda', propuestas: { PP: 'Un millón de hogares en la legislatura y licencias en tres meses', Vox: 'Construir vivienda social de forma masiva' } },
+      { tema: 'Ayudas a la compra', propuestas: { PP: 'IVA al 4 % para menores de 40, avales para la entrada y «Hucha Hogar Joven»', Vox: 'IVA 0 % en la primera vivienda nueva y sin ITP en la usada', PSOE: 'Préstamos para pagar la entrada' } },
+      { tema: 'Oferta de vivienda', propuestas: { PP: 'Un millón de hogares en la legislatura y licencias en tres meses', Vox: 'Liberalizar el suelo' } },
     ],
     guia: { href: '/vivienda/vivienda-elecciones-29n-balance-y-propuestas/', texto: 'vivienda y elecciones del 29N' },
   },
@@ -73,7 +73,7 @@ export const PERFILES: Perfil[] = [
   {
     id: 'familia', etiqueta: 'Tengo hijos a mi cargo', titulo: 'Si tienes hijos a tu cargo',
     temas: [
-      { tema: 'IRPF', propuestas: { PP: 'Actualizarlo con la inflación', Vox: 'Mínimo exento de 22.000 € para todos', PSOE: 'Más progresividad, sin cifras' } },
+      { tema: 'IRPF', propuestas: { PP: 'Actualizarlo con la inflación', Vox: 'Bajarlo, con rebaja por hijos (sin cifras)', PSOE: 'Más progresividad, sin cifras' } },
       { tema: 'Compra de vivienda', propuestas: { PP: 'IVA al 4 % para menores de 40 y avales para la entrada', PSOE: 'Préstamos para pagar la entrada' } },
     ],
     guia: { href: '/hacienda/impuestos-elecciones-29n-balance-y-propuestas/', texto: 'impuestos y elecciones del 29N' },
@@ -81,8 +81,8 @@ export const PERFILES: Perfil[] = [
   {
     id: 'energia', etiqueta: 'Me preocupan la luz y la gasolina', titulo: 'Luz y gasolina',
     temas: [
-      { tema: 'Impuestos de la energía', propuestas: { PP: 'Quitar el impuesto del 7 % a la producción eléctrica', Vox: 'Bajarlos', PSOE: 'Rebajas solo cuando se disparan los precios', Sumar: 'Sin propuesta fiscal', Podemos: 'Una empresa pública de energía' } },
-      { tema: 'Nucleares', propuestas: { PP: 'Quitar el calendario de cierre en 100 días', Vox: 'Alargar su vida', PSOE: 'Almaraz, hasta 2030', Sumar: 'En contra de alargar algunas' } },
+      { tema: 'Impuestos de la energía', propuestas: { PP: 'Quitar el impuesto del 7 % a la producción eléctrica', Vox: 'Rebaja «masiva» de los de la luz, sin cifras', PSOE: 'Rebajas solo cuando se disparan los precios', Sumar: 'Sin propuesta fiscal', Podemos: 'Una empresa pública de energía' } },
+      { tema: 'Nucleares', propuestas: { PP: 'Quitar el calendario de cierre en 100 días', Vox: 'Quitar el calendario de cierre', PSOE: 'Almaraz, hasta 2030', Sumar: 'En contra de alargar algunas' } },
     ],
     guia: { href: '/luz/luz-carburantes-elecciones-29n-balance-y-propuestas/', texto: 'luz, gasolina y elecciones del 29N' },
   },

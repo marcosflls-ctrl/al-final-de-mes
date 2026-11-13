@@ -18,7 +18,7 @@ Más de la mitad de la población española vive de un sueldo. Una cuarta parte 
 
 ## ¿Cuánto ingresa de media una persona en España?
 
-<cite index="1-2">La renta neta media por persona subió un 6,1% en 2024 y se situó en 15.948 euros.</cite> <cite index="1-9">La renta bruta por persona creció un 6,8% y llegó a 19.716 euros.</cite> El INE publicó la nota el 19 de octubre de 2026. <cite index="1-32">Los datos de 2024 son definitivos.</cite>
+La renta neta media por persona subió un 6,1% en 2024 y se situó en 15.948 euros. La renta bruta por persona creció un 6,8% y llegó a 19.716 euros. El INE publicó la nota el 19 de octubre de 2026. Los datos de 2024 son definitivos.
 
 Un cálculo de ejemplo: 15.948 € netos al año equivalen a unos 1.329 € al mes en 12 pagas. Los 19.716 € brutos son unos 1.643 € al mes. Es una media por persona, y cuenta a niños y a adultos sin ingresos. No es lo que cobra un trabajador.
 
@@ -36,15 +36,15 @@ Según ABC, las zonas con rentas entre 18.000 y 30.000 € dependen más de las 
 
 ## ¿Qué provincias y municipios ganan más y menos?
 
-<cite index="1-28,1-29">Gipuzkoa lidera por provincias, con 20.790 euros de renta neta por habitante, seguida de Bizkaia (19.858) y Madrid (19.277).</cite> <cite index="1-30">Las más bajas son Almería (12.244 euros), Huelva (12.765) y Jaén (12.835).</cite>
+Gipuzkoa lidera por provincias, con 20.790 euros de renta neta por habitante, seguida de Bizkaia (19.858) y Madrid (19.277). Las más bajas son Almería (12.244 euros), Huelva (12.765) y Jaén (12.835).
 
-Entre los municipios de más de 2.000 habitantes, <cite index="1-13">Pozuelo de Alarcón tiene la mayor renta neta por habitante, con 32.612 euros.</cite> <cite index="1-15">Iznalloz (Granada) tiene la menor, con 9.153 euros.</cite>
+Entre los municipios de más de 2.000 habitantes, Pozuelo de Alarcón tiene la mayor renta neta por habitante, con 32.612 euros. Iznalloz (Granada) tiene la menor, con 9.153 euros.
 
 ## ¿Cómo consulto los datos de mi barrio?
 
-El INE publica el Atlas por <cite index="1-38">secciones censales, distritos, municipios, islas, provincias y comunidades autónomas.</cite> Lo encuentras en INEbase, dentro de «Atlas de distribución de renta de los hogares». Hay indicadores del peso de los salarios, las pensiones, el paro y otras prestaciones sobre la renta bruta.
+El INE publica el Atlas por secciones censales, distritos, municipios, islas, provincias y comunidades autónomas. Lo encuentras en INEbase, dentro de «Atlas de distribución de renta de los hogares». Hay indicadores del peso de los salarios, las pensiones, el paro y otras prestaciones sobre la renta bruta.
 
-La cifra sale de <cite index="1-35">datos tributarios de la Agencia Tributaria y de las Haciendas Forales</cite>. Los ingresos se asignan al lugar donde vive quien los cobra.
+La cifra sale de datos tributarios de la Agencia Tributaria y de las Haciendas Forales. Los ingresos se asignan al lugar donde vive quien los cobra.
 
 ## Si quieres comparar con tu caso
 

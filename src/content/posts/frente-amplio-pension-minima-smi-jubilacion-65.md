@@ -21,7 +21,7 @@ Son dos medidas. La coalición calcula que cada una costaría unos 10.000 millon
 - **Pensión mínima igual al SMI.** Ninguna pensión bajaría de 1.221 euros mensuales, que es la cifra del SMI que recoge la fuente.
 - **Jubilación a los 65 años.** Colau pide fijar un tope de 65 años para la edad de retiro. La coalición dice que la edad efectiva de jubilación ha pasado de poco menos de 64 años en 2012 a más de 65,4 en 2026.
 
-La candidata de la coalición, Ada Colau, lo justificó con una idea sencilla: <cite index="0-0">"lo lógico es que las pensiones suban al mismo ritmo que el SMI"</cite>.
+La candidata de la coalición, Ada Colau, lo justificó con una idea sencilla: "lo lógico es que las pensiones suban al mismo ritmo que el SMI".
 
 En realidad esa cita viene de la fuente y no de una búsqueda, así que la atribuimos a lo que publica Infobae.
 

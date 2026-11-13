@@ -61,7 +61,7 @@ Ojo con la tasación. El porcentaje se calcula sobre ella, no sobre el precio de
 
 ## ¿Qué gastos pagas aparte?
 
-Financiar el 100% no cubre todo. Según el Banco de España, la Ley 5/2019 reparte los gastos de formalización de la hipoteca: <cite index="2-4,2-5">el cliente paga la tasación y la copia de la escritura si la pide, y el banco asume gestoría, notaría de la escritura del préstamo, registro e impuestos</cite>. Además, <cite index="2-8">la ley se refiere solo a los gastos del préstamo hipotecario, no a los de la compraventa</cite>. Esos gastos de compraventa los tendrás que cubrir con tus ahorros antes de firmar. La comisión de apertura, si la hay, también corre de tu parte.
+Financiar el 100% no cubre todo. Según el Banco de España, la Ley 5/2019 reparte los gastos de formalización de la hipoteca: el cliente paga la tasación y la copia de la escritura si la pide, y el banco asume gestoría, notaría de la escritura del préstamo, registro e impuestos. Además, la ley se refiere solo a los gastos del préstamo hipotecario, no a los de la compraventa. Esos gastos de compraventa los tendrás que cubrir con tus ahorros antes de firmar. La comisión de apertura, si la hay, también corre de tu parte.
 
 ## ¿Qué conviene comprobar antes de pedirla?
 

@@ -2,6 +2,7 @@
 title: "Decretos de alquiler: Fedea ve rentas más altas y menos pisos"
 description: "Fedea advierte de que los decretos de vivienda limitan las subidas al 2% o 0%, pero pueden encarecer los alquileres nuevos y reducir la oferta."
 date: 2026-10-21T22:47:56+00:00
+updated: 2026-11-13T10:30:00+01:00
 noindex: true
 category: vivienda
 tags: ["alquiler", "decretos-de-vivienda", "fedea", "inquilinos", "propietarios"]
@@ -9,6 +10,8 @@ pendiente: true
 image: /img/articulos/fedea-decretos-vivienda-alquiler-caseros-indemnizacion.webp
 imageAlt: "Decretos de alquiler: Fedea ve rentas más altas y menos pisos"
 sources:
+  - name: "El Diario de Madrid: la Diputación Permanente convalida el Real Decreto-ley 29/2026 (35 a 34) y rechaza el 28/2026 (12/11/2026)"
+    url: "https://www.eldiariodemadrid.es/articulo/vivienda/congreso-decretos-vivienda-prorroga-alquileres-renovacion-automatica/20261112162933146758.html"
   - name: "Expansión Economía: Los pequeños caseros y los futuros inquilinos, los más castigados por los decretos de vivienda"
     url: "https://www.expansion.com/economia/2026/10/22/pequenos-caseros-futuros-inquilinos-castigados-decretos-vivienda.html"
 ---
@@ -72,4 +75,4 @@ Sí. Los autores sostienen que aprobar los decretos tras disolver las Cortes y c
 - **Si pagas alquiler y haces la renta:** revisa la [deducción por alquiler de hasta 1.163 €](/vivienda/deduccion-alquiler-irpf-1163-euros-requisitos/).
 - **Si dudas entre alquilar y comprar:** tienes nuestra [calculadora de comprar o alquilar](/vivienda/comprar-o-alquilar/).
 
-Queda pendiente la votación del 12 de noviembre en la Diputación Permanente, que decidirá si sale adelante la prórroga automática con indemnización. Después llegarán las elecciones del 29 de noviembre.
+**Actualización del 12 de noviembre:** la Diputación Permanente convalidó el decreto de vivienda (29/2026), que mantiene el tope del 2 %, y rechazó el de la prórroga automática con indemnización (28/2026), que no llega a aplicarse.

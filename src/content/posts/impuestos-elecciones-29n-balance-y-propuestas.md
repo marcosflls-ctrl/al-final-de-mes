@@ -2,12 +2,16 @@
 title: "Impuestos y elecciones del 29N: balance y propuestas de los partidos"
 description: "El IVA de los alimentos, el IRPF del ahorro, el impuesto a la banca y lo que plantean PSOE, PP, Vox, Sumar y Podemos sobre IRPF e IVA antes del 29 de noviembre."
 date: 2026-10-16T21:46:00+00:00
-updated: 2026-11-10T16:00:00+01:00
+updated: 2026-11-13T10:00:00+01:00
 category: hacienda
 guia: true
 orden: 1
 tags: [impuestos, irpf, iva, elecciones-29n, partidos, legislatura]
 sources:
+  - name: "Infobae: el programa de Vox para el 29N, «Es sentido común», 115 medidas (12/11/2026)"
+    url: "https://www.infobae.com/espana/2026/11/12/vox-lleva-al-29-n-un-programa-electoral-con-repatriaciones-y-deportaciones-de-migrantes-prioridad-nacional-y-derogacion-de-leyes-de-genero/"
+  - name: "OKDiario: las 13 grandes medidas del programa de Vox para el 29N (12/11/2026)"
+    url: "https://okdiario.com/espana/13-medidas-vox-29n-prioridad-nacional-desregulacion-remigracion-20825904"
   - name: "Demócrata: el programa del PP para el 29N, «La Reconstrucción Nacional» (10/11/2026)"
     url: "https://www.democrata.es/elecciones-generales-espana/programa-electoral-pp-29n-propuestas/"
   - name: "El Español: fin de la rebaja extraordinaria del IVA de los alimentos (24/12/2024)"
@@ -60,7 +64,7 @@ Si quieres saber cuánto te retienen en la nómina, usa la [calculadora de sueld
 
 ## Parte 2. Qué proponen los partidos
 
-**Actualizado el 10 de noviembre:** el **PP** publicó ese día su programa, «La Reconstrucción Nacional», y abajo recogemos lo que dice. Vox, PSOE, Sumar (Frente Amplio) y Podemos todavía no han publicado el suyo: de ellos recogemos documentos y declaraciones con su fecha, y los actualizaremos cuando salgan.
+**Actualizado el 13 de noviembre:** ya han publicado su programa el **PP** (10 de noviembre, «La Reconstrucción Nacional») y **Vox** (12 de noviembre, «Es sentido común», 115 medidas), y recogemos lo que dicen. **PSOE, Sumar (Frente Amplio) y Podemos todavía no han publicado el suyo**: de ellos recogemos planes, documentos y declaraciones con su fecha, y actualizaremos la página cuando salgan.
 
 ### PSOE
 
@@ -91,6 +95,8 @@ Su decálogo económico de septiembre y el «plan de choque» que presentó el 1
 Tienes más detalle en nuestro artículo sobre [el plan del PP de IVA 0 % en la cesta básica](/hacienda/el-pp-propone-iva-0-en-la-cesta-basica-y-10-en-la-energia/).
 
 ### Vox
+
+**Programa del 12 de noviembre:** rebajar el IRPF, simplificarlo y reducirlo según el número de hijos; rebajar los tipos general y reducido del IVA, sobre todo en productos de primera necesidad; **IVA del 0 %** en la compra de la primera vivienda nueva y **bonificación del 100 % del ITP** en la usada; y un impuesto a las remesas que se envían al extranjero. Los resúmenes del programa no dan cifras de tipos. Antes del programa:
 
 Su portavoz económico, José María Figaredo, planteó el 7 de octubre, en una entrevista en Negocios TV, una reforma del IRPF con un **mínimo exento de 22.000 €** y dos tipos: **15 %** hasta 70.000 € y **25 %** por encima. También defiende que la compra de la vivienda habitual desgrave por completo. No ha explicado cómo se compensaría la pérdida de recaudación.
 

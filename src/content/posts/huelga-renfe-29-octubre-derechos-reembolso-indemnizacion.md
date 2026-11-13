@@ -39,12 +39,12 @@ Aunque haya mínimos, habrá cancelaciones y retrasos. Antes de salir de casa, m
 
 ## ¿Qué pasa si cancelan mi tren?
 
-El Reglamento del Sector Ferroviario (Real Decreto 2387/2004) obliga a la empresa a devolverte el precio si cancela el viaje. [Lo establece su artículo 89](https://www.boe.es/buscar/act.php?id=BOE-A-2004-21908). <cite index="11-13">En caso de cancelación, el viajero tiene derecho a que se le devuelva el precio pagado.</cite>
+El Reglamento del Sector Ferroviario (Real Decreto 2387/2004) obliga a la empresa a devolverte el precio si cancela el viaje. [Lo establece su artículo 89](https://www.boe.es/buscar/act.php?id=BOE-A-2004-21908). En caso de cancelación, el viajero tiene derecho a que se le devuelva el precio pagado.
 
 Hay dos escenarios según cuándo te avisen:
 
-- **Aviso en las 48 horas previas al viaje.** <cite index="11-14">La empresa debe, a tu elección, ofrecerte transporte en otro tren u otro modo en condiciones equivalentes, o devolverte el precio.</cite>
-- **Aviso en las 4 horas previas al inicio.** <cite index="11-15">Tienes derecho, además, a una indemnización del doble del importe del billete.</cite>
+- **Aviso en las 48 horas previas al viaje.** La empresa debe, a tu elección, ofrecerte transporte en otro tren u otro modo en condiciones equivalentes, o devolverte el precio.
+- **Aviso en las 4 horas previas al inicio.** Tienes derecho, además, a una indemnización del doble del importe del billete.
 
 En la práctica, tienes dos opciones:
 
@@ -65,7 +65,7 @@ Hay dos normas que se aplican a la vez. La europea fija el mínimo. La española
 | Entre 90 y 119 minutos | 25% del billete | 100% del billete |
 | 120 minutos o más | 50% del billete | 100% del billete |
 
-En la norma española, <cite index="11-18,11-19">el retraso de más de una hora da derecho al 50% del precio, y el de más de una hora y media, al total del precio.</cite> La OCU subraya que estas cuantías son de obligado cumplimiento. No dependen de la política comercial de ninguna compañía.
+En la norma española, el retraso de más de una hora da derecho al 50% del precio, y el de más de una hora y media, al total del precio. La OCU subraya que estas cuantías son de obligado cumplimiento. No dependen de la política comercial de ninguna compañía.
 
 ## Un ejemplo con cifras
 
@@ -88,7 +88,7 @@ La OCU añade una petición propia: que las cancelaciones y retrasos por huelga 
 - **Guarda los billetes** o su copia digital.
 - **Conserva los tiques y facturas** de los gastos que te cause el retraso o la cancelación: transporte alternativo, comida, hotel…
 - **Anota la hora real de llegada** a tu destino. De ella depende el porcentaje de indemnización.
-- Si hay daños mayores, <cite index="11-25">puedes reclamar por vía judicial o, en su caso, arbitral los daños y perjuicios que te cause la cancelación o el retraso.</cite> Debes poder justificarlos con esas facturas.
+- Si hay daños mayores, puedes reclamar por vía judicial o, en su caso, arbitral los daños y perjuicios que te cause la cancelación o el retraso. Debes poder justificarlos con esas facturas.
 
 ## ¿Es esta la huelga general del 11-N?
 
