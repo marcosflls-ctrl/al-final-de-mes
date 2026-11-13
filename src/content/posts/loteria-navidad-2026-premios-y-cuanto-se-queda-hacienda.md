@@ -9,6 +9,8 @@ tags: [loteria-navidad, premios, hacienda, impuestos]
 sources:
   - name: "BOE: Ley 35/2006 del IRPF, disposición adicional trigésima tercera (gravamen especial sobre premios de loterías)"
     url: "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764"
+  - name: "Agencia Tributaria: gravamen especial sobre premios de loterías (40.000 € exentos desde 2020, retención del 20 % y reparto entre cotitulares)"
+    url: "https://sede.agenciatributaria.gob.es/Sede/no-residentes/irnr-sin-establecimiento-permanente/gravamen-especial-sobre-premios-loterias-apuestas.html"
   - name: "El Independiente: cuánto se queda Hacienda de los premios de la Lotería de Navidad (04/12/2025)"
     url: "https://www.elindependiente.com/economia/2025/12/04/hacienda-premios-loteria-navidad/"
   - name: "Loterías y Apuestas del Estado"

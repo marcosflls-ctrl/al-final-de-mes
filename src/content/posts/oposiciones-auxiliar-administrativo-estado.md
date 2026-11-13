@@ -2,6 +2,7 @@
 title: "Oposiciones a Auxiliar Administrativo del Estado: plazas y examen"
 description: "La oferta de 2026 trae 1.450 plazas de Auxiliar Administrativo del Estado. Requisitos, cómo es el examen, qué temario entra y cuánto se cobra."
 date: 2026-10-19T14:50:00+02:00
+updated: 2026-11-13T20:00:00+01:00
 category: oposiciones
 guia: true
 orden: 4
@@ -9,6 +10,10 @@ tags: [oposiciones, auxiliar-administrativo, age, c2, 2026]
 sources:
   - name: "BOE: Real Decreto 387/2026, oferta de empleo público para 2026 (anexo I)"
     url: "https://www.boe.es/boe/dias/2026/05/07/pdfs/BOE-A-2026-9946.pdf"
+  - name: "BOE: Resolución de 18 de diciembre de 2025, convocatoria de los procesos selectivos de la Administración General del Estado (BOE del 22/12/2025)"
+    url: "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262"
+  - name: "INAP: seguimiento del proceso de Auxiliar Administrativo, ingreso libre, convocatoria de 2025 (admitidos, examen y aprobados)"
+    url: "https://sede.inap.gob.es/es/procedimientos-y-servicios/seleccion/procesos-selectivos-de-cuerpos-y-escalas-generales/cuerpo-general-auxiliar-de-la-administracion-del-estado-ingreso-libre-convocatoria-2025"
   - name: "Red Opositor: convocatoria de Auxiliar Administrativo del Estado, 1.700 plazas en el BOE (actualizado el 12/10/2026)"
     url: "https://redopositor.com/blog/es-convocatoria-auxiliar-administrativo-estado-2026-boe/"
   - name: "OpositaTest: fecha de examen de Auxiliar del Estado de 2026"
@@ -21,7 +26,7 @@ imageCredit: "Yann Droneaud from Paris (France). / Wikimedia Commons (CC BY-SA 2
 imageCreditUrl: "https://commons.wikimedia.org/wiki/File:Congreso_de_los_Diputados_(Espa%C3%B1a)_05.jpg"
 ---
 
-<!-- ACTUALIZAR: cuando el BOE publique la convocatoria de la oferta de 2026 (plazas, plazo, tasa y fecha de examen) y cuando salgan los aprobados del examen del 23 de mayo de 2026. -->
+<!-- ACTUALIZAR: cuando el BOE publique la convocatoria de la oferta de 2026 (plazas, plazo, tasa y fecha de examen). -->
 
 **Auxiliar Administrativo del Estado es una de las oposiciones con más plazas y de las más accesibles:** solo pide la ESO. La oferta de empleo público de 2026 incluye **1.450 plazas** de acceso libre, según el Real Decreto 387/2026. La convocatoria que las pondrá en marcha todavía no se ha publicado; esta guía resume lo que se sabe y se actualizará cuando salga.
 
@@ -29,18 +34,19 @@ imageCreditUrl: "https://commons.wikimedia.org/wiki/File:Congreso_de_los_Diputad
 
 - **Plazas de 2026:** 1.450 de acceso libre, según la oferta publicada en el BOE el 7 de mayo de 2026. La convocatoria anterior tuvo 1.700.
 - **Requisito de estudios:** el título de Graduado en ESO o equivalente. Es un cuerpo del grupo C2.
-- **Examen:** un único ejercicio en dos partes, con preguntas tipo test, psicotécnicos y ofimática.
+- **Examen:** un único ejercicio en dos partes, con preguntas tipo test, psicotécnicos y ofimática. Los fallos restan.
 - **Temario:** 28 temas en dos bloques, según la convocatoria anterior.
+- **Tasa:** 11,66 € en la convocatoria anterior, con exenciones y reducciones.
 - **Sueldo:** el sueldo base del grupo C2 es de 749,58 € al mes en 2026, más los complementos del puesto.
 
 ## Plazas: la convocatoria anterior y la próxima
 
 | Convocatoria | Plazas de acceso libre | Situación |
 |---|---|---|
-| Oferta de 2025 (convocada el 22 de diciembre de 2025) | 1.700 (156 reservadas a personas con discapacidad) | Examen el 23 de mayo de 2026 |
+| Oferta de 2025 (convocada el 22 de diciembre de 2025) | 1.700 (156 reservadas a personas con discapacidad) | Examen el 23 de mayo de 2026; lista de aprobados publicada el 15 de octubre |
 | Oferta de 2026 | 1.450 (141 reservadas a personas con discapacidad) | Pendiente de convocatoria |
 
-*Plazas de 2026, del anexo I del Real Decreto 387/2026. Datos de la convocatoria anterior según Red Opositor y Administración de Justicia.*
+*Plazas de 2026, del anexo I del Real Decreto 387/2026. Datos de la convocatoria anterior, de la resolución publicada en el BOE y del seguimiento del INAP.*
 
 El real decreto de la oferta obliga a publicar las convocatorias de 2026 dentro de este mismo año. Las convocatorias de Auxiliar suelen salir en el BOE a finales de año, como la anterior, que se publicó el 22 de diciembre de 2025.
 
@@ -50,21 +56,23 @@ Los requisitos generales para ser funcionario: tener 16 años y no haber llegado
 
 ## Cómo es el examen
 
-En la convocatoria anterior, el examen fue un **único ejercicio con dos partes**, las dos obligatorias y eliminatorias, en una sola sesión de 90 minutos, según OpositaTest:
+En la convocatoria anterior, el examen fue un **único ejercicio con dos partes**, las dos obligatorias y eliminatorias, en una sola sesión de 90 minutos, según las bases publicadas en el BOE:
 
 | Parte | Qué entra | Preguntas |
 |---|---|---|
 | Primera | 30 preguntas del bloque I (organización pública) y 30 psicotécnicos | 60, más 5 de reserva |
-| Segunda | Ofimática (Windows 11 y Microsoft 365 de escritorio): bloque II | 50, más 5 de reserva |
+| Segunda | Bloque II: actividad administrativa y ofimática | 50, más 5 de reserva |
 
-*Estructura de la convocatoria de 2025, según Red Opositor y OpositaTest. La puntuación, la penalización de los errores y la nota mínima las fija cada convocatoria: compruébalas en las bases.*
+Cada parte se puntúa de 0 a 50 y hace falta al menos un 25 en cada una. Cada respuesta incorrecta resta un tercio de una correcta; las que se dejan en blanco no restan.
+
+*Estructura de la convocatoria de 2025, según el BOE. Puede cambiar en la próxima: compruébala en las bases.*
 
 ## Temario
 
-El temario de la convocatoria anterior tenía **28 temas** en dos bloques, según Red Opositor:
+El temario de la convocatoria anterior tenía **28 temas** en dos bloques, según el anexo de la convocatoria:
 
 - **Bloque I, organización pública (16 temas):** la organización del Estado y de las administraciones públicas, empezando por la Constitución.
-- **Bloque II (12 temas):** incluye la parte de informática y ofimática que se examina en la segunda parte del ejercicio.
+- **Bloque II, actividad administrativa y ofimática (12 temas):** es el que se examina en la segunda parte del ejercicio.
 
 El temario oficial es el que publica cada convocatoria en su anexo. Puede cambiar de un año a otro, sobre todo en la parte de ofimática.
 

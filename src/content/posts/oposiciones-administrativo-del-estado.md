@@ -2,6 +2,7 @@
 title: "Oposiciones a Administrativo del Estado: plazas, examen y sueldo"
 description: "La oferta de 2026 trae 2.300 plazas libres de Administrativo del Estado, la oposición con más plazas. Requisitos, cómo es el examen, el temario y el sueldo."
 date: 2026-10-19T16:20:00+02:00
+updated: 2026-11-13T20:00:00+01:00
 category: oposiciones
 guia: true
 orden: 6
@@ -9,6 +10,8 @@ tags: [oposiciones, administrativo-del-estado, age, c1, 2026]
 sources:
   - name: "BOE: Real Decreto 387/2026, oferta de empleo público para 2026 (anexo I)"
     url: "https://www.boe.es/boe/dias/2026/05/07/pdfs/BOE-A-2026-9946.pdf"
+  - name: "BOE: Resolución de 18 de diciembre de 2025, convocatoria de los procesos selectivos de la Administración General del Estado (BOE del 22/12/2025)"
+    url: "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262"
   - name: "Red Opositor: examen de Administrativo del Estado 2026, fechas y qué pasa ahora"
     url: "https://redopositor.com/blog/es-cuando-es-examen-administrativo-estado-2026/"
   - name: "Oporuta: Administrativo del Estado C1 2026, plazas, temario y nota de corte"
@@ -29,6 +32,7 @@ imageCreditUrl: "https://commons.wikimedia.org/wiki/File:Real_Casa_de_la_Aduana_
 - **Requisito de estudios:** Bachillerato, Técnico de FP o equivalente. Es un cuerpo del grupo C1.
 - **Examen:** un único ejercicio con un test de 70 preguntas y un supuesto práctico de 20, según la convocatoria anterior.
 - **Temario:** 45 temas en seis bloques.
+- **Tasa:** 15,57 € en la convocatoria anterior, con exenciones y reducciones.
 - **Sueldo:** el sueldo base del grupo C1 es de 900,63 € al mes en 2026, más los complementos del puesto.
 
 ## Plazas: la convocatoria anterior y la próxima
@@ -38,7 +42,7 @@ imageCreditUrl: "https://commons.wikimedia.org/wiki/File:Real_Casa_de_la_Aduana_
 | Oferta de 2025 (BOE del 22 de diciembre de 2025) | 2.512 (230 reservadas a personas con discapacidad) | Examen el 23 de mayo de 2026, pendiente de notas definitivas |
 | Oferta de 2026 | 2.300 (223 reservadas a personas con discapacidad) | Pendiente de convocatoria |
 
-*Plazas de 2026, del anexo I del Real Decreto 387/2026. Convocatoria anterior, según Red Opositor.*
+*Plazas de 2026, del anexo I del Real Decreto 387/2026. Convocatoria anterior, de la resolución publicada en el BOE el 22 de diciembre de 2025.*
 
 La convocatoria anterior se publicó el mismo día que la de Auxiliar Administrativo, y los dos exámenes fueron el 23 de mayo de 2026. El real decreto de la oferta obliga a convocar las plazas de 2026 dentro de este año.
 
@@ -48,18 +52,18 @@ Los generales para ser funcionario (16 años, nacionalidad española o de otro p
 
 ## Cómo es el examen
 
-En la convocatoria anterior fue un **único ejercicio con dos partes**, obligatorias y eliminatorias, que se hacen el mismo día, según Red Opositor:
+En la convocatoria anterior fue un **único ejercicio con dos partes**, obligatorias y eliminatorias, que se hacen el mismo día, según las bases publicadas en el BOE:
 
 | Parte | Qué es | Preguntas | Puntuación |
 |---|---|---|---|
 | Primera | Test: 40 preguntas de los bloques I a V y 30 de ofimática (bloque VI) | 70, más 5 de reserva | De 0 a 50; hace falta un 25 |
 | Segunda | Supuesto práctico a elegir entre dos | 20, más 5 de reserva | De 0 a 50; hace falta un 25 |
 
-Cada respuesta incorrecta resta un tercio de una correcta, y las preguntas en blanco no restan. La segunda parte tiene un máximo de 100 minutos. *La estructura puede cambiar en la próxima convocatoria: compruébala en las bases.*
+Cada respuesta incorrecta resta un tercio de una correcta, y las preguntas en blanco no restan. El ejercicio completo dura como máximo 100 minutos. *La estructura puede cambiar en la próxima convocatoria: compruébala en las bases.*
 
 ## Temario
 
-**45 temas en seis bloques**, según Red Opositor:
+**45 temas en seis bloques**, según el anexo de la convocatoria:
 
 | Bloque | Temas |
 |---|---|
