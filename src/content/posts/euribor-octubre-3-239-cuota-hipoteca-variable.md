@@ -5,10 +5,8 @@ date: 2026-10-30T17:14:11+00:00
 category: vivienda
 tags: ["euribor", "hipoteca-variable", "cuota-hipoteca", "bce", "banco-de-espana"]
 pendiente: false
-image: /img/fotos/euribor-octubre-3-239-cuota-hipoteca-variable.webp
-imageAlt: "Llaves de una vivienda sobre un contrato de hipoteca"
-imageCredit: "H031175 / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/house-homeland-architecture-7313645/"
+image: /img/datos/euribor-octubre-3-239-cuota-hipoteca-variable.webp
+imageAlt: "Euríbor de octubre al 3,239%: cuánto sube tu cuota"
 sources:
   - name: "BOE: Resolución del Banco de España de 1 de octubre de 2026 (euríbor de septiembre, 3,247%)"
     url: "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20519"
@@ -22,17 +20,17 @@ Según publica ABC con datos de iAhorro, quien revise ahora una hipoteca variabl
 
 ## ¿Cuánto ha subido el euríbor en 2026?
 
-Un año antes, en octubre de 2025, <cite index="5-1">el euríbor a un año se situó en el 2,187%</cite>. Esta es la evolución mensual que ha publicado el Banco de España este año:
+Un año antes, en octubre de 2025, el euríbor a un año se situó en el 2,187%. Esta es la evolución mensual que ha publicado el Banco de España este año:
 
 | Mes de 2026 | Euríbor a un año |
 | --- | --- |
-| Marzo | <cite index="10-3">2,565%</cite> |
-| Abril | <cite index="7-3">2,747%</cite> |
-| Mayo | <cite index="9-3">2,804%</cite> |
-| Junio | <cite index="3-11">2,798%</cite> |
-| Julio | <cite index="4-3">2,855%</cite> |
-| Agosto | <cite index="6-3">2,954%</cite> |
-| Septiembre | <cite index="1-12">3,247%</cite> |
+| Marzo | 2,565% |
+| Abril | 2,747% |
+| Mayo | 2,804% |
+| Junio | 2,798% |
+| Julio | 2,855% |
+| Agosto | 2,954% |
+| Septiembre | 3,247% |
 | Octubre | 3,239% (dato citado por ABC) |
 
 El salto grande fue en septiembre. En octubre el índice se ha quedado plano. El dato oficial de octubre lo publica el Banco de España a principios de noviembre, como ha hecho con los de los meses anteriores. Mientras tanto, la cifra de 3,239% es la que maneja ABC. El propio texto da en otro párrafo un 3,235%, así que puede haber una pequeña diferencia hasta que salga el oficial.

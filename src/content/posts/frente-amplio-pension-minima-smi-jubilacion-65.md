@@ -5,10 +5,8 @@ date: 2026-10-24T17:30:25+00:00
 category: pensiones
 tags: ["pensiones", "frente-amplio", "elecciones-29n", "salario-minimo", "jubilacion-a-los-65"]
 pendiente: true
-image: /img/fotos/frente-amplio-pension-minima-smi-jubilacion-65.webp
-imageAlt: "Pareja de jubilados paseando por la calle"
-imageCredit: "alllessandro_ / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/lovers-meadow-portrait-outdoors-7258617/"
+image: /img/datos/frente-amplio-pension-minima-smi-jubilacion-65.webp
+imageAlt: "Frente Amplio propone pensión mínima igual al SMI: 1.221 €"
 sources:
   - name: "Infobae España: Frente Amplio presenta su plan de pensiones: jubilación a los 65 años y cuantía mínima igual al SMI"
     url: "https://www.infobae.com/espana/2026/10/24/frente-amplio-presenta-su-plan-de-pensiones-jubilacion-a-los-65-anos-y-cuantia-minima-igual-al-smi/"
@@ -23,7 +21,7 @@ Son dos medidas. La coalición calcula que cada una costaría unos 10.000 millon
 - **Pensión mínima igual al SMI.** Ninguna pensión bajaría de 1.221 euros mensuales, que es la cifra del SMI que recoge la fuente.
 - **Jubilación a los 65 años.** Colau pide fijar un tope de 65 años para la edad de retiro. La coalición dice que la edad efectiva de jubilación ha pasado de poco menos de 64 años en 2012 a más de 65,4 en 2026.
 
-La candidata de la coalición, Ada Colau, lo justificó con una idea sencilla: <cite index="0-0">"lo lógico es que las pensiones suban al mismo ritmo que el SMI"</cite>.
+La candidata de la coalición, Ada Colau, lo justificó con una idea sencilla: "lo lógico es que las pensiones suban al mismo ritmo que el SMI".
 
 En realidad esa cita viene de la fuente y no de una búsqueda, así que la atribuimos a lo que publica Infobae.
 

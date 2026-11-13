@@ -2,7 +2,7 @@
 title: "Qué cambiaría en tu bolsillo con el PSOE y sus socios tras el 29N"
 description: "Lo que añaden Frente Amplio, Podemos y otros posibles socios del PSOE sobre alquiler, salario mínimo, jornada, impuestos y energía, y en qué no coinciden."
 date: 2026-10-20T17:00:00+02:00
-updated: 2026-11-10T16:00:00+01:00
+updated: 2026-11-13T10:30:00+01:00
 category: hacienda
 guia: true
 orden: 6
@@ -12,6 +12,8 @@ imageAlt: "Fachada del Congreso de los Diputados"
 imageCredit: "Vickybol / Wikimedia Commons (CC BY-SA 3.0)"
 imageCreditUrl: "https://commons.wikimedia.org/wiki/File:Congreso_de_los_Diputados,_enero_de_2015.JPG"
 sources:
+  - name: "El Diario de Madrid: la Diputación Permanente convalida el Real Decreto-ley 29/2026 (35 a 34) y rechaza el 28/2026 (12/11/2026)"
+    url: "https://www.eldiariodemadrid.es/articulo/vivienda/congreso-decretos-vivienda-prorroga-alquileres-renovacion-automatica/20261112162933146758.html"
   - name: "Infobae: así están los sondeos de las elecciones generales (20/10/2026)"
     url: "https://www.infobae.com/espana/2026/10/20/asi-estan-los-sondeos-de-las-elecciones-generales-de-espana-2026/"
   - name: "Infobae: Frente Amplio y Podemos no cierran una candidatura única (16/10/2026)"
@@ -34,7 +36,7 @@ sources:
 
 Con las encuestas de octubre, el PSOE no podría gobernar solo: necesitaría al **Frente Amplio**, a **Podemos** y a otros partidos, como ERC, Junts, PNV o EH Bildu. Esta guía explica qué añaden esos posibles socios a lo que propone el PSOE, y en qué no coinciden, sobre los temas que más notan los hogares. No es una predicción ni una recomendación de voto. Lo que propone el PSOE por sí solo está en [qué cambiaría si gobierna el PSOE](/hacienda/que-cambiaria-si-gobierna-el-psoe-29n/), y todo junto, en la [comparativa](/hacienda/que-cambia-en-tu-bolsillo-segun-quien-gobierne-29n/).
 
-**Aviso:** PSOE, Sumar (Frente Amplio) y Podemos todavía no han publicado sus programas (el PP publicó el suyo el 10 de noviembre). Recogemos propuestas y declaraciones con su fecha, y la actualizaremos cuando salgan.
+**Aviso:** PSOE, Sumar (Frente Amplio) y Podemos todavía no han publicado sus programas (el PP y Vox publicaron los suyos el 10 y el 12 de noviembre). Recogemos propuestas y declaraciones con su fecha, y la actualizaremos cuando salgan.
 
 ## Lo esencial
 
@@ -97,7 +99,7 @@ Todos defienden **subirlas con el IPC**. Yolanda Díaz dijo el 16 de octubre que
 
 ## Lo que queda por saber
 
-- **El 12 de noviembre**, si se convalida el decreto de vivienda en vigor.
+- **El 12 de noviembre** se convalidó el decreto de vivienda (29/2026) y se rechazó el de los contratos renovables automáticamente (28/2026).
 - **Los programas** de cada partido y qué estarían dispuestos a pactar.
 
 *Información electoral divulgativa. No es una recomendación de voto: recogemos lo que dicen los partidos con su fuente.*

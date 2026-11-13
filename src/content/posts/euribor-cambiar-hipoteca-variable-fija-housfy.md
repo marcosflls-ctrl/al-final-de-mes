@@ -5,10 +5,8 @@ date: 2026-10-23T15:30:23+00:00
 category: vivienda
 tags: ["euribor", "hipotecas", "hipoteca-variable", "hipoteca-fija", "subrogacion"]
 pendiente: false
-image: /img/fotos/euribor-cambiar-hipoteca-variable-fija-housfy.webp
-imageAlt: "Llaves de una casa sobre un contrato de hipoteca"
-imageCredit: "Maximilianovich / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/man-sign-paper-write-document-5710164/"
+image: /img/datos/euribor-cambiar-hipoteca-variable-fija-housfy.webp
+imageAlt: "Euríbor al 3,2%: qué mirar antes de pasar tu hipoteca a fijo"
 sources:
   - name: "ABC Economía: La subida del euríbor reactiva el cambio de hipotecas variables y mixtas a tipo fijo"
     url: "https://www.abc.es/economia/cuentas-corrientes/subida-euribor-reactiva-cambio-hipotecas-variables-mixtas-20261023023052-nt.html"

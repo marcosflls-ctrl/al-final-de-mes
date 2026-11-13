@@ -2,12 +2,18 @@
 title: "Vivienda y elecciones del 29N: balance y propuestas de los partidos"
 description: "Los decretos de alquiler que cayeron, los que siguen en vigor y lo que plantean PSOE, PP, Vox y Sumar sobre vivienda antes del 29 de noviembre."
 date: 2026-10-16T17:55:00+00:00
-updated: 2026-11-10T16:00:00+01:00
+updated: 2026-11-13T10:30:00+01:00
 category: vivienda
 guia: true
 orden: 1
 tags: [vivienda, alquiler, elecciones-29n, partidos, legislatura, decreto-vivienda]
 sources:
+  - name: "El Diario de Madrid: la Diputación Permanente convalida el Real Decreto-ley 29/2026 (35 a 34) y rechaza el 28/2026 (12/11/2026)"
+    url: "https://www.eldiariodemadrid.es/articulo/vivienda/congreso-decretos-vivienda-prorroga-alquileres-renovacion-automatica/20261112162933146758.html"
+  - name: "Infobae: el programa de Vox para el 29N, «Es sentido común», 115 medidas (12/11/2026)"
+    url: "https://www.infobae.com/espana/2026/11/12/vox-lleva-al-29-n-un-programa-electoral-con-repatriaciones-y-deportaciones-de-migrantes-prioridad-nacional-y-derogacion-de-leyes-de-genero/"
+  - name: "OKDiario: las 13 grandes medidas del programa de Vox para el 29N (12/11/2026)"
+    url: "https://okdiario.com/espana/13-medidas-vox-29n-prioridad-nacional-desregulacion-remigracion-20825904"
   - name: "Demócrata: el programa del PP para el 29N, «La Reconstrucción Nacional» (10/11/2026)"
     url: "https://www.democrata.es/elecciones-generales-espana/programa-electoral-pp-29n-propuestas/"
   - name: "Iberley: el Congreso rechaza el Real Decreto-ley 8/2026 de prórrogas del alquiler"
@@ -49,8 +55,8 @@ La vivienda ha marcado el final de la legislatura: el Congreso tumbó los decret
 ## Lo esencial
 
 - **Hoy está en vigor** el Real Decreto-ley 29/2026: suspensión de desahucios de personas vulnerables hasta 2030, límite del 2 % a la subida del alquiler hasta 2027, prórroga de hasta dos años para algunos contratos, IVA del 10 % para el alquiler turístico desde diciembre y préstamos públicos sin interés para la entrada de la primera vivienda.
-- **Pero está en el aire:** si la Diputación Permanente del Congreso no lo convalida, quedará derogado. La votación está prevista para el **12 de noviembre**.
-- Un segundo decreto, que haría **indefinidos** los contratos de alquiler, entraría en vigor el 15 de noviembre. Las previsiones de voto apuntan a que no saldrá adelante.
+- **Ya está convalidado:** la Diputación Permanente del Congreso lo aprobó el **12 de noviembre** por 35 votos a 34, con el apoyo de PSOE, Sumar, ERC, EH Bildu, PNV y Podemos, y el voto en contra de PP, Vox y Junts. Sigue en vigor.
+- El segundo decreto, el **28/2026**, que hacía **renovables automáticamente** los contratos de alquiler, **se rechazó** ese mismo día por 35 votos a 34: el PNV votó en contra junto a PP, Vox y Junts. No llega a aplicarse.
 - PSOE y Sumar defienden mantener y reforzar estos decretos. PP y Vox proponen sobre todo construir más, liberar suelo y bajar impuestos a la compra.
 
 ## Parte 1. Qué se hizo con la vivienda en la legislatura (2023-2026)
@@ -65,8 +71,8 @@ La Ley de Vivienda (Ley 12/2023) se aprobó en mayo de 2023, en la legislatura a
 | Prórroga de hasta dos años de los alquileres que vencían y tope del 2 % a las subidas | Real Decreto-ley 8/2026, de 20 de marzo | **No convalidado.** El Congreso lo rechazó el 28 de abril de 2026 |
 | Gran decreto de vivienda: desahucios, alquiler de temporada, fiscalidad, avales | Real Decreto-ley 26/2026, de 29 de septiembre | **No convalidado.** Cayó el 2 de octubre de 2026 |
 | Contratos de alquiler indefinidos | Decreto aprobado junto al anterior | **No convalidado.** Cayó el 2 de octubre de 2026 |
-| Nueva versión del gran decreto de vivienda | Real Decreto-ley 29/2026, de 6 de octubre | **En vigor, pendiente de convalidación.** Votación prevista el 12 de noviembre |
-| Nueva versión del decreto de contratos indefinidos | Decreto aprobado el 6 de octubre | **Pendiente.** Entraría en vigor el 15 de noviembre si se convalida |
+| Nueva versión del gran decreto de vivienda | Real Decreto-ley 29/2026, de 6 de octubre | **Convalidado** el 12 de noviembre de 2026 (35 a 34). En vigor |
+| Nueva versión del decreto de contratos indefinidos | Real Decreto-ley 28/2026, de 6 de octubre | **No convalidado.** Se rechazó el 12 de noviembre de 2026 (34 a 35) |
 
 ### Qué pasó con los decretos de vivienda
 
@@ -91,7 +97,7 @@ Antes, en abril de 2026, ya había caído el Real Decreto-ley 8/2026, que permit
 
 ## Parte 2. Qué proponen los partidos
 
-**Actualizado el 10 de noviembre:** el **PP** publicó ese día su programa, «La Reconstrucción Nacional», y abajo recogemos lo que dice. Vox, PSOE, Sumar (Frente Amplio) y Podemos todavía no han publicado el suyo: de ellos recogemos declaraciones y documentos con su fecha, y los actualizaremos cuando salgan.
+**Actualizado el 13 de noviembre:** ya han publicado su programa el **PP** (10 de noviembre, «La Reconstrucción Nacional») y **Vox** (12 de noviembre, «Es sentido común», 115 medidas), y recogemos lo que dicen. **PSOE, Sumar (Frente Amplio) y Podemos todavía no han publicado el suyo**: de ellos recogemos planes, documentos y declaraciones con su fecha, y actualizaremos la página cuando salgan.
 
 ### PSOE
 
@@ -111,6 +117,8 @@ Alberto Núñez Feijóo presentó sus propuestas el 5 de octubre en el Congreso 
 - Reformar la ley contra la ocupación ilegal y la Ley del Suelo.
 
 ### Vox
+
+**Programa del 12 de noviembre:** derogar la Ley de Vivienda, **IVA del 0 %** en la primera vivienda si es nueva y **bonificación del 100 % del ITP** si es usada, recuperar la deducción por vivienda habitual, más impuestos a compradores de fuera de la UE y fondos especulativos, ayudas al alquiler y vivienda pública con «prioridad nacional», prohibir alquilar a inmigrantes en situación irregular y desalojar a los okupas en menos de 24 horas. Antes del programa:
 
 El secretario general de Vox, Ignacio Garriga, avanzó el 11 de octubre, en una entrevista con EFE, las líneas de su paquete de vivienda:
 
@@ -147,5 +155,5 @@ Junts votó en contra de los decretos y pide un texto nuevo negociado. El PNV ap
 
 ## Lo que queda por saber
 
-- **El 12 de noviembre:** la Diputación Permanente decidirá si convalida los decretos. Si no lo hace, desaparecen las medidas que hoy están en vigor, incluido el límite del 2 %.
+- **Qué hará el próximo Gobierno** con el decreto convalidado: PP y Vox votaron en contra y proponen derogar la Ley de Vivienda.
 - **Los programas electorales:** cuando se publiquen, actualizaremos esta guía con sus propuestas.

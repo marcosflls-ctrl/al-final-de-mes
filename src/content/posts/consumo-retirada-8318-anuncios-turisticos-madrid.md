@@ -6,10 +6,8 @@ noindex: true
 category: vivienda
 tags: ["alquiler", "alquiler-de-temporada", "consumo", "pisos-turisticos", "madrid"]
 pendiente: false
-image: /img/fotos/consumo-retirada-8318-anuncios-turisticos-madrid.webp
-imageAlt: "Cartel de se alquila en el balcón de un edificio de viviendas"
-imageCredit: "jothamsutharson / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/study-school-college-nyc-apartment-7217599/"
+image: /img/articulos/consumo-retirada-8318-anuncios-turisticos-madrid.webp
+imageAlt: "Consumo exige retirar 8.318 anuncios turísticos, 6.772 en Madrid"
 sources:
   - name: "Europa Press Economía: Consumo exige a plataformas la retirada de 8.300 anuncios de alojamientos turísticos ilegales tras e"
     url: "https://www.europapress.es/economia/construccion-y-vivienda-00342/noticia-consumo-exige-plataformas-retirada-8300-anuncios-alojamientos-turisticos-ilegales-decreto-20261023080049.html"

@@ -5,10 +5,8 @@ date: 2026-10-21T23:26:22+00:00
 category: hacienda
 tags: ["irpf", "declaracion-de-la-renta", "rectificativa", "sanciones", "agencia-tributaria"]
 pendiente: false
-image: /img/fotos/rectificar-renta-fuera-plazo-multa-100-euros-hacienda.webp
-imageAlt: "Documentos de la declaración de la renta sobre una mesa"
-imageCredit: "JoshuaWoroniecki / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/merry-christmas-boarding-pass-travel-5219496/"
+image: /img/datos/rectificar-renta-fuera-plazo-multa-100-euros-hacienda.webp
+imageAlt: "Rectificar la renta tras junio: multa de 100 € por ejercicio"
 sources:
   - name: "Idealista News (vivienda): Hacienda ya sanciona por rectificar la declaración de IRPF para recuperar lo pagado de más: así pued"
     url: "https://www.idealista.com/news/opinion/jose-maria-salcedo/2026/10/21/919902-hacienda-ya-sanciona-por-rectificar-la-declaracion-de-irpf-para-recuperar-lo"

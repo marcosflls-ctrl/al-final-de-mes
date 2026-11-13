@@ -6,10 +6,8 @@ noindex: true
 category: vivienda
 tags: ["vivienda", "alquiler", "union-europea", "consulta-publica", "pisos-turisticos"]
 pendiente: true
-image: /img/fotos/ley-europea-vivienda-asequible-consulta-publica.webp
-imageAlt: "Bloques de viviendas en una ciudad"
-imageCredit: "analogicus / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/skyscraper-block-of-flats-building-8173578/"
+image: /img/articulos/ley-europea-vivienda-asequible-consulta-publica.webp
+imageAlt: "Ley europea de vivienda: opina hasta el 4 de noviembre"
 sources:
   - name: "Idealista News (vivienda): El Gobierno abre una consulta pública sobre la futura Ley Europea de Vivienda Asequible"
     url: "https://www.idealista.com/news/inmobiliario/vivienda/2026/10/23/920353-el-gobierno-abre-una-consulta-publica-sobre-la-futura-ley-europea-de-vivienda"
@@ -23,7 +21,7 @@ Es una propuesta, no una norma. Hoy no cambia nada en tu alquiler, en tu hipotec
 
 Es una propuesta de Reglamento de la Unión Europea que presentó la Comisión Europea el 9 de septiembre. Su objetivo es fijar un marco común para que los Estados miembros puedan justificar medidas que garanticen el acceso a la vivienda. También fija criterios compartidos para identificar zonas con mercados tensionados.
 
-La Comisión publicó ese mismo día una Recomendación (UE) 2026/2069. <cite index="11-4">Complementa la propuesta con medidas para aumentar la oferta de vivienda en zonas tensionadas.</cite> <cite index="11-5">La propuesta de Reglamento fue adoptada por la Comisión el 9 de septiembre de 2026.</cite>
+La Comisión publicó ese mismo día una Recomendación (UE) 2026/2069. Complementa la propuesta con medidas para aumentar la oferta de vivienda en zonas tensionadas. La propuesta de Reglamento fue adoptada por la Comisión el 9 de septiembre de 2026.
 
 ## ¿Qué dice la propuesta?
 

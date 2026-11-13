@@ -6,10 +6,8 @@ noindex: true
 category: paro
 tags: ["smi", "irpf", "salario-minimo", "retenciones", "2027"]
 pendiente: true
-image: /img/fotos/smi-2027-exencion-irpf-reforma-legal-diputacion-permanente.webp
-imageAlt: "Nómina y calculadora sobre una mesa"
-imageCredit: "Innovalabs / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/software-developer-web-developer-6521720/"
+image: /img/articulos/smi-2027-exencion-irpf-reforma-legal-diputacion-permanente.webp
+imageAlt: "SMI 2027: su exención en el IRPF depende de una nueva ley"
 sources:
   - name: "Estatuto de los Trabajadores, artículo 27 (BOE)"
     url: "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11430"

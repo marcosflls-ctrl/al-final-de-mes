@@ -6,10 +6,8 @@ noindex: true
 category: vivienda
 tags: ["euribor", "hipotecas", "hipoteca-variable", "tipos-de-interes"]
 pendiente: false
-image: /img/fotos/euribor-hoy-21-octubre-3-263-media-mensual.webp
-imageAlt: "Calculadora y documentos de una hipoteca sobre una mesa"
-imageCredit: "Tumisu / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/mortgage-house-contract-sign-home-5266520/"
+image: /img/datos/euribor-hoy-21-octubre-3-263-media-mensual.webp
+imageAlt: "Euríbor hoy, 21 de octubre: 3,263% y media del mes en 3,222%"
 sources:
   - name: "El Mundo Economía: Euríbor hoy, miércoles 21 de octubre: otro mínimo repunte en su valor"
     url: "https://www.elmundo.es/economia/2026/10/21/6ad8943421efa0fb678b4575.html"

@@ -6,10 +6,8 @@ noindex: true
 category: vivienda
 tags: ["precio-vivienda", "ine", "comprar-casa", "municipios", "metro-cuadrado"]
 pendiente: false
-image: /img/fotos/precio-vivienda-municipios-calvia-puertollano-ine.webp
-imageAlt: "Bloques de viviendas en una ciudad española"
-imageCredit: "ELG21 / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/city-buildings-sea-bullring-malaga-7137958/"
+image: /img/datos/precio-vivienda-municipios-calvia-puertollano-ine.webp
+imageAlt: "Comprar casa: de 57.698 € en Puertollano a 981.485 € en Calviá"
 sources:
   - name: "ABC Economía: De los 57.000 euros de Puertollano al casi millón en Calviá: el precio medio de la vivienda en Españ"
     url: "https://www.abc.es/economia/57000-euros-puertollano-millon-euros-calvia-precio-20261021133028-nt.html"

@@ -5,10 +5,8 @@ date: 2026-10-27T10:39:48+00:00
 category: paro
 tags: ["epa", "paro", "empleo", "ine", "mercado-laboral"]
 pendiente: false
-image: /img/fotos/epa-tercer-trimestre-2026-ocupados-paro-10-2.webp
-imageAlt: "Personas consultando ofertas de empleo en una oficina"
-imageCredit: "OleksandrPidvalnyi / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/telework-technology-laptop-6795505/"
+image: /img/datos/epa-tercer-trimestre-2026-ocupados-paro-10-2.webp
+imageAlt: "EPA: récord de 22,85 millones de ocupados y paro al 10,2%"
 sources:
   - name: "20minutos Economía: España bate un nuevo récord de ocupación en el tercer trimestre, pero el paro aumenta al 10,2%"
     url: "https://www.20minutos.es/lainformacion/economia-y-finanzas/espana-suma-73-600-empleos-tercer-trimestre-bate-un-nuevo-record-ocupacion-pero-paro-aumenta-10-2_7053792_0.html"

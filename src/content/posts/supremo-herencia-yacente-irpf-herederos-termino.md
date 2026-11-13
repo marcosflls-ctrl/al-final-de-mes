@@ -5,10 +5,8 @@ date: 2026-10-22T22:52:40+00:00
 category: hacienda
 tags: ["herencias", "irpf", "tribunal-supremo", "hacienda", "sucesiones"]
 pendiente: false
-image: /img/fotos/supremo-herencia-yacente-irpf-herederos-termino.webp
-imageAlt: "Documentos de una herencia sobre una mesa"
-imageCredit: "JoshuaWoroniecki / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/merry-christmas-boarding-pass-travel-5219496/"
+image: /img/articulos/supremo-herencia-yacente-irpf-herederos-termino.webp
+imageAlt: "Herencia sin aceptar: el Supremo dice que ya tributa en el IRPF"
 sources:
   - name: "El Mundo Economía: El Supremo avala tributar por el IRPF aunque no se haya aceptado o rechazado una herencia"
     url: "https://www.elmundo.es/economia/ahorro-y-consumo/2026/10/22/6ad9be60fc6c83866a8b45b3.html"

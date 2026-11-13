@@ -6,10 +6,8 @@ noindex: true
 category: vivienda
 tags: ["alquiler", "alquiler-de-temporada", "zonas-tensionadas", "idealista", "inquilinos"]
 pendiente: false
-image: /img/fotos/alquiler-temporal-34-oferta-permanente-cae-10-idealista.webp
-imageAlt: "Cartel de se alquila en la fachada de un edificio de viviendas"
-imageCredit: "AS_Photography / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/house-keys-the-door-castle-1407562/"
+image: /img/datos/alquiler-temporal-34-oferta-permanente-cae-10-idealista.webp
+imageAlt: "Inquilinos: 1 de cada 3 alquileres es temporal y el fijo cae 10%"
 sources:
   - name: "El Mundo Economía: El mapa del alquiler en el que aterrizan los decretos Maricarmen: uno de cada tres contratos es temp"
     url: "https://www.elmundo.es/economia/vivienda/2026/10/21/6ad76830fc6c83f6628b45af.html"

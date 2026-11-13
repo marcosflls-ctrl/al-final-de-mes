@@ -5,10 +5,8 @@ date: 2026-10-20T19:29:25+00:00
 category: pensiones
 tags: ["seguridad-social", "pension-de-viudedad", "real-decreto-ley", "cume", "violencia-machista"]
 pendiente: true
-image: /img/fotos/decreto-seguridad-social-viudedad-baja-violencia-machista.webp
-imageAlt: "Pareja de jubilados"
-imageCredit: "Duncan_Dao / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/beach-couple-sunset-scenery-7087722/"
+image: /img/datos/decreto-seguridad-social-viudedad-baja-violencia-machista.webp
+imageAlt: "Viudedad sin pareja de hecho y alimentos a 300 €: el nuevo decreto"
 sources:
   - name: "El Mundo Economía: El Gobierno rescata reformas de ayudas atascadas desde hace más de dos años a las puertas del 29-N y"
     url: "https://www.elmundo.es/economia/2026/10/20/6ad730a0e85ecece7f8b458c.html"

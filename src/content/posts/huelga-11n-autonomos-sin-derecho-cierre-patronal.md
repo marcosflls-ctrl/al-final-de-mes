@@ -5,10 +5,8 @@ date: 2026-10-27T11:01:36+00:00
 category: paro
 tags: ["autonomos", "huelga-general", "11-n", "alquiler", "cierre-patronal"]
 pendiente: false
-image: /img/fotos/huelga-11n-autonomos-sin-derecho-cierre-patronal.webp
-imageAlt: "Persiana bajada de un pequeño comercio"
-imageCredit: "Hermann / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/books-stack-literature-knowledge-5937823/"
+image: /img/articulos/huelga-11n-autonomos-sin-derecho-cierre-patronal.webp
+imageAlt: "Huelga 11-N: los autónomos no tienen derecho a ella"
 sources:
   - name: "El Mundo Economía: La huelga también divide a los autónomos: las organizaciones vinculadas a los sindicatos llaman a ba"
     url: "https://www.elmundo.es/economia/2026/10/27/6adf4f39fc6c831e5c8b45a1.html"

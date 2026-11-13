@@ -6,10 +6,8 @@ category: hacienda
 guia: true
 orden: 10
 tags: [2027, pensiones, nomina, cotizaciones, ayudas, novedades]
-image: /img/fotos/que-cambia-el-1-de-enero-de-2027.webp
-imageAlt: "Calendario sobre una mesa"
-imageCredit: "RonaldCandonga / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/job-office-team-business-internet-5382501/"
+image: /img/articulos/que-cambia-el-1-de-enero-de-2027.webp
+imageAlt: "Qué cambia el 1 de enero de 2027: pensiones, nómina, luz y ayudas"
 sources:
   - name: "BBVA Mi Jubilación: novedades de pensiones y Seguridad Social para 2027"
     url: "https://www.bbvamijubilacion.es/blog/novedades-pensiones-seguridad-social-2027/"

@@ -6,10 +6,8 @@ noindex: true
 category: pensiones
 tags: ["pension-media", "jubilacion", "revalorizacion", "ipc", "seguridad-social"]
 pendiente: false
-image: /img/fotos/la-pension-media-de-jubilacion-sube-492-desde-2018-y-llega-a-1-576.webp
-imageAlt: "Pareja de jubilados"
-imageCredit: "EddieKphoto / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/couple-elderly-walking-fall-trail-6653517/"
+image: /img/datos/la-pension-media-de-jubilacion-sube-492-desde-2018-y-llega-a-1-576.webp
+imageAlt: "La pensión media de jubilación sube 492 € desde 2018 y llega a 1.576 €"
 sources:
   - name: "Seguridad Social, estadísticas eSTADISS (pensión media de jubilación)"
     url: "https://w6.seg-social.es/ProsaInternetAnonimo/OnlineAccess?ARQ.SPM.ACTION=LOGIN&ARQ.SPM.APPTYPE=SERVICE&ARQ.IDAPP=ESTA0001"

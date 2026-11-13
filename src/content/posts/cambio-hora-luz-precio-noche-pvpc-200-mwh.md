@@ -6,10 +6,8 @@ noindex: true
 category: luz
 tags: ["precio-de-la-luz", "cambio-de-hora", "pvpc", "omie", "gas"]
 pendiente: false
-image: /img/fotos/cambio-hora-luz-precio-noche-pvpc-200-mwh.webp
-imageAlt: "Contador de la luz en una vivienda"
-imageCredit: "Alexas_Fotos / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/lightbulb-energy-nature-environment-5244001/"
+image: /img/articulos/cambio-hora-luz-precio-noche-pvpc-200-mwh.webp
+imageAlt: "Cambio de hora: la luz supera los 20 cts/kWh de noche"
 sources:
   - name: "ABC Economía: El cambio de hora dispara la factura de la luz con los precios más altos en cuatro años"
     url: "https://www.abc.es/economia/cuentas-corrientes/cambio-hora-dispara-factura-luz-precios-altos-20261025021511-nt.html"

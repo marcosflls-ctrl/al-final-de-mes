@@ -2,7 +2,7 @@
 title: "Trabajo el 29N: cuántas horas me dan para votar y si me las pagan"
 description: "Si trabajas el domingo 29 de noviembre tienes hasta cuatro horas pagadas para votar, según cuánto coincida tu turno con el horario de los colegios."
 date: 2026-10-20T23:00:00+02:00
-updated: 2026-11-09T09:30:00+01:00
+updated: 2026-11-13T10:00:00+01:00
 category: paro
 guia: true
 orden: 7
@@ -12,6 +12,8 @@ imageAlt: "Oficina de empleo en Madrid"
 imageCredit: "Lojwe / Wikimedia Commons (CC0)"
 imageCreditUrl: "https://commons.wikimedia.org/wiki/File:Oficina_de_Empleo_de_Moratalaz,_Madrid.jpg"
 sources:
+  - name: "BOCM: Resolución de 13 de octubre de 2026 de la Dirección General de Trabajo de la Comunidad de Madrid (BOCM n.º 264, 3/11/2026)"
+    url: "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/03/BOCM-20261103-42.PDF"
   - name: "BOE: Real Decreto 605/1999, de regulación complementaria de los procesos electorales (artículo 13)"
     url: "https://www.boe.es/buscar/act.php?id=BOE-A-1999-8583"
   - name: "LegalToday: el BOE publica el Real Decreto de disolución de las Cortes y convocatoria del 29N (6/10/2026)"
@@ -57,7 +59,7 @@ La regla general es que tengas hasta cuatro horas. Las resoluciones oficiales qu
 
 **Si trabajas a tiempo parcial**, el permiso se reduce en proporción a tu jornada.
 
-**Ya hay escala oficial para el 29N en varias comunidades, y es la misma de la tabla.** La Comunidad Valenciana la publicó en el Diari Oficial (DOGV) el 3 de noviembre y Extremadura en el Diario Oficial (DOE) el 6 de noviembre, con una resolución de su Dirección General de Trabajo del 28 de octubre. En las dos: 2 horas si coinciden entre 2 y 4, 3 horas si coinciden entre 4 y 6, y 4 horas si coinciden 6 o más. El Gobierno Vasco también ha publicado ya sus normas. El resto de comunidades y delegaciones del Gobierno las irán publicando en sus boletines estos días; si en la tuya sale una escala distinta, manda la oficial.
+**Ya hay escala oficial para el 29N en varias comunidades, y es la misma de la tabla.** La **Comunidad de Madrid** la publicó en su boletín (BOCM) el 3 de noviembre, con una resolución de la Dirección General de Trabajo del 13 de octubre; la **Comunidad Valenciana**, en el Diari Oficial (DOGV) también el 3 de noviembre; y **Extremadura**, en el Diario Oficial (DOE) el 6 de noviembre, con una resolución de su Dirección General de Trabajo del 28 de octubre. En las dos: 2 horas si coinciden entre 2 y 4, 3 horas si coinciden entre 4 y 6, y 4 horas si coinciden 6 o más. El Gobierno Vasco también ha publicado ya sus normas. El resto de comunidades y delegaciones del Gobierno las irán publicando en sus boletines estos días; si en la tuya sale una escala distinta, manda la oficial.
 
 ## Si trabajas lejos de casa
 

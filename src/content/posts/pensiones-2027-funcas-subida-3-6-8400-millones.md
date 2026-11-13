@@ -6,10 +6,8 @@ noindex: true
 category: pensiones
 tags: ["pensiones", "revalorizacion", "funcas", "2027", "elecciones-29n"]
 pendiente: true
-image: /img/fotos/pensiones-2027-funcas-subida-3-6-8400-millones.webp
-imageAlt: "Pareja de jubilados paseando por la ciudad"
-imageCredit: "Nowaja / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/forest-trees-sunlight-the-path-7179046/"
+image: /img/datos/pensiones-2027-funcas-subida-3-6-8400-millones.webp
+imageAlt: "Pensiones 2027: Funcas calcula una subida del 3,6% (8.400 M)"
 sources:
   - name: "El Mundo Economía: Garralda (Mutua Madrileña): \"Cada vez está más en duda que la generosidad de las pensiones públicas"
     url: "https://www.elmundo.es/economia/dinero-inversion/2026/10/22/6ad9c3e821efa0e64a8b459b.html"

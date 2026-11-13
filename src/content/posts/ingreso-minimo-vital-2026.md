@@ -6,10 +6,8 @@ category: paro
 guia: true
 orden: 5
 tags: [ingreso-minimo-vital, imv, ayudas, seguridad-social, familias]
-image: /img/fotos/ingreso-minimo-vital-2026.webp
-imageAlt: "Pareja de jubilados"
-imageCredit: "jhenning / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/retiree-pensioners-elderly-couple-7390179/"
+image: /img/articulos/ingreso-minimo-vital-2026.webp
+imageAlt: "Ingreso mínimo vital 2026: cuánto se cobra, requisitos y cómo pedirlo"
 sources:
   - name: "Bankinter: ingreso mínimo vital 2026, cuantías y requisitos (05/01/2026)"
     url: "https://www.bankinter.com/blog/finanzas-personales/ingreso-minimo-vital"

@@ -6,10 +6,8 @@ category: luz
 guia: true
 orden: 2
 tags: [bono-social, luz, pvpc, ayudas, factura-electrica]
-image: /img/fotos/bono-social-electrico-requisitos-y-descuentos.webp
-imageAlt: "Contador de la luz"
-imageCredit: "ELG21 / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/wind-mills-energy-clouds-power-6928590/"
+image: /img/articulos/bono-social-electrico-requisitos-y-descuentos.webp
+imageAlt: "Bono social eléctrico 2026: requisitos, descuentos y cómo pedirlo"
 sources:
   - name: "Ministerio para la Transición Ecológica: requisitos del bono social"
     url: "https://www.miteco.gob.es/en/energia/pobreza-energetica/pe-001/requisitos.html"

@@ -2,12 +2,16 @@
 title: "Empleo y salario mínimo en el 29N: balance y propuestas"
 description: "El salario mínimo, la reforma del paro, la jornada de 37,5 horas que tumbó el Congreso y lo que plantean PSOE, PP, Vox, Sumar y Podemos sobre trabajo."
 date: 2026-10-16T21:44:00+00:00
-updated: 2026-11-10T16:00:00+01:00
+updated: 2026-11-13T10:00:00+01:00
 category: paro
 guia: true
 orden: 1
 tags: [empleo, smi, salario-minimo, jornada-laboral, subsidio, elecciones-29n, partidos]
 sources:
+  - name: "Infobae: el programa de Vox para el 29N, «Es sentido común», 115 medidas (12/11/2026)"
+    url: "https://www.infobae.com/espana/2026/11/12/vox-lleva-al-29-n-un-programa-electoral-con-repatriaciones-y-deportaciones-de-migrantes-prioridad-nacional-y-derogacion-de-leyes-de-genero/"
+  - name: "OKDiario: las 13 grandes medidas del programa de Vox para el 29N (12/11/2026)"
+    url: "https://okdiario.com/espana/13-medidas-vox-29n-prioridad-nacional-desregulacion-remigracion-20825904"
   - name: "Demócrata: el programa del PP para el 29N, «La Reconstrucción Nacional» (10/11/2026)"
     url: "https://www.democrata.es/elecciones-generales-espana/programa-electoral-pp-29n-propuestas/"
   - name: "elDiario.es: el Congreso aprueba la reforma del subsidio por desempleo en la segunda votación"
@@ -77,7 +81,7 @@ El registro horario digital iba inicialmente en esa ley. Después el Gobierno lo
 
 ## Parte 2. Qué proponen los partidos
 
-**Actualizado el 10 de noviembre:** el **PP** publicó ese día su programa, «La Reconstrucción Nacional», y abajo recogemos lo que dice. Vox, PSOE, Sumar (Frente Amplio) y Podemos todavía no han publicado el suyo: de ellos recogemos documentos y declaraciones con su fecha, y los actualizaremos cuando salgan.
+**Actualizado el 13 de noviembre:** ya han publicado su programa el **PP** (10 de noviembre, «La Reconstrucción Nacional») y **Vox** (12 de noviembre, «Es sentido común», 115 medidas), y recogemos lo que dicen. **PSOE, Sumar (Frente Amplio) y Podemos todavía no han publicado el suyo**: de ellos recogemos planes, documentos y declaraciones con su fecha, y actualizaremos la página cuando salgan.
 
 ### PSOE
 
@@ -94,7 +98,7 @@ Las resoluciones de su último congreso federal piden que el salario mínimo equ
 
 ### Vox
 
-Se opone a reducir la jornada por ley y presentó una de las enmiendas que tumbaron la ley de 37,5 horas. No ha dado una cifra de salario mínimo.
+**Programa del 12 de noviembre:** para los **autónomos**, cuota cero si sus ingresos no llegan al salario mínimo y una cuota progresiva desde 50 € por encima; abaratar las cotizaciones; y limitar el ingreso mínimo vital a los españoles con menos recursos. Se opone a reducir la jornada por ley y presentó una de las enmiendas que tumbaron la ley de 37,5 horas. No ha dado una cifra de salario mínimo.
 
 ### Sumar
 

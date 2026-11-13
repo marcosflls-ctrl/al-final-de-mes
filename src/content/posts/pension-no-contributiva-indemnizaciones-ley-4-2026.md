@@ -5,10 +5,8 @@ date: 2026-10-23T15:09:12+00:00
 category: pensiones
 tags: ["pensiones-no-contributivas", "ley-4-2026", "indemnizaciones", "seguridad-social", "boe"]
 pendiente: false
-image: /img/fotos/pension-no-contributiva-indemnizaciones-ley-4-2026.webp
-imageAlt: "Mujer mayor sentada en el salón de su casa"
-imageCredit: "VinzentWeinbeer / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/make-a-phone-call-mobile-phone-5190643/"
+image: /img/articulos/pension-no-contributiva-indemnizaciones-ley-4-2026.webp
+imageAlt: "Pensión no contributiva: ciertas indemnizaciones ya no cuentan"
 sources:
   - name: "BOE: Ley 4/2026"
     url: "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20528"

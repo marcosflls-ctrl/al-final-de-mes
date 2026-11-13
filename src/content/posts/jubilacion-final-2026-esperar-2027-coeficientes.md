@@ -5,10 +5,8 @@ date: 2026-10-26T21:54:47+00:00
 category: pensiones
 tags: ["jubilacion-anticipada", "pensiones-2027", "coeficientes-reductores", "edad-de-jubilacion", "bbva"]
 pendiente: false
-image: /img/fotos/jubilacion-final-2026-esperar-2027-coeficientes.webp
-imageAlt: "Pareja de jubilados paseando"
-imageCredit: "snapitostudio / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/couple-marriage-wedding-love-heart-7743478/"
+image: /img/datos/jubilacion-final-2026-esperar-2027-coeficientes.webp
+imageAlt: "Jubilación a final de 2026: recorte del 3,26% al 3,52%"
 sources:
   - name: "Seguridad Social: pensión de jubilación, requisitos desde 2027"
     url: "https://www.seg-social.es/wps/portal/wss/internet/Trabajadores/PrestacionesPensionesTrabajadores/10963/28393/28396/28472"
@@ -29,7 +27,7 @@ El calendario de la reforma de 2011 llega a su final en 2027. Los requisitos cam
 | Jubilación a los 65 años | 38 años y 3 meses cotizados | 38 años y 6 meses cotizados |
 | Si no llegas a esa cotización | 66 años y 10 meses | 67 años |
 
-La Seguridad Social recoge la regla de 2027 en su web: <cite index="1-3">67 años, o 65 si acreditas 38 años y 6 meses de cotización</cite>.
+La Seguridad Social recoge la regla de 2027 en su web: 67 años, o 65 si acreditas 38 años y 6 meses de cotización.
 
 ## ¿Cuánto se recorta la pensión si adelanto uno, dos o tres meses?
 
@@ -70,7 +68,7 @@ BBVA lo ilustra con una pensión teórica de 3.750 euros. En ese ejemplo, espera
 - **Tu edad legal:** depende de los años cotizados, según la tabla de arriba.
 - **Tu periodo cotizado:** puedes consultarlo en [nuestra guía para sacar el informe con tu fecha exacta de jubilación](/pensiones/informe-edad-jubilacion-fecha-exacta-seguridad-social/).
 - **El cálculo de tu pensión:** prueba con [la calculadora de jubilación](/pensiones/calculadora-jubilacion/).
-- **El plazo de solicitud:** por norma general, <cite index="4-12">se presenta dentro de los 3 meses anteriores o posteriores al día en que te jubilas</cite>.
+- **El plazo de solicitud:** por norma general, se presenta dentro de los 3 meses anteriores o posteriores al día en que te jubilas.
 
 Los expertos recuerdan que no hay una respuesta única. La situación laboral, la necesidad de ingresos, la salud y la opción de seguir trabajando pesan tanto como esos euros de diferencia.
 

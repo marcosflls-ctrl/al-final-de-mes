@@ -5,10 +5,8 @@ date: 2026-10-26T17:26:59+00:00
 category: paro
 tags: ["huelga-general", "11-de-noviembre", "nomina", "derechos-laborales", "seguridad-social"]
 pendiente: false
-image: /img/fotos/huelga-general-11-noviembre-sueldo-descuento-cotizacion.webp
-imageAlt: "Trabajadores concentrados en una manifestación sindical"
-imageCredit: "jannonivergall / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/worker-grinder-factory-workplace-5736096/"
+image: /img/articulos/huelga-general-11-noviembre-sueldo-descuento-cotizacion.webp
+imageAlt: "Huelga general 11N: descuento de sueldo y cotización"
 sources:
   - name: "Europa Press Economía: Huelga general del 11 de noviembre: qué pueden hacer las empresas y qué no está permitido"
     url: "https://www.europapress.es/economia/noticia-huelga-general-11-noviembre-pueden-hacer-empresas-no-permitido-20261026143509.html"
@@ -20,7 +18,7 @@ Lo explica la guía que ha elaborado KPMG Abogados para las empresas y que recog
 
 ## ¿Quién ha convocado la huelga y por qué?
 
-La convocan los sindicatos. Según la información recogida, sus objetivos son garantizar el acceso a una vivienda digna, subir los salarios y el SMI, y recuperar poder adquisitivo en prestaciones y pensiones frente al aumento del coste de la vida. <cite index="1-3,1-9">El presidente del Gobierno ha dicho que el Ejecutivo solo puede respetar este derecho constitucional.</cite>
+La convocan los sindicatos. Según la información recogida, sus objetivos son garantizar el acceso a una vivienda digna, subir los salarios y el SMI, y recuperar poder adquisitivo en prestaciones y pensiones frente al aumento del coste de la vida. El presidente del Gobierno ha dicho que el Ejecutivo solo puede respetar este derecho constitucional.
 
 ## ¿Cuándo empieza y cuándo termina?
 

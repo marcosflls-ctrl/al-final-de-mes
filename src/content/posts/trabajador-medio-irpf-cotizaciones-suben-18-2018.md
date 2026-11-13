@@ -6,10 +6,8 @@ noindex: true
 category: hacienda
 tags: ["irpf", "cotizaciones", "nomina", "poder-adquisitivo", "inflacion"]
 pendiente: false
-image: /img/fotos/trabajador-medio-irpf-cotizaciones-suben-18-2018.webp
-imageAlt: "Calculadora y nómina sobre una mesa"
-imageCredit: "Flyfin / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/finance-accounting-tax-7529921/"
+image: /img/datos/trabajador-medio-irpf-cotizaciones-suben-18-2018.webp
+imageAlt: "Trabajador medio: IRPF y cotizaciones suben un 18% real desde 2018"
 sources:
   - name: "ABC Economía: Los impuestos y cotizaciones que soporta un trabajador medio suben un 18% con Sánchez, mientras su r"
     url: "https://www.abc.es/economia/impuestos-cotizaciones-soporta-trabajador-medio-suben-sanchez-20261021222828-nt.html"

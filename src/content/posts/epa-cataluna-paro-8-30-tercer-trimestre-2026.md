@@ -6,10 +6,8 @@ noindex: true
 category: paro
 tags: ["epa", "paro", "cataluna", "ine", "empleo"]
 pendiente: false
-image: /img/fotos/epa-cataluna-paro-8-30-tercer-trimestre-2026.webp
-imageAlt: "Personas consultando ofertas de empleo en una oficina"
-imageCredit: "TaniaRose / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/time-work-clock-coffee-planning-5193038/"
+image: /img/datos/epa-cataluna-paro-8-30-tercer-trimestre-2026.webp
+imageAlt: "EPA Cataluña: el paro sube al 8,30% y suma 18.900 parados"
 sources:
   - name: "La Vanguardia Economía: EPA: Catalunya suma 18.900 desempleados y el paro sube al 8,30% en el tercer trimestre"
     url: "https://www.lavanguardia.com/economia/20261027/11669094/epa-catalunya-tercer-trimestre-empleo-paro.html"

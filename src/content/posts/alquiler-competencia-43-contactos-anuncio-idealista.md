@@ -6,16 +6,14 @@ noindex: true
 category: vivienda
 tags: ["alquiler", "inquilinos", "idealista", "vivienda", "zonas-tensionadas"]
 pendiente: false
-image: /img/fotos/alquiler-competencia-43-contactos-anuncio-idealista.webp
-imageAlt: "Cartel de se alquila en la fachada de un edificio de viviendas"
-imageCredit: "moshehar / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/window-building-home-house-shadow-6800397/"
+image: /img/articulos/alquiler-competencia-43-contactos-anuncio-idealista.webp
+imageAlt: "Alquiler: 43 contactos por anuncio, 5 veces más que en 2018"
 sources:
   - name: "Idealista News (vivienda): La competencia por cada vivienda en alquiler se quintuplica en los últimos 8 años"
     url: "https://www.idealista.com/news/inmobiliario/vivienda/2026/10/26/920389-la-competencia-por-cada-vivienda-en-alquiler-se-quintuplica-en-los-ultimos-8-anos"
 ---
 
-Alquilar un piso es hoy mucho más competido que hace ocho años. En el tercer trimestre de 2026, cada anuncio de alquiler en idealista recibió de media 43 contactos antes de darse de baja. En el mismo periodo de 2018 recibía 8. <cite index="1-1,1-2">Es un aumento del 405%, según un estudio publicado por idealista.</cite>
+Alquilar un piso es hoy mucho más competido que hace ocho años. En el tercer trimestre de 2026, cada anuncio de alquiler en idealista recibió de media 43 contactos antes de darse de baja. En el mismo periodo de 2018 recibía 8. Es un aumento del 405%, según un estudio publicado por idealista.
 
 El dato mide contactos por anuncio, no personas distintas. Una misma familia puede escribir a varios pisos. Aun así, sirve para ver cuánto ha crecido la demanda frente a la oferta.
 

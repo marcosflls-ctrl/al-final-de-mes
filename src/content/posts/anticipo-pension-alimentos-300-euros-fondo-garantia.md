@@ -5,10 +5,8 @@ date: 2026-10-22T15:22:49+00:00
 category: paro
 tags: ["pension-de-alimentos", "fondo-de-garantia", "ayudas-familias", "impago", "real-decreto-ley"]
 pendiente: false
-image: /img/fotos/anticipo-pension-alimentos-300-euros-fondo-garantia.webp
-imageAlt: "Madre con su hijo en casa"
-imageCredit: "Marjonhorn / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/pregnant-maternity-mother-6189040/"
+image: /img/datos/anticipo-pension-alimentos-300-euros-fondo-garantia.webp
+imageAlt: "Pensión de alimentos impagada: anticipo de 300 € desde noviembre"
 sources:
   - name: "BOE: Real Decreto-ley 31/2026"
     url: "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-21872"

@@ -5,10 +5,8 @@ date: 2026-10-20T23:14:11+00:00
 category: paro
 tags: ["funcionarios", "sueldo", "empleo-publico", "subida-salarial", "2027", "gobierno-en-funciones"]
 pendiente: true
-image: /img/fotos/funcionarios-subida-retroactiva-2026-4-5-2027.webp
-imageAlt: "Oficina de empleo"
-imageCredit: "RonaldCandonga / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/job-office-team-business-internet-5382501/"
+image: /img/datos/funcionarios-subida-retroactiva-2026-4-5-2027.webp
+imageAlt: "Funcionarios: 0,5% retroactivo de 2026 y 4,5% en 2027"
 sources:
   - name: "El Mundo Economía: Sánchez carga a la factura del próximo Gobierno subidas a pensionistas y funcionarios que costarán m"
     url: "https://www.elmundo.es/economia/2026/10/20/6ad7938b21efa09b7d8b45a0.html"

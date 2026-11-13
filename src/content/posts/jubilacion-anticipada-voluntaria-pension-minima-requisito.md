@@ -5,10 +5,8 @@ date: 2026-10-30T11:40:51+00:00
 category: pensiones
 tags: ["jubilacion-anticipada", "pension-minima", "seguridad-social", "coeficientes-reductores"]
 pendiente: false
-image: /img/fotos/jubilacion-anticipada-voluntaria-pension-minima-requisito.webp
-imageAlt: "Pareja de jubilados paseando por un parque"
-imageCredit: "yugifrias / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/beach-couple-leisure-stroll-5571545/"
+image: /img/datos/jubilacion-anticipada-voluntaria-pension-minima-requisito.webp
+imageAlt: "Jubilación anticipada: la pensión debe pasar de 936 €"
 sources:
   - name: "Real Decreto Legislativo 8/2015, texto refundido de la Ley General de la Seguridad Social (art. 208)"
     url: "https://www.boe.es/buscar/doc.php?id=BOE-A-2015-11724"
@@ -18,18 +16,18 @@ sources:
 
 Si quieres jubilarte de forma anticipada y voluntaria, hay un requisito que casi nadie mira: la pensión que te quedaría **tiene que ser más alta que la pensión mínima**. En 2026, esa mínima va de **888,70 a 1.256,60 euros al mes**, según tu situación familiar. Si no la superas, la Seguridad Social te deniega esta modalidad y toca esperar.
 
-Lo recoge el artículo 208.1.c de la Ley General de la Seguridad Social. <cite index="2-12,2-13">La pensión a percibir debe resultar superior a la mínima que te correspondería por tu situación familiar al cumplir los 65 años. En caso contrario, no se puede acceder a esta fórmula.</cite>
+Lo recoge el artículo 208.1.c de la Ley General de la Seguridad Social. La pensión a percibir debe resultar superior a la mínima que te correspondería por tu situación familiar al cumplir los 65 años. En caso contrario, no se puede acceder a esta fórmula.
 
 ## ¿Qué hay que cumplir para jubilarse antes de tiempo?
 
-La jubilación anticipada voluntaria permite adelantar el retiro como máximo dos años. <cite index="1-3,1-4">Hacen falta 35 años cotizados y la pensión no se cobra íntegra: se reduce entre el 2,81% y el 21%.</cite> Según recoge El Mundo, además, dos de esos 35 años deben estar dentro de los últimos 15, y hay que estar de alta en la Seguridad Social.
+La jubilación anticipada voluntaria permite adelantar el retiro como máximo dos años. Hacen falta 35 años cotizados y la pensión no se cobra íntegra: se reduce entre el 2,81% y el 21%. Según recoge El Mundo, además, dos de esos 35 años deben estar dentro de los últimos 15, y hay que estar de alta en la Seguridad Social.
 
 La edad mínima depende de tu edad ordinaria de jubilación:
 
 - Si la tuya son 65 años, puedes adelantar hasta los 63.
 - Si son 67, puedes pedirla a partir de los 65.
 
-<cite index="1-10">El recorte depende de los meses que te falten para la edad legal y de los años cotizados.</cite>
+El recorte depende de los meses que te falten para la edad legal y de los años cotizados.
 
 ## ¿Cuáles son las pensiones mínimas de 2026?
 
@@ -41,7 +39,7 @@ La comparación se hace con la mínima de un jubilado de 65 años. Estas son las
 | Sin cónyuge | 936,20 € | 13.106,80 € |
 | Con cónyuge no a cargo | 888,70 € | 12.441,80 € |
 
-<cite index="12-11">Se considera que hay cónyuge a cargo cuando convive con el pensionista y depende económicamente de él.</cite> Las cifras anuales salen del <cite index="15-19,15-20">BOE</cite> y las mensuales, de la <cite index="13-8">tabla de la Seguridad Social</cite>.
+Se considera que hay cónyuge a cargo cuando convive con el pensionista y depende económicamente de él. Las cifras anuales salen del BOE y las mensuales, de la tabla de la Seguridad Social.
 
 ## ¿Qué pensión previa necesitas? Un ejemplo con números
 
@@ -62,7 +60,7 @@ Cuanto menor sea el recorte (más años cotizados o menos meses de adelanto), m�
 
 ## ¿Por qué existe este requisito?
 
-Según el análisis jurídico publicado por el BOE sobre una sentencia del TJUE de 2019, <cite index="3-6">la norma busca evitar que el sistema pague complementos por mínimos a quien se jubila antes y mantenerlo en el mercado laboral.</cite> La misma sentencia aclaró que, en carreras en varios países de la UE, cuenta la suma de las pensiones equivalentes.
+Según el análisis jurídico publicado por el BOE sobre una sentencia del TJUE de 2019, la norma busca evitar que el sistema pague complementos por mínimos a quien se jubila antes y mantenerlo en el mercado laboral. La misma sentencia aclaró que, en carreras en varios países de la UE, cuenta la suma de las pensiones equivalentes.
 
 ## ¿Qué puedes hacer ahora?
 

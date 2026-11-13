@@ -6,10 +6,8 @@ noindex: true
 category: vivienda
 tags: ["impago-alquiler", "desahucio", "propietarios", "alquiler", "seag"]
 pendiente: false
-image: /img/fotos/impago-alquiler-278-dias-9700-euros-seag.webp
-imageAlt: "Cartel de se alquila en la fachada de un edificio de viviendas"
-imageCredit: "TheZestyBohemian / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/cat-pet-animal-gray-grey-furry-7610765/"
+image: /img/datos/impago-alquiler-278-dias-9700-euros-seag.webp
+imageAlt: "Impago del alquiler: 278 días y 9.700 € de coste al casero"
 sources:
   - name: "El Español Invertia: Nueve meses para recuperar un piso y casi 10.000 euros de coste: la factura media del impago del alq"
     url: "https://www.elespanol.com/invertia/observatorios/vivienda/20261024/meses-recuperar-piso-euros-coste-factura-media-impago-alquiler-espana/1003744432253_0.html"

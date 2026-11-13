@@ -2,14 +2,15 @@
 title: "Inquilinos: deducción de hasta 1.163 € en la renta por el alquiler"
 description: "Los inquilinos con base imponible de hasta 33.007,20 € podrán deducirse el 10% del alquiler, con un máximo de 1.163 € al año, según el Real Decreto-ley 29/2026."
 date: 2026-10-20T21:57:23+00:00
+updated: 2026-11-13T10:30:00+01:00
 category: vivienda
 tags: ["deduccion-alquiler", "irpf", "inquilinos", "real-decreto-ley-29-2026", "declaracion-de-la-renta"]
 pendiente: true
-image: /img/fotos/deduccion-alquiler-irpf-1163-euros-requisitos.webp
-imageAlt: "Edificio de viviendas"
-imageCredit: "rotekirsche20 / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/building-windows-balconies-facade-5630441/"
+image: /img/datos/deduccion-alquiler-irpf-1163-euros-requisitos.webp
+imageAlt: "Inquilinos: deducción de hasta 1.163 € en la renta por el alquiler"
 sources:
+  - name: "El Diario de Madrid: la Diputación Permanente convalida el Real Decreto-ley 29/2026 (35 a 34) y rechaza el 28/2026 (12/11/2026)"
+    url: "https://www.eldiariodemadrid.es/articulo/vivienda/congreso-decretos-vivienda-prorroga-alquileres-renovacion-automatica/20261112162933146758.html"
   - name: "BOE: Real Decreto-ley 29/2026, de 6 de octubre"
     url: "https://www.boe.es/buscar/act.php?id=BOE-A-2026-20823"
   - name: "El Mundo Economía: Es oficial: llega una nueva deducción por alquiler de hasta 1.163 euros para quienes cumplan estos r"
@@ -18,7 +19,7 @@ sources:
 
 Si vives de alquiler y tu base imponible no llega a 33.007,20 euros, el IRPF te dejará deducir el 10% de lo que pagas por la vivienda habitual. El máximo es de **1.163 euros al año** y solo lo alcanzas con una base imponible de hasta 23.007,20 euros. Así lo recoge el Real Decreto-ley 29/2026, publicado en el BOE el 7 de octubre, según informa El Mundo.
 
-**Ojo:** el decreto está en vigor, pero **el Congreso tiene que convalidarlo** en la Diputación Permanente, con la votación prevista para el **12 de noviembre**. Si no se convalida, la deducción decae. Lo seguimos en [vivienda y elecciones del 29N](/vivienda/vivienda-elecciones-29n-balance-y-propuestas/).
+**Ya es definitivo:** el Congreso **convalidó el decreto el 12 de noviembre** en la Diputación Permanente, por 35 votos a 34. La deducción sigue en vigor. Lo explicamos en [vivienda y elecciones del 29N](/vivienda/vivienda-elecciones-29n-balance-y-propuestas/).
 
 ## ¿Cuánto te puedes deducir?
 

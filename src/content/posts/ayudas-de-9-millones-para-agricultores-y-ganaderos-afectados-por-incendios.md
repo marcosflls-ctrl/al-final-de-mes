@@ -6,10 +6,8 @@ noindex: true
 category: paro
 tags: ["ayudas-agricultores", "incendios", "seguro-agrario", "ganaderos", "consejo-de-ministros"]
 pendiente: false
-image: /img/fotos/ayudas-de-9-millones-para-agricultores-y-ganaderos-afectados-por-incendios.webp
-imageAlt: "Billetes de euro"
-imageCredit: "ds_30 / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/money-businesses-finances-5029288/"
+image: /img/datos/ayudas-de-9-millones-para-agricultores-y-ganaderos-afectados-por-incendios.webp
+imageAlt: "Ayudas de 9 millones para agricultores y ganaderos por los incendios"
 sources:
   - name: "20minutos Economía: El Ejecutivo lanza ayudas directas para agricultores y ganaderos afectados por los incendios"
     url: "https://www.20minutos.es/lainformacion/economia-y-finanzas/gobierno-aprueba-ayudas-directas-9-millones-euros-agricultores-ganaderos-afectados-incendios-este-ano_7050963_0.html"

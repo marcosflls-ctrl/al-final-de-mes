@@ -15,7 +15,7 @@ const ipc = d?.general.va?.[mesIpc] ?? null;
 const mesIrav = irav ? Object.keys(irav).sort().at(-1)! : '';
 const iravHoy = irav?.[mesIrav] ?? null;
 // Estado del decreto: 'vigente' (pendiente de convalidar), 'convalidado' o 'derogado'
-const DECRETO = { estado: 'vigente', tope: 2, hasta: '31 de diciembre de 2027', votacion: '12 de noviembre' };
+const DECRETO = { estado: 'convalidado', tope: 2, hasta: '31 de diciembre de 2027', votacion: '12 de noviembre' };
 const DATOS = { ipc, irav: iravHoy, tope: DECRETO.estado === 'derogado' ? null : DECRETO.tope };
 
 const titulo = 'Calculadora de la subida del alquiler: cuánto te pueden subir';
@@ -76,7 +76,7 @@ const fmt = (v: number | null) => (v == null ? '—' : `${v.toLocaleString('es-E
       <label class="check"><input name="tensionada" type="checkbox" /> <span>Vivo en una zona tensionada y mi alquiler está <strong>por encima del índice de precios de referencia</strong></span></label>
     </form>
 
-    <p class="aviso"><strong>Ojo:</strong> el límite del {DECRETO.tope} % viene del Real Decreto-ley 29/2026, en vigor desde el 8 de octubre de 2026 pero <strong>pendiente de que el Congreso lo convalide el {DECRETO.votacion}</strong>. Si no se convalida, decae y vuelven las reglas anteriores, que te mostramos debajo del resultado. Actualizaremos esta página en cuanto se vote.</p>
+    <p class="aviso"><strong>Ya es definitivo:</strong> el límite del {DECRETO.tope} % viene del Real Decreto-ley 29/2026, en vigor desde el 8 de octubre de 2026. El Congreso lo <strong>convalidó el {DECRETO.votacion}</strong> en la Diputación Permanente, por 35 votos a 34, así que sigue en vigor hasta el {DECRETO.hasta}. El otro decreto, el que hacía indefinidos los contratos (28/2026), se rechazó.</p>
 
     <Compartir title={titulo} url={url} />
 

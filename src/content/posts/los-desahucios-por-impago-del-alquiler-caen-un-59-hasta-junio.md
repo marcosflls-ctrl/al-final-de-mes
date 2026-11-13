@@ -9,10 +9,8 @@ pendiente: false
 sources:
   - name: "La Vanguardia Economía: Los desahucios por el impago del alquiler caen un 60% hasta mitad de año"
     url: "https://www.lavanguardia.com/economia/20261016/11660478/desahucios-alquiler-vivienda-espana.html"
-image: /img/fotos/los-desahucios-por-impago-del-alquiler-caen-un-59-hasta-junio.webp
-imageAlt: "Edificio de viviendas"
-imageCredit: "solomonikvik / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/dubai-skyscraper-architecture-urban-7237750/"
+image: /img/datos/los-desahucios-por-impago-del-alquiler-caen-un-59-hasta-junio.webp
+imageAlt: "Los desahucios por impago del alquiler caen un 59% hasta junio"
 ---
 
 Los lanzamientos por impago del alquiler suman **4.499 en el primer semestre de 2026**, un **59% menos** que en el mismo periodo del año pasado. Son los datos que ha publicado el Consejo General del Poder Judicial (CGPJ), según recoge La Vanguardia. Es el nivel más bajo de la serie, que arranca en 2013.

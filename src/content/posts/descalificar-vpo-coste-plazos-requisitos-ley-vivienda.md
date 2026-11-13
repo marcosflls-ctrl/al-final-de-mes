@@ -5,10 +5,8 @@ date: 2026-10-31T23:27:01+00:00
 category: vivienda
 tags: ["vpo", "vivienda-protegida", "descalificacion", "ley-de-vivienda", "venta-de-vivienda"]
 pendiente: false
-image: /img/fotos/descalificar-vpo-coste-plazos-requisitos-ley-vivienda.webp
-imageAlt: "Bloque de viviendas visto desde la calle"
-imageCredit: "Pix-Off / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/windows-sample-net-door-7509369/"
+image: /img/datos/descalificar-vpo-coste-plazos-requisitos-ley-vivienda.webp
+imageAlt: "Descalificar una VPO: de gratis a más de 24.000 euros"
 sources:
   - name: "BOE: Sentencia del Tribunal Constitucional 79/2024, de 21 de mayo, sobre la Ley 12/2023"
     url: "https://www.boe.es/buscar/doc.php?id=BOE-A-2024-12808"
@@ -22,7 +20,7 @@ Descalificar una VPO sirve para que tu casa protegida pase a ser vivienda libre 
 
 Aquí hay un matiz importante. El texto de Idealista dice que, desde el 26 de mayo de 2023, las VPO sobre suelo público conservan una protección permanente y no se pueden descalificar. Esa afirmación hay que tomarla con cuidado.
 
-El artículo 16 de la Ley 12/2023 sí fijaba <cite index="3-20">un régimen de protección permanente que excluía la descalificación</cite> en las viviendas promovidas sobre suelos con ese destino. <cite index="6-30,6-31">Pero el Tribunal Constitucional declaró inconstitucional y nulo ese artículo 16 y la disposición transitoria primera</cite>, en la sentencia 79/2024, de 21 de mayo de 2024 (recurso 5491-2023), presentado por la Junta de Andalucía. <cite index="6-26,6-27">El tribunal consideró que el precepto entraba en un nivel de detalle impropio de las competencias del Estado</cite>, que en vivienda corresponden a las comunidades autónomas.
+El artículo 16 de la Ley 12/2023 sí fijaba un régimen de protección permanente que excluía la descalificación en las viviendas promovidas sobre suelos con ese destino. Pero el Tribunal Constitucional declaró inconstitucional y nulo ese artículo 16 y la disposición transitoria primera, en la sentencia 79/2024, de 21 de mayo de 2024 (recurso 5491-2023), presentado por la Junta de Andalucía. El tribunal consideró que el precepto entraba en un nivel de detalle impropio de las competencias del Estado, que en vivienda corresponden a las comunidades autónomas.
 
 Con el artículo anulado, esa prohibición general de la ley estatal ya no es la referencia. Lo que manda es la normativa de tu comunidad y el régimen de tu promoción. Antes de dar nada por hecho, confirma en el organismo de vivienda de tu comunidad qué norma se aplica a tu casa.
 

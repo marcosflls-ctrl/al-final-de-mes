@@ -5,10 +5,8 @@ date: 2026-10-26T17:26:27+00:00
 category: paro
 tags: ["smi", "irpf", "salario-minimo", "deduccion", "2027"]
 pendiente: true
-image: /img/fotos/smi-2027-exento-irpf-gobierno-confirma-deduccion.webp
-imageAlt: "Billetes de euro junto a una nómina sobre una mesa"
-imageCredit: "AlexanderStein / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/electricity-save-electricity-7600360/"
+image: /img/articulos/smi-2027-exento-irpf-gobierno-confirma-deduccion.webp
+imageAlt: "El SMI de 2027 seguirá exento de IRPF, confirma el Gobierno"
 sources:
   - name: "Ministerio de Hacienda: nota de prensa del Consejo de Ministros sobre la deducción del SMI en 2026"
     url: "https://www.hacienda.gob.es/ca-ES/Prensa/Noticias/Paginas/2026/20260217-NP-CM-SMI-DEDUCCION-2026.aspx"

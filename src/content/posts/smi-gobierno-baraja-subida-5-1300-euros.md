@@ -6,10 +6,8 @@ noindex: true
 category: paro
 tags: ["salario-minimo", "smi", "consejo-de-ministros", "sindicatos", "nomina"]
 pendiente: true
-image: /img/fotos/smi-gobierno-baraja-subida-5-1300-euros.webp
-imageAlt: "Billetes de euro sobre una mesa"
-imageCredit: "Tumisu / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/loan-money-lend-borrow-euros-500-8012425/"
+image: /img/datos/smi-gobierno-baraja-subida-5-1300-euros.webp
+imageAlt: "SMI: el Gobierno baraja una subida del 5%, cerca de 1.300 €"
 sources:
   - name: "ABC Economía: Yolanda Díaz busca un golpe de efecto ante la OIT con una subida del SMI del entorno del 5%"
     url: "https://www.abc.es/economia/yolanda-diaz-busca-golpe-efecto-elecciones-oit-20261022013022-nt.html"

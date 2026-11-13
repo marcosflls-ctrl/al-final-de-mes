@@ -6,22 +6,20 @@ noindex: true
 category: paro
 tags: ["convenios-colectivos", "ipc", "sueldo", "clausula-de-garantia-salarial", "inflacion"]
 pendiente: false
-image: /img/fotos/clausula-garantia-salarial-ipc-3-6-millones-convenio.webp
-imageAlt: "Calculadora y nómina sobre una mesa de trabajo"
-imageCredit: "u_mevs2b9d3l / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/finance-money-business-receipts-8206242/"
+image: /img/datos/clausula-garantia-salarial-ipc-3-6-millones-convenio.webp
+imageAlt: "3,6 millones de asalariados tienen cláusula IPC en convenio"
 sources:
   - name: "Expansión Economía: Más de 3,6 millones de trabajadores tienen blindado el sueldo ante la escalada del IPC"
     url: "https://www.expansion.com/economia/politica/2026/10/25/3-6-millones-trabajadores-blindado-sueldo-escalada-ipc.html"
 ---
 
-Si tu convenio tiene una cláusula de garantía salarial, tu sueldo puede subir más de lo pactado cuando la inflación se dispara. A cierre de septiembre, <cite index="1-1">según los datos del Ministerio de Trabajo que recoge Expansión</cite>, esa protección alcanza a **3,64 millones de asalariados**. La patronal calcula que la revisión media rondará el **1%**.
+Si tu convenio tiene una cláusula de garantía salarial, tu sueldo puede subir más de lo pactado cuando la inflación se dispara. A cierre de septiembre, según los datos del Ministerio de Trabajo que recoge Expansión, esa protección alcanza a **3,64 millones de asalariados**. La patronal calcula que la revisión media rondará el **1%**.
 
 El dato llega con la inflación muy por encima de lo que se pactó. La subida media por convenio es del 3%. La inflación media del año rozará el 4% y en septiembre llegó al 4,9%.
 
 ## ¿Qué es una cláusula de garantía salarial?
 
-Es un artículo del convenio que obliga a revisar los salarios si el IPC supera la subida pactada. El Ministerio de Trabajo la define en su metodología como una condición, normalmente ligada al IPC. Si se cumple, <cite index="5-6">lleva a revisar los salarios que se pactaron para ese periodo</cite>.
+Es un artículo del convenio que obliga a revisar los salarios si el IPC supera la subida pactada. El Ministerio de Trabajo la define en su metodología como una condición, normalmente ligada al IPC. Si se cumple, lleva a revisar los salarios que se pactaron para ese periodo.
 
 Hay dos tipos:
 

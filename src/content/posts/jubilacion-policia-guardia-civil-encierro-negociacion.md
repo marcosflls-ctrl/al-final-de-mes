@@ -6,22 +6,20 @@ noindex: true
 category: pensiones
 tags: ["jubilacion-anticipada", "policia-nacional", "guardia-civil", "clases-pasivas", "coeficientes-reductores"]
 pendiente: true
-image: /img/fotos/jubilacion-policia-guardia-civil-encierro-negociacion.webp
-imageAlt: "Agentes de policía en una concentración de protesta"
-imageCredit: "Antonio_Cansino / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/riot-protest-street-crowd-laws-6129239/"
+image: /img/articulos/jubilacion-policia-guardia-civil-encierro-negociacion.webp
+imageAlt: "Jubilación de policías y guardias civiles: sin acuerdo"
 sources:
   - name: "Infobae España: Policías y guardias civiles se encierran en la Secretaría de Estado de Seguridad por la jubilación:"
     url: "https://www.infobae.com/espana/2026/10/27/policias-y-guardias-civiles-se-encierran-en-la-secretaria-de-estado-de-seguridad-por-la-jubilacion-el-gobierno-pone-fin-a-la-negociacion-por-las-elecciones-del-29-n/"
 ---
 
-Los sindicatos de la Policía Nacional y las asociaciones de la Guardia Civil no tienen acuerdo de jubilación anticipada, y no lo habrá antes de las elecciones. <cite index="1-1">Este martes por la tarde se han encerrado de forma indefinida y pacífica en la sede de la Secretaría de Estado de Seguridad, en Madrid</cite>, después de que fracasara la reunión que debía cerrarlo.
+Los sindicatos de la Policía Nacional y las asociaciones de la Guardia Civil no tienen acuerdo de jubilación anticipada, y no lo habrá antes de las elecciones. Este martes por la tarde se han encerrado de forma indefinida y pacífica en la sede de la Secretaría de Estado de Seguridad, en Madrid, después de que fracasara la reunión que debía cerrarlo.
 
 No hay nada aprobado ni publicado en el BOE. Todo lo que sigue es una negociación que ha quedado en el aire.
 
 ## ¿Qué ha pasado en la reunión con Interior?
 
-La reunión terminó sin pacto. <cite index="1-2">Según han publicado varios sindicatos en X, Interior les ha comunicado que la convocatoria de elecciones generales para el 29 de noviembre pone fin a la mesa de negociación</cite>.
+La reunión terminó sin pacto. Según han publicado varios sindicatos en X, Interior les ha comunicado que la convocatoria de elecciones generales para el 29 de noviembre pone fin a la mesa de negociación.
 
 El Ministerio tenía previsto entregar una propuesta final el 12 de noviembre. Esa fecha quedó invalidada tras el adelanto electoral anunciado por Pedro Sánchez. Los sindicatos intentaron adelantar la cita para que los comicios no bloquearan el proceso, pero no sirvió.
 

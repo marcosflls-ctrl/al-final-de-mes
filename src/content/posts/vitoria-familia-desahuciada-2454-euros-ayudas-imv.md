@@ -6,10 +6,8 @@ noindex: true
 category: paro
 tags: ["ingreso-minimo-vital", "ayudas", "desahucio", "verificacion", "familias"]
 pendiente: false
-image: /img/fotos/vitoria-familia-desahuciada-2454-euros-ayudas-imv.webp
-imageAlt: "Edificio de viviendas en una ciudad española"
-imageCredit: "lequangutc89 / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/bedroom-indoors-interior-design-bed-6577523/"
+image: /img/datos/vitoria-familia-desahuciada-2454-euros-ayudas-imv.webp
+imageAlt: "Vitoria: qué se sabe de los 2.454 € de ayudas a la familia"
 sources:
   - name: "Seguridad Social: cuantías del Ingreso Mínimo Vital en 2026"
     url: "https://www.seg-social.es/wps/portal/wss/internet/Trabajadores/PrestacionesPensionesTrabajadores/65850d68-8d06-4645-bde7-05374ee42ac7/simuladordelingresominimovital"

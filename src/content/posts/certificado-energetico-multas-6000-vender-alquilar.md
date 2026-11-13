@@ -5,10 +5,8 @@ date: 2026-10-23T15:30:52+00:00
 category: vivienda
 tags: ["certificado-energetico", "alquiler", "venta-de-vivienda", "multas", "propietarios"]
 pendiente: false
-image: /img/fotos/certificado-energetico-multas-6000-vender-alquilar.webp
-imageAlt: "Bloque de viviendas visto desde la calle"
-imageCredit: "merlinlightpainting / Pixabay"
-imageCreditUrl: "https://pixabay.com/photos/abstract-painting-feathers-6047465/"
+image: /img/datos/certificado-energetico-multas-6000-vender-alquilar.webp
+imageAlt: "Propietarios: sin certificado energético, multa de hasta 6.000 €"
 sources:
   - name: "Idealista News (vivienda): Certificado energético: cómo obtenerlo, cuánto cuesta y para qué sirve"
     url: "https://www.idealista.com/news/inmobiliario/vivienda/2022/04/21/796185-certificado-energetico-para-que-sirve-como-obtenerlo-y-cuanto-cuesta"
