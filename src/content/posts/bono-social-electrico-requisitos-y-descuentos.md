@@ -2,6 +2,7 @@
 title: "Bono social eléctrico 2026: requisitos, descuentos y cómo pedirlo"
 description: "Descuento del 42,5 % en la luz (57,5 % si eres vulnerable severo) hasta el 31 de diciembre de 2026. Quién puede pedirlo, límites de renta y dónde se solicita."
 date: 2026-10-18T21:01:00+02:00
+updated: 2026-11-13T19:30:00+01:00
 category: luz
 guia: true
 orden: 2
@@ -9,8 +10,10 @@ tags: [bono-social, luz, pvpc, ayudas, factura-electrica]
 image: /img/articulos/bono-social-electrico-requisitos-y-descuentos.webp
 imageAlt: "Bono social eléctrico 2026: requisitos, descuentos y cómo pedirlo"
 sources:
-  - name: "Ministerio para la Transición Ecológica: requisitos del bono social"
-    url: "https://www.miteco.gob.es/en/energia/pobreza-energetica/pe-001/requisitos.html"
+  - name: "Ministerio para la Transición Ecológica: requisitos, descuentos y límites de consumo del bono social"
+    url: "https://www.miteco.gob.es/es/energia/pobreza-energetica/pe-001/requisitos.html"
+  - name: "BOE: Real Decreto 897/2017, de 6 de octubre, que regula el consumidor vulnerable y el bono social (duración y renovación, artículos 9 y 10)"
+    url: "https://www.boe.es/buscar/act.php?id=BOE-A-2017-11505"
 ---
 
 <!-- ACTUALIZAR: los descuentos del 42,5 % y el 57,5 % están prorrogados hasta el 31 de diciembre de 2026. Si se prorrogan de nuevo o bajan al 35 % y 50 % en 2027, cambiar título, entradilla y tabla. -->
@@ -85,7 +88,7 @@ Son hogares vulnerables severos que reciben ayuda de los **servicios sociales** 
 1. **Pasa a la tarifa regulada (PVPC)** si no la tienes. Solo la ofrecen las comercializadoras de referencia: son las del mismo grupo que las grandes eléctricas, pero distintas de su compañía de mercado libre.
 2. **Pide el bono social a esa comercializadora de referencia**, por teléfono, en la web, por correo o en una oficina, con el formulario de solicitud.
 3. **Aporta la documentación:** DNI o NIE de todos los miembros del hogar, libro de familia o certificado de empadronamiento y, según tu caso, el título de familia numerosa o el certificado de la pensión o del ingreso mínimo vital.
-4. **Renuévalo cuando toque.** El bono se concede por un tiempo y la comercializadora te avisará antes de que caduque.
+4. **Renuévalo cuando toque.** El bono se concede por **dos años**. Antes de que acaben, se comprueba si sigues cumpliendo los requisitos y, si es así, se prorroga otros dos. A las familias numerosas se les aplica mientras tengan el título en vigor.
 
 ## El bono social térmico
 
