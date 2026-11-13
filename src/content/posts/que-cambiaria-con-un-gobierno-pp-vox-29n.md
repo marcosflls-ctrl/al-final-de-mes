@@ -2,7 +2,7 @@
 title: "Qué cambiaría en tu bolsillo con un Gobierno de PP y Vox tras el 29N"
 description: "En qué coinciden y en qué chocan PP y Vox sobre IRPF, IVA, pensiones, vivienda, energía y trabajo, y qué dicen las encuestas sobre esta mayoría."
 date: 2026-10-20T17:00:00+02:00
-updated: 2026-11-10T16:00:00+01:00
+updated: 2026-11-13T10:00:00+01:00
 category: hacienda
 guia: true
 orden: 5
@@ -12,6 +12,10 @@ imageAlt: "Fachada del Congreso de los Diputados"
 imageCredit: "Yann Droneaud from Paris (France). / Wikimedia Commons (CC BY-SA 2.0)"
 imageCreditUrl: "https://commons.wikimedia.org/wiki/File:Congreso_de_los_Diputados_(Espa%C3%B1a)_05.jpg"
 sources:
+  - name: "Infobae: el programa de Vox para el 29N, «Es sentido común», 115 medidas (12/11/2026)"
+    url: "https://www.infobae.com/espana/2026/11/12/vox-lleva-al-29-n-un-programa-electoral-con-repatriaciones-y-deportaciones-de-migrantes-prioridad-nacional-y-derogacion-de-leyes-de-genero/"
+  - name: "OKDiario: las 13 grandes medidas del programa de Vox para el 29N (12/11/2026)"
+    url: "https://okdiario.com/espana/13-medidas-vox-29n-prioridad-nacional-desregulacion-remigracion-20825904"
   - name: "Infobae: así están los sondeos de las elecciones generales (20/10/2026)"
     url: "https://www.infobae.com/espana/2026/10/20/asi-estan-los-sondeos-de-las-elecciones-generales-de-espana-2026/"
   - name: "esdiario: Abascal confirma contactos con Feijóo y pone condiciones (11/10/2026)"
@@ -40,14 +44,14 @@ sources:
 
 Las encuestas privadas de octubre dan a **PP y Vox** juntos alrededor de **200 escaños**, por encima de la mayoría absoluta de 176. Esta guía explica en qué coinciden y en qué se diferencian sobre los temas que más notan los hogares, de cara a las elecciones del **29 de noviembre de 2026**. No es una predicción ni una recomendación de voto. Hay una guía igual para cada escenario y una [comparativa de todos](/hacienda/que-cambia-en-tu-bolsillo-segun-quien-gobierne-29n/).
 
-**Actualizado el 10 de noviembre:** el PP publicó ese día su programa, «La Reconstrucción Nacional»; lo detallamos en [si gobierna el PP](/hacienda/que-cambiaria-si-gobierna-el-pp-29n/). Vox todavía no ha publicado el suyo: de Vox recogemos planes y declaraciones con su fecha, y actualizaremos la página cuando salga.
+**Actualizado el 13 de noviembre:** los dos partidos ya han publicado su programa: el PP el 10 de noviembre («La Reconstrucción Nacional», que detallamos en [si gobierna el PP](/hacienda/que-cambiaria-si-gobierna-el-pp-29n/)) y Vox el 12 de noviembre («Es sentido común», 115 medidas). Esta guía recoge lo que dicen los dos programas.
 
 ## Lo esencial
 
 - **Coinciden en:** bajar impuestos, mantener las nucleares, rechazar los decretos de alquiler del Gobierno y no reducir la jornada por ley.
-- **Chocan en el IRPF:** el PP propone actualizarlo con la inflación, que el salario mínimo no pague IRPF y una rebaja para los menores de 35; Vox, un mínimo exento de 22.000 € y solo dos tipos, del 15 % y el 25 %.
-- **Pensiones:** el PP promete subirlas con el IPC; Vox, pagarlas «como sea», y uno de sus diputados plantea añadir una parte de capitalización.
-- **Vivienda:** el PP apuesta por suelo, IVA al 4 % y avales para jóvenes; Vox, por vivienda social adjudicada con «prioridad nacional».
+- **Chocan en el IRPF:** el PP propone actualizarlo con la inflación, que el salario mínimo no pague IRPF y una rebaja para los menores de 35; Vox, en su programa, bajarlo y simplificarlo con una rebaja por hijos, sin cifras (en octubre su portavoz económico habló de un mínimo exento de 22.000 €).
+- **Pensiones:** el PP promete subirlas con el IPC; Vox, pagarlas «como sea», y su programa no incluye el sistema mixto que planteaba uno de sus diputados.
+- **Vivienda:** los dos quieren derogar la Ley de Vivienda. El PP propone IVA del 4 % y avales para jóvenes; Vox, IVA del 0 % en la primera vivienda nueva, sin ITP en la usada y ayudas con «prioridad nacional».
 - **Qué se aprobaría** dependería de lo que pactaran. Si Vox entra en el Gobierno o solo apoya la investidura cambia cuánto pesa cada programa.
 
 ## Qué dicen las encuestas
@@ -65,34 +69,34 @@ Santiago Abascal confirmó el 11 de octubre contactos con Alberto Núñez Feijó
 
 | | PP | Vox |
 |---|---|---|
-| **IRPF** | Actualizar la tarifa con la inflación, SMI exento y rebaja para menores de 35 en sus cuatro primeras declaraciones | Mínimo exento de 22.000 € y dos tipos: 15 % hasta 70.000 € y 25 % por encima |
-| **IVA** | 0 % en alimentos básicos, 4 % en la primera vivienda para menores de 40 y sin IVA para autónomos de menos de 85.000 € | Rebajarlo, sin cifras |
-| **Energía** | Quitar el impuesto del 7 % a la generación y el calendario de cierre nuclear | Bajar impuestos y costes |
+| **IRPF** | Actualizar la tarifa con la inflación, SMI exento y rebaja para menores de 35 en sus cuatro primeras declaraciones | Bajarlo y simplificarlo, con rebaja por hijos; sin cifras en el programa |
+| **IVA** | 0 % en alimentos básicos, 4 % en la primera vivienda para menores de 40 y sin IVA para autónomos de menos de 85.000 € | Rebajar el general y el reducido, sin cifras; 0 % en la primera vivienda nueva |
+| **Energía** | Quitar el impuesto del 7 % a la generación y el calendario de cierre nuclear | Rebaja «masiva» de los impuestos de la luz y quitar el calendario de cierre nuclear |
 
-La propuesta de IRPF de Vox la expuso su portavoz económico, José María Figaredo, el 7 de octubre. Vox no ha explicado cómo compensaría la pérdida de recaudación. Economistas de Fedea y Oxford Economics citados por Hora Punta cuestionan su coste y su efecto en la progresividad del impuesto. El PP no ha dado una estimación del coste de sus rebajas.
+En octubre, el portavoz económico de Vox, José María Figaredo, había planteado un mínimo exento de 22.000 € y dos tipos (15 % hasta 70.000 € y 25 % por encima); los resúmenes del programa no recogen esas cifras. Vox no ha explicado cómo compensaría la pérdida de recaudación. Economistas de Fedea y Oxford Economics citados por Hora Punta cuestionan su coste y su efecto en la progresividad del impuesto. El PP no ha dado una estimación del coste de sus rebajas.
 
 ## Pensiones
 
 - **PP:** Feijóo dijo el 13 de octubre que las subirá **con el IPC** y que no cuestionará el sistema público.
-- **Vox:** Abascal prometió que se pagarán **«como sea»** y negó que quiera privatizarlas. El diputado José María Figaredo defiende un **sistema mixto**: el reparto actual más una parte de capitalización, un ahorro propio de cada trabajador. No hay cifras ni plazos.
+- **Vox:** Abascal prometió que se pagarán **«como sea»** y negó que quiera privatizarlas. Su programa no recoge el **sistema mixto** con capitalización que defendía el diputado José María Figaredo: promete sostener las pensiones con más empleo, mejores salarios y apoyo a la natalidad, sin cifras.
 
 Pedro Sánchez acusa a PP y Vox de querer recortar las pensiones. Los dos lo niegan.
 
 ## Vivienda y alquiler
 
 - **PP (programa del 10 de noviembre):** **derogar la Ley de Vivienda**, un millón de hogares en la legislatura, licencias por silencio positivo en tres meses, **IVA del 4 %** en la primera vivienda para menores de 40, **avales de hasta el 20 %** del valor para la entrada y desalojo de okupas en 48 horas.
-- **Vox:** construir **«masivamente» vivienda social** y adjudicarla con **«prioridad nacional»**, liberalizar el suelo, bajar impuestos a la construcción y ayudas directas a jóvenes compradores.
+- **Vox (programa del 12 de noviembre):** **derogar la Ley de Vivienda**, **IVA del 0 %** en la compra de la primera vivienda si es nueva y **bonificación del 100 % del ITP** si es usada, recuperar la deducción por vivienda habitual, liberalizar el suelo, ayudas al alquiler y vivienda pública con **«prioridad nacional»** y desalojo de okupas en menos de 24 horas.
 
 Los dos votaron el 2 de octubre **contra los decretos de alquiler** del Gobierno, junto a Junts. El decreto 29/2026, que topa las subidas del alquiler hasta 2027, se votará el 12 de noviembre, antes de las elecciones. Lo explicamos en [vivienda y elecciones del 29N](/vivienda/vivienda-elecciones-29n-balance-y-propuestas/).
 
 ## Luz y gasolina
 
-Los dos defienden **alargar la vida de las centrales nucleares** y bajar los impuestos de la energía. El PP votó a favor del último paquete de rebajas del Gobierno, en octubre; Vox, en contra.
+Los dos programas quitan el **calendario de cierre de las centrales nucleares** y bajan los impuestos de la luz: el PP suprime el impuesto del 7 % a la producción eléctrica y Vox promete una rebaja «masiva», sin cifras. El PP votó a favor del último paquete de rebajas del Gobierno, en octubre; Vox, en contra.
 
 ## Trabajo y salario
 
 - **PP:** rebajar lo que se cobra durante una baja médica, que las mutuas puedan dar el alta y ampliar el límite de horas extra. Salario mínimo ligado a la productividad, sin cifra.
-- **Vox:** contra reducir la jornada por ley; presentó una de las enmiendas que tumbaron la ley de 37,5 horas en septiembre de 2025. Sin cifra de salario mínimo.
+- **Vox:** contra reducir la jornada por ley; presentó una de las enmiendas que tumbaron la ley de 37,5 horas en septiembre de 2025. Para los **autónomos**, cuota cero si ganan menos del salario mínimo y una cuota progresiva desde 50 € por encima. Sin cifra de salario mínimo.
 
 ## Lo que dicen a favor y en contra
 
@@ -102,7 +106,7 @@ Los dos defienden **alargar la vida de las centrales nucleares** y bajar los imp
 
 ## Lo que queda por saber
 
-- **Los programas** de los dos partidos, con sus cifras.
+- **Las cifras** que faltan en los dos programas, sobre todo cuánto costarían las rebajas de impuestos.
 - **El tipo de acuerdo:** un Gobierno de coalición o un apoyo desde fuera, y qué medidas de cada uno entrarían.
 
 *Información electoral divulgativa. No es una recomendación de voto: recogemos lo que dicen los partidos con su fuente.*

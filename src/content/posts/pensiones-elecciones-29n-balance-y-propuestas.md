@@ -2,12 +2,16 @@
 title: "Pensiones y elecciones del 29N: balance y propuestas de los partidos"
 description: "Las subidas de la legislatura, los decretos que cayeron en el Congreso y lo que dicen PSOE, PP, Vox y Sumar sobre las pensiones antes del 29 de noviembre."
 date: 2026-10-16T17:45:00+00:00
-updated: 2026-11-10T16:00:00+01:00
+updated: 2026-11-13T10:00:00+01:00
 category: pensiones
 guia: true
 orden: 1
 tags: [pensiones, elecciones-29n, revalorizacion, partidos, legislatura]
 sources:
+  - name: "Infobae: el programa de Vox para el 29N, «Es sentido común», 115 medidas (12/11/2026)"
+    url: "https://www.infobae.com/espana/2026/11/12/vox-lleva-al-29-n-un-programa-electoral-con-repatriaciones-y-deportaciones-de-migrantes-prioridad-nacional-y-derogacion-de-leyes-de-genero/"
+  - name: "OKDiario: las 13 grandes medidas del programa de Vox para el 29N (12/11/2026)"
+    url: "https://okdiario.com/espana/13-medidas-vox-29n-prioridad-nacional-desregulacion-remigracion-20825904"
   - name: "La Moncloa: el Congreso convalida la subida de las pensiones de 2024 (10/01/2024)"
     url: "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/inclusion/Paginas/2024/subida-pensiones-2024.aspx"
   - name: "El Derecho: los Reales Decretos-leyes 9/2024 y 1/2025 sobre la revalorización"
@@ -90,7 +94,7 @@ Con la subida de 2026, la pensión mínima de jubilación para mayores de 65 añ
 
 ## Parte 2. Qué proponen los partidos
 
-**Actualizado el 10 de noviembre:** el **PP** publicó ese día su programa, «La Reconstrucción Nacional», y abajo recogemos lo que dice. Vox, PSOE, Sumar (Frente Amplio) y Podemos todavía no han publicado el suyo: de ellos recogemos declaraciones y documentos con su fecha, y los actualizaremos cuando salgan.
+**Actualizado el 13 de noviembre:** ya han publicado su programa el **PP** (10 de noviembre, «La Reconstrucción Nacional») y **Vox** (12 de noviembre, «Es sentido común», 115 medidas), y recogemos lo que dicen. **PSOE, Sumar (Frente Amplio) y Podemos todavía no han publicado el suyo**: de ellos recogemos planes, documentos y declaraciones con su fecha, y actualizaremos la página cuando salgan.
 
 ### PSOE
 
@@ -105,6 +109,8 @@ Alberto Núñez Feijóo dijo el 13 de octubre de 2026, en una entrevista en esRa
 Antes, la portavoz del PP en el Congreso, Ester Muñoz, dijo que el sistema, tal como está, «va a colapsar» y que hay que cambiarlo. El 14 de octubre matizó que el PP «cree en un sistema público» y que su propuesta es mejorar la economía para que la Seguridad Social ingrese más.
 
 ### Vox
+
+**Programa del 12 de noviembre:** no recoge el sistema mixto con capitalización que se describe más abajo. Promete sostener las pensiones con una economía más productiva, más empleo, mejores salarios y apoyo a la natalidad, y que el Estado pague la cotización de los padres que cuidan de sus hijos. No da cifras. Lo que sigue son declaraciones anteriores.
 
 Santiago Abascal dijo en un mitin en Estepona (Málaga) que las pensiones de quienes han trabajado toda su vida **se pagarán «como sea»**, y negó que su partido quiera privatizar el sistema. La portavoz de Vox en el Congreso, Pepa Millán, habló en el mismo sentido.
 

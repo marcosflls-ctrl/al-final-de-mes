@@ -2,7 +2,7 @@
 title: "Qué cambiaría en tu bolsillo si gobierna el PP tras el 29N"
 description: "IVA, IRPF, pensiones, vivienda, luz y autónomos: lo que dice el programa del PP para el 29N, «La Reconstrucción Nacional», y qué apoyos necesitaría."
 date: 2026-10-20T17:00:00+02:00
-updated: 2026-11-10T16:00:00+01:00
+updated: 2026-11-13T10:00:00+01:00
 category: hacienda
 guia: true
 orden: 3
@@ -42,7 +42,7 @@ sources:
 
 Esta guía reúne lo que el **Partido Popular** ha propuesto sobre los temas que más notan los hogares —impuestos, pensiones, vivienda, energía y trabajo— de cara a las elecciones generales del **29 de noviembre de 2026**. No es una predicción ni una recomendación de voto: recoge lo que el partido ha dicho, con su fecha, para que puedas comparar. Hay una guía igual para cada escenario de gobierno y una [comparativa de todos](/hacienda/que-cambia-en-tu-bolsillo-segun-quien-gobierne-29n/).
 
-**Actualizado el 10 de noviembre:** el PP presentó ese día su programa, **«La Reconstrucción Nacional»**, con 249 medidas. Esta guía ya recoge lo que dice el programa; donde solo hay declaraciones anteriores, lo indicamos. El partido ha dejado ocho medidas para anunciarlas durante la campaña, y el programa no incluye una estimación de lo que costarían las rebajas de impuestos.
+**Actualizado el 10 de noviembre:** el PP presentó ese día su programa, **«La Reconstrucción Nacional»**, con 249 medidas. Esta guía ya recoge lo que dice el programa; donde solo hay declaraciones anteriores, lo indicamos. Vox publicó el suyo el 12 de noviembre; lo comparamos en [un Gobierno de PP y Vox](/hacienda/que-cambiaria-con-un-gobierno-pp-vox-29n/). El PP ha dejado ocho medidas para anunciarlas durante la campaña, y el programa no incluye una estimación de lo que costarían las rebajas de impuestos.
 
 ## Lo esencial
 

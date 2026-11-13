@@ -2,7 +2,7 @@
 title: "Qué cambia en tu bolsillo según quién gobierne tras el 29N"
 description: "IRPF, IVA, pensiones, alquiler, salario mínimo y luz: lo que proponen PP, PSOE, Vox y la izquierda, tema a tema, y qué combinaciones dan las encuestas."
 date: 2026-10-20T17:00:00+02:00
-updated: 2026-11-10T16:00:00+01:00
+updated: 2026-11-13T10:00:00+01:00
 category: hacienda
 guia: true
 orden: 2
@@ -12,6 +12,10 @@ imageAlt: "Sede del Ministerio de Hacienda en Madrid"
 imageCredit: "Luis García (Zaqarbal) / Wikimedia Commons (CC BY-SA 3.0)"
 imageCreditUrl: "https://commons.wikimedia.org/wiki/File:Real_Casa_de_la_Aduana_(Madrid)_05.jpg"
 sources:
+  - name: "Infobae: el programa de Vox para el 29N, «Es sentido común», 115 medidas (12/11/2026)"
+    url: "https://www.infobae.com/espana/2026/11/12/vox-lleva-al-29-n-un-programa-electoral-con-repatriaciones-y-deportaciones-de-migrantes-prioridad-nacional-y-derogacion-de-leyes-de-genero/"
+  - name: "OKDiario: las 13 grandes medidas del programa de Vox para el 29N (12/11/2026)"
+    url: "https://okdiario.com/espana/13-medidas-vox-29n-prioridad-nacional-desregulacion-remigracion-20825904"
   - name: "Infobae: así están los sondeos de las elecciones generales (20/10/2026)"
     url: "https://www.infobae.com/espana/2026/10/20/asi-estan-los-sondeos-de-las-elecciones-generales-de-espana-2026/"
   - name: "Expansión: el PP plantea un plan de choque con rebajas de IVA e IRPF (14/10/2026)"
@@ -40,7 +44,7 @@ sources:
 
 ¿Qué pasaría con tus impuestos, tu pensión, tu alquiler o tu sueldo según quién gobierne tras las elecciones del **29 de noviembre de 2026**? Esta comparativa pone lado a lado lo que ha propuesto cada partido sobre los temas que más notan los hogares. No es una predicción ni una recomendación de voto: recoge lo que dicen los partidos, con su fuente, para que puedas comparar.
 
-**Actualizado el 10 de noviembre:** el **PP** publicó ese día su programa, «La Reconstrucción Nacional», y ya recogemos lo que dice. **Vox, PSOE, Sumar (Frente Amplio) y Podemos todavía no han publicado el suyo**: de ellos recogemos planes, documentos y declaraciones con su fecha, y actualizaremos la página cuando salgan.
+**Actualizado el 13 de noviembre:** ya han publicado su programa el **PP** (10 de noviembre, «La Reconstrucción Nacional») y **Vox** (12 de noviembre, «Es sentido común», 115 medidas), y recogemos lo que dicen. **PSOE, Sumar (Frente Amplio) y Podemos todavía no han publicado el suyo**: de ellos recogemos planes, documentos y declaraciones con su fecha, y actualizaremos la página cuando salgan.
 
 ## Lo esencial
 
@@ -56,17 +60,17 @@ sources:
 
 | | PP | Vox | PSOE | Sumar (Frente Amplio) | Podemos |
 |---|---|---|---|---|---|
-| **IRPF** | Actualizarlo con la inflación, SMI exento y rebaja para menores de 35 en sus cuatro primeras declaraciones | Mínimo exento de 22.000 € y tipos del 15 % y 25 % | Progresividad, sin cifras | Más a rentas, patrimonios y herencias altas | Más a grandes empresas y patrimonios |
-| **IVA** | 0 % en alimentos básicos; 4 % en la primera vivienda para menores de 40 | Rebajarlo, sin cifras | Sin propuesta | Sin propuesta | Sin propuesta |
+| **IRPF** | Actualizarlo con la inflación, SMI exento y rebaja para menores de 35 en sus cuatro primeras declaraciones | Bajarlo y simplificarlo, con rebaja por hijos (sin cifras; en octubre habló de un mínimo exento de 22.000 €) | Progresividad, sin cifras | Más a rentas, patrimonios y herencias altas | Más a grandes empresas y patrimonios |
+| **IVA** | 0 % en alimentos básicos; 4 % en la primera vivienda para menores de 40 | Rebajar el general y el reducido, sin cifras; 0 % en la primera vivienda nueva | Sin propuesta | Sin propuesta | Sin propuesta |
 
-Ningún partido ha publicado cuánto costarían o recaudarían sus propuestas; el programa del PP tampoco incluye esa estimación. Más detalle en [impuestos y elecciones del 29N](/hacienda/impuestos-elecciones-29n-balance-y-propuestas/).
+Ningún partido ha publicado cuánto costarían o recaudarían sus propuestas; los programas del PP y de Vox tampoco incluyen esa estimación. Más detalle en [impuestos y elecciones del 29N](/hacienda/impuestos-elecciones-29n-balance-y-propuestas/).
 
 ### Pensiones
 
 | | PP | Vox | PSOE | Sumar |
 |---|---|---|---|---|
 | **¿Subirlas con el IPC?** | Sí | Pagarlas «como sea» | Sí; la de 2027, antes de fin de año | Sí |
-| **El sistema** | Mantener el público; pacto de Estado por la dependencia | Un diputado plantea añadir capitalización | Acusa a PP y Vox de querer recortar | «No hay ningún riesgo» |
+| **El sistema** | Mantener el público; pacto de Estado por la dependencia | Sostenerlo con más empleo y natalidad; el programa no incluye el sistema mixto | Acusa a PP y Vox de querer recortar | «No hay ningún riesgo» |
 
 Más detalle en [pensiones y elecciones del 29N](/pensiones/pensiones-elecciones-29n-balance-y-propuestas/).
 
@@ -75,7 +79,7 @@ Más detalle en [pensiones y elecciones del 29N](/pensiones/pensiones-elecciones
 | | PP | Vox | PSOE | Sumar |
 |---|---|---|---|---|
 | **Decretos de alquiler** | En contra | En contra | Mantenerlos y reforzarlos | Ir más allá: contratos indefinidos y rentas congeladas |
-| **Qué plantea** | Derogar la Ley de Vivienda, un millón de hogares en la legislatura, IVA al 4 % para menores de 40 y avales para la entrada | Vivienda social con «prioridad nacional» y liberalizar suelo | Proteger a inquilinos; préstamos para la entrada | Más protección frente a desahucios |
+| **Qué plantea** | Derogar la Ley de Vivienda, un millón de hogares en la legislatura, IVA al 4 % para menores de 40 y avales para la entrada | Derogar la Ley de Vivienda, IVA 0 % en la primera vivienda nueva, sin ITP en la usada y ayudas con «prioridad nacional» | Proteger a inquilinos; préstamos para la entrada | Más protección frente a desahucios |
 
 Más detalle en [vivienda y elecciones del 29N](/vivienda/vivienda-elecciones-29n-balance-y-propuestas/).
 
@@ -85,7 +89,7 @@ Más detalle en [vivienda y elecciones del 29N](/vivienda/vivienda-elecciones-29
 |---|---|---|---|---|---|
 | **Salario mínimo** | Exento de IRPF; sin cifra de subida | Sin cifra | 60 % del salario medio | Seguir subiéndolo | 1.800 € al mes |
 | **Jornada** | No apoyó las 37,5 horas | En contra de reducirla por ley | 36 horas antes de 2030 | Impulsó las 37,5 horas | 35 horas |
-| **Otras** | Autónomos: cuota cero el primer año y sin IVA por debajo de 85.000 € | — | — | Registro horario digital | — |
+| **Otras** | Autónomos: cuota cero el primer año y sin IVA por debajo de 85.000 € | Autónomos: cuota cero si ganan menos del salario mínimo y desde 50 € por encima | — | Registro horario digital | — |
 
 Más detalle en [empleo y elecciones del 29N](/paro/empleo-elecciones-29n-balance-y-propuestas/).
 
@@ -93,8 +97,8 @@ Más detalle en [empleo y elecciones del 29N](/paro/empleo-elecciones-29n-balanc
 
 | | PP | Vox | PSOE | Sumar | Podemos |
 |---|---|---|---|---|---|
-| **Impuestos** | Quitar el impuesto del 7 % a la producción eléctrica | Bajarlos | Rebajas solo cuando los precios se disparan | Sin propuesta fiscal | Empresa pública de energía |
-| **Nucleares** | Quitar el calendario de cierre en 100 días | Alargar su vida | Almaraz hasta 2030 | En contra de alargar algunas | Sin posición recogida |
+| **Impuestos** | Quitar el impuesto del 7 % a la producción eléctrica | Rebaja «masiva» de los impuestos de la luz, sin cifras | Rebajas solo cuando los precios se disparan | Sin propuesta fiscal | Empresa pública de energía |
+| **Nucleares** | Quitar el calendario de cierre en 100 días | Quitar el calendario de cierre | Almaraz hasta 2030 | En contra de alargar algunas | Sin posición recogida |
 
 Más detalle en [luz, gasolina y elecciones del 29N](/luz/luz-carburantes-elecciones-29n-balance-y-propuestas/).
 
