@@ -2,12 +2,14 @@
 title: "Declaración de la renta 2026: novedades, deducciones y fechas"
 description: "Qué cambia en la renta de 2026, que se presenta en 2027: deducción para sueldos bajos, coche eléctrico, obras de eficiencia, placas solares, alquiler y quién declara."
 date: 2026-10-17T10:05:00+00:00
-updated: 2026-11-13T10:30:00+01:00
+updated: 2026-11-14T11:40:00+01:00
 category: hacienda
 guia: true
 orden: 2
 tags: [renta, irpf, deducciones, declaracion-renta, hacienda]
 sources:
+  - name: "BOE: Real Decreto-ley 29/2026, de 6 de octubre, de vivienda (artículo 6, deducción por alquiler de la vivienda habitual)"
+    url: "https://www.boe.es/buscar/act.php?id=BOE-A-2026-20823"
   - name: "El Diario de Madrid: la Diputación Permanente convalida el Real Decreto-ley 29/2026 (35 a 34) y rechaza el 28/2026 (12/11/2026)"
     url: "https://www.eldiariodemadrid.es/articulo/vivienda/congreso-decretos-vivienda-prorroga-alquileres-renovacion-automatica/20261112162933146758.html"
   - name: "Agencia Tributaria: medidas en materia de tributación del Real Decreto-ley 7/2026 (23/03/2026)"
@@ -30,7 +32,7 @@ imageAlt: "Declaración de la renta 2026: novedades, deducciones y fechas"
 
 La declaración de la renta de 2026 recoge lo que has ganado este año y se presenta en la primavera de 2027. Esta guía reúne lo que cambia respecto al año pasado, las deducciones nuevas o prorrogadas y quién tiene que presentarla. La iremos actualizando hasta que empiece la campaña.
 
-**A 17 de octubre de 2026, Hacienda no ha fijado todavía las fechas de la campaña.** Suele publicarlas en marzo.
+**A 14 de noviembre de 2026, Hacienda no ha fijado todavía las fechas de la campaña.** Suele publicarlas en marzo.
 
 ## Lo esencial
 
@@ -111,13 +113,13 @@ Es nueva en 2026 (Real Decreto-ley 7/2026):
 - Base máxima de **5.000 € al año**, descontando las subvenciones que recibas.
 - No se puede sumar a la deducción por eficiencia energética por la misma instalación.
 
-### Deducción por alquiler: pendiente del Congreso
+### Deducción por alquiler, ya convalidada
 
 El Real Decreto-ley 29/2026, de vivienda, en vigor desde el 8 de octubre, recupera una deducción estatal por alquilar la vivienda habitual:
 
 - El **10 % del alquiler** pagado, con una base máxima de 11.630 €. Es decir, hasta **1.163 € al año**.
 - Completa para bases imponibles de hasta 23.007,20 €; se reduce poco a poco hasta desaparecer en 33.007,20 €.
-- Ni tú ni nadie de tu unidad familiar puede tener otra vivienda a menos de 50 kilómetros.
+- Ni tú ni nadie de tu unidad familiar puede tener otra vivienda a menos de 50 kilómetros durante al menos medio año, salvo que una resolución administrativa o judicial impida vivir en ella.
 
 **Ya es definitivo:** la Diputación Permanente del Congreso convalidó el decreto el 12 de noviembre, por 35 votos a 34. El anterior decreto con esta deducción había caído el 2 de octubre.
 
