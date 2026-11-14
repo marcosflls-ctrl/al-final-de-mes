@@ -2,6 +2,7 @@
 title: "Oposiciones a Agente de Hacienda: plazas, requisitos, examen y sueldo"
 description: "La oferta de 2026 trae 1.000 plazas libres de Agente de la Hacienda Pública. Qué piden, cómo es el examen, qué temario entra y cuánto se cobra en la Agencia Tributaria."
 date: 2026-10-19T14:51:00+02:00
+updated: 2026-11-14T11:15:00+01:00
 category: oposiciones
 guia: true
 orden: 5
@@ -9,14 +10,12 @@ tags: [oposiciones, agente-de-hacienda, agencia-tributaria, c1, 2026]
 sources:
   - name: "BOE: Real Decreto 387/2026, oferta de empleo público para 2026 (anexo I y anexo VI)"
     url: "https://www.boe.es/boe/dias/2026/05/07/pdfs/BOE-A-2026-9946.pdf"
-  - name: "Empleo Público: convocatoria de Agente de la Hacienda Pública, 1.400 plazas, requisitos y examen"
-    url: "https://www.empleopublico.net/convocatoria-2026-agente-de-la-hacienda-publica-1-400-plazas-requisitos-y-examen/"
-  - name: "Academia Jesús Ayala: lista de admitidos y fecha de examen de Agentes de la Hacienda Pública 2026 (25/02/2026)"
-    url: "https://academiajesusayala.com/agentes-hacienda-lista-provisional-fecha-examen-sedes/"
+  - name: "BOE: Resolución de 22 de diciembre de 2025 de la Agencia Tributaria, convocatoria de Agentes de la Hacienda Pública (BOE del 30/12/2025)"
+    url: "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-27056"
+  - name: "BOE: Resolución de 8 de septiembre de 2026, relación de personas aprobadas (BOE del 14/09/2026)"
+    url: "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-19135"
   - name: "OpositaTest: sueldo de Agente de Hacienda (datos salariales de 2023 de CC. OO.)"
     url: "https://blog.opositatest.com/sueldo-agentes-de-la-hacienda-publica/"
-  - name: "Gokoan: temario de Agente de la Hacienda Pública, 32 temas"
-    url: "https://www.gokoan.com/blog/temario-de-agente-de-hacienda-publica"
 image: /img/banco/agencia-tributaria-01.webp
 imageAlt: "Edificio de la Agencia Tributaria en Logroño"
 imageCredit: "Zarateman / Wikimedia Commons (CC0)"
@@ -31,20 +30,21 @@ imageCreditUrl: "https://commons.wikimedia.org/wiki/File:Logro%C3%B1o_-_Agencia_
 
 - **Plazas de 2026:** 1.000 de acceso libre (80 reservadas a personas con discapacidad) y 300 de promoción interna. La convocatoria anterior tuvo 1.000 libres y 400 de promoción interna.
 - **Requisito de estudios:** Bachillerato, título de Técnico o equivalente.
-- **Examen:** un test y un supuesto práctico, los dos eliminatorios.
-- **Temario:** 32 temas, con mucho peso del derecho tributario.
+- **Examen:** un test de 80 preguntas y un ejercicio con 10 supuestos prácticos, los dos eliminatorios.
+- **Temario:** 32 temas, de los que 20 son de Hacienda y derecho tributario.
+- **Tasa:** 15,57 € en la convocatoria anterior, con exenciones y reducciones.
 - **Sueldo:** entre 1.568 y 2.202 € brutos al mes al empezar, sin productividad ni antigüedad, según datos de 2023. Desde entonces los sueldos públicos han subido.
 
 ## Plazas: la convocatoria anterior y la próxima
 
 | Convocatoria | Acceso libre | Promoción interna | Situación |
 |---|---|---|---|
-| Anterior (BOE del 30 de diciembre de 2025) | 1.000 | 400 | Primer ejercicio el 21 de marzo de 2026 |
+| Anterior (BOE del 30 de diciembre de 2025) | 1.000 | 400 | Primer ejercicio el 21 de marzo de 2026; aprobados publicados en el BOE el 14 de septiembre |
 | Oferta de 2026 | 1.000 (920 + 80 por discapacidad) | 300 | Pendiente de convocatoria |
 
-*Plazas de 2026, de los anexos del Real Decreto 387/2026. Convocatoria anterior, según Empleo Público y la Academia Jesús Ayala.*
+*Plazas de 2026, de los anexos del Real Decreto 387/2026. Convocatoria anterior, de las resoluciones publicadas en el BOE; la fecha del primer ejercicio, según la Academia Jesús Ayala.*
 
-La convocatoria de Agentes la publica la propia Agencia Tributaria en el BOE. La anterior salió a finales de diciembre y el examen fue unos tres meses después.
+La convocatoria de Agentes la publica la propia Agencia Tributaria en el BOE. La anterior salió a finales de diciembre, el examen fue unos tres meses después y la lista de aprobados llegó en septiembre.
 
 ## Requisitos
 
@@ -57,28 +57,28 @@ Tienes los requisitos generales explicados en [requisitos para opositar](/oposic
 
 ## Cómo es el examen
 
-En la convocatoria anterior, la oposición tuvo **dos ejercicios eliminatorios**, según Empleo Público:
+En la convocatoria anterior, la oposición de acceso libre tuvo **dos ejercicios obligatorios y eliminatorios**, según las bases publicadas en el BOE:
 
-| Ejercicio | Qué es | Qué entra |
-|---|---|---|
-| Primero | Test, en el que las respuestas incorrectas restan | Organización del Estado, derecho administrativo, derecho tributario e informática |
-| Segundo | Supuesto práctico | Casos de la actividad de la Agencia Tributaria: gestión, inspección y recaudación |
+| Ejercicio | Qué es | Tiempo | Puntuación |
+|---|---|---|---|
+| Primero | Test de 80 preguntas con cuatro respuestas, sobre todo el temario | 1 hora y 30 minutos | De 0 a 10; hace falta un 5 |
+| Segundo | 10 supuestos prácticos sobre las materias específicas (Hacienda y derecho tributario) | 2 horas y 30 minutos | De 0 a 30; hace falta un 15 |
 
-*El número de preguntas, el tiempo y las notas mínimas los fija cada convocatoria: compruébalos en las bases.*
+En el test, cada respuesta incorrecta resta una cuarta parte de una correcta. La nota final es la suma de los dos ejercicios, así que el segundo pesa el triple que el primero. No hay curso selectivo.
+
+*La estructura puede cambiar en la próxima convocatoria: compruébala en las bases.*
 
 ## Temario
 
-El temario tiene **32 temas**, según las academias que preparan esta oposición. Se reparte en estos bloques, según Empleo Público:
+El programa de la convocatoria anterior tenía **32 temas** en tres bloques:
 
-1. Organización del Estado.
-2. Derecho administrativo.
-3. Derecho tributario.
-4. Gestión tributaria.
-5. Inspección.
-6. Recaudación.
-7. Informática básica.
+| Bloque | Temas |
+|---|---|
+| Organización del Estado y funcionamiento de la Administración General del Estado | 7 |
+| Derecho administrativo general | 5 |
+| Organización de la Hacienda Pública y derecho tributario | 20 |
 
-Es un temario más corto que el de otras oposiciones del grupo C1, pero muy técnico: la parte tributaria es la que más pesa y la que se aplica en el supuesto práctico.
+Los dos primeros bloques son las materias comunes. El tercero, las materias específicas, incluye la gestión, la inspección, la recaudación, las sanciones, el IRPF, el impuesto sobre sociedades, el IVA y las aduanas. Es el que más pesa: de él salen los diez supuestos del segundo ejercicio.
 
 ## Cuánto cobra un agente de Hacienda
 
