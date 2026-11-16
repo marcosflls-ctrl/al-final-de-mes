@@ -81,6 +81,18 @@ const meses = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', '
           <select name="hijos"><option value="0" selected>No lo cobraré</option><option value="1">1 hijo</option><option value="2">2 hijos</option><option value="3">3 hijos</option><option value="4">4 o más</option></select>
           <small class="muted">{eur(PENSION_2026.brechaPorHijo)} € al mes por hijo en 2026. Solo lo cobra uno de los dos progenitores, normalmente el de pensión más baja.</small>
         </label>
+        <fieldset class="campo">
+          <legend>Días cotizados por hijos</legend>
+          <small class="muted">La Seguridad Social suma días cotizados a quien dejó de cotizar al tener o cuidar a sus hijos. No salen en la vida laboral: se añaden al pedir la pensión.</small>
+          <label class="campo"><span>Hijos por los que dejaste de cotizar</span>
+            <select name="hijosSin"><option value="0" selected>Ninguno</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5 o más</option></select>
+          </label>
+          <label class="campo"><span>Tiempo sin cotizar por cada uno</span>
+            <select name="mesesSin"><option value="90">Unos 3 meses</option><option value="180">Unos 6 meses</option><option value="270" selected>9 meses o más</option></select>
+            <small class="muted">Entre los 9 meses antes del nacimiento y los 6 años después. Se reconocen hasta 270 días por hijo, nunca más de lo que de verdad dejaste de cotizar, y solo a uno de los progenitores.</small>
+          </label>
+          <label class="radio"><input type="checkbox" name="parto" value="si" /> Soy la madre y no cotizaba cuando nacieron (+112 días por parto)</label>
+        </fieldset>
       </form>
       <section class="res" aria-live="polite">
         <h2 class="etq">Tu pensión neta, en euros de hoy</h2>
@@ -122,6 +134,7 @@ const meses = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', '
       <ol>
         <li><strong>Base reguladora.</strong> Es la media de lo que has cotizado en los últimos años. En 2026 se elige automáticamente lo más favorable entre los últimos 25 años o las 302 mejores bases de los últimos 304 meses. Las bases antiguas se actualizan con el IPC, así que con un sueldo estable en euros de hoy la base reguladora es, más o menos, tu sueldo bruto anual entre 14, con el tope de la base máxima de cotización ({eur(PENSION_2026.baseMaximaMensual)} € al mes).</li>
         <li><strong>Porcentaje por años cotizados.</strong> Con 15 años cobras el 50 % de la base reguladora, y cada mes más suma un poco hasta llegar al 100 %.</li>
+        <li><strong>Hijos.</strong> Si dejaste de cotizar al tener o cuidar a tus hijos, la Seguridad Social te reconoce días cotizados: 112 por parto a la madre que no cotizaba entonces, y hasta 270 por hijo por el tiempo sin cotizar entre los 9 meses anteriores al nacimiento y los 6 años siguientes, con un máximo de 5 años en total. Suben el porcentaje, pero no sirven para llegar a los 15 años mínimos. Además, uno de los progenitores cobra el complemento de brecha de género: {eur(PENSION_2026.brechaPorHijo)} € al mes por hijo en 2026, hasta cuatro.</li>
         <li><strong>Edad.</strong> Si te jubilas antes de la edad ordinaria se aplica un recorte; si te jubilas después, un premio del 4 % por año.</li>
         <li><strong>Límites.</strong> La pensión no puede superar la máxima ({eur(PENSION_2026.maxima)} € al mes en 2026) y, si queda por debajo de la mínima y no tienes otros ingresos, la Seguridad Social la completa.</li>
         <li><strong>IRPF.</strong> De la pensión bruta se resta la retención de Hacienda. No se descuentan cotizaciones sociales. Por eso, con una carrera larga y un sueldo estable, la pensión neta puede parecerse mucho al sueldo neto, o incluso superarlo un poco.</li>
@@ -209,6 +222,7 @@ const meses = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', '
       ajuste: Math.round(num('ajuste')),
       familia: (d.get('familia') as Familia) || 'sinConyuge',
       hijos: Math.round(num('hijos')),
+      diasHijos: Math.round(num('hijosSin')) * (Math.round(num('mesesSin')) + (d.get('parto') === 'si' ? 112 : 0)),
       hoy: idx(ahora.getFullYear(), ahora.getMonth()),
     };
   }
@@ -245,6 +259,12 @@ const meses = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', '
       const notas: string[] = [];
       if (r.limitadaMaxima) notas.push(e.ajuste < 0 ? 'Tu pensión teórica supera la máxima. Al adelantar la jubilación, la máxima también se recorta algo, así que podrías cobrar un poco menos.' : 'Tu pensión teórica supera la máxima, así que cobrarías la máxima' + (e.ajuste > 0 ? ' más el premio por retrasar la jubilación.' : '.'));
       if (r.complementoMinimos) notas.push(`Incluye ${fmt(r.complementoMinimos)} € de complemento hasta la pensión mínima, que solo se cobra si tus otros ingresos no superan el límite legal.`);
+      if (r.mesesHijos) {
+        const sin = calcular({ ...e, diasHijos: 0 });
+        notas.push(sin.ok && sin.porcentaje >= r.porcentaje
+          ? 'Los días por hijos no cambian tu pensión: ya llegas al 100 % sin ellos.'
+          : `Suma ${cotTxt(r.mesesHijos)} cotizados por hijos al porcentaje${sin.ok ? `, unos ${fmt(r.bruta - sin.bruta)} € más al mes en bruto` : ''} (no cuentan para los 15 años mínimos ni para adelantar la jubilación).`);
+      }
       if (r.brecha) notas.push(`Incluye ${fmt(r.brecha)} € del complemento de brecha de género.`);
       if (!e.sigueCotizando) notas.push('Calculado sin sumar más años cotizados desde hoy.');
       $('p-notas').textContent = notas.join(' ');
