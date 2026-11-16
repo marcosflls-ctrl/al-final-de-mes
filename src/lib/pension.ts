@@ -7,6 +7,10 @@
  * - Jubilación demorada: 4 % por cada año completo (LGSS art. 210.2).
  * - Pensión máxima y mínimas de 2026: real decreto de revalorización de las pensiones para 2026 (BOE del 24/12/2025).
  * - Complemento de brecha de género 2026: 36,90 € al mes por hijo, hasta cuatro.
+ * - Días cotizados por hijos: LGSS arts. 235 (112 días por parto si la madre no cotizaba esas 16 semanas, más 14 por
+ *   cada hijo desde el segundo en parto múltiple) y 236 (hasta 270 días por hijo por dejar de cotizar entre los 9 meses
+ *   anteriores al nacimiento y el sexto año). Tope conjunto de 5 años. No cuentan para el periodo mínimo de 15 años
+ *   (art. 236) ni para adelantar la jubilación (RD 1716/2012, art. 6): aquí solo suben el porcentaje.
  *
  * Simplificación principal: la base reguladora se calcula como si el sueldo, en euros de hoy, fuera el mismo
  * durante los años que se tienen en cuenta (25 años, o 25 años y 2 meses con el sistema nuevo, que da casi lo mismo).
@@ -73,6 +77,7 @@ export interface Entrada {
   ajuste: number; // meses: negativo = anticipada voluntaria (hasta -24), positivo = demorada
   familia: Familia;
   hijos: number; // para el complemento de brecha de género (0-4)
+  diasHijos?: number; // días cotizados por parto o por cuidado de hijos (arts. 235 y 236 LGSS), hasta 1.825
   hoy: number; // índice del mes actual
 }
 
@@ -84,6 +89,7 @@ export interface Resultado {
   fecha: number; // índice de mes de la jubilación elegida
   edad: number; // meses de edad al jubilarse
   cotizados: number; // meses cotizados al jubilarse
+  mesesHijos: number; // meses que suman los días por hijos (solo para el porcentaje)
   baseReguladora: number;
   porcentaje: number;
   teorica: number;
@@ -138,12 +144,14 @@ export function calcular(e: Entrada): Resultado {
   const base = r2(Math.min(e.sueldoAnual, P.baseMaximaMensual * 12) / 14);
   const vacio: Resultado = {
     ok: false, edadOrdinaria: edadOrd, fechaOrdinaria: fechaOrd, fecha, edad, cotizados, baseReguladora: base, porcentaje: 0, teorica: 0,
-    coeficiente: 0, limitadaMaxima: false, complementoMinimos: 0, brecha: 0, bruta: 0, tipoIrpf: 0, neta: 0, anual: 0, reemplazo: 0,
+    coeficiente: 0, limitadaMaxima: false, complementoMinimos: 0, brecha: 0, bruta: 0, tipoIrpf: 0, neta: 0, anual: 0, reemplazo: 0, mesesHijos: 0,
   };
   if (cotizados < 180) return { ...vacio, aviso: 'Con menos de 15 años cotizados no hay derecho a pensión contributiva de jubilación. Podrías pedir la no contributiva si tus ingresos son bajos.' };
   if (e.ajuste < 0 && cotizados < 420) return { ...vacio, aviso: 'Para jubilarte antes de tiempo de forma voluntaria necesitas al menos 35 años cotizados al hacerlo.' };
 
-  const pct = porcentaje(cotizados, anioDe(fecha));
+  // Los días por hijos suben el porcentaje, pero no sirven para los 15 años mínimos ni para los 35 de la anticipada
+  const mesesHijos = Math.floor(Math.min(1825, Math.max(0, e.diasHijos ?? 0)) / 30);
+  const pct = porcentaje(cotizados + mesesHijos, anioDe(fecha));
   const teorica = r2((base * pct) / 100);
   const tramo = edad < 65 * 12 ? '<65' : '65+';
   let bruta = teorica, coef = 0, limitada = false;
@@ -175,6 +183,6 @@ export function calcular(e: Entrada): Resultado {
   return {
     ok: true, edadOrdinaria: edadOrd, fechaOrdinaria: fechaOrd, fecha, edad, cotizados, baseReguladora: base, porcentaje: pct, teorica,
     coeficiente: coef, limitadaMaxima: limitada, complementoMinimos: complemento, brecha, bruta, tipoIrpf: tipo, neta,
-    anual: r2(bruta * 14), reemplazo: sueldoNeto > 0 ? r2((neta * 14) / sueldoNeto * 100) : 0,
+    anual: r2(bruta * 14), mesesHijos, reemplazo: sueldoNeto > 0 ? r2((neta * 14) / sueldoNeto * 100) : 0,
   };
 }
