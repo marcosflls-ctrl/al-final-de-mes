@@ -2,7 +2,7 @@
 title: "Qué cambiaría en tu bolsillo si gobierna el PSOE tras el 29N"
 description: "Alquiler, pensiones, salario mínimo, jornada e impuestos: lo que ha propuesto el PSOE antes de las elecciones del 29 de noviembre y qué apoyos necesitaría."
 date: 2026-10-20T17:00:00+02:00
-updated: 2026-11-13T10:30:00+01:00
+updated: 2026-11-18T10:30:00+01:00
 category: hacienda
 guia: true
 orden: 4
@@ -12,6 +12,10 @@ imageAlt: "Fachada del Congreso de los Diputados"
 imageCredit: "Antonio.velez / Wikimedia Commons (CC BY-SA 3.0 es)"
 imageCreditUrl: "https://commons.wikimedia.org/wiki/File:Espa%C3%B1a_-_Madrid_-_Palacio_de_las_Cortes_-_Fachada.JPG"
 sources:
+  - name: "Infobae: el programa del PSOE para el 29N, «La fuerza de seguir avanzando» (15/11/2026)"
+    url: "https://www.infobae.com/espana/2026/11/15/consulta-en-pdf-el-programa-electoral-del-psoe-para-las-elecciones-generales-impuesto-a-fondos-buitre-aborto-blindado-y-rechazo-al-5-en-defensa/"
+  - name: "El Constitucional: las claves del programa del PSOE para el 29N"
+    url: "https://www.elconstitucional.es/es/nacional/politica/claves-programa-electoral-psoe-29n-100000-viviendas-publicas-impuesto-fondos-buitre-blindaje-aborto-pensiones_10186_102.html"
   - name: "El Diario de Madrid: la Diputación Permanente convalida el Real Decreto-ley 29/2026 (35 a 34) y rechaza el 28/2026 (12/11/2026)"
     url: "https://www.eldiariodemadrid.es/articulo/vivienda/congreso-decretos-vivienda-prorroga-alquileres-renovacion-automatica/20261112162933146758.html"
   - name: "Infobae: Sánchez abre la precampaña en Dos Hermanas (10/10/2026)"
@@ -36,19 +40,20 @@ sources:
 
 Esta guía reúne lo que el **PSOE** ha propuesto sobre los temas que más notan los hogares —vivienda, pensiones, trabajo, impuestos y energía— de cara a las elecciones generales del **29 de noviembre de 2026**. No es una predicción ni una recomendación de voto: recoge lo que el partido ha dicho y lo que ha hecho en el Gobierno, con su fecha. Hay una guía igual para cada escenario y una [comparativa de todos](/hacienda/que-cambia-en-tu-bolsillo-segun-quien-gobierne-29n/).
 
-**Aviso:** el PSOE todavía no ha publicado su programa electoral (el PP y Vox publicaron los suyos el 10 y el 12 de noviembre). Lo que sigue son las resoluciones de su último congreso federal, decretos del Gobierno y declaraciones públicas. Actualizaremos esta guía cuando salga el programa del PSOE.
+**Actualizado el 18 de noviembre:** el PSOE presentó su programa, «La fuerza de seguir avanzando», el **15 de noviembre**. Recogemos lo que dice según los resúmenes publicados por la prensa, junto con lo que ha hecho en el Gobierno.
 
 ## Lo esencial
 
-- **Vivienda:** mantener y reforzar el decreto de alquiler, que topa las subidas hasta 2027 y suspende los desahucios de familias vulnerables.
-- **Pensiones:** subirlas con el IPC y aprobar la subida de 2027 antes de que acabe el año.
-- **Trabajo:** salario mínimo del 60 % del salario medio y jornada de 36 horas antes de 2030.
-- **Impuestos:** más progresividad, sin cifras concretas de IRPF o IVA. Rebajas de la energía solo cuando los precios se disparan.
+- **Vivienda:** mantener el decreto de alquiler, **congelar temporalmente las rentas** que superen el índice en zonas tensionadas, 100.000 viviendas públicas y un seguro de impago para jóvenes.
+- **Pensiones:** **blindar en la Constitución** la subida con el IPC y un año más de cotización por cada hijo.
+- **Trabajo:** salario mínimo por ley por encima del 60 % del salario medio, completar las 37,5 horas y avanzar hacia las 35 negociando.
+- **Impuestos:** un tipo máximo del **35 % para las rentas del capital de más de 300.000 €** y más impuestos a tecnológicas, fondos de vivienda y transacciones financieras. Sin cambios recogidos en la tarifa general del IRPF ni en el IVA.
+- **Familias:** una prestación por crianza para todos los hogares con menores, sin cuantía todavía, y **1.000 € al nacer** en una cuenta pública que se puede usar a los 18 años.
 - **Apoyos:** según las encuestas privadas, el PSOE quedaría lejos de la mayoría. Necesitaría al Frente Amplio y a varios partidos más.
 
 ## Vivienda y alquiler
 
-Pedro Sánchez abrió la precampaña el **10 de octubre** en Dos Hermanas (Sevilla) presentando la vivienda como su prioridad. Prometió que un Gobierno progresista **«reforzará y mantendrá»** el decreto de vivienda. Ese decreto, el **29/2026**, está en vigor desde octubre y se votará en la Diputación Permanente el 12 de noviembre. Incluye:
+Pedro Sánchez abrió la precampaña el **10 de octubre** en Dos Hermanas (Sevilla) presentando la vivienda como su prioridad. Prometió que un Gobierno progresista **«reforzará y mantendrá»** el decreto de vivienda. Ese decreto, el **29/2026**, está en vigor desde octubre y la Diputación Permanente lo convalidó el 12 de noviembre. Incluye:
 
 | Medida | Qué significa para ti |
 |---|---|
@@ -59,24 +64,36 @@ Pedro Sánchez abrió la precampaña el **10 de octubre** en Dos Hermanas (Sevil
 | **Préstamos sin interés** («TU CASA») de hasta el 20 % del precio, con un máximo de 50.000 € | Para la entrada de la primera vivienda; se devuelven después de la hipoteca |
 | **Alquiler de temporada y por habitaciones** con más límites | El temporal necesita causa y, en general, no pasa de 12 meses |
 
+**Lo que añade el programa del 15 de noviembre:**
+
+- **1 % del PIB al año** para vivienda y un parque público estatal de **100.000 viviendas**, gestionado por Casa 47.
+- **Congelar temporalmente las rentas** que superen el índice de referencia en las zonas tensionadas.
+- Un **seguro público de impago** para facilitar que los jóvenes alquilen.
+- Más de **25.000 millones** en avales y préstamos a través del ICO.
+- Un impuesto progresivo a los fondos y grandes propietarios por las viviendas que no dediquen al alquiler residencial, y recargos municipales a las estancias turísticas.
+
 Si tienes dudas sobre tu contrato, mira [cuándo se aplica la prórroga de dos años](/vivienda/prorroga-del-alquiler-de-dos-anos-no-es-automatica-y-hay-que-pedirla/).
 
 ## Pensiones
+
+El programa propone **blindar en la Constitución** la subida de las pensiones con el IPC, reforzar el complemento por hijos y reconocer **un año más de cotización por cada hijo**.
 
 Sánchez dijo el **15 de octubre** que quiere aprobar la subida de las pensiones de 2027 **antes de que termine el año**, aunque sea con el Gobierno en funciones, con el IPC de noviembre. Lo explicamos en [cuánto subirán las pensiones en 2027](/pensiones/pensiones-2027-la-subida-se-conocera-el-27-de-noviembre-y-rondaria-el-3-5/).
 
 ## Trabajo y salario
 
-Las resoluciones del último congreso federal del PSOE piden:
+El programa del 15 de noviembre propone:
 
-- Que el **salario mínimo** equivalga al **60 % del salario medio**.
-- Reducir la jornada de forma progresiva hasta las **36 horas semanales antes de 2030**. La ley de 37,5 horas que impulsó el Gobierno cayó en el Congreso en septiembre de 2025.
+- Fijar por ley el **salario mínimo por encima del 60 % del salario medio**, y actualizarlo con los precios, los salarios y la productividad.
+- **Completar la reducción a 37,5 horas** y avanzar hacia las **35 horas** en la negociación colectiva, sin bajar el sueldo. Sus resoluciones de congreso hablaban de 36 horas antes de 2030. La ley de 37,5 horas cayó en el Congreso en septiembre de 2025.
+- Un objetivo de **paro del 8 % en 2030**, paro también para los becarios y **bajas por cáncer al 75 %** de la base reguladora desde el primer día.
+- Reformar el despido improcedente para que la indemnización tenga en cuenta los daños.
 
 El salario mínimo de 2027 se está negociando ahora. Te lo contamos en [salario mínimo 2027](/paro/salario-minimo-2027/).
 
 ## Impuestos
 
-Las resoluciones del PSOE defienden la **progresividad fiscal**: que pague proporcionalmente más quien más tiene. No incluyen cifras de IRPF o IVA. En esta legislatura, el Gobierno subió dos puntos el tramo más alto del IRPF del ahorro, por encima de 300.000 €, y no actualizó la tarifa estatal del IRPF con la inflación.
+El programa propone un **tipo máximo del 35 %** para las rentas del capital de más de 300.000 € al año (hoy el último tramo es del 30 %), **duplicar la tasa a las transacciones financieras**, más impuestos a las grandes tecnológicas y a las cotizadas con mayores diferencias de sueldo, y una tasa a megayates y aviones privados. Los resúmenes no recogen cambios en la tarifa general del IRPF ni en el IVA. En esta legislatura, el Gobierno subió dos puntos el tramo más alto del IRPF del ahorro y no actualizó la tarifa estatal del IRPF con la inflación.
 
 ## Luz y gasolina
 
@@ -97,6 +114,6 @@ Para gobernar necesitaría al **Frente Amplio** (Sumar, IU, Más Madrid y los co
 ## Lo que queda por saber
 
 - **El 12 de noviembre** la Diputación Permanente convalidó el decreto de vivienda (29/2026) y rechazó el de los contratos renovables automáticamente (28/2026).
-- **El programa del PSOE**, con sus cifras. Cuando se publique, actualizaremos esta guía.
+- **Cuánto costarían o recaudarían** las medidas del programa y cuánto sería la prestación por crianza.
 
 *Información electoral divulgativa. No es una recomendación de voto: recogemos lo que dicen los partidos con su fuente.*

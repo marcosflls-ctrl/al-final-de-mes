@@ -2,12 +2,24 @@
 title: "Vivienda y elecciones del 29N: balance y propuestas de los partidos"
 description: "Los decretos de alquiler que cayeron, los que siguen en vigor y lo que plantean PSOE, PP, Vox y Sumar sobre vivienda antes del 29 de noviembre."
 date: 2026-10-16T17:55:00+00:00
-updated: 2026-11-13T10:30:00+01:00
+updated: 2026-11-18T10:30:00+01:00
 category: vivienda
 guia: true
 orden: 1
 tags: [vivienda, alquiler, elecciones-29n, partidos, legislatura, decreto-vivienda]
 sources:
+  - name: "Infobae: el programa del PSOE para el 29N, «La fuerza de seguir avanzando» (15/11/2026)"
+    url: "https://www.infobae.com/espana/2026/11/15/consulta-en-pdf-el-programa-electoral-del-psoe-para-las-elecciones-generales-impuesto-a-fondos-buitre-aborto-blindado-y-rechazo-al-5-en-defensa/"
+  - name: "El Constitucional: las claves del programa del PSOE para el 29N"
+    url: "https://www.elconstitucional.es/es/nacional/politica/claves-programa-electoral-psoe-29n-100000-viviendas-publicas-impuesto-fondos-buitre-blindaje-aborto-pensiones_10186_102.html"
+  - name: "The Objective: el programa de Frente Amplio para el 29N, «Un programa como una casa» (16/11/2026)"
+    url: "https://theobjective.com/espana/2026-11-16/programa-frente-amplio-29n/"
+  - name: "Infobae: Frente Amplio presenta sus propuestas para el 29N (16/11/2026)"
+    url: "https://www.infobae.com/espana/2026/11/16/frente-amplio-presenta-sus-propuestas-para-el-29-n-con-impuestos-a-superricos-ayudas-por-menor-a-cargo-y-jornada-de-32-horas-sera-el-programa-del-psoe-para-la-siguiente-legislatura/"
+  - name: "Moncloa.com: Frente Amplio presenta su programa (17/11/2026)"
+    url: "https://www.moncloa.com/2026/11/17/frente-amplio-programa-electoral-sumar-3469562"
+  - name: "Público: las claves del programa de Podemos para el 29N (17/11/2026)"
+    url: "https://www.publico.es/politica/supermercados-publicos-carcel-empresarios-pagan-horas-extra-nacionalizacion-repsol-claves-programa-podemos-29n.html"
   - name: "El Diario de Madrid: la Diputación Permanente convalida el Real Decreto-ley 29/2026 (35 a 34) y rechaza el 28/2026 (12/11/2026)"
     url: "https://www.eldiariodemadrid.es/articulo/vivienda/congreso-decretos-vivienda-prorroga-alquileres-renovacion-automatica/20261112162933146758.html"
   - name: "Infobae: el programa de Vox para el 29N, «Es sentido común», 115 medidas (12/11/2026)"
@@ -57,7 +69,7 @@ La vivienda ha marcado el final de la legislatura: el Congreso tumbó los decret
 - **Hoy está en vigor** el Real Decreto-ley 29/2026: suspensión de desahucios de personas vulnerables hasta 2030, límite del 2 % a la subida del alquiler hasta 2027, prórroga de hasta dos años para algunos contratos, IVA del 10 % para el alquiler turístico desde diciembre y préstamos públicos sin interés para la entrada de la primera vivienda.
 - **Ya está convalidado:** la Diputación Permanente del Congreso lo aprobó el **12 de noviembre** por 35 votos a 34, con el apoyo de PSOE, Sumar, ERC, EH Bildu, PNV y Podemos, y el voto en contra de PP, Vox y Junts. Sigue en vigor.
 - El segundo decreto, el **28/2026**, que hacía **renovables automáticamente** los contratos de alquiler, **se rechazó** ese mismo día por 35 votos a 34: el PNV votó en contra junto a PP, Vox y Junts. No llega a aplicarse.
-- PSOE y Sumar defienden mantener y reforzar estos decretos. PP y Vox proponen sobre todo construir más, liberar suelo y bajar impuestos a la compra.
+- PSOE y Sumar defienden mantener y reforzar estos decretos. El PSOE propone además congelar las rentas por encima del índice en zonas tensionadas; Frente Amplio, limitar el alquiler al 25 % de los ingresos; y Podemos, bajarlo un 40 %. PP y Vox proponen sobre todo construir más, liberar suelo y bajar impuestos a la compra.
 
 ## Parte 1. Qué se hizo con la vivienda en la legislatura (2023-2026)
 
@@ -97,9 +109,11 @@ Antes, en abril de 2026, ya había caído el Real Decreto-ley 8/2026, que permit
 
 ## Parte 2. Qué proponen los partidos
 
-**Actualizado el 13 de noviembre:** ya han publicado su programa el **PP** (10 de noviembre, «La Reconstrucción Nacional») y **Vox** (12 de noviembre, «Es sentido común», 115 medidas), y recogemos lo que dicen. **PSOE, Sumar (Frente Amplio) y Podemos todavía no han publicado el suyo**: de ellos recogemos planes, documentos y declaraciones con su fecha, y actualizaremos la página cuando salgan.
+**Actualizado el 18 de noviembre:** ya han publicado su programa los cinco partidos: **PP** (10 de noviembre, «La Reconstrucción Nacional»), **Vox** (12 de noviembre, «Es sentido común», 115 medidas), **PSOE** (15 de noviembre, «La fuerza de seguir avanzando»), **Sumar, dentro de la coalición Frente Amplio** (16 de noviembre, «Un programa como una casa», más de 1.000 medidas) y **Podemos** (17 de noviembre, con el lema «Paz. Casa. Trabajo»). Recogemos lo que dicen según los resúmenes publicados por la prensa. Lo que va después de cada programa son declaraciones anteriores, con su fecha.
 
 ### PSOE
+
+**Programa del 15 de noviembre:** dedicar el **1 % del PIB al año** a vivienda; un parque público estatal de **100.000 viviendas**, gestionado por Casa 47; **congelar temporalmente las rentas** que superen el índice de referencia en las zonas tensionadas; un **seguro público de impago** para que los jóvenes alquilen más fácilmente; más de **25.000 millones** en avales y préstamos a través del ICO; un impuesto progresivo a los fondos y grandes propietarios por las viviendas que no alquilen como residencia; mantener los límites a la compra por fondos especulativos; y recargos municipales a las estancias turísticas. Antes del programa:
 
 Pedro Sánchez abrió la precampaña el 10 de octubre en Dos Hermanas (Sevilla) presentando la vivienda como su gran prioridad. Dijo que «la política de vivienda no tiene fecha de caducidad». Prometió que un Gobierno progresista **«reforzará y mantendrá»** el decreto de vivienda y confió en que la Diputación Permanente lo convalide.
 
@@ -131,6 +145,8 @@ Garriga vincula el problema de la vivienda a la inmigración. No dio cifras ni p
 
 ### Sumar
 
+**Programa de Frente Amplio, del 16 de noviembre:** el **1 % del PIB al año durante doce años** para un parque público de **1,5 millones** de viviendas de alquiler asequible; limitar el **alquiler al 25 % de los ingresos** netos medios de los hogares de cada zona, con un precio orientativo de 600 € al mes para una vivienda pública de 80 m²; **expropiar** por fases a los grandes propietarios empresariales (primero a los de más de 1.000 viviendas, después más de 700 y más de 50); prohibir la compra especulativa por empresas; y retirar licencias turísticas en las zonas tensionadas. Antes del programa:
+
 Sumar impulsó desde el Gobierno los decretos de alquiler. Su ministro de Consumo, Pablo Bustinduy, defendió en el Congreso, el 3 de octubre:
 
 - Hacer **indefinidos los contratos de alquiler**.
@@ -140,18 +156,23 @@ Sumar impulsó desde el Gobierno los decretos de alquiler. Su ministro de Consum
 
 Bustinduy acusó a PP, Vox y Junts de defender el «rentismo» al tumbar los decretos.
 
+### Podemos
+
+**Programa del 17 de noviembre:** **bajar un 40 % los alquileres** y prohibir los desahucios sin alternativa de vivienda, sin exigir otra vulnerabilidad. Podemos apoyó los decretos de alquiler.
+
 ### Otros partidos
 
-Junts votó en contra de los decretos y pide un texto nuevo negociado. El PNV apoya el decreto principal, pero no el de los contratos indefinidos. Podemos, ERC y EH Bildu apoyaron los decretos. Recogeremos sus propuestas concretas cuando las presenten.
+Junts votó en contra de los decretos y pide un texto nuevo negociado. El PNV apoya el decreto principal, pero no el de los contratos indefinidos. ERC y EH Bildu apoyaron los decretos.
 
 ### Resumen
 
 | Partido | Decretos de alquiler | Qué plantea |
 |---|---|---|
-| PSOE | Mantenerlos y reforzarlos | Proteger a los inquilinos y frenar los desahucios |
+| PSOE | Mantenerlos y reforzarlos | 100.000 viviendas públicas, congelar rentas por encima del índice y seguro de impago para jóvenes |
 | PP | En contra | Derogar la Ley de Vivienda, un millón de hogares en la legislatura, IVA al 4 % para menores de 40 y avales para la entrada |
 | Vox | En contra | Vivienda social con «prioridad nacional», liberalizar suelo y bajar impuestos |
-| Sumar | Sus impulsores | Contratos indefinidos y congelación de rentas |
+| Sumar (Frente Amplio) | Sus impulsores | Alquiler limitado al 25 % de los ingresos, 1,5 millones de viviendas públicas y expropiar a grandes propietarios |
+| Podemos | A favor | Bajar un 40 % los alquileres |
 
 ## Lo que queda por saber
 

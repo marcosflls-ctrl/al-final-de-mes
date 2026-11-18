@@ -2,12 +2,24 @@
 title: "Luz, gasolina y elecciones del 29N: balance y propuestas"
 description: "Las rebajas de impuestos por la guerra de Irán, el descuento de 20 céntimos, el butano, las nucleares y lo que plantean PSOE, PP, Vox, Sumar y Podemos."
 date: 2026-10-16T21:35:00+00:00
-updated: 2026-11-13T10:00:00+01:00
+updated: 2026-11-18T10:30:00+01:00
 category: luz
 guia: true
 orden: 1
 tags: [luz, carburantes, gasolina, elecciones-29n, partidos, legislatura, nucleares]
 sources:
+  - name: "Infobae: el programa del PSOE para el 29N, «La fuerza de seguir avanzando» (15/11/2026)"
+    url: "https://www.infobae.com/espana/2026/11/15/consulta-en-pdf-el-programa-electoral-del-psoe-para-las-elecciones-generales-impuesto-a-fondos-buitre-aborto-blindado-y-rechazo-al-5-en-defensa/"
+  - name: "El Constitucional: las claves del programa del PSOE para el 29N"
+    url: "https://www.elconstitucional.es/es/nacional/politica/claves-programa-electoral-psoe-29n-100000-viviendas-publicas-impuesto-fondos-buitre-blindaje-aborto-pensiones_10186_102.html"
+  - name: "The Objective: el programa de Frente Amplio para el 29N, «Un programa como una casa» (16/11/2026)"
+    url: "https://theobjective.com/espana/2026-11-16/programa-frente-amplio-29n/"
+  - name: "Infobae: Frente Amplio presenta sus propuestas para el 29N (16/11/2026)"
+    url: "https://www.infobae.com/espana/2026/11/16/frente-amplio-presenta-sus-propuestas-para-el-29-n-con-impuestos-a-superricos-ayudas-por-menor-a-cargo-y-jornada-de-32-horas-sera-el-programa-del-psoe-para-la-siguiente-legislatura/"
+  - name: "Moncloa.com: Frente Amplio presenta su programa (17/11/2026)"
+    url: "https://www.moncloa.com/2026/11/17/frente-amplio-programa-electoral-sumar-3469562"
+  - name: "Público: las claves del programa de Podemos para el 29N (17/11/2026)"
+    url: "https://www.publico.es/politica/supermercados-publicos-carcel-empresarios-pagan-horas-extra-nacionalizacion-repsol-claves-programa-podemos-29n.html"
   - name: "Infobae: el programa de Vox para el 29N, «Es sentido común», 115 medidas (12/11/2026)"
     url: "https://www.infobae.com/espana/2026/11/12/vox-lleva-al-29-n-un-programa-electoral-con-repatriaciones-y-deportaciones-de-migrantes-prioridad-nacional-y-derogacion-de-leyes-de-genero/"
   - name: "OKDiario: las 13 grandes medidas del programa de Vox para el 29N (12/11/2026)"
@@ -47,7 +59,7 @@ Desde marzo de 2026, la guerra de Irán ha disparado el precio de la energía en
 - **En noviembre sigue la rebaja de 20 céntimos por litro** en gasolina y diésel. Se mantiene porque el precio de los carburantes ha subido más de un 15 % en un año. El decreto que la recoge, el tercero de la crisis, se convalidó el 16 de octubre y está vigente hasta el 31 de diciembre.
 - **La luz y el gas no tienen hoy rebaja de impuestos.** El IVA de la luz es del 21 %. Solo bajaría al 10 % si su precio sube más de un 15 % en un año.
 - **La bombona de butano** no podrá pasar de 19,55 € hasta el 30 de junio de 2027.
-- **Qué se hace en 2027 lo decidirá el próximo Gobierno.** El PP, en su programa, propone quitar el impuesto del 7 % a la producción eléctrica y el calendario de cierre de las nucleares; antes había planteado también dejar el IVA de la energía en el 10 %.
+- **Qué se hace en 2027 lo decidirá el próximo Gobierno.** El PP, en su programa, propone quitar el impuesto del 7 % a la producción eléctrica y el calendario de cierre de las nucleares; antes había planteado también dejar el IVA de la energía en el 10 %. Frente Amplio propone bajar el IVA de la energía, una comercializadora pública y tres horas de luz gratis al día; Podemos, intervenir el precio de la luz.
 
 ## Parte 1. Qué se hizo en la legislatura (2023-2026)
 
@@ -75,9 +87,11 @@ La bombona de butano tiene hoy un precio máximo de 18,84 €. Con el tercer dec
 
 ## Parte 2. Qué proponen los partidos
 
-**Actualizado el 13 de noviembre:** ya han publicado su programa el **PP** (10 de noviembre, «La Reconstrucción Nacional») y **Vox** (12 de noviembre, «Es sentido común», 115 medidas), y recogemos lo que dicen. **PSOE, Sumar (Frente Amplio) y Podemos todavía no han publicado el suyo**: de ellos recogemos planes, documentos y declaraciones con su fecha, y actualizaremos la página cuando salgan.
+**Actualizado el 18 de noviembre:** ya han publicado su programa los cinco partidos: **PP** (10 de noviembre, «La Reconstrucción Nacional»), **Vox** (12 de noviembre, «Es sentido común», 115 medidas), **PSOE** (15 de noviembre, «La fuerza de seguir avanzando»), **Sumar, dentro de la coalición Frente Amplio** (16 de noviembre, «Un programa como una casa», más de 1.000 medidas) y **Podemos** (17 de noviembre, con el lema «Paz. Casa. Trabajo»). Recogemos lo que dicen según los resúmenes publicados por la prensa. Lo que va después de cada programa son declaraciones anteriores, con su fecha.
 
 ### PSOE
+
+**Programa del 15 de noviembre:** fija un objetivo del **81 % de electricidad renovable en 2030**. Los resúmenes del programa no recogen medidas sobre el precio de la luz o de los carburantes ni sobre sus impuestos. Antes del programa:
 
 El Gobierno aprobó los tres paquetes y diseñó las últimas rebajas para que se activen solo cuando los precios se disparan. Las resoluciones de su último congreso federal priorizan la transición energética y las renovables. No incluyen rebajas fiscales permanentes de la energía. Amplió la vida de Almaraz hasta 2030 en agosto.
 
@@ -101,9 +115,13 @@ Defiende dar un papel central a la energía nuclear, alargar la vida de las cent
 
 ### Sumar
 
+**Programa de Frente Amplio, del 16 de noviembre:** una **comercializadora pública de electricidad** y control público de las redes; **tres horas diarias de luz gratis** para los hogares, en las horas de más producción solar; **bajar el IVA de la energía**; un fondo soberano de renovables; y el 3,5 % del PIB al año para la transición ecológica. Antes del programa:
+
 Apuesta por las renovables y el almacenamiento, y se opone a alargar la vida de algunas centrales nucleares. Criticó la prórroga de Almaraz como una cesión a las grandes eléctricas.
 
 ### Podemos
+
+**Programa del 17 de noviembre:** **intervenir el precio de la electricidad** y de los alimentos básicos, y que el Estado sea el **mayor accionista de Repsol**, lo que según el partido costaría entre 8.000 y 9.000 millones. Antes del programa:
 
 Irene Montero ha situado entre sus prioridades crear una **empresa pública de energía** y bajar el coste de la luz para combatir la pobreza energética.
 
@@ -111,11 +129,11 @@ Irene Montero ha situado entre sus prioridades crear una **empresa pública de e
 
 | Partido | Impuestos de la energía | Nucleares |
 |---|---|---|
-| PSOE | Rebajas temporales que se activan cuando los precios se disparan | Prórroga de Almaraz hasta 2030 |
+| PSOE | Rebajas temporales que se activan cuando los precios se disparan; 81 % renovable en 2030 | Prórroga de Almaraz hasta 2030 |
 | PP | IVA de la energía al 10 % de forma permanente; eliminar el impuesto a la generación | Mantenerlas más allá de 2030 |
 | Vox | Bajar impuestos y costes | Papel central; alargar su vida |
-| Sumar | Sin propuesta fiscal concreta | En contra de alargar algunas |
-| Podemos | Empresa pública de energía | Sin posición recogida |
+| Sumar (Frente Amplio) | Bajar el IVA de la energía; comercializadora pública y tres horas de luz gratis al día | En contra de alargar algunas |
+| Podemos | Intervenir el precio de la luz; Estado como mayor accionista de Repsol | Sin posición recogida |
 
 ## Lo que queda por saber
 
