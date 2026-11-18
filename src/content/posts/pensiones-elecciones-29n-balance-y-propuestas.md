@@ -2,12 +2,24 @@
 title: "Pensiones y elecciones del 29N: balance y propuestas de los partidos"
 description: "Las subidas de la legislatura, los decretos que cayeron en el Congreso y lo que dicen PSOE, PP, Vox y Sumar sobre las pensiones antes del 29 de noviembre."
 date: 2026-10-16T17:45:00+00:00
-updated: 2026-11-13T10:00:00+01:00
+updated: 2026-11-18T10:30:00+01:00
 category: pensiones
 guia: true
 orden: 1
 tags: [pensiones, elecciones-29n, revalorizacion, partidos, legislatura]
 sources:
+  - name: "Infobae: el programa del PSOE para el 29N, «La fuerza de seguir avanzando» (15/11/2026)"
+    url: "https://www.infobae.com/espana/2026/11/15/consulta-en-pdf-el-programa-electoral-del-psoe-para-las-elecciones-generales-impuesto-a-fondos-buitre-aborto-blindado-y-rechazo-al-5-en-defensa/"
+  - name: "El Constitucional: las claves del programa del PSOE para el 29N"
+    url: "https://www.elconstitucional.es/es/nacional/politica/claves-programa-electoral-psoe-29n-100000-viviendas-publicas-impuesto-fondos-buitre-blindaje-aborto-pensiones_10186_102.html"
+  - name: "The Objective: el programa de Frente Amplio para el 29N, «Un programa como una casa» (16/11/2026)"
+    url: "https://theobjective.com/espana/2026-11-16/programa-frente-amplio-29n/"
+  - name: "Infobae: Frente Amplio presenta sus propuestas para el 29N (16/11/2026)"
+    url: "https://www.infobae.com/espana/2026/11/16/frente-amplio-presenta-sus-propuestas-para-el-29-n-con-impuestos-a-superricos-ayudas-por-menor-a-cargo-y-jornada-de-32-horas-sera-el-programa-del-psoe-para-la-siguiente-legislatura/"
+  - name: "Moncloa.com: Frente Amplio presenta su programa (17/11/2026)"
+    url: "https://www.moncloa.com/2026/11/17/frente-amplio-programa-electoral-sumar-3469562"
+  - name: "Público: las claves del programa de Podemos para el 29N (17/11/2026)"
+    url: "https://www.publico.es/politica/supermercados-publicos-carcel-empresarios-pagan-horas-extra-nacionalizacion-repsol-claves-programa-podemos-29n.html"
   - name: "Infobae: el programa de Vox para el 29N, «Es sentido común», 115 medidas (12/11/2026)"
     url: "https://www.infobae.com/espana/2026/11/12/vox-lleva-al-29-n-un-programa-electoral-con-repatriaciones-y-deportaciones-de-migrantes-prioridad-nacional-y-derogacion-de-leyes-de-genero/"
   - name: "OKDiario: las 13 grandes medidas del programa de Vox para el 29N (12/11/2026)"
@@ -55,7 +67,7 @@ Las pensiones son uno de los grandes temas de las elecciones generales del **29 
 - En esta legislatura las pensiones contributivas subieron un **3,8 % en 2024**, un **2,8 % en 2025** y un **2,7 % en 2026**, según la inflación media. Las mínimas y las no contributivas subieron más.
 - Las subidas de 2025 y de 2026 se aprobaron en un segundo intento. El primer decreto de cada año **cayó en el Congreso** porque mezclaba las pensiones con otras medidas. Después se aprobaron en un decreto aparte, con efectos desde el 1 de enero.
 - Para 2027, el Gobierno ha dicho que aprobará la subida **antes de fin de año**, aunque esté en funciones. La cifra dependerá del IPC de noviembre.
-- PSOE, PP y Sumar dicen que subirán las pensiones con el IPC. Vox promete pagarlas «como sea», y uno de sus diputados plantea un sistema mixto con una parte de capitalización.
+- PSOE, PP y Sumar dicen que subirán las pensiones con el IPC; el PSOE quiere blindarlo en la Constitución. Frente Amplio propone volver a la jubilación a los 65 y Podemos, a los 63. Vox promete pagarlas «como sea», y uno de sus diputados plantea un sistema mixto con una parte de capitalización.
 
 ## Parte 1. Qué se hizo con las pensiones en la legislatura (2023-2026)
 
@@ -94,9 +106,11 @@ Con la subida de 2026, la pensión mínima de jubilación para mayores de 65 añ
 
 ## Parte 2. Qué proponen los partidos
 
-**Actualizado el 13 de noviembre:** ya han publicado su programa el **PP** (10 de noviembre, «La Reconstrucción Nacional») y **Vox** (12 de noviembre, «Es sentido común», 115 medidas), y recogemos lo que dicen. **PSOE, Sumar (Frente Amplio) y Podemos todavía no han publicado el suyo**: de ellos recogemos planes, documentos y declaraciones con su fecha, y actualizaremos la página cuando salgan.
+**Actualizado el 18 de noviembre:** ya han publicado su programa los cinco partidos: **PP** (10 de noviembre, «La Reconstrucción Nacional»), **Vox** (12 de noviembre, «Es sentido común», 115 medidas), **PSOE** (15 de noviembre, «La fuerza de seguir avanzando»), **Sumar, dentro de la coalición Frente Amplio** (16 de noviembre, «Un programa como una casa», más de 1.000 medidas) y **Podemos** (17 de noviembre, con el lema «Paz. Casa. Trabajo»). Recogemos lo que dicen según los resúmenes publicados por la prensa. Lo que va después de cada programa son declaraciones anteriores, con su fecha.
 
 ### PSOE
+
+**Programa del 15 de noviembre:** **blindar en la Constitución** la subida de las pensiones con el IPC, reforzar el complemento por hijos y reconocer **un año más de cotización por cada hijo**. Antes del programa:
 
 Pedro Sánchez dijo el 15 de octubre de 2026, en Bruselas, que su intención es que la revalorización de 2027 **se apruebe antes de que termine el año**, aunque sea con el Gobierno en funciones. Se haría por real decreto-ley, cuando se conozca el IPC de noviembre. Sánchez acusó al PP y a Vox de querer recortar las pensiones si gobiernan.
 
@@ -118,20 +132,23 @@ El diputado José María Figaredo ha defendido pasar a un **sistema mixto**: man
 
 ### Sumar
 
+**Programa de Frente Amplio, del 16 de noviembre:** volver a la **jubilación a los 65 años**, jubilación anticipada a los **60** en trabajos penosos (construcción, limpieza, ayuda a domicilio, camareras de piso y pesca), que **ninguna pensión mínima** quede por debajo del salario mínimo y mantener la subida con el IPC. Antes del programa:
+
 Yolanda Díaz, vicepresidenta segunda del Gobierno, dijo el 16 de octubre de 2026 que **«no hay ningún riesgo en el sistema público de pensiones»** y que el problema «no es de solvencia, es de suficiencia»: que las pensiones alcancen para vivir. Defendió seguir subiéndolas con el IPC. También dijo que ligarlas a la productividad en lugar de a la inflación quedaría fuera del marco constitucional.
 
-### Otros partidos
+### Podemos
 
-Por ahora no hemos encontrado propuestas concretas sobre pensiones de Podemos ni del resto de formaciones. Las añadiremos en cuanto las presenten.
+**Programa del 17 de noviembre:** subir las pensiones mínimas, sin cifra, y adelantar la **jubilación a los 63 años**.
 
 ### Resumen
 
 | Partido | ¿Subir con el IPC? | Qué más dice del sistema |
 |---|---|---|
-| PSOE | Sí. Subida de 2027 antes de fin de año | Acusa a PP y Vox de querer recortar |
+| PSOE | Sí, y blindarlo en la Constitución | Un año más de cotización por cada hijo |
 | PP | Sí | Mantener el sistema público y asegurar su viabilidad, sin concretar cómo |
 | Vox | Promete pagarlas «como sea» | Un diputado plantea un sistema mixto con capitalización |
-| Sumar | Sí | El reto es que las pensiones alcancen para vivir |
+| Sumar (Frente Amplio) | Sí | Jubilación a los 65; ninguna mínima por debajo del salario mínimo |
+| Podemos | Sin cambios recogidos | Jubilación a los 63; subir las mínimas |
 
 ## Lo que queda por saber
 

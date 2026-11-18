@@ -2,12 +2,24 @@
 title: "Empleo y salario mínimo en el 29N: balance y propuestas"
 description: "El salario mínimo, la reforma del paro, la jornada de 37,5 horas que tumbó el Congreso y lo que plantean PSOE, PP, Vox, Sumar y Podemos sobre trabajo."
 date: 2026-10-16T21:44:00+00:00
-updated: 2026-11-13T10:00:00+01:00
+updated: 2026-11-18T10:30:00+01:00
 category: paro
 guia: true
 orden: 1
 tags: [empleo, smi, salario-minimo, jornada-laboral, subsidio, elecciones-29n, partidos]
 sources:
+  - name: "Infobae: el programa del PSOE para el 29N, «La fuerza de seguir avanzando» (15/11/2026)"
+    url: "https://www.infobae.com/espana/2026/11/15/consulta-en-pdf-el-programa-electoral-del-psoe-para-las-elecciones-generales-impuesto-a-fondos-buitre-aborto-blindado-y-rechazo-al-5-en-defensa/"
+  - name: "El Constitucional: las claves del programa del PSOE para el 29N"
+    url: "https://www.elconstitucional.es/es/nacional/politica/claves-programa-electoral-psoe-29n-100000-viviendas-publicas-impuesto-fondos-buitre-blindaje-aborto-pensiones_10186_102.html"
+  - name: "The Objective: el programa de Frente Amplio para el 29N, «Un programa como una casa» (16/11/2026)"
+    url: "https://theobjective.com/espana/2026-11-16/programa-frente-amplio-29n/"
+  - name: "Infobae: Frente Amplio presenta sus propuestas para el 29N (16/11/2026)"
+    url: "https://www.infobae.com/espana/2026/11/16/frente-amplio-presenta-sus-propuestas-para-el-29-n-con-impuestos-a-superricos-ayudas-por-menor-a-cargo-y-jornada-de-32-horas-sera-el-programa-del-psoe-para-la-siguiente-legislatura/"
+  - name: "Moncloa.com: Frente Amplio presenta su programa (17/11/2026)"
+    url: "https://www.moncloa.com/2026/11/17/frente-amplio-programa-electoral-sumar-3469562"
+  - name: "Público: las claves del programa de Podemos para el 29N (17/11/2026)"
+    url: "https://www.publico.es/politica/supermercados-publicos-carcel-empresarios-pagan-horas-extra-nacionalizacion-repsol-claves-programa-podemos-29n.html"
   - name: "Infobae: el programa de Vox para el 29N, «Es sentido común», 115 medidas (12/11/2026)"
     url: "https://www.infobae.com/espana/2026/11/12/vox-lleva-al-29-n-un-programa-electoral-con-repatriaciones-y-deportaciones-de-migrantes-prioridad-nacional-y-derogacion-de-leyes-de-genero/"
   - name: "OKDiario: las 13 grandes medidas del programa de Vox para el 29N (12/11/2026)"
@@ -47,7 +59,7 @@ El salario mínimo, la jornada laboral y las bajas médicas son algunos de los t
 - El **salario mínimo** ha subido cada año de la legislatura y en 2026 es de **1.221 € al mes en 14 pagas**. Los expertos tienen que presentar su propuesta para 2027 entre finales de octubre y principios de noviembre. El Gobierno puede aprobar la subida aunque esté en funciones.
 - La **reforma de los subsidios del paro** está en vigor desde noviembre de 2024. Sube la cuantía y permite cobrar el subsidio a la vez que un sueldo.
 - La **reducción de la jornada a 37,5 horas** no salió adelante: el Congreso la tumbó en septiembre de 2025. El **registro horario digital** sigue pendiente.
-- PSOE, Sumar y Podemos defienden subir el salario mínimo y bajar la jornada. El PP plantea endurecer las bajas laborales y ampliar el límite de horas extra. Vox se opone a reducir la jornada por ley.
+- **Qué proponen:** el PSOE, fijar el salario mínimo por ley por encima del 60 % del salario medio y llegar a las 37,5 horas; Frente Amplio, una jornada de 32 horas; Podemos, 30 horas y un salario mínimo de 1.800 €. El PP plantea que el salario mínimo no pague IRPF y ventajas para autónomos. Vox se opone a reducir la jornada por ley.
 
 ## Parte 1. Qué se hizo en la legislatura (2023-2026)
 
@@ -81,9 +93,11 @@ El registro horario digital iba inicialmente en esa ley. Después el Gobierno lo
 
 ## Parte 2. Qué proponen los partidos
 
-**Actualizado el 13 de noviembre:** ya han publicado su programa el **PP** (10 de noviembre, «La Reconstrucción Nacional») y **Vox** (12 de noviembre, «Es sentido común», 115 medidas), y recogemos lo que dicen. **PSOE, Sumar (Frente Amplio) y Podemos todavía no han publicado el suyo**: de ellos recogemos planes, documentos y declaraciones con su fecha, y actualizaremos la página cuando salgan.
+**Actualizado el 18 de noviembre:** ya han publicado su programa los cinco partidos: **PP** (10 de noviembre, «La Reconstrucción Nacional»), **Vox** (12 de noviembre, «Es sentido común», 115 medidas), **PSOE** (15 de noviembre, «La fuerza de seguir avanzando»), **Sumar, dentro de la coalición Frente Amplio** (16 de noviembre, «Un programa como una casa», más de 1.000 medidas) y **Podemos** (17 de noviembre, con el lema «Paz. Casa. Trabajo»). Recogemos lo que dicen según los resúmenes publicados por la prensa. Lo que va después de cada programa son declaraciones anteriores, con su fecha.
 
 ### PSOE
+
+**Programa del 15 de noviembre:** fijar por ley el **salario mínimo por encima del 60 % del salario medio**, actualizado con los precios, los salarios y la productividad; **completar la reducción a 37,5 horas** y avanzar hacia las **35 horas** en la negociación colectiva, sin pérdida de sueldo; reformar el despido improcedente para que la indemnización tenga en cuenta los daños; un objetivo de **paro del 8 % en 2030**; paro también para los becarios; **bajas por cáncer al 75 %** de la base reguladora desde el primer día; cuatro semanas del permiso parental pagadas al 100 %; y seguir con la cotización de los autónomos por ingresos reales. Antes del programa:
 
 Las resoluciones de su último congreso federal piden que el salario mínimo equivalga al **60 % del salario medio** y reducir de forma progresiva la jornada hasta las **36 horas semanales antes de 2030**.
 
@@ -102,9 +116,13 @@ Las resoluciones de su último congreso federal piden que el salario mínimo equ
 
 ### Sumar
 
+**Programa de Frente Amplio, del 16 de noviembre:** jornada máxima de **32 horas** semanales sin bajar el sueldo, con un primer paso de 37,5 horas; **salario mínimo** fijado por ley en el 60 % del salario medio neto; reparto obligatorio de parte de los beneficios entre la plantilla; ampliar la protección por desempleo y dar el ingreso mínimo vital de oficio a los jóvenes; y un programa de empleo garantizado para bajar el **paro al 7 %**. Para pagar la reducción de jornada propone un gravamen de hasta el 30 % a las empresas que facturen más de 50 millones y aumenten beneficios sin subir sueldos. Antes del programa:
+
 Yolanda Díaz, ministra de Trabajo, impulsó la ley de 37,5 horas y el registro horario digital, y defiende seguir subiendo el salario mínimo. Para 2027 ha pedido a los expertos una subida que evite la pérdida de poder adquisitivo.
 
 ### Podemos
+
+**Programa del 17 de noviembre:** **salario mínimo de 1.800 €** al mes, jornada de **30 horas** semanales, sanciones penales para las empresas que no paguen las horas extra, volver a la indemnización de **45 días por año** en el despido improcedente y subir los salarios con el IPC. Antes del programa:
 
 Irene Montero ha puesto entre sus prioridades un **salario mínimo de 1.800 € al mes** y una jornada de **35 horas semanales**.
 
@@ -112,11 +130,11 @@ Irene Montero ha puesto entre sus prioridades un **salario mínimo de 1.800 € 
 
 | Partido | Salario mínimo | Jornada | Otras propuestas |
 |---|---|---|---|
-| PSOE | 60 % del salario medio | 36 horas antes de 2030 | — |
+| PSOE | Por encima del 60 % del salario medio, por ley | 37,5 horas y avanzar a 35 negociando | Paro del 8 % en 2030; bajas por cáncer al 75 % |
 | PP | Ligado a la productividad, sin cifra | No apoyó la ley de 37,5 horas | Rebajar el cobro de las bajas, altas por las mutuas, más horas extra |
 | Vox | Sin cifra | En contra de reducirla por ley | — |
-| Sumar | Seguir subiéndolo | Impulsó las 37,5 horas | Registro horario digital |
-| Podemos | 1.800 € al mes | 35 horas | — |
+| Sumar (Frente Amplio) | 60 % del salario medio neto, por ley | 32 horas | Reparto de beneficios; paro del 7 % |
+| Podemos | 1.800 € al mes | 30 horas | Despido de 45 días por año; salarios con el IPC |
 
 ## Lo que queda por saber
 

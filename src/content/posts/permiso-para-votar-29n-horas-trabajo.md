@@ -2,7 +2,7 @@
 title: "Trabajo el 29N: cuántas horas me dan para votar y si me las pagan"
 description: "Si trabajas el domingo 29 de noviembre tienes hasta cuatro horas pagadas para votar, según cuánto coincida tu turno con el horario de los colegios."
 date: 2026-10-20T23:00:00+02:00
-updated: 2026-11-13T10:00:00+01:00
+updated: 2026-11-18T10:30:00+01:00
 category: paro
 guia: true
 orden: 7
@@ -12,6 +12,10 @@ imageAlt: "Oficina de empleo en Madrid"
 imageCredit: "Lojwe / Wikimedia Commons (CC0)"
 imageCreditUrl: "https://commons.wikimedia.org/wiki/File:Oficina_de_Empleo_de_Moratalaz,_Madrid.jpg"
 sources:
+  - name: "Atlántico Hoy: el BOC publica los permisos para votar el 29N en Canarias (12/11/2026)"
+    url: "https://www.atlanticohoy.com/sociedad/si-trabajas-29-noviembre-en-canarias-tienes-derecho-hasta-cuatro-horas-libres-votar_1569829_102.html"
+  - name: "UGT Euskadi: permisos retribuidos para las elecciones del 29N (Orden de 19 de octubre de 2026, BOPV n.º 208)"
+    url: "https://euskadi.ugt-sp.es/permisos-retribuidos-elecciones-generales-29-noviembre-2026/"
   - name: "BOCM: Resolución de 13 de octubre de 2026 de la Dirección General de Trabajo de la Comunidad de Madrid (BOCM n.º 264, 3/11/2026)"
     url: "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/03/BOCM-20261103-42.PDF"
   - name: "BOE: Real Decreto 605/1999, de regulación complementaria de los procesos electorales (artículo 13)"
@@ -59,7 +63,9 @@ La regla general es que tengas hasta cuatro horas. Las resoluciones oficiales qu
 
 **Si trabajas a tiempo parcial**, el permiso se reduce en proporción a tu jornada.
 
-**Ya hay escala oficial para el 29N en varias comunidades, y es la misma de la tabla.** La **Comunidad de Madrid** la publicó en su boletín (BOCM) el 3 de noviembre, con una resolución de la Dirección General de Trabajo del 13 de octubre; la **Comunidad Valenciana**, en el Diari Oficial (DOGV) también el 3 de noviembre; y **Extremadura**, en el Diario Oficial (DOE) el 6 de noviembre, con una resolución de su Dirección General de Trabajo del 28 de octubre. En las dos: 2 horas si coinciden entre 2 y 4, 3 horas si coinciden entre 4 y 6, y 4 horas si coinciden 6 o más. El Gobierno Vasco también ha publicado ya sus normas. El resto de comunidades y delegaciones del Gobierno las irán publicando en sus boletines estos días; si en la tuya sale una escala distinta, manda la oficial.
+**Ya hay escala oficial para el 29N en varias comunidades, y es la misma de la tabla.** La **Comunidad de Madrid** la publicó en su boletín (BOCM) el 3 de noviembre, con una resolución de la Dirección General de Trabajo del 13 de octubre; la **Comunidad Valenciana**, en el Diari Oficial (DOGV) también el 3 de noviembre; **Extremadura**, en el Diario Oficial (DOE) el 6 de noviembre, con una resolución de su Dirección General de Trabajo del 28 de octubre; y **Canarias**, en su boletín (BOC) el 11 de noviembre, con una resolución del 22 de octubre. En las cuatro: 2 horas si coinciden entre 2 y 4, 3 horas si coinciden entre 4 y 6, y 4 horas si coinciden 6 o más.
+
+**En el País Vasco la escala es distinta.** Según la orden del Gobierno Vasco de 19 de octubre (BOPV n.º 208), recogida por UGT: si tu jornada coincide **menos de 4 horas** con el horario de votación, el permiso es del tiempo que coincida; si coincide **4 horas o más**, de 4 horas. A tiempo parcial, se reduce en proporción. El resto de comunidades y delegaciones del Gobierno las irán publicando en sus boletines estos días; si en la tuya sale una escala distinta, manda la oficial.
 
 ## Si trabajas lejos de casa
 
